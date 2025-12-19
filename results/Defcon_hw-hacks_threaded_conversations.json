@@ -1,0 +1,166 @@
+{
+  "channel": "Defcon_hw-hacks",
+  "source": "./discord-exports/Defcon_hw-hacks_Jan2025_export.json",
+  "filteredMessages": 7,
+  "totalThreads": 7,
+  "substantialThreads": 4,
+  "threads": [
+    [
+      {
+        "id": "1417013142864658513",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:04:20.09-04:00",
+        "content": "This tracks with lining up some of the bytes I was doing in the firmware update blob against the flash dump from seeigecannon, it matches a wholllle lot more"
+      },
+      {
+        "id": "1417013191371784272",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:04:31.655-04:00",
+        "content": "First half of the chip matches perfectly. Flash is busted",
+        "reference": {
+          "messageId": "1417013115219873864",
+          "channelId": "846366734725152808",
+          "guildId": "739114501760090116"
+        }
+      },
+      {
+        "id": "1417013208128032861",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:04:35.65-04:00",
+        "content": "or got a bad write"
+      },
+      {
+        "id": "1417013501121265755",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:05:45.505-04:00",
+        "content": "nope, all in one address space, JEDEC compatible NOR flash"
+      },
+      {
+        "id": "1417014534908022876",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:09:51.979-04:00",
+        "content": "I've dumped it about 20 times in total"
+      },
+      {
+        "id": "1417014715993030738",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:10:35.153-04:00",
+        "content": "almost all of them have ~500 byte differences between them, all in the range of 0x7c000 - 0x7cfff which is why I thought just that one 4k sector was hosed."
+      },
+      {
+        "id": "1417015163600764959",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:12:21.871-04:00",
+        "content": "And the fact that I can read more than a sector and that is valid data from 0x0 till that 0x7c000 sector start, and that is also more than the full page of that chip, I think the flash itself underneath failed rather than some controller IC failure"
+      },
+      {
+        "id": "1417015205069852744",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:12:31.758-04:00",
+        "content": "yeah, I've never seen flash fail in this way"
+      },
+      {
+        "id": "1417015275517120633",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:12:48.554-04:00",
+        "content": "I spent a good couple of hours trying to dump the chip with different devices too, they all got roughly the same data, aside from that chunk of bytes that were randomish every read"
+      },
+      {
+        "id": "1417015890750472232",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:15:15.237-04:00",
+        "content": "I only have the one known good dump. But yeah, I'm going to do some testing on it and see what it does and how it behaves. Need to read the OTP data off it too"
+      },
+      {
+        "id": "1417018633175044107",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:26:09.082-04:00",
+        "content": "Its not very old, year or two. I think it got a botched firmware update"
+      },
+      {
+        "id": "1417018820786393088",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:26:53.812-04:00",
+        "content": "Thats the only reason I can think of a few pages of good data, then some sector that didn't get a clean erase/write in a state of nomansland when reading the flash cell, then the rest of the data garbage"
+      }
+    ],
+    [
+      {
+        "id": "1417015275517120633",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:12:48.554-04:00",
+        "content": "I spent a good couple of hours trying to dump the chip with different devices too, they all got roughly the same data, aside from that chunk of bytes that were randomish every read"
+      },
+      {
+        "id": "1417015890750472232",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:15:15.237-04:00",
+        "content": "I only have the one known good dump. But yeah, I'm going to do some testing on it and see what it does and how it behaves. Need to read the OTP data off it too"
+      },
+      {
+        "id": "1417018633175044107",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:26:09.082-04:00",
+        "content": "Its not very old, year or two. I think it got a botched firmware update"
+      },
+      {
+        "id": "1417018820786393088",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-15T01:26:53.812-04:00",
+        "content": "Thats the only reason I can think of a few pages of good data, then some sector that didn't get a clean erase/write in a state of nomansland when reading the flash cell, then the rest of the data garbage"
+      }
+    ],
+    [
+      {
+        "id": "1417672435305680896",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-16T20:44:07.657-04:00",
+        "content": "Its aliiiivveeee!\n\n```\nS - Core 0 Frequency, 800 MHz\n\n\nU-Boot 2016.01 [UniFi,v1.0.25.152] (Feb 23 2023 - 15:40:51 -0800)\n\nDRAM:  smem ram ptable found: ver: 1 len: 4\n```"
+      },
+      {
+        "id": "1417672545611677717",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-16T20:44:33.956-04:00",
+        "content": "it booted linux, need to do a reset, adopt, update, and see how that goes"
+      },
+      {
+        "id": "1417672975666249838",
+        "author": "l33tbunni",
+        "timestamp": "2025-09-16T20:46:16.489-04:00",
+        "content": "hmm, doing a reset put it in TFTP recovery mode. So, eMMC must have had some incomplete update as well"
+      }
+    ],
+    [
+      {
+        "id": "1426819226290749470",
+        "author": "tawnos",
+        "timestamp": "2025-10-12T02:30:12.567-04:00",
+        "content": "Lol, it was a progression of finding parts. Had some low power switching mosfets that couldn't handle sustained current, added relays to see if they could handle that, but were still underpowered, dug through parts and found high power mosfets. way overkill but whatever, now I need to determine if pin 10 is fried 😅"
+      },
+      {
+        "id": "1426819318523498527",
+        "author": "tawnos",
+        "timestamp": "2025-10-12T02:30:34.557-04:00",
+        "content": "I already snipped out the relays"
+      },
+      {
+        "id": "1426819983320809573",
+        "author": "tawnos",
+        "timestamp": "2025-10-12T02:33:13.057-04:00",
+        "content": "Pin 10 isn't changing from 0 to 5v, even though 9 and 11 are. Also think I lost the sketch, but it's easy enough to recreate"
+      },
+      {
+        "id": "1426820586486628402",
+        "author": "tawnos",
+        "timestamp": "2025-10-12T02:35:36.863-04:00",
+        "content": "Also pretty sure I can take off the 5v psu and power the trinket from 12v"
+      },
+      {
+        "id": "1426820734444900382",
+        "author": "tawnos",
+        "timestamp": "2025-10-12T02:36:12.139-04:00",
+        "content": "Up to 16v power input, nice"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,2949 @@
+{
+  "channel": "Amulius_esp32",
+  "source": "./discord-exports/Amulius_esp32_Jan2025_export.json",
+  "filteredMessages": 67,
+  "totalThreads": 59,
+  "substantialThreads": 40,
+  "threads": [
+    [
+      {
+        "id": "1325525131766009897",
+        "author": "hard.fault",
+        "timestamp": "2025-01-05T13:03:38.479-05:00",
+        "content": "@ByteWelder it's probably just DRAM that _also_ happens to have code in it"
+      },
+      {
+        "id": "1325525186149224518",
+        "author": "hard.fault",
+        "timestamp": "2025-01-05T13:03:51.445-05:00",
+        "content": "notice how flash, DIRAM, and IRAM all have `.text` linked into it"
+      },
+      {
+        "id": "1325525358174404620",
+        "author": "hard.fault",
+        "timestamp": "2025-01-05T13:04:32.459-05:00",
+        "content": "I can't remember how the ESP32 separates DRAM and IRAM. They might go into a different address space, or it could just be completely arbitrary and you're dividing your total RAM into two sections"
+      },
+      {
+        "id": "1325525493679915033",
+        "author": "hard.fault",
+        "timestamp": "2025-01-05T13:05:04.766-05:00",
+        "content": "My hunch is that it's arbitrary due to this note:\n> Any internal SRAM which is not used for Instruction RAM will be made available as DRAM (Data RAM) for static data and dynamic allocation (heap)."
+      }
+    ],
+    [
+      {
+        "id": "1328763793521512490",
+        "author": "thekalakshepamguy",
+        "timestamp": "2025-01-14T11:32:55.613-05:00",
+        "content": "I am trying to make a small project, I want to make it using esp"
+      },
+      {
+        "id": "1328773889798570025",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-01-14T12:13:02.753-05:00",
+        "content": "It depends if you want to use ESP-IDF (C), the Arduino framework (C++) or Rust.\nMicropython is also a possibility.",
+        "reference": {
+          "messageId": "1328763793521512490",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1328896169719365683",
+        "author": "thekalakshepamguy",
+        "timestamp": "2025-01-14T20:18:56.558-05:00",
+        "content": "I am a beginner, so what would you suggest? I learnt C in my 2nd semester and C++ in the 3rd and learnt Python in my highschool",
+        "reference": {
+          "messageId": "1328773889798570025",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1328899721045217291",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-01-14T20:33:03.26-05:00",
+        "content": "Probably the Arduino framework.\nTry the \"Learn ESP32\" section here: https://randomnerdtutorials.com/projects-esp32/\nAlso https://wokwi.com is good for simulating ESP32 projects.",
+        "reference": {
+          "messageId": "1328896169719365683",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1345360975314030642",
+        "author": "beegcat",
+        "timestamp": "2025-03-01T06:44:12.113-05:00",
+        "content": "```c\n#include <stdio.h>\n#include <driver/i2c.h>\n#include <freertos/FreeRTOS.h>\n#include <freertos/task.h>\n#include <esp_log.h>\n#include <esp_task_wdt.h>\n\n#define I2S_NUM         I2S_NUM_0\n#define SAMPLE_RATE     44100\n#define I2S_BCLK        26\n#define I2S_LRC         27\n#define I2S_DOUT        25\n#define PI              3.14159265358979323846\n#define SINE_WAVE_FREQ  440  // 440Hz (A4 note)\n#define AMPLITUDE       2000\n#define BUFFER_SIZE     512\n\nvoid i2s_init(void) {\n    i2s_config_t i2s_config = {\n        .mode = I2S_MODE_MASTER | I2S_MODE_TX,\n        .sample_rate = SAMPLE_RATE,\n        .bits_per_sample = I2S_BITS_PER_SAMPLE_16BIT,\n        .channel_format = I2S_CHANNEL_FMT_RIGHT_LEFT,\n        .communication_format = I2S_COMM_FORMAT_I2S,\n        .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,\n        .dma_buf_count = 8,\n        .dma_buf_len = BUFFER_SIZE,\n        .use_apll = false,\n        .tx_desc_auto_clear = true,\n    };\n\n    i2s_pin_config_t pin_config = {\n        .bck_io_num = I2S_BCLK,\n        .ws_io_num = I2S_LRC,\n        .data_out_num = I2S_DOUT,\n        .data_in_num = I2S_PIN_NO_CHANGE\n    };\n\n    i2s_driver_install(I2S_NUM, &i2s_config, 0, NULL);\n    i2s_set_pin(I2S_NUM, &pin_config);\n    i2s_zero_dma_buffer(I2S_NUM);\n}\n\nvoid generate_sine_wave() {\n    int16_t samples[BUFFER_SIZE];\n    size_t bytes_written;\n\n    for (int i = 0; i < BUFFER_SIZE / 2; i++) {\n        float theta = 2.0 * PI * SINE_WAVE_FREQ * i / SAMPLE_RATE;\n        int16_t sample_value = (int16_t)(AMPLITUDE * sin(theta));\n\n        samples[i * 2] = sample_value;      // Left channel\n        samples[i * 2 + 1] = sample_value;  // Right channel\n    }\n\n    while (1) {\n        i2s_write(I2S_NUM, samples, sizeof(samples), &bytes_written, portMAX_DELAY);\n    }\n}\n\nvoid app_main(void) {\n    i2s_init();\n    generate_sine_wave();\n}\n```"
+      },
+      {
+        "id": "1345366690313142397",
+        "author": "beegcat",
+        "timestamp": "2025-03-01T07:06:54.675-05:00",
+        "content": "i tried doing that, but im not sure where it is supposed to be present, i found a directory though, will try to include it"
+      },
+      {
+        "id": "1345367882019766272",
+        "author": "beegcat",
+        "timestamp": "2025-03-01T07:11:38.8-05:00",
+        "content": "whoops that was a wrong directory but ive found the driver directory, seems like it is now deprecated or smthg?"
+      },
+      {
+        "id": "1346056340916932629",
+        "author": "cpt_seablue",
+        "timestamp": "2025-03-03T04:47:20.192-05:00",
+        "content": "You're including I2C driver but using I2S btw",
+        "reference": {
+          "messageId": "1345360975314030642",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1346057830297243782",
+        "author": "beegcat",
+        "timestamp": "2025-03-03T04:53:15.288-05:00",
+        "content": "ik all the contents of the driver folder were unaccessible but ive fixed it, just had to include the line `REQUIRES driver` \n\nnow im stuck at a new totally weird and totally unexpected error- while trying to load a wav file to esp32 and play it i face tons of errors that keep pointing to esp_log_color.h file which is so fricking weird"
+      }
+    ],
+    [
+      {
+        "id": "1346955024055402596",
+        "author": "brandon7716",
+        "timestamp": "2025-03-05T16:18:22.949-05:00",
+        "content": "```[2025-03-05T21:17:40.532Z] SERVER CONSOLE DEBUG: onBackendConnect: gdb-server session connected. You can switch to \"DEBUG CONSOLE\" to see GDB interactions.\n\"C:\\\\Users\\\\oneto\\\\AppData\\\\Local\\\\Arduino15\\\\packages\\\\esp32\\\\tools\\\\openocd-esp32\\\\v0.12.0-esp32-20241016/bin/openocd\" -c \"gdb_port 50000\" -c \"tcl_port 50001\" -c \"telnet_port 50002\" -s \"c:\\\\Users\\\\oneto\\\\Downloads\\\\ESP32\\\\Personal Sketches\\\\HTMLWebserverV2\" -f \"C:/Users/oneto/AppData/Local/Programs/Arduino IDE/resources/app/plugins/cortex-debug/extension/support/openocd-helpers.tcl\" -f board/esp32s3-builtin.cfg\nOpen On-Chip Debugger v0.12.0-esp32-20241016 (2024-10-16-14:17)\nLicensed under GNU GPL v2\nFor bug reports, read\n        http://openocd.org/doc/doxygen/bugs.html\nDEPRECATED! use 'gdb port', not 'gdb_port'\nDEPRECATED! use 'tcl port' not 'tcl_port'\nCDRTOSConfigure\nInfo : only one transport option; autoselecting 'jtag'\nInfo : esp_usb_jtag: VID set to 0x303a and PID to 0x1001\nInfo : esp_usb_jtag: capabilities descriptor set to 0x2000\nInfo : Listening on port 50001 for tcl connections\nInfo : Listening on port 50002 for telnet connections\nError: esp_usb_jtag: could not find or open device!\nC:/Users/oneto/AppData/Local/Arduino15/packages/esp32/tools/openocd-esp32/v0.12.0-esp32-20241016/bin/../share/openocd/scripts/target/esp_common.cfg:9: Error: \nat file \"C:/Users/oneto/AppData/Local/Arduino15/packages/esp32/tools/openocd-esp32/v0.12.0-esp32-20241016/bin/../share/openocd/scripts/target/esp_common.cfg\", line 9\n[2025-03-05T21:17:40.639Z] SERVER CONSOLE DEBUG: onBackendConnect: gdb-server session closed\nGDB server session ended. This terminal will be reused, waiting for next session to start...```"
+      },
+      {
+        "id": "1346955631143157821",
+        "author": "brandon7716",
+        "timestamp": "2025-03-05T16:20:47.69-05:00",
+        "content": "So far just doing some print statements (which has sufficed) but not sure how to use the proper debugger"
+      },
+      {
+        "id": "1346956178219073546",
+        "author": "brandon7716",
+        "timestamp": "2025-03-05T16:22:58.123-05:00",
+        "content": "Then with these devices, there is like no way you can actually \"brick\" them just by uploading code to them right? At the very least, not unintentionally brick them?"
+      }
+    ],
+    [
+      {
+        "id": "1348070731648471111",
+        "author": "cliffordheath",
+        "timestamp": "2025-03-08T18:11:48.368-05:00",
+        "content": "https://www.bleepingcomputer.com/news/security/undocumented-backdoor-found-in-bluetooth-chip-used-by-a-billion-devices/"
+      },
+      {
+        "id": "1348070908425801860",
+        "author": "cliffordheath",
+        "timestamp": "2025-03-08T18:12:30.515-05:00",
+        "content": "This kind of subversion was always certain. It exists as a matter of CCP policy"
+      },
+      {
+        "id": "1348071103439962226",
+        "author": "cliffordheath",
+        "timestamp": "2025-03-08T18:13:17.01-05:00",
+        "content": "Simply put: they would have to be incompetent fools not to do it"
+      },
+      {
+        "id": "1348071224529518706",
+        "author": "cliffordheath",
+        "timestamp": "2025-03-08T18:13:45.88-05:00",
+        "content": "See also: Huawei and other NOC equipment manufacturers"
+      },
+      {
+        "id": "1348098825495122010",
+        "author": "cliffordheath",
+        "timestamp": "2025-03-08T20:03:26.463-05:00",
+        "content": "I guess the CCC folk who reverse engineered the firmware do though. They will speak up if this announcement proves incorrect"
+      },
+      {
+        "id": "1348146455780659201",
+        "author": "pbearer",
+        "timestamp": "2025-03-08T23:12:42.408-05:00",
+        "content": "I just came here to mention this too. This is wild!!",
+        "reference": {
+          "messageId": "1348070731648471111",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1348146804650414143",
+        "author": "pbearer",
+        "timestamp": "2025-03-08T23:14:05.585-05:00",
+        "content": "Im just surprised they didn't hide it more thoroughly.",
+        "reference": {
+          "messageId": "1348071103439962226",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1348094825978662952",
+        "author": "hard.fault",
+        "timestamp": "2025-03-08T19:47:32.904-05:00",
+        "content": "Hold on. This is just silly though \n> Depending on how Bluetooth stacks handle HCI commands on the device, remote exploitation of the backdoor might be possible via malicious firmware or rogue Bluetooth connections.\n\n> This is especially the case if an attacker already has root access, planted malware, or pushed a malicious update on the device that opens up low-level access."
+      },
+      {
+        "id": "1348095097618563083",
+        "author": "hard.fault",
+        "timestamp": "2025-03-08T19:48:37.668-05:00",
+        "content": "They're saying there are HCI vendor specific commands that allow memory read/write, Mac address changing (this is fairly common) and LMP/llcp injection (again, fairly common, the upper layers of the stack sometimes need to manipulate link management at a low level)"
+      },
+      {
+        "id": "1348095241772728410",
+        "author": "hard.fault",
+        "timestamp": "2025-03-08T19:49:12.037-05:00",
+        "content": "Literally, if you have HCI command access to the controller you've already owned the device. What about this makes it a \"backdoor\""
+      },
+      {
+        "id": "1348095533771919361",
+        "author": "hard.fault",
+        "timestamp": "2025-03-08T19:50:21.655-05:00",
+        "content": "Anyone who has worked at the hci level knows that vendors often include patch commands to the chipsets because they're usually ROM based with a way to patch code via RAM"
+      },
+      {
+        "id": "1348098108323790940",
+        "author": "hard.fault",
+        "timestamp": "2025-03-08T20:00:35.476-05:00",
+        "content": "A \"rogue Bluetooth connection\" cannot issue HCI commands. I'm doubting whether these researchers know that much about Bluetooth"
+      }
+    ],
+    [
+      {
+        "id": "1348212630350725232",
+        "author": "mike7c2",
+        "timestamp": "2025-03-09T04:35:39.655-04:00",
+        "content": "I just read over this, the rhetoric severely misrepresents the issue, undocumented hci commands is sloppy but not an exploit in and of itself, certainly not one that let's someone own your device over BT"
+      },
+      {
+        "id": "1348214462645010452",
+        "author": "cliffordheath",
+        "timestamp": "2025-03-09T04:42:56.508-04:00",
+        "content": "Doesn't mean that's not possible. Just not obviously",
+        "reference": {
+          "messageId": "1348212630350725232",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1348217935193182208",
+        "author": "mike7c2",
+        "timestamp": "2025-03-09T04:56:44.428-04:00",
+        "content": "Sure, but nobody has discovered how to do that despite finding the funky hci commands",
+        "reference": {
+          "messageId": "1348214462645010452",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1348218011860865067",
+        "author": "cliffordheath",
+        "timestamp": "2025-03-09T04:57:02.707-04:00",
+        "content": "Not yet"
+      },
+      {
+        "id": "1348235826387091488",
+        "author": "cliffordheath",
+        "timestamp": "2025-03-09T06:07:50.021-04:00",
+        "content": "Code on an ESP32 acting as a Bluetooth for something else (in the same box, basically), and not careful of what commands it allows, might allow the something else, if it is compromised, to mess with the Bluetooth.\n\nThat is a very niche issue. And documenting may indeed be the “fix”."
+      },
+      {
+        "id": "1348293219187953828",
+        "author": "hard.fault",
+        "timestamp": "2025-03-09T09:55:53.531-04:00",
+        "content": "Additionally pretty much every Bluetooth chip with some form of HCI is likely to have commands similar to this",
+        "reference": {
+          "messageId": "1348217935193182208",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1360977751351496745",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-13T09:59:41.666-04:00",
+        "content": "What's up? I'm looking for someone to QC this ESP32-C3-Mini wiring schematic. The Espressif manual leaves several passive values as \"TBD\", and I'm not clear how to get the boot init and USB set up correctly. Important context: The USB is for JTAG; no normal serial comms required. Not serial flashing required; JTAG is fine. Ty!"
+      },
+      {
+        "id": "1361679812208365628",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T08:29:26.018-04:00",
+        "content": "You could always check Espressif's dev board schematics as a reference.",
+        "reference": {
+          "messageId": "1360977751351496745",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1361680291563049100",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:31:20.305-04:00",
+        "content": "THe prob is, they all don't use USB JTAG"
+      },
+      {
+        "id": "1361680314854019113",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:31:25.858-04:00",
+        "content": "WHich also, blows my mind"
+      },
+      {
+        "id": "1361681893422141552",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T08:37:42.218-04:00",
+        "content": "Here is a popular third party schematic with no USB to TTL chip on the board: https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf\nSome info here: https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/schematic-checklist.html#usb",
+        "reference": {
+          "messageId": "1361680291563049100",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1361684440535011551",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:47:49.497-04:00",
+        "content": "Thx!"
+      },
+      {
+        "id": "1361684921495585022",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:49:44.167-04:00",
+        "content": "Tangent: do you know what's up with the caps on the USB lines? That schm has them as DNP, the manual has them as TBD, and you don't use any for stm32"
+      },
+      {
+        "id": "1361685279471308920",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:51:09.515-04:00",
+        "content": "Also, the inline resistors. Manual linked says 0hm (???), that schm has 22. \n\nMy guess: don't add anything to the USB lines, tie IO8 and 9 high with a 10k R"
+      },
+      {
+        "id": "1361685477194727595",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:51:56.656-04:00",
+        "content": "I will probably yolo that, then troubleshoot A/R if it doesn't work"
+      },
+      {
+        "id": "1361685769772863588",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:53:06.412-04:00",
+        "content": "That schm has IO8 and 9 NC, which I am p sure is not correct"
+      },
+      {
+        "id": "1361685930901241936",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:53:44.828-04:00",
+        "content": "P sure that Seed board does NOT use JTAG"
+      },
+      {
+        "id": "1361714043303498172",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T10:45:27.347-04:00",
+        "content": "GPIO 8 and 9 are strapping pins. If 8 is pulled up and 9 down, the chip will boot in download mode.\nHave you read this description of the USB JTAG? https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/api-guides/usb-serial-jtag-console.html",
+        "reference": {
+          "messageId": "1361685279471308920",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1361714498234482688",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T10:47:15.811-04:00",
+        "content": ""
+      },
+      {
+        "id": "1361719787096375328",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:08:16.774-04:00",
+        "content": "I have read that, and the relevant sections of the other two documents. The problem is, I don't know what that means"
+      },
+      {
+        "id": "1361719815575703623",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:08:23.564-04:00",
+        "content": "I just want to be able to flash and debug using JTAG over USB..."
+      },
+      {
+        "id": "1361720125451010320",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:09:37.444-04:00",
+        "content": "I think I will just add jumpers and/or test pads and trial+error htis"
+      },
+      {
+        "id": "1361720826042257438",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:12:24.478-04:00",
+        "content": "SO, it's like, you know, I don't think that maps directly to the form of uncertainty I have, you know? Like if looking for an integer, that's a floating point"
+      },
+      {
+        "id": "1361720959857590434",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:12:56.382-04:00",
+        "content": "Likely this:"
+      },
+      {
+        "id": "1361736409702072461",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T12:14:19.912-04:00",
+        "content": "The Xiao board is correct for flashing and debugging via USB JTAG. I would use that schematic as a reference.",
+        "reference": {
+          "messageId": "1361720959857590434",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1361736656788390153",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T12:15:18.822-04:00",
+        "content": "Thx!"
+      },
+      {
+        "id": "1361737181625843812",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T12:17:23.953-04:00",
+        "content": "*I think that one has more pins than the one I'm using"
+      },
+      {
+        "id": "1362053097668608030",
+        "author": "craig.atkin",
+        "timestamp": "2025-04-16T09:12:44.207-04:00",
+        "content": "Remove the USB capacitors. Follow https://www.espressif.com/sites/default/files/documentation/esp32-c3-mini-1_datasheet_en.pdf section 9 as a reference. Capacitors labels TBD are not generally populated unless there is a pcb/hardware issue.",
+        "reference": {
+          "messageId": "1360977751351496745",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1362056750164869371",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-16T09:27:15.03-04:00",
+        "content": "Thx! Good call"
+      },
+      {
+        "id": "1362056768406028350",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-16T09:27:19.379-04:00",
+        "content": "They were confusing to me"
+      }
+    ],
+    [
+      {
+        "id": "1361680291563049100",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:31:20.305-04:00",
+        "content": "THe prob is, they all don't use USB JTAG"
+      },
+      {
+        "id": "1361680314854019113",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:31:25.858-04:00",
+        "content": "WHich also, blows my mind"
+      },
+      {
+        "id": "1361681893422141552",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T08:37:42.218-04:00",
+        "content": "Here is a popular third party schematic with no USB to TTL chip on the board: https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf\nSome info here: https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32c3/schematic-checklist.html#usb",
+        "reference": {
+          "messageId": "1361680291563049100",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1361684440535011551",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:47:49.497-04:00",
+        "content": "Thx!"
+      },
+      {
+        "id": "1361684921495585022",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:49:44.167-04:00",
+        "content": "Tangent: do you know what's up with the caps on the USB lines? That schm has them as DNP, the manual has them as TBD, and you don't use any for stm32"
+      },
+      {
+        "id": "1361685279471308920",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:51:09.515-04:00",
+        "content": "Also, the inline resistors. Manual linked says 0hm (???), that schm has 22. \n\nMy guess: don't add anything to the USB lines, tie IO8 and 9 high with a 10k R"
+      },
+      {
+        "id": "1361685477194727595",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:51:56.656-04:00",
+        "content": "I will probably yolo that, then troubleshoot A/R if it doesn't work"
+      },
+      {
+        "id": "1361685769772863588",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:53:06.412-04:00",
+        "content": "That schm has IO8 and 9 NC, which I am p sure is not correct"
+      },
+      {
+        "id": "1361685930901241936",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:53:44.828-04:00",
+        "content": "P sure that Seed board does NOT use JTAG"
+      }
+    ],
+    [
+      {
+        "id": "1361685279471308920",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:51:09.515-04:00",
+        "content": "Also, the inline resistors. Manual linked says 0hm (???), that schm has 22. \n\nMy guess: don't add anything to the USB lines, tie IO8 and 9 high with a 10k R"
+      },
+      {
+        "id": "1361685477194727595",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:51:56.656-04:00",
+        "content": "I will probably yolo that, then troubleshoot A/R if it doesn't work"
+      },
+      {
+        "id": "1361685769772863588",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:53:06.412-04:00",
+        "content": "That schm has IO8 and 9 NC, which I am p sure is not correct"
+      },
+      {
+        "id": "1361685930901241936",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:53:44.828-04:00",
+        "content": "P sure that Seed board does NOT use JTAG"
+      },
+      {
+        "id": "1361714043303498172",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T10:45:27.347-04:00",
+        "content": "GPIO 8 and 9 are strapping pins. If 8 is pulled up and 9 down, the chip will boot in download mode.\nHave you read this description of the USB JTAG? https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/api-guides/usb-serial-jtag-console.html",
+        "reference": {
+          "messageId": "1361685279471308920",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1361714498234482688",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T10:47:15.811-04:00",
+        "content": ""
+      },
+      {
+        "id": "1361719787096375328",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:08:16.774-04:00",
+        "content": "I have read that, and the relevant sections of the other two documents. The problem is, I don't know what that means"
+      },
+      {
+        "id": "1361719815575703623",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:08:23.564-04:00",
+        "content": "I just want to be able to flash and debug using JTAG over USB..."
+      },
+      {
+        "id": "1361720125451010320",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:09:37.444-04:00",
+        "content": "I think I will just add jumpers and/or test pads and trial+error htis"
+      },
+      {
+        "id": "1361720826042257438",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:12:24.478-04:00",
+        "content": "SO, it's like, you know, I don't think that maps directly to the form of uncertainty I have, you know? Like if looking for an integer, that's a floating point"
+      },
+      {
+        "id": "1361720959857590434",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:12:56.382-04:00",
+        "content": "Likely this:"
+      }
+    ],
+    [
+      {
+        "id": "1361719815575703623",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:08:23.564-04:00",
+        "content": "I just want to be able to flash and debug using JTAG over USB..."
+      },
+      {
+        "id": "1361720125451010320",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:09:37.444-04:00",
+        "content": "I think I will just add jumpers and/or test pads and trial+error htis"
+      },
+      {
+        "id": "1361720826042257438",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:12:24.478-04:00",
+        "content": "SO, it's like, you know, I don't think that maps directly to the form of uncertainty I have, you know? Like if looking for an integer, that's a floating point"
+      },
+      {
+        "id": "1361720959857590434",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:12:56.382-04:00",
+        "content": "Likely this:"
+      }
+    ],
+    [
+      {
+        "id": "1361720959857590434",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:12:56.382-04:00",
+        "content": "Likely this:"
+      },
+      {
+        "id": "1361736409702072461",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T12:14:19.912-04:00",
+        "content": "The Xiao board is correct for flashing and debugging via USB JTAG. I would use that schematic as a reference.",
+        "reference": {
+          "messageId": "1361720959857590434",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1361736656788390153",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T12:15:18.822-04:00",
+        "content": "Thx!"
+      },
+      {
+        "id": "1361737181625843812",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T12:17:23.953-04:00",
+        "content": "*I think that one has more pins than the one I'm using"
+      }
+    ],
+    [
+      {
+        "id": "1362064556880564274",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T09:58:16.296-04:00",
+        "content": "i have a question- i have an old espwroom32 board to which i supplied like 9v to its 5v pin accidentally (many of you might remember this incident)... i have that board with me right now and i noticed that upon powering it from usb only the onboard ams1117 heats up, trying to flash a code gives me following errors\n\n```\nChip is ESP32-D0WD-V3 (revision v3.1)\nFeatures: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None\nCrystal is 40MHz\nMAC: b0:b2:1c:97:aa:74\nUploading stub...\nRunning stub...\nStub running...\nChanging baud rate to 921600\nChanged.\nWARNING: Failed to communicate with the flash chip, read/write operations will fail. Try checking the chip connections or removing any other hardware connected to IOs.\nConfiguring flash size...\nFlash will be erased from 0x00001000 to 0x00007fff...\nFlash will be erased from 0x00008000 to 0x00008fff...\nFlash will be erased from 0x0000e000 to 0x0000ffff...\nFlash will be erased from 0x00010000 to 0x00054fff...\nCompressed 24976 bytes to 15972...\n fatal error occurred: Packet content transfer stopped (received 8 bytes)\nFailed uploading: uploading error: exit status 2\n\n\n```"
+      },
+      {
+        "id": "1362065278552248543",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:01:08.356-04:00",
+        "content": "and so i was wondering, in the case of overvoltage the regulator should instantly sacrifice itself right? and should prevent any voltage from going in?\n\nbecause my computer can still detect the cp2102 driver so im wondering only the regulator and the flash is damaged"
+      },
+      {
+        "id": "1362065690466586642",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:02:46.564-04:00",
+        "content": "also is it necessary to have the flash mem onboard? what if i remove the regulator and the flash and just use the rest of the circuit, as a slave device for communication protocol teesting?"
+      },
+      {
+        "id": "1362065800621461695",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:03:12.827-04:00",
+        "content": "i might have to replace the regulator with a new one cz esp32 works on 3.3v"
+      },
+      {
+        "id": "1362065977298124841",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:03:54.95-04:00",
+        "content": "basically i wwant to get it back to working in some way even if it means to be able to just use the onboard led"
+      },
+      {
+        "id": "1362066314117513246",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:05:15.254-04:00",
+        "content": "i might be setting too high of a goal here but i feel i can really reuse it, everytime i see it im pissed off that i cant reuse or salvage it"
+      }
+    ],
+    [
+      {
+        "id": "1362065278552248543",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:01:08.356-04:00",
+        "content": "and so i was wondering, in the case of overvoltage the regulator should instantly sacrifice itself right? and should prevent any voltage from going in?\n\nbecause my computer can still detect the cp2102 driver so im wondering only the regulator and the flash is damaged"
+      },
+      {
+        "id": "1362065690466586642",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:02:46.564-04:00",
+        "content": "also is it necessary to have the flash mem onboard? what if i remove the regulator and the flash and just use the rest of the circuit, as a slave device for communication protocol teesting?"
+      },
+      {
+        "id": "1362065800621461695",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:03:12.827-04:00",
+        "content": "i might have to replace the regulator with a new one cz esp32 works on 3.3v"
+      },
+      {
+        "id": "1362065977298124841",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:03:54.95-04:00",
+        "content": "basically i wwant to get it back to working in some way even if it means to be able to just use the onboard led"
+      },
+      {
+        "id": "1362066314117513246",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:05:15.254-04:00",
+        "content": "i might be setting too high of a goal here but i feel i can really reuse it, everytime i see it im pissed off that i cant reuse or salvage it"
+      },
+      {
+        "id": "1362074151770259617",
+        "author": "gotbread",
+        "timestamp": "2025-04-16T10:36:23.896-04:00",
+        "content": "not neccessarily. if you overvolt the regulator, its not uncommon that it breaks and fails in a \"shorted\" way. meaning it connects the input to the output, and the voltage goes through to the next IC. does not have to, but it is possible",
+        "reference": {
+          "messageId": "1362065278552248543",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1374852926211756042",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T16:54:41.141-04:00",
+        "content": "yeah\n```rs\nfn main() {\n    esp_idf_svc::sys::link_patches();\n    esp_idf_svc::log::EspLogger::initialize_default();\n\n    let p = unsafe {\n        EspPartition::find_first(EspPartitionType::Data(\n            esp_idf_svc::partition::EspDataPartitionSubtype::Fat,\n        ))\n    }\n    .unwrap()\n    .unwrap();\n    let p = EspWlPartition::new(p).unwrap();\n    let wl = unsafe { Fatfs::new_wl_part(0, p.handle()).unwrap() };\n    let _mounted_fs = MountedFatfs::mount(wl, \"/fat\", 4).unwrap();\n\n    let mut contents = String::new();\n\n    let s = match std::fs::File::open(LOG_FILE_PATH) {\n        Ok(mut file) => match file.read_to_string(&mut contents) {\n            Ok(bytes_read) => format!(\"1 Contents: {}, Bytes read: {}\", contents, bytes_read),\n            Err(e) => format!(\"2 Error reading contents: {e:?}\"),\n        },\n        Err(err) => format!(\"3 {:?}\", err),\n    };\n    loop {\n        println!(\"tick\");\n        println!(\"msg: {}\", s);\n        println!(\"{contents}\");\n        FreeRtos::delay_ms(1000);\n    }\n}\n```\nlike this works fine\n\nI guess it's also worth noting the above code also works with ` let _mounted_fs = { MountedFatfs::mount(wl, \"/fat\", 4).unwrap() };`"
+      },
+      {
+        "id": "1374853518179176468",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T16:57:02.277-04:00",
+        "content": "hmm, what's strange is if i put it inside a `struct Wrapper(pub MountedFatfs<Fatfs<()>>);`\n`let _mounted_fs = Wrapper(MountedFatfs::mount(wl, \"/fat\", 4).unwrap());` it also still works 🤔 so moving it definitely isnt an issue"
+      },
+      {
+        "id": "1374853752921788457",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T16:57:58.244-04:00",
+        "content": "however, if i do this:\n```rs\nimpl Wrapper {\n    pub fn new() -> Self {\n        let p = unsafe {\n            EspPartition::find_first(EspPartitionType::Data(\n                esp_idf_svc::partition::EspDataPartitionSubtype::Fat,\n            ))\n        }\n        .unwrap()\n        .unwrap();\n        let p = EspWlPartition::new(p).unwrap();\n        let wl = unsafe { Fatfs::new_wl_part(0, p.handle()).unwrap() };\n        Wrapper(MountedFatfs::mount(wl, \"/fat\", 4).unwrap())\n    }\n}\n```\nand use `Wrapper::new()` instead, it again doesnt work 😂"
+      },
+      {
+        "id": "1374854583431467039",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:01:16.253-04:00",
+        "content": "definitely. i originally was writing my library with a struct wrapping over some IO methods, because im actually doing a logger"
+      },
+      {
+        "id": "1374854623990382593",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:01:25.923-04:00",
+        "content": "i have just been reducing it to a simplified example of whats going wrong"
+      },
+      {
+        "id": "1374854732790890536",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:01:51.863-04:00",
+        "content": "```rs\n\nfn main() {\n    esp_idf_svc::sys::link_patches();\n    esp_idf_svc::log::EspLogger::initialize_default();\n\n    let _fs = Wrapper::new();\n\n    let mut contents = String::new();\n\n    let s = match std::fs::File::open(LOG_FILE_PATH) {\n        Ok(mut file) => match file.read_to_string(&mut contents) {\n            Ok(bytes_read) => format!(\"1 Contents: {}, Bytes read: {}\", contents, bytes_read),\n            Err(e) => format!(\"2 Error reading contents: {e:?}\"),\n        },\n        Err(err) => format!(\"3 {:?}\", err),\n    };\n    loop {\n        println!(\"tick\");\n        println!(\"msg: {}\", s);\n        println!(\"{contents}\");\n        FreeRtos::delay_ms(1000);\n    }\n}\n```"
+      },
+      {
+        "id": "1374854942116020324",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:02:41.77-04:00",
+        "content": "i might trace out the rust calls to what c api functions theyre using, and reproduce this in C"
+      },
+      {
+        "id": "1374855092221775945",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:03:17.558-04:00",
+        "content": "if the error doesnt persist, then i know either rust semantics are doing something, or there's something wrong with the esp idf svc crate"
+      },
+      {
+        "id": "1374855148374982759",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:03:30.946-04:00",
+        "content": "im already concerned since a quick look shows theyre using deprecated apis"
+      },
+      {
+        "id": "1374857315219668992",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:12:07.562-04:00",
+        "content": "i could but it would be very messy"
+      },
+      {
+        "id": "1374857367715315813",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:12:20.078-04:00",
+        "content": "i wouldnt be able to use this the way i want"
+      },
+      {
+        "id": "1374857454571225239",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:12:40.786-04:00",
+        "content": "i was making a logger to use with the `log` crate that writes to flash memory"
+      },
+      {
+        "id": "1374857518639222815",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:12:56.061-04:00",
+        "content": "and for some reason it seems that this even doesnt work when i put it in a `OnceLock`"
+      },
+      {
+        "id": "1374857679226409081",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:13:34.348-04:00",
+        "content": "by taking things out of `Wrapper::new` and putting them into `main` line by line, it seems that `Fatfs::new_wl_part` is the line that is \"scope dependent\""
+      },
+      {
+        "id": "1374857768099647570",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:13:55.537-04:00",
+        "content": "so idk ill probably be looking into that"
+      },
+      {
+        "id": "1374857833086193754",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:14:11.031-04:00",
+        "content": "but i cant imagine theres no example somehwere of just writing to a file in a FatFs"
+      },
+      {
+        "id": "1374857913884999742",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T17:14:30.295-04:00",
+        "content": "it's such a simple use case, and this is such strange behaviour considering the rust api is giving zero errors anywhere"
+      }
+    ],
+    [
+      {
+        "id": "1385292650223243314",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:18:25.306-04:00",
+        "content": "Sketch uses 1245294 bytes (95%) of program storage space. Maximum is 1310720 bytes.\nGlobal variables use 50968 bytes (15%) of dynamic memory, leaving 276712 bytes for local variables. Maximum is 327680 bytes.\nesptool.py v4.8.1\nSerial port /dev/cu.usbserial-0001\nConnecting.....\nChip is ESP32-D0WD-V3 (revision v3.1)\nFeatures: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None\nCrystal is 40MHz\nMAC: 14:2b:2f:c1:6a:fc\nUploading stub...\nRunning stub...\nStub running...\nWARNING: Failed to communicate with the flash chip, read/write operations will fail. Try checking the chip connections or removing any other hardware connected to IOs.\nConfiguring flash size...\nFlash will be erased from 0x00001000 to 0x00007fff...\nFlash will be erased from 0x00008000 to 0x00008fff...\nFlash will be erased from 0x0000e000 to 0x0000ffff...\nFlash will be erased from 0x00010000 to 0x00140fff...\nCompressed 24976 bytes to 15972...\nWriting at 0x00001000... (100 %)\n\nA fatal error occurred: Serial data stream stopped: Possible serial noise or corruption.\nFailed uploading: uploading error: exit status 2"
+      },
+      {
+        "id": "1385292682095624282",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:18:32.905-04:00",
+        "content": "i keep getting this error"
+      },
+      {
+        "id": "1385292689284796596",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:18:34.619-04:00",
+        "content": "for days"
+      },
+      {
+        "id": "1385292697052512397",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:18:36.471-04:00",
+        "content": "idk why"
+      },
+      {
+        "id": "1385292737217302639",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:18:46.047-04:00",
+        "content": "the first time i used it it was working fine"
+      },
+      {
+        "id": "1385292767726534778",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:18:53.321-04:00",
+        "content": "i tried changing the cable"
+      },
+      {
+        "id": "1385292817370452044",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:19:05.157-04:00",
+        "content": "i tried to hold bootn then pressing en"
+      },
+      {
+        "id": "1385292860072399062",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:19:15.338-04:00",
+        "content": "i tried using a different esp32"
+      },
+      {
+        "id": "1385293047121842337",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:19:59.934-04:00",
+        "content": "i swear esp32s are so buggy, the only reason i bought this is for the wifi module"
+      },
+      {
+        "id": "1385296551148257361",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:33:55.359-04:00",
+        "content": ""
+      },
+      {
+        "id": "1385296755368919081",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:34:44.049-04:00",
+        "content": "its just a simple circuit with an ultrasonic sensor attached to it"
+      },
+      {
+        "id": "1385296912353202269",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:35:21.477-04:00",
+        "content": "i even tried changing the upload speed to 115200"
+      },
+      {
+        "id": "1385300014233813063",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:47:41.023-04:00",
+        "content": "i turned on erase all flash before sketch upload and this is what i get now"
+      },
+      {
+        "id": "1385310969227382835",
+        "author": "gotbread",
+        "timestamp": "2025-06-19T13:31:12.897-04:00",
+        "content": "you are really close to the memory limit. that may cause an issue in itself.\ncan you test with a **different**, simpler program? e.g. a blinky, or something which connects to wifi and responds to pings? just to remove that error possibility",
+        "reference": {
+          "messageId": "1385292650223243314",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385311074429042761",
+        "author": "gotbread",
+        "timestamp": "2025-06-19T13:31:37.979-04:00",
+        "content": "yeah, they are. most people use stm32, but if you want wifi, you are kinda forced into esp32",
+        "reference": {
+          "messageId": "1385293047121842337",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385427311003828304",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T21:13:30.938-04:00",
+        "content": "vcc is connected to 3v3, GND is connected to GND, trig is connected to d2 and echo is connected to d4",
+        "reference": {
+          "messageId": "1385309160261947413",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385428841266155580",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T21:19:35.781-04:00",
+        "content": "omg this was the problem. this might be an issue though because the part that is causing the program to be heavy is the part when im connecting to firebase for data upload to their realtime database. i need this function in order to display data on my application.",
+        "reference": {
+          "messageId": "1385310969227382835",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385428957012164648",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T21:20:03.377-04:00",
+        "content": "alrightt ill try this as welll",
+        "reference": {
+          "messageId": "1385428440597008595",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385429895106269215",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T21:23:47.036-04:00",
+        "content": "may i know what software you are using for the stm32? because currently im using the stm32f411re with keil uvision v5, and the pack for the device support is depreciated so i had to download it from their website, the problem is even though i did that the program still wont show the startup option when im configuring the run time environment. im currently learning assembly on this board and im having issues with uploading the program onto it because of this",
+        "reference": {
+          "messageId": "1385311074429042761",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385433529529143328",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T21:38:13.55-04:00",
+        "content": "does this mean i need to buy a module with larger flash memory? or is there a better alternative?\n\nthe reason i chose this is because of its small design and wifi capability to connect to a realtime database",
+        "reference": {
+          "messageId": "1385428841266155580",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385433820316303510",
+        "author": "gotbread",
+        "timestamp": "2025-06-19T21:39:22.879-04:00",
+        "content": "sure. i am using vs-code and st-link. as library, i use CMSIS from the stm-base: https://stm32-base.org/\nthat and cmake for the files.\nif you are interested, i posted a full template \"getting started\" in the #arm channel, with that project setup. its also in full c++ (even the startup), so ASM needed :gotbreWave:",
+        "reference": {
+          "messageId": "1385429895106269215",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385433982845456467",
+        "author": "gotbread",
+        "timestamp": "2025-06-19T21:40:01.629-04:00",
+        "content": "how are you connecting? usually once you can establish an https connection to a server, the rest should be lightweight",
+        "reference": {
+          "messageId": "1385428841266155580",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385434369308753920",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T21:41:33.769-04:00",
+        "content": "thank youu 🙏",
+        "reference": {
+          "messageId": "1385433820316303510",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385434397708259328",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T21:41:40.54-04:00",
+        "content": "this is the part",
+        "reference": {
+          "messageId": "1385433982845456467",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385434761345892523",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T21:43:07.238-04:00",
+        "content": "https://www.youtube.com/watch?v=aO92B-K4TnQ&t=607s"
+      },
+      {
+        "id": "1385434782258954352",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T21:43:12.224-04:00",
+        "content": "this is the video i followed"
+      },
+      {
+        "id": "1385436103053672608",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T21:48:27.126-04:00",
+        "content": "it worked when i was using this with my infrared motion sensor and the data actually got sent to firebase, so i just changed the sensor type and the sensor code part to this and suddenly its like this"
+      },
+      {
+        "id": "1385440047318306886",
+        "author": "gotbread",
+        "timestamp": "2025-06-19T22:04:07.512-04:00",
+        "content": "how much does the code size grow with the firebase function vs without it (just wifi) ?",
+        "reference": {
+          "messageId": "1385434397708259328",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385440302445101168",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:05:08.339-04:00",
+        "content": "#include <Wire.h>\n#define echoPin 19\n#define trigPin 21\nlong duration, distance;\n\nvoid setup(){\n  Serial.begin(9600);\n  pinMode(trigPin, OUTPUT);\n  pinMode(echoPin, INPUT);\n}\n\n\nvoid loop(){\n  digitalWrite(trigPin, LOW);\n  delay(100);\n  digitalWrite(trigPin, HIGH);\n  delay(100);\n  digitalWrite(trigPin, LOW);\n\n  duration = pulseIn(echoPin, HIGH);\n  distance = duration / 58.2;\n  String disp = String(distance);\n\n  Serial.print(disp);\n}\n\nit just uses simple high and low digital write and calculates the distance based on that",
+        "reference": {
+          "messageId": "1385438922615685231",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385440337606217848",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:05:16.722-04:00",
+        "content": "hmm gimme a sec let me check",
+        "reference": {
+          "messageId": "1385440047318306886",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385441946809663538",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:11:40.386-04:00",
+        "content": "just the sensor code"
+      },
+      {
+        "id": "1385441986701430988",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:11:49.897-04:00",
+        "content": "with wifi"
+      },
+      {
+        "id": "1385442437446500423",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:13:37.363-04:00",
+        "content": "omg"
+      },
+      {
+        "id": "1385442475250024621",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:13:46.376-04:00",
+        "content": "im trying to upload the one with firebase connection"
+      },
+      {
+        "id": "1385442485353971823",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:13:48.785-04:00",
+        "content": "and its working"
+      },
+      {
+        "id": "1385442710160412762",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:14:42.383-04:00",
+        "content": "this is with the firebase code"
+      },
+      {
+        "id": "1385442761729376468",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:14:54.678-04:00",
+        "content": "idk what happened but for some reason its working now 😭"
+      },
+      {
+        "id": "1385442973021372518",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:15:45.054-04:00",
+        "content": "maybe the clear flash before uploading sketch thing is finally kicking in"
+      },
+      {
+        "id": "1385443034342232235",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T22:15:59.674-04:00",
+        "content": "i enabled that yesterday but i was still getting the error"
+      },
+      {
+        "id": "1385447472016654477",
+        "author": "gotbread",
+        "timestamp": "2025-06-19T22:33:37.698-04:00",
+        "content": "yep. thats a mentality of most modern code.\nthats the reason why the esp32 has 4MB of flash and is STILL always full\nthats the reason arduino code regularly overflows the device, despite the user not doing much more than some sensor reading and printing\nthats the reason why browsers casually take 1GB per tab and think that is okay",
+        "reference": {
+          "messageId": "1385442515099844650",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1385447582658203658",
+        "author": "gotbread",
+        "timestamp": "2025-06-19T22:34:04.077-04:00",
+        "content": "its basicly snails law again"
+      }
+    ],
+    [
+      {
+        "id": "1386842326458171554",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T18:56:16.912-04:00",
+        "content": "I want to ask different question.\nHow safe a esp is, and can I get wifi password and SSID by connecting to the esp physically."
+      },
+      {
+        "id": "1386844176968060968",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:03:38.108-04:00",
+        "content": "If it's stored in the flash or in the program code, it can be read out.",
+        "reference": {
+          "messageId": "1386842326458171554",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386844541163802694",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:05:04.939-04:00",
+        "content": "You can set some readout protection, but a dedicated attacker can still read the data"
+      },
+      {
+        "id": "1386845657805099079",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:09:31.167-04:00",
+        "content": "Most likely in flash.\nWhat if at the start, when esp is powered ,an STM chip is supplying the credentials. Then how safe the system will be?",
+        "reference": {
+          "messageId": "1386844176968060968",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386845757302112338",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:09:54.889-04:00",
+        "content": "It's not being written in flash."
+      },
+      {
+        "id": "1386846134928150549",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:11:24.922-04:00",
+        "content": "What stops the attacker from eavesdropping on the stm32 connection?",
+        "reference": {
+          "messageId": "1386845657805099079",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386846273683853463",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:11:58.004-04:00",
+        "content": "True. While running it can.",
+        "reference": {
+          "messageId": "1386846134928150549",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386846361177030796",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:12:18.864-04:00",
+        "content": "But maybe you are worrying too much. Why all that effort, to protect some wifi credentials?"
+      },
+      {
+        "id": "1386846588105920634",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:13:12.968-04:00",
+        "content": "To protect from a dedicated attack on routers??"
+      },
+      {
+        "id": "1386846707496517632",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:13:41.433-04:00",
+        "content": "I don't have enough idea."
+      },
+      {
+        "id": "1386846723481014402",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:13:45.244-04:00",
+        "content": "Tbh"
+      },
+      {
+        "id": "1386847142479663295",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:15:25.141-04:00",
+        "content": "IDK what this means too.",
+        "reference": {
+          "messageId": "1386846775415148545",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386847181608190073",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:15:34.47-04:00",
+        "content": "That should be dealt with on the router though. Sure, don't give away the plaintext wifi, but your attack surface is already small.",
+        "reference": {
+          "messageId": "1386846588105920634",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386847320364290109",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:16:07.552-04:00",
+        "content": "That means you need to come up with a model of what you are defending against, and if it's worth it.",
+        "reference": {
+          "messageId": "1386847142479663295",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386847365239148604",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:16:18.251-04:00",
+        "content": "Okay",
+        "reference": {
+          "messageId": "1386847320364290109",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386847728956608603",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:17:44.968-04:00",
+        "content": "Hmm it can connect to wifi,\nHave a laptop and some debugging tools. And now he has got wifi credentials.",
+        "reference": {
+          "messageId": "1386847501583253565",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386848307501994107",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:20:02.904-04:00",
+        "content": "First you define your attackers resources.\nRandom script kiddie? Already locked out by locking the flash.\nDedicated attacker with a few thousand to spend?\nGovernment entity with essentially unlimited budget?\n\nMost people just want to defend against 1, sometimes 2. Everything else is not reasonable.",
+        "reference": {
+          "messageId": "1386847728956608603",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386848450683076859",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:20:37.041-04:00",
+        "content": "Also consider that in many cases, the attacker must have physical access to the device, which already changes the model"
+      },
+      {
+        "id": "1386848598112604342",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:21:12.191-04:00",
+        "content": "Hmm I never thought this in detail.",
+        "reference": {
+          "messageId": "1386848307501994107",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386848842615361617",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:22:10.485-04:00",
+        "content": "I was just curious tbh that's all"
+      },
+      {
+        "id": "1386848893685465158",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:22:22.661-04:00",
+        "content": "But thanks for the information."
+      }
+    ],
+    [
+      {
+        "id": "1386846588105920634",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:13:12.968-04:00",
+        "content": "To protect from a dedicated attack on routers??"
+      },
+      {
+        "id": "1386846707496517632",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:13:41.433-04:00",
+        "content": "I don't have enough idea."
+      },
+      {
+        "id": "1386846723481014402",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:13:45.244-04:00",
+        "content": "Tbh"
+      },
+      {
+        "id": "1386847142479663295",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:15:25.141-04:00",
+        "content": "IDK what this means too.",
+        "reference": {
+          "messageId": "1386846775415148545",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386847181608190073",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:15:34.47-04:00",
+        "content": "That should be dealt with on the router though. Sure, don't give away the plaintext wifi, but your attack surface is already small.",
+        "reference": {
+          "messageId": "1386846588105920634",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386847320364290109",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:16:07.552-04:00",
+        "content": "That means you need to come up with a model of what you are defending against, and if it's worth it.",
+        "reference": {
+          "messageId": "1386847142479663295",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386847365239148604",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:16:18.251-04:00",
+        "content": "Okay",
+        "reference": {
+          "messageId": "1386847320364290109",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386847728956608603",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:17:44.968-04:00",
+        "content": "Hmm it can connect to wifi,\nHave a laptop and some debugging tools. And now he has got wifi credentials.",
+        "reference": {
+          "messageId": "1386847501583253565",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386848307501994107",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:20:02.904-04:00",
+        "content": "First you define your attackers resources.\nRandom script kiddie? Already locked out by locking the flash.\nDedicated attacker with a few thousand to spend?\nGovernment entity with essentially unlimited budget?\n\nMost people just want to defend against 1, sometimes 2. Everything else is not reasonable.",
+        "reference": {
+          "messageId": "1386847728956608603",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386848450683076859",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:20:37.041-04:00",
+        "content": "Also consider that in many cases, the attacker must have physical access to the device, which already changes the model"
+      },
+      {
+        "id": "1386848598112604342",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:21:12.191-04:00",
+        "content": "Hmm I never thought this in detail.",
+        "reference": {
+          "messageId": "1386848307501994107",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1386848842615361617",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:22:10.485-04:00",
+        "content": "I was just curious tbh that's all"
+      },
+      {
+        "id": "1386848893685465158",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:22:22.661-04:00",
+        "content": "But thanks for the information."
+      }
+    ],
+    [
+      {
+        "id": "1386847468263575583",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-23T19:16:42.814-04:00",
+        "content": "what part(s) of your system does the adversary have access to"
+      },
+      {
+        "id": "1386847501583253565",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-23T19:16:50.758-04:00",
+        "content": "how can the adversary interact with those parts?"
+      },
+      {
+        "id": "1386847537754804235",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-23T19:16:59.382-04:00",
+        "content": "what materials are available to the adversary?"
+      },
+      {
+        "id": "1386847941704028221",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-23T19:18:35.691-04:00",
+        "content": "if the adversary can connect to your home network wirelessly then they already have the credentials to the network?"
+      }
+    ],
+    [
+      {
+        "id": "1387014850466549872",
+        "author": "earth5418",
+        "timestamp": "2025-06-24T06:21:49.841-04:00",
+        "content": "I tried to use Serial Monitor with ESP32-C3 and it seems like the serial monitor doesn't work well, I already add monitor_rts and dtr to 0 but it doesn't solve anything"
+      },
+      {
+        "id": "1387014901263765647",
+        "author": "earth5418",
+        "timestamp": "2025-06-24T06:22:01.952-04:00",
+        "content": "```c++\n#include <Arduino.h>\n\nvoid setup()\n{\n  Serial.begin(115200);\n  delay(1000); // Give time for Serial to start\n  Serial.println(\"Serial test: setup done\");\n}\n\nvoid loop()\n{\n  Serial.println(\"Looping...\");\n  delay(1000);\n}\n```"
+      },
+      {
+        "id": "1387014990732460203",
+        "author": "earth5418",
+        "timestamp": "2025-06-24T06:22:23.283-04:00",
+        "content": "Here is the code I uploaded on my ESP32"
+      },
+      {
+        "id": "1387015048756461721",
+        "author": "earth5418",
+        "timestamp": "2025-06-24T06:22:37.117-04:00",
+        "content": "I can't figure the exact reason yet"
+      },
+      {
+        "id": "1387015464223375410",
+        "author": "earth5418",
+        "timestamp": "2025-06-24T06:24:16.172-04:00",
+        "content": "Yes, I already uploaded the code",
+        "reference": {
+          "messageId": "1387015380647546930",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1387016116705955860",
+        "author": "earth5418",
+        "timestamp": "2025-06-24T06:26:51.736-04:00",
+        "content": "Okay, I already tried 9600 but it doesn't work as well",
+        "reference": {
+          "messageId": "1387015851621875803",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1387021779398295723",
+        "author": "gotbread",
+        "timestamp": "2025-06-24T06:49:21.827-04:00",
+        "content": "Have you tried it with `idf.py monitor`?",
+        "reference": {
+          "messageId": "1387014850466549872",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1387022161276829716",
+        "author": "earth5418",
+        "timestamp": "2025-06-24T06:50:52.874-04:00",
+        "content": "Not yet, is it built-in in Platform.io? or do I need to use any external programs?",
+        "reference": {
+          "messageId": "1387021779398295723",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1387022473102364783",
+        "author": "gotbread",
+        "timestamp": "2025-06-24T06:52:07.219-04:00",
+        "content": "No, that is part of the espessif package. PlatformIO just sits on top. Before we can really debug anything, you need to find out if the problem is in platformio or the setup in general.\nSo I would always cut out layers and use the provided idf",
+        "reference": {
+          "messageId": "1387022161276829716",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1387022565427511398",
+        "author": "gotbread",
+        "timestamp": "2025-06-24T06:52:29.231-04:00",
+        "content": "You can either manually install the idf sdk, or you can try to find the one platformio uses internally"
+      },
+      {
+        "id": "1387022744213913611",
+        "author": "earth5418",
+        "timestamp": "2025-06-24T06:53:11.857-04:00",
+        "content": "Okay, I'll try that soon"
+      },
+      {
+        "id": "1387036845321228349",
+        "author": "gotbread",
+        "timestamp": "2025-06-24T07:49:13.823-04:00",
+        "content": "Yep, used that recently.\nEven comes with a checklist",
+        "reference": {
+          "messageId": "1387034389665284116",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1387082317629227008",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-06-24T10:49:55.266-04:00",
+        "content": "If the board does not have a USB to TTL chip, you need to enable USB CDC.\n```ini\nbuild_flags =\n  -D ARDUINO_USB_MODE=1\n  -D ARDUINO_USB_CDC_ON_BOOT=1\n```",
+        "reference": {
+          "messageId": "1387014850466549872",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1387323767880941739",
+        "author": "earth5418",
+        "timestamp": "2025-06-25T02:49:21.492-04:00",
+        "content": "Thanks! so far as I've tested, it somehow works, can you explain to me why do I need to enable USB CDC?",
+        "reference": {
+          "messageId": "1387082317629227008",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1387435266972586145",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-06-25T10:12:24.947-04:00",
+        "content": "If this is not defined, the Arduino framework will use the UART instead of USB CDC. Many boards have a USB to TTL chip that facilitates communication with your computer using the UART, so that is the default setting.",
+        "reference": {
+          "messageId": "1387323767880941739",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1387436143867334716",
+        "author": "earth5418",
+        "timestamp": "2025-06-25T10:15:54.015-04:00",
+        "content": "Alright"
+      }
+    ],
+    [
+      {
+        "id": "1387033024234786827",
+        "author": "zaika_6o6o6",
+        "timestamp": "2025-06-24T07:34:02.805-04:00",
+        "content": "From experience with esp, it's better to use esp_idf then arduino / pio stack\nidf.py monitor --port  /dev/cu/,,,  solves monitoring\nit's also possible to reload code straight from monitor with a hotkey"
+      },
+      {
+        "id": "1387034389665284116",
+        "author": "zaika_6o6o6",
+        "timestamp": "2025-06-24T07:39:28.349-04:00",
+        "content": "lol. To install esp_idf its easiest to install VSCode plugin for ESP, and that plugin has an interactive wizard to isntall the rest"
+      },
+      {
+        "id": "1387036491976540291",
+        "author": "zaika_6o6o6",
+        "timestamp": "2025-06-24T07:47:49.579-04:00",
+        "content": "reason to use esp_idf is that there you can for example use all the native libraries for esp without wrappers, and with examples for any usecase. Also it allows cpp std, while Arduino basically doesn't"
+      },
+      {
+        "id": "1387037083562152026",
+        "author": "zaika_6o6o6",
+        "timestamp": "2025-06-24T07:50:10.624-04:00",
+        "content": "this is your hellow world example for esp idf https://github.com/espressif/esp-idf/tree/master/examples/get-started/hello_world"
+      }
+    ],
+    [
+      {
+        "id": "1389061026804400148",
+        "author": "proforest1234_95641",
+        "timestamp": "2025-06-29T21:52:36.296-04:00",
+        "content": "looking at your code i noticed you are changing the frequency of the i2c bus mid loop? as far as i know i2c uses one common clock speed for the entire bus and chaging it while one sensor is uploading can cause faulty readings, have you tried runnning both sensors at 100khz?"
+      },
+      {
+        "id": "1389061481030619156",
+        "author": "proforest1234_95641",
+        "timestamp": "2025-06-29T21:54:24.592-04:00",
+        "content": "the MAX30105 does have a 100kHz i2c standard mode"
+      },
+      {
+        "id": "1389061767031816303",
+        "author": "proforest1234_95641",
+        "timestamp": "2025-06-29T21:55:32.78-04:00",
+        "content": "Try using 100khz for the MAX30105 and let me know if it works."
+      }
+    ],
+    [
+      {
+        "id": "1394718968081813594",
+        "author": ".jb223",
+        "timestamp": "2025-07-15T12:35:14.616-04:00",
+        "content": "Hello I had a question about adding a debugging option to my ESP32 board. What debugging method would one recommend assuming space isn't a massive issue. Ideally the smaller the better, but easy of use is a bigger factor for me. Is UART the way to go? \n\nJust curious about any suggestions."
+      },
+      {
+        "id": "1394875171877425233",
+        "author": "b1ack1323",
+        "timestamp": "2025-07-15T22:55:56.503-04:00",
+        "content": "Slow down your programming speed. This is invalid image so either a power issue or EMI most likely",
+        "reference": {
+          "messageId": "1394754919856079082",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1394875388857024525",
+        "author": "b1ack1323",
+        "timestamp": "2025-07-15T22:56:48.235-04:00",
+        "content": "You can debug over USB with the on board JTAG controller which gives you access to GDB or the physical JTAG interface",
+        "reference": {
+          "messageId": "1394718968081813594",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1405892428052955298",
+        "author": "saqib.exe",
+        "timestamp": "2025-08-15T08:34:35.066-04:00",
+        "content": "Is there an established guide to debug esp8266 nonOs based binary with gdb on platformio"
+      },
+      {
+        "id": "1405892495543374037",
+        "author": "saqib.exe",
+        "timestamp": "2025-08-15T08:34:51.157-04:00",
+        "content": "Built on Arduino sdk"
+      },
+      {
+        "id": "1406349913301844068",
+        "author": "flyingtoast3r",
+        "timestamp": "2025-08-16T14:52:28.049-04:00",
+        "content": "I don't know, and I see the pio page says 'debug=no' for all the esp8266 boards.\n\nBut, maybe if there is access to the pins mentioned in the following articles you might be able to do something with it and an external debugger?\n\nhttps://visualgdb.com/tutorials/esp8266/gdbstub/\n\nhttps://visualgdb.com/tutorials/esp8266/\n\nNode MCU seems to have JTAG pins available  https://visualgdb.com/tutorials/esp8266/nodemcu/jtag/",
+        "reference": {
+          "messageId": "1405892428052955298",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1406353416556511366",
+        "author": "saqib.exe",
+        "timestamp": "2025-08-16T15:06:23.29-04:00",
+        "content": "This is great, thank you",
+        "reference": {
+          "messageId": "1406349913301844068",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1406366520539349042",
+        "author": "omg_itsgollum69",
+        "timestamp": "2025-08-16T15:58:27.523-04:00",
+        "content": "hi i'm new to to elektronics and working with microcontrollers. I'm having an issue with my seeed studio xiao esp32s3 which i connected to a ADXL345 Accelerometer. I seem to be getting this error: \n\"E (17) i2c.master: I2C transaction unexpected nack detected\nADXL345 not connected!\nData rate: 0.10 Hz  /  g‑Range: 2g\n\nRaw‑x = -1.00  |  Raw‑y = -1.00  |  Raw‑z = -1.00\ng‑x   = -0.00  |  g‑y   = -0.00  |  g‑z   = -0.00\n\nE (1443) i2c.master: I2C transaction unexpected nack detected \nE (1443) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed\" \nI'm using this skript i found on the internet: \"#include <Wire.h>\n#include <ADXL345_WE.h>\n\n#define ADXL345_I2CADDR 0x53  // or 0x1D if SDO = HIGH\n\nTwoWire Wire2 = TwoWire(0);  // Use I2C port 0 (or 1 if preferred)\nADXL345_WE myAcc = ADXL345_WE(&Wire2, ADXL345_I2CADDR);\n\nvoid setup() {\n  Serial.begin(115200);\n\n  // Initialize Wire2 with your SDA and SCL pins\n  Wire2.begin(4, 5);  // SDA = GPIO4 (D4), SCL = GPIO5 (D5)\n\n  // Then initialize the sensor\n  if (!myAcc.init()) {\n    Serial.println(\"ADXL345 not connected!\");\n  }\n\n  // Continue with your ADXL345 setup...\n  myAcc.setDataRate(ADXL345_DATA_RATE_50);\n  delay(100);\n  myAcc.setRange(ADXL345_RANGE_4G);\n  Serial.print(\"Data rate: \");\n  Serial.print(myAcc.getDataRateAsString());\n  Serial.print(\"  /  g‑Range: \");\n  Serial.println(myAcc.getRangeAsString());\n  Serial.println();\n}\n\nvoid loop() {\n  xyzFloat raw, g;\n  myAcc.getRawValues(&raw);\n  myAcc.getGValues(&g);\n\n  Serial.print(\"Raw‑x = \"); Serial.print(raw.x);\n  Serial.print(\"  |  Raw‑y = \"); Serial.print(raw.y);\n  Serial.print(\"  |  Raw‑z = \"); Serial.println(raw.z);\n\n  Serial.print(\"g‑x   = \"); Serial.print(g.x);\n  Serial.print(\"  |  g‑y   = \"); Serial.print(g.y);\n  Serial.print(\"  |  g‑z   = \"); Serial.println(g.z);\n\n  Serial.println();\n  delay(1000);\n}\" I would really appreciate the help. And like i said i really have no idea what i'm doing."
+      },
+      {
+        "id": "1406366778661277838",
+        "author": "omg_itsgollum69",
+        "timestamp": "2025-08-16T15:59:29.064-04:00",
+        "content": "This is my wiring incase that might be wrong:"
+      },
+      {
+        "id": "1406496916472332359",
+        "author": "zecritic",
+        "timestamp": "2025-08-17T00:36:36.336-04:00",
+        "content": "It looks like that breakout board probably has a 5V -> 3.3V linear voltage regulator between the VCC header pin and the Vs pad on the ADXL345, but you're feeding VCC with 3.3V.\n\nYou could try connecting the 5V pin from your Xiao board directly to the VCC header pin instead of 3V3 from the Xiao board. (without connecting it to your red power rail on your breadboard, since I don't think anything else needs / wants 5V).",
+        "reference": {
+          "messageId": "1406366520539349042",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1406681416472723558",
+        "author": "omg_itsgollum69",
+        "timestamp": "2025-08-17T12:49:44.564-04:00",
+        "content": "I also connected the CS pin to the 5V, I don’t know if thats correct but thats what other people seem to do (https://wolles-elektronikkiste.de/adxl345-teil-1). 5V is probably a good idea so good point 👍",
+        "reference": {
+          "messageId": "1406496916472332359",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1406681473976762451",
+        "author": "omg_itsgollum69",
+        "timestamp": "2025-08-17T12:49:58.274-04:00",
+        "content": "It still seems not to work tho"
+      },
+      {
+        "id": "1406684672494276758",
+        "author": "zecritic",
+        "timestamp": "2025-08-17T13:02:40.86-04:00",
+        "content": "It looks like CS is already connected to Vddio through a pullup resistor, but it's hard to be certain without a schematic for that breakout board.\nYou could try grounding SDO to ensure I2C address 0x53 is selected. I had assumed it would have an internal pull-down, but the datasheet explicitly says it must be connected to either Vddio or ground.",
+        "reference": {
+          "messageId": "1406681416472723558",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1406685627898138697",
+        "author": "zecritic",
+        "timestamp": "2025-08-17T13:06:28.646-04:00",
+        "content": "For future reference, if you ever purchase a breakout board that has anything more than a voltage regulator and some caps on it, you should make sure it has a schematic. This board is simple enough that even with low-res photos I can guess the schematic, but for anything even mildly more complicated (or with a different color soldermask) it would be hard to figure it out.\n\nBreakout boards are meant to save you time during prototyping, and having to reverse-engineer / guess how the breakout board works counter to that goal."
+      }
+    ],
+    [
+      {
+        "id": "1407233066677567540",
+        "author": "gtadictos21",
+        "timestamp": "2025-08-19T01:21:48.222-04:00",
+        "content": "Hi there! Has anyone worked with ESP-IDF and AWS IoT Core? Specifically with the AWS library for ESP-IDF. The MQTT connection is extremely complicated and the OTA update... well aint very straight foward."
+      },
+      {
+        "id": "1407233126354256003",
+        "author": "gtadictos21",
+        "timestamp": "2025-08-19T01:22:02.45-04:00",
+        "content": "If anyone can lend me a cable with it I would really appreciate it"
+      },
+      {
+        "id": "1407239148431085688",
+        "author": "zecritic",
+        "timestamp": "2025-08-19T01:45:58.225-04:00",
+        "content": "I have worked with it in the past, but I'm sure they've changed the libraries again since last I looked. There is a fair bit of complexity, some of which is intrinsic and some of which is AWS trying to maximize the usage of all of their services (OTA updates and \"Jobs\").\n\nIf you have specific questions, ask them here and people can try to answer them.",
+        "reference": {
+          "messageId": "1407233066677567540",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1407691306443997288",
+        "author": "gtadictos21",
+        "timestamp": "2025-08-20T07:42:41.096-04:00",
+        "content": "Alright so basically Ive been reading about the AWS IoT Core SDK for ESP-IDF and in order to use coreMQTT on multithread I have to use coreMQTT Agent which is a thread-safe implementation. However, I cannot find the correct repository for the coreMQTT Agent with the port to ESP-IDF (yes, coreMQTT Agent repo exists but it does not include ESP-IDF port).\n\nMy idea is to use coreMQTT with backOff algorithm to reconnect with exponential delays and then use the OTA Jobs to perform updates.",
+        "reference": {
+          "messageId": "1407239148431085688",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1407691545028726806",
+        "author": "gtadictos21",
+        "timestamp": "2025-08-20T07:43:37.979-04:00",
+        "content": "If anyone has the link to coreMQTT Agent with the ESP-IDF port, Id really appreciate it. If the repo contains an example for its implementation with any kind of reconnection method, better."
+      }
+    ],
+    [
+      {
+        "id": "1407625986190606366",
+        "author": "almazkgz",
+        "timestamp": "2025-08-20T03:23:07.534-04:00",
+        "content": "Hi all, I'm learning bare-metal programming and would like to develop basic GPIO driver for esp32 and test it.  For educational purposes, I don't want to use esp-idf framework. Has anyone developed custom build system and custom flasher for esp32?"
+      },
+      {
+        "id": "1407633119007211582",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T03:51:28.13-04:00",
+        "content": "~~Why make your own GPIO driver? Isn't ESP-IDF's driver/API sufficient to get/set GPIO states?~~\n~~Do you really intend to make your own build system and flasher? Or do you want to set up the ESP-IDF build system and toolchain to flash an ESP32?~~",
+        "reference": {
+          "messageId": "1407625986190606366",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1407633625377406986",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T03:53:28.858-04:00",
+        "content": "~~https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html~~\n~~When you install the SDK, there's an `examples/` folder installed to your system with this code in it:~~\n~~https://github.com/espressif/esp-idf/tree/master/examples/~~\n~~GPIO examples:~~\n~~https://github.com/espressif/esp-idf/tree/master/examples/peripherals/gpio~~"
+      },
+      {
+        "id": "1407637987407433760",
+        "author": "almazkgz",
+        "timestamp": "2025-08-20T04:10:48.847-04:00",
+        "content": "Thank you for the reply. I understand that that there is esp idf framework that I can use, but I want to interact with esp32 mcu without using the official framework. This is to understand how esp32 works. I also want to understand how build system and flasher work."
+      },
+      {
+        "id": "1407638256031502446",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T04:11:52.892-04:00",
+        "content": "There are some projects out there that write a custom bootloader, but pretty much no-one talks to ESP32 directly.",
+        "reference": {
+          "messageId": "1407637987407433760",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1407638700896288880",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T04:13:38.956-04:00",
+        "content": "I ~~probably~~ misread your initial question, sorry!"
+      },
+      {
+        "id": "1407639614369435659",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T04:17:16.745-04:00",
+        "content": "You'll probably have to reverse engineer all the open source code:\nhttps://github.com/espressif/esp-idf/blob/master/components/esp_driver_gpio/src/gpio.c\nThere's a custom flasher for web that you could analyze:\nhttps://esphome.github.io/esp-web-tools/"
+      },
+      {
+        "id": "1407640129727627365",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T04:19:19.616-04:00",
+        "content": "You probably want to deep dive in to the \"ESP32 Technical Reference Manual\" wrt understanding how its GPIO works."
+      },
+      {
+        "id": "1407640330076950600",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T04:20:07.383-04:00",
+        "content": "And keep in mind there might be differences between the different variants (ESP32, ESP32S3, etc.)"
+      },
+      {
+        "id": "1407640815005597717",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T04:22:02.999-04:00",
+        "content": "For flashing/interacting with the ESP, there's this that you can analyze:\nhttps://github.com/espressif/esptool"
+      },
+      {
+        "id": "1407645292420927499",
+        "author": "gotbread",
+        "timestamp": "2025-08-20T04:39:50.498-04:00",
+        "content": "that will be an uphill battle.\nif you want to test bare metal, go to a platform which has widespread support for it, e.g. stm32 or avr.\nthe esp32 offers you the framework, for anything else, you are on your own, good luck with reverse engineering that framework.",
+        "reference": {
+          "messageId": "1407625986190606366",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1407648213984477206",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T04:51:27.053-04:00",
+        "content": "There are _some_ projects out there, like the wifi stack reverse engineering that's happened, but yeah, it'll be an uphill battle for sure."
+      },
+      {
+        "id": "1407648703912611850",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T04:53:23.861-04:00",
+        "content": "Speaking of which, this is a great video on a WiFi reverse engineering project:\nhttps://www.youtube.com/watch?v=r8IqkUTGjlA"
+      },
+      {
+        "id": "1407648704227311646",
+        "author": "gotbread",
+        "timestamp": "2025-08-20T04:53:23.936-04:00",
+        "content": "the question is, is that really a good learning project? learning bare metal is one project, reversing a framework another. there are better options for learning"
+      }
+    ],
+    [
+      {
+        "id": "1410275490874523668",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:51:18.676-04:00",
+        "content": "oh, you are using arduino on it, not the idf.py directly"
+      },
+      {
+        "id": "1410275580770910380",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T10:51:40.109-04:00",
+        "content": "?"
+      },
+      {
+        "id": "1410275991904976927",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T10:53:18.131-04:00",
+        "content": "@Gotbread ?"
+      },
+      {
+        "id": "1410276017674653739",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:53:24.275-04:00",
+        "content": "yes?"
+      },
+      {
+        "id": "1410276128685428968",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T10:53:50.742-04:00",
+        "content": "wats that",
+        "reference": {
+          "messageId": "1410275490874523668",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1410276252643885167",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:54:20.296-04:00",
+        "content": "the idf.py is the frondend of the sdk you interact with usually. but you are not doing that here, you are using an arduino layer on top of it"
+      },
+      {
+        "id": "1410276492197236796",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:55:17.41-04:00",
+        "content": "do you have the sdk installed?"
+      },
+      {
+        "id": "1410276550972145716",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:55:31.423-04:00",
+        "content": "also, what does the serial monitor say?"
+      },
+      {
+        "id": "1410276710997299291",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T10:56:09.576-04:00",
+        "content": "stuck at this 'Hard resetting via RTS pin...'"
+      },
+      {
+        "id": "1410276755192680612",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T10:56:20.113-04:00",
+        "content": "the blue LED keeps blinking"
+      },
+      {
+        "id": "1410276854232907867",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:56:43.726-04:00",
+        "content": "its not really stuck, there is not much more to do"
+      },
+      {
+        "id": "1410276872318881893",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:56:48.038-04:00",
+        "content": "can you check the serial output?"
+      },
+      {
+        "id": "1410277139101646849",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T10:57:51.644-04:00",
+        "content": "yea nothing"
+      },
+      {
+        "id": "1410277184366448751",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:58:02.436-04:00",
+        "content": "window fully empty?"
+      },
+      {
+        "id": "1410277191933100207",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T10:58:04.24-04:00",
+        "content": "other programs running normally"
+      },
+      {
+        "id": "1410277236921204736",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:58:14.966-04:00",
+        "content": "what other program?"
+      },
+      {
+        "id": "1410277278985879725",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T10:58:24.995-04:00",
+        "content": "like blinking LEDs and stuff"
+      },
+      {
+        "id": "1410277325337001984",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:58:36.046-04:00",
+        "content": "no i mean on the pc, what do you see on the serial monitor?"
+      },
+      {
+        "id": "1410277512126398555",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T10:59:20.58-04:00",
+        "content": "wait a sec im uploading again"
+      },
+      {
+        "id": "1410277716296466525",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T11:00:09.258-04:00",
+        "content": "����\u0003",
+        "reference": {
+          "messageId": "1410277325337001984",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1410277728640434289",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T11:00:12.201-04:00",
+        "content": "this"
+      },
+      {
+        "id": "1410277750543220918",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T11:00:17.423-04:00",
+        "content": "ah, okay"
+      },
+      {
+        "id": "1410277751541338122",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T11:00:17.661-04:00",
+        "content": ":kek:"
+      },
+      {
+        "id": "1410277770898047129",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T11:00:22.276-04:00",
+        "content": "that means it works, but you have the wrong baudrate"
+      },
+      {
+        "id": "1410277876380733490",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T11:00:47.425-04:00",
+        "content": "check in the code what baudrate it uses"
+      },
+      {
+        "id": "1410277910157201499",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T11:00:55.478-04:00",
+        "content": "yea its different"
+      },
+      {
+        "id": "1410277964561649776",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T11:01:08.449-04:00",
+        "content": "then you need to set the serial terminal to the correct baudrate"
+      },
+      {
+        "id": "1410278440078409868",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T11:03:01.821-04:00",
+        "content": "thanks a lot"
+      },
+      {
+        "id": "1410278475696177262",
+        "author": "demolisher7517",
+        "timestamp": "2025-08-27T11:03:10.313-04:00",
+        "content": "could you tell me where the pin5 is located"
+      },
+      {
+        "id": "1410282798819835914",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T11:20:21.026-04:00",
+        "content": "depends, what board do you have?"
+      }
+    ],
+    [
+      {
+        "id": "1410276252643885167",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:54:20.296-04:00",
+        "content": "the idf.py is the frondend of the sdk you interact with usually. but you are not doing that here, you are using an arduino layer on top of it"
+      },
+      {
+        "id": "1410276492197236796",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:55:17.41-04:00",
+        "content": "do you have the sdk installed?"
+      },
+      {
+        "id": "1410276550972145716",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:55:31.423-04:00",
+        "content": "also, what does the serial monitor say?"
+      },
+      {
+        "id": "1410276854232907867",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:56:43.726-04:00",
+        "content": "its not really stuck, there is not much more to do"
+      },
+      {
+        "id": "1410276872318881893",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:56:48.038-04:00",
+        "content": "can you check the serial output?"
+      },
+      {
+        "id": "1410277184366448751",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:58:02.436-04:00",
+        "content": "window fully empty?"
+      },
+      {
+        "id": "1410277236921204736",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:58:14.966-04:00",
+        "content": "what other program?"
+      },
+      {
+        "id": "1410277325337001984",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:58:36.046-04:00",
+        "content": "no i mean on the pc, what do you see on the serial monitor?"
+      },
+      {
+        "id": "1410277750543220918",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T11:00:17.423-04:00",
+        "content": "ah, okay"
+      },
+      {
+        "id": "1410277770898047129",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T11:00:22.276-04:00",
+        "content": "that means it works, but you have the wrong baudrate"
+      },
+      {
+        "id": "1410277876380733490",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T11:00:47.425-04:00",
+        "content": "check in the code what baudrate it uses"
+      },
+      {
+        "id": "1410277964561649776",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T11:01:08.449-04:00",
+        "content": "then you need to set the serial terminal to the correct baudrate"
+      },
+      {
+        "id": "1410282798819835914",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T11:20:21.026-04:00",
+        "content": "depends, what board do you have?"
+      }
+    ],
+    [
+      {
+        "id": "1411367567779434596",
+        "author": "bytewelder",
+        "timestamp": "2025-08-30T11:10:50.1-04:00",
+        "content": "No, I want to identify the hardware they're running my firmware on.\ne.g. Lilygo T-Deck, M5Stack Core S3, etc."
+      },
+      {
+        "id": "1411367724201803877",
+        "author": "bytewelder",
+        "timestamp": "2025-08-30T11:11:27.394-04:00",
+        "content": "That way, I can make a single ROM for all S3 devices with x amount of SPRAM and y amounts of ROM."
+      },
+      {
+        "id": "1411370032721563669",
+        "author": "bytewelder",
+        "timestamp": "2025-08-30T11:20:37.788-04:00",
+        "content": "I was considering to start making proper device trees for each device, and initialize subsystems&drivers based on that."
+      }
+    ],
+    [
+      {
+        "id": "1419409505795444959",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:46:37.535-04:00",
+        "content": "Unit tests (1/2)\n```c\n#include \"unity.h\"\n#include \"../include/app_imu.h\"\n#include \"esp_intr_alloc.h\"\n#include \"driver/gpio.h\"\n#include \"esp_log.h\"\n#include \"freertos/task.h\"\n\nstatic const char *TAG = \"test_app_imu\";\nstatic const spi_bus_config_t bus_config = {\n    .data2_io_num = -1,\n    .data3_io_num = -1,\n    .data4_io_num = -1,\n    .data5_io_num = -1,\n    .data6_io_num = -1,\n    .data7_io_num = -1,\n    .data_io_default_level = false,\n    .max_transfer_sz = 4092,\n    .isr_cpu_id = ESP_INTR_CPU_AFFINITY_AUTO,\n    .flags = SPICOMMON_BUSFLAG_GPIO_PINS,\n    .intr_flags = ESP_INTR_FLAG_LOWMED,\n    .mosi_io_num = GPIO_NUM_5,\n    .miso_io_num = GPIO_NUM_6,\n    .sclk_io_num = GPIO_NUM_7,\n};\nstatic const spi_device_interface_config_t device_interface_config = {\n    .command_bits = 8,\n    .address_bits = 0,\n    .dummy_bits = 0,\n    .mode = 0,\n    .clock_source = SPI_CLK_SRC_DEFAULT,\n    .duty_cycle_pos = 128,\n    .cs_ena_posttrans = 4,\n    .clock_speed_hz = 4000000,\n    .input_delay_ns = 0,\n    .sample_point = SPI_SAMPLING_POINT_PHASE_0,\n    .spics_io_num = GPIO_NUM_8,\n    .flags = 0,\n    .queue_size = 5\n};\n\n```"
+      },
+      {
+        "id": "1419409581603291198",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:46:55.609-04:00",
+        "content": "Unit tests (2/2)\n\n```c\nTEST_CASE(\"Test APP_IMU_COPY_AXES_3 macro\", \"[app_imu]\")\n{\n    imu_reading_t reading;\n    icm20948_axis3named_t device_library_reading = {\n        .axes.x = 1,\n        .axes.y = 2,\n        .axes.z = 3};\n    APP_IMU_COPY_AXES_3(reading.a, device_library_reading)\n    assert(reading.a.x == 1);\n    assert(reading.a.y == 2);\n    assert(reading.a.z == 3);\n}\n\nTEST_CASE(\"Test setup spi bus\", \"[app_imu]\")\n{\n    esp_err_t status_code = app_setup_spi_bus(&bus_config);\n    ESP_LOGI(TAG, \"Test setup spi bus status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    status_code = app_teardown_spi_bus();\n    assert(status_code == ESP_OK);\n}\n\nTEST_CASE(\"Test setup of IMU spi device and WHOAMI\", \"[app_imu]\")\n{\n    spi_device_handle_t imu_spi_device;\n    esp_err_t status_code = app_setup_spi_bus(&bus_config);\n    ESP_LOGI(TAG, \"bus setup status_code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    status_code = app_setup_imu_spi(&device_interface_config, &imu_spi_device);\n    ESP_LOGI(TAG, \"Test setup of IMU spi device status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    vTaskDelay(5000 / portTICK_PERIOD_MS);\n    status_code = app_imu_test_whoami(&imu_spi_device);\n    ESP_LOGI(TAG, \"Test IMU whoami status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    status_code = app_teardown_imu_spi(&imu_spi_device);\n    assert(status_code == ESP_OK);\n    status_code = app_teardown_spi_bus();\n    assert(status_code == ESP_OK);\n}\n```"
+      },
+      {
+        "id": "1419409884184842271",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:48:07.75-04:00",
+        "content": "And here are my functions under test"
+      },
+      {
+        "id": "1419410073654137034",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:48:52.923-04:00",
+        "content": "app_imu.c (1/2)\n```c\nesp_err_t app_setup_spi_bus(spi_bus_config_t *bus) {\n    return spi_bus_initialize(SPI2_HOST, bus, SPI_DMA_CH_AUTO);  \n}\n\nesp_err_t app_teardown_spi_bus() {\n    return spi_bus_free(SPI2_HOST);\n}\n\nesp_err_t app_setup_imu_spi(spi_device_interface_config_t *imu_spi_dev_config, spi_device_handle_t *imu_spi_dev) {\n    return spi_bus_add_device(SPI2_HOST, imu_spi_dev_config, imu_spi_dev);\n}\n\nesp_err_t app_teardown_imu_spi(spi_device_handle_t *imu_spi_dev) {\n    return spi_bus_remove_device(*imu_spi_dev);\n}\n```"
+      },
+      {
+        "id": "1419410176284295270",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:49:17.392-04:00",
+        "content": "app_imu.c (2/2)\n```c\nesp_err_t app_imu_test_whoami(spi_device_handle_t *imu_spi_handle) {\n    /// WHOAMI register value per icm20948 datasheet\n    uint8_t correct = 0xea;\n    // Only need to send zero on the mosi for whoami register\n    uint8_t whoamicommand = 0;\n    spi_transaction_t trans = {\n        .cmd = whoamicommand,\n        .flags = SPI_TRANS_USE_RXDATA,\n        .length = 8,\n        .override_freq_hz = 0,\n        .tx_buffer = NULL\n    };\n    // Conduct polling transaction since this is so short\n    esp_err_t trans_status = spi_device_polling_transmit(*imu_spi_handle, &trans);\n    if (trans_status != ESP_OK) {\n        ESP_LOGE(TAG, \"spi polling transaction error: %i\", trans_status);\n        return ESP_FAIL;\n    }\n    uint8_t read_value = trans.rx_data[0];\n    if (read_value == correct) {\n        ESP_LOGI(TAG, \"WHOAMI success\");\n        return ESP_OK;\n    } else {\n        ESP_LOGE(TAG, \"Unexpected WHOAMI, expected %i, received %i\", correct, read_value);\n        return ESP_FAIL;\n    }\n}\n```"
+      },
+      {
+        "id": "1419410668121100509",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:51:14.655-04:00",
+        "content": "My WHOAMI test is failing on this assertion (copied surrounding lines for context):\n```c\n    status_code = app_imu_test_whoami(&imu_spi_device);\n    ESP_LOGI(TAG, \"Test IMU whoami status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n```"
+      },
+      {
+        "id": "1419410731442372660",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:51:29.752-04:00",
+        "content": "The received WHOAMI in the logs is 255, but 234 is expected per the datasheet"
+      },
+      {
+        "id": "1419411011248590959",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:52:36.463-04:00",
+        "content": "I was curious as to what this was, and I double and triple checked my wiring to make sure it wasn't an error in the wiring"
+      },
+      {
+        "id": "1419411448505040950",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:54:20.713-04:00",
+        "content": "A logic analyzer on the lines yields the following result (Pulseview output). The only logic level that changes is MISO, and it goes high for about 12 microseconds"
+      },
+      {
+        "id": "1419412164313354495",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:57:11.375-04:00",
+        "content": "Whoops, that's not the right output"
+      },
+      {
+        "id": "1419412770033504388",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:59:35.79-04:00",
+        "content": "This is the correct view. CS never goes low, but MISO goes high for about 150ms"
+      },
+      {
+        "id": "1419412965236539492",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:00:22.33-04:00",
+        "content": "I'm not sure why the esp is not taking CS low."
+      },
+      {
+        "id": "1419414746440138782",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:07:27.002-04:00",
+        "content": "Maybe the issue is that I am using full duplex mode instead of half duplex mode for a command/response communication?"
+      },
+      {
+        "id": "1419414795517427945",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:07:38.703-04:00",
+        "content": "Let me see if that changes anything"
+      }
+    ],
+    [
+      {
+        "id": "1419409581603291198",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:46:55.609-04:00",
+        "content": "Unit tests (2/2)\n\n```c\nTEST_CASE(\"Test APP_IMU_COPY_AXES_3 macro\", \"[app_imu]\")\n{\n    imu_reading_t reading;\n    icm20948_axis3named_t device_library_reading = {\n        .axes.x = 1,\n        .axes.y = 2,\n        .axes.z = 3};\n    APP_IMU_COPY_AXES_3(reading.a, device_library_reading)\n    assert(reading.a.x == 1);\n    assert(reading.a.y == 2);\n    assert(reading.a.z == 3);\n}\n\nTEST_CASE(\"Test setup spi bus\", \"[app_imu]\")\n{\n    esp_err_t status_code = app_setup_spi_bus(&bus_config);\n    ESP_LOGI(TAG, \"Test setup spi bus status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    status_code = app_teardown_spi_bus();\n    assert(status_code == ESP_OK);\n}\n\nTEST_CASE(\"Test setup of IMU spi device and WHOAMI\", \"[app_imu]\")\n{\n    spi_device_handle_t imu_spi_device;\n    esp_err_t status_code = app_setup_spi_bus(&bus_config);\n    ESP_LOGI(TAG, \"bus setup status_code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    status_code = app_setup_imu_spi(&device_interface_config, &imu_spi_device);\n    ESP_LOGI(TAG, \"Test setup of IMU spi device status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    vTaskDelay(5000 / portTICK_PERIOD_MS);\n    status_code = app_imu_test_whoami(&imu_spi_device);\n    ESP_LOGI(TAG, \"Test IMU whoami status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    status_code = app_teardown_imu_spi(&imu_spi_device);\n    assert(status_code == ESP_OK);\n    status_code = app_teardown_spi_bus();\n    assert(status_code == ESP_OK);\n}\n```"
+      },
+      {
+        "id": "1419409884184842271",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:48:07.75-04:00",
+        "content": "And here are my functions under test"
+      },
+      {
+        "id": "1419410073654137034",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:48:52.923-04:00",
+        "content": "app_imu.c (1/2)\n```c\nesp_err_t app_setup_spi_bus(spi_bus_config_t *bus) {\n    return spi_bus_initialize(SPI2_HOST, bus, SPI_DMA_CH_AUTO);  \n}\n\nesp_err_t app_teardown_spi_bus() {\n    return spi_bus_free(SPI2_HOST);\n}\n\nesp_err_t app_setup_imu_spi(spi_device_interface_config_t *imu_spi_dev_config, spi_device_handle_t *imu_spi_dev) {\n    return spi_bus_add_device(SPI2_HOST, imu_spi_dev_config, imu_spi_dev);\n}\n\nesp_err_t app_teardown_imu_spi(spi_device_handle_t *imu_spi_dev) {\n    return spi_bus_remove_device(*imu_spi_dev);\n}\n```"
+      },
+      {
+        "id": "1419410176284295270",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:49:17.392-04:00",
+        "content": "app_imu.c (2/2)\n```c\nesp_err_t app_imu_test_whoami(spi_device_handle_t *imu_spi_handle) {\n    /// WHOAMI register value per icm20948 datasheet\n    uint8_t correct = 0xea;\n    // Only need to send zero on the mosi for whoami register\n    uint8_t whoamicommand = 0;\n    spi_transaction_t trans = {\n        .cmd = whoamicommand,\n        .flags = SPI_TRANS_USE_RXDATA,\n        .length = 8,\n        .override_freq_hz = 0,\n        .tx_buffer = NULL\n    };\n    // Conduct polling transaction since this is so short\n    esp_err_t trans_status = spi_device_polling_transmit(*imu_spi_handle, &trans);\n    if (trans_status != ESP_OK) {\n        ESP_LOGE(TAG, \"spi polling transaction error: %i\", trans_status);\n        return ESP_FAIL;\n    }\n    uint8_t read_value = trans.rx_data[0];\n    if (read_value == correct) {\n        ESP_LOGI(TAG, \"WHOAMI success\");\n        return ESP_OK;\n    } else {\n        ESP_LOGE(TAG, \"Unexpected WHOAMI, expected %i, received %i\", correct, read_value);\n        return ESP_FAIL;\n    }\n}\n```"
+      },
+      {
+        "id": "1419410668121100509",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:51:14.655-04:00",
+        "content": "My WHOAMI test is failing on this assertion (copied surrounding lines for context):\n```c\n    status_code = app_imu_test_whoami(&imu_spi_device);\n    ESP_LOGI(TAG, \"Test IMU whoami status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n```"
+      },
+      {
+        "id": "1419410731442372660",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:51:29.752-04:00",
+        "content": "The received WHOAMI in the logs is 255, but 234 is expected per the datasheet"
+      },
+      {
+        "id": "1419411011248590959",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:52:36.463-04:00",
+        "content": "I was curious as to what this was, and I double and triple checked my wiring to make sure it wasn't an error in the wiring"
+      },
+      {
+        "id": "1419411448505040950",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:54:20.713-04:00",
+        "content": "A logic analyzer on the lines yields the following result (Pulseview output). The only logic level that changes is MISO, and it goes high for about 12 microseconds"
+      },
+      {
+        "id": "1419412164313354495",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:57:11.375-04:00",
+        "content": "Whoops, that's not the right output"
+      },
+      {
+        "id": "1419412770033504388",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:59:35.79-04:00",
+        "content": "This is the correct view. CS never goes low, but MISO goes high for about 150ms"
+      },
+      {
+        "id": "1419412965236539492",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:00:22.33-04:00",
+        "content": "I'm not sure why the esp is not taking CS low."
+      },
+      {
+        "id": "1419414746440138782",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:07:27.002-04:00",
+        "content": "Maybe the issue is that I am using full duplex mode instead of half duplex mode for a command/response communication?"
+      },
+      {
+        "id": "1419414795517427945",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:07:38.703-04:00",
+        "content": "Let me see if that changes anything"
+      }
+    ],
+    [
+      {
+        "id": "1419410073654137034",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:48:52.923-04:00",
+        "content": "app_imu.c (1/2)\n```c\nesp_err_t app_setup_spi_bus(spi_bus_config_t *bus) {\n    return spi_bus_initialize(SPI2_HOST, bus, SPI_DMA_CH_AUTO);  \n}\n\nesp_err_t app_teardown_spi_bus() {\n    return spi_bus_free(SPI2_HOST);\n}\n\nesp_err_t app_setup_imu_spi(spi_device_interface_config_t *imu_spi_dev_config, spi_device_handle_t *imu_spi_dev) {\n    return spi_bus_add_device(SPI2_HOST, imu_spi_dev_config, imu_spi_dev);\n}\n\nesp_err_t app_teardown_imu_spi(spi_device_handle_t *imu_spi_dev) {\n    return spi_bus_remove_device(*imu_spi_dev);\n}\n```"
+      },
+      {
+        "id": "1419410176284295270",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:49:17.392-04:00",
+        "content": "app_imu.c (2/2)\n```c\nesp_err_t app_imu_test_whoami(spi_device_handle_t *imu_spi_handle) {\n    /// WHOAMI register value per icm20948 datasheet\n    uint8_t correct = 0xea;\n    // Only need to send zero on the mosi for whoami register\n    uint8_t whoamicommand = 0;\n    spi_transaction_t trans = {\n        .cmd = whoamicommand,\n        .flags = SPI_TRANS_USE_RXDATA,\n        .length = 8,\n        .override_freq_hz = 0,\n        .tx_buffer = NULL\n    };\n    // Conduct polling transaction since this is so short\n    esp_err_t trans_status = spi_device_polling_transmit(*imu_spi_handle, &trans);\n    if (trans_status != ESP_OK) {\n        ESP_LOGE(TAG, \"spi polling transaction error: %i\", trans_status);\n        return ESP_FAIL;\n    }\n    uint8_t read_value = trans.rx_data[0];\n    if (read_value == correct) {\n        ESP_LOGI(TAG, \"WHOAMI success\");\n        return ESP_OK;\n    } else {\n        ESP_LOGE(TAG, \"Unexpected WHOAMI, expected %i, received %i\", correct, read_value);\n        return ESP_FAIL;\n    }\n}\n```"
+      },
+      {
+        "id": "1419410668121100509",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:51:14.655-04:00",
+        "content": "My WHOAMI test is failing on this assertion (copied surrounding lines for context):\n```c\n    status_code = app_imu_test_whoami(&imu_spi_device);\n    ESP_LOGI(TAG, \"Test IMU whoami status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n```"
+      },
+      {
+        "id": "1419410731442372660",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:51:29.752-04:00",
+        "content": "The received WHOAMI in the logs is 255, but 234 is expected per the datasheet"
+      },
+      {
+        "id": "1419411011248590959",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:52:36.463-04:00",
+        "content": "I was curious as to what this was, and I double and triple checked my wiring to make sure it wasn't an error in the wiring"
+      },
+      {
+        "id": "1419411448505040950",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:54:20.713-04:00",
+        "content": "A logic analyzer on the lines yields the following result (Pulseview output). The only logic level that changes is MISO, and it goes high for about 12 microseconds"
+      },
+      {
+        "id": "1419412164313354495",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:57:11.375-04:00",
+        "content": "Whoops, that's not the right output"
+      },
+      {
+        "id": "1419412770033504388",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:59:35.79-04:00",
+        "content": "This is the correct view. CS never goes low, but MISO goes high for about 150ms"
+      },
+      {
+        "id": "1419412965236539492",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:00:22.33-04:00",
+        "content": "I'm not sure why the esp is not taking CS low."
+      },
+      {
+        "id": "1419414746440138782",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:07:27.002-04:00",
+        "content": "Maybe the issue is that I am using full duplex mode instead of half duplex mode for a command/response communication?"
+      },
+      {
+        "id": "1419414795517427945",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:07:38.703-04:00",
+        "content": "Let me see if that changes anything"
+      },
+      {
+        "id": "1419417357243121795",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:17:49.466-04:00",
+        "content": "Well that didn't change anything on the wire"
+      }
+    ],
+    [
+      {
+        "id": "1419410176284295270",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:49:17.392-04:00",
+        "content": "app_imu.c (2/2)\n```c\nesp_err_t app_imu_test_whoami(spi_device_handle_t *imu_spi_handle) {\n    /// WHOAMI register value per icm20948 datasheet\n    uint8_t correct = 0xea;\n    // Only need to send zero on the mosi for whoami register\n    uint8_t whoamicommand = 0;\n    spi_transaction_t trans = {\n        .cmd = whoamicommand,\n        .flags = SPI_TRANS_USE_RXDATA,\n        .length = 8,\n        .override_freq_hz = 0,\n        .tx_buffer = NULL\n    };\n    // Conduct polling transaction since this is so short\n    esp_err_t trans_status = spi_device_polling_transmit(*imu_spi_handle, &trans);\n    if (trans_status != ESP_OK) {\n        ESP_LOGE(TAG, \"spi polling transaction error: %i\", trans_status);\n        return ESP_FAIL;\n    }\n    uint8_t read_value = trans.rx_data[0];\n    if (read_value == correct) {\n        ESP_LOGI(TAG, \"WHOAMI success\");\n        return ESP_OK;\n    } else {\n        ESP_LOGE(TAG, \"Unexpected WHOAMI, expected %i, received %i\", correct, read_value);\n        return ESP_FAIL;\n    }\n}\n```"
+      },
+      {
+        "id": "1419410668121100509",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:51:14.655-04:00",
+        "content": "My WHOAMI test is failing on this assertion (copied surrounding lines for context):\n```c\n    status_code = app_imu_test_whoami(&imu_spi_device);\n    ESP_LOGI(TAG, \"Test IMU whoami status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n```"
+      },
+      {
+        "id": "1419410731442372660",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:51:29.752-04:00",
+        "content": "The received WHOAMI in the logs is 255, but 234 is expected per the datasheet"
+      },
+      {
+        "id": "1419411011248590959",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:52:36.463-04:00",
+        "content": "I was curious as to what this was, and I double and triple checked my wiring to make sure it wasn't an error in the wiring"
+      },
+      {
+        "id": "1419411448505040950",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:54:20.713-04:00",
+        "content": "A logic analyzer on the lines yields the following result (Pulseview output). The only logic level that changes is MISO, and it goes high for about 12 microseconds"
+      },
+      {
+        "id": "1419412164313354495",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:57:11.375-04:00",
+        "content": "Whoops, that's not the right output"
+      },
+      {
+        "id": "1419412770033504388",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:59:35.79-04:00",
+        "content": "This is the correct view. CS never goes low, but MISO goes high for about 150ms"
+      },
+      {
+        "id": "1419412965236539492",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:00:22.33-04:00",
+        "content": "I'm not sure why the esp is not taking CS low."
+      },
+      {
+        "id": "1419414746440138782",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:07:27.002-04:00",
+        "content": "Maybe the issue is that I am using full duplex mode instead of half duplex mode for a command/response communication?"
+      },
+      {
+        "id": "1419414795517427945",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:07:38.703-04:00",
+        "content": "Let me see if that changes anything"
+      },
+      {
+        "id": "1419417357243121795",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T16:17:49.466-04:00",
+        "content": "Well that didn't change anything on the wire"
+      }
+    ],
+    [
+      {
+        "id": "1419882088097644578",
+        "author": "637.8nm",
+        "timestamp": "2025-09-22T23:04:29.936-04:00",
+        "content": "I agree. If my understanding is correct, data is only meaningful when there is a clock and CS is pulled low.\nI am away from my board, but I will test lowering the sample rate on my clone. I suspect 20kHz is OK?\nSPI clock is set to 4 MHz, not sure if that's too high or too low. I see 200kHz as a \"slow\" rate on the IMU datasheet"
+      },
+      {
+        "id": "1419994975424217229",
+        "author": "beer_baron",
+        "timestamp": "2025-09-23T06:33:04.372-04:00",
+        "content": "20khz is too low, you can play with triggers in pulse view, so that you can capture waveforms when CS goes low for example, that allows to have a much smaller buffer of samples and reliability in the capture (with triggers you can capture waveforms pre and post trigger too)\n\n2gigassamples you have there is too much for a clone I doubt it is reliable, you just want to observe a transaction... \n\nI would set SPI clock to 1mhz and then the sample rate on pulseview to 10mhz, for example, that should be reliable for a clone, then play with the sample buffer size depending how long the transaction takes or ser a worst case value... A trigger can be cs low... If it doesn't trigger then something is not working on software / hardware side",
+        "reference": {
+          "messageId": "1419882088097644578",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1419995480598773860",
+        "author": "beer_baron",
+        "timestamp": "2025-09-23T06:35:04.815-04:00",
+        "content": "When you have it working and no longer need to debug it, increase spi clock to the required value"
+      },
+      {
+        "id": "1420580834372616323",
+        "author": "637.8nm",
+        "timestamp": "2025-09-24T21:21:04.03-04:00",
+        "content": "Tried debugging with gdb and openocd, but it looks like the target halts whenever i step into the spi polling transmit. Not sure why that would be the case?",
+        "reference": {
+          "messageId": "1419994975424217229",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1423955691906797661",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-04T04:51:32.768-04:00",
+        "content": "it usually uses the xtensa toolchain, then you just flash over usb-to-uart on a devboard (or an esp-prog if you're fancy) and debug over the also usb available jtag"
+      },
+      {
+        "id": "1423955994500796426",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-04T04:52:44.912-04:00",
+        "content": "(however i have never tried to work with the ultra low power risc core they also come with sometimes)"
+      },
+      {
+        "id": "1423956391885799435",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-04T04:54:19.656-04:00",
+        "content": "for the bootloader there is extensive documentation"
+      },
+      {
+        "id": "1423956411053903913",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-04T04:54:24.226-04:00",
+        "content": "as well as partitions and all"
+      }
+    ],
+    [
+      {
+        "id": "1426989635908927658",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:47:21.386-04:00",
+        "content": "Its because the c3 version used usb jtag seriel"
+      },
+      {
+        "id": "1426989709212520550",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:47:38.863-04:00",
+        "content": "But i am using uart0 over a ch340"
+      },
+      {
+        "id": "1426990681699778700",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:51:30.722-04:00",
+        "content": "No the code Expectes usb jtag",
+        "reference": {
+          "messageId": "1426990272880836790",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1426990712250957886",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:51:38.006-04:00",
+        "content": "Not uart"
+      },
+      {
+        "id": "1426991031932555355",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:52:54.224-04:00",
+        "content": "I was just dumb ..."
+      },
+      {
+        "id": "1426991846256804042",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:56:08.374-04:00",
+        "content": "It wasnt hard thanks to the person who ported to esp32c3",
+        "reference": {
+          "messageId": "1426991111599296684",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1426992739102228531",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:59:41.245-04:00",
+        "content": "Just needed to change some stuff about flash, psram and cache"
+      },
+      {
+        "id": "1426994839630643313",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T14:08:02.05-04:00",
+        "content": "Still aint working"
+      }
+    ],
+    [
+      {
+        "id": "1426989709212520550",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:47:38.863-04:00",
+        "content": "But i am using uart0 over a ch340"
+      },
+      {
+        "id": "1426990272880836790",
+        "author": "kingduken",
+        "timestamp": "2025-10-12T13:49:53.252-04:00",
+        "content": "Probably a few hardware things I would check:\n\nLogic level voltages, i.e. 3.3V or if you need a level shifter\n\nMake sure your Rx/Tx are not backwards",
+        "reference": {
+          "messageId": "1426989709212520550",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1426990613781418045",
+        "author": "kingduken",
+        "timestamp": "2025-10-12T13:51:14.529-04:00",
+        "content": "And maybe a driver config thing I would check is how you're mapping `ttys0`, i.e. if you're mapping `getty` to `ttys0`"
+      },
+      {
+        "id": "1426990681699778700",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:51:30.722-04:00",
+        "content": "No the code Expectes usb jtag",
+        "reference": {
+          "messageId": "1426990272880836790",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1426990712250957886",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:51:38.006-04:00",
+        "content": "Not uart"
+      },
+      {
+        "id": "1426990756647800842",
+        "author": "kingduken",
+        "timestamp": "2025-10-12T13:51:48.591-04:00",
+        "content": "ah... okay... Understood."
+      },
+      {
+        "id": "1426991031932555355",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:52:54.224-04:00",
+        "content": "I was just dumb ..."
+      },
+      {
+        "id": "1426991111599296684",
+        "author": "kingduken",
+        "timestamp": "2025-10-12T13:53:13.218-04:00",
+        "content": "No worries lol. This is a really neat project. Sounds like you've made really good progress",
+        "reference": {
+          "messageId": "1426991031932555355",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1426991846256804042",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:56:08.374-04:00",
+        "content": "It wasnt hard thanks to the person who ported to esp32c3",
+        "reference": {
+          "messageId": "1426991111599296684",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1426992739102228531",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:59:41.245-04:00",
+        "content": "Just needed to change some stuff about flash, psram and cache"
+      },
+      {
+        "id": "1426994839630643313",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T14:08:02.05-04:00",
+        "content": "Still aint working"
+      }
+    ],
+    [
+      {
+        "id": "1427939502089043968",
+        "author": "accur4te",
+        "timestamp": "2025-10-15T04:41:47.131-04:00",
+        "content": "hey guys i am planning to move from arduino ide to esp idf . Can anyone help me guide how to learn the framework . i am use to the vs code based esp ide plus have tried to read through the documentation but its confusing for me . what the correct way to move toward esp idf mastery"
+      },
+      {
+        "id": "1428012572338294854",
+        "author": "_sathvikande",
+        "timestamp": "2025-10-15T09:32:08.436-04:00",
+        "content": "try this udemey course (which is paid ), but worth !,you will able to use esp  idf , course name :IoT Application Development with the ESP32 Using the ESP-IDF\n(Develop a WiFi based application on the ESP32 and Subscribe/Publish MQTT Messages to AWS IoT using ESP-IDF & FreeRTOS)",
+        "reference": {
+          "messageId": "1427939502089043968",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1428033492809421010",
+        "author": "bytewelder",
+        "timestamp": "2025-10-15T10:55:16.265-04:00",
+        "content": "I just went with the docs:\nhttps://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html\nAnd the examples:\nhttps://github.com/espressif/esp-idf/tree/master/examples\n(the examples are on your PC after you install esp-idf)",
+        "reference": {
+          "messageId": "1427939502089043968",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1428033738276606088",
+        "author": "bytewelder",
+        "timestamp": "2025-10-15T10:56:14.789-04:00",
+        "content": "I started with very basic examples and then learned the more advanced ones as I was discovering features."
+      },
+      {
+        "id": "1428042179393093642",
+        "author": "accur4te",
+        "timestamp": "2025-10-15T11:29:47.308-04:00",
+        "content": "hey i own this course , i have reached till wifi block but overall its so confusing he is just reading out the code and not telling from where all the functions are coming",
+        "reference": {
+          "messageId": "1428012572338294854",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1428042427301892177",
+        "author": "accur4te",
+        "timestamp": "2025-10-15T11:30:46.414-04:00",
+        "content": "i tried doing this but i did felt overwhelmed can you share initial sequence in which example should be studied ?",
+        "reference": {
+          "messageId": "1428033492809421010",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1428043360693653526",
+        "author": "_sathvikande",
+        "timestamp": "2025-10-15T11:34:28.952-04:00",
+        "content": "yes , for more details we need to use AI /chat gpt",
+        "reference": {
+          "messageId": "1428042179393093642",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1428043417748897874",
+        "author": "_sathvikande",
+        "timestamp": "2025-10-15T11:34:42.555-04:00",
+        "content": "he just goes no reading code"
+      },
+      {
+        "id": "1428049380270669855",
+        "author": "accur4te",
+        "timestamp": "2025-10-15T11:58:24.131-04:00",
+        "content": "Yeah I will try that , write down code along with him and gpt it after end of subtopic block",
+        "reference": {
+          "messageId": "1428043360693653526",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1428055314397270078",
+        "author": "bytewelder",
+        "timestamp": "2025-10-15T12:21:58.937-04:00",
+        "content": "Start with these:\nhttps://github.com/espressif/esp-idf/tree/master/examples/get-started\nThen perhaps peripherals:\nhttps://github.com/espressif/esp-idf/tree/master/examples/peripherals\nFor the latter I'd start with GPIO and perhaps I2C.\nA bit more advanced would be something like one of the basic http server examples:\nhttps://github.com/espressif/esp-idf/tree/master/examples/protocols/http_server/simple/main",
+        "reference": {
+          "messageId": "1428042427301892177",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1428055989797654578",
+        "author": "bytewelder",
+        "timestamp": "2025-10-15T12:24:39.965-04:00",
+        "content": "If you try to write your own code for wifi and can't figure out why it doesn't find certain symbols, that's because the http samples depend on this component (a component is a dependency, a library):\nhttps://github.com/espressif/esp-idf/tree/master/examples/common_components/protocol_examples_common\nMy next step was studying what this component did to understand how basic wifi and network was working."
+      },
+      {
+        "id": "1428056088154214410",
+        "author": "bytewelder",
+        "timestamp": "2025-10-15T12:25:03.415-04:00",
+        "content": "But it all depends on what you want to build and which topics you want to learn. Perhaps WiFi isn't relevant to you."
+      },
+      {
+        "id": "1428059861945684032",
+        "author": "accur4te",
+        "timestamp": "2025-10-15T12:40:03.157-04:00",
+        "content": "@ByteWelder  thanks mate i will try to follow this sequence"
+      },
+      {
+        "id": "1428067128111661289",
+        "author": "_sathvikande",
+        "timestamp": "2025-10-15T13:08:55.546-04:00",
+        "content": "Yahh , that will be a great move !",
+        "reference": {
+          "messageId": "1428049380270669855",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1428410457898618973",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T11:53:11.746-04:00",
+        "content": "(or maybe spi/i2c, idk what the driver uses)"
+      },
+      {
+        "id": "1428410557828042833",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T11:53:35.571-04:00",
+        "content": "i do think one esp32 is enough"
+      },
+      {
+        "id": "1428410579143364638",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T11:53:40.653-04:00",
+        "content": "the camera one probably"
+      },
+      {
+        "id": "1428410658382151793",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T11:53:59.545-04:00",
+        "content": "are both of those original base esp32?"
+      },
+      {
+        "id": "1428411286689157313",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T11:56:29.345-04:00",
+        "content": "ah it seems like the driver is just 4 inputs that trigger 4 mosfet gates with some other stability components onboard"
+      },
+      {
+        "id": "1428411457401389269",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T11:57:10.046-04:00",
+        "content": "well either way seems like a fun project"
+      },
+      {
+        "id": "1428415117887934534",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T12:11:42.774-04:00",
+        "content": "you can use an esp-prog if you really want but i think the usb way is more convenient with these modules?"
+      },
+      {
+        "id": "1428415228164702260",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T12:12:09.066-04:00",
+        "content": "and yeah any usb-to-uart adapter"
+      },
+      {
+        "id": "1428417012203388998",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T12:19:14.414-04:00",
+        "content": "you can check the snippets for your esp32 platform, usually there's stuff for a lot of stuff already made"
+      },
+      {
+        "id": "1428417042913951745",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T12:19:21.736-04:00",
+        "content": "*samples"
+      },
+      {
+        "id": "1428417194961666246",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T12:19:57.987-04:00",
+        "content": "should be the same",
+        "reference": {
+          "messageId": "1428416483330883634",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1428417479872610366",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T12:21:05.915-04:00",
+        "content": "nono i mean from the IDE",
+        "reference": {
+          "messageId": "1428417218672328744",
+          "channelId": "709820474460471426",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1428417570528169984",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T12:21:27.529-04:00",
+        "content": "both eclipse esp-idf and vscode esp-idf have a sample section"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,744 @@
+You are analyzing Discord messages from an ECE722 (Digital Systems Design) course about Lab 4.
+
+LAB 4 CONTEXT:
+- Implementation of a 2048-bit adder using two approaches
+- Naive approach: pipelined adder (any technique from Lab 3)
+- Clever approach: Type-2 prefix adder from "Monster Adders" paper
+- Focus on achieving high frequency (Fmax) with low ALM utilization
+- Must implement prefix_tree.sv (Kogge-Stone, Sklansky, or Brent-Kung)
+- Parameters: M (chunk size for RCA), P (prefix tree size = W/M)
+- Goal: Optimize for Fmax, ALM count, Quartus runtime
+
+ANALYZE THE FOLLOWING MESSAGES AND EXTRACT:
+
+1. COMMON ISSUES & DEBUGGING
+   - What problems are students encountering?
+   - Error messages and their solutions
+   - Compilation/synthesis issues
+
+2. DESIGN DECISIONS & OPTIMIZATIONS
+   - What values of M (chunk size) are being discussed?
+   - Pipelining strategies
+   - Prefix tree choices (Kogge-Stone vs. Sklansky vs. Brent-Kung)
+   - Retiming and hyperflex usage
+
+3. TECHNICAL TIPS & INSIGHTS
+   - Best practices mentioned
+   - Performance optimization techniques
+   - Quartus-specific tips
+   - Fmax improvement strategies
+
+4. QUESTIONS & ANSWERS
+   - Key clarifications from TAs/Prof
+   - Common misunderstandings resolved
+   - Important implementation details
+
+5. RESULTS & BENCHMARKS
+   - Any Fmax values mentioned
+   - ALM utilization numbers
+   - Comparisons between approaches
+
+Provide a comprehensive summary organized by these categories.
+
+MESSAGES:
+=== ECE722 LAB 4: 2048-BIT ADDER ===
+=== Messages from Nov 24-29, 2025 ===
+=== Channels: homework-logistics + homework-help ===
+
+[11/24/2025, 1:56:33 PM] bananamilkenjoyer443:
+`naiveadder` should have an `in_valid` and `out_valid` right? Else the tb won't work
+
+[11/24/2025, 1:57:00 PM] bananamilkenjoyer443:
+Also, if we wanna use CSA for our `naiveadder`, we can add an M parameter here right? @nachiketkapre
+
+[11/24/2025, 2:03:44 PM] nachiketkapre:
+Bake it in (M)
+
+[11/24/2025, 2:04:12 PM] nachiketkapre:
+And yes it needs the valids too
+
+[11/24/2025, 2:05:14 PM] bananamilkenjoyer443:
+Small fix to tb for `test_adder.sv`. Or else you get this error:
+
+[11/24/2025, 2:09:45 PM] bananamilkenjoyer443:
+`naiveadder` should have its output pin `s` renamed to `sum` to algin with the `test_adder.sv` tb
+
+[11/24/2025, 2:12:24 PM] nachiketkapre:
+Thanks that too
+
+[11/24/2025, 2:16:34 PM] nachiketkapre:
+Yeah thi was fixed in my solution
+
+[11/24/2025, 2:17:40 PM] nachiketkapre:
+Is this just splitting declaration and assignment??
+
+[11/24/2025, 2:24:14 PM] bananamilkenjoyer443:
+Pretty much
+
+[11/24/2025, 2:24:42 PM] bananamilkenjoyer443:
+Verilator being Verilator and complaining
+
+[11/24/2025, 7:35:43 PM] jianxiwang:
+@nachiketkapre so we are actually using 512-bit input and pad 0's to make it 2048 bit?
+
+[11/24/2025, 7:36:54 PM] nachiketkapre:
+No?
+
+[11/24/2025, 7:37:00 PM] jianxiwang:
+that will fail all test cases that expect c_out=1 because MSB will just be in sum insted of overflow to cout
+
+[11/24/2025, 7:37:08 PM] nachiketkapre:
+Is my random generator producing large numbers???
+
+[11/24/2025, 7:37:35 PM] jianxiwang:
+it seems to use 512-bit numbers rather than 2048
+
+[11/24/2025, 7:38:01 PM] nachiketkapre:
+Check the test adder code?
+
+[11/24/2025, 7:38:04 PM] nachiketkapre:
+Maybe bug
+
+[11/24/2025, 7:40:11 PM] jianxiwang:
+yes i'm checking
+
+[11/24/2025, 7:42:47 PM] jianxiwang:
+a.hex and b.hex under `data/` are 512-bit numbers, not 2048
+
+[11/24/2025, 7:43:36 PM] jianxiwang:
+tb looks fine to me, just the data not wide enough, from what i found
+
+[11/24/2025, 7:43:46 PM] nachiketkapre:
+the data generator?
+
+[11/24/2025, 7:43:55 PM] nachiketkapre:
+data/generate_adder_data.py?
+
+[11/24/2025, 7:44:17 PM] jianxiwang:
+checking those
+
+[11/24/2025, 7:48:38 PM] jianxiwang:
+when i specify the `--width 2048` it can generate the correct 2048-sized output: `python generate_adder_data.py --width 2048`
+
+[11/24/2025, 7:49:19 PM] nachiketkapre:
+did you do `make data...`?
+
+[11/24/2025, 7:50:15 PM] jianxiwang:
+no i just run the raw python cmd
+
+[11/24/2025, 7:50:35 PM] jianxiwang:
+are we supposed to generate test case on our own?
+
+[11/24/2025, 7:50:46 PM] nachiketkapre:
+Check makefile
+
+[11/24/2025, 7:50:49 PM] nachiketkapre:
+there's a data target
+
+[11/24/2025, 7:51:01 PM] nachiketkapre:
+`make data DUT=<youradder> W=2048`
+
+[11/24/2025, 7:54:22 PM] jianxiwang:
+```
+make data DUT=naiveadder2048b W=2048
+python3 data/generate_adder_data.py --exhaustive -w 2048 -o data/ -r tb/
+Running exhaustive generation for width=2048 ...
+Traceback (most recent call last):
+  File "/home/j2828wan/ece722-f25/labs/grp_1-lab4/data/generate_adder_data.py", line 128, in <module>
+    generate_test_data(args.num_tests, args.width, args.exhaustive, args.output)
+  File "/home/j2828wan/ece722-f25/labs/grp_1-lab4/data/generate_adder_data.py", line 31, in generate_test_data
+    raise ValueError("Exhaustive mode only allowed for width ≤ 8 (too large otherwise).")
+ValueError: Exhaustive mode only allowed for width ≤ 8 (too large otherwise).
+make: *** [Makefile:41: data] Error 1
+```
+
+[11/24/2025, 7:54:32 PM] jianxiwang:
+i'll disable exhaustive
+
+[11/24/2025, 7:55:49 PM] jianxiwang:
+what is this TESTS for?
+
+[11/24/2025, 7:56:00 PM] nachiketkapre:
+to lmiit number of tests
+
+[11/24/2025, 7:56:12 PM] nachiketkapre:
+if you don't define it it'll switch to exhaustive
+
+[11/24/2025, 7:56:49 PM] jianxiwang:
+ok `make data DUT=naiveadder2048b W=2048 TESTS=10` works fine for me
+
+[11/24/2025, 7:57:12 PM] jianxiwang:
+it is 2048 bit now
+
+[11/24/2025, 7:58:08 PM] jianxiwang:
+so are we supposed to generate data on our own? or we use the same consistent data?
+
+[11/24/2025, 7:58:25 PM] nachiketkapre:
+i gave you a script?
+
+[11/24/2025, 7:58:28 PM] nachiketkapre:
+what do you mean?
+
+[11/24/2025, 7:58:32 PM] nachiketkapre:
+just use it to generate data
+
+[11/24/2025, 7:58:42 PM] nachiketkapre:
+you're welcome to add corner cases if that's what you mean
+
+[11/25/2025, 8:34:30 AM] nachiketkapre:
+@here grader on lab3 is still running.
+
+[11/25/2025, 8:34:35 AM] nachiketkapre:
+been a day!
+
+[11/25/2025, 8:36:59 AM] nachiketkapre:
+Most common error so far... may be student groups that dropped the course.. but just FYI
+
+[11/25/2025, 8:37:13 AM] nachiketkapre:
+Some Quartus errors
+
+[11/25/2025, 8:37:58 AM] nachiketkapre:
+Some kids forgetting to check-in scripts
+
+[11/25/2025, 8:38:23 AM] n1ko0303:
+Chmod +x
+
+[11/25/2025, 8:38:25 AM] nachiketkapre:
+I haven't seen this one.... this is new
+
+[11/25/2025, 8:38:41 AM] nachiketkapre:
+That's your job not mine.. I only chmod +x the base scripts
+
+[11/25/2025, 8:39:24 AM] nachiketkapre:
+but here it sounds like the file either doesn't exist
+
+[11/25/2025, 8:39:52 AM] n1ko0303:
+What I do is chmod +x  *.sh
+
+[11/25/2025, 8:40:15 AM] n1ko0303:
+So I don’t bother going through them one by one
+
+[11/25/2025, 8:46:34 AM] creeperdrop:
+Oh that'll be a rough ride
+
+[11/25/2025, 8:46:38 AM] poofypigeon:
+I saw something similar to this on Lab4 where everything works fine until I run `source env.sh` in that terminal session...?
+
+[11/25/2025, 8:48:09 AM] emirguevara:
+you can declare it and then do
+assign variable = value;
+
+[11/25/2025, 8:48:52 AM] poofypigeon:
+oh right this came up before didn't it
+
+[11/25/2025, 8:49:04 AM] emirguevara:
+it is a good warning
+
+[11/25/2025, 8:49:15 AM] emirguevara:
+yes
+
+[11/25/2025, 8:52:20 AM] poofypigeon:
+well you added an explicit `static` in front of the same line for the lab4 file... are you sure you haven't seen this?
+
+[11/25/2025, 9:07:20 AM] nachiketkapre:
+But not for lab3
+
+[11/25/2025, 9:07:40 AM] nachiketkapre:
+Only one kids code has this error for some reason
+
+[11/25/2025, 9:07:54 AM] poofypigeon:
+As long as I'm not that kid
+
+[11/25/2025, 9:08:02 AM] poofypigeon:
+🙃
+
+[11/25/2025, 9:09:09 AM] poofypigeon:
+But I'm guessing it's something to do with verilator version sourced
+
+[11/25/2025, 9:13:29 AM] nachiketkapre:
+that might be it
+
+[11/25/2025, 9:13:38 AM] nachiketkapre:
+still odd
+
+[11/25/2025, 11:36:29 AM] bananamilkenjoyer443:
+I don't think a hardcoded width of 32 is what we want for the prefix tb...
+
+[11/25/2025, 11:46:11 AM] nachiketkapre:
+gets overriden with verilator flags
+
+[11/25/2025, 12:02:47 PM] bananamilkenjoyer443:
+I see in the makefile. But when I run `make sim DUT=prefix_tree N=64`, (for example) I get the width to still be 32 (if I revert my changes). So this might not be working as intended
+
+[11/25/2025, 12:17:34 PM] bananamilkenjoyer443:
+I think Makefile is fine, prefix tb needs to be updated
+
+[11/25/2025, 12:17:38 PM] nachiketkapre:
+isn't DUT_PARAMS passed to verilator? Check teh verilator command?
+
+[11/25/2025, 12:17:49 PM] bananamilkenjoyer443:
+Yeah that's all good
+
+[11/25/2025, 12:18:39 PM] nachiketkapre:
+It should be using N from the +define
+
+[11/25/2025, 12:20:25 PM] bananamilkenjoyer443:
+Verilator is, but the tb is not. For example, in the test_adder tb, its the same flow of using DUT_PARAMS for W and M, but it doesn't have hardcoded values
+
+[11/25/2025, 12:20:49 PM] bananamilkenjoyer443:
+For prefix tree, that hardcoded 32 needs to be replaced with ``WIDTH`
+
+[11/25/2025, 12:22:16 PM] nachiketkapre:
+ok
+
+[11/25/2025, 12:22:31 PM] nachiketkapre:
+Safe to fix?
+
+[11/25/2025, 12:22:50 PM] nachiketkapre:
+Wait why WIDTH? and not N
+
+[11/25/2025, 12:24:59 PM] nachiketkapre:
+Just tested with `N and it works
+
+[11/25/2025, 12:25:19 PM] nachiketkapre:
+also tested with hardcoded 32 and it work too dafaq?
+
+[11/25/2025, 12:27:15 PM] nachiketkapre:
+but `N is correct
+
+[11/25/2025, 12:27:28 PM] nachiketkapre:
+32 happens to work if I geneated data with larger width and also works with smaller width because it pads 0s
+
+[11/25/2025, 12:27:31 PM] nachiketkapre:
+wow wtf 😛
+
+[11/25/2025, 12:28:06 PM] nachiketkapre:
+pishing fix
+
+[11/25/2025, 12:41:48 PM] bananamilkenjoyer443:
+Yeah sorry, `N is right
+
+[11/27/2025, 3:49:22 PM] haibo3431:
+I got the following error from the tb when running
+
+`make sim DUT=naiveadder2048b M=8`
+
+anyone knows the fix?
+
+```
+haulcraft% make sim DUT=naiveadder2048b M=8
+rm -rf sim
+mkdir -p /tmp/h3sun/sim/
+verilator -DTESTDIR=\"/home/h3sun/ece722-f25/labs/grp_14-lab4/data/\" -DTOP= \
+        -CFLAGS \
+        -Itb\
+        -Irtl\
+        --cc rtl/naiveadder2048b.sv\
+        tb/test_adder.sv \
+        --exe /home/h3sun/ece722-f25/labs/grp_14-lab4/tb/test.cpp \
+        -top-module top \
+        --Mdir /tmp/h3sun/sim/ \
+        +define+TOPNAME=naiveadder2048b \
+        +define+W=2048 +define+M=8
+%Warning-IMPLICITSTATIC: tb/test_adder.sv:136:29: Variable's lifetime implicitly set to static
+                                                : ... The initializer value will only be set once
+                                                : ... Suggest use 'static' before variable declaration'
+  136 |               logic [M-1:0] got_chunk = s[i*M +: M];
+      |                             ^~~~~~~~~
+                         ... For warning description see https://verilator.org/warn/IMPLICITSTATIC?v=5.043
+                         ... Use "/* verilator lint_off IMPLICITSTATIC */" and lint_on around source to disable this message.
+%Warning-IMPLICITSTATIC: tb/test_adder.sv:137:29: Variable's lifetime implicitly set to static
+                                                : ... The initializer value will only be set once
+                                                : ... Suggest use 'static' before variable declaration'
+  137 |               logic [M-1:0] exp_chunk = exp.s[i*M +: M];
+      |                             ^~~~~~~~~
+%Error: Exiting due to 2 warning(s)
+make: *** [Makefile:47: compile] Error 1
+haulcraft%
+```
+
+[11/27/2025, 3:50:45 PM] bananamilkenjoyer443:
+@Haibo
+
+[11/27/2025, 3:51:46 PM] haibo3431:
+thanks man
+
+[11/27/2025, 5:59:21 PM] haibo3431:
+anyone knows where does `c_in` and `c_out` go in the diagram here?
+
+[11/27/2025, 5:59:42 PM] haibo3431:
+like `c_out` i can make it as the `c_out` of the MSB adder
+
+[11/27/2025, 5:59:50 PM] haibo3431:
+what i should do with `c_in`?
+
+[11/27/2025, 6:00:35 PM] nachiketkapre:
+Umm that’s something you should solve on your own
+
+[11/27/2025, 6:00:38 PM] nachiketkapre:
+No sharing allowed
+
+[11/27/2025, 10:09:18 PM] creeperdrop:
+@nachiketkapre For the naiive adder, assigning M in `make {synth|sim} M={}` is not working. It follows whatever was assigned to M in the design as default. It is most likely because of the variable `ARCH_PARAM_VAL` as it is not assigned
+
+[11/27/2025, 10:37:13 PM] nachiketkapre:
+Yup a quick fix incoming
+
+[11/27/2025, 10:37:19 PM] creeperdrop:
+Fixed it
+
+[11/27/2025, 10:37:25 PM] creeperdrop:
+Thanks still!
+
+[11/28/2025, 1:01:40 PM] haibo3431:
+razorcrest seems to run out of resource?
+
+I tried to run a sweep on naiveadder but seems like it ran out of resource.
+
+```
+rror (20549): Current module quartus_fit was unexpectedly terminated by signal 9. This may be because some system resource has been exhausted, or quartus_fit performed an illegal operation. You can view system resource requirements on the System and Software Requirements page of the Intel FPGA website (https://fpgasoftware.intel.com/requirements/).
+Error (23035): Tcl error: ERROR: Error(s) found while running an executable. See report file(s) for error message(s). Message log indicates which executable was run last.
+
+    while executing
+"execute_module -tool fit"
+    (file "fpga/impl.tcl" line 38)
+------------------------------------------------
+ERROR: Error(s) found while running an executable. See report file(s) for error message(s). Message log indicates which executable was run last.
+
+    while executing
+"execute_module -tool fit"
+    (file "fpga/impl.tcl" line 38)
+------------------------------------------------
+Error (23031): Evaluation of Tcl script fpga/impl.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 3 errors, 5 warnings
+    Error: Peak virtual memory: 1340 megabytes
+    Error: Processing ended: Fri Nov 28 05:34:32 2025
+    Error: Elapsed time: 02:06:24
+    Error: System process ID: 2002567
+make: *** [Makefile:80: fit] Error 3
+```
+
+[11/28/2025, 1:05:10 PM] nachiketkapre:
+Maybe you're using too many FFs, resources!?
+
+[11/28/2025, 1:05:23 PM] nachiketkapre:
+I see no resource exhausted
+
+[11/28/2025, 1:05:39 PM] haibo3431:
+ok i see. can't be too naive then
+
+[11/28/2025, 1:14:42 PM] nachiketkapre:
+Our naive solution takes ~20-30 mins to compile
+
+[11/28/2025, 1:18:35 PM] haibo3431:
+ok thank you for the reference.
+
+[11/28/2025, 1:40:00 PM] bananamilkenjoyer443:
+Is that for sim or fit?
+
+[11/28/2025, 1:40:18 PM] bananamilkenjoyer443:
+Nvm this is fit
+
+[11/28/2025, 1:40:24 PM] bananamilkenjoyer443:
+How long is sim supposed to take?
+
+[11/28/2025, 3:59:52 PM] kunj99:
+Depends, here is what I found:
+
+Naive Adder ( M= 10):  ~ 1min 30 sec
+
+as i increase M, the time taken to run the sim decreases.
+
+[11/28/2025, 8:32:57 PM] bananamilkenjoyer443:
+How many tests are you running?
+
+[11/28/2025, 8:40:18 PM] bananamilkenjoyer443:
+Are we expected to use retiming and the hyperflex registers in order to meet the thresholds?
+
+[11/28/2025, 8:40:57 PM] bananamilkenjoyer443:
+Also, are we just aiming for max frequency this time? That's what it seems like with the README
+
+[11/28/2025, 8:41:20 PM] bananamilkenjoyer443:
+Time to read!
+
+[11/28/2025, 8:41:36 PM] nachiketkapre:
+The clever solution is much cheaper
+
+[11/28/2025, 8:41:40 PM] nachiketkapre:
+And compiles way faster
+
+[11/28/2025, 8:42:09 PM] bananamilkenjoyer443:
+So for picking the M value for naive, is it just a judgement call? No way we sweep
+
+[11/28/2025, 8:46:09 PM] nachiketkapre:
+You sweep
+
+[11/28/2025, 8:46:10 PM] nachiketkapre:
+Not me
+
+[11/28/2025, 8:46:17 PM] nachiketkapre:
+I just run with your best m
+
+[11/28/2025, 8:46:25 PM] nachiketkapre:
+I learn my lesson 😂
+
+[11/28/2025, 8:46:37 PM] bananamilkenjoyer443:
+Yeah, but the servers. Think of the servers
+
+[11/28/2025, 8:46:41 PM] nachiketkapre:
+No idea quarters would be so slow in lab3
+
+[11/28/2025, 9:08:51 PM] n1ko0303:
+```bash
+  ~/ece72/l/grp_13-lab4 on   main !5 ❯ make sim DUT=rca W=2048 M=64         with lnikolai@razorcrest at  21:06:59
+rm -rf sim
+mkdir -p /tmp/lnikolai/sim/
+verilator -Wno-SELRANGE -Wno-WIDTHEXPAND -Wno-WIDTHTRUNC -DTESTDIR=\"/home/lnikolai/ece722-f25/labs/grp_13-lab4/data/\" -DTOP= \
+        -CFLAGS \
+        -Itb\
+        -Irtl\
+        --cc rtl/rca.sv\
+        tb/test_adder.sv \
+        --exe /home/lnikolai/ece722-f25/labs/grp_13-lab4/tb/test.cpp \
+        -top-module top \
+        --Mdir /tmp/lnikolai/sim/ \
+        +define+TOPNAME=rca \
+        +define+W=2048 +define+M=64
+%Warning-IMPLICITSTATIC: tb/test_adder.sv:136:29: Variable's lifetime implicitly set to static
+                                                : ... The initializer value will only be set once
+                                                : ... Suggest use 'static' before variable declaration'
+  136 |               logic [M-1:0] got_chunk = s[i*M +: M];
+      |                             ^~~~~~~~~
+                         ... For warning description see https://verilator.org/warn/IMPLICITSTATIC?v=5.043
+                         ... Use "/* verilator lint_off IMPLICITSTATIC */" and lint_on around source to disable this message.
+%Warning-IMPLICITSTATIC: tb/test_adder.sv:137:29: Variable's lifetime implicitly set to static
+                                                : ... The initializer value will only be set once
+                                                : ... Suggest use 'static' before variable declaration'
+  137 |               logic [M-1:0] exp_chunk = exp.s[i*M +: M];
+      |                             ^~~~~~~~~
+%Error-PINNOTFOUND: tb/test_adder.sv:58:17: Parameter not found: 'M'
+   58 |   rca #(.W(W), .M(M)) dut (
+      |                 ^
+                    ... For error description see https://verilator.org/warn/PINNOTFOUND?v=5.043
+%Error: Exiting due to 1 error(s), 2 warning(s)
+make: *** [Makefile:51: compile] Error 1
+  ~/ece72/l/grp_13-lab4 on   main !5
+```
+
+[11/28/2025, 9:11:27 PM] n1ko0303:
+anyone got the same issue?
+
+[11/28/2025, 9:11:56 PM] n1ko0303:
+I have updated the repository with the changes professor made recently
+
+[11/28/2025, 9:12:45 PM] rwsos_:
+not too sure about the last error but first two fix here ^
+
+[11/28/2025, 9:22:10 PM] n1ko0303:
+nevermind the issue is in the Makefile line 29
+
+[11/28/2025, 9:22:25 PM] n1ko0303:
+VFLAGS += -Wno-SELRANGE -Wno-WIDTHEXPAND -Wno-WIDTHTRUNC -Wno-IMPLICITSTATIC -DTESTDIR=\"$(PWD)/data/\" -DTOP=$(TOP)
+
+[11/28/2025, 10:07:50 PM] n1ko0303:
+how to make the rca_pipe.sv part of the System verilog? so what is going on is that my cleveradder2048b.sv is looking for the rca_pipe.sv but it was not the part of it before have anyone else had the same issue?
+
+[11/28/2025, 10:08:22 PM] n1ko0303:
+I am looking for it in the documentation but I cant
+
+[11/28/2025, 10:08:28 PM] n1ko0303:
+anyone with the simmilar issue
+
+[11/28/2025, 10:09:59 PM] kunj99:
+the most i tried is 100 test vectors, doesn't take longer than 2-3 min for both naive and clever
+
+[11/28/2025, 10:11:28 PM] kunj99:
+if you don't want to edit the setup.tcl you can just add ``include "rca_pipe.sv"` at the top of you naive adder .sv
+
+[11/28/2025, 10:12:56 PM] n1ko0303:
+oohh ok I see that makes sense
+
+[11/28/2025, 10:14:04 PM] n1ko0303:
+fixed it thanks @Kunj
+
+[11/28/2025, 10:18:05 PM] n1ko0303:
+I wonder will it affect the execution if I will do both? like add the include line and change the setup.tcl
+
+[11/28/2025, 10:18:20 PM] n1ko0303:
+let me do some experiments
+
+[11/28/2025, 10:21:47 PM] bananamilkenjoyer443:
+Either I'm rate limited or my implementation sucks...
+
+[11/28/2025, 10:22:29 PM] n1ko0303:
+yeah it takes 3 minute max on my side too
+
+[11/28/2025, 10:22:33 PM] n1ko0303:
+use the razorcrest
+
+[11/28/2025, 10:22:38 PM] n1ko0303:
+noeone here
+
+[11/28/2025, 10:22:42 PM] kunj99:
+make sim is fine, but make fit takes its sweet time on naive
+
+[11/28/2025, 10:23:37 PM] n1ko0303:
+sims run in one minute or two on razorcrest 
+
+fit for the clever runs a bit longer than on the naive
+
+[11/28/2025, 10:24:03 PM] n1ko0303:
+maybe 4 minutes for the naive and 6-7 for the clever
+
+[11/28/2025, 11:30:38 PM] bananamilkenjoyer443:
+Yeah I think uwing is doomed. 30 min for synth 😭
+
+[11/28/2025, 11:42:35 PM] n1ko0303:
+are you doing the sweep?
+
+[11/28/2025, 11:42:43 PM] n1ko0303:
+dont do the sweep
+
+[11/28/2025, 11:42:56 PM] n1ko0303:
+use the M and W values given already
+
+[11/28/2025, 11:44:03 PM] jimmywzp6:
+where it is given
+
+[11/28/2025, 11:45:44 PM] n1ko0303:
+To enable autograding, please create {naive|clever}.sh scripts to run your
+fitting script and to populate results/winner_{naive|clever}.csv in one shot
+(no sweep!!).
+
+[11/28/2025, 11:46:57 PM] n1ko0303:
+if you are doing sweep autograder will give you 0
+
+[11/28/2025, 11:47:36 PM] jimmywzp6:
+So do I need use sweep first  to find best M
+
+[11/28/2025, 11:48:05 PM] n1ko0303:
+yes
+
+[11/28/2025, 11:48:17 PM] n1ko0303:
+first sweep and find it and plug it in the script automatically
+
+[11/28/2025, 11:48:22 PM] n1ko0303:
+so it will run that M only
+
+[11/28/2025, 11:48:37 PM] n1ko0303:
+basically start 8 16 32 64 128 I would not go beyond that
+
+[11/28/2025, 11:48:59 PM] n1ko0303:
+even 128 is too much tbh but run as much as you want whatever gives you the best Fmax from the listed
+
+[11/28/2025, 11:49:00 PM] n1ko0303:
+use that
+
+[11/28/2025, 11:49:03 PM] n1ko0303:
+basically
+
+[11/28/2025, 11:49:44 PM] n1ko0303:
+I am just test running everything with fixed value making it work on only one M and W values and then I will write the sweep script that will go and find the best solution and I will plug that in to my fit script
+
+[11/28/2025, 11:49:46 PM] n1ko0303:
+that is all
+
+[11/28/2025, 11:50:00 PM] n1ko0303:
+that is how I understood the lab manual Idk...
+
+[11/28/2025, 11:50:35 PM] n1ko0303:
+plus for the monster adders you have to read the paper again, there are some specific parts you have to change in your clever verilog to make it work
+
+[11/28/2025, 11:50:46 PM] n1ko0303:
+this is for the part 2 of the lab
+
+[11/28/2025, 11:51:19 PM] n1ko0303:
+actually W stays always the same so you dont touch it, just change M
+
+[11/28/2025, 11:52:17 PM] n1ko0303:
+I guess prof made it requirement like this for running the autograder faster
+
+[11/28/2025, 11:52:41 PM] n1ko0303:
+or last time it took days, and if bug in the grading script than you have to rerun for couple more days to fix it
+
+[11/28/2025, 11:53:15 PM] n1ko0303:
+so now if better M exists and you wont find it you get 0 I assume
+
+[11/28/2025, 11:57:16 PM] jimmywzp6:
+cannot run data
+
+[11/28/2025, 11:57:22 PM] jimmywzp6:
+make data
+
+[11/28/2025, 11:59:41 PM] n1ko0303:
+use this I think you forgot to add the tests parameter
+
+[11/28/2025, 11:59:42 PM] n1ko0303:
+make data DUT=cleveradder2048b W=2048 M=64 TESTS=100
+
+[11/29/2025, 12:00:06 AM] n1ko0303:
+you can change the tests parameter dynamically
+
+[11/29/2025, 12:00:13 AM] n1ko0303:
+its an example command
+
+[11/29/2025, 12:00:17 AM] jimmywzp6:
+ok
+
+[11/29/2025, 12:00:22 AM] jimmywzp6:
+thk u TA
+
+[11/29/2025, 12:00:43 AM] n1ko0303:
+lol naah bro, I am just trying to figure things out as you do
+
+[11/29/2025, 1:14:01 AM] n1ko0303:
+what is the command that you are trying to run
+
+[11/29/2025, 1:14:53 AM] jimmywzp6:
+make synth
+
+[11/29/2025, 1:17:37 AM] n1ko0303:
+did you pull the new makefile from git?
+
+[11/29/2025, 1:17:42 AM] n1ko0303:
+it was updated 23 hours ago
+
+[11/29/2025, 1:17:54 AM] n1ko0303:
+prof found bug in it
+
+[11/29/2025, 1:18:24 AM] n1ko0303:
+also change this line I have changed it to the following since it was throwing issues for me for some reason:
+
+VFLAGS += -Wno-SELRANGE -Wno-WIDTHEXPAND -Wno-WIDTHTRUNC -Wno-IMPLICITSTATIC -DTESTDIR="$(PWD)/data/" -DTOP=$(TOP)
+
+[11/29/2025, 1:21:08 AM] n1ko0303:
+but if the test is passing all the random tests you do not need to run the synth
+
+[11/29/2025, 1:21:20 AM] n1ko0303:
+but its good to double check on different M values I agree
+
+[11/29/2025, 1:21:54 AM] n1ko0303:
+using the make ... test=100,1000 ....
+
+[11/29/2025, 1:25:24 AM] jimmywzp6:
+Okay I’ll try it
+
+[11/29/2025, 1:27:16 AM] n1ko0303:
+TEST SUMMARY:
+  Total tests run: 1000
+  Passed: 1000
+  Failed: 0
+  GRADE: 1
+  Result: ALL TESTS PASSED!
+
+if you are receving message like this most likely you are good that is what I am trying to say, but double check by running the synth for the different values anyways
+
+[11/29/2025, 10:45:16 AM] bananamilkenjoyer443:
+We're looking for Fmax (restricted) right? And if we have a tie between M values, pick the the one with least area?
+
+[11/29/2025, 11:09:22 AM] nachiketkapre:
+Yes
+
+[11/29/2025, 11:58:08 AM] n1ko0303:
+did everyone start executing their code on razorcrest?
+

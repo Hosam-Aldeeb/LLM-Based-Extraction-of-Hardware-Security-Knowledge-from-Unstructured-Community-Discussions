@@ -1,0 +1,571 @@
+{
+  "channel": "HardwayHacking_hardware",
+  "source": "./discord-exports/HardwayHacking_hardware_Jan2025_export.json",
+  "filteredMessages": 13,
+  "totalThreads": 11,
+  "substantialThreads": 6,
+  "threads": [
+    [
+      {
+        "id": "1377699311470514246",
+        "author": "coyoteklz",
+        "timestamp": "2025-05-29T13:25:12.27-04:00",
+        "content": "usup guys, starting now in this hacking world. i am using a mac, and i know its not the best machine for it. i live in brazil, so i am not a rich guy lol. could u guys please recommend a good machine to start ?"
+      },
+      {
+        "id": "1377702114746175539",
+        "author": "loredous",
+        "timestamp": "2025-05-29T13:36:20.623-04:00",
+        "content": "Your Mac will be perfectly fine. No need to buy something new",
+        "reference": {
+          "messageId": "1377699311470514246",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1377702343394463856",
+        "author": "loredous",
+        "timestamp": "2025-05-29T13:37:15.137-04:00",
+        "content": "Most things that you would do in ethical hacking would be fine running on anything more powerful than maybe a raspberry pi"
+      },
+      {
+        "id": "1377703099572944946",
+        "author": "coyoteklz",
+        "timestamp": "2025-05-29T13:40:15.424-04:00",
+        "content": "got it, but mine is a 2014 mabook air 8 gb. still good?"
+      },
+      {
+        "id": "1377704373672607814",
+        "author": "coyoteklz",
+        "timestamp": "2025-05-29T13:45:19.193-04:00",
+        "content": "do u think it would be better if i put an linux distro on it ?"
+      }
+    ],
+    [
+      {
+        "id": "1397577460760973413",
+        "author": "atorni",
+        "timestamp": "2025-07-23T09:53:52.379-04:00",
+        "content": "hey everyone, i recently bought a laptop (windows) but sadly its locked and i dont have the password, the boot order in the bios is locked so i cant put a new windows and i cant do the thing with the cmd to remove the admin password, any ideas on how to break into it ?"
+      },
+      {
+        "id": "1397579091191926825",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:00:21.104-04:00",
+        "content": "do you have proof of ownership? why not contact the seller?",
+        "reference": {
+          "messageId": "1397577460760973413",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1397579292275249192",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:01:09.046-04:00",
+        "content": "Maybe he stolen?",
+        "reference": {
+          "messageId": "1397579091191926825",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1397579910016401519",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:03:36.327-04:00",
+        "content": "could be stolen, could be bought off of ebay, no way of knowing. he is asking how to bypass windows bios/login which smells like against tos. if he has a proof of ownership he may be able to contact the seller or manufacturer for help",
+        "reference": {
+          "messageId": "1397579292275249192",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1397580208579543156",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:04:47.51-04:00",
+        "content": "yap, thats right",
+        "reference": {
+          "messageId": "1397579910016401519",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1397580218901991434",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:04:49.971-04:00",
+        "content": "a good step, by asking the previous owner directly"
+      },
+      {
+        "id": "1397580583328022580",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:06:16.857-04:00",
+        "content": "i bought a bunch of laptops, good seller and everything but only one of them is locked"
+      },
+      {
+        "id": "1397580607785009162",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:06:22.688-04:00",
+        "content": "i had no issues with the rest"
+      },
+      {
+        "id": "1397580755827167425",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:06:57.984-04:00",
+        "content": "i found which company the laptop came from"
+      },
+      {
+        "id": "1397581103346356378",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:08:20.839-04:00",
+        "content": ""
+      },
+      {
+        "id": "1397581264415883336",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:08:59.241-04:00",
+        "content": "do you have a receipt/invoice from the seller?"
+      },
+      {
+        "id": "1397581437871587399",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:09:40.596-04:00",
+        "content": "huh i probably have that somewhere yes"
+      },
+      {
+        "id": "1397581501259972698",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:09:55.709-04:00",
+        "content": "do you think calling the company and asking is a good idea ?"
+      },
+      {
+        "id": "1397581583484981339",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:10:15.313-04:00",
+        "content": "better like thats"
+      },
+      {
+        "id": "1397581615013822545",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:10:22.83-04:00",
+        "content": "cause its a investments and stuff company"
+      },
+      {
+        "id": "1397581701055774841",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:10:43.344-04:00",
+        "content": "and i dont want to have any problems lmao"
+      },
+      {
+        "id": "1397582007982358680",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:11:56.521-04:00",
+        "content": "doesn't hurt to give it a try. they might have an it-department that is able to help you."
+      },
+      {
+        "id": "1397582047685509181",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:12:05.987-04:00",
+        "content": "if you can proof the legitimacy of the purchase"
+      },
+      {
+        "id": "1397582118053216267",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:12:22.764-04:00",
+        "content": "yh but if the guy i bought it from worked from there and sold it hes fucked lmao"
+      },
+      {
+        "id": "1397582139226062939",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:12:27.812-04:00",
+        "content": "cause i still got his name on my computer"
+      },
+      {
+        "id": "1397582204111945749",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:12:43.282-04:00",
+        "content": "Is there anyone here who uses Termux on Android?"
+      },
+      {
+        "id": "1397582296663457974",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:13:05.348-04:00",
+        "content": "like theres his first name and name + name of the company"
+      },
+      {
+        "id": "1397582325461684336",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:13:12.214-04:00",
+        "content": "wdym fucked",
+        "reference": {
+          "messageId": "1397582118053216267",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1397582423453339759",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:13:35.577-04:00",
+        "content": "well if he sold it even tho he couldnt"
+      },
+      {
+        "id": "1397582445905317908",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:13:40.93-04:00",
+        "content": "idk but its weird"
+      },
+      {
+        "id": "1397582473310769205",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:13:47.464-04:00",
+        "content": "really?",
+        "reference": {
+          "messageId": "1397582240241942548",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1397582601736421486",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:14:18.083-04:00",
+        "content": "if he sold company property it's stolen",
+        "reference": {
+          "messageId": "1397582423453339759",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1397582677451866142",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:14:36.135-04:00",
+        "content": "yep so hell get in trouble lmao"
+      },
+      {
+        "id": "1397582710360248353",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:14:43.981-04:00",
+        "content": "maybe i should try contacting him first"
+      },
+      {
+        "id": "1397582716735721472",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:14:45.501-04:00",
+        "content": "the seller"
+      },
+      {
+        "id": "1397582732552310876",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:14:49.272-04:00",
+        "content": "before doing anything ?"
+      },
+      {
+        "id": "1397582808335122512",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:15:07.34-04:00",
+        "content": "I haven't used Termux for a long time, I used to use it to dox problematic people but now I've forgotten how to use it",
+        "reference": {
+          "messageId": "1397582551610298521",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1397582896197406900",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:15:28.288-04:00",
+        "content": "??? i dont think youre in the right place"
+      },
+      {
+        "id": "1397583075483062357",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:16:11.033-04:00",
+        "content": "nothing to do here, you're in possession of stolen hardware, you can't unlock it without the company and they very likely want their laptop back don't you think?"
+      },
+      {
+        "id": "1397583170177863720",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:16:33.61-04:00",
+        "content": "well yh but is 300 euros worth putting someone in jail lol ?"
+      },
+      {
+        "id": "1397583264713277612",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:16:56.149-04:00",
+        "content": "shouldnt have stolen lol"
+      },
+      {
+        "id": "1397583619190558780",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:18:20.663-04:00",
+        "content": "i think imma just throw it away"
+      },
+      {
+        "id": "1397583926209413150",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:19:33.862-04:00",
+        "content": "put it on the wall"
+      },
+      {
+        "id": "1397584045164199996",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:20:02.223-04:00",
+        "content": "now remind me about termux as far as github",
+        "reference": {
+          "messageId": "1397583882249048155",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1397584232288616528",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:20:46.837-04:00",
+        "content": "I was in a coma and forgot about it"
+      },
+      {
+        "id": "1397584389642256516",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:21:24.353-04:00",
+        "content": "okey, sorry dude"
+      },
+      {
+        "id": "1397584509121200220",
+        "author": "colex0094",
+        "timestamp": "2025-07-23T10:21:52.839-04:00",
+        "content": "so where can i learn it?",
+        "reference": {
+          "messageId": "1397584339386236999",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1397584973816664074",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:23:43.631-04:00",
+        "content": "fair enough"
+      },
+      {
+        "id": "1397585074492542987",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:24:07.634-04:00",
+        "content": "bought if off ebay so"
+      },
+      {
+        "id": "1397585286678183957",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:24:58.223-04:00",
+        "content": "ive never seen a laptop so secured too hahaah"
+      },
+      {
+        "id": "1397585628975071253",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:26:19.833-04:00",
+        "content": "yh"
+      },
+      {
+        "id": "1397585742691045496",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:26:46.945-04:00",
+        "content": "its weird cause i bought a bunch from the same guy and none had issues"
+      },
+      {
+        "id": "1397585753801883772",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:26:49.594-04:00",
+        "content": "and he has good reviews"
+      },
+      {
+        "id": "1397585931770265670",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:27:32.025-04:00",
+        "content": "4500 reviews 4.9 stars"
+      },
+      {
+        "id": "1397585936572743852",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:27:33.17-04:00",
+        "content": "yh"
+      },
+      {
+        "id": "1397585985700888707",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:27:44.883-04:00",
+        "content": "they dont have a phone number tho fck"
+      },
+      {
+        "id": "1397586003748847819",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:27:49.186-04:00",
+        "content": "ill write an email"
+      },
+      {
+        "id": "1397586552867000482",
+        "author": "atorni",
+        "timestamp": "2025-07-23T10:30:00.106-04:00",
+        "content": "yep okay"
+      }
+    ],
+    [
+      {
+        "id": "1397583075483062357",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:16:11.033-04:00",
+        "content": "nothing to do here, you're in possession of stolen hardware, you can't unlock it without the company and they very likely want their laptop back don't you think?"
+      },
+      {
+        "id": "1397583264713277612",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:16:56.149-04:00",
+        "content": "shouldnt have stolen lol"
+      },
+      {
+        "id": "1397583926209413150",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:19:33.862-04:00",
+        "content": "put it on the wall"
+      }
+    ],
+    [
+      {
+        "id": "1400968764027179063",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:29:42.085-04:00",
+        "content": "and keep in mind it is illegal to tamper with electronics that don't belong to you, it depends on what you mean by \"wipe\" and how you do it"
+      },
+      {
+        "id": "1400968929706377329",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:30:21.586-04:00",
+        "content": "factory reset performed by/with the assitance of IT because of a software or firmware issue? awesome"
+      },
+      {
+        "id": "1400968974480707685",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:30:32.261-04:00",
+        "content": "nuking it and trying to install a custom os or something?"
+      },
+      {
+        "id": "1400968981279543438",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:30:33.882-04:00",
+        "content": "nada"
+      },
+      {
+        "id": "1400969049592168588",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:30:50.169-04:00",
+        "content": "i mean it's a chormebook so that example is probably bad"
+      },
+      {
+        "id": "1400969083201126461",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:30:58.182-04:00",
+        "content": "lol"
+      },
+      {
+        "id": "1400969091510042634",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:31:00.163-04:00",
+        "content": "but ykwim"
+      },
+      {
+        "id": "1400969223907577977",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:31:31.729-04:00",
+        "content": "if you just want to remove all your user data you can probably do that manually with all honesty lol, it depends how much you have"
+      },
+      {
+        "id": "1400969387174793288",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:32:10.655-04:00",
+        "content": "wiping it completely on the level of the os would mean creating new users which is something you'd need admin for"
+      },
+      {
+        "id": "1400969506272051330",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:32:39.05-04:00",
+        "content": "same with changing os or modifying firmware, in fact if it belongs to the school it most likely has a secure boot bios password"
+      },
+      {
+        "id": "1400969673553739787",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:33:18.933-04:00",
+        "content": "but yeah it's probably not just against school policy but also illegal depending on where you live, assuming it belongs to the school"
+      }
+    ],
+    [
+      {
+        "id": "1423716212877037609",
+        "author": "_cosmicecho",
+        "timestamp": "2025-10-03T12:59:56.518-04:00",
+        "content": "Thank you\n\nActually my hobby is just simple for now - to understand how to defend my laptop XD firmware reflashing is the sort of recovery phase if all defenses fail and a compromise happens"
+      },
+      {
+        "id": "1423725166994657371",
+        "author": "_cosmicecho",
+        "timestamp": "2025-10-03T13:35:31.346-04:00",
+        "content": "yooo,\n\nSo there's an even deeper form of spyware called hardware implants\n\nBecause it is implanted on the hardware itself, and its probably purely physical\n\nJust buy from the right supplier and manufacturer though it should be almost zero\n\nhttps://www.ghtinc.com/supply-chain-security-addressing-serialization-risks-and-hardware-implants-in-information-security/",
+        "reference": {
+          "messageId": "1423716212877037609",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1423725656000299081",
+        "author": "loredous",
+        "timestamp": "2025-10-03T13:37:27.934-04:00",
+        "content": "To put this in perspective, the chances of having compromised hardware are almost zero. Typically this is going to be something that is specifically targeted towards a device or entity. Most often it will be high-end networking equipment.",
+        "reference": {
+          "messageId": "1423725166994657371",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1423725866403237960",
+        "author": "_cosmicecho",
+        "timestamp": "2025-10-03T13:38:18.098-04:00",
+        "content": "Thanks for the info"
+      }
+    ],
+    [
+      {
+        "id": "1429954275525660712",
+        "author": "whyme33",
+        "timestamp": "2025-10-20T18:07:46.551-04:00",
+        "content": "Best laptop for ethical hacking under 600 usd"
+      },
+      {
+        "id": "1429954975609655469",
+        "author": "loredous",
+        "timestamp": "2025-10-20T18:10:33.464-04:00",
+        "content": "Anything for that price is perfectly fine. You don't need anything fancy or expensive",
+        "reference": {
+          "messageId": "1429954275525660712",
+          "channelId": "985150159514124318",
+          "guildId": "135499198865997824"
+        }
+      },
+      {
+        "id": "1429955148972822549",
+        "author": "whyme33",
+        "timestamp": "2025-10-20T18:11:14.797-04:00",
+        "content": "Ok i just wanted a recommendation cuz I'm also planning to develop software"
+      },
+      {
+        "id": "1429956073044836465",
+        "author": "whyme33",
+        "timestamp": "2025-10-20T18:14:55.113-04:00",
+        "content": "Btw i have a i5 32 bit processor what should I do with it"
+      }
+    ]
+  ]
+}

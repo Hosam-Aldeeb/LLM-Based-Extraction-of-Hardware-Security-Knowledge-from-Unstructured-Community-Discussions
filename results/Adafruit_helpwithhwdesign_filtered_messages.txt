@@ -1,0 +1,68 @@
+[1] Similarity: 0.550 | skerr92 | 1/5/2025
+USB IF should be 1.1 PHY so as long as they are roughly the same length and 8-10mil is size (assuming you’re using mil not mm) should be fine. UART often wants termination resistors though it will be dependent on the UART chip you use and what the data sheet specifies
+======================================================================
+
+[2] Similarity: 0.556 | danhalbert | 1/9/2025
+most microcontrollers have multiple functions on a pin, so though it could be a UART it might be used as something else.
+======================================================================
+
+[3] Similarity: 0.566 | madbodger | 1/9/2025
+One bit of industrial kit I reverse engineered wanted data at 600bps.  I had to hack up my terminal program, as it didn't offer that option.
+======================================================================
+
+[4] Similarity: 0.554 | mrgamecase | 1/12/2025
+Hio All,  Pullups on I2C operating at +3v3. 4.7K?
+======================================================================
+
+[5] Similarity: 0.570 | baldengineer | 1/24/2025
+but the qspi CS is a big clue. it’s all wiggily
+======================================================================
+
+[6] Similarity: 0.558 | vexst | 1/24/2025
+it's the jlcpcb basic parts lib switch so that would be pretty wild
+======================================================================
+
+[7] Similarity: 0.566 | djerba02 | 2/21/2025
+What kind of wiring mistake could cause the 3v regulator on the esp32 s3 feather to combust when plugged in via USB?
+======================================================================
+
+[8] Similarity: 0.597 | bahamutkotd | 3/21/2025
+Ok so I am a software engineer that works on embedded platforms and dabbles with hobby projects I have a question for some one a bit more hardware creditable than me
+======================================================================
+
+[9] Similarity: 0.583 | danhalbert | 3/24/2025
+If it's still working, you could put probes on the lines and try to decode the I2C traffic. You could get the I2C address and go from there
+======================================================================
+
+[10] Similarity: 0.554 | danhalbert | 3/24/2025
+If it's been reverse-engineered somewhat you can probably find the I2C setup calls and find the address that way.
+======================================================================
+
+[11] Similarity: 0.571 | 20goto10 | 3/24/2025
+The original firmware worked with an (unavailable) iOS app, so much of the future use would be with a new firmware (people have started bringing up the peripherals in Arduino)
+======================================================================
+
+[12] Similarity: 0.555 | dgarlans | 4/8/2025
+ow it overcurrents and shuts down the usb port almost instantly, lol. I  have a usb power-blocking adaptor arriving today so i can still access the microcontroller from the computer, and i'll hook my bench supply up to the boards, that way i can do the development and also i'll have an actual measurement of how much power i really need.
+======================================================================
+
+[13] Similarity: 0.576 | skerr92 | 5/7/2025
+Yes, if that is the only I2C device you should be able to get away with 10k resistors
+======================================================================
+
+[14] Similarity: 0.572 | doublefelix | 5/14/2025
+And what kinds of things in software control would cause corrosion?
+======================================================================
+
+[15] Similarity: 0.591 | wolfwings | 6/8/2025
+ssible the library is setting the "EXTGCK" bit that's used for daisy-chaining multiple chips together in lockstep so it's using the SPI clock instead of it's internal clock? I'd need to dig into that code a bit.
+
+The chip has no 'commands' really it just expects to be dumped data, it buffers 28 bytes worth and any overflow is passed out on it's SPI out port for daisy-chaining multiple chips together.
+
+Then if there's at least 8 clock cycles worth of delay in the SPI clock it'll check if the 6 MS
+======================================================================
+
+[16] Similarity: 0.563 | 204maker | 6/13/2025
+Thank you!
+The USB post on my SBC was protected from damage from this circuit by the USB hub.
+======================================================================

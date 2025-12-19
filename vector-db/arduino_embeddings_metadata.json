@@ -1,0 +1,11 @@
+{
+  "source": "./discord-exports/Arduino_generalhelp_Jan2025_export.json",
+  "created": "2025-11-17T04:31:21.646Z",
+  "totalMessages": 57497,
+  "processedMessages": 44354,
+  "totalChunks": 45547,
+  "successfulEmbeddings": 45547,
+  "failedEmbeddings": 0,
+  "totalFiles": 10,
+  "embeddingsPerFile": 5000
+}

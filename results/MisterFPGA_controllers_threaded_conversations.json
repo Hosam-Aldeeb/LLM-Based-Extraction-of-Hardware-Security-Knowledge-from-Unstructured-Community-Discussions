@@ -1,0 +1,1005 @@
+{
+  "channel": "MisterFPGA_controllers",
+  "source": "./discord-exports/MisterFPGA_controllers_Jan2025_export.json",
+  "filteredMessages": 18,
+  "totalThreads": 18,
+  "substantialThreads": 8,
+  "threads": [
+    [
+      {
+        "id": "1334931716963434508",
+        "author": "mistahsnart",
+        "timestamp": "2025-01-31T12:02:03.156-05:00",
+        "content": "Not sure if I knew this before and just forgot, but I realized I can pair any 2.4ghz 8bitdo controller with any 2.4ghz 8bitdo dongle.\n\nMy 2.4ghz SN30 is now paired with my PCE dongle and working perfectly. Cool."
+      },
+      {
+        "id": "1334933076966379530",
+        "author": "mike9110722_75223",
+        "timestamp": "2025-01-31T12:07:27.406-05:00",
+        "content": "Had no idea, I liked the sn30 2.4ghz but with no way to use it on mister I sold it after a while. Do all buttons work? Is it xinput or dinput? I do have several other dongles besides the pce, m30, neogeo. Anyone else tried with those?",
+        "reference": {
+          "messageId": "1334931716963434508",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1334934624761282632",
+        "author": "alynne",
+        "timestamp": "2025-01-31T12:13:36.429-05:00",
+        "content": "a bit of experience has taught me i like the heaviest tension with the shortest throw and loudest actuation"
+      },
+      {
+        "id": "1334934638682046594",
+        "author": "alynne",
+        "timestamp": "2025-01-31T12:13:39.748-05:00",
+        "content": "clicky or death"
+      },
+      {
+        "id": "1334934939484950641",
+        "author": "alynne",
+        "timestamp": "2025-01-31T12:14:51.465-05:00",
+        "content": "there's usually a button combination to change what the dongle is spoofing iirc",
+        "reference": {
+          "messageId": "1334933076966379530",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1334939574207647804",
+        "author": "michael_of_york",
+        "timestamp": "2025-01-31T12:33:16.469-05:00",
+        "content": "You can’t use SN30 on mister???",
+        "reference": {
+          "messageId": "1334933076966379530",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1334939926638235770",
+        "author": "mike9110722_75223",
+        "timestamp": "2025-01-31T12:34:40.495-05:00",
+        "content": "The SN30 2.4ghz does not come with a usb receiver, only a snes one. You would have to use snac or reflex. I do hate cables and adapters.",
+        "reference": {
+          "messageId": "1334939574207647804",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1334941028431433741",
+        "author": "mike9110722_75223",
+        "timestamp": "2025-01-31T12:39:03.183-05:00",
+        "content": "Now that I think about it, I had read before that although the sn30 2.4ghz could be paired with the pce adapter, only 2 buttons were recognized. Maybe @mistahsnart can explain further."
+      },
+      {
+        "id": "1334943475753287731",
+        "author": "michael_of_york",
+        "timestamp": "2025-01-31T12:48:46.67-05:00",
+        "content": "Ah right, the 8bitdo SN30 uses original SNES formed dongles 😫 damnit.",
+        "reference": {
+          "messageId": "1334941028431433741",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1369316153297473643",
+        "author": "frog3894",
+        "timestamp": "2025-05-06T10:13:31.61-04:00",
+        "content": ""
+      },
+      {
+        "id": "1369316215717236786",
+        "author": "frog3894",
+        "timestamp": "2025-05-06T10:13:46.492-04:00",
+        "content": "Same same. They all fit, of course 😉"
+      },
+      {
+        "id": "1369316451298578464",
+        "author": "frog3894",
+        "timestamp": "2025-05-06T10:14:42.659-04:00",
+        "content": "The isn't only named after the HIGH GRADE"
+      },
+      {
+        "id": "1369336536549822515",
+        "author": "rallyflowbro",
+        "timestamp": "2025-05-06T11:34:31.356-04:00",
+        "content": "This is really friggin neat",
+        "reference": {
+          "messageId": "1368841752223547423",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1369360921700339804",
+        "author": "rallyflowbro",
+        "timestamp": "2025-05-06T13:11:25.229-04:00",
+        "content": "What's this screen? Also os that game running a widescreen hack?",
+        "reference": {
+          "messageId": "1369316153297473643",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1369360942369865759",
+        "author": "rallyflowbro",
+        "timestamp": "2025-05-06T13:11:30.157-04:00",
+        "content": "The darius game"
+      }
+    ],
+    [
+      {
+        "id": "1372893021300981790",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:06:43.397-04:00",
+        "content": "is it much different than what JT does for example? except the roms are newer"
+      },
+      {
+        "id": "1372893027269349496",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:06:44.82-04:00",
+        "content": "There is also the jconfig/rconfig/apm3config ecosystem"
+      },
+      {
+        "id": "1372893122232713226",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:07:07.461-04:00",
+        "content": "More or less the same except the games are usually still in widespread commercial use",
+        "reference": {
+          "messageId": "1372893021300981790",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1372893255552733305",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:07:39.247-04:00",
+        "content": "yeah i'd definitely say its er... brave of them to accept money for it so explicitly"
+      },
+      {
+        "id": "1372893317393682464",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:07:53.991-04:00",
+        "content": "I think some of the boldness is rooted in geography"
+      },
+      {
+        "id": "1372893322539962409",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:07:55.218-04:00",
+        "content": "would of thought they'd want to have like, tip jar system"
+      },
+      {
+        "id": "1372893500772843581",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:08:37.712-04:00",
+        "content": "its not like i was going to go buy the cabinet"
+      },
+      {
+        "id": "1372893526710423587",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:08:43.896-04:00",
+        "content": "or there's even one in my country half the time"
+      },
+      {
+        "id": "1372893594200834078",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:08:59.987-04:00",
+        "content": "The local arcade does have several large cabinets that you can play via TP"
+      },
+      {
+        "id": "1372893623472881705",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:09:06.966-04:00",
+        "content": "doesn't feel quite as wrong as like, pirating a switch game say, which i could buy"
+      },
+      {
+        "id": "1372893674001666151",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:09:19.013-04:00",
+        "content": "oh actual arcades have it ?"
+      },
+      {
+        "id": "1372893695342280734",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:09:24.101-04:00",
+        "content": "that also feels brave lol"
+      },
+      {
+        "id": "1372893721686839346",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:09:30.382-04:00",
+        "content": "Yes lol"
+      },
+      {
+        "id": "1372893767773847624",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:09:41.37-04:00",
+        "content": "Oh sorry I misspoke"
+      },
+      {
+        "id": "1372893818138923009",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:09:53.378-04:00",
+        "content": "You can play at home via TP some of the games that the local arcade has"
+      },
+      {
+        "id": "1372893845355892789",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:09:59.867-04:00",
+        "content": "oh right"
+      },
+      {
+        "id": "1372893849067851838",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:10:00.752-04:00",
+        "content": "They are not running TP cabs"
+      },
+      {
+        "id": "1372893878532706304",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:10:07.777-04:00",
+        "content": "Imagine lol"
+      },
+      {
+        "id": "1372893899256758293",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:10:12.718-04:00",
+        "content": "that'd be kinda rad..."
+      },
+      {
+        "id": "1372893959508070483",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:10:27.083-04:00",
+        "content": "Agreed"
+      },
+      {
+        "id": "1372894014755442832",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:10:40.255-04:00",
+        "content": "You gotta come to my house to play an arcade title via TP in this town 😎"
+      },
+      {
+        "id": "1372894143449403443",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:11:10.938-04:00",
+        "content": "and tbh, where there are cabs near me, i have put like, a lot of money in them lol"
+      },
+      {
+        "id": "1372894344784117791",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:11:58.94-04:00",
+        "content": "for me it was kind of amazing discovering like, there are so so many lightgun games with no console ports"
+      },
+      {
+        "id": "1372894408009322516",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:12:14.014-04:00",
+        "content": "the genre has lived on entirely in arcades since like, whenever lcds happened"
+      },
+      {
+        "id": "1372894602956111912",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:13:00.493-04:00",
+        "content": "and like, it hasn't been stagnant either"
+      },
+      {
+        "id": "1372894632744063026",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:13:07.595-04:00",
+        "content": "New Jurassic park gun game is decent"
+      },
+      {
+        "id": "1372894656232165376",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:13:13.195-04:00",
+        "content": "Aliens too"
+      },
+      {
+        "id": "1372894720228851784",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:13:28.453-04:00",
+        "content": "That’s pretty much all that’s being made anymore"
+      },
+      {
+        "id": "1372894757684117505",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:13:37.383-04:00",
+        "content": "or ddr"
+      },
+      {
+        "id": "1372894761999925258",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:13:38.412-04:00",
+        "content": "Specialized input type cabs"
+      },
+      {
+        "id": "1372894782673649674",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:13:43.341-04:00",
+        "content": "it makes sense"
+      },
+      {
+        "id": "1372894789250318336",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:13:44.909-04:00",
+        "content": "Things you can’t do at home"
+      },
+      {
+        "id": "1372894852315873442",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:13:59.945-04:00",
+        "content": "well, you can you probably just dont"
+      },
+      {
+        "id": "1372895145275428894",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:15:09.792-04:00",
+        "content": "Raw Thrills, Stern, Exa probably the only companies still making cabs in North America?"
+      },
+      {
+        "id": "1372895292839563264",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:15:44.974-04:00",
+        "content": "you'll probably never reproduce something like an 8 player daytona line at home either"
+      },
+      {
+        "id": "1372895304809971803",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:15:47.828-04:00",
+        "content": "Yes, Taito still pumping out cabs over there"
+      },
+      {
+        "id": "1372895412461244478",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:16:13.494-04:00",
+        "content": "Well. Still pumping out an occasional game. Lol"
+      },
+      {
+        "id": "1372895529914335364",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:16:41.497-04:00",
+        "content": "tbh i wouldn't want to go to an arcade to play games i could pretty easily play at home instead, the unique controls/screens/experience is what its all about now"
+      },
+      {
+        "id": "1372895612248522784",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:17:01.127-04:00",
+        "content": "Yeah"
+      },
+      {
+        "id": "1372895659996348520",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:17:12.511-04:00",
+        "content": "I don’t think there is a single joystick game at the local arcade"
+      },
+      {
+        "id": "1372895714887204925",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:17:25.598-04:00",
+        "content": "Except the claw machines I guess"
+      },
+      {
+        "id": "1372895751666929724",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:17:34.367-04:00",
+        "content": "i saw plenty at a retro barcade i went to"
+      },
+      {
+        "id": "1372895775109152849",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:17:39.956-04:00",
+        "content": "but that was specifically retro"
+      },
+      {
+        "id": "1372895908575969443",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:18:11.777-04:00",
+        "content": "nice"
+      },
+      {
+        "id": "1372895965932945418",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:18:25.452-04:00",
+        "content": "this one had HOTD2 in actual good working condition"
+      },
+      {
+        "id": "1372895984803385446",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:18:29.951-04:00",
+        "content": "Closest retro barcade to me is like a ten hour drive"
+      },
+      {
+        "id": "1372895990511697982",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:18:31.312-04:00",
+        "content": "and outrun2"
+      },
+      {
+        "id": "1372896047843508295",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:18:44.981-04:00",
+        "content": "went for a friends stag do lol, had a blast"
+      },
+      {
+        "id": "1372896052524482560",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:18:46.097-04:00",
+        "content": "There is a “fun Center” with or2 about a half hour away tho"
+      },
+      {
+        "id": "1372896311845720135",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:19:47.924-04:00",
+        "content": "Luckily when the urge hits me I can just pop out to the barn and fire up the multi racer"
+      },
+      {
+        "id": "1372896419865952397",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:20:13.678-04:00",
+        "content": "i keep thinking about getting the bucketseat addon for my racing wheel stand"
+      },
+      {
+        "id": "1372896441663492117",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:20:18.875-04:00",
+        "content": "I swear some day I’m gonna bring out the light guns and set up Lucky & Wild"
+      },
+      {
+        "id": "1372896468603502714",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:20:25.298-04:00",
+        "content": "it'd be a pretty complete arcade experience at that point"
+      },
+      {
+        "id": "1372896566142046228",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:20:48.553-04:00",
+        "content": "SR3 cabinet seat is so goddamn uncomfortable"
+      },
+      {
+        "id": "1372896812674977794",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:21:47.331-04:00",
+        "content": "whats the difference?"
+      },
+      {
+        "id": "1372896896838008974",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:22:07.397-04:00",
+        "content": "Framerate"
+      },
+      {
+        "id": "1372896914437050408",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:22:11.593-04:00",
+        "content": "oh its probably 60fps right"
+      },
+      {
+        "id": "1372897018371903558",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:22:36.373-04:00",
+        "content": ""
+      },
+      {
+        "id": "1372897115076034670",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:22:59.429-04:00",
+        "content": "huh"
+      },
+      {
+        "id": "1372897181765472307",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:23:15.329-04:00",
+        "content": "didn't realize the graphics were cut back too"
+      },
+      {
+        "id": "1372897221669818368",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:23:24.843-04:00",
+        "content": "i think i've only ever seen the cab once or twice though"
+      },
+      {
+        "id": "1372897655008657429",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:25:08.159-04:00",
+        "content": "Nice non-intrusive ads on that site"
+      },
+      {
+        "id": "1372897681118199828",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:25:14.384-04:00",
+        "content": ""
+      },
+      {
+        "id": "1372897971745849375",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:26:23.675-04:00",
+        "content": "System 11/12 was more PSX based iirc?"
+      },
+      {
+        "id": "1372898013961388072",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:26:33.74-04:00",
+        "content": "Pretty sure my Tekken 3 is system 12"
+      },
+      {
+        "id": "1372898649465557003",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:29:05.256-04:00",
+        "content": "Reading that tekken 3 ran at 384x480"
+      },
+      {
+        "id": "1372898668864082021",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:29:09.881-04:00",
+        "content": "Wut"
+      },
+      {
+        "id": "1372899021068304406",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:30:33.853-04:00",
+        "content": ""
+      },
+      {
+        "id": "1372899340531662920",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:31:50.019-04:00",
+        "content": "Actually pisses me off that they used a kick harness for the board tho"
+      },
+      {
+        "id": "1372899378640982136",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:31:59.105-04:00",
+        "content": "It’s a four button game"
+      },
+      {
+        "id": "1372899393774293066",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:32:02.713-04:00",
+        "content": "No need of it"
+      },
+      {
+        "id": "1372899499277680794",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:32:27.867-04:00",
+        "content": ""
+      },
+      {
+        "id": "1372899522098757814",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:32:33.308-04:00",
+        "content": "Look at this fuckin thing I had to make"
+      },
+      {
+        "id": "1372899843311145071",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:33:49.891-04:00",
+        "content": "I’ve seen em for sale with the kicks bodged to the jamma blade with solder"
+      },
+      {
+        "id": "1372900201429209088",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:35:15.273-04:00",
+        "content": "Really, nobody needed to be using a kick harness at any point, there are plenty of pins on the jamma blade"
+      },
+      {
+        "id": "1372900244001656842",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:35:25.423-04:00",
+        "content": "Chamma > jamma"
+      },
+      {
+        "id": "1372900481999048795",
+        "author": "bigblue709",
+        "timestamp": "2025-05-16T07:36:22.166-04:00",
+        "content": ""
+      }
+    ],
+    [
+      {
+        "id": "1388563593993256970",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T12:55:59.072-04:00",
+        "content": "if this ever happens to anyone these dongles are real common"
+      },
+      {
+        "id": "1388563666890129549",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T12:56:16.452-04:00",
+        "content": "i think its just the special combos that took it out of xinput mode"
+      },
+      {
+        "id": "1388567328202948768",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:10:49.377-04:00",
+        "content": "lolol"
+      },
+      {
+        "id": "1388567379973505135",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:11:01.72-04:00",
+        "content": "btw sorry to interupt the earlier conversation if i wasnt in panic mode"
+      },
+      {
+        "id": "1388567415092416634",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:11:10.093-04:00",
+        "content": "ide take the time to brag about all my arcade sticks"
+      },
+      {
+        "id": "1388567693627494522",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:12:16.501-04:00",
+        "content": "i got a sanwa JLX2 (noone has it yet for some reason) i got a sanwa obsidion 2 setup (i have a spare nobi bullet for this) i have a knee lever neo set up in a mayflash f500, i also have 2 haute 42 leverless (GET THE WIND ENGINE SWITCHES)"
+      },
+      {
+        "id": "1388567723566432287",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:12:23.639-04:00",
+        "content": "but i dont think leverless is cheating cause"
+      },
+      {
+        "id": "1388567743971856565",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:12:28.504-04:00",
+        "content": "i suck at it vs arcade stick"
+      },
+      {
+        "id": "1388567787924095026",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:12:38.983-04:00",
+        "content": "i just got my order of snac adapters too"
+      },
+      {
+        "id": "1388567861185744958",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:12:56.45-04:00",
+        "content": "i gotta test this usb controller with all these new shiny adapters ughhhhh"
+      },
+      {
+        "id": "1388567915850366988",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:13:09.483-04:00",
+        "content": "and an mt32 pi"
+      },
+      {
+        "id": "1388567967549100152",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:13:21.809-04:00",
+        "content": "i better not have power issues with 5v 4a!!! lol"
+      },
+      {
+        "id": "1388570936369741886",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:25:09.631-04:00",
+        "content": "omg also the xbox controller was just no good with the cable i was using lol"
+      },
+      {
+        "id": "1388570985703407727",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T13:25:21.393-04:00",
+        "content": "so nothing would work dam i feel dumb thanks again"
+      }
+    ],
+    [
+      {
+        "id": "1394740550300729516",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:01:00.218-04:00",
+        "content": "\"tampering detected, robocop has been notified, please remain stationary\""
+      },
+      {
+        "id": "1394740974797717504",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:02:41.426-04:00",
+        "content": "if you don't pay it will randomly turn on at barely detectable levels in the summertime to make you uncomfortable"
+      },
+      {
+        "id": "1394742053170188318",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:06:58.53-04:00",
+        "content": "yeah, different than what i was talking ab",
+        "reference": {
+          "messageId": "1394739027508330668",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1394743284403802132",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:11:52.079-04:00",
+        "content": "actually that video does point out some of the model differences i guess -- the bluetooth models seem to be their upsell for more expensive parts (gyro imu, hall sticks) so i guess they leave the public bluetooth mode off on the 'cheaper' models since that's a clearer marketing difference than internal parts"
+      },
+      {
+        "id": "1394743443556667412",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:12:30.024-04:00",
+        "content": "but generally 8bd seem to be in a race with themselves over time to offer all the premium features in their budget models anyway."
+      }
+    ],
+    [
+      {
+        "id": "1394737471769673899",
+        "author": "alynne",
+        "timestamp": "2025-07-15T13:48:46.239-04:00",
+        "content": "||all of their 2.4g models have undocumented bluetooth support for diagonstics anyway lol||"
+      },
+      {
+        "id": "1394738067348258926",
+        "author": "nelson.no",
+        "timestamp": "2025-07-15T13:51:08.236-04:00",
+        "content": "So odd! Is there a meaningful cost to having proper support or is it a pricing play to sell more premium ones w/ Bluetooth?",
+        "reference": {
+          "messageId": "1394737471769673899",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1394738242477097091",
+        "author": "nolbin",
+        "timestamp": "2025-07-15T13:51:49.99-04:00",
+        "content": "Whoa, what? Do the 2.4g ones just pair to Bluetooth anyway, or do you have to enable it somehow?",
+        "reference": {
+          "messageId": "1394737471769673899",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1394738361155190804",
+        "author": "nelson.no",
+        "timestamp": "2025-07-15T13:52:18.285-04:00",
+        "content": "Was it cpus that can get intentionally restricted when made, as it’s cheaper to build all in the same way (volume savings) and restrict some"
+      },
+      {
+        "id": "1394738426636664853",
+        "author": "nelson.no",
+        "timestamp": "2025-07-15T13:52:33.897-04:00",
+        "content": "There was some product like this +-"
+      },
+      {
+        "id": "1394738815658098859",
+        "author": "alynne",
+        "timestamp": "2025-07-15T13:54:06.647-04:00",
+        "content": "as i said it's undocumented and purely meant for diagnostics so i won't go into much detail because that behaviour is inconsistent across models and subject to random change"
+      },
+      {
+        "id": "1394738896415228026",
+        "author": "alynne",
+        "timestamp": "2025-07-15T13:54:25.901-04:00",
+        "content": "but yeah i don't know ***why*** they do bespoke BT models, honestly"
+      },
+      {
+        "id": "1394738939964821557",
+        "author": "alynne",
+        "timestamp": "2025-07-15T13:54:36.284-04:00",
+        "content": "i guess the difference is the burden of Switch support"
+      },
+      {
+        "id": "1394738973527511143",
+        "author": "alynne",
+        "timestamp": "2025-07-15T13:54:44.286-04:00",
+        "content": "they do officially unlock it with firmware, sometimes"
+      },
+      {
+        "id": "1394739027508330668",
+        "author": "alynne",
+        "timestamp": "2025-07-15T13:54:57.156-04:00",
+        "content": "for example the 2.4g Ultimate got a Bluetooth boot mode, later"
+      },
+      {
+        "id": "1394739180118081699",
+        "author": "alynne",
+        "timestamp": "2025-07-15T13:55:33.541-04:00",
+        "content": "maybe it's the button-label thing ? i don't know. whatever the reason it's not justified from my perspective"
+      },
+      {
+        "id": "1394739753009807391",
+        "author": "nelson.no",
+        "timestamp": "2025-07-15T13:57:50.129-04:00",
+        "content": "Remembering BMW at some point was to do “subscribe to unlock car features”, please don’t be this 😅"
+      },
+      {
+        "id": "1394740313125425334",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:00:03.671-04:00",
+        "content": "tesla has similar a similar model right ? upgrade your plan for the \"doesn't run over baby carriages\" feature"
+      },
+      {
+        "id": "1394740347807989761",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:00:11.94-04:00",
+        "content": "i hope for the good of humanity nintendo loses the law argument over the switch 2 having a remote bomb in the mandatory terms and services lol"
+      },
+      {
+        "id": "1394740550300729516",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:01:00.218-04:00",
+        "content": "\"tampering detected, robocop has been notified, please remain stationary\""
+      },
+      {
+        "id": "1394740801837203607",
+        "author": "nelson.no",
+        "timestamp": "2025-07-15T14:02:00.189-04:00",
+        "content": "Yeah, it was on something like heated seats. We understand and are used to paying for software. It’s the issue on a physical capability being there but intentionally locked that’s psychologically weird",
+        "reference": {
+          "messageId": "1394740282502680627",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1394740907617812581",
+        "author": "nelson.no",
+        "timestamp": "2025-07-15T14:02:25.409-04:00",
+        "content": "Even if a manufacturer can argue they can bring the prices down for everyone by building all the models the same way"
+      },
+      {
+        "id": "1394740974797717504",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:02:41.426-04:00",
+        "content": "if you don't pay it will randomly turn on at barely detectable levels in the summertime to make you uncomfortable"
+      },
+      {
+        "id": "1394741822512828476",
+        "author": "davewongillies",
+        "timestamp": "2025-07-15T14:06:03.537-04:00",
+        "content": "For at least Ultimate 2.4g wireless: https://www.youtube.com/watch?v=VnanvaH7B10\n\nDoesn't seem to be undocumented since its mentioned in the release notes for the firmware",
+        "reference": {
+          "messageId": "1394738242477097091",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1394742053170188318",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:06:58.53-04:00",
+        "content": "yeah, different than what i was talking ab",
+        "reference": {
+          "messageId": "1394739027508330668",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1394743284403802132",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:11:52.079-04:00",
+        "content": "actually that video does point out some of the model differences i guess -- the bluetooth models seem to be their upsell for more expensive parts (gyro imu, hall sticks) so i guess they leave the public bluetooth mode off on the 'cheaper' models since that's a clearer marketing difference than internal parts"
+      },
+      {
+        "id": "1394743443556667412",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:12:30.024-04:00",
+        "content": "but generally 8bd seem to be in a race with themselves over time to offer all the premium features in their budget models anyway."
+      }
+    ],
+    [
+      {
+        "id": "1396880262469521599",
+        "author": "jaelius",
+        "timestamp": "2025-07-21T11:43:27.353-04:00",
+        "content": "oh yes!"
+      },
+      {
+        "id": "1396880802473840650",
+        "author": "jaimiev",
+        "timestamp": "2025-07-21T11:45:36.1-04:00",
+        "content": "==> #misc-hardware plskthx!",
+        "reference": {
+          "messageId": "1396880262469521599",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1396880844659888230",
+        "author": "jaimiev",
+        "timestamp": "2025-07-21T11:45:46.158-04:00",
+        "content": "*show us the shiny precious*"
+      }
+    ],
+    [
+      {
+        "id": "1415869160541524009",
+        "author": "alynne",
+        "timestamp": "2025-09-11T21:18:33.45-04:00",
+        "content": "retro-bit confirmed there's not a potential firmware solution since the inputs are on the same wire ;-{"
+      },
+      {
+        "id": "1415869244431798402",
+        "author": "alynne",
+        "timestamp": "2025-09-11T21:18:53.451-04:00",
+        "content": "it's kind of hard to square the circle making 6b pads interoperate on 4b platforms ig."
+      },
+      {
+        "id": "1415869433146245280",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:19:38.444-04:00",
+        "content": "right, firmware doesn't magically change hardware 😄",
+        "reference": {
+          "messageId": "1415869160541524009",
+          "channelId": "806024374368075776",
+          "guildId": "647909397477195803"
+        }
+      },
+      {
+        "id": "1415869464897130669",
+        "author": "alynne",
+        "timestamp": "2025-09-11T21:19:46.014-04:00",
+        "content": "neat idea with that pad tbh. wish the elves 2 and/or 2 pro were 6b."
+      },
+      {
+        "id": "1415869622325870716",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:20:23.548-04:00",
+        "content": "to be a bit artsy"
+      },
+      {
+        "id": "1415869687543365672",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:20:39.097-04:00",
+        "content": "I'd describe the M30 as a \"smoother sailing\" experience, like a fine gaming experience, a fine wine perhaps. a silky smooth time."
+      },
+      {
+        "id": "1415869715649138781",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:20:45.798-04:00",
+        "content": "While the Retro Bit controllers are more gritty, rougher, more like a dark beer"
+      },
+      {
+        "id": "1415869765829918750",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:20:57.762-04:00",
+        "content": "But I kinda like that grittiness sometimes."
+      },
+      {
+        "id": "1415869808720875540",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:21:07.988-04:00",
+        "content": "I am not the type to use one controller, or want one controller that does it all"
+      },
+      {
+        "id": "1415869925125525524",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:21:35.741-04:00",
+        "content": "Like, for N64, I really need it to be an N64 controller"
+      },
+      {
+        "id": "1415869950769500161",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:21:41.855-04:00",
+        "content": "Same with Gamecube"
+      },
+      {
+        "id": "1415870006822043709",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:21:55.219-04:00",
+        "content": "And it just feels wrong to play Super Nintendo with an M30"
+      },
+      {
+        "id": "1415870072857169942",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:22:10.963-04:00",
+        "content": "Call me insane. (I am! heeheehee)"
+      },
+      {
+        "id": "1415870420896190496",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:23:33.942-04:00",
+        "content": "This is why I like the 4dapter so much for the MiSTer. It allows me to have 4 more controllers hooked up and always at the ready. Love it."
+      }
+    ]
+  ]
+}

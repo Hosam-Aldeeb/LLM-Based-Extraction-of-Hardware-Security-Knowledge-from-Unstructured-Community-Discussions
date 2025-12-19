@@ -1,0 +1,560 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/ElectronicRepair_pc-repair_Jan2025_export.json",
+  "totalMessages": 5148,
+  "totalChunks": 5082,
+  "relevantMessages": 55,
+  "results": [
+    {
+      "text": "Ahoy. If the drive detects (for example) as VAM52JBZ in MHDD or HDAT2 and shows as 0 capacity instead of VAM51JJ0 what is on it's label then the drive has firmware corruption what you can't repair at home. If you have further questions then we can continue it in https://discord.com/channels/448464581677809676/508329749647458344",
+      "metadata": {
+        "id": "1324322672968204319",
+        "author": "bitrehab",
+        "timestamp": "2025-01-02T05:25:29.961-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5706324125973695
+    },
+    {
+      "text": "ssities.\n\nI have also reseated the CPU\n\nAttached is a video of the behaviour of the device.",
+      "metadata": {
+        "id": "1329915109140856842",
+        "author": "nightmaretechstuffs",
+        "timestamp": "2025-01-17T15:47:50.647-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.6233824320769278
+    },
+    {
+      "text": "rotection and I couldn't remove it via NVAR modding.\nI also tried to use an external programmer (CH341A) to flash the chips and it could not read/write, the 8MB chip (MX25L6473E) says this on its datasheet \"Permanently fixed QE bit, QE=1; and 4 I/O mode is enabled\" and \"The flash always performs Quad I/O mode\", which means that it can't be used as a simple SPI device (with single MOSI/MISO lines) because it's in permanent QuadEnable mode from factory; this greatly limits my options for external ",
+      "metadata": {
+        "id": "1338603159714660424",
+        "author": "kabutokun5373",
+        "timestamp": "2025-02-10T15:11:03.32-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5617988450781023
+    },
+    {
+      "text": "the USB ports ain’t workin’, could be the BIOS is actin’ up—kinda like when yer truck’s ignition switch ain’t sendin’ power to the starter. Sometimes, the BIOS has security settings that shut off the USB ports, just like how a bad ignition switch won’t let the truck crank even if the battery’s fine. Best thing to do? Reset the BIOS, kinda like poppin’ the hood and givin’ the ignition system a once-over. Pull the CMOS battery for a bit, slap it back in, and see if that fires up them USB ports. If",
+      "metadata": {
+        "id": "1339890099617267712",
+        "author": "thetechmechanic",
+        "timestamp": "2025-02-14T04:24:53.703-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5506860867855439
+    },
+    {
+      "text": "I guess the IC is fault, 5v on input pin, 3v on enble pin and 0v on output pin\nSo u can jump a wire from 5v input pin to output pin\nBefore do that make sure output pin not shorted to ground, and output pin connected to 5v pin on USB port",
+      "metadata": {
+        "id": "1340127730221711381",
+        "author": "vanduc_gb",
+        "timestamp": "2025-02-14T20:09:09.254-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5737166402740004
+    },
+    {
+      "text": "they could have in common an enable signal. where this signal coming from? probably a big ic.",
+      "metadata": {
+        "id": "1340277863969984626",
+        "author": "dumahbrazorf",
+        "timestamp": "2025-02-15T06:05:43.929-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5564059610526743
+    },
+    {
+      "text": "Double check that the ports are enabled in the \"Security\" tab in the firmware settings. Apparently, that is an option.",
+      "metadata": {
+        "id": "1344537399618699337",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-27T00:11:36.366-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5538668758502884
+    },
+    {
+      "text": "Maybe somewhere one trace from the current sense to the monitoring chip is lost. Could be a cracked solder joint for all we know. Plus I am making about a million and one assumptions about how this is actually designed, so that could be entirely the wrong path. Need a schematic and boardview to take that much further.",
+      "metadata": {
+        "id": "1345060462169030746",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T10:50:04.196-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5506775550260861
+    },
+    {
+      "text": "20`. If we do verify this as the issue and you just want to fix it and don't care about the root cause, you should just be able to remove the offending transistor(s).",
+      "metadata": {
+        "id": "1345267071281266759",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-01T00:31:03.647-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.562671095396515
+    },
+    {
+      "text": "Okay, so that means that `S_USB3_OC#34_R` is being pulled low (active) somewhere. Following that signal will lead us to our issue. Though, to verify this you can try shorting pins 4 and 5 on `SU3` then the board should boot fine.",
+      "metadata": {
+        "id": "1345980121185517700",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-02T23:44:27.992-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5589684420754993
+    },
+    {
+      "text": "No, you don't have to remove `SU3`. Try measuring the voltage on `UCR197`, `UR166`, and `UR181`; perhaps we have multiple signals being pulled low. The CPU seems to handle two of the USB 3 OC signals but the chipset handles the rest. Also check that `PMR82`, `PMR83`, `PMR84`, `PMR85`, and `PMR130` are all present as they look to be pull-ups for unused signals.\n\nCPU: `S_USB3_OC#34` (`SU3`), `S_USB3_OC#56` (`SU4`)\nChipset: `S_USB3_OC#12` (`UR181`), `S_USB3D1_OC#12` (`UCR197`), `S_USB_OC_#3456` (`U",
+      "metadata": {
+        "id": "1346321937407807559",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-03T22:22:43.33-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5639509878223755
+    },
+    {
+      "text": "Interesting, if you do the same thing and measure `UR166` when it's booting does it work temporarily again? Your probes will have some impedance and capacitance, which can actually affect high frequency digital circuits.",
+      "metadata": {
+        "id": "1346340817027203154",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-03T23:37:44.582-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5717410884392908
+    },
+    {
+      "text": "I have observed the behave of this pc while running in windows that for testing purpose I have connected some flash drives and keyboards and found that very rare but sometimes drives and sometimes the keyboard is reconnects automatically, I mean USB connections are not super stable and sometimes usb port  U31G1_ 34 is not working and sometimes  U31G1_56 is notworking",
+      "metadata": {
+        "id": "1346368575535058986",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-04T01:28:02.726-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5604297625163036
+    },
+    {
+      "text": "The touch screen is likely also internally a USB device. I'm guessing the xHCI subsystem of the chipset exploded, maybe someone shorted something to the data lines on a port.",
+      "metadata": {
+        "id": "1347621045745483849",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-07T12:24:54.894-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5959794860174703
+    },
+    {
+      "text": "In such cases you should measure resistance to GND of VGT to get a possible clue. If it measures lower compared to CORE you will immediately know that the CPU is fried on this rail.",
+      "metadata": {
+        "id": "1348179895330799656",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:25:35.018-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.557909006972643
+    },
+    {
+      "text": "Bugcheck code:  0xD1(0x32, 0x2, 0x0, 0xFFFFF8800110A80A) \nBugcheck name: DRIVER_IRQL_NOT_LESS_OR_EQUAL \nBug check description: This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high. \nAnalysis: This is a typical software problem. Most likely this is caused by a bug in a driver.",
+      "metadata": {
+        "id": "1349055697697898550",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T12:25:42.574-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5831471916687393
+    },
+    {
+      "text": "@Zolibyte i'm not sure about warming up that chip....it could be it. To determine this chip find SMD capacitors nearby chip, choose capacitor connected to bigger track (that would be power rail for this chip) check resistance of this capacitor.",
+      "metadata": {
+        "id": "1349112230129438870",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-11T16:10:20.956-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5530547643572489
+    },
+    {
+      "text": "when with telegram upload problem i use to get ntoskrnl .exe bsod, now its with ndis . so i might have to think , may be the graphics card is fixed well but now ethernet driver is the proeblm caused by northbirdige.. just thinking assuming imagining all possible corelations",
+      "metadata": {
+        "id": "1349143357728882698",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:14:02.354-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5632913358196074
+    },
+    {
+      "text": "So it looks like a software issue. Maybe a corrupted bios or sio firmware. You said You have programmed it twice. Was the programmer connected to mobo directly or have You desolder eeprom?",
+      "metadata": {
+        "id": "1349352287952441359",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-12T08:04:15.201-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5527127211875603
+    },
+    {
+      "text": "Tried that before same thing happens, I think 2nd bios is corrupt way before",
+      "metadata": {
+        "id": "1349801170243420170",
+        "author": "prehistoricknee",
+        "timestamp": "2025-03-13T13:47:57.079-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5682962392648169
+    },
+    {
+      "text": "You mean hardware fault",
+      "metadata": {
+        "id": "1352893403876167711",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T02:35:23.028-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5774781651443898
+    },
+    {
+      "text": "Your UAC shouldn't be that strict, this would scream malware to me.",
+      "metadata": {
+        "id": "1352899999603752960",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T03:01:35.572-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5558570638254982
+    },
+    {
+      "text": "and that's firmly plugged in? Then no idea right now, it might be a hardware fault or something else, I don't think it's a software thing, if there's no overclocking etc. going on.",
+      "metadata": {
+        "id": "1352954725070405692",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T06:39:03.14-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.554748960964909
+    },
+    {
+      "text": "@rizsha Looks like faulty hardware corrupting system memory to me assuming it is in fact a clean install. Dump file analysis would confirm this.",
+      "metadata": {
+        "id": "1352985463115219066",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-22T08:41:11.661-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5571561529370225
+    },
+    {
+      "text": "How this things can be faulty?\nUsb not working when: \n-Missing 5v\n-ESD protect diode faulty(shorted or leak)\n-USB_OC voltage drop(working voltage around 3v up)\n-PCH faulty",
+      "metadata": {
+        "id": "1358777311071043735",
+        "author": "vanduc_gb",
+        "timestamp": "2025-04-07T08:15:55.821-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5586436824439948
+    },
+    {
+      "text": "Device : Desktop Motherboard\nBrand : MSI\nModel : H61M-p20 (G3)\nBoard Number : MS-7788 ver 1.0\nRequest: help\nIssue: the pc didn't turn on , so i tracked the issue , it was on the 3.3sb_en  signal (Q77) i tried to bridge the the source and the gate of that transistor then i accidently took off R4548 & C314 any help please",
+      "metadata": {
+        "id": "1359531609543409876",
+        "author": "lyesstarnaud",
+        "timestamp": "2025-04-09T10:13:14.591-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5513148291868518
+    },
+    {
+      "text": "Should I grab this?\nWhat is the k4 variant of the 1080ti? I’ve never heard of that\nI looked it up to find people confused at a k3 variant, but no answers\nIt *might* have something to do with locked memory?",
+      "metadata": {
+        "id": "1360749396333035651",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T18:52:17.587-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5513902998322461
+    },
+    {
+      "text": "Asus z79-pro gamer\nCPU i5-4670K Max Turbo Frequency 3.80 GHz\n32GB G Skill Ripjaws 4x8GB\nASUS STRIX GTX 750Ti 4GB version\n240GB SSD\nEVGA 850W BQ 80 Plus Bronze Power supply",
+      "metadata": {
+        "id": "1363611604087738600",
+        "author": "shido7991",
+        "timestamp": "2025-04-20T16:25:41.093-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5588481145864292
+    },
+    {
+      "text": "inue using my pc like that? or should I've worried about it, and fix it. In that case, ¿Where the search begin? I already disconnected everything from the usb's and the motherboard do the same, sometimes it boots sometimes doesn't with that overcurrent msg on screen. I have the schematics of this board, and some basic knowledge in electronics, multimeter and solder pen with accesories.",
+      "metadata": {
+        "id": "1366449839243657226",
+        "author": "javocol",
+        "timestamp": "2025-04-28T12:23:49.086-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.564685327089011
+    },
+    {
+      "text": "Ah, it's on hardware level? Neat, have to look into that. 🙂",
+      "metadata": {
+        "id": "1366836104984133724",
+        "author": "smaxx",
+        "timestamp": "2025-04-29T13:58:42.015-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5728852748631671
+    },
+    {
+      "text": "It isn't a good sign that one software can recognise the IC and the other can't. The flash being full of Zeroes is another bad sign. If not being \"bad\" flash IC already, it points at least to interference or connection issues",
+      "metadata": {
+        "id": "1370464103512019064",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-09T14:15:04.269-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5553024665497429
+    },
+    {
+      "text": "Or BIOS corruption in best case",
+      "metadata": {
+        "id": "1377744848232255589",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:26:09.08-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5985802030041149
+    },
+    {
+      "text": "There is a strange thing is that when I install tl631, I see the PCIE RST indicator flashing, I have never encountered this case before.",
+      "metadata": {
+        "id": "1379385560837132339",
+        "author": "hieutcg98",
+        "timestamp": "2025-06-03T05:05:45.448-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5731077324590477
+    },
+    {
+      "text": "Sorry if im completely missing what has happened i thought i was following but could whatever microprocessor that your device has is damaged from the failure you fixed?",
+      "metadata": {
+        "id": "1381020535940714618",
+        "author": "pklrsx",
+        "timestamp": "2025-06-07T17:22:33.889-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5634744881175245
+    },
+    {
+      "text": "You won't learn anything from it. You got overvoltage. Who knows which chips might be damaged.",
+      "metadata": {
+        "id": "1389743909831311451",
+        "author": "mini1477",
+        "timestamp": "2025-07-01T19:06:08.297-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.552498141086913
+    },
+    {
+      "text": "This means that it is running into trouble with the firmware (initializing CPU, memory, peripherals).",
+      "metadata": {
+        "id": "1390559454495510650",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:06:49.297-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5821979869620008
+    },
+    {
+      "text": "Hey there! I've seen several ways to debug PS5 consoles where you soldered some pins from a usb programmer (ch341a) onto the board and was able to read errors and perform basic functions for debugging. What about GPUs and computer hardware, is there anything as such?",
+      "metadata": {
+        "id": "1390830655205671015",
+        "author": "phoenix34",
+        "timestamp": "2025-07-04T19:04:28.585-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5937313114584587
+    },
+    {
+      "text": "Of course, CPUs themselves and any kind of microcontroller literally provide JTAG debugging capability, but some hardware hacking may be needed and the tooling and experience needed would not be worth it. Plus, you'd need to reverse engineer the firmware still to find out where things are going wrong. The shops that go this far would just lift and replace the CPU. Faster, cheaper.",
+      "metadata": {
+        "id": "1390833351044370444",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T19:15:11.323-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.7070741707644407
+    },
+    {
+      "text": "Sounds like a Chipset fault. Checked resistances around it?",
+      "metadata": {
+        "id": "1391727535708049439",
+        "author": "sephir0th1984",
+        "timestamp": "2025-07-07T06:28:21.56-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5576102126930728
+    },
+    {
+      "text": "for me its a low chance could be a bios issue but you try to reprogram",
+      "metadata": {
+        "id": "1394137235657457674",
+        "author": "dues0488",
+        "timestamp": "2025-07-13T22:03:38.798-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5566118750953969
+    },
+    {
+      "text": " then on last resort, deep clean and reflow cpu chip. It came back to me I saw all these articles about a recent windows update causing problems with nvme drives not sure if it is related, also strangely I plugged my own system nvme drive with windows and when it started, Defender reported some kind of a trojan malware that infected the drive and also one of my usb keys. I immediately cleaned them on my linux system, which make me worry if it is some kind of firmware embedded malware, I really h",
+      "metadata": {
+        "id": "1410384997327573153",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:06:27.049-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5994655142277586
+    },
+    {
+      "text": "Firmware-embedded malware is extremely improbable in my opinion.",
+      "metadata": {
+        "id": "1410392009692156014",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-08-27T18:34:18.927-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.6317770064790419
+    },
+    {
+      "text": "I would say chipset or CPU related. In best case something obvious to find by a detailed visual inspection. Partial BIOS corruption should be ruled out for sanity too",
+      "metadata": {
+        "id": "1410394326470754448",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:43:31.29-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5860160418832346
+    },
+    {
+      "text": "hey guys! anyone know what this chip is? It looks like a bios chip \nfrom MSI stealth GS66\nnumbers X28A XX711",
+      "metadata": {
+        "id": "1418013946253672479",
+        "author": "amame72omg",
+        "timestamp": "2025-09-17T19:21:10.212-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.560078157469749
+    },
+    {
+      "text": "this wouldnt be a bios chip, bios chips usually have bigger legs like this chip on another msi stealth gs66",
+      "metadata": {
+        "id": "1418037922384314468",
+        "author": "gexreal",
+        "timestamp": "2025-09-17T20:56:26.567-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5596443542047483
+    },
+    {
+      "text": "Get a bios flasher with a clip attachment, identify ypur bios chip model and use AI to find a compatible flshing setup. The bios file shouldnt be very hard to fins",
+      "metadata": {
+        "id": "1419592283116011542",
+        "author": "vibrantpickle13213",
+        "timestamp": "2025-09-22T03:52:55.044-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5749419153309077
+    },
+    {
+      "text": "Could be a *partially* shorted MOSFET or power ic *(anything really)* on that rail. Forward to #💻laptops",
+      "metadata": {
+        "id": "1420359339469832255",
+        "author": "phoenix.yk",
+        "timestamp": "2025-09-24T06:40:55.53-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.554434785904324
+    },
+    {
+      "text": "Possibly. You can check the hardware ID in the \"Details\" tab.",
+      "metadata": {
+        "id": "1422983426914390168",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:28:06.73-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5521958376466178
+    },
+    {
+      "text": "And then find out why it isn't detected. For example with the help of the video linked above.",
+      "metadata": {
+        "id": "1423677483777003600",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-03T10:26:02.781-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5651315966933335
+    },
+    {
+      "text": "So then inspected the board under a microscope and found this ESD Protection IC (U3U1) looking dodgy. I removed the IC but unfortunately I still get the \"USB Over Current Status Detected\" message.",
+      "metadata": {
+        "id": "1425432775993065513",
+        "author": "zuldan",
+        "timestamp": "2025-10-08T06:40:57.057-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5754989488243288
+    },
+    {
+      "text": "It's not about the voltage not reaching the Ports but about OC detected at one of these switches, or in worst case \"just\" the Chipset being in this failure mode permantenly (for whatever reason)",
+      "metadata": {
+        "id": "1425438389280182323",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-08T07:03:15.369-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5551552725159153
+    },
+    {
+      "text": "@CodeConnoisseur i had the time to check the MANLI 4090 24GB CYBERTANK voltages. Pex passes from 0.9 to 0V",
+      "metadata": {
+        "id": "1427411710788239493",
+        "author": "dhalon",
+        "timestamp": "2025-10-13T17:44:31.879-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5673014892026773
+    },
+    {
+      "text": "Main power rail is probably shorted through that ic with cpu/gpu(what do you have there). What device is this about?",
+      "metadata": {
+        "id": "1429197517068963920",
+        "author": "nexkg_28147",
+        "timestamp": "2025-10-18T16:00:41.275-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5573249490195049
+    },
+    {
+      "text": "What is going to protection? The PSU?",
+      "metadata": {
+        "id": "1429473566709252116",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-19T10:17:36.638-04:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.552542678691776
+    },
+    {
+      "text": "You can also try applying downwards pressure on the chipset before, during, and after boot to rule out some BGA fault there. The USB OC signals are near one of the corners which are the most likely areas to have cracked balls.",
+      "metadata": {
+        "id": "1434684372694601900",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-11-02T18:23:29.597-05:00",
+        "channel": "ElectronicRepair_pc-repair"
+      },
+      "similarity": 0.5964412380153008
+    }
+  ]
+}

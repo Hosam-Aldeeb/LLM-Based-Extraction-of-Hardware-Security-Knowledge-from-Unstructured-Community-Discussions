@@ -1,0 +1,20 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/SDRplusplus_dsp_Jan2025_export.json",
+  "totalMessages": 638,
+  "totalChunks": 627,
+  "relevantMessages": 1,
+  "results": [
+    {
+      "text": "then your security device has shit security",
+      "metadata": {
+        "id": "1349779571334971413",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:22:07.498-04:00",
+        "channel": "SDRplusplus_dsp"
+      },
+      "similarity": 0.6352627763593686
+    }
+  ]
+}

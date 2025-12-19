@@ -1,0 +1,214 @@
+{
+  "channel": "SDRplusplus_dsp",
+  "source": "./discord-exports/SDRplusplus_dsp_Jan2025_export.json",
+  "filteredMessages": 1,
+  "totalThreads": 1,
+  "substantialThreads": 1,
+  "threads": [
+    [
+      {
+        "id": "1349779571334971413",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:22:07.498-04:00",
+        "content": "then your security device has shit security"
+      },
+      {
+        "id": "1349779610044203120",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:22:16.727-04:00",
+        "content": "I am currently not near the remote",
+        "reference": {
+          "messageId": "1349779383270772839",
+          "channelId": "990309531097640961",
+          "guildId": "752669522883903601"
+        }
+      },
+      {
+        "id": "1349779664113242243",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:22:29.618-04:00",
+        "content": "I agree",
+        "reference": {
+          "messageId": "1349779571334971413",
+          "channelId": "990309531097640961",
+          "guildId": "752669522883903601"
+        }
+      },
+      {
+        "id": "1349779710971740312",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:22:40.79-04:00",
+        "content": "what even is this device?"
+      },
+      {
+        "id": "1349779722531246080",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:22:43.546-04:00",
+        "content": "what does it do"
+      },
+      {
+        "id": "1349779830731833428",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:23:09.343-04:00",
+        "content": "and why do you want to replay"
+      },
+      {
+        "id": "1349780106943533086",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:24:15.197-04:00",
+        "content": "I can confirm it is my property",
+        "reference": {
+          "messageId": "1349779703342567424",
+          "channelId": "990309531097640961",
+          "guildId": "752669522883903601"
+        }
+      },
+      {
+        "id": "1349780118003908729",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:24:17.834-04:00",
+        "content": "a \"security device\" that you would want to replay that can be controlled via a remote uh"
+      },
+      {
+        "id": "1349780138770042900",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:24:22.785-04:00",
+        "content": "a garage door?"
+      },
+      {
+        "id": "1349780269703499838",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:24:54.002-04:00",
+        "content": "sent above already",
+        "reference": {
+          "messageId": "1349780192180305960",
+          "channelId": "990309531097640961",
+          "guildId": "752669522883903601"
+        }
+      },
+      {
+        "id": "1349780300389027871",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:25:01.318-04:00",
+        "content": "ok but WHAT IS THIS DEVICE"
+      },
+      {
+        "id": "1349780378583568474",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:25:19.961-04:00",
+        "content": "it is... the remote to unlock car door",
+        "reference": {
+          "messageId": "1349780162484633611",
+          "channelId": "990309531097640961",
+          "guildId": "752669522883903601"
+        }
+      },
+      {
+        "id": "1349780556522590252",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:26:02.385-04:00",
+        "content": "like I said I already confirmed it is working"
+      },
+      {
+        "id": "1349780600747327530",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:26:12.929-04:00",
+        "content": "well you already have a remote no need to replicate it"
+      },
+      {
+        "id": "1349780698986188842",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:26:36.351-04:00",
+        "content": "if I record the signal with 3-4 consecutive button press, then it unlocks normally"
+      },
+      {
+        "id": "1349780791265198105",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:26:58.352-04:00",
+        "content": "you mean transmitting the baseband?"
+      },
+      {
+        "id": "1349780803738927266",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:27:01.326-04:00",
+        "content": "wdym"
+      },
+      {
+        "id": "1349780807396626475",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:27:02.198-04:00",
+        "content": "do I need to have a reason? I like to do stuff like this as a hobby",
+        "reference": {
+          "messageId": "1349780600747327530",
+          "channelId": "990309531097640961",
+          "guildId": "752669522883903601"
+        }
+      },
+      {
+        "id": "1349780856150954105",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:27:13.822-04:00",
+        "content": "well this is a sketchy territory"
+      },
+      {
+        "id": "1349780902049353911",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:27:24.765-04:00",
+        "content": "nope I am not doing that"
+      },
+      {
+        "id": "1349780921951191134",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:27:29.51-04:00",
+        "content": "I want to get the perfect square wave signal"
+      },
+      {
+        "id": "1349781017740840981",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:27:52.348-04:00",
+        "content": "well i don't want to help you until you prove that car belongs to you"
+      },
+      {
+        "id": "1349781131523788870",
+        "author": "millhiore_f_biscotti",
+        "timestamp": "2025-03-13T12:28:19.476-04:00",
+        "content": "in a bit then, not near the remote for real"
+      },
+      {
+        "id": "1349781192848703570",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:28:34.097-04:00",
+        "content": "i hope i don't have to wait 10 hours"
+      },
+      {
+        "id": "1349781463423254610",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:29:38.607-04:00",
+        "content": "nah my sleep is currently normal",
+        "reference": {
+          "messageId": "1349781345462911008",
+          "channelId": "990309531097640961",
+          "guildId": "752669522883903601"
+        }
+      },
+      {
+        "id": "1349781871403208775",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:31:15.877-04:00",
+        "content": "why is it so long bruh"
+      },
+      {
+        "id": "1349782116975771701",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:32:14.426-04:00",
+        "content": "it is, but somehow replaying it 5 times bypasses it"
+      },
+      {
+        "id": "1349782257778294847",
+        "author": "Deleted User",
+        "timestamp": "2025-03-13T12:32:47.996-04:00",
+        "content": "mhm"
+      }
+    ]
+  ]
+}

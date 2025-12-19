@@ -1,0 +1,1405 @@
+{
+  "metadata": {
+    "created": "2025-12-19T01:17:20.674Z",
+    "sourceFile": "./TryHackMe_research_filtered_messages.json",
+    "originalExport": "./discord-exports/TryHackMe_research_Jan2025_export.json"
+  },
+  "statistics": {
+    "totalThreads": 32,
+    "totalMessages": 122,
+    "avgMessagesPerThread": "3.81",
+    "minMessages": 1,
+    "maxMessages": 26,
+    "singleMessageThreads": 14,
+    "multiMessageThreads": 18
+  },
+  "threads": [
+    {
+      "id": 1,
+      "rootMessageId": "1299457710424854601",
+      "messages": [
+        {
+          "id": "1299457710424854601",
+          "author": "Deleted User",
+          "timestamp": "2024-10-25T15:41:00.922-04:00",
+          "content": "After all my research i've uncovered a universal truth installing Linux won’t make you a hacker",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1299506755507851306",
+          "author": "ben_cybersec",
+          "timestamp": "2024-10-25T18:55:54.181-04:00",
+          "content": "Can confirm. I even tried arch, btw",
+          "type": "Reply",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "Deleted User",
+        "ben_cybersec"
+      ],
+      "startTime": "2024-10-25T15:41:00.922-04:00",
+      "endTime": "2024-10-25T18:55:54.181-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 2,
+      "rootMessageId": "1300903120636739646",
+      "messages": [
+        {
+          "id": "1300773071631810591",
+          "author": "autumn12345",
+          "timestamp": "2024-10-29T06:47:47.472-04:00",
+          "content": "anyone have any research or guidance on file level encryption vs drive level encryption? \n\nlooking for things like why you’d choose drive level over file level for backups in particular\n\nis general guidance “it doesn’t matter, as long as it’s encrypted”?",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1300790282559946855",
+          "author": "mknukn",
+          "timestamp": "2024-10-29T07:56:10.877-04:00",
+          "content": "quick thing off the top of my head is: drive-level encryption protects your files from physical access and file-level encryption protects your files from electronic access",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1300828856252498132",
+          "author": "zumiyumi",
+          "timestamp": "2024-10-29T10:29:27.562-04:00",
+          "content": "basically what mknukn said\nfor sysadmins and security folks we like to have drive level encryption for users because they forget their laptops in taxis all the time and it helps when an asset is lost and cannot be remotely wiped\nthe file encryption is good when you need to move files around and in case it gets intercepted or goes to the wrong person for whatever reason it adds an extra layer of security possibly",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1300903120636739646",
+          "author": "so_much_for_subtlety",
+          "timestamp": "2024-10-29T15:24:33.571-04:00",
+          "content": "Yeah, disk-level encryption these days can take advantage of the TPM in your machine's motherboard, such as Bitlocker on Windows, or the LUKS disk encryption mechanism in Linux. File level encryption might allow you to store the keys elsewhere, such as on a USB stick to store the key, like with AES on a ZIP file; or using PGP to send/receive files through email (PKE, asychronous)",
+          "type": "Reply",
+          "isFiltered": true
+        },
+        {
+          "id": "1300911755324559431",
+          "author": "xorist",
+          "timestamp": "2024-10-29T15:58:52.241-04:00",
+          "content": "Just adding a couple things I thought of as well related to this\n\nAn attack may be possible in some situations where the attacker has extended unrestricted access to your hardware. The attack could enable them to retrieve your key from the TPM. Because of this, some people prefer to use disk level encryption in the other configurations mentioned, where the key had to be either inserted, manually entered, or even delivered by a Tang server or bitlocker network unlock. These configurations can open a different attack surface, but they also prevent decryption by the more commonly known methods for retrieving keys from the TPM.",
+          "type": "Reply",
+          "isFiltered": true
+        },
+        {
+          "id": "1300913053138681976",
+          "author": "so_much_for_subtlety",
+          "timestamp": "2024-10-29T16:04:01.664-04:00",
+          "content": "An excellent point. Encryption and key security/management require the use of other tools/techniques to safeguard your systems. You could do something like hosting the user's work desktop on a cloud server (pub/priv) and require a vpn key on an external device or dot1x system in the office to allow a dumb/limited laptop to connect to the network",
+          "type": "Reply",
+          "isFiltered": true
+        },
+        {
+          "id": "1300914176507772938",
+          "author": "so_much_for_subtlety",
+          "timestamp": "2024-10-29T16:08:29.496-04:00",
+          "content": "You can also require encrypted usb keys and control/manage the keys centrally for file transport. So if you had to physically transport a sensitive file to a restricted/air-gapped location, for instance, key management for the usb key and file can be maintained securely and access can be very tightly controlled",
+          "type": "Default",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "autumn12345",
+        "mknukn",
+        "zumiyumi",
+        "so_much_for_subtlety",
+        "xorist"
+      ],
+      "startTime": "2024-10-29T06:47:47.472-04:00",
+      "endTime": "2024-10-29T16:08:29.496-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 3,
+      "rootMessageId": "1310128820568985654",
+      "messages": [
+        {
+          "id": "1310128820568985654",
+          "author": "dragkob",
+          "timestamp": "2024-11-24T01:24:11.84-05:00",
+          "content": "Yo everyone, recently did a deep dive on a recent 0 click CVE with a 9.8 CVSS score. Also developed a PoC for it and published a video on YouTube showcasing how it works.\n\nMy full article with a deep dive into how the kernel level exploit works:\nhttps://dragkob.notion.site/ipv6-the-0-click-gateway-to-hacking-windows",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1310801077498544128",
+          "author": "aces1735",
+          "timestamp": "2024-11-25T21:55:30.382-05:00",
+          "content": "Wow! Very in depth analysis of how a simple function, if exploited via manipulating the IPv6 extension headers can lead to an integer overflow and cause a dos attack.",
+          "type": "Reply",
+          "isFiltered": true
+        },
+        {
+          "id": "1310801434274435163",
+          "author": "aces1735",
+          "timestamp": "2024-11-25T21:56:55.444-05:00",
+          "content": "reverse engineering the patch itself was very smart.",
+          "type": "Default",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "dragkob",
+        "aces1735"
+      ],
+      "startTime": "2024-11-24T01:24:11.84-05:00",
+      "endTime": "2024-11-25T21:56:55.444-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 4,
+      "rootMessageId": "1311160451895398410",
+      "messages": [
+        {
+          "id": "1311160451895398410",
+          "author": "kyootybella",
+          "timestamp": "2024-11-26T21:43:31.915-05:00",
+          "content": "My friend just posted their first ever blog post about a research project they did, I am really proud of them!\nThe project was reverse engineering a phone that they had gotten, really cool what they have found 😄\nhttps://zestfulzodiac.substack.com/p/from-secure-to-exposed-a-forensic",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "kyootybella"
+      ],
+      "startTime": "2024-11-26T21:43:31.915-05:00",
+      "endTime": "2024-11-26T21:43:31.915-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 5,
+      "rootMessageId": "1313537216672301118",
+      "messages": [
+        {
+          "id": "1313537216672301118",
+          "author": "so_much_for_subtlety",
+          "timestamp": "2024-12-03T11:07:56.796-05:00",
+          "content": "Because it's a growing problem in certain parts of the world, it's definitely on some peoples' radars, from TCM, an introduction to replay attacks in car theft:\n\nhttps://www.linkedin.com/comm/pulse/intro-car-hacking-replay-attacks-tcm-security-inc-qpb0c",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1313537695468884100",
+          "author": "kgbkp",
+          "timestamp": "2024-12-03T11:09:50.95-05:00",
+          "content": "Thanks for sharing 😄",
+          "type": "Reply",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "so_much_for_subtlety",
+        "kgbkp"
+      ],
+      "startTime": "2024-12-03T11:07:56.796-05:00",
+      "endTime": "2024-12-03T11:09:50.95-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 6,
+      "rootMessageId": "1314653283104849990",
+      "messages": [
+        {
+          "id": "1314653283104849990",
+          "author": "jabba.sh",
+          "timestamp": "2024-12-06T13:02:47.769-05:00",
+          "content": "Over the past few months, has anyone seen any particularly interesting vulnerabilities or threats?\n\nFurther reading would be great 😊",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1314655796671283241",
+          "author": "shadow_absorber",
+          "timestamp": "2024-12-06T13:12:47.05-05:00",
+          "content": "ubuntu linux targeting uefi malware called bootkitty",
+          "type": "Reply",
+          "isFiltered": true
+        },
+        {
+          "id": "1314655879836209155",
+          "author": "shadow_absorber",
+          "timestamp": "2024-12-06T13:13:06.878-05:00",
+          "content": "interesting and scary for shadow",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1314655914787082340",
+          "author": "shadow_absorber",
+          "timestamp": "2024-12-06T13:13:15.211-05:00",
+          "content": "not that shadow runs ubuntu",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1317174534385700885",
+          "author": "dragkob",
+          "timestamp": "2024-12-13T12:01:20.917-05:00",
+          "content": "https://dragkob.notion.site/ipv6-the-0-click-gateway-to-hacking-windows",
+          "type": "Reply",
+          "isFiltered": true
+        },
+        {
+          "id": "1317176151508254760",
+          "author": "hex4a",
+          "timestamp": "2024-12-13T12:07:46.469-05:00",
+          "content": "Tracking an NK campaign right now, someone in here reached out with a file malwarebytes detected as a stealer, turned out to be invisibleferret - worked with victim to find the initial IOC and started tracking a multitude of LI profiles spreading beavertail + invisibleferret combo through contagious interviews, almost all of them are crypto related and ask the interviewee/victim to run a node project, usually some boilerplate web app with an exec snuck in that executes obfuscated node (beavertail) within a PNG \n\nwill likely soon have a research article and TTP/IOC report on our blog but Unit42 also covered this very well: https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/",
+          "type": "Reply",
+          "isFiltered": true
+        },
+        {
+          "id": "1317176321784414361",
+          "author": "hex4a",
+          "timestamp": "2024-12-13T12:08:27.066-05:00",
+          "content": "seeing a big uptick as we've identified a few new C2 rotations and new campaign IDs as recent as a few days ago",
+          "type": "Default",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "jabba.sh",
+        "shadow_absorber",
+        "dragkob",
+        "hex4a"
+      ],
+      "startTime": "2024-12-06T13:02:47.769-05:00",
+      "endTime": "2024-12-13T12:08:27.066-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 7,
+      "rootMessageId": "1321257115851161601",
+      "messages": [
+        {
+          "id": "1321257115851161601",
+          "author": "aces1735",
+          "timestamp": "2024-12-24T18:24:04.189-05:00",
+          "content": "Hey y’all, I wanted to share my analysis of the Akira ransomware. Feel free to give me feedback on it. It would be truly appreciated. https://medium.com/@Not_AceS/static-analysis-of-the-infamous-akira-ransomware-808ff3fd047f",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "aces1735"
+      ],
+      "startTime": "2024-12-24T18:24:04.189-05:00",
+      "endTime": "2024-12-24T18:24:04.189-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 8,
+      "rootMessageId": "1321894652718223472",
+      "messages": [
+        {
+          "id": "1321894652718223472",
+          "author": "hex4a",
+          "timestamp": "2024-12-26T12:37:24.823-05:00",
+          "content": "writer from my lil research / ctf team finished summarizing our analysis of beavertail/invisibleferret :) \nhttps://team-bytesized.github.io/articles/malware/beavertail_invisbleferret.html",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "hex4a"
+      ],
+      "startTime": "2024-12-26T12:37:24.823-05:00",
+      "endTime": "2024-12-26T12:37:24.823-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 9,
+      "rootMessageId": "1323678919584649249",
+      "messages": [
+        {
+          "id": "1323678919584649249",
+          "author": "so_much_for_subtlety",
+          "timestamp": "2024-12-31T10:47:27.194-05:00",
+          "content": "Former NSA cyberspy's not-so-secret hobby: Hacking Christmas lights\nhttps://www.theregister.com/2024/12/25/joyce_christmas_lights/",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "so_much_for_subtlety"
+      ],
+      "startTime": "2024-12-31T10:47:27.194-05:00",
+      "endTime": "2024-12-31T10:47:27.194-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 10,
+      "rootMessageId": "1325168532836847627",
+      "messages": [
+        {
+          "id": "1325145303891972136",
+          "author": "heapsoverflow",
+          "timestamp": "2025-01-04T11:54:20.457-05:00",
+          "content": "https://revdiaries.com/post/solara-malware-analysis",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1325168532836847627",
+          "author": "jabba.sh",
+          "timestamp": "2025-01-04T13:26:38.669-05:00",
+          "content": "Awesome analysis! I'd definitely like to come back to this post as a later point and see if this Malware creator is behind any other of the popular malware scripts.\n\nIt's actually incredibly common for Roblox DLL injectors and scripts to actually be malicious.\nSomething about Solara is that it actually was a real 'legitimate' cheat but, if I remember correctly, someone created their own fake Discord and started distributing a fake version.",
+          "type": "Reply",
+          "isFiltered": true
+        },
+        {
+          "id": "1325186276843847680",
+          "author": "heapsoverflow",
+          "timestamp": "2025-01-04T14:37:09.17-05:00",
+          "content": "Yeah this is the fake one i assume.",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1325841921813250151",
+          "author": ".canyon",
+          "timestamp": "2025-01-06T10:02:27.112-05:00",
+          "content": "cool writeup. what did you use to pin down the c2 servers and their companies? or, where does a sc like this come from?",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1325884545974800436",
+          "author": "heapsoverflow",
+          "timestamp": "2025-01-06T12:51:49.504-05:00",
+          "content": "https://ipinfo.io/AS44559",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1338162889634222120",
+          "author": "causticfartz",
+          "timestamp": "2025-02-09T10:01:34.753-05:00",
+          "content": "Awesome analysis - can you suggest any resources that get me started with understanding decompiled code, rev engg and low level code and static analysis in general.",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1338164152304140338",
+          "author": "heapsoverflow",
+          "timestamp": "2025-02-09T10:06:35.797-05:00",
+          "content": "<https://github.com/mschwartz/assembly-tutorial>\n<https://pwn.college/>\n<https://crackmy.app/> or <https://crackmes.one>\nYoutube: OALabs, Low Level Learning, MalwareTech\n\nIMO, Best practice for reverse engineering is writing your own C/C++ code and disassembling the binary. You will spot the similarities and understand how certain code works in low-level environment.",
+          "type": "Reply",
+          "isFiltered": true
+        },
+        {
+          "id": "1338213142345552073",
+          "author": "kangafoo",
+          "timestamp": "2025-02-09T13:21:15.933-05:00",
+          "content": "oh cool, thanks for the summary, wasnt for me, but still appreciated 😄",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1338592939471016079",
+          "author": "causticfartz",
+          "timestamp": "2025-02-10T14:30:26.624-05:00",
+          "content": "gotcha, i did some basic cpp development for a small app and used winapi but thanks for these resources.",
+          "type": "Reply",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "heapsoverflow",
+        "jabba.sh",
+        ".canyon",
+        "causticfartz",
+        "kangafoo"
+      ],
+      "startTime": "2025-01-04T11:54:20.457-05:00",
+      "endTime": "2025-02-10T14:30:26.624-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 11,
+      "rootMessageId": "1325848304747024455",
+      "messages": [
+        {
+          "id": "1325848304747024455",
+          "author": ".canyon",
+          "timestamp": "2025-01-06T10:27:48.922-05:00",
+          "content": "https://www.404media.co/violent-hackers-are-using-u-haul-to-dox-targets/",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1325848332496666726",
+          "author": ".canyon",
+          "timestamp": "2025-01-06T10:27:55.538-05:00",
+          "content": "kind of frightening",
+          "type": "Default",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        ".canyon"
+      ],
+      "startTime": "2025-01-06T10:27:48.922-05:00",
+      "endTime": "2025-01-06T10:27:55.538-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 12,
+      "rootMessageId": "1333110515269898261",
+      "messages": [
+        {
+          "id": "1333110515269898261",
+          "author": "Deleted User",
+          "timestamp": "2025-01-26T11:25:14.836-05:00",
+          "content": "https://trufflesecurity.com/blog/millions-at-risk-due-to-google-s-oauth-flaw",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1333110676150812693",
+          "author": "Deleted User",
+          "timestamp": "2025-01-26T11:25:53.193-05:00",
+          "content": "I found the link above after being inspired by https://tryhackme.com/r/room/oauthvulnerabilities",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "Deleted User"
+      ],
+      "startTime": "2025-01-26T11:25:14.836-05:00",
+      "endTime": "2025-01-26T11:25:53.193-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 13,
+      "rootMessageId": "1333216086472130560",
+      "messages": [
+        {
+          "id": "1333216086472130560",
+          "author": "aces1735",
+          "timestamp": "2025-01-26T18:24:44.972-05:00",
+          "content": "Hello everyone, this would be my 2nd analysis blog and this time it is on the notorious malware “Industroyer”. Any feedback is welcome https://medium.com/@Not_AceS/industroyer-analysis-187bd1f5ffc7",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "aces1735"
+      ],
+      "startTime": "2025-01-26T18:24:44.972-05:00",
+      "endTime": "2025-01-26T18:24:44.972-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 14,
+      "rootMessageId": "1337565867088678954",
+      "messages": [
+        {
+          "id": "1337565867088678954",
+          "author": "so_much_for_subtlety",
+          "timestamp": "2025-02-07T18:29:13.486-05:00",
+          "content": "An old story from back in 2017 popped up while scrolling. Though you might find it of interest\n\nHere's the article: \nhttps://www.wired.com/story/malware-dna-hack/\n\nAnd here's one from the IEEE: \nhttps://spectrum.ieee.org/researchers-embed-malicious-code-into-dna-to-hack-dna-sequencing-software",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "so_much_for_subtlety"
+      ],
+      "startTime": "2025-02-07T18:29:13.486-05:00",
+      "endTime": "2025-02-07T18:29:13.486-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 15,
+      "rootMessageId": "1352417715662618734",
+      "messages": [
+        {
+          "id": "1352417715662618734",
+          "author": "aces1735",
+          "timestamp": "2025-03-20T19:05:10.12-04:00",
+          "content": "https://medium.com/@Not_AceS/fake-fortnite-exploit-malware-analysis-21d908696642 For this malware analysis blog i analyzed a fake Fortnite exploit that is actually malware. Feedback is welcome!",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1362609708522930436",
+          "author": "dragkob",
+          "timestamp": "2025-04-17T22:04:30.576-04:00",
+          "content": "This was a nice blog. Short and straight to the point. Good job.",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1362609829020962856",
+          "author": "dragkob",
+          "timestamp": "2025-04-17T22:04:59.305-04:00",
+          "content": "Feel free to share more if you do work on more. I'm personally very interested in forensics, but don't really want to go into the technicalities of it.",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1362609856946638868",
+          "author": "dragkob",
+          "timestamp": "2025-04-17T22:05:05.963-04:00",
+          "content": "So I enjoy reading articles like yours.",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1362609897824452640",
+          "author": "dragkob",
+          "timestamp": "2025-04-17T22:05:15.709-04:00",
+          "content": "It feels like a sherlock investigation lol.",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1362609969857429648",
+          "author": "dragkob",
+          "timestamp": "2025-04-17T22:05:32.883-04:00",
+          "content": "https://tenor.com/view/sherlockholmes-gif-22362331",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1362611021633687623",
+          "author": "aces1735",
+          "timestamp": "2025-04-17T22:09:43.646-04:00",
+          "content": "Aye thank you very much, and yes I have another coming. Forensics is very fun",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1365450628913954877",
+          "author": "heathengrizz",
+          "timestamp": "2025-04-25T18:13:18.779-04:00",
+          "content": "Late to the party, but this was a good read. Straightforward and palatable. Thanks for posting!",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1365450696660353125",
+          "author": "aces1735",
+          "timestamp": "2025-04-25T18:13:34.931-04:00",
+          "content": "Thank you friend",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1365450726964334653",
+          "author": "aces1735",
+          "timestamp": "2025-04-25T18:13:42.156-04:00",
+          "content": "Glad you like it",
+          "type": "Default",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "aces1735",
+        "dragkob",
+        "heathengrizz"
+      ],
+      "startTime": "2025-03-20T19:05:10.12-04:00",
+      "endTime": "2025-04-25T18:13:42.156-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 16,
+      "rootMessageId": "1379948061975117854",
+      "messages": [
+        {
+          "id": "1379948061975117854",
+          "author": "aces1735",
+          "timestamp": "2025-06-04T18:20:56.17-04:00",
+          "content": "Hello y’all, I made another blog about the malware called Formbook and it’s a stealer. Instead of your normal executable, it’s a java script file. Feedback is welcome 🙏\n\nhttps://medium.com/@Not_AceS/formbook-javascript-malware-analysis-098c37137189",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1382245698019397682",
+          "author": "get_it_grab_it_55967",
+          "timestamp": "2025-06-11T02:30:55.291-04:00",
+          "content": "Can we download it",
+          "type": "Reply",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "aces1735",
+        "get_it_grab_it_55967"
+      ],
+      "startTime": "2025-06-04T18:20:56.17-04:00",
+      "endTime": "2025-06-11T02:30:55.291-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 17,
+      "rootMessageId": "1387857584916271245",
+      "messages": [
+        {
+          "id": "1386414087260475392",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-22T14:34:36.731-04:00",
+          "content": "guys i found something interesting, is there a way for a phone on your network to declare itself as a router and appear as one in ipv6 neighbor discovery?, i ran the network through wire shark and it seems there is a device spoofing requests trying to look like my router with smaller differences to the mac address\n\n\nalso i blocked upnp request on my router a few days ago because it seemed like i am getting DDoSed from all of my IoT devices, so now i get a ton of port 5353 request instead by the same volume\n\nalso there was a suspicious address trying to access SMB today which i have never seen before \n\nall of these got blocked of course, but the only devices that were acting weird is that phone that appears as a router, and another computer that can traceroute other devices, but you can't ping that computer or traceroute it, sounds like a man in the middle attack with a rouge router, i might be looking too much into things but i did get an arp poisoning alert from that same phone when the issues started, plus there a hefty amount of arp requests in the wireshark sniffing i did before\n\n\nwhat do you think?",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387857222993707251",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:09:07.102-04:00",
+          "content": "Can I dm?",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1387857491492212827",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:10:11.117-04:00",
+          "content": "would rather keep it in this forum if you have anything to add",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1387857516007915520",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:10:16.962-04:00",
+          "content": "Okay",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387857584916271245",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:10:33.391-04:00",
+          "content": "do you have IPv6 RA Guard enabled?",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1387857696493146274",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:10:59.993-04:00",
+          "content": "im less worried about their foothold, more about how they are doing it",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387857843142525100",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:11:34.957-04:00",
+          "content": "easy, MitM",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387857996503060500",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:12:11.521-04:00",
+          "content": "yeah",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858141349154958",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:12:46.055-04:00",
+          "content": "arp poisoning, mitm, lateral movement, IoT device acting like botnets, rough routers using ipv6",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1387858191836250313",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:12:58.092-04:00",
+          "content": "was wondering who else acts in that fashion",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858230851403796",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:13:07.394-04:00",
+          "content": "Who doesn't ?",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858241383436468",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:13:09.905-04:00",
+          "content": "It's really common",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858256910614589",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:13:13.607-04:00",
+          "content": "mirai spiked on days where i had the most intense attacks",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858307171225610",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:13:25.59-04:00",
+          "content": "so i had my suspicion",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858341262262292",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:13:33.718-04:00",
+          "content": "but i dont see any malware drops",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858370329051257",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:13:40.648-04:00",
+          "content": "Yet",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858489581244627",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:14:09.08-04:00",
+          "content": "If I'd be you, I would disable IPv6",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858529444172019",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:14:18.584-04:00",
+          "content": "yeah i thought about that",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858594220867626",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:14:34.028-04:00",
+          "content": "but my curiosity has the better of me haha",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858643218731088",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:14:45.71-04:00",
+          "content": "Fair Enough",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858835254935642",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:15:31.495-04:00",
+          "content": "disabling DHCP is also one thing I'd do",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858940464988181",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:15:56.579-04:00",
+          "content": "i actually wanted to check my DHCP tables but cant because of the hardware im using",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387858997121646593",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:16:10.087-04:00",
+          "content": "i think they know this hardware because of the way they are attacking",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1387859050816864338",
+          "author": ".soulskeeper",
+          "timestamp": "2025-06-26T14:16:22.889-04:00",
+          "content": "its very simillar to the recent ASUS routers attack",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1387859107909730486",
+          "author": "iltkms",
+          "timestamp": "2025-06-26T14:16:36.501-04:00",
+          "content": "Then you are going to have a long night",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1388166797441634305",
+          "author": "darxkillerx",
+          "timestamp": "2025-06-27T10:39:15.402-04:00",
+          "content": "Dammnnn 😂😂. This is like me reading a life sentence",
+          "type": "Reply",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        ".soulskeeper",
+        "iltkms",
+        "darxkillerx"
+      ],
+      "startTime": "2025-06-22T14:34:36.731-04:00",
+      "endTime": "2025-06-27T10:39:15.402-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 18,
+      "rootMessageId": "1393011489258078249",
+      "messages": [
+        {
+          "id": "1393011489258078249",
+          "author": "so_much_for_subtlety",
+          "timestamp": "2025-07-10T19:30:19.941-04:00",
+          "content": "New Report Uncovers Major Overlaps in Cybercrime and State-Sponsored Espionage\n\nhttps://www.infosecurity-magazine.com/news/major-overlaps-cybercrime-espionage/",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "so_much_for_subtlety"
+      ],
+      "startTime": "2025-07-10T19:30:19.941-04:00",
+      "endTime": "2025-07-10T19:30:19.941-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 19,
+      "rootMessageId": "1395488335622963432",
+      "messages": [
+        {
+          "id": "1395488335622963432",
+          "author": "so_much_for_subtlety",
+          "timestamp": "2025-07-17T15:32:26.132-04:00",
+          "content": "How the NSA Hacked Huawei: Operation Shotgiant\n\nhttps://www.youtube.com/watch?v=aQNgelm7JeE",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "so_much_for_subtlety"
+      ],
+      "startTime": "2025-07-17T15:32:26.132-04:00",
+      "endTime": "2025-07-17T15:32:26.132-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 20,
+      "rootMessageId": "1404948777827303595",
+      "messages": [
+        {
+          "id": "1404948777827303595",
+          "author": "n_440",
+          "timestamp": "2025-08-12T18:04:51.32-04:00",
+          "content": "Happy to share my latest finding on how to bypass CVE-2025-24054 security patch and get a NTLM challenge from explorer.exe in 0 click \n\nhttps://cymulate.com/blog/zero-click-one-ntlm-microsoft-security-patch-bypass-cve-2025-50154/",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1405364599670313043",
+          "author": "aces1735",
+          "timestamp": "2025-08-13T21:37:10.973-04:00",
+          "content": "Nice blog",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1406084057154060401",
+          "author": "mknukn",
+          "timestamp": "2025-08-15T21:16:03.004-04:00",
+          "content": "Great blog mate",
+          "type": "Reply",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "n_440",
+        "aces1735",
+        "mknukn"
+      ],
+      "startTime": "2025-08-12T18:04:51.32-04:00",
+      "endTime": "2025-08-15T21:16:03.004-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 21,
+      "rootMessageId": "1415765051893088337",
+      "messages": [
+        {
+          "id": "1415765051893088337",
+          "author": "mar0n0",
+          "timestamp": "2025-09-11T14:24:52.014-04:00",
+          "content": "Technique to exfiltrate git  credentials from Argocd: https://futuresight.club/posts/0x00_exfiltrate_git_credentials_argocd.html",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "mar0n0"
+      ],
+      "startTime": "2025-09-11T14:24:52.014-04:00",
+      "endTime": "2025-09-11T14:24:52.014-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 22,
+      "rootMessageId": "1424449603016724600",
+      "messages": [
+        {
+          "id": "1424449603016724600",
+          "author": "Deleted User",
+          "timestamp": "2025-10-05T13:34:10.353-04:00",
+          "content": "Boys, what do you think about this method of encryption?\nhttps://github.com/Whitecat18/Rust-for-Malware-Development/tree/main/Encryption%20Methods/ecc_shellcode_exec",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "Deleted User"
+      ],
+      "startTime": "2025-10-05T13:34:10.353-04:00",
+      "endTime": "2025-10-05T13:34:10.353-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 23,
+      "rootMessageId": "1430499527386861661",
+      "messages": [
+        {
+          "id": "1430499527386861661",
+          "author": "slavetomints",
+          "timestamp": "2025-10-22T06:14:24.725-04:00",
+          "content": "DeTraced Security has finished our second engagement! This time we followed a TA across the internet. This time we've published both a blog post and also IOCs/YARA rules. Feel free to check them out!\n\nBLOG:\nhttps://detraced.org/posts/infostealer-turned-ransomware/\n\nIOCs:\nhttps://github.com/DeTraced-Security/detection-rules/tree/main/groups/betray",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "slavetomints"
+      ],
+      "startTime": "2025-10-22T06:14:24.725-04:00",
+      "endTime": "2025-10-22T06:14:24.725-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 24,
+      "rootMessageId": "1434064223234822245",
+      "messages": [
+        {
+          "id": "1434063391202349066",
+          "author": "zaaaaaaak",
+          "timestamp": "2025-11-01T02:15:56.072-04:00",
+          "content": "I assume it's mostly just the inertia and difficulty of switching over existing systems? It takes time to upgrade things",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1434063671511879720",
+          "author": "zaaaaaaak",
+          "timestamp": "2025-11-01T02:17:02.903-04:00",
+          "content": "Like the US Govt has addressed PQC as something to use but their timescale is to get all their systems changed over by 2035",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1434063840793989231",
+          "author": "zaaaaaaak",
+          "timestamp": "2025-11-01T02:17:43.263-04:00",
+          "content": "Balancing the added cost of rushing to upgrade everything sooner with the added risk of upgrading later",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1434064223234822245",
+          "author": "zaaaaaaak",
+          "timestamp": "2025-11-01T02:19:14.444-04:00",
+          "content": "Plus since most PQC algorithms are pretty new there's a higher risk of new vulnerabilities being found. Patched now but KyberSlash springs to mind",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "zaaaaaaak"
+      ],
+      "startTime": "2025-11-01T02:15:56.072-04:00",
+      "endTime": "2025-11-01T02:19:14.444-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 25,
+      "rootMessageId": "1434069294362398751",
+      "messages": [
+        {
+          "id": "1434067832039149651",
+          "author": "zaaaaaaak",
+          "timestamp": "2025-11-01T02:33:34.85-04:00",
+          "content": "And a lot of smaller less critical systems will feel less pressure to switch",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1434068250236289025",
+          "author": "zaaaaaaak",
+          "timestamp": "2025-11-01T02:35:14.556-04:00",
+          "content": "https://www.nccoe.nist.gov/sites/default/files/legacy-files/pqc-migration-project-description-final.pdf",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1434068523629412422",
+          "author": "zaaaaaaak",
+          "timestamp": "2025-11-01T02:36:19.738-04:00",
+          "content": "Document from NIST outlining the steps involved in migrating^",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1434069294362398751",
+          "author": "zaaaaaaak",
+          "timestamp": "2025-11-01T02:39:23.495-04:00",
+          "content": "https://arxiv.org/abs/1909.07353\nRelevant paper, brings up the concept of \"cryptographic agility\"",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1434069333398786088",
+          "author": "zaaaaaaak",
+          "timestamp": "2025-11-01T02:39:32.802-04:00",
+          "content": "@Wicked World",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1434152593302749277",
+          "author": "wicked_world",
+          "timestamp": "2025-11-01T08:10:23.51-04:00",
+          "content": "That's so helpful, thanks for the tips, I appreciate you taking time to explain a lot 🙂",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1434152630753427587",
+          "author": "wicked_world",
+          "timestamp": "2025-11-01T08:10:32.439-04:00",
+          "content": "Stay blessed",
+          "type": "Default",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "zaaaaaaak",
+        "wicked_world"
+      ],
+      "startTime": "2025-11-01T02:33:34.85-04:00",
+      "endTime": "2025-11-01T08:10:32.439-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 26,
+      "rootMessageId": "1434338969650200599",
+      "messages": [
+        {
+          "id": "1434338969650200599",
+          "author": "atlien404_92168",
+          "timestamp": "2025-11-01T20:30:59.094-04:00",
+          "content": "Hello everyone, I have a question: would anyone be willing to take a look at a vulnerability report I created earlier this year? \n\nIt’s based around an audio exploit I caught in the wild and reversed engineered. I sent the report & exploit to Google’s research team on April 11th and on April 16th, Apple pushed out emergency patches that match the description of the report provided and accredited Google. \n\nI found what I believe is a hardware flaw on the iPhone and would like an opinion of whether I am missing the mark or not..?",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "atlien404_92168"
+      ],
+      "startTime": "2025-11-01T20:30:59.094-04:00",
+      "endTime": "2025-11-01T20:30:59.094-04:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 27,
+      "rootMessageId": "1438533053814145034",
+      "messages": [
+        {
+          "id": "1438533053814145034",
+          "author": "sma254",
+          "timestamp": "2025-11-13T09:16:46.681-05:00",
+          "content": "Hello guys, can anyone explain to me why can't i crack my own kali linux password using John the ripper. I just finished doin task 6 of \"John the Ripper: The Basics\" room and i wanted to try it out on my own system.\n\nI'm using a usb bootable OS of kali linux.",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1438533438779953202",
+          "author": "sma254",
+          "timestamp": "2025-11-13T09:18:18.464-05:00",
+          "content": "mmmmm am i askin in the wrong room? lol",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1438538083103674592",
+          "author": "dragkob",
+          "timestamp": "2025-11-13T09:36:45.757-05:00",
+          "content": "Wdym by can't crack, what's happening?",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1438543935172645035",
+          "author": "sma254",
+          "timestamp": "2025-11-13T10:00:00.999-05:00",
+          "content": "Like, i did \"sudo unshadow /etc/passwd /etc/shadow  > un.txt\" then tried using john to crack it but results in:\n\nUsing default input encoding: UTF 8\nNo password hashes loaded (see FAQ)",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1438544238550716559",
+          "author": "sma254",
+          "timestamp": "2025-11-13T10:01:13.33-05:00",
+          "content": "hmmmmmm",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1438544488493481984",
+          "author": "sma254",
+          "timestamp": "2025-11-13T10:02:12.921-05:00",
+          "content": "quick qs, how should i write a yescrypt in the \"--format\" of john?",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1438545081366745250",
+          "author": "slavetomints",
+          "timestamp": "2025-11-13T10:04:34.273-05:00",
+          "content": "`--format=crypt`",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1438545198836875369",
+          "author": "sma254",
+          "timestamp": "2025-11-13T10:05:02.28-05:00",
+          "content": "oh, thanks @Slavetomints (She/Her)",
+          "type": "Default",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "sma254",
+        "dragkob",
+        "slavetomints"
+      ],
+      "startTime": "2025-11-13T09:16:46.681-05:00",
+      "endTime": "2025-11-13T10:05:02.28-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 28,
+      "rootMessageId": "1440058109639786737",
+      "messages": [
+        {
+          "id": "1440058109639786737",
+          "author": "n_440",
+          "timestamp": "2025-11-17T14:16:48.324-05:00",
+          "content": "I found that fileName parameters in the ms-photos URI handler supports UNC paths. \n\nCombined with a server redirection, it allows to leak NTLM hashes, with a one click condition (open photos popup) from any browser. \n\nThis combination could allow wide supply chain attacks, since it moves from a browser redirection to NTLM hashes leak. \n\nFind more details and a POC about it\n\nhttps://github.com/rubenformation/ms-photos_NTLM_Leak",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1442958891674767515",
+          "author": "ild2010_22347",
+          "timestamp": "2025-11-25T14:23:28.655-05:00",
+          "content": "i am a newer cybersecurity student, but has anyone crafted steps towards remediation?",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1443032399171686552",
+          "author": "n_440",
+          "timestamp": "2025-11-25T19:15:34.208-05:00",
+          "content": "Yes it was patched finally by Microsoft \nFor non patched environments disable SMB outbound connections if not needed, especially for public IPs on firewall",
+          "type": "Reply",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "n_440",
+        "ild2010_22347"
+      ],
+      "startTime": "2025-11-17T14:16:48.324-05:00",
+      "endTime": "2025-11-25T19:15:34.208-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 29,
+      "rootMessageId": "1443271049629405316",
+      "messages": [
+        {
+          "id": "1436118101551743190",
+          "author": "n_440",
+          "timestamp": "2025-11-06T17:20:37.194-05:00",
+          "content": "Hi! Happy to share it with you\n\nMicrosoft blocks VBS macros on retrieved word document templates, even in a local intranet networks, to prevent phishing \n\nI found a way to bypass it on local networks, using LLMNR poisoning. Can be useful for local phishing assessments! \n\nMicrosoft didn’t recognise it and there is no patch \n\nhttps://github.com/rubenformation/Office-Intranet-MOTW-Bypass",
+          "type": "Default",
+          "isFiltered": false
+        },
+        {
+          "id": "1443091644046905565",
+          "author": "strike_37099",
+          "timestamp": "2025-11-25T23:10:59.287-05:00",
+          "content": "Did you stumble upon this exploit or were you kinda digging for it already?",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1443271049629405316",
+          "author": "n_440",
+          "timestamp": "2025-11-26T11:03:52.911-05:00",
+          "content": "I found it while researching about a new MOTW bypass I found on Intranet",
+          "type": "Reply",
+          "isFiltered": true
+        },
+        {
+          "id": "1443271596289687743",
+          "author": "n_440",
+          "timestamp": "2025-11-26T11:06:03.245-05:00",
+          "content": "This one",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1443314827245256845",
+          "author": "strike_37099",
+          "timestamp": "2025-11-26T13:57:50.308-05:00",
+          "content": "I'm still quite new and networking is not strong suit, what is Mark of the web bypass exactly? And did you use burp suite or custom tooling for LLMNR poisoning?",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1443385447895138415",
+          "author": "n_440",
+          "timestamp": "2025-11-26T18:38:27.583-05:00",
+          "content": "You should read about it in MSDN and learn about these things in THM rooms 🙂 \nYou will understand it better",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1443395764079300780",
+          "author": "strike_37099",
+          "timestamp": "2025-11-26T19:19:27.153-05:00",
+          "content": "Understood, thank you for pointing me in the right direction!",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1443397331755077755",
+          "author": "n_440",
+          "timestamp": "2025-11-26T19:25:40.916-05:00",
+          "content": "You welcome \nHere are some additional article to read \n\nhttps://learn.microsoft.com/en-us/microsoft-365-apps/security/internet-macros-blocked",
+          "type": "Reply",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "n_440",
+        "strike_37099"
+      ],
+      "startTime": "2025-11-06T17:20:37.194-05:00",
+      "endTime": "2025-11-26T19:25:40.916-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 30,
+      "rootMessageId": "1449059625390575666",
+      "messages": [
+        {
+          "id": "1449059625390575666",
+          "author": "kiaro0316",
+          "timestamp": "2025-12-12T10:25:36.919-05:00",
+          "content": "Yea... \nIt because i am planning to build an unbreakable antivirus.....\nIt can be impossible but until i see what make it impossible....\nTo learn why it is impossible i need data about the common things of malware... M",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "kiaro0316"
+      ],
+      "startTime": "2025-12-12T10:25:36.919-05:00",
+      "endTime": "2025-12-12T10:25:36.919-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 31,
+      "rootMessageId": "1449338028479873107",
+      "messages": [
+        {
+          "id": "1449338028479873107",
+          "author": "lucixsherry06",
+          "timestamp": "2025-12-13T04:51:53.388-05:00",
+          "content": "Hi everyone,\n\nI’m an ISC2 CC-certified cybersecurity undergrad( final year) with solid theoretical knowledge and intermediate Python skills. \n\nLooking for Final Year Project (FYP) ideas that are feasible, doable, and novel  in cybersecurity.\nPlease share your thoughts 🍀",
+          "type": "Default",
+          "isFiltered": true
+        }
+      ],
+      "participants": [
+        "lucixsherry06"
+      ],
+      "startTime": "2025-12-13T04:51:53.388-05:00",
+      "endTime": "2025-12-13T04:51:53.388-05:00",
+      "channel": "TryHackMe_research"
+    },
+    {
+      "id": 32,
+      "rootMessageId": "1450186941529063518",
+      "messages": [
+        {
+          "id": "1450186941529063518",
+          "author": "whyme33",
+          "timestamp": "2025-12-15T13:05:10.031-05:00",
+          "content": "Is wsl good for hacking ?(I have a old laptop which only has one port so I can't boot into kali Linux)",
+          "type": "Default",
+          "isFiltered": true
+        },
+        {
+          "id": "1450531793169154080",
+          "author": "wizarddos",
+          "timestamp": "2025-12-16T11:55:29.069-05:00",
+          "content": "It's pretty mid - Though you most def can run kali here. Doesn't it have like a CD slot or sm?",
+          "type": "Reply",
+          "isFiltered": false
+        },
+        {
+          "id": "1450684110317289613",
+          "author": "whyme33",
+          "timestamp": "2025-12-16T22:00:44.307-05:00",
+          "content": "Nah no cd slots just a mini displayport and a regular usb 2.0 port",
+          "type": "Reply",
+          "isFiltered": false
+        }
+      ],
+      "participants": [
+        "whyme33",
+        "wizarddos"
+      ],
+      "startTime": "2025-12-15T13:05:10.031-05:00",
+      "endTime": "2025-12-16T22:00:44.307-05:00",
+      "channel": "TryHackMe_research"
+    }
+  ]
+}

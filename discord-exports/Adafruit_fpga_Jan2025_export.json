@@ -1,0 +1,3353 @@
+{
+  "guild": {
+    "id": "327254708534116352",
+    "name": "adafruit",
+    "iconUrl": "https://cdn.discordapp.com/icons/327254708534116352/bf8b494f3a615baf78b0e38fb8f71c0e.png?size=512"
+  },
+  "channel": {
+    "id": "758882395599405087",
+    "type": "GuildTextChat",
+    "categoryId": "446465839756214272",
+    "category": "Topics",
+    "name": "fpga",
+    "topic": null
+  },
+  "dateRange": {
+    "after": "2025-01-01T00:00:00-05:00",
+    "before": null
+  },
+  "exportedAt": "2025-11-02T19:40:22.5963651-05:00",
+  "messages": [
+    {
+      "id": "1324088699281215528",
+      "type": "Default",
+      "timestamp": "2025-01-01T13:55:46.287-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hey @madbodger (he/him) here's an example for writing a bank of registers (256 8 bit register slots) https://github.com/Oak-Development-Technologies/ice40_spi_io_expander",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - Oak-Development-Technologies/ice40_spi_io_expander: An IO ...",
+          "url": "https://github.com/Oak-Development-Technologies/ice40_spi_io_expander",
+          "timestamp": null,
+          "description": "An IO Expander for ICE40 FPGA that interfaces over a SPI like interface. - Oak-Development-Technologies/ice40_spi_io_expander",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/pdIVIGwm0DFFo7G2uQ_p6mSk9zLpOHWfrDuwyH1Fnio/https/opengraph.githubassets.com/b3a9b65b1f6b09a071de135d159ff1622896902f3c85593fd5f6ceb95a77b183/Oak-Development-Technologies/ice40_spi_io_expander",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "348911944486486016",
+          "name": "madbodger",
+          "discriminator": "0000",
+          "nickname": "madbodger (he/him)",
+          "color": "#CCC01B",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "617066238840930324",
+              "name": "community helpers",
+              "color": "#CCC01B",
+              "position": 33
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324088823415832636",
+      "type": "Default",
+      "timestamp": "2025-01-01T13:56:15.883-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Oh, nice find, thanks!",
+      "author": {
+        "id": "348911944486486016",
+        "name": "madbodger",
+        "discriminator": "0000",
+        "nickname": "madbodger (he/him)",
+        "color": "#CCC01B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "617066238840930324",
+            "name": "community helpers",
+            "color": "#CCC01B",
+            "position": 33
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324088854109618186",
+      "type": "Default",
+      "timestamp": "2025-01-01T13:56:23.201-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I wrote it this morning xD",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324088939824418848",
+      "type": "Default",
+      "timestamp": "2025-01-01T13:56:43.637-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "it's not perfect and might need some help to work with actual SPI but it's close enough anyway lol",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324089538124972095",
+      "type": "Default",
+      "timestamp": "2025-01-01T13:59:06.283-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "The cool thing is I can try it and see (using some 3.3V MCU as a test host) and reflash until it does what I want",
+      "author": {
+        "id": "348911944486486016",
+        "name": "madbodger",
+        "discriminator": "0000",
+        "nickname": "madbodger (he/him)",
+        "color": "#CCC01B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "617066238840930324",
+            "name": "community helpers",
+            "color": "#CCC01B",
+            "position": 33
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324089713178447892",
+      "type": "Default",
+      "timestamp": "2025-01-01T13:59:48.019-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "My IcePython tool for circuitpython is quite handy to getting the bitstream loaded",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324089795370024971",
+      "type": "Default",
+      "timestamp": "2025-01-01T14:00:07.615-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I've mostly been developing with apio",
+      "author": {
+        "id": "348911944486486016",
+        "name": "madbodger",
+        "discriminator": "0000",
+        "nickname": "madbodger (he/him)",
+        "color": "#CCC01B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "617066238840930324",
+            "name": "community helpers",
+            "color": "#CCC01B",
+            "position": 33
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324138182601867284",
+      "type": "Default",
+      "timestamp": "2025-01-01T17:12:24.03-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "APIO is pretty fun to use, IceStudio is fun as well thanks to being visually based",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D\uD83C\uDFFE",
+            "code": "thumbsup_tone4",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d-1f3fe.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "348911944486486016",
+              "name": "madbodger",
+              "discriminator": "0000",
+              "nickname": "madbodger (he/him)",
+              "color": "#CCC01B",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324209281246953544",
+      "type": "Default",
+      "timestamp": "2025-01-01T21:54:55.268-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hey @madbodger (he/him) I further updated that register writing io expander example. Added the option for PWM output \uD83D\uDE42",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "348911944486486016",
+          "name": "madbodger",
+          "discriminator": "0000",
+          "nickname": "madbodger (he/him)",
+          "color": "#CCC01B",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "617066238840930324",
+              "name": "community helpers",
+              "color": "#CCC01B",
+              "position": 33
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+        }
+      ],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE42",
+          "code": "slight_smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f642.svg"
+        }
+      ]
+    },
+    {
+      "id": "1324209315653095435",
+      "type": "Default",
+      "timestamp": "2025-01-01T21:55:03.471-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Works pretty good too",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324210206867066923",
+      "type": "Default",
+      "timestamp": "2025-01-01T21:58:35.953-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cool, I'll have a look!",
+      "author": {
+        "id": "348911944486486016",
+        "name": "madbodger",
+        "discriminator": "0000",
+        "nickname": "madbodger (he/him)",
+        "color": "#CCC01B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "617066238840930324",
+            "name": "community helpers",
+            "color": "#CCC01B",
+            "position": 33
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324210655309594645",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:00:22.87-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Looks like \"enable\" is more an address/data switch than a chip select?",
+      "author": {
+        "id": "348911944486486016",
+        "name": "madbodger",
+        "discriminator": "0000",
+        "nickname": "madbodger (he/him)",
+        "color": "#CCC01B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "617066238840930324",
+            "name": "community helpers",
+            "color": "#CCC01B",
+            "position": 33
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324210824407158835",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:01:03.186-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "it's functioning as a chip select, I kind of view chip select as an enable pin on SPI",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324210846217273364",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:01:08.386-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "right wrong or otherwise lol",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324210913372405761",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:01:24.397-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Er, more like combined enable/latch, maybe?",
+      "author": {
+        "id": "348911944486486016",
+        "name": "madbodger",
+        "discriminator": "0000",
+        "nickname": "madbodger (he/him)",
+        "color": "#CCC01B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "617066238840930324",
+            "name": "community helpers",
+            "color": "#CCC01B",
+            "position": 33
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324211010445250621",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:01:47.541-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "well, it gates the data input",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324211137478131723",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:02:17.828-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "if you're not sending it high (you could change it to be active low), it won't do anything with the data",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324211266264498187",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:02:48.533-05:00",
+      "timestampEdited": "2025-01-01T22:03:59.797-05:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "though some weird nuance with it is right now I have to send clocks when enable is low to push in the new data to the actual registers",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324211380592836670",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:03:15.791-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Maybe I'm reading this wrong.  It looks like you enable it, clock in 16 bits, then drop enable and send an additional clock which transfers the low 8 bits into the register indicated by the high 8 bits",
+      "author": {
+        "id": "348911944486486016",
+        "name": "madbodger",
+        "discriminator": "0000",
+        "nickname": "madbodger (he/him)",
+        "color": "#CCC01B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "617066238840930324",
+            "name": "community helpers",
+            "color": "#CCC01B",
+            "position": 33
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324211457763704852",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:03:34.19-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Since I'm using two clocks now, I might just let the HFOSC set the data when enable is low.",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324211738597658624",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:04:41.146-05:00",
+      "timestampEdited": "2025-01-01T22:05:38.501-05:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "flow is:\nenable high\nsend 16 bits (over 16 clock pulses)\nenable low\n(one clock cycle to set the data into register)\nrinse repeat",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDD14",
+            "code": "thinking",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f914.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "348911944486486016",
+              "name": "madbodger",
+              "discriminator": "0000",
+              "nickname": "madbodger (he/him)",
+              "color": "#CCC01B",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324212249728127097",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:06:43.009-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "```py\nwhile True:\n    if (count == 16):\n        count = 0\n        flow_cnt = flow_cnt + 1\n        if (flow_cnt == 11):\n            flow_cnt = 0\n        print(\"count reset\", flow_cnt)\n        pico16.value = False\n        pico17.value = False\n        #time.sleep(0.01)\n        pico16.value = True\n        #time.sleep(0.01)\n        \n    pico17.value = True\n    if (pico16.value):\n        pico16.value = False\n    else:\n        pico18.value = flow[flow_cnt][count]\n        pico16.value = True\n        print(\"doing some stuff, data: \", pico18.value)\n        if (count < 16):\n            count = count + 1\n\n    time.sleep(0.01)```",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324212374114144368",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:07:12.665-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pico16 is clock, pico18 is data, pico17 is enable",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324213045127286886",
+      "type": "Reply",
+      "timestamp": "2025-01-01T22:09:52.647-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I misread what you put here, yes that's what's happening currently.",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "348911944486486016",
+          "name": "madbodger",
+          "discriminator": "0000",
+          "nickname": "madbodger (he/him)",
+          "color": "#CCC01B",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "617066238840930324",
+              "name": "community helpers",
+              "color": "#CCC01B",
+              "position": 33
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1324211380592836670",
+        "channelId": "758882395599405087",
+        "guildId": "327254708534116352"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324213144108798025",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:10:16.246-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "it's not truly SPI, but SPI like at the moment",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324213342654562466",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:11:03.583-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Yeah, that's what I was guessing.  If it's SPI like enough for my purposes, I'll go with it, as it's a lot more compact than the rigorously correct ones out there (which are hard to read as well)",
+      "author": {
+        "id": "348911944486486016",
+        "name": "madbodger",
+        "discriminator": "0000",
+        "nickname": "madbodger (he/him)",
+        "color": "#CCC01B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "617066238840930324",
+            "name": "community helpers",
+            "color": "#CCC01B",
+            "position": 33
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324213609584263229",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:12:07.224-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "adding a secondary always block that just looks at posedge of the internal clock, you can move the data without additional clocks from the host",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324218214028415026",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:30:25.009-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I got it working without the additional clock to the FPGA using the HSOSC on a separate always block",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324218596414455839",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:31:56.177-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1324218595797893334",
+          "url": "https://cdn.discordapp.com/attachments/758882395599405087/1324218595797893334/IMG_3306.mov?ex=6908caec&is=6907796c&hm=f4a0eccf195f2e4e9abb47f093df3997710d5bfaaf57800259bd2a3d1ca38f6f&",
+          "fileName": "IMG_3306.mov",
+          "fileSizeBytes": 7517184
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324218737506910299",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:32:29.816-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "That bit is pushed up along with new code",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324218827801886750",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:32:51.344-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "So, in theory you might be able to bitbangio the data now.",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324222168007180288",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:46:07.711-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hehe it works",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324222173006659615",
+      "type": "Default",
+      "timestamp": "2025-01-01T22:46:08.903-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "\uD83D\uDE04",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE04",
+          "code": "smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f604.svg"
+        }
+      ]
+    },
+    {
+      "id": "1324226078046294140",
+      "type": "Default",
+      "timestamp": "2025-01-01T23:01:39.937-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Alrighty, I pushed up some circuitpython code that works (bitbangio SPI)",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324481712599597208",
+      "type": "Reply",
+      "timestamp": "2025-01-02T15:57:27.964-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Not sure if you saw, I got the example working with SPI \uD83D\uDE42",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "348911944486486016",
+          "name": "madbodger",
+          "discriminator": "0000",
+          "nickname": "madbodger (he/him)",
+          "color": "#CCC01B",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "617066238840930324",
+              "name": "community helpers",
+              "color": "#CCC01B",
+              "position": 33
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1324213342654562466",
+        "channelId": "758882395599405087",
+        "guildId": "327254708534116352"
+      },
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE42",
+          "code": "slight_smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f642.svg"
+        }
+      ]
+    },
+    {
+      "id": "1324481809953587251",
+      "type": "Default",
+      "timestamp": "2025-01-02T15:57:51.175-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Pushed up with an example using bitbangio SPI",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324500585717829662",
+      "type": "Default",
+      "timestamp": "2025-01-02T17:12:27.666-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Haven't had time to play with it, but following along",
+      "author": {
+        "id": "348911944486486016",
+        "name": "madbodger",
+        "discriminator": "0000",
+        "nickname": "madbodger (he/him)",
+        "color": "#CCC01B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "617066238840930324",
+            "name": "community helpers",
+            "color": "#CCC01B",
+            "position": 33
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324503406089474160",
+      "type": "Default",
+      "timestamp": "2025-01-02T17:23:40.095-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "No worries. I just wanted to make sure you saw it \uD83D\uDE42",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE42",
+          "code": "slight_smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f642.svg"
+        }
+      ]
+    },
+    {
+      "id": "1324566622853402695",
+      "type": "Default",
+      "timestamp": "2025-01-02T21:34:52.146-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Today I learned that setting a pin on an ICE40 to high impedance means that if you are driving an LED from 3.3V to that pin, it won't turn on. I had the biggest brain fart and spent like 3 hours+ trying to figure out why the LED wasn't on when the pin was in high impedance mode.",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324566827707404355",
+      "type": "Default",
+      "timestamp": "2025-01-02T21:35:40.987-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I can hear my former EE professors collectively face palming at my realization hahaha...",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324590784606896270",
+      "type": "Default",
+      "timestamp": "2025-01-02T23:10:52.757-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I tell ya, SPI reads are far more interesting to figure out that writing. I have it set up to read from my device, but there are some interesting bits coming across that are weird. They might be from not having a default value for registers at startup.",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324591693076496455",
+      "type": "Default",
+      "timestamp": "2025-01-02T23:14:29.353-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "actually, I think it might just be a timing issue",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324748952561520702",
+      "type": "Reply",
+      "timestamp": "2025-01-03T09:39:22.936-05:00",
+      "timestampEdited": "2025-01-03T09:39:39.774-05:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Why not sample the SPI clock/data in your (presumably much faster) internal clock domain to avoid having to deal with two of them?",
+      "author": {
+        "id": "930143452749004830",
+        "name": "ningen5898",
+        "discriminator": "0000",
+        "nickname": "ningen",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "☝\uD83C\uDFFE",
+            "code": "point_up_tone4",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/261d-1f3fe.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "348911944486486016",
+              "name": "madbodger",
+              "discriminator": "0000",
+              "nickname": "madbodger (he/him)",
+              "color": "#CCC01B",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+            },
+            {
+              "id": "846231446477864980",
+              "name": "fsxpilot18",
+              "discriminator": "0000",
+              "nickname": "FSXpilot18",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/846231446477864980/9a06fdf33a2d797fe601f65150c51a76.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "728676724522352733",
+          "name": "skerr92",
+          "discriminator": "0000",
+          "nickname": "skerr(he/him)",
+          "color": "#E67E22",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "741361254035095602",
+              "name": "hw design helpers",
+              "color": "#E67E22",
+              "position": 31
+            },
+            {
+              "id": "356864093652516868",
+              "name": "circuitpythonistas",
+              "color": "#9B59B6",
+              "position": 19
+            },
+            {
+              "id": "388134944536264706",
+              "name": "Show & Tell",
+              "color": "#3498DB",
+              "position": 14
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1323841129015410729",
+        "channelId": "758882395599405087",
+        "guildId": "327254708534116352"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324749219545874432",
+      "type": "Default",
+      "timestamp": "2025-01-03T09:40:26.59-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I could, yeah",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324749373187297441",
+      "type": "Default",
+      "timestamp": "2025-01-03T09:41:03.221-05:00",
+      "timestampEdited": "2025-01-03T09:41:20.821-05:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "(Also, I'm not sure the two clock domains are properly specified in the constraints file, though I don't know how the OSS toolchain works)",
+      "author": {
+        "id": "930143452749004830",
+        "name": "ningen5898",
+        "discriminator": "0000",
+        "nickname": "ningen",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324750054589988997",
+      "type": "Reply",
+      "timestamp": "2025-01-03T09:43:45.68-05:00",
+      "timestampEdited": "2025-01-03T09:44:24.82-05:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "SPI clock is simply driven from an external source so there isn’t much to specify. Internal clock is using the 48MHz HFOSC on the ice40",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "930143452749004830",
+          "name": "ningen5898",
+          "discriminator": "0000",
+          "nickname": "ningen",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+        }
+      ],
+      "reference": {
+        "messageId": "1324749373187297441",
+        "channelId": "758882395599405087",
+        "guildId": "327254708534116352"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324750358869966950",
+      "type": "Reply",
+      "timestamp": "2025-01-03T09:44:58.226-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Wouldn't you have to declare the clocks then constraint the path between the two domains?",
+      "author": {
+        "id": "930143452749004830",
+        "name": "ningen5898",
+        "discriminator": "0000",
+        "nickname": "ningen",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "728676724522352733",
+          "name": "skerr92",
+          "discriminator": "0000",
+          "nickname": "skerr(he/him)",
+          "color": "#E67E22",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "741361254035095602",
+              "name": "hw design helpers",
+              "color": "#E67E22",
+              "position": 31
+            },
+            {
+              "id": "356864093652516868",
+              "name": "circuitpythonistas",
+              "color": "#9B59B6",
+              "position": 19
+            },
+            {
+              "id": "388134944536264706",
+              "name": "Show & Tell",
+              "color": "#3498DB",
+              "position": 14
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1324750054589988997",
+        "channelId": "758882395599405087",
+        "guildId": "327254708534116352"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324750466013466727",
+      "type": "Default",
+      "timestamp": "2025-01-03T09:45:23.771-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "The clocks technically don’t cross",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324750670313558046",
+      "type": "Default",
+      "timestamp": "2025-01-03T09:46:12.48-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Then don't you have to set any detected paths as false for the timing analysis to hold?",
+      "author": {
+        "id": "930143452749004830",
+        "name": "ningen5898",
+        "discriminator": "0000",
+        "nickname": "ningen",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324751160430821526",
+      "type": "Default",
+      "timestamp": "2025-01-03T09:48:09.333-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "For the most part, it’s looking at separate logic values on specific internal paths. For setting data, a register functioning as a Boolean gates setting the value of the input register write along with monitoring the “enable/cs” pin",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "846231446477864980",
+              "name": "fsxpilot18",
+              "discriminator": "0000",
+              "nickname": "FSXpilot18",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/846231446477864980/9a06fdf33a2d797fe601f65150c51a76.png?size=512"
+            },
+            {
+              "id": "930143452749004830",
+              "name": "ningen5898",
+              "discriminator": "0000",
+              "nickname": "ningen",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1324751527222706219",
+      "type": "Default",
+      "timestamp": "2025-01-03T09:49:36.783-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Similar is done for reads. The interesting part is incrementing register address based on the bit index being shifted out",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1325553988698898474",
+      "type": "Default",
+      "timestamp": "2025-01-05T14:58:18.508-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ICE40 FPGA never cease to amaze me. I set up some registers to be read in bits as they are sent so I didn't endian swap, and then I thought \n\"Wow, I have a ton of signals, lets make them multi-bit buses\" and then I ran into where I wanted to use another register, but some values were getting overwritten, so I had to keep making the registers big enough so there wasn't any overrunning of other registers lol...",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1325556901705941013",
+      "type": "Default",
+      "timestamp": "2025-01-05T15:09:53.023-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Anyway, latest and greatest is pushed up. Probably going to try and make some changes to the read over the course of this week to make it more consistent and maybe figure out using just one clock",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1325593139683135551",
+      "type": "Default",
+      "timestamp": "2025-01-05T17:33:52.83-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "It's cool that if you have a use for something like an 80-bit register, you can have it",
+      "author": {
+        "id": "348911944486486016",
+        "name": "madbodger",
+        "discriminator": "0000",
+        "nickname": "madbodger (he/him)",
+        "color": "#CCC01B",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "617066238840930324",
+            "name": "community helpers",
+            "color": "#CCC01B",
+            "position": 33
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1325617441602146314",
+      "type": "Default",
+      "timestamp": "2025-01-05T19:10:26.859-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I've not added to where you can do functions on the PWM. for now, it's coded inside the main toplevel verilog, but I'll change it to a separate module with the ability to select different function outputs. Ramp, Sine, Triangle, etc..",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "342384086511386634",
+            "name": "billie",
+            "code": "billie",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.discordapp.com/emojis/342384086511386634.png"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "846231446477864980",
+              "name": "fsxpilot18",
+              "discriminator": "0000",
+              "nickname": "FSXpilot18",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/846231446477864980/9a06fdf33a2d797fe601f65150c51a76.png?size=512"
+            },
+            {
+              "id": "930143452749004830",
+              "name": "ningen5898",
+              "discriminator": "0000",
+              "nickname": "ningen",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1325617616588505138",
+      "type": "Default",
+      "timestamp": "2025-01-05T19:11:08.579-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "currently just doing the upward ramp and downward ramp on the RGB LEDs",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1325621145143218278",
+      "type": "Default",
+      "timestamp": "2025-01-05T19:25:09.852-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1325621144966922372",
+          "url": "https://cdn.discordapp.com/attachments/758882395599405087/1325621144966922372/IMG_3312.mov?ex=690947e5&is=6907f665&hm=ec302078f526f683153db8336ebe686f133f6ef26309f2d0c907d289bdfa49da&",
+          "fileName": "IMG_3312.mov",
+          "fileSizeBytes": 3296120
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1325843581273116673",
+      "type": "Reply",
+      "timestamp": "2025-01-06T10:09:02.758-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Ah yes, the blessing and curse of being in full control of the datapath :P",
+      "author": {
+        "id": "930143452749004830",
+        "name": "ningen5898",
+        "discriminator": "0000",
+        "nickname": "ningen",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "348911944486486016",
+          "name": "madbodger",
+          "discriminator": "0000",
+          "nickname": "madbodger (he/him)",
+          "color": "#CCC01B",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "617066238840930324",
+              "name": "community helpers",
+              "color": "#CCC01B",
+              "position": 33
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1325593139683135551",
+        "channelId": "758882395599405087",
+        "guildId": "327254708534116352"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1325844357101781053",
+      "type": "Default",
+      "timestamp": "2025-01-06T10:12:07.73-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Speaking of trig functions, Ken Shirriff recently released this great article: https://www.righto.com/2025/01/pentium-floating-point-ROM.html",
+      "author": {
+        "id": "930143452749004830",
+        "name": "ningen5898",
+        "discriminator": "0000",
+        "nickname": "ningen",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/5.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Pi in the Pentium: reverse-engineering the constants in its floatin...",
+          "url": "https://www.righto.com/2025/01/pentium-floating-point-ROM.html",
+          "timestamp": null,
+          "description": "Intel released the powerful Pentium processor in 1993, establishing a long-running brand of high-performance processors. 1  The Pentium incl...",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/zew5UzcYEC3RVAM0ZXCmNh-lScVjoPBfL6vkWBDx5w8/https/lh3.googleusercontent.com/blogger_img_proxy/AEn0k_tv0slUk3ziDoaKe6voLfZFxmxm2TJEbAbW8UqWXRPnTdVpZtW8N0TpUzWXN3crKN0oyfK7CgS9sww3DIIwBOyuS79MpZRO9LFKdt_UOYeHbcvHpLRtbJjSuihFcXUHgYcfxpHqUCP1m1W84g%3Dw1200-h630-p-k-no-nu",
+            "width": 1200,
+            "height": 630
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE2E",
+            "code": "open_mouth",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f62e.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "348911944486486016",
+              "name": "madbodger",
+              "discriminator": "0000",
+              "nickname": "madbodger (he/him)",
+              "color": "#CCC01B",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/348911944486486016/c25da09dcf1d12a1cb8c302c14f2bd8a.png?size=512"
+            },
+            {
+              "id": "846231446477864980",
+              "name": "fsxpilot18",
+              "discriminator": "0000",
+              "nickname": "FSXpilot18",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/846231446477864980/9a06fdf33a2d797fe601f65150c51a76.png?size=512"
+            },
+            {
+              "id": "1329851959858958428",
+              "name": "shawnbell0370",
+              "discriminator": "0000",
+              "nickname": "Shawn Bell",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            }
+          ]
+        },
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC40",
+            "code": "eyes",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f440.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "491111931516551177",
+              "name": "spuriousindices",
+              "discriminator": "0000",
+              "nickname": "SpuriousIndices",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/491111931516551177/effde1aa4314565ba7d00b9fc11e0a4a.png?size=512"
+            },
+            {
+              "id": "846231446477864980",
+              "name": "fsxpilot18",
+              "discriminator": "0000",
+              "nickname": "FSXpilot18",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/846231446477864980/9a06fdf33a2d797fe601f65150c51a76.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384238251069538395",
+      "type": "Default",
+      "timestamp": "2025-06-16T14:28:36.958-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Oh hey, theres a channel for this stuff!\nVery little progress in the way of hardware since my boards still arent in but I finished figuring out the whole configuring workflow!",
+      "author": {
+        "id": "132356563867402240",
+        "name": "_shillelagh",
+        "discriminator": "0000",
+        "nickname": "Shillelagh",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/132356563867402240/22ed018c02ad0f2c8ca2ee547f98169f.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1384238250629271633",
+          "url": "https://cdn.discordapp.com/attachments/758882395599405087/1384238250629271633/20250616_131702.mp4?ex=6908f454&is=6907a2d4&hm=2f344cd83e797d6682ecd339a7d6ecd2168e2eb14fa332d9107f77e85acbc201&",
+          "fileName": "20250616_131702.mp4",
+          "fileSizeBytes": 13308634
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384395758542913588",
+      "type": "Reply",
+      "timestamp": "2025-06-17T00:54:29.666-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "That’s pretty awesome! I went the easy route to program using circuitpython \uD83D\uDE05",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "132356563867402240",
+          "name": "_shillelagh",
+          "discriminator": "0000",
+          "nickname": "Shillelagh",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/132356563867402240/22ed018c02ad0f2c8ca2ee547f98169f.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1384238251069538395",
+        "channelId": "758882395599405087",
+        "guildId": "327254708534116352"
+      },
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE05",
+          "code": "sweat_smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f605.svg"
+        }
+      ]
+    },
+    {
+      "id": "1384395908036169830",
+      "type": "Default",
+      "timestamp": "2025-06-17T00:55:05.308-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Wrote this little library here https://github.com/skerr92/Oakdevtech_CircuitPython_IcePython",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - skerr92/Oakdevtech_CircuitPython_IcePython: A library for ...",
+          "url": "https://github.com/skerr92/Oakdevtech_CircuitPython_IcePython",
+          "timestamp": null,
+          "description": "A library for programming iCE40 FPGA from Lattice Semi - skerr92/Oakdevtech_CircuitPython_IcePython",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/pyJf4AZlK-YTS5-KGS8Yvuaz1JjC7cScAsSWODrvKLs/https/opengraph.githubassets.com/adf7785d20b690866697fd44f7df5d272b6ed20376f1ea55246e3fd78b8735b1/skerr92/Oakdevtech_CircuitPython_IcePython",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384396097870626856",
+      "type": "Default",
+      "timestamp": "2025-06-17T00:55:50.568-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "It’s fairly fixed at this time but I plan to *eventually* make it work for all ICE40 FPGA",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384396203961225237",
+      "type": "Default",
+      "timestamp": "2025-06-17T00:56:15.862-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "It does CRAM programming though I could allow it to do flash writes as well",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384404122345934942",
+      "type": "Default",
+      "timestamp": "2025-06-17T01:27:43.752-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Oh man, awesome!",
+      "author": {
+        "id": "132356563867402240",
+        "name": "_shillelagh",
+        "discriminator": "0000",
+        "nickname": "Shillelagh",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/132356563867402240/22ed018c02ad0f2c8ca2ee547f98169f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384404390844043315",
+      "type": "Default",
+      "timestamp": "2025-06-17T01:28:47.767-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I dont really have any experience with circuit python or any hardware I know of that is supported by it unfortunately \\:]",
+      "author": {
+        "id": "132356563867402240",
+        "name": "_shillelagh",
+        "discriminator": "0000",
+        "nickname": "Shillelagh",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/132356563867402240/22ed018c02ad0f2c8ca2ee547f98169f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384404731451146243",
+      "type": "Default",
+      "timestamp": "2025-06-17T01:30:08.974-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Its nice to know at least other programmers exist. I was really surprised to not find any arduino or AVR program to write winbond flashes.",
+      "author": {
+        "id": "132356563867402240",
+        "name": "_shillelagh",
+        "discriminator": "0000",
+        "nickname": "Shillelagh",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/132356563867402240/22ed018c02ad0f2c8ca2ee547f98169f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384508201583775885",
+      "type": "Reply",
+      "timestamp": "2025-06-17T08:21:18.176-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Adafruit has a SPI flash library I believe",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "132356563867402240",
+          "name": "_shillelagh",
+          "discriminator": "0000",
+          "nickname": "Shillelagh",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/132356563867402240/22ed018c02ad0f2c8ca2ee547f98169f.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1384404731451146243",
+        "channelId": "758882395599405087",
+        "guildId": "327254708534116352"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384508347579109458",
+      "type": "Default",
+      "timestamp": "2025-06-17T08:21:52.984-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://github.com/adafruit/Adafruit_SPIFlash",
+      "author": {
+        "id": "728676724522352733",
+        "name": "skerr92",
+        "discriminator": "0000",
+        "nickname": "skerr(he/him)",
+        "color": "#E67E22",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "741361254035095602",
+            "name": "hw design helpers",
+            "color": "#E67E22",
+            "position": 31
+          },
+          {
+            "id": "356864093652516868",
+            "name": "circuitpythonistas",
+            "color": "#9B59B6",
+            "position": 19
+          },
+          {
+            "id": "388134944536264706",
+            "name": "Show & Tell",
+            "color": "#3498DB",
+            "position": 14
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/728676724522352733/09b46ca8556af7a4b159ab0ebff2393c.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GitHub - adafruit/Adafruit_SPIFlash: Arduino library for external (...",
+          "url": "https://github.com/adafruit/Adafruit_SPIFlash",
+          "timestamp": null,
+          "description": "Arduino library for external (Q)SPI flash device. Contribute to adafruit/Adafruit_SPIFlash development by creating an account on GitHub.",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/1Qo3yDGb_jjzNVDeaG-YYnCcu7RppeWUE5T9yPIKPwk/https/opengraph.githubassets.com/6a8a1083aad9d73d86aab67be3ed4d8a7a930ab7e9b44247ea99db255bd43eb5/adafruit/Adafruit_SPIFlash",
+            "width": 1200,
+            "height": 600
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384560841181102233",
+      "type": "Default",
+      "timestamp": "2025-06-17T11:50:28.434-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Aw nice",
+      "author": {
+        "id": "132356563867402240",
+        "name": "_shillelagh",
+        "discriminator": "0000",
+        "nickname": "Shillelagh",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/132356563867402240/22ed018c02ad0f2c8ca2ee547f98169f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1384560849158541374",
+      "type": "Default",
+      "timestamp": "2025-06-17T11:50:30.336-04:00",
+      "timestampEdited": "2025-06-17T11:50:36.294-04:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thanks!",
+      "author": {
+        "id": "132356563867402240",
+        "name": "_shillelagh",
+        "discriminator": "0000",
+        "nickname": "Shillelagh",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/132356563867402240/22ed018c02ad0f2c8ca2ee547f98169f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 71
+}

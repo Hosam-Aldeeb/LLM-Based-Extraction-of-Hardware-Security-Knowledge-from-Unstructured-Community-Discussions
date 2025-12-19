@@ -1,0 +1,2990 @@
+{
+  "guild": {
+    "id": "1347730523824455750",
+    "name": "STM32World",
+    "iconUrl": "https://cdn.discordapp.com/icons/1347730523824455750/71a370b2c56f6655bffa6f78d6f18c7e.png?size=512"
+  },
+  "channel": {
+    "id": "1348004345253199902",
+    "type": "GuildTextChat",
+    "categoryId": "1347730523824455751",
+    "category": "Text Channels",
+    "name": "hardware",
+    "topic": null
+  },
+  "dateRange": {
+    "after": "2025-01-01T00:00:00-05:00",
+    "before": null
+  },
+  "exportedAt": "2025-11-02T20:14:44.9497036-05:00",
+  "messages": [
+    {
+      "id": "1349977474460553246",
+      "type": "Default",
+      "timestamp": "2025-03-14T01:28:31.28-04:00",
+      "timestampEdited": "2025-03-21T19:02:05.392-04:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "STM32 Hardware Questions and Answers goes here.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1352809260249124944",
+      "type": "Default",
+      "timestamp": "2025-03-21T21:01:01.624-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "In this shematic there are dio clk pins also I saw t_dio, t_clk pins \nI was using pa13 swdio and pa14 swclk pins to programming the mcu`s \nSo in stlink we are not using the pa13 and pa14 pins to program to the other mcu",
+      "author": {
+        "id": "551760214223749135",
+        "name": "zynelabidin",
+        "discriminator": "0000",
+        "nickname": "ZynelAbidin",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1352809259913711667",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1352809259913711667/image.png?ex=6909504d&is=6907fecd&hm=30912869712c888a1e286658e1c5ab610ed635e28af9c4663cdb8ec178dc8d58&",
+          "fileName": "image.png",
+          "fileSizeBytes": 249567
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1352809348858122270",
+      "type": "Default",
+      "timestamp": "2025-03-21T21:01:22.75-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Am I right ?",
+      "author": {
+        "id": "551760214223749135",
+        "name": "zynelabidin",
+        "discriminator": "0000",
+        "nickname": "ZynelAbidin",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1352809542420795405",
+      "type": "Default",
+      "timestamp": "2025-03-21T21:02:08.899-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "And what is this circuit for",
+      "author": {
+        "id": "551760214223749135",
+        "name": "zynelabidin",
+        "discriminator": "0000",
+        "nickname": "ZynelAbidin",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1352809542093901874",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1352809542093901874/image-1.png?ex=69095090&is=6907ff10&hm=5636ff06f2540e1992d4e41d26d5b02cf82427203c9cfdc78157dfa879defd24&",
+          "fileName": "image-1.png",
+          "fileSizeBytes": 26106
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1352924065005965384",
+      "type": "Reply",
+      "timestamp": "2025-03-22T04:37:13.211-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "t_ is for \"target\" - those are the pins used to communicate with that target.  The dio and clk are for programming the st-link device.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "551760214223749135",
+          "name": "zynelabidin",
+          "discriminator": "0000",
+          "nickname": "ZynelAbidin",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1352809260249124944",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1352924374868688897",
+      "type": "Reply",
+      "timestamp": "2025-03-22T04:38:27.088-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ST-Link have the option to measure the VCC of the target board (T_PWR), but in my DIY ST-Link I just ignore it completely.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "551760214223749135",
+          "name": "zynelabidin",
+          "discriminator": "0000",
+          "nickname": "ZynelAbidin",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1352809542420795405",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1353212607263412275",
+      "type": "Default",
+      "timestamp": "2025-03-22T23:43:47.046-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "thanks for this informations",
+      "author": {
+        "id": "551760214223749135",
+        "name": "zynelabidin",
+        "discriminator": "0000",
+        "nickname": "ZynelAbidin",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1353212712204632174",
+      "type": "Default",
+      "timestamp": "2025-03-22T23:44:12.066-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I understood now How stlink is working",
+      "author": {
+        "id": "551760214223749135",
+        "name": "zynelabidin",
+        "discriminator": "0000",
+        "nickname": "ZynelAbidin",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1353226547519291493",
+      "type": "Reply",
+      "timestamp": "2025-03-23T00:39:10.662-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Great",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "551760214223749135",
+          "name": "zynelabidin",
+          "discriminator": "0000",
+          "nickname": "ZynelAbidin",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1353212607263412275",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1354518724945903707",
+      "type": "Reply",
+      "timestamp": "2025-03-26T14:13:49.768-04:00",
+      "timestampEdited": "2025-03-26T14:17:49.228-04:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "there are too many pins on the schematic of original stlink circuit for communications jtag and swd\nI want to know which pins are used for swd communication to program the mcu from stlink \nstm_jtck(swclk) and stm_jtms(swdio) for program to stm32f103 mcu  Im okey with this \nT_JTMS pin 27-25 this pins swdio \n T_JTCK pin 26-15  this pins swclk \nso We use these T_JTMS and T_JTCK pins to program another processor via stm32f103?",
+      "author": {
+        "id": "551760214223749135",
+        "name": "zynelabidin",
+        "discriminator": "0000",
+        "nickname": "ZynelAbidin",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1354518724882726942",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1354518724882726942/image.png?ex=6908f0dd&is=69079f5d&hm=ec4be695ec106484922b983f1ad75c60f8bd4ed88f61bebe8f438f485f4dd3c5&",
+          "fileName": "image.png",
+          "fileSizeBytes": 124426
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "562198895237660684",
+          "name": "lbthomsen",
+          "discriminator": "0000",
+          "nickname": "Lars Bøgild Thomsen",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1349921684429475951",
+              "name": "admins",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1352924065005965384",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1354634909385228443",
+      "type": "ThreadCreated",
+      "timestamp": "2025-03-26T21:55:30.297-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Started a thread.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "messageId": null,
+        "channelId": "1354518724945903707",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1376758751100669984",
+      "type": "Default",
+      "timestamp": "2025-05-26T23:07:45.203-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I experimentally did a couple of KiCAD tutorial videos - see description page here: https://stm32world.com/wiki/I2C_RGB_LED_Board",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "I2C RGB LED Board",
+          "url": "https://stm32world.com/wiki/I2C_RGB_LED_Board",
+          "timestamp": null,
+          "description": "Hitachi HD44780 1602 Display with PCF8574 I2C driver",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDD1D",
+            "code": "handshake",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f91d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "648271109631901706",
+              "name": "boonyboy.",
+              "discriminator": "0000",
+              "nickname": "boonyboy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/648271109631901706/bacd6b574fd58c7eba06ddbb8bca9d57.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1376758860832047144",
+      "type": "Default",
+      "timestamp": "2025-05-26T23:08:11.365-04:00",
+      "timestampEdited": "2025-05-26T23:08:57.624-04:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Live stream 1: https://www.youtube.com/watch?v=NUmpHJ2-TLQ",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "KiCAD Project From Scratch #1",
+          "url": "https://www.youtube.com/watch?v=NUmpHJ2-TLQ",
+          "timestamp": null,
+          "description": "In this series I will create a KiCAD project from scratch - not merely editing an earlier one.  I will do it all live, show you all the struggles, explain the decisions etc.\n\nWe will try to do the second part tomorrow.\n\nModule will be documented here: https://stm32world.com/wiki/I2C_RGB_LED_Board",
+          "color": "#FF0000",
+          "author": {
+            "name": "STM32World",
+            "url": "https://www.youtube.com/channel/UC6qVyJDWpX5iC0emlLRTCzQ"
+          },
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/mDYA08wgwfSAyvLRDi5oqQcBZVgmW_g5fA1qNkXhTxg/https/i.ytimg.com/vi/NUmpHJ2-TLQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "video": {
+            "url": "https://www.youtube.com/embed/NUmpHJ2-TLQ",
+            "width": 1280,
+            "height": 720
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1376758968415682560",
+      "type": "Default",
+      "timestamp": "2025-05-26T23:08:37.015-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Live stream 2: https://www.youtube.com/watch?v=dbczXZmWQ1s",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "KiCAD Project From Scratch #2",
+          "url": "https://www.youtube.com/watch?v=dbczXZmWQ1s",
+          "timestamp": null,
+          "description": "In this series I will create a KiCAD project from scratch - not merely editing an earlier one.  I will do it all live, show you all the struggles, explain the decisions etc.\n\nWe will try to do the second part tomorrow.\n\nModule will be documented here: https://stm32world.com/wiki/I2C_RGB_LED_Board",
+          "color": "#FF0000",
+          "author": {
+            "name": "STM32World",
+            "url": "https://www.youtube.com/channel/UC6qVyJDWpX5iC0emlLRTCzQ"
+          },
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/H16TbhhLMI967gYY_GirZ7TXyrMxilZHjZpa86Wglgs/https/i.ytimg.com/vi/dbczXZmWQ1s/maxresdefault_live.jpg",
+            "width": 1280,
+            "height": 720
+          },
+          "video": {
+            "url": "https://www.youtube.com/embed/dbczXZmWQ1s",
+            "width": 1280,
+            "height": 720
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDEE1",
+            "code": "\uD83E\uDEE1",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1fae1.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "648271109631901706",
+              "name": "boonyboy.",
+              "discriminator": "0000",
+              "nickname": "boonyboy",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/648271109631901706/bacd6b574fd58c7eba06ddbb8bca9d57.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1420943722958553229",
+      "type": "Default",
+      "timestamp": "2025-09-25T21:23:03.411-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Next generation STM32 Programmer - just ordered first version",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1420943722689855519",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1420943722689855519/image.png?ex=6908acb7&is=69075b37&hm=7deeffeb95d6f735db82a5e55bd68aeac7dc557b17ace9403f0bb46b55599eba&",
+          "fileName": "image.png",
+          "fileSizeBytes": 265733
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "675414986880974888",
+              "name": "piers.rocks",
+              "discriminator": "0000",
+              "nickname": "piers.rocks",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/675414986880974888/ccfacf7eae2416b2430b1804cfa3a894.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1422925141784006677",
+      "type": "Default",
+      "timestamp": "2025-10-01T08:36:30.472-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hello hope someone can help. I am planning on making a pan tilt platform for tracking purposes. I will have 2 servos + servo driver. My goal is to have my own position loop on a controller like STM32 G474. The servo drivers have their own velocity and current loop. The servos have their own absolute encoders. My question is: Should i get drivers with analog input or should i use CANopen?",
+      "author": {
+        "id": "313255413891989505",
+        "name": "brianhenrol",
+        "discriminator": "0000",
+        "nickname": "Frederik",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/313255413891989505/3a62d84f25bc822a1d485224513f977a.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1423084886801125456",
+      "type": "Reply",
+      "timestamp": "2025-10-01T19:11:16.652-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hard to tell without more data - best would be to test it out.  The important thing would be your target update-frequency.   I would guess analog _could_ be made faster but that might not be necessary.  CAN would be simpler wiring.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "313255413891989505",
+          "name": "brianhenrol",
+          "discriminator": "0000",
+          "nickname": "Frederik",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/313255413891989505/3a62d84f25bc822a1d485224513f977a.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1422925141784006677",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1424719701497352337",
+      "type": "Default",
+      "timestamp": "2025-10-06T07:27:26.849-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I am not that experienced with STM32 and no experience with CANopen. - My thought is that i would be to much of a gamble to try making a system based on CANopen. For analog i have this simple layout, only problem is getting the RS422 signal from the encoders made compatible with the G474re encoder inputs?",
+      "author": {
+        "id": "313255413891989505",
+        "name": "brianhenrol",
+        "discriminator": "0000",
+        "nickname": "Frederik",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/313255413891989505/3a62d84f25bc822a1d485224513f977a.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1424719701258534966",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1424719701258534966/image.png?ex=69093a5e&is=6907e8de&hm=42bf22748ae9711e8ea368cd827e9571eb5a5bc806792e3bedba62c49d48c273&",
+          "fileName": "image.png",
+          "fileSizeBytes": 490111
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1424756400353050624",
+      "type": "Default",
+      "timestamp": "2025-10-06T09:53:16.538-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "So far i have this:",
+      "author": {
+        "id": "313255413891989505",
+        "name": "brianhenrol",
+        "discriminator": "0000",
+        "nickname": "Frederik",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/313255413891989505/3a62d84f25bc822a1d485224513f977a.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1424756399727968317",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1424756399727968317/image.png?ex=6908b3cc&is=6907624c&hm=802beb03070ddd45afb5b134304f736776cad27f81742a7870e32077638cc218&",
+          "fileName": "image.png",
+          "fileSizeBytes": 630822
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1425442409495396434",
+      "type": "Default",
+      "timestamp": "2025-10-08T07:19:13.863-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "more detailed",
+      "author": {
+        "id": "313255413891989505",
+        "name": "brianhenrol",
+        "discriminator": "0000",
+        "nickname": "Frederik",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/313255413891989505/3a62d84f25bc822a1d485224513f977a.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1425442409067839488",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1425442409067839488/Analog_config_wiring_diagram_rough.jpg?ex=69093871&is=6907e6f1&hm=acf06ab4c2ee3d5a4cea80e1edbcd90211cbd7e4787efe5cf38d9a3fa74062ad&",
+          "fileName": "Analog_config_wiring_diagram_rough.jpg",
+          "fileSizeBytes": 239517
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1425858254067466274",
+      "type": "Default",
+      "timestamp": "2025-10-09T10:51:38.935-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "STM32 Programmer",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1425858252666699887",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1425858252666699887/IMG_20251009_224524.jpg?ex=6908c17a&is=69076ffa&hm=c9791b319ab179d0c66851fae1b5c29410e3f333d7264b16d711c3d2b41a3b62&",
+          "fileName": "IMG_20251009_224524.jpg",
+          "fileSizeBytes": 617369
+        },
+        {
+          "id": "1425858253300043846",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1425858253300043846/IMG_20251009_224451.jpg?ex=6908c17a&is=69076ffa&hm=0b75708c52c99263c9d313fd13eafe000ef76dbd16e36d07e0a3f91b66ab3db5&",
+          "fileName": "IMG_20251009_224451.jpg",
+          "fileSizeBytes": 679550
+        },
+        {
+          "id": "1425858253987905666",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1425858253987905666/IMG_20251009_224420.jpg?ex=6908c17a&is=69076ffa&hm=497b65e30dc47ee53b5c94ae7028a36bea2bf61f52dabe68d23317725da10797&",
+          "fileName": "IMG_20251009_224420.jpg",
+          "fileSizeBytes": 642796
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDD25",
+            "code": "fire",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "303641814391455746",
+              "name": "crucifiedmidget",
+              "discriminator": "0000",
+              "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+            },
+            {
+              "id": "1121169875025526946",
+              "name": "espressolens",
+              "discriminator": "0000",
+              "nickname": "espressolens",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1121169875025526946/6c5996770c985bcd6e5b68131ff2ba04.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1425858693597233195",
+      "type": "Reply",
+      "timestamp": "2025-10-09T10:53:23.727-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Working flawlessly by the way",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1159546342281064468",
+              "name": "ms_2341",
+              "discriminator": "0000",
+              "nickname": "MS",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1159546342281064468/0c8e46b9e83ec346b4c5b969f45725ab.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "reference": {
+        "messageId": "1425858254067466274",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1425868868525494273",
+      "type": "Default",
+      "timestamp": "2025-10-09T11:33:49.619-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I like the pcb cover",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1425869256599535709",
+      "type": "Default",
+      "timestamp": "2025-10-09T11:35:22.143-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Are those jtag/swd connectors expensive to manufacture?",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1425883835849117859",
+      "type": "Default",
+      "timestamp": "2025-10-09T12:33:18.107-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Those are regular IDC SMD connectors.  No through-hole components.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1425896978079809628",
+      "type": "Default",
+      "timestamp": "2025-10-09T13:25:31.459-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Looks good \"in the flesh\". Any chance of a photo of the programmer PCB itself?",
+      "author": {
+        "id": "675414986880974888",
+        "name": "piers.rocks",
+        "discriminator": "0000",
+        "nickname": "piers.rocks",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/675414986880974888/ccfacf7eae2416b2430b1804cfa3a894.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "562198895237660684",
+              "name": "lbthomsen",
+              "discriminator": "0000",
+              "nickname": "Lars Bøgild Thomsen",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1425945863976517812",
+      "type": "Reply",
+      "timestamp": "2025-10-09T16:39:46.765-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Does it reuse the chip from stlink?",
+      "author": {
+        "id": "586604668889595934",
+        "name": "bloyka_ebat",
+        "discriminator": "0000",
+        "nickname": "ПЛОЙКА ЕБАТЬ",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/586604668889595934/d6d687b695ea56f7a0555cbc37212b5d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "562198895237660684",
+          "name": "lbthomsen",
+          "discriminator": "0000",
+          "nickname": "Lars Bøgild Thomsen",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1349921684429475951",
+              "name": "admins",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1425858254067466274",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1425996210237608057",
+      "type": "Reply",
+      "timestamp": "2025-10-09T19:59:50.249-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1425996209776230480",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1425996209776230480/AP1GczMorIeYBwCUZOX-sa1Nj9-NeCcjjxHEJrOjIvNE1gTowGyyPM-F9o9aOQw1218-h879-s-no-gm.png?ex=690941f6&is=6907f076&hm=5a6777c8551e4baa1253033074d8bf5170c24b81bb01ed836e0689db9201bf4e&",
+          "fileName": "AP1GczMorIeYBwCUZOX-sa1Nj9-NeCcjjxHEJrOjIvNE1gTowGyyPM-F9o9aOQw1218-h879-s-no-gm.png",
+          "fileSizeBytes": 1610671
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "675414986880974888",
+          "name": "piers.rocks",
+          "discriminator": "0000",
+          "nickname": "piers.rocks",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/675414986880974888/ccfacf7eae2416b2430b1804cfa3a894.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1425896978079809628",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1425997248248156321",
+      "type": "Reply",
+      "timestamp": "2025-10-09T20:03:57.73-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Not sure what you mean by reuse.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "586604668889595934",
+          "name": "bloyka_ebat",
+          "discriminator": "0000",
+          "nickname": "ПЛОЙКА ЕБАТЬ",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/586604668889595934/d6d687b695ea56f7a0555cbc37212b5d.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1425945863976517812",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426100871355305994",
+      "type": "Default",
+      "timestamp": "2025-10-10T02:55:43.404-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Nice neat layout - I saw the kicad 3d version, but I always like to see in the flesh \uD83D\uDE42",
+      "author": {
+        "id": "675414986880974888",
+        "name": "piers.rocks",
+        "discriminator": "0000",
+        "nickname": "piers.rocks",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/675414986880974888/ccfacf7eae2416b2430b1804cfa3a894.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE42",
+          "code": "slight_smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f642.svg"
+        }
+      ]
+    },
+    {
+      "id": "1426101043032494172",
+      "type": "Default",
+      "timestamp": "2025-10-10T02:56:24.335-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "What are the relatively large solder pads just under currentmakers.com for?",
+      "author": {
+        "id": "675414986880974888",
+        "name": "piers.rocks",
+        "discriminator": "0000",
+        "nickname": "piers.rocks",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/675414986880974888/ccfacf7eae2416b2430b1804cfa3a894.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426108095163269160",
+      "type": "Default",
+      "timestamp": "2025-10-10T03:24:25.694-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Solder jumper.  The original ST-Link devices measure the target device voltage and only flash if safe.  I find that more irritating than helpful, so by default it just \"measure:\" the 3.3V on the programmer itself \uD83D\uDE09",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "675414986880974888",
+              "name": "piers.rocks",
+              "discriminator": "0000",
+              "nickname": "piers.rocks",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/675414986880974888/ccfacf7eae2416b2430b1804cfa3a894.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE09",
+          "code": "wink",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f609.svg"
+        }
+      ]
+    },
+    {
+      "id": "1426134202356600984",
+      "type": "Reply",
+      "timestamp": "2025-10-10T05:08:10.134-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Is that a Abacron crystal? I am making a usb to CAN adapter and I think I am using the same one, sucks its an extended component tho",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "562198895237660684",
+          "name": "lbthomsen",
+          "discriminator": "0000",
+          "nickname": "Lars Bøgild Thomsen",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1349921684429475951",
+              "name": "admins",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1425996210237608057",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426154797869826099",
+      "type": "Reply",
+      "timestamp": "2025-10-10T06:30:00.487-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "If so - no - I am quite sure that one is a basic part 8 MHz - the only one available.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "303641814391455746",
+          "name": "crucifiedmidget",
+          "discriminator": "0000",
+          "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1426134202356600984",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426165369495879852",
+      "type": "Reply",
+      "timestamp": "2025-10-10T07:12:00.959-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "This is the one I used: https://jlcpcb.com/partdetail/AbraconLLC-ABM3_8_000MHZ_D2YT/C144380",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "ABM3-8.000MHZ-D2Y-T | Abracon LLC | Crystals | JLCPCB",
+          "url": "https://jlcpcb.com/partdetail/AbraconLLC-ABM3_8_000MHZ_D2YT/C144380",
+          "timestamp": null,
+          "description": "ABM3-8.000MHZ-D2Y-T from Abracon LLC - Crystals is available for JLCPCB assembly, check the stock, pricing and datasheet, and let JLCPCB helps you assemble the part ABM3-8.000MHZ-D2Y-T for free.",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/nax-wylXkowNI0GU4rMDYQhmynsinGqH6CT3q7ZVYps/https/jlcpcb.com/logo-og.png",
+            "width": 108,
+            "height": 108
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "562198895237660684",
+          "name": "lbthomsen",
+          "discriminator": "0000",
+          "nickname": "Lars Bøgild Thomsen",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1349921684429475951",
+              "name": "admins",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1426154797869826099",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426165686253916171",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:13:16.48-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hope it works for me. chatgpt said I needed 27 pF caps but they only had (in basic components) 22 or 30 so I went with 30",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426171937637535764",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:38:06.926-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Well - I would recommend you read how to pick the right size rather than relying on ChatGPT.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426171971665658026",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:38:15.039-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "It is not that complicated",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426173078467121272",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:42:38.921-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://jlcpcb.com/partdetail/YXC_CrystalOscillators-X50328MSB2GI/C115962 basic part and 350000 in stock - yours was extended and 7 in stock.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "X50328MSB2GI | YXC Crystal Oscillators | Crystals | JLCPCB",
+          "url": "https://jlcpcb.com/partdetail/YXC_CrystalOscillators-X50328MSB2GI/C115962",
+          "timestamp": null,
+          "description": "X50328MSB2GI from YXC Crystal Oscillators - Crystals is available for JLCPCB assembly, check the stock, pricing and datasheet, and let JLCPCB helps you assemble the part X50328MSB2GI for free.",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/nax-wylXkowNI0GU4rMDYQhmynsinGqH6CT3q7ZVYps/https/jlcpcb.com/logo-og.png",
+            "width": 108,
+            "height": 108
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426173163510693909",
+      "type": "Reply",
+      "timestamp": "2025-10-10T07:42:59.197-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ahahahahah fuck I wish I picked that one",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "562198895237660684",
+          "name": "lbthomsen",
+          "discriminator": "0000",
+          "nickname": "Lars Bøgild Thomsen",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1349921684429475951",
+              "name": "admins",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1426173078467121272",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426173202664656946",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:43:08.532-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "well we are still prototyping",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426173284046737559",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:43:27.935-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "As long as you don't want to make 10 prototypes",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426173367286890549",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:43:47.781-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "well if it works I will need about 200 boards",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426173478364512286",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:44:14.264-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "But kinda sucks that if it works with my current clock I cant be 100% sure it works with the other",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426173765200379975",
+      "type": "Reply",
+      "timestamp": "2025-10-10T07:45:22.651-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I already ordered them. When I first ordered I accedentally also fucked up with the MPN for a CAN tranciever",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "562198895237660684",
+          "name": "lbthomsen",
+          "discriminator": "0000",
+          "nickname": "Lars Bøgild Thomsen",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1349921684429475951",
+              "name": "admins",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1426173284046737559",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426173832820949002",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:45:38.773-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Could not cancel since it went imediately in production",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426173870259310612",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:45:47.699-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "But support canceled for me and I could reorder",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426174147419177053",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:46:53.779-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I just put usb-c and a new power converter on a candlelight adapter",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1426174147020591114",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1426174147020591114/image.png?ex=69093eed&is=6907ed6d&hm=7b62f5d7601e9855ab173b5b11a515f6285b908f541dce8adffce767aeb7b852&",
+          "fileName": "image.png",
+          "fileSizeBytes": 110967
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426174179908259840",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:47:01.525-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "and another clock",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1426174230848082041",
+      "type": "Default",
+      "timestamp": "2025-10-10T07:47:13.67-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "also had to redo all the traces since it was made in a 10yo kicad version",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1427293937210622083",
+      "type": "Default",
+      "timestamp": "2025-10-13T09:56:32.47-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "working well",
+      "author": {
+        "id": "551760214223749135",
+        "name": "zynelabidin",
+        "discriminator": "0000",
+        "nickname": "ZynelAbidin",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1427293936128364575",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1427293936128364575/1.png?ex=6908b490&is=69076310&hm=a50a0a4a5f53a34bce94884d7912b749c8c2e7fff0758634012ed07503bbfbbb&",
+          "fileName": "1.png",
+          "fileSizeBytes": 324272
+        },
+        {
+          "id": "1427293936702980277",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1427293936702980277/2.png?ex=6908b490&is=69076310&hm=2ab830b5b523cf1fb64c74253633f7ddebc9429ef624382cc3493bfad06945c0&",
+          "fileName": "2.png",
+          "fileSizeBytes": 243283
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1427455970434613378",
+      "type": "Reply",
+      "timestamp": "2025-10-13T20:40:24.201-04:00",
+      "timestampEdited": "2025-10-13T20:44:07.804-04:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Cool!  However, why don't you break out the SWO and UART pins from what I assume is a ST-Link on top of the board.  Also I would have added a couple of jumpers to disconnect the st-link from the built-in target.  As is - you can't really use the ST-Link with an external target without breaking it of.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "551760214223749135",
+          "name": "zynelabidin",
+          "discriminator": "0000",
+          "nickname": "ZynelAbidin",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1427293937210622083",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1427654228935049286",
+      "type": "Reply",
+      "timestamp": "2025-10-14T09:48:12.711-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thanks for ideas. I focused only the target on the board. I will make some changes on it",
+      "author": {
+        "id": "551760214223749135",
+        "name": "zynelabidin",
+        "discriminator": "0000",
+        "nickname": "ZynelAbidin",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/551760214223749135/6d19e04c1996d0062f1d29050d5d43b9.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "562198895237660684",
+              "name": "lbthomsen",
+              "discriminator": "0000",
+              "nickname": "Lars Bøgild Thomsen",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "562198895237660684",
+          "name": "lbthomsen",
+          "discriminator": "0000",
+          "nickname": "Lars Bøgild Thomsen",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1349921684429475951",
+              "name": "admins",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1427455970434613378",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1428193364368429076",
+      "type": "Default",
+      "timestamp": "2025-10-15T21:30:32.615-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "The Jolt Connect - STM32 Programmer & Debugger.  See https://stm32world.com/wiki/Jolt_Connect",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1428193364750106684",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1428193364750106684/651px-JC_-_top_left.jpg?ex=6908ae78&is=69075cf8&hm=602973806a3d8a5a30c06e84cd6022cb0d11d59f01a60e7c1fba1498cbaf6091&",
+          "fileName": "651px-JC_-_top_left.jpg",
+          "fileSizeBytes": 65032
+        },
+        {
+          "id": "1428193366000009246",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1428193366000009246/800px-JC_-_top_front.jpg?ex=6908ae79&is=69075cf9&hm=eb8c5dc4b5c2e04ca8a19e07eff282d0a856ee531fbfe8cd0d845e56f8ec5a6e&",
+          "fileName": "800px-JC_-_top_front.jpg",
+          "fileSizeBytes": 59264
+        },
+        {
+          "id": "1428193366486810645",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1428193366486810645/701px-JC_-_top_right.jpg?ex=6908ae79&is=69075cf9&hm=076f35a3a847568c2136ad116ed0c96ae9a9ea64c3ef0b9bbdf5ea1d7a5c19ac&",
+          "fileName": "701px-JC_-_top_right.jpg",
+          "fileSizeBytes": 67336
+        }
+      ],
+      "embeds": [
+        {
+          "title": "Jolt Connect",
+          "url": "https://stm32world.com/wiki/Jolt_Connect",
+          "timestamp": null,
+          "description": "New and improved ST-Link V2.1 device",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1428431036878159933",
+      "type": "Default",
+      "timestamp": "2025-10-16T13:14:58.157-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "My stash of prototypes to be \"productified\" in coming months. Stay tuned.",
+      "author": {
+        "id": "774612658841190430",
+        "name": "niclas8888",
+        "discriminator": "0000",
+        "nickname": "Niclas",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/774612658841190430/9c910d164efaa7e230bcad51416edcb9.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1428431036538294323",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1428431036538294323/IMG-20251016-WA0001.jpg?ex=6908e312&is=69079192&hm=d1e2da5fc1f7d9c6af42da7831441a5d494484cf89230220c2663e8cd30d7deb&",
+          "fileName": "IMG-20251016-WA0001.jpg",
+          "fileSizeBytes": 465602
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "562198895237660684",
+              "name": "lbthomsen",
+              "discriminator": "0000",
+              "nickname": "Lars Bøgild Thomsen",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1431020511718019214",
+      "type": "Default",
+      "timestamp": "2025-10-23T16:44:37.069-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hey has anyone tried to integrate wifi using UART for STM32 MCU by using an ESP8266ex SoC? If yes then please shed some light on below:\n\nI was actually looking to understand on how to make a custom PCB as my end goal is to send and receive data using Wifi Feature of the ESP8266ex by utilising the AT Commands\n\nI am really struggling to create a PCB Design for the same",
+      "author": {
+        "id": "316282803404800001",
+        "name": "am991928",
+        "discriminator": "0000",
+        "nickname": "Akshat Modi",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/316282803404800001/1df65ef1a06b4efda42708e7ec161628.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1432263417074286652",
+      "type": "Reply",
+      "timestamp": "2025-10-27T03:03:28.798-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I haven't done this, but I have used an ESP32 to control an STM32 using the SWD protocol.  What specifically are you finding difficult?  This should be a straightforward layout with the UART pins of the two MCUs connected to each other, ensuring you connect TX from one to RX of the other, and vice versa.",
+      "author": {
+        "id": "675414986880974888",
+        "name": "piers.rocks",
+        "discriminator": "0000",
+        "nickname": "piers.rocks",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/675414986880974888/ccfacf7eae2416b2430b1804cfa3a894.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "316282803404800001",
+          "name": "am991928",
+          "discriminator": "0000",
+          "nickname": "Akshat Modi",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/316282803404800001/1df65ef1a06b4efda42708e7ec161628.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1431020511718019214",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1432333291976921119",
+      "type": "Reply",
+      "timestamp": "2025-10-27T07:41:08.273-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hey thanks for the reply,\nI am actually struggling to setup the IO pins such GPIO0, GPIO2 and MTDO as from ex8266ex are not flashed with the AT Binary so while working on the schematics i am slightly confused as to how to pull them low for flashing when needed, and other keeping them at normal state to make the MCU function normally.\n\nBut actually I changed my design to use the ESP32-S3 for the whole project",
+      "author": {
+        "id": "316282803404800001",
+        "name": "am991928",
+        "discriminator": "0000",
+        "nickname": "Akshat Modi",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/316282803404800001/1df65ef1a06b4efda42708e7ec161628.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "675414986880974888",
+          "name": "piers.rocks",
+          "discriminator": "0000",
+          "nickname": "piers.rocks",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/675414986880974888/ccfacf7eae2416b2430b1804cfa3a894.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1432263417074286652",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1432372557922832435",
+      "type": "Default",
+      "timestamp": "2025-10-27T10:17:10.004-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "there's a lot of schematics around for a dual transistor circuit to use the serial DTR/etc lines to automatically pull the right things low for programming th ESP.  I'd suggest picking a user focused breakout board, finding it's schematic, and copying that.",
+      "author": {
+        "id": "675414986880974888",
+        "name": "piers.rocks",
+        "discriminator": "0000",
+        "nickname": "piers.rocks",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/675414986880974888/ccfacf7eae2416b2430b1804cfa3a894.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "562198895237660684",
+              "name": "lbthomsen",
+              "discriminator": "0000",
+              "nickname": "Lars Bøgild Thomsen",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1432544060274380882",
+      "type": "Default",
+      "timestamp": "2025-10-27T21:38:39.351-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "This is something from 10 years ago, where an ESP-12F (ESP8266 inside) were used and programming over USB was done. HOWEVER, it has some problems. The 1N4148 voltage drop is too high to guarantee tghe RESET. So, this doesn't work with every produced unit. But if you drop the WatchDog and remove the diode, this should work (at least with the programmer back then).",
+      "author": {
+        "id": "774612658841190430",
+        "name": "niclas8888",
+        "discriminator": "0000",
+        "nickname": "Niclas",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/774612658841190430/9c910d164efaa7e230bcad51416edcb9.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1432544060039630848",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1432544060039630848/image.png?ex=6908b05f&is=69075edf&hm=ba91509a6cd21d3136bb73ba9c1244889096777cc4634ea32b139c60d5be2316&",
+          "fileName": "image.png",
+          "fileSizeBytes": 61622
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1432561439587172352",
+      "type": "Default",
+      "timestamp": "2025-10-27T22:47:42.902-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "The ESP-01S is made for this and comes preloaded with the AT firmware.",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1432561439318474824",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1432561439318474824/ESP-01S.png?ex=6908c08e&is=69076f0e&hm=1050769654ef3f3b92a8346e8ea90b5ebed2d4cf1501de607e0c8ff215e024fc&",
+          "fileName": "ESP-01S.png",
+          "fileSizeBytes": 42460
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1433422261632892928",
+      "type": "Default",
+      "timestamp": "2025-10-30T07:48:18.871-04:00",
+      "timestampEdited": "2025-10-30T07:50:59.9-04:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Testing the usb to canbus adapters I made",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1433422260148109427",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1433422260148109427/20251030_124400.mp4?ex=69093f42&is=6907edc2&hm=c26aa1aa8a6951fd093d2a49b1184863a18768edadc04810bd53e1be746d2edf&",
+          "fileName": "20251030_124400.mp4",
+          "fileSizeBytes": 5893963
+        },
+        {
+          "id": "1433422261267730572",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1433422261267730572/20251030_123807.jpg?ex=69093f42&is=6907edc2&hm=abecccc11ca3faedbca3db38f18f3f66dccafdc3ba584f74b582e797c195a950&",
+          "fileName": "20251030_123807.jpg",
+          "fileSizeBytes": 414141
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDD25",
+            "code": "fire",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "1159546342281064468",
+              "name": "ms_2341",
+              "discriminator": "0000",
+              "nickname": "MS",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1159546342281064468/0c8e46b9e83ec346b4c5b969f45725ab.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1433493538963718155",
+      "type": "Default",
+      "timestamp": "2025-10-30T12:31:32.711-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "v2 works perfect \\:)\nv2.1 is not that happy.... While this one flashed without problems I am getting buffer errors when using CAN. I did use another package for the CAN transceiver but it should work the same. \nOnly thing that's different is that it has a ground plane under it which should have plenty of vias for thermal dissipation and I problably didnt do well enough. Well guess I am going back to the so8 TJA1051T/3 for v2.3 because that one works flawlessly",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1433493538108084314",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1433493538108084314/v2.1_4.jpg?ex=6908d8e4&is=69078764&hm=fa6d20b71bb567a5c1171a5e29a49da812a58cd9956f728a9cbb8c2548f236ce&",
+          "fileName": "v2.1_4.jpg",
+          "fileSizeBytes": 787037
+        },
+        {
+          "id": "1433493538502480084",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1433493538502480084/image.png?ex=6908d8e4&is=69078764&hm=214cf26cd07f7e8e7faaf408d674bc58febb392994873f5133f43b21dd812bfd&",
+          "fileName": "image.png",
+          "fileSizeBytes": 86478
+        },
+        {
+          "id": "1433493538858864650",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1433493538858864650/image.png?ex=6908d8e4&is=69078764&hm=6cb3940fc67364340410be2327c315c25e5f6e32a819726b4e1f0d6027740320&",
+          "fileName": "image.png",
+          "fileSizeBytes": 18763
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1433498123661217853",
+      "type": "Reply",
+      "timestamp": "2025-10-30T12:49:45.788-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Engineering rule number - I think 2 or 3 - if it works, don't fix it \uD83D\uDE09",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "303641814391455746",
+          "name": "crucifiedmidget",
+          "discriminator": "0000",
+          "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1433493538963718155",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE09",
+          "code": "wink",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f609.svg"
+        }
+      ]
+    },
+    {
+      "id": "1433509811412144291",
+      "type": "Reply",
+      "timestamp": "2025-10-30T13:36:12.365-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hahahaha should be number #1 but I got seduced by a slicker package",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "562198895237660684",
+          "name": "lbthomsen",
+          "discriminator": "0000",
+          "nickname": "Lars Bøgild Thomsen",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1349921684429475951",
+              "name": "admins",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1433498123661217853",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1433510197954875392",
+      "type": "Default",
+      "timestamp": "2025-10-30T13:37:44.524-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "anyway if people are interested in the cad files they can be found [here](<https://github.com/11philip22/candleLight-v2>)",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1433514032991830017",
+      "type": "Default",
+      "timestamp": "2025-10-30T13:52:58.868-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "NEVERMIND v2.1 FREAKING WORKS \uD83C\uDF89\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89\uD83C\uDF89",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83C\uDF89",
+          "code": "tada",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f389.svg"
+        }
+      ]
+    },
+    {
+      "id": "1433514335245701161",
+      "type": "Default",
+      "timestamp": "2025-10-30T13:54:10.931-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I forgot I had swapped GND on the big terminal block around",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1433515246386937887",
+      "type": "Default",
+      "timestamp": "2025-10-30T13:57:48.164-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1433515245644812358",
+          "url": "https://cdn.discordapp.com/attachments/1348004345253199902/1433515245644812358/20251030_185625.mp4?ex=6908ed1b&is=69079b9b&hm=7714e99a6157649e4ed30e1e4489aea24ebbcb0045ae4c534b056b69acef3e2a&",
+          "fileName": "20251030_185625.mp4",
+          "fileSizeBytes": 8285087
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1433677220550934568",
+      "type": "Reply",
+      "timestamp": "2025-10-31T00:41:25.814-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I believe number 1 is: \"read the bloody datasheet\"",
+      "author": {
+        "id": "562198895237660684",
+        "name": "lbthomsen",
+        "discriminator": "0000",
+        "nickname": "Lars Bøgild Thomsen",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1349921684429475951",
+            "name": "admins",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "303641814391455746",
+          "name": "crucifiedmidget",
+          "discriminator": "0000",
+          "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1433509811412144291",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1433911835106611342",
+      "type": "Reply",
+      "timestamp": "2025-10-31T16:13:42.283-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I also need to switch from STM32F072C8T6 to STM32F072CBT6 because jlc doesnt have enough C8's So have some reading to do for sure",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "562198895237660684",
+          "name": "lbthomsen",
+          "discriminator": "0000",
+          "nickname": "Lars Bøgild Thomsen",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1349921684429475951",
+              "name": "admins",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/562198895237660684/b99c8a6014d20a6df0341d88c448eac5.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1433677220550934568",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1433912075209408643",
+      "type": "Reply",
+      "timestamp": "2025-10-31T16:14:39.528-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "And I have to turn this board into the shape of kitt from night rider for a convention badge",
+      "author": {
+        "id": "303641814391455746",
+        "name": "crucifiedmidget",
+        "discriminator": "0000",
+        "nickname": "\uD835\uDD6E\uD835\uDD97\uD835\uDD9A\uD835\uDD88\uD835\uDD8E\uD835\uDD8B\uD835\uDD8E\uD835\uDD8A\uD835\uDD89 \uD835\uDD78\uD835\uDD8E\uD835\uDD89\uD835\uDD8C\uD835\uDD8A\uD835\uDD99",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/303641814391455746/22cb37300024a93074d5ca5d9606bb2d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "messageId": "1433493538963718155",
+        "channelId": "1348004345253199902",
+        "guildId": "1347730523824455750"
+      },
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 72
+}

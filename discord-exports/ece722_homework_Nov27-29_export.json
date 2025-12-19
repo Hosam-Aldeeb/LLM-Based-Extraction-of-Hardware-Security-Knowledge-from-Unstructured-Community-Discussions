@@ -1,0 +1,2716 @@
+{
+  "guild": {
+    "id": "1413213351407915194",
+    "name": "ECE722",
+    "iconUrl": "https://cdn.discordapp.com/icons/1413213351407915194/6b3ed942df087a90058412c9eba9e7ea.png?size=512"
+  },
+  "channel": {
+    "id": "1413213352288845939",
+    "type": "GuildTextChat",
+    "categoryId": "1413213352288845937",
+    "category": "Text Channels",
+    "name": "homework-help",
+    "topic": null
+  },
+  "dateRange": {
+    "after": "2025-11-27T00:00:00-05:00",
+    "before": "2025-11-29T13:50:00-05:00"
+  },
+  "exportedAt": "2025-11-29T14:04:36.1128946-05:00",
+  "messages": [
+    {
+      "id": "1443705283472920626",
+      "type": "Default",
+      "timestamp": "2025-11-27T15:49:22.327-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I got the following error from the tb when running\n\n`make sim DUT=naiveadder2048b M=8`\n\nanyone knows the fix?\n\n```\nhaulcraft% make sim DUT=naiveadder2048b M=8\nrm -rf sim\nmkdir -p /tmp/h3sun/sim/\nverilator -DTESTDIR=\\\"/home/h3sun/ece722-f25/labs/grp_14-lab4/data/\\\" -DTOP= \\\n        -CFLAGS \\\n        -Itb\\\n        -Irtl\\\n        --cc rtl/naiveadder2048b.sv\\\n        tb/test_adder.sv \\\n        --exe /home/h3sun/ece722-f25/labs/grp_14-lab4/tb/test.cpp \\\n        -top-module top \\\n        --Mdir /tmp/h3sun/sim/ \\\n        +define+TOPNAME=naiveadder2048b \\\n        +define+W=2048 +define+M=8\n%Warning-IMPLICITSTATIC: tb/test_adder.sv:136:29: Variable's lifetime implicitly set to static\n                                                : ... The initializer value will only be set once\n                                                : ... Suggest use 'static' before variable declaration'\n  136 |               logic [M-1:0] got_chunk = s[i*M +: M];\n      |                             ^~~~~~~~~\n                         ... For warning description see https://verilator.org/warn/IMPLICITSTATIC?v=5.043\n                         ... Use \"/* verilator lint_off IMPLICITSTATIC */\" and lint_on around source to disable this message.\n%Warning-IMPLICITSTATIC: tb/test_adder.sv:137:29: Variable's lifetime implicitly set to static\n                                                : ... The initializer value will only be set once\n                                                : ... Suggest use 'static' before variable declaration'\n  137 |               logic [M-1:0] exp_chunk = exp.s[i*M +: M];\n      |                             ^~~~~~~~~\n%Error: Exiting due to 2 warning(s)\nmake: *** [Makefile:47: compile] Error 1\nhaulcraft%\n```",
+      "author": {
+        "id": "739014805959999498",
+        "name": "haibo3431",
+        "discriminator": "0000",
+        "nickname": "Haibo",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/739014805959999498/d25ff3ab1c4b97c514410ca92b9a5a58.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443705578621898854",
+      "type": "Default",
+      "timestamp": "2025-11-27T15:50:32.696-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "395796195483844608",
+        "name": "bananamilkenjoyer443",
+        "discriminator": "0000",
+        "nickname": "bananamilkenjoyer443",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "messageId": "1442591913655013407",
+        "channelId": "1432549981973123112",
+        "guildId": "1413213351407915194"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443705633810415747",
+      "type": "Default",
+      "timestamp": "2025-11-27T15:50:45.854-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@Haibo",
+      "author": {
+        "id": "395796195483844608",
+        "name": "bananamilkenjoyer443",
+        "discriminator": "0000",
+        "nickname": "bananamilkenjoyer443",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "739014805959999498",
+          "name": "haibo3431",
+          "discriminator": "0000",
+          "nickname": "Haibo",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/739014805959999498/d25ff3ab1c4b97c514410ca92b9a5a58.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443705886978867396",
+      "type": "Reply",
+      "timestamp": "2025-11-27T15:51:46.214-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "thanks man",
+      "author": {
+        "id": "739014805959999498",
+        "name": "haibo3431",
+        "discriminator": "0000",
+        "nickname": "Haibo",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/739014805959999498/d25ff3ab1c4b97c514410ca92b9a5a58.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "395796195483844608",
+          "name": "bananamilkenjoyer443",
+          "discriminator": "0000",
+          "nickname": "bananamilkenjoyer443",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1443705578621898854",
+        "channelId": "1413213352288845939",
+        "guildId": "1413213351407915194"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443737996091326614",
+      "type": "Default",
+      "timestamp": "2025-11-27T17:59:21.623-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "anyone knows where does `c_in` and `c_out` go in the diagram here?",
+      "author": {
+        "id": "739014805959999498",
+        "name": "haibo3431",
+        "discriminator": "0000",
+        "nickname": "Haibo",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/739014805959999498/d25ff3ab1c4b97c514410ca92b9a5a58.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1443737995839799436",
+          "url": "https://cdn.discordapp.com/attachments/1413213352288845939/1443737995839799436/image.png?ex=692c2389&is=692ad209&hm=15bbb59f62bf6ed82aa9f70255d5999514f41fece156ea13255f83c9df64d0bd&",
+          "fileName": "image.png",
+          "fileSizeBytes": 89822
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443738081814511766",
+      "type": "Default",
+      "timestamp": "2025-11-27T17:59:42.061-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "like `c_out` i can make it as the `c_out` of the MSB adder",
+      "author": {
+        "id": "739014805959999498",
+        "name": "haibo3431",
+        "discriminator": "0000",
+        "nickname": "Haibo",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/739014805959999498/d25ff3ab1c4b97c514410ca92b9a5a58.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443738118921654303",
+      "type": "Default",
+      "timestamp": "2025-11-27T17:59:50.908-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "what i should do with `c_in`?",
+      "author": {
+        "id": "739014805959999498",
+        "name": "haibo3431",
+        "discriminator": "0000",
+        "nickname": "Haibo",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/739014805959999498/d25ff3ab1c4b97c514410ca92b9a5a58.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443738306612560026",
+      "type": "Default",
+      "timestamp": "2025-11-27T18:00:35.657-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Umm that’s something you should solve on your own",
+      "author": {
+        "id": "277113830809534464",
+        "name": "nachiketkapre",
+        "discriminator": "0000",
+        "nickname": "nachiketkapre",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1413897178405015583",
+            "name": "Admin",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443738320243916830",
+      "type": "Default",
+      "timestamp": "2025-11-27T18:00:38.907-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "No sharing allowed",
+      "author": {
+        "id": "277113830809534464",
+        "name": "nachiketkapre",
+        "discriminator": "0000",
+        "nickname": "nachiketkapre",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1413897178405015583",
+            "name": "Admin",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443800898223734845",
+      "type": "Default",
+      "timestamp": "2025-11-27T22:09:18.66-05:00",
+      "timestampEdited": "2025-11-27T22:11:31.683-05:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@nachiketkapre For the naiive adder, assigning M in `make {synth|sim} M={}` is not working. It follows whatever was assigned to M in the design as default. It is most likely because of the variable `ARCH_PARAM_VAL` as it is not assigned",
+      "author": {
+        "id": "212915306111172608",
+        "name": "creeperdrop",
+        "discriminator": "0000",
+        "nickname": "CreeperDrop",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/212915306111172608/acb5a7fff3dabe545bc0495c83c50996.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1443800897569296424",
+          "url": "https://cdn.discordapp.com/attachments/1413213352288845939/1443800897569296424/image.png?ex=692c5e1e&is=692b0c9e&hm=05470c36106322b97e65320a9eefa3c715889a2b6fe69a58be2275787e1e6e07&",
+          "fileName": "image.png",
+          "fileSizeBytes": 12400
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "277113830809534464",
+              "name": "nachiketkapre",
+              "discriminator": "0000",
+              "nickname": "nachiketkapre",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "277113830809534464",
+          "name": "nachiketkapre",
+          "discriminator": "0000",
+          "nickname": "nachiketkapre",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1413897178405015583",
+              "name": "Admin",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443807924785774602",
+      "type": "Default",
+      "timestamp": "2025-11-27T22:37:13.923-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Yup a quick fix incoming",
+      "author": {
+        "id": "277113830809534464",
+        "name": "nachiketkapre",
+        "discriminator": "0000",
+        "nickname": "nachiketkapre",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1413897178405015583",
+            "name": "Admin",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443807949603606619",
+      "type": "Default",
+      "timestamp": "2025-11-27T22:37:19.84-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Fixed it",
+      "author": {
+        "id": "212915306111172608",
+        "name": "creeperdrop",
+        "discriminator": "0000",
+        "nickname": "CreeperDrop",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/212915306111172608/acb5a7fff3dabe545bc0495c83c50996.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443807972374351903",
+      "type": "Default",
+      "timestamp": "2025-11-27T22:37:25.269-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thanks still!",
+      "author": {
+        "id": "212915306111172608",
+        "name": "creeperdrop",
+        "discriminator": "0000",
+        "nickname": "CreeperDrop",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/212915306111172608/acb5a7fff3dabe545bc0495c83c50996.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1443808063193743410",
+      "type": "Default",
+      "timestamp": "2025-11-27T22:37:46.922-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "212915306111172608",
+        "name": "creeperdrop",
+        "discriminator": "0000",
+        "nickname": "CreeperDrop",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/212915306111172608/acb5a7fff3dabe545bc0495c83c50996.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1443808062954541056",
+          "url": "https://cdn.discordapp.com/attachments/1413213352288845939/1443808062954541056/image.png?ex=692c64ca&is=692b134a&hm=8e91dd28fc1b389f323258ad17911576fe914db5920f03cb7e237c9c8cabbcfd&",
+          "fileName": "image.png",
+          "fileSizeBytes": 9722
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "277113830809534464",
+              "name": "nachiketkapre",
+              "discriminator": "0000",
+              "nickname": "nachiketkapre",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444025468373434389",
+      "type": "Default",
+      "timestamp": "2025-11-28T13:01:40.356-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "razorcrest seems to run out of resource?\n\nI tried to run a sweep on naiveadder but seems like it ran out of resource.\n\n```\nrror (20549): Current module quartus_fit was unexpectedly terminated by signal 9. This may be because some system resource has been exhausted, or quartus_fit performed an illegal operation. You can view system resource requirements on the System and Software Requirements page of the Intel FPGA website (https://fpgasoftware.intel.com/requirements/).\nError (23035): Tcl error: ERROR: Error(s) found while running an executable. See report file(s) for error message(s). Message log indicates which executable was run last.\n\n    while executing\n\"execute_module -tool fit\"\n    (file \"fpga/impl.tcl\" line 38)\n------------------------------------------------\nERROR: Error(s) found while running an executable. See report file(s) for error message(s). Message log indicates which executable was run last.\n\n    while executing\n\"execute_module -tool fit\"\n    (file \"fpga/impl.tcl\" line 38)\n------------------------------------------------\nError (23031): Evaluation of Tcl script fpga/impl.tcl unsuccessful\nError: Quartus Prime Shell was unsuccessful. 3 errors, 5 warnings\n    Error: Peak virtual memory: 1340 megabytes\n    Error: Processing ended: Fri Nov 28 05:34:32 2025\n    Error: Elapsed time: 02:06:24\n    Error: System process ID: 2002567\nmake: *** [Makefile:80: fit] Error 3\n```",
+      "author": {
+        "id": "739014805959999498",
+        "name": "haibo3431",
+        "discriminator": "0000",
+        "nickname": "Haibo",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/739014805959999498/d25ff3ab1c4b97c514410ca92b9a5a58.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444026350880034916",
+      "type": "Default",
+      "timestamp": "2025-11-28T13:05:10.762-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Maybe you're using too many FFs, resources!?",
+      "author": {
+        "id": "277113830809534464",
+        "name": "nachiketkapre",
+        "discriminator": "0000",
+        "nickname": "nachiketkapre",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1413897178405015583",
+            "name": "Admin",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444026403099115540",
+      "type": "Default",
+      "timestamp": "2025-11-28T13:05:23.212-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I see no resource exhausted",
+      "author": {
+        "id": "277113830809534464",
+        "name": "nachiketkapre",
+        "discriminator": "0000",
+        "nickname": "nachiketkapre",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1413897178405015583",
+            "name": "Admin",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444026471721992273",
+      "type": "Default",
+      "timestamp": "2025-11-28T13:05:39.573-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ok i see. can't be too naive then",
+      "author": {
+        "id": "739014805959999498",
+        "name": "haibo3431",
+        "discriminator": "0000",
+        "nickname": "Haibo",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/739014805959999498/d25ff3ab1c4b97c514410ca92b9a5a58.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444028750227439747",
+      "type": "Default",
+      "timestamp": "2025-11-28T13:14:42.811-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Our naive solution takes ~20-30 mins to compile",
+      "author": {
+        "id": "277113830809534464",
+        "name": "nachiketkapre",
+        "discriminator": "0000",
+        "nickname": "nachiketkapre",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "1413897178405015583",
+            "name": "Admin",
+            "color": null,
+            "position": 1
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444029725180694652",
+      "type": "Reply",
+      "timestamp": "2025-11-28T13:18:35.258-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ok thank you for the reference.",
+      "author": {
+        "id": "739014805959999498",
+        "name": "haibo3431",
+        "discriminator": "0000",
+        "nickname": "Haibo",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/739014805959999498/d25ff3ab1c4b97c514410ca92b9a5a58.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "277113830809534464",
+          "name": "nachiketkapre",
+          "discriminator": "0000",
+          "nickname": "nachiketkapre",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1413897178405015583",
+              "name": "Admin",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1444028750227439747",
+        "channelId": "1413213352288845939",
+        "guildId": "1413213351407915194"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444035117394956298",
+      "type": "Reply",
+      "timestamp": "2025-11-28T13:40:00.862-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Is that for sim or fit?",
+      "author": {
+        "id": "395796195483844608",
+        "name": "bananamilkenjoyer443",
+        "discriminator": "0000",
+        "nickname": "bananamilkenjoyer443",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "277113830809534464",
+          "name": "nachiketkapre",
+          "discriminator": "0000",
+          "nickname": "nachiketkapre",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "1413897178405015583",
+              "name": "Admin",
+              "color": null,
+              "position": 1
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/277113830809534464/1b97dfa2c8a6306da9306392b9558011.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1444028750227439747",
+        "channelId": "1413213352288845939",
+        "guildId": "1413213351407915194"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444035192980504636",
+      "type": "Default",
+      "timestamp": "2025-11-28T13:40:18.883-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Nvm this is fit",
+      "author": {
+        "id": "395796195483844608",
+        "name": "bananamilkenjoyer443",
+        "discriminator": "0000",
+        "nickname": "bananamilkenjoyer443",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444035214941884557",
+      "type": "Default",
+      "timestamp": "2025-11-28T13:40:24.119-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "How long is sim supposed to take?",
+      "author": {
+        "id": "395796195483844608",
+        "name": "bananamilkenjoyer443",
+        "discriminator": "0000",
+        "nickname": "bananamilkenjoyer443",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444070316027416717",
+      "type": "Reply",
+      "timestamp": "2025-11-28T15:59:52.87-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Depends, here is what I found:\n\nNaive Adder ( M= 10):  ~ 1min 30 sec\n\nas i increase M, the time taken to run the sim decreases.",
+      "author": {
+        "id": "770466663081967637",
+        "name": "kunj99",
+        "discriminator": "0000",
+        "nickname": "Kunj",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "395796195483844608",
+          "name": "bananamilkenjoyer443",
+          "discriminator": "0000",
+          "nickname": "bananamilkenjoyer443",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1444035214941884557",
+        "channelId": "1413213352288845939",
+        "guildId": "1413213351407915194"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444139036267774083",
+      "type": "Reply",
+      "timestamp": "2025-11-28T20:32:57.052-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "How many tests are you running?",
+      "author": {
+        "id": "395796195483844608",
+        "name": "bananamilkenjoyer443",
+        "discriminator": "0000",
+        "nickname": "bananamilkenjoyer443",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "messageId": "1444070316027416717",
+        "channelId": "1413213352288845939",
+        "guildId": "1413213351407915194"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444148071402569811",
+      "type": "Default",
+      "timestamp": "2025-11-28T21:08:51.196-05:00",
+      "timestampEdited": "2025-11-28T21:11:11.608-05:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "```bash\n\uF31B \uF07C ~/ece72/l/grp_13-lab4 on \uF1D3 \uF126 main !5 ❯ make sim DUT=rca W=2048 M=64         with lnikolai@razorcrest at \uF017 21:06:59\nrm -rf sim\nmkdir -p /tmp/lnikolai/sim/\nverilator -Wno-SELRANGE -Wno-WIDTHEXPAND -Wno-WIDTHTRUNC -DTESTDIR=\\\"/home/lnikolai/ece722-f25/labs/grp_13-lab4/data/\\\" -DTOP= \\\n        -CFLAGS \\\n        -Itb\\\n        -Irtl\\\n        --cc rtl/rca.sv\\\n        tb/test_adder.sv \\\n        --exe /home/lnikolai/ece722-f25/labs/grp_13-lab4/tb/test.cpp \\\n        -top-module top \\\n        --Mdir /tmp/lnikolai/sim/ \\\n        +define+TOPNAME=rca \\\n        +define+W=2048 +define+M=64\n%Warning-IMPLICITSTATIC: tb/test_adder.sv:136:29: Variable's lifetime implicitly set to static\n                                                : ... The initializer value will only be set once\n                                                : ... Suggest use 'static' before variable declaration'\n  136 |               logic [M-1:0] got_chunk = s[i*M +: M];\n      |                             ^~~~~~~~~\n                         ... For warning description see https://verilator.org/warn/IMPLICITSTATIC?v=5.043\n                         ... Use \"/* verilator lint_off IMPLICITSTATIC */\" and lint_on around source to disable this message.\n%Warning-IMPLICITSTATIC: tb/test_adder.sv:137:29: Variable's lifetime implicitly set to static\n                                                : ... The initializer value will only be set once\n                                                : ... Suggest use 'static' before variable declaration'\n  137 |               logic [M-1:0] exp_chunk = exp.s[i*M +: M];\n      |                             ^~~~~~~~~\n%Error-PINNOTFOUND: tb/test_adder.sv:58:17: Parameter not found: 'M'\n   58 |   rca #(.W(W), .M(M)) dut (\n      |                 ^\n                    ... For error description see https://verilator.org/warn/PINNOTFOUND?v=5.043\n%Error: Exiting due to 1 error(s), 2 warning(s)\nmake: *** [Makefile:51: compile] Error 1\n\uF31B \uF07C ~/ece72/l/grp_13-lab4 on \uF1D3 \uF126 main !5\n```",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444148727391588364",
+      "type": "Default",
+      "timestamp": "2025-11-28T21:11:27.596-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "anyone got the same issue?",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444148850196746250",
+      "type": "Default",
+      "timestamp": "2025-11-28T21:11:56.875-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I have updated the repository with the changes professor made recently",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444149052504801363",
+      "type": "Reply",
+      "timestamp": "2025-11-28T21:12:45.109-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "not too sure about the last error but first two fix here ^",
+      "author": {
+        "id": "300410187104387073",
+        "name": "rwsos_",
+        "discriminator": "0000",
+        "nickname": "rwsos",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/300410187104387073/83f827a3d8b40c95d8ad33b0489baa62.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "messageId": "1443705578621898854",
+        "channelId": "1413213352288845939",
+        "guildId": "1413213351407915194"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444151425373306920",
+      "type": "Default",
+      "timestamp": "2025-11-28T21:22:10.845-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "nevermind the issue is in the Makefile line 29",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444151484811055246",
+      "type": "Default",
+      "timestamp": "2025-11-28T21:22:25.016-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "VFLAGS += -Wno-SELRANGE -Wno-WIDTHEXPAND -Wno-WIDTHTRUNC -Wno-IMPLICITSTATIC -DTESTDIR=\\\"$(PWD)/data/\\\" -DTOP=$(TOP)",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444162918219517983",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:07:50.953-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "how to make the rca_pipe.sv part of the System verilog? so what is going on is that my cleveradder2048b.sv is looking for the rca_pipe.sv but it was not the part of it before have anyone else had the same issue?",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444163051845587135",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:08:22.812-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I am looking for it in the documentation but I cant",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444163075996389487",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:08:28.57-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "anyone with the simmilar issue",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444163456352784414",
+      "type": "Reply",
+      "timestamp": "2025-11-28T22:09:59.254-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "the most i tried is 100 test vectors, doesn't take longer than 2-3 min for both naive and clever",
+      "author": {
+        "id": "770466663081967637",
+        "name": "kunj99",
+        "discriminator": "0000",
+        "nickname": "Kunj",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "395796195483844608",
+          "name": "bananamilkenjoyer443",
+          "discriminator": "0000",
+          "nickname": "bananamilkenjoyer443",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1444139036267774083",
+        "channelId": "1413213352288845939",
+        "guildId": "1413213351407915194"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444163829389983896",
+      "type": "Reply",
+      "timestamp": "2025-11-28T22:11:28.193-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "if you don't want to edit the setup.tcl you can just add ``include \"rca_pipe.sv\"` at the top of you naive adder .sv",
+      "author": {
+        "id": "770466663081967637",
+        "name": "kunj99",
+        "discriminator": "0000",
+        "nickname": "Kunj",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "800859649255145472",
+          "name": "n1ko0303",
+          "discriminator": "0000",
+          "nickname": "N1ko",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1444162918219517983",
+        "channelId": "1413213352288845939",
+        "guildId": "1413213351407915194"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444164200132907089",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:12:56.585-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "oohh ok I see that makes sense",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444164483793813544",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:14:04.215-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "fixed it thanks @Kunj",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "770466663081967637",
+          "name": "kunj99",
+          "discriminator": "0000",
+          "nickname": "Kunj",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444165495015079977",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:18:05.309-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I wonder will it affect the execution if I will do both? like add the include line and change the setup.tcl",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444165560748212385",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:18:20.981-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "let me do some experiments",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444166428180742237",
+      "type": "Reply",
+      "timestamp": "2025-11-28T22:21:47.793-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Either I'm rate limited or my implementation sucks...",
+      "author": {
+        "id": "395796195483844608",
+        "name": "bananamilkenjoyer443",
+        "discriminator": "0000",
+        "nickname": "bananamilkenjoyer443",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "messageId": "1444163456352784414",
+        "channelId": "1413213352288845939",
+        "guildId": "1413213351407915194"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444166604257624075",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:22:29.773-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yeah it takes 3 minute max on my side too",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444166621265399960",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:22:33.828-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "use the razorcrest",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444166639275872406",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:22:38.122-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "noeone here",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444166656937955480",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:22:42.333-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "make sim is fine, but make fit takes its sweet time on naive",
+      "author": {
+        "id": "770466663081967637",
+        "name": "kunj99",
+        "discriminator": "0000",
+        "nickname": "Kunj",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444166887339720748",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:23:37.265-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "sims run in one minute or two on razorcrest \n\nfit for the clever runs a bit longer than on the naive",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444166995762479214",
+      "type": "Default",
+      "timestamp": "2025-11-28T22:24:03.115-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "maybe 4 minutes for the naive and 6-7 for the clever",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444183754494181468",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:30:38.708-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Yeah I think uwing is doomed. 30 min for synth \uD83D\uDE2D",
+      "author": {
+        "id": "395796195483844608",
+        "name": "bananamilkenjoyer443",
+        "discriminator": "0000",
+        "nickname": "bananamilkenjoyer443",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/395796195483844608/420c2b9d6b66244abecdc86e582a069f.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE2D",
+          "code": "sob",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f62d.svg"
+        }
+      ]
+    },
+    {
+      "id": "1444186760631291986",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:42:35.427-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "are you doing the sweep?",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444186795276242975",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:42:43.687-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "dont do the sweep",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444186850360037509",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:42:56.82-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "use the M and W values given already",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444187130308857856",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:44:03.565-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "where it is given",
+      "author": {
+        "id": "656293816164417547",
+        "name": "jimmywzp6",
+        "discriminator": "0000",
+        "nickname": "jimmywzp6",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444187554717892669",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:45:44.752-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "To enable autograding, please create {naive|clever}.sh scripts to run your\nfitting script and to populate results/winner_{naive|clever}.csv in one shot\n(no sweep!!).",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444187859044012185",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:46:57.309-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "if you are doing sweep autograder will give you 0",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188022987030691",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:47:36.396-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "So do I need use sweep first  to find best M",
+      "author": {
+        "id": "656293816164417547",
+        "name": "jimmywzp6",
+        "discriminator": "0000",
+        "nickname": "jimmywzp6",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188143585726585",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:48:05.149-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yes",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188196727423086",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:48:17.819-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "first sweep and find it and plug it in the script automatically",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188217375985896",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:48:22.742-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "so it will run that M only",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188280886267988",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:48:37.884-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "basically start 8 16 32 64 128 I would not go beyond that",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188369914564618",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:48:59.11-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "even 128 is too much tbh but run as much as you want whatever gives you the best Fmax from the listed",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188374075310142",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:49:00.102-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "use that",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188389896360119",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:49:03.874-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "basically",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188559773798501",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:49:44.376-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I am just test running everything with fixed value making it work on only one M and W values and then I will write the sweep script that will go and find the best solution and I will plug that in to my fit script",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188567122477096",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:49:46.128-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "that is all",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188628157730866",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:50:00.68-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "that is how I understood the lab manual Idk...",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188774283345920",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:50:35.519-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "plus for the monster adders you have to read the paper again, there are some specific parts you have to change in your clever verilog to make it work",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188821297168384",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:50:46.728-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "this is for the part 2 of the lab",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444188957037563924",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:51:19.091-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "actually W stays always the same so you dont touch it, just change M",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444189203696193638",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:52:17.899-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I guess prof made it requirement like this for running the autograder faster",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444189301792313546",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:52:41.287-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "or last time it took days, and if bug in the grading script than you have to rerun for couple more days to fix it",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444189447221411901",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:53:15.96-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "so now if better M exists and you wont find it you get 0 I assume",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444190438528516136",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:57:12.306-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "656293816164417547",
+        "name": "jimmywzp6",
+        "discriminator": "0000",
+        "nickname": "jimmywzp6",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [
+        {
+          "id": "1444190438209880095",
+          "url": "https://cdn.discordapp.com/attachments/1413213352288845939/1444190438209880095/image.png?ex=692c7768&is=692b25e8&hm=2828a109d430aa143995c97fec8954440cc2e80cb9d7aa37d2e0c5321126e65f&",
+          "fileName": "image.png",
+          "fileSizeBytes": 7872
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444190455712579634",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:57:16.403-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "cannot run data",
+      "author": {
+        "id": "656293816164417547",
+        "name": "jimmywzp6",
+        "discriminator": "0000",
+        "nickname": "jimmywzp6",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444190481117483058",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:57:22.46-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "make data",
+      "author": {
+        "id": "656293816164417547",
+        "name": "jimmywzp6",
+        "discriminator": "0000",
+        "nickname": "jimmywzp6",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444191066147524762",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:59:41.942-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "use this I think you forgot to add the tests parameter",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444191068407988236",
+      "type": "Default",
+      "timestamp": "2025-11-28T23:59:42.481-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "make data DUT=cleveradder2048b W=2048 M=64 TESTS=100",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444191170212397129",
+      "type": "Default",
+      "timestamp": "2025-11-29T00:00:06.753-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "you can change the tests parameter dynamically",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444191199375265832",
+      "type": "Default",
+      "timestamp": "2025-11-29T00:00:13.706-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "its an example command",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444191214466371634",
+      "type": "Default",
+      "timestamp": "2025-11-29T00:00:17.304-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ok",
+      "author": {
+        "id": "656293816164417547",
+        "name": "jimmywzp6",
+        "discriminator": "0000",
+        "nickname": "jimmywzp6",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444191237912531105",
+      "type": "Default",
+      "timestamp": "2025-11-29T00:00:22.894-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "thk u TA",
+      "author": {
+        "id": "656293816164417547",
+        "name": "jimmywzp6",
+        "discriminator": "0000",
+        "nickname": "jimmywzp6",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444191325976268801",
+      "type": "Default",
+      "timestamp": "2025-11-29T00:00:43.89-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "lol naah bro, I am just trying to figure things out as you do",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "❤️",
+            "code": "heart",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/2764.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "656293816164417547",
+              "name": "jimmywzp6",
+              "discriminator": "0000",
+              "nickname": "jimmywzp6",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444209116938502195",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:11:25.586-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "656293816164417547",
+        "name": "jimmywzp6",
+        "discriminator": "0000",
+        "nickname": "jimmywzp6",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [
+        {
+          "id": "1444209116611477615",
+          "url": "https://cdn.discordapp.com/attachments/1413213352288845939/1444209116611477615/image.png?ex=692c88cd&is=692b374d&hm=c3b785dc9421a5809221c452750e454eb2671406d0919417e7b1f91eb12e120f&",
+          "fileName": "image.png",
+          "fileSizeBytes": 31886
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444209770625237093",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:14:01.437-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "what is the command that you are trying to run",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444209987080683715",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:14:53.044-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "make synth",
+      "author": {
+        "id": "656293816164417547",
+        "name": "jimmywzp6",
+        "discriminator": "0000",
+        "nickname": "jimmywzp6",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444210675185618974",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:17:37.101-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "did you pull the new makefile from git?",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444210696496746597",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:17:42.182-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "it was updated 23 hours ago",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444210749940433022",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:17:54.924-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "prof found bug in it",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444210874930696273",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:18:24.724-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "also change this line I have changed it to the following since it was throwing issues for me for some reason:\n\nVFLAGS += -Wno-SELRANGE -Wno-WIDTHEXPAND -Wno-WIDTHTRUNC -Wno-IMPLICITSTATIC -DTESTDIR=\"$(PWD)/data/\" -DTOP=$(TOP)",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444211561895035022",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:21:08.509-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "but if the test is passing all the random tests you do not need to run the synth",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444211613078130801",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:21:20.712-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "but its good to double check on different M values I agree",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444211756590436434",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:21:54.928-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "using the make ... test=100,1000 ....",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444212636056289390",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:25:24.609-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Okay I’ll try it",
+      "author": {
+        "id": "656293816164417547",
+        "name": "jimmywzp6",
+        "discriminator": "0000",
+        "nickname": "jimmywzp6",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "800859649255145472",
+              "name": "n1ko0303",
+              "discriminator": "0000",
+              "nickname": "N1ko",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444213105679663154",
+      "type": "Default",
+      "timestamp": "2025-11-29T01:27:16.576-05:00",
+      "timestampEdited": "2025-11-29T02:27:04.606-05:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "TEST SUMMARY:\n  Total tests run: 1000\n  Passed: 1000\n  Failed: 0\n  GRADE: 1\n  Result: ALL TESTS PASSED!\n\nif you are receving message like this most likely you are good that is what I am trying to say, but double check by running the synth for the different values anyways",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1444371867543539755",
+      "type": "Default",
+      "timestamp": "2025-11-29T11:58:08.354-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "did everyone start executing their code on razorcrest?",
+      "author": {
+        "id": "800859649255145472",
+        "name": "n1ko0303",
+        "discriminator": "0000",
+        "nickname": "N1ko",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/800859649255145472/8a4fd7a2bd188630e2e12bf48d04ec68.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 94
+}

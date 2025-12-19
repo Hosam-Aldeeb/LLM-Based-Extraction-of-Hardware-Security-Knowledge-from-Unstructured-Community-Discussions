@@ -1,0 +1,1080 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/Amulius_linux_Jan2025_export.json",
+  "totalMessages": 5949,
+  "totalChunks": 6116,
+  "relevantMessages": 107,
+  "results": [
+    {
+      "text": "And no, it is unlikely that you will cause any damage, you will probably get out of ranges of the hardware first",
+      "metadata": {
+        "id": "1324294057173712917",
+        "author": "slackgeek",
+        "timestamp": "2025-01-02T03:31:47.424-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5635390752625933
+    },
+    {
+      "text": "in ARM you have things like the Snoop Control Unit which handles L1D coherency on multiprocessor systems",
+      "metadata": {
+        "id": "1324591057568137289",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-01-02T23:11:57.836-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5934922761583051
+    },
+    {
+      "text": "all of these are hardware functions that are \"invisible\" to the software",
+      "metadata": {
+        "id": "1324591453393129513",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-01-02T23:13:32.208-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5573997179800355
+    },
+    {
+      "text": "before using \"debian IoT\", you need to fully understand your platform, using whatever the chip/board vendor gave as example",
+      "metadata": {
+        "id": "1324655602827399178",
+        "author": "slackgeek",
+        "timestamp": "2025-01-03T03:28:26.625-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5569820331560209
+    },
+    {
+      "text": "the `perf` subsystem in linux has been around for a while; the entire hardware monitoring stuff in both ARM and x86 have been around for quite some time too",
+      "metadata": {
+        "id": "1324773187283718155",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-01-03T11:15:40.944-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5678601425769831
+    },
+    {
+      "text": "Verify your kernel config, I think that should give some information",
+      "metadata": {
+        "id": "1330525222532812801",
+        "author": "slackgeek",
+        "timestamp": "2025-01-19T08:12:13.015-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5532093967634794
+    },
+    {
+      "text": "In the end it uses scripts, so it may be hackable",
+      "metadata": {
+        "id": "1330991252094845139",
+        "author": "slackgeek",
+        "timestamp": "2025-01-20T15:04:03.121-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5516567465861553
+    },
+    {
+      "text": "could be. never heard VPID of 0 to be valid before. so yeah, likely a hack",
+      "metadata": {
+        "id": "1330999189097943163",
+        "author": "gotbread",
+        "timestamp": "2025-01-20T15:35:35.45-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.6051618422953761
+    },
+    {
+      "text": "There is a kernel module called Linux gadget or something",
+      "metadata": {
+        "id": "1332759088450502720",
+        "author": "slackgeek",
+        "timestamp": "2025-01-25T12:08:48.153-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5500537396608749
+    },
+    {
+      "text": "maybe some fancy IDE added support for device trees",
+      "metadata": {
+        "id": "1334877381831430144",
+        "author": "slackgeek",
+        "timestamp": "2025-01-31T08:26:08.651-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5720799286105347
+    },
+    {
+      "text": "security research",
+      "metadata": {
+        "id": "1335639295066898514",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-02-02T10:53:42.922-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5939230630531156
+    },
+    {
+      "text": "doesn't buildroot have an `x86(_64)?-pc-linux-gnu` target?",
+      "metadata": {
+        "id": "1336015691912056945",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-02-03T11:49:22.923-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5533186509649604
+    },
+    {
+      "text": "that is extremely poor security practice",
+      "metadata": {
+        "id": "1340784651245060177",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-02-16T15:39:31.431-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.6052997009050504
+    },
+    {
+      "text": "for the hardware that's connected, the most important thing to know first is how to use the device-tree",
+      "metadata": {
+        "id": "1344767411143835648",
+        "author": "exp.lol",
+        "timestamp": "2025-02-27T15:25:35.387-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5863129277894888
+    },
+    {
+      "text": "What are the best places to learn how to configure Uboot for custom hardware based on a board (ARM) for example a custom board based on ROCK3A how I would configure it for a custom board from a vanilla uboot install.",
+      "metadata": {
+        "id": "1347713955413360783",
+        "author": "tonydawarrior",
+        "timestamp": "2025-03-07T18:34:06.285-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.561316894423851
+    },
+    {
+      "text": "Or patch it into your local kernel sources",
+      "metadata": {
+        "id": "1348311853725515829",
+        "author": "slackgeek",
+        "timestamp": "2025-03-09T11:09:56.351-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5500637145110987
+    },
+    {
+      "text": "So in theory since this already has tiny drm if I add my display's driver and set this to my kernel and add the config to my device tree  it will work",
+      "metadata": {
+        "id": "1348315134183079976",
+        "author": "ginobeano",
+        "timestamp": "2025-03-09T11:22:58.473-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5589064522656876
+    },
+    {
+      "text": "https://web.git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/Documentation/devicetree/bindings/display/ilitek,ili9486.yaml?h=v6.6.82",
+      "metadata": {
+        "id": "1348315751471124571",
+        "author": "slackgeek",
+        "timestamp": "2025-03-09T11:25:25.646-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.560820978957324
+    },
+    {
+      "text": "Do you have jtag or a way to recover the board in case you brick it?",
+      "metadata": {
+        "id": "1348321273788502078",
+        "author": "slackgeek",
+        "timestamp": "2025-03-09T11:47:22.269-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5847019834800127
+    },
+    {
+      "text": "is it possible there is some breakout to its hardware translation?",
+      "metadata": {
+        "id": "1348984572343357461",
+        "author": "exp.lol",
+        "timestamp": "2025-03-11T07:43:04.968-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5945755281181089
+    },
+    {
+      "text": "Some of the smartest people in tech ik are on rolling release distros everywhere  ¯\\_(ツ)_/¯",
+      "metadata": {
+        "id": "1364521189481123911",
+        "author": "bestinfinity",
+        "timestamp": "2025-04-23T04:40:03.15-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5631493188986417
+    },
+    {
+      "text": "it does 4 software programmable voltages and provides usb uart + sequencing",
+      "metadata": {
+        "id": "1369786433656717513",
+        "author": "kanken6174",
+        "timestamp": "2025-05-07T17:22:15.185-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5621104871390986
+    },
+    {
+      "text": "For embedded systems, this is quite nice",
+      "metadata": {
+        "id": "1371926160228745317",
+        "author": "slackgeek",
+        "timestamp": "2025-05-13T15:04:45.754-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5738081209564603
+    },
+    {
+      "text": "for the uefi firmware / bios i don't know anything about hacking it",
+      "metadata": {
+        "id": "1372619036319551530",
+        "author": "exp.lol",
+        "timestamp": "2025-05-15T12:58:00.287-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.6635642738317593
+    },
+    {
+      "text": "```\nStartup finished in 3.496s (firmware) + 2.261s (loader) + 4.782s (kernel) + 7.064s (userspace) = 17.604s\ngraphical.target reached after 7.064s in userspace.\n```",
+      "metadata": {
+        "id": "1372620216059695255",
+        "author": "seha10",
+        "timestamp": "2025-05-15T13:02:41.559-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5501406831602378
+    },
+    {
+      "text": "my hardware is oold",
+      "metadata": {
+        "id": "1372630781620654081",
+        "author": "exp.lol",
+        "timestamp": "2025-05-15T13:44:40.585-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.6073427768969551
+    },
+    {
+      "text": "the thing is most tooling is normally tested in x86_64",
+      "metadata": {
+        "id": "1372946899342200973",
+        "author": "slackgeek",
+        "timestamp": "2025-05-16T10:40:48.923-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5551269123359232
+    },
+    {
+      "text": "need to patch other people's software",
+      "metadata": {
+        "id": "1375464021041352744",
+        "author": "slackgeek",
+        "timestamp": "2025-05-23T09:22:57.502-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5506914649816571
+    },
+    {
+      "text": "(when I was working on my thesis with cuda I used CentOS, as at least CUDA releases were tested on RedHat)",
+      "metadata": {
+        "id": "1379096810672623740",
+        "author": "slackgeek",
+        "timestamp": "2025-06-02T09:58:22.044-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5689978154309357
+    },
+    {
+      "text": "reading through lots of source code to see what flags it expects and what it might be doing wrong",
+      "metadata": {
+        "id": "1379831312147284069",
+        "author": "exp.lol",
+        "timestamp": "2025-06-04T10:37:00.842-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5809150788569069
+    },
+    {
+      "text": "but @Sam2G you need to reverse engineer the original firmware a bit more",
+      "metadata": {
+        "id": "1379835831346401380",
+        "author": "slackgeek",
+        "timestamp": "2025-06-04T10:54:58.303-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.6037312664669587
+    },
+    {
+      "text": "and there is a PL5 for jtag",
+      "metadata": {
+        "id": "1379847322338459759",
+        "author": "slackgeek",
+        "timestamp": "2025-06-04T11:40:37.969-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5667506462255651
+    },
+    {
+      "text": "everything is possible, this kind of code could be more portable across operating systems and kernel versions",
+      "metadata": {
+        "id": "1380103662998781993",
+        "author": "slackgeek",
+        "timestamp": "2025-06-05T04:39:14.345-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5529581473897215
+    },
+    {
+      "text": "Hello, here is btmgmt log:\n\nIndex list with 1 item\nhci1: Primary controller\n      addr 08:BE:AC:42:79:C5 version 10 manufacturer 93 class 0x6c0000\n      supported settings: powered connectable fast-connectable discoverable bondable link-security ssp br/edr le advertising secure-conn debug-keys privacy static-addr phy-configuration wide-band-speech\n      current settings: powered ssp br/edr le secure-conn\n      name dev-VirtualBox\n      short name, \n\nYeah, I use nrfConnect and LightBlue and yes t",
+      "metadata": {
+        "id": "1383353068833476619",
+        "author": "hardcoreprawn69",
+        "timestamp": "2025-06-14T03:51:13.067-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5623052273803326
+    },
+    {
+      "text": "why? because the way i configure serial devices on my system is completely different from the way that is done by default in ubuntu",
+      "metadata": {
+        "id": "1384561968068694168",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-17T11:54:57.105-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5504512542066254
+    },
+    {
+      "text": "this is a huge security vulnerability",
+      "metadata": {
+        "id": "1384567670573367319",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-17T12:17:36.688-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.625466643907862
+    },
+    {
+      "text": "Could do describe the exploit?",
+      "metadata": {
+        "id": "1384567813024256150",
+        "author": "the_alchemist0",
+        "timestamp": "2025-06-17T12:18:10.651-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5807599634322556
+    },
+    {
+      "text": "if you did do that, then `${random_user}` can go on to tamper with the device",
+      "metadata": {
+        "id": "1384567819815092346",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-17T12:18:12.27-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5732493637082131
+    },
+    {
+      "text": "and if the device is something like a connection into a SCADA system, then well, you just compromised an entire plant",
+      "metadata": {
+        "id": "1384567917995229296",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-17T12:18:35.678-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.6287077565565538
+    },
+    {
+      "text": "Containers sound like another level of complication if there's hardware access involved!",
+      "metadata": {
+        "id": "1384570725708468305",
+        "author": "the_alchemist0",
+        "timestamp": "2025-06-17T12:29:45.089-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5734135018091272
+    },
+    {
+      "text": "and you avoid accidentally breaking people's stuff by the potential overwrite of system files",
+      "metadata": {
+        "id": "1384573091274952797",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-17T12:39:09.084-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5798867571862751
+    },
+    {
+      "text": "we enabled support for USB-to-RS485 adapters by customizing the Yocto kernel: added a config fragment and prepared a patch to include the ch343 driver, since the default ch341 wasn't matching our device",
+      "metadata": {
+        "id": "1385266751322980423",
+        "author": "eljohn28",
+        "timestamp": "2025-06-19T10:35:30.527-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5972931247149629
+    },
+    {
+      "text": "Would anyone be interested in remotely accessible real embedded Linux IOT devices for learning Embedded Linux development",
+      "metadata": {
+        "id": "1392364830819876885",
+        "author": "zyakim",
+        "timestamp": "2025-07-09T00:40:44.555-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5827038579341608
+    },
+    {
+      "text": "https://hackerbikepacker.com/tag/linux/",
+      "metadata": {
+        "id": "1393874819908636702",
+        "author": "slackgeek",
+        "timestamp": "2025-07-13T04:40:54.008-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5933267029186033
+    },
+    {
+      "text": "yes, i've coded the kernel modules for those pieces of hardware in C",
+      "metadata": {
+        "id": "1396574822737383475",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-20T15:29:44.846-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5671766960841487
+    },
+    {
+      "text": "the kernel side of the GPU driver for the Apple Silicon M1 chips is written in Rust",
+      "metadata": {
+        "id": "1396797695242539029",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-21T06:15:21.792-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5837388384873881
+    },
+    {
+      "text": "[for multiple reasons, chief among them was to push the Rust subsystem in the kernel to the limit to see what else was needed]",
+      "metadata": {
+        "id": "1396797845842956340",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-21T06:15:57.698-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5515209884782409
+    },
+    {
+      "text": "and see how many dangling pointer vulnerabilities have been found in the kernel",
+      "metadata": {
+        "id": "1396843862047068301",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-21T09:18:48.816-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.6195029249927824
+    },
+    {
+      "text": "is that during the boot process, flash identification fails:\n> [    0.252682] spi-ar934x 1f000000.spi: registered master spi0\n> [    0.266090] spi spi0.0: setup mode 0, 8 bits/w, 50000000 Hz max --> 0\n> [    0.267022] spi-ar934x 1f000000.spi: registered child spi0.0\n> [    0.267082] spi spi0.3: setup mode 0, cs_high, 8 bits/w, 4000000 Hz max --> 0\n> [    0.267768] spi-ar934x 1f000000.spi: registered child spi0.3\n> [    0.267827] spi spi0.4: setup mode 0, 8 bits/w, 20000000 Hz max --> 0\n> [    0.",
+      "metadata": {
+        "id": "1397133528344297473",
+        "author": "fshiro",
+        "timestamp": "2025-07-22T04:29:50.643-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5820091052027936
+    },
+    {
+      "text": "268528] spi-ar934x 1f000000.spi: registered child spi0.4\n> [    0.272281] spi-nor spi0.0: w25q128 (16384 Kbytes)\n> [    0.272381] 4 fixed-partitions partitions found on MTD device spi0.0\n> [    0.274452] Creating 4 MTD partitions on \"spi0.0\":\n> [    0.274487] 0x000000000000-0x000000040000 : \"u-boot\"\n> [    0.280532] 0x000000040000-0x000000050000 : \"u-boot-env\"\n> [    0.285364] 0x000000050000-0x000000ff0000 : \"firmware\"\n> [    0.288493] 2 uimage-fw partitions found on MTD device firmware\n> [    0",
+      "metadata": {
+        "id": "1397133528344297473",
+        "author": "fshiro",
+        "timestamp": "2025-07-22T04:29:50.643-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5856774189389113
+    },
+    {
+      "text": ".288521] Creating 2 MTD partitions on \"firmware\":\n> [    0.288545] 0x000000000000-0x000000210000 : \"kernel\"\n> [    0.291305] 0x000000210000-0x000000fa0000 : \"rootfs\"\n> [    0.293689] mtd: setting mtd4 (rootfs) as root device\n> [    0.294398] 1 squashfs-split partitions found on MTD device rootfs\n> [    0.294455] 0x000000da0000-0x000000fa0000 : \"rootfs_data\"\n> [    0.296927] 0x000000ff0000-0x000001000000 : \"art\"\n> [    0.314323] spi-nor spi0.4: unrecognized JEDEC id bytes: 00 00 00 00 00 00\n\nBut ",
+      "metadata": {
+        "id": "1397133528344297473",
+        "author": "fshiro",
+        "timestamp": "2025-07-22T04:29:50.643-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.556816760705853
+    },
+    {
+      "text": "if bind spi0.4 to the driver once I get to ssh into the device, it does work:\n> root@board:/# echo \"spi0.4\" >/sys/bus/spi/drivers/spi-nor/bind\n> root@board:/# dmesg | grep spi\n> [  196.648201] spi-nor spi0.4: found w25q256, expected s25fl512s\n> [  196.648384] spi-nor spi0.4: w25q256 (32768 Kbytes)\n> [  196.648448] 1 fixed-partitions partitions found on MTD device spi0.4\n> [  196.648464] Creating 1 MTD partitions on \"spi0.4\":",
+      "metadata": {
+        "id": "1397133528344297473",
+        "author": "fshiro",
+        "timestamp": "2025-07-22T04:29:50.643-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5532018715636282
+    },
+    {
+      "text": "does anyone know what could cause this? \nI've attached my attempt at a patch and my device tree, in case that helps",
+      "metadata": {
+        "id": "1397134416727380029",
+        "author": "fshiro",
+        "timestamp": "2025-07-22T04:33:22.45-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5882226382870125
+    },
+    {
+      "text": "0.314323] spi-nor spi0.4: unrecognized JEDEC id bytes: 00 00 00 00 00 00",
+      "metadata": {
+        "id": "1397150971234222155",
+        "author": "slackgeek",
+        "timestamp": "2025-07-22T05:39:09.352-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5718421040668603
+    },
+    {
+      "text": "I've taken the board specific patches and added them to the device tree, which is where those extra cs-gpio's come from 🙂",
+      "metadata": {
+        "id": "1397151605136298084",
+        "author": "fshiro",
+        "timestamp": "2025-07-22T05:41:40.486-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.562637307529088
+    },
+    {
+      "text": "and there is something else for the chip detection not working at boot",
+      "metadata": {
+        "id": "1397153845179711540",
+        "author": "slackgeek",
+        "timestamp": "2025-07-22T05:50:34.554-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5756532700285951
+    },
+    {
+      "text": "they're there so that the spiar934x driver does not attempt to use a hardware chipselect when talking to the devices connecting to the GPIO's, they're working as offsets",
+      "metadata": {
+        "id": "1397162490370195548",
+        "author": "fshiro",
+        "timestamp": "2025-07-22T06:24:55.728-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5820499099020621
+    },
+    {
+      "text": "that should be right, because in a 5.4 kernel, the .dtsi uses ar934x-spi",
+      "metadata": {
+        "id": "1397165519005548574",
+        "author": "slackgeek",
+        "timestamp": "2025-07-22T06:36:57.811-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5535651117580475
+    },
+    {
+      "text": "```\n&spi {\n        status = \"okay\";\n\n        flash@0 {\n                compatible = \"jedec,spi-nor\";\n                spi-max-frequency = <50000000>;\n                reg = <0>;\n\n                partitions {\n                        compatible = \"fixed-partitions\";\n                        #address-cells = <1>;\n                        #size-cells = <1>;\n\n                        uboot: partition@0 {\n                                label = \"u-boot\";\n                                reg = <0x000000 0x04",
+      "metadata": {
+        "id": "1397170454438871141",
+        "author": "slackgeek",
+        "timestamp": "2025-07-22T06:56:34.51-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5871577273358729
+    },
+    {
+      "text": "Does the unsigned kernel also mean you don't have secureboot btw?",
+      "metadata": {
+        "id": "1397940242383765546",
+        "author": "mike7c2",
+        "timestamp": "2025-07-24T09:55:26.258-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5527221177782541
+    },
+    {
+      "text": "for the secure boot thing, just generate a UKI and sign that",
+      "metadata": {
+        "id": "1397953423113977958",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-24T10:47:48.789-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5765485420674754
+    },
+    {
+      "text": "[and yes, if you're tampering with the wireless regulatory domain then you're very likely doing something you should not be doing]",
+      "metadata": {
+        "id": "1397953653574336664",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-24T10:48:43.735-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5601512663110103
+    },
+    {
+      "text": "i can not think of a legitimate reason to bypass/modify the kernel's wireless regulatory domain database",
+      "metadata": {
+        "id": "1397953814765633638",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-24T10:49:22.166-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5501055328776663
+    },
+    {
+      "text": "but there's an increasing focus on configurable radios and ensuring they are locked down away from the user through cryptographic means",
+      "metadata": {
+        "id": "1397954137559269538",
+        "author": "exp.lol",
+        "timestamp": "2025-07-24T10:50:39.126-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5677850802749439
+    },
+    {
+      "text": "there are aftermarket firmwares for those machines that allow you to bypass that check",
+      "metadata": {
+        "id": "1397955506890477769",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-24T10:56:05.6-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5610126863088996
+    },
+    {
+      "text": "but now you're patching your machine's UEFI with some non-vetted product which you may not have the ability to check yourself",
+      "metadata": {
+        "id": "1397955638528704543",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-24T10:56:36.985-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5765664810524523
+    },
+    {
+      "text": "so security risk beware",
+      "metadata": {
+        "id": "1397955662516060252",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-24T10:56:42.704-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5947006006234555
+    },
+    {
+      "text": "the firmware update pulled an Intel and disabled creating an access point in the 5 GHz band",
+      "metadata": {
+        "id": "1397956080147107892",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-24T10:58:22.275-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5528884622202006
+    },
+    {
+      "text": "(this goes beyond wireless hardware)",
+      "metadata": {
+        "id": "1397968889383747654",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-24T11:49:16.235-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5911176187258423
+    },
+    {
+      "text": "would anyone who's not afraid of boot stuff with a board that uses device trees mind testing this? https://github.com/desultory/ugrd/pull/341",
+      "metadata": {
+        "id": "1398817032534888488",
+        "author": "zen_desu",
+        "timestamp": "2025-07-26T19:59:29.32-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.56289886279446
+    },
+    {
+      "text": "Oh and using devicetree is neat - not the easiest learning curve either - but - separating hardware config from code is pretty good",
+      "metadata": {
+        "id": "1399046882218475681",
+        "author": "mike7c2",
+        "timestamp": "2025-07-27T11:12:49.755-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5838544817558878
+    },
+    {
+      "text": "Doesn't matter. Cybersecurity when it comes to defense work operates very differently",
+      "metadata": {
+        "id": "1399084687510601728",
+        "author": "dr.sudo",
+        "timestamp": "2025-07-27T13:43:03.239-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.6032777141553602
+    },
+    {
+      "text": "most likely this is some 'security' feature on the router then",
+      "metadata": {
+        "id": "1400806019478589511",
+        "author": "exp.lol",
+        "timestamp": "2025-08-01T07:43:00.761-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5668028379917208
+    },
+    {
+      "text": "also, test this with a smartphone in manual IP config, to rule out any Debian/networkmanager shenanigans",
+      "metadata": {
+        "id": "1400812656415342662",
+        "author": "slackgeek",
+        "timestamp": "2025-08-01T08:09:23.13-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5510834843458097
+    },
+    {
+      "text": "without knowing the kind of hardware you have on your machine it will be difficult to say what could be going wrong",
+      "metadata": {
+        "id": "1401208680216662118",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-08-02T10:23:02.562-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5751560106526344
+    },
+    {
+      "text": "i dont even know what tools are for what function in vlsi but my uni has all the tools purchased",
+      "metadata": {
+        "id": "1401630074142462032",
+        "author": "rawada0000",
+        "timestamp": "2025-08-03T14:17:30.703-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5502129439783824
+    },
+    {
+      "text": "56] of_get_named_gpiod_flags: parsed 'pwdn-gpios' property of node '/i2c@ff510000/imx378@1a[0]' - status (0)\n[    0.562042] imx378 1-001a: Linked as a consumer to regulator.14\n[    0.562177] imx378 1-001a: Linked as a consumer to regulator.12\n[    0.562234] imx378 1-001a: Linked as a consumer to regulator.13\n[    0.565848] imx378 1-001a: reg_H=0x00, reg_L=0x00, sensor_id=0x0000\n[    0.565885] imx378 1-001a: Unexpected sensor id(000000), ret(-5)\n[    0.566332] imx378 1-001a: Dropping the link to ",
+      "metadata": {
+        "id": "1401903243638083606",
+        "author": "stackglock",
+        "timestamp": "2025-08-04T08:22:59.386-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5596333251522237
+    },
+    {
+      "text": "Think of the kernel as a layered architecture. You have your subsystems (I2C, SPI, PCIe...). For the subsystems to interact with the hardware, you need drivers for your hardware. You need to make your drivers and register them with that subsystem. Now, you have drivers that make use of a particular subsystem. For example, say that you're dealing with an SGP30 sensor. That is an air quality/chemical sensor. It uses I2C to communicate with your platform.",
+      "metadata": {
+        "id": "1402815482439925842",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-08-06T20:47:54.065-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5940528635018029
+    },
+    {
+      "text": "In Linux, the driver for that is in the IIO subsystem. It registers itself in the IIO subsystem of the kernel, and it calls upon functions from the I2C subsystem to perform reads/writes to the sensor.",
+      "metadata": {
+        "id": "1402815644482928712",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-08-06T20:48:32.699-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5839039642366949
+    },
+    {
+      "text": "The I2C subsystem then talks to your I2C controller driver (a platform driver) to actually access the hardware.",
+      "metadata": {
+        "id": "1402815760656633997",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-08-06T20:49:00.397-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5969379022212985
+    },
+    {
+      "text": "since those are related to a subsystem or a piece of hardware",
+      "metadata": {
+        "id": "1402831104280494172",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-08-06T21:49:58.602-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5571313102244567
+    },
+    {
+      "text": "you need hardware datasheets to do low level work",
+      "metadata": {
+        "id": "1402983732360777748",
+        "author": "slackgeek",
+        "timestamp": "2025-08-07T07:56:27.972-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5500272751458094
+    },
+    {
+      "text": "```root      794382  0.4  2.1 4576796 714208 \nroot      794333  0.4  2.2 4576796 726540 \nroot      792826  0.5  3.1 4578016 1028432\n```\n\nlike so",
+      "metadata": {
+        "id": "1405581782874587188",
+        "author": "exp.lol",
+        "timestamp": "2025-08-14T12:00:11.484-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5553835557895491
+    },
+    {
+      "text": "So, I can grow up and getting skilled  in Embedded System Field \n\nI don't know about Hardware devices \nBut I see in the videos or From Session they use Respberry Pi Models \nWhich are effective and they're  Getting Valuable Results as well from these devices\n\nI have a beginner level experience with Linux , just Essential Commands 🙂",
+      "metadata": {
+        "id": "1408146291891896565",
+        "author": "nomi516",
+        "timestamp": "2025-08-21T13:50:38.08-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5940094186475608
+    },
+    {
+      "text": "you can go multiple ways:\n- add an overlay at boot time to add the proper node(s) so that your device can be detected\n- obtain the original device tree, modify it by adding the additional node(s) for your device\n- decompile the current devie tree, and modify it by adding the additional node(s)",
+      "metadata": {
+        "id": "1410639921517166764",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-08-28T10:59:25.712-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5982995133539959
+    },
+    {
+      "text": "for that you need to consult the documentation for the device tree bindings for whatever kernel module you need to use for your device",
+      "metadata": {
+        "id": "1410641520167485451",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-08-28T11:05:46.86-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5591415498187446
+    },
+    {
+      "text": "as long as the chip supports it, linux should be able to hook up interrupts sufficiently",
+      "metadata": {
+        "id": "1412386695093157949",
+        "author": "exp.lol",
+        "timestamp": "2025-09-02T06:40:28.986-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5574039871886395
+    },
+    {
+      "text": "as far as i am aware, the kernel may provide interfaces to cryptographic accelerators (if available) to userspace",
+      "metadata": {
+        "id": "1413301956214263859",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-09-04T19:17:24.242-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5995134749172415
+    },
+    {
+      "text": "It's from the device tree, according to which it's `uart2` so I suspect `ttyS2`",
+      "metadata": {
+        "id": "1415788263515619399",
+        "author": "xhivo97",
+        "timestamp": "2025-09-11T15:57:06.096-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5578706122466545
+    },
+    {
+      "text": "i _think_ earlyprintk requires you to have one of the de-facto industry standard UART cores",
+      "metadata": {
+        "id": "1415818323668631705",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-09-11T17:56:32.995-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5540131417353203
+    },
+    {
+      "text": "But let's look where the kernel actually fails now :\n```\n[    1.234118][    T1] dw-apb-uart fe660000.serial: probe with driver dw-apb-uart failed with error -22\n```",
+      "metadata": {
+        "id": "1415981520362930229",
+        "author": "xhivo97",
+        "timestamp": "2025-09-12T04:45:02.119-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5638728233117226
+    },
+    {
+      "text": "and i'm slightly concerned you're loading `uart8250` but your device-tree segment shows `rk3568-uart`",
+      "metadata": {
+        "id": "1416011165179318313",
+        "author": "exp.lol",
+        "timestamp": "2025-09-12T06:42:49.994-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5673455284338691
+    },
+    {
+      "text": "Finally figured out what the `--kernel_offset` does in `mkbootimg`, rather, what u-boot does with the addresses.",
+      "metadata": {
+        "id": "1416411741788700712",
+        "author": "xhivo97",
+        "timestamp": "2025-09-13T09:14:34.9-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5507746334375831
+    },
+    {
+      "text": "ultFstab(): failed to find device default fstab\n[    2.914412][    T1] init: Failed to create FirstStageMount : failed to read default fstab for first stage mount\n[    2.915635][    T1] init: FirstStageMount not available\n[    2.921182][    T1] init: InitFatalReboot: signal 6\n[    2.928233][    T1] init:   #00 pc 00000000003d4274  /init\n[    2.928843][    T1] init: Reboot ending, jumping to kernel\n```\nOh how nice it feels to see this, lol",
+      "metadata": {
+        "id": "1416721155213234206",
+        "author": "xhivo97",
+        "timestamp": "2025-09-14T05:44:04.809-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.578488106386991
+    },
+    {
+      "text": "i have had to do this on a number of linuxy embedded platforms, but have done only the tiniest hacking on android",
+      "metadata": {
+        "id": "1417233664609091686",
+        "author": "exp.lol",
+        "timestamp": "2025-09-15T15:40:36.571-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.6098392636066816
+    },
+    {
+      "text": "the device tree does not provide the hardware support",
+      "metadata": {
+        "id": "1417240630740123741",
+        "author": "exp.lol",
+        "timestamp": "2025-09-15T16:08:17.426-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5786790968981252
+    },
+    {
+      "text": "the kernel modules provide the hardware support",
+      "metadata": {
+        "id": "1417240655289122867",
+        "author": "exp.lol",
+        "timestamp": "2025-09-15T16:08:23.279-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5639483036534098
+    },
+    {
+      "text": "if you add that to the device tree, you're telling the kernel to never shut off that regulator",
+      "metadata": {
+        "id": "1417890141699182643",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-09-17T11:09:12.906-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5556013327596508
+    },
+    {
+      "text": "when dealing with a GPIO regulator, the kernel will reserve the pin on the GPIO port you specified for regulator usage",
+      "metadata": {
+        "id": "1417890385711075380",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-09-17T11:10:11.083-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5555672249884416
+    },
+    {
+      "text": "Hi all, can you suggest projects to level up my Yocto skills?\nI’ve been working with Embedded Linux/Yocto for ~1 year but feel like I’ve just scratched the surface.\n\nBoards: BeagleBone Black, i.MX93, STM32MP157\nYocto: custom psplash logo, USB Wi-Fi, UART/TFTP, SSD1306 (I²C), ILI9341 (SPI), Weston/Sato + RDP\nBoot: U-Boot, BusyBox, Buildroot\n\nNext targets i plan to do, \n- Security: TrustZone/OP-TEE, Secure Boot, dm-verity\n- Debug: GUI to drive GDB on A-core while debugging M-core (STM32MP157/i.MX9",
+      "metadata": {
+        "id": "1419330887211941940",
+        "author": "zk472103",
+        "timestamp": "2025-09-21T10:34:13.404-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5505128259285343
+    },
+    {
+      "text": "can you link exact kernel sources? as I find only quick hacks to only pass through video from DRM system",
+      "metadata": {
+        "id": "1422962168105799801",
+        "author": "kaede_x86",
+        "timestamp": "2025-10-01T11:03:38.235-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5537715735927208
+    },
+    {
+      "text": "dev_warn can be scrubbed from logs - see printk/dmesg/console settings",
+      "metadata": {
+        "id": "1422982619078983751",
+        "author": "kaede_x86",
+        "timestamp": "2025-10-01T12:24:54.127-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5543731332405856
+    },
+    {
+      "text": "that and they steal open source code and reproduce it without attribution or licencing",
+      "metadata": {
+        "id": "1428741298743152750",
+        "author": "exp.lol",
+        "timestamp": "2025-10-17T09:47:50.35-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5951137544730994
+    },
+    {
+      "text": "short of trolling through git commits for the driver subdirectory, i would stat with git bisecting this because what a bizarro issue!",
+      "metadata": {
+        "id": "1433752885803618425",
+        "author": "exp.lol",
+        "timestamp": "2025-10-31T05:42:05.816-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5709793279798767
+    },
+    {
+      "text": "the device tree, and then it read correctly. However, when I erased the QSPI it went back to 0x99C5.\n\nIn some cases, it would read 0x19C5 instead of 0x1985.\n\nSo, I think it could be the SPI timing.\n\nJust for reference, in the old working kernel version, the max frequency was set to 133 MHz. And this lines up with what's stated in their [datasheet](https://www.mxic.com.tw/Lists/Datasheet/Attachments/8959/MX66L2G45G,%203V,%202Gb,%20v1.1.pdf), particularly Page 28.\n\nI'll keep lowering the frequency",
+      "metadata": {
+        "id": "1433882634924196001",
+        "author": "dr.sudo",
+        "timestamp": "2025-10-31T14:17:40.417-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5557056537973145
+    },
+    {
+      "text": "looking at bindings and datasheet `256Mb Address Protocol` seems like needs futher investigation, \"jedec,spi-nor\" autodetection should work ok",
+      "metadata": {
+        "id": "1433887557690589276",
+        "author": "kaede_x86",
+        "timestamp": "2025-10-31T14:37:14.096-04:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5920630762527035
+    },
+    {
+      "text": "disabled secure boot?",
+      "metadata": {
+        "id": "1435031711896571965",
+        "author": "magnetrwn",
+        "timestamp": "2025-11-03T17:23:41.716-05:00",
+        "channel": "Amulius_linux"
+      },
+      "similarity": 0.5589239216046085
+    }
+  ]
+}

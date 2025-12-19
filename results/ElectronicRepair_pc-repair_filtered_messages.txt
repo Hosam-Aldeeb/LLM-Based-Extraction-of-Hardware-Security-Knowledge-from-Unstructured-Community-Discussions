@@ -1,0 +1,252 @@
+[1] Similarity: 0.571 | bitrehab | 1/2/2025
+Ahoy. If the drive detects (for example) as VAM52JBZ in MHDD or HDAT2 and shows as 0 capacity instead of VAM51JJ0 what is on it's label then the drive has firmware corruption what you can't repair at home. If you have further questions then we can continue it in https://discord.com/channels/448464581677809676/508329749647458344
+======================================================================
+
+[2] Similarity: 0.623 | nightmaretechstuffs | 1/17/2025
+ssities.
+
+I have also reseated the CPU
+
+Attached is a video of the behaviour of the device.
+======================================================================
+
+[3] Similarity: 0.562 | kabutokun5373 | 2/10/2025
+rotection and I couldn't remove it via NVAR modding.
+I also tried to use an external programmer (CH341A) to flash the chips and it could not read/write, the 8MB chip (MX25L6473E) says this on its datasheet "Permanently fixed QE bit, QE=1; and 4 I/O mode is enabled" and "The flash always performs Quad I/O mode", which means that it can't be used as a simple SPI device (with single MOSI/MISO lines) because it's in permanent QuadEnable mode from factory; this greatly limits my options for external 
+======================================================================
+
+[4] Similarity: 0.551 | thetechmechanic | 2/14/2025
+the USB ports ain’t workin’, could be the BIOS is actin’ up—kinda like when yer truck’s ignition switch ain’t sendin’ power to the starter. Sometimes, the BIOS has security settings that shut off the USB ports, just like how a bad ignition switch won’t let the truck crank even if the battery’s fine. Best thing to do? Reset the BIOS, kinda like poppin’ the hood and givin’ the ignition system a once-over. Pull the CMOS battery for a bit, slap it back in, and see if that fires up them USB ports. If
+======================================================================
+
+[5] Similarity: 0.574 | vanduc_gb | 2/14/2025
+I guess the IC is fault, 5v on input pin, 3v on enble pin and 0v on output pin
+So u can jump a wire from 5v input pin to output pin
+Before do that make sure output pin not shorted to ground, and output pin connected to 5v pin on USB port
+======================================================================
+
+[6] Similarity: 0.556 | dumahbrazorf | 2/15/2025
+they could have in common an enable signal. where this signal coming from? probably a big ic.
+======================================================================
+
+[7] Similarity: 0.554 | codeconnoisseur | 2/27/2025
+Double check that the ports are enabled in the "Security" tab in the firmware settings. Apparently, that is an option.
+======================================================================
+
+[8] Similarity: 0.551 | codeconnoisseur | 2/28/2025
+Maybe somewhere one trace from the current sense to the monitoring chip is lost. Could be a cracked solder joint for all we know. Plus I am making about a million and one assumptions about how this is actually designed, so that could be entirely the wrong path. Need a schematic and boardview to take that much further.
+======================================================================
+
+[9] Similarity: 0.563 | codeconnoisseur | 3/1/2025
+20`. If we do verify this as the issue and you just want to fix it and don't care about the root cause, you should just be able to remove the offending transistor(s).
+======================================================================
+
+[10] Similarity: 0.559 | codeconnoisseur | 3/2/2025
+Okay, so that means that `S_USB3_OC#34_R` is being pulled low (active) somewhere. Following that signal will lead us to our issue. Though, to verify this you can try shorting pins 4 and 5 on `SU3` then the board should boot fine.
+======================================================================
+
+[11] Similarity: 0.564 | codeconnoisseur | 3/3/2025
+No, you don't have to remove `SU3`. Try measuring the voltage on `UCR197`, `UR166`, and `UR181`; perhaps we have multiple signals being pulled low. The CPU seems to handle two of the USB 3 OC signals but the chipset handles the rest. Also check that `PMR82`, `PMR83`, `PMR84`, `PMR85`, and `PMR130` are all present as they look to be pull-ups for unused signals.
+
+CPU: `S_USB3_OC#34` (`SU3`), `S_USB3_OC#56` (`SU4`)
+Chipset: `S_USB3_OC#12` (`UR181`), `S_USB3D1_OC#12` (`UCR197`), `S_USB_OC_#3456` (`U
+======================================================================
+
+[12] Similarity: 0.572 | codeconnoisseur | 3/3/2025
+Interesting, if you do the same thing and measure `UR166` when it's booting does it work temporarily again? Your probes will have some impedance and capacitance, which can actually affect high frequency digital circuits.
+======================================================================
+
+[13] Similarity: 0.560 | s.g_kills_all | 3/4/2025
+I have observed the behave of this pc while running in windows that for testing purpose I have connected some flash drives and keyboards and found that very rare but sometimes drives and sometimes the keyboard is reconnects automatically, I mean USB connections are not super stable and sometimes usb port  U31G1_ 34 is not working and sometimes  U31G1_56 is notworking
+======================================================================
+
+[14] Similarity: 0.596 | codeconnoisseur | 3/7/2025
+The touch screen is likely also internally a USB device. I'm guessing the xHCI subsystem of the chipset exploded, maybe someone shorted something to the data lines on a port.
+======================================================================
+
+[15] Similarity: 0.558 | sephir0th1984 | 3/9/2025
+In such cases you should measure resistance to GND of VGT to get a possible clue. If it measures lower compared to CORE you will immediately know that the CPU is fried on this rail.
+======================================================================
+
+[16] Similarity: 0.583 | qwest01 | 3/11/2025
+Bugcheck code:  0xD1(0x32, 0x2, 0x0, 0xFFFFF8800110A80A) 
+Bugcheck name: DRIVER_IRQL_NOT_LESS_OR_EQUAL 
+Bug check description: This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high. 
+Analysis: This is a typical software problem. Most likely this is caused by a bug in a driver.
+======================================================================
+
+[17] Similarity: 0.553 | jaro.ka | 3/11/2025
+@Zolibyte i'm not sure about warming up that chip....it could be it. To determine this chip find SMD capacitors nearby chip, choose capacitor connected to bigger track (that would be power rail for this chip) check resistance of this capacitor.
+======================================================================
+
+[18] Similarity: 0.563 | qwest01 | 3/11/2025
+when with telegram upload problem i use to get ntoskrnl .exe bsod, now its with ndis . so i might have to think , may be the graphics card is fixed well but now ethernet driver is the proeblm caused by northbirdige.. just thinking assuming imagining all possible corelations
+======================================================================
+
+[19] Similarity: 0.553 | jaro.ka | 3/12/2025
+So it looks like a software issue. Maybe a corrupted bios or sio firmware. You said You have programmed it twice. Was the programmer connected to mobo directly or have You desolder eeprom?
+======================================================================
+
+[20] Similarity: 0.568 | prehistoricknee | 3/13/2025
+Tried that before same thing happens, I think 2nd bios is corrupt way before
+======================================================================
+
+[21] Similarity: 0.577 | rizsha | 3/22/2025
+You mean hardware fault
+======================================================================
+
+[22] Similarity: 0.556 | smaxx | 3/22/2025
+Your UAC shouldn't be that strict, this would scream malware to me.
+======================================================================
+
+[23] Similarity: 0.555 | smaxx | 3/22/2025
+and that's firmly plugged in? Then no idea right now, it might be a hardware fault or something else, I don't think it's a software thing, if there's no overclocking etc. going on.
+======================================================================
+
+[24] Similarity: 0.557 | codeconnoisseur | 3/22/2025
+@rizsha Looks like faulty hardware corrupting system memory to me assuming it is in fact a clean install. Dump file analysis would confirm this.
+======================================================================
+
+[25] Similarity: 0.559 | vanduc_gb | 4/7/2025
+How this things can be faulty?
+Usb not working when: 
+-Missing 5v
+-ESD protect diode faulty(shorted or leak)
+-USB_OC voltage drop(working voltage around 3v up)
+-PCH faulty
+======================================================================
+
+[26] Similarity: 0.551 | lyesstarnaud | 4/9/2025
+Device : Desktop Motherboard
+Brand : MSI
+Model : H61M-p20 (G3)
+Board Number : MS-7788 ver 1.0
+Request: help
+Issue: the pc didn't turn on , so i tracked the issue , it was on the 3.3sb_en  signal (Q77) i tried to bridge the the source and the gate of that transistor then i accidently took off R4548 & C314 any help please
+======================================================================
+
+[27] Similarity: 0.551 | fliggo1 | 4/12/2025
+Should I grab this?
+What is the k4 variant of the 1080ti? I’ve never heard of that
+I looked it up to find people confused at a k3 variant, but no answers
+It *might* have something to do with locked memory?
+======================================================================
+
+[28] Similarity: 0.559 | shido7991 | 4/20/2025
+Asus z79-pro gamer
+CPU i5-4670K Max Turbo Frequency 3.80 GHz
+32GB G Skill Ripjaws 4x8GB
+ASUS STRIX GTX 750Ti 4GB version
+240GB SSD
+EVGA 850W BQ 80 Plus Bronze Power supply
+======================================================================
+
+[29] Similarity: 0.565 | javocol | 4/28/2025
+inue using my pc like that? or should I've worried about it, and fix it. In that case, ¿Where the search begin? I already disconnected everything from the usb's and the motherboard do the same, sometimes it boots sometimes doesn't with that overcurrent msg on screen. I have the schematics of this board, and some basic knowledge in electronics, multimeter and solder pen with accesories.
+======================================================================
+
+[30] Similarity: 0.573 | smaxx | 4/29/2025
+Ah, it's on hardware level? Neat, have to look into that. 🙂
+======================================================================
+
+[31] Similarity: 0.555 | sephir0th1984 | 5/9/2025
+It isn't a good sign that one software can recognise the IC and the other can't. The flash being full of Zeroes is another bad sign. If not being "bad" flash IC already, it points at least to interference or connection issues
+======================================================================
+
+[32] Similarity: 0.599 | sephir0th1984 | 5/29/2025
+Or BIOS corruption in best case
+======================================================================
+
+[33] Similarity: 0.573 | hieutcg98 | 6/3/2025
+There is a strange thing is that when I install tl631, I see the PCIE RST indicator flashing, I have never encountered this case before.
+======================================================================
+
+[34] Similarity: 0.563 | pklrsx | 6/7/2025
+Sorry if im completely missing what has happened i thought i was following but could whatever microprocessor that your device has is damaged from the failure you fixed?
+======================================================================
+
+[35] Similarity: 0.552 | mini1477 | 7/1/2025
+You won't learn anything from it. You got overvoltage. Who knows which chips might be damaged.
+======================================================================
+
+[36] Similarity: 0.582 | codeconnoisseur | 7/4/2025
+This means that it is running into trouble with the firmware (initializing CPU, memory, peripherals).
+======================================================================
+
+[37] Similarity: 0.594 | phoenix34 | 7/4/2025
+Hey there! I've seen several ways to debug PS5 consoles where you soldered some pins from a usb programmer (ch341a) onto the board and was able to read errors and perform basic functions for debugging. What about GPUs and computer hardware, is there anything as such?
+======================================================================
+
+[38] Similarity: 0.707 | codeconnoisseur | 7/4/2025
+Of course, CPUs themselves and any kind of microcontroller literally provide JTAG debugging capability, but some hardware hacking may be needed and the tooling and experience needed would not be worth it. Plus, you'd need to reverse engineer the firmware still to find out where things are going wrong. The shops that go this far would just lift and replace the CPU. Faster, cheaper.
+======================================================================
+
+[39] Similarity: 0.558 | sephir0th1984 | 7/7/2025
+Sounds like a Chipset fault. Checked resistances around it?
+======================================================================
+
+[40] Similarity: 0.557 | dues0488 | 7/13/2025
+for me its a low chance could be a bios issue but you try to reprogram
+======================================================================
+
+[41] Similarity: 0.599 | 47gg | 8/27/2025
+ then on last resort, deep clean and reflow cpu chip. It came back to me I saw all these articles about a recent windows update causing problems with nvme drives not sure if it is related, also strangely I plugged my own system nvme drive with windows and when it started, Defender reported some kind of a trojan malware that infected the drive and also one of my usb keys. I immediately cleaned them on my linux system, which make me worry if it is some kind of firmware embedded malware, I really h
+======================================================================
+
+[42] Similarity: 0.632 | codeconnoisseur | 8/27/2025
+Firmware-embedded malware is extremely improbable in my opinion.
+======================================================================
+
+[43] Similarity: 0.586 | sephir0th1984 | 8/27/2025
+I would say chipset or CPU related. In best case something obvious to find by a detailed visual inspection. Partial BIOS corruption should be ruled out for sanity too
+======================================================================
+
+[44] Similarity: 0.560 | amame72omg | 9/17/2025
+hey guys! anyone know what this chip is? It looks like a bios chip 
+from MSI stealth GS66
+numbers X28A XX711
+======================================================================
+
+[45] Similarity: 0.560 | gexreal | 9/17/2025
+this wouldnt be a bios chip, bios chips usually have bigger legs like this chip on another msi stealth gs66
+======================================================================
+
+[46] Similarity: 0.575 | vibrantpickle13213 | 9/22/2025
+Get a bios flasher with a clip attachment, identify ypur bios chip model and use AI to find a compatible flshing setup. The bios file shouldnt be very hard to fins
+======================================================================
+
+[47] Similarity: 0.554 | phoenix.yk | 9/24/2025
+Could be a *partially* shorted MOSFET or power ic *(anything really)* on that rail. Forward to #💻laptops
+======================================================================
+
+[48] Similarity: 0.552 | codeconnoisseur | 10/1/2025
+Possibly. You can check the hardware ID in the "Details" tab.
+======================================================================
+
+[49] Similarity: 0.565 | sephir0th1984 | 10/3/2025
+And then find out why it isn't detected. For example with the help of the video linked above.
+======================================================================
+
+[50] Similarity: 0.575 | zuldan | 10/8/2025
+So then inspected the board under a microscope and found this ESD Protection IC (U3U1) looking dodgy. I removed the IC but unfortunately I still get the "USB Over Current Status Detected" message.
+======================================================================
+
+[51] Similarity: 0.555 | sephir0th1984 | 10/8/2025
+It's not about the voltage not reaching the Ports but about OC detected at one of these switches, or in worst case "just" the Chipset being in this failure mode permantenly (for whatever reason)
+======================================================================
+
+[52] Similarity: 0.567 | dhalon | 10/13/2025
+@CodeConnoisseur i had the time to check the MANLI 4090 24GB CYBERTANK voltages. Pex passes from 0.9 to 0V
+======================================================================
+
+[53] Similarity: 0.557 | nexkg_28147 | 10/18/2025
+Main power rail is probably shorted through that ic with cpu/gpu(what do you have there). What device is this about?
+======================================================================
+
+[54] Similarity: 0.553 | codeconnoisseur | 10/19/2025
+What is going to protection? The PSU?
+======================================================================
+
+[55] Similarity: 0.596 | codeconnoisseur | 11/2/2025
+You can also try applying downwards pressure on the chipset before, during, and after boot to rule out some BGA fault there. The USB OC signals are near one of the corners which are the most likely areas to have cracked balls.
+======================================================================

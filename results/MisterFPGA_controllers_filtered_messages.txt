@@ -1,0 +1,74 @@
+[1] Similarity: 0.573 | bootsector | 1/11/2025
+i2c is the low level protocol used by those peripherals. However, having only i2c implemented on the MiSTer is not enough to make them work on it. Someone needs to implement also the high level protocol (i.e., how i2c data is interpreted by the MiSTer).
+======================================================================
+
+[2] Similarity: 0.562 | zakk4223 | 1/16/2025
+the latest kernel commit was part of fixing those
+======================================================================
+
+[3] Similarity: 0.619 | alynne | 1/31/2025
+there's usually a button combination to change what the dongle is spoofing iirc
+======================================================================
+
+[4] Similarity: 0.571 | quirrin. | 3/19/2025
+I have a defender that's rather old and it has analog triggers. And these triggers are super sensitive when used on original hardware.
+======================================================================
+
+[5] Similarity: 0.564 | freddo7595 | 4/14/2025
+plug and play with the latest kernel i think
+======================================================================
+
+[6] Similarity: 0.576 | rallyflowbro | 5/6/2025
+What's this screen? Also os that game running a widescreen hack?
+======================================================================
+
+[7] Similarity: 0.559 | nolbin | 5/15/2025
+This is interesting: the one that works at 31 kHz, WinGun, has a manual calibration step where you sweep the gun from side to side. If it detects that your x reading is doubled-up, it just hacks in a correction for that
+======================================================================
+
+[8] Similarity: 0.572 | freddo7595 | 5/16/2025
+is it much different than what JT does for example? except the roms are newer
+======================================================================
+
+[9] Similarity: 0.564 | sno0py | 6/28/2025
+if this ever happens to anyone these dongles are real common
+======================================================================
+
+[10] Similarity: 0.565 | alynne | 7/2/2025
+[__Aquaplus P/ECE usb gamepad mode mappings__](https://github.com/mdqinc/SDL_GameControllerDB/commit/8a00a0ac22774978163f6642f0aae96235c546c0)
+now we just need a core... 😛
+======================================================================
+
+[11] Similarity: 0.581 | alynne | 7/15/2025
+"tampering detected, robocop has been notified, please remain stationary"
+======================================================================
+
+[12] Similarity: 0.570 | davewongillies | 7/15/2025
+For at least Ultimate 2.4g wireless: https://www.youtube.com/watch?v=VnanvaH7B10
+
+Doesn't seem to be undocumented since its mentioned in the release notes for the firmware
+======================================================================
+
+[13] Similarity: 0.605 | jaimiev | 7/21/2025
+==> #misc-hardware plskthx!
+======================================================================
+
+[14] Similarity: 0.559 | wasabi4589 | 8/1/2025
+Not that I’ve seen, seems like trial and error; worse yet is many resources recommend dongles that use a chipset no longer easily obtainable
+======================================================================
+
+[15] Similarity: 0.553 | trifle. | 8/4/2025
+@Robby The tool is 8BitDo_Ultimate_Software_V2_V1.20 but the firmware is 1.03 as far as I can tell?
+======================================================================
+
+[16] Similarity: 0.556 | sanefriend | 9/7/2025
+I just got a Mayflash NS2 for my xbox 360 because it works with the badupdate exploit and can use a PS4 controller wirelessly that way
+======================================================================
+
+[17] Similarity: 0.563 | technoir2 | 9/11/2025
+right, firmware doesn't magically change hardware 😄
+======================================================================
+
+[18] Similarity: 0.568 | rgarcialago | 10/8/2025
+been hacking at it all day,
+======================================================================

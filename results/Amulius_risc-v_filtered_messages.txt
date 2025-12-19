@@ -1,0 +1,43 @@
+[1] Similarity: 0.584 | slackgeek | 5/8/2025
+with jtag you could load a bootloader, and from the bootloader flash any other image
+======================================================================
+
+[2] Similarity: 0.574 | parallaxerror | 5/12/2025
+Would you reccomend creating a software handler for the misaligned accesses this may cause, trying to implement misaligned accesses in hardware, or trying to edit the source?
+======================================================================
+
+[3] Similarity: 0.586 | madman.in.a.box | 5/12/2025
+and i have the verilog for a Cortex-M0, so i have been thinking about making a design that uses the M0 as a security and bootstrapping processor
+======================================================================
+
+[4] Similarity: 0.565 | madman.in.a.box | 5/17/2025
+also, have the security coprocessor provide cryptographic services for the PS7
+======================================================================
+
+[5] Similarity: 0.551 | madman.in.a.box | 5/17/2025
+and have any secure monitor calls be delegated by OpTEE to the services provided by the coprocessor
+======================================================================
+
+[6] Similarity: 0.558 | madman.in.a.box | 5/17/2025
+there's no graphical "bling" to speak of with this, but there's a lot of security intensive stuff (which is my area of work)
+======================================================================
+
+[7] Similarity: 0.667 | madman.in.a.box | 9/2/2025
+"hardware security" as in traditional hardware security where you're dealing with hardware trojans, formal verification, and the such?
+======================================================================
+
+[8] Similarity: 0.616 | madman.in.a.box | 9/2/2025
+Being in good terms does not guarantee you funding. You probably want to find out exactly what the professor is interested in. Again, hardware security does not necessarily relate to RISC-V. You could target some RISC-V _implementation_ as a test platform for some hardware security research, but you would need to define what the end-goal here is. For example, if you're looking at hardware trojans then you could test whatever framework you're developing on that RISC-V implementation. However, if 
+======================================================================
+
+[9] Similarity: 0.589 | madman.in.a.box | 10/29/2025
+having worked at the hardware level with SPARC before i can attest to some of this
+======================================================================
+
+[10] Similarity: 0.570 | hard.fault | 10/29/2025
+oh please, the linux kernel handles x86 double faults all the time 😛
+======================================================================
+
+[11] Similarity: 0.569 | madman.in.a.box | 10/30/2025
+_but_ you can hardware assist those things
+======================================================================

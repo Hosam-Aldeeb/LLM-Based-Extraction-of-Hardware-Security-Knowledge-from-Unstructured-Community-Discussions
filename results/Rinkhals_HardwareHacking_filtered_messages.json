@@ -1,0 +1,90 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/Rinkhals_HardwareHacking_Jan2025_export.json",
+  "totalMessages": 673,
+  "totalChunks": 670,
+  "relevantMessages": 8,
+  "results": [
+    {
+      "text": "If you're talking about the JST header on the MB, it's connected to the SoC and you can use recovery mode with it.\nThe JST is USB. The MB needs to be powered by the USB 5V power.",
+      "metadata": {
+        "id": "1379890903673733260",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:33:48.569-04:00",
+        "channel": "Rinkhals_HardwareHacking"
+      },
+      "similarity": 0.5924761476774228
+    },
+    {
+      "text": "I did a full backup a few month ago, removed the private stuff and uploaded it here: https://jbatonnet.github.io/Rinkhals/printers/recover-boot-issues/",
+      "metadata": {
+        "id": "1379891701757247578",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:36:58.847-04:00",
+        "channel": "Rinkhals_HardwareHacking"
+      },
+      "similarity": 0.5501342552254239
+    },
+    {
+      "text": "https://rinkhals.meowcat285.com/ (stock firmwares)",
+      "metadata": {
+        "id": "1379938700355567666",
+        "author": "basvd",
+        "timestamp": "2025-06-04T17:43:44.186-04:00",
+        "channel": "Rinkhals_HardwareHacking"
+      },
+      "similarity": 0.5593514628347641
+    },
+    {
+      "text": "`WARNING:root:Unable to open serial port: [Errno 11] Could not exclusively lock port /dev/ttyS3: [Errno 11] Resource temporarily unavailable`\nDo i need to kill klipper?",
+      "metadata": {
+        "id": "1380949978306056212",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:42:11.638-04:00",
+        "channel": "Rinkhals_HardwareHacking"
+      },
+      "similarity": 0.5758578175408475
+    },
+    {
+      "text": "https://github.com/hdscmcu/pyOCD/commit/61a4349c4d87beb79689c16909e43ffc16030052\nTheres also a branch with direct support for the especific chip",
+      "metadata": {
+        "id": "1387117906017517754",
+        "author": "topes1",
+        "timestamp": "2025-06-24T13:11:20.199-04:00",
+        "channel": "Rinkhals_HardwareHacking"
+      },
+      "similarity": 0.5634544427623862
+    },
+    {
+      "text": "Its done: 🥳 \n\n```(gdb) monitor version\nBlack Magic Probe (ST-Link/v2) v2.0.0-rc2-84-g75070c15, Hardware Version 257\nCopyright (C) 2010-2025 Black Magic Debug Project\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n\n(gdb) monitor targets\nAvailable Targets:\nNo. Att Driver\n*** 1 * Unknown ARM Cortex-M Designer 0x751 Part ID 0x324 M4\n```",
+      "metadata": {
+        "id": "1395160957411397803",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T17:51:33.084-04:00",
+        "channel": "Rinkhals_HardwareHacking"
+      },
+      "similarity": 0.5723355617947667
+    },
+    {
+      "text": "what hardware device is this or software are you using?",
+      "metadata": {
+        "id": "1400200562112335923",
+        "author": "csnoopy35",
+        "timestamp": "2025-07-30T15:37:08.476-04:00",
+        "channel": "Rinkhals_HardwareHacking"
+      },
+      "similarity": 0.5872959622955332
+    },
+    {
+      "text": "ages ago the saleae guys were either on the amphour or embedded fm podcast and were talking about being able to detect the clones with ease but not doing anything to lock them out of the software yet.",
+      "metadata": {
+        "id": "1402182681357451276",
+        "author": "pulsar256",
+        "timestamp": "2025-08-05T02:53:22.53-04:00",
+        "channel": "Rinkhals_HardwareHacking"
+      },
+      "similarity": 0.5518692233065237
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/MisterFPGA_mister-debug_Jan2025_export.json",
+  "totalMessages": 627,
+  "totalChunks": 639,
+  "relevantMessages": 1,
+  "results": [
+    {
+      "text": "Or you change the hardware code like I did. hacking software isn't the only option.",
+      "metadata": {
+        "id": "1324444907259170846",
+        "author": "blue1___",
+        "timestamp": "2025-01-02T13:31:12.887-05:00",
+        "channel": "MisterFPGA_mister-debug"
+      },
+      "similarity": 0.6781758782990048
+    }
+  ]
+}

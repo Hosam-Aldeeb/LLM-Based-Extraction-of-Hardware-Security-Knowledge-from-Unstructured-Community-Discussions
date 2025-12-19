@@ -1,0 +1,137 @@
+{
+  "channel": "STM32World_general",
+  "source": "./discord-exports/STM32World_general_Jan2025_export.json",
+  "filteredMessages": 5,
+  "totalThreads": 4,
+  "substantialThreads": 2,
+  "threads": [
+    [
+      {
+        "id": "1370534481269751969",
+        "author": "sheluvbuford",
+        "timestamp": "2025-05-09T18:54:43.634-04:00",
+        "content": "My whole research focus revolves around neural network deployment on resource constrained architectures"
+      },
+      {
+        "id": "1370577829921816606",
+        "author": "lemercier",
+        "timestamp": "2025-05-09T21:46:58.758-04:00",
+        "content": "Man I want to learn about this to but it's practically looks like magical manuscript to me...",
+        "reference": {
+          "messageId": "1370534481269751969",
+          "channelId": "1347730523824455753",
+          "guildId": "1347730523824455750"
+        }
+      },
+      {
+        "id": "1370578084415148072",
+        "author": "lemercier",
+        "timestamp": "2025-05-09T21:47:59.434-04:00",
+        "content": "There's Arduino pro with unreachable price tag. But then again it uses stm32 anyway.",
+        "reference": {
+          "messageId": "1370551060200165541",
+          "channelId": "1347730523824455753",
+          "guildId": "1347730523824455750"
+        }
+      },
+      {
+        "id": "1370602684415082597",
+        "author": "lemercier",
+        "timestamp": "2025-05-09T23:25:44.531-04:00",
+        "content": "...well",
+        "reference": {
+          "messageId": "1370589834007023787",
+          "channelId": "1347730523824455753",
+          "guildId": "1347730523824455750"
+        }
+      },
+      {
+        "id": "1370611921765531738",
+        "author": "sheluvbuford",
+        "timestamp": "2025-05-10T00:02:26.887-04:00",
+        "content": "I’m an undergraduate research assistant and don’t worry I walked into my research advisors office told him I knew nothing about the topic/field and he slowly started teaching me",
+        "reference": {
+          "messageId": "1370577829921816606",
+          "channelId": "1347730523824455753",
+          "guildId": "1347730523824455750"
+        }
+      },
+      {
+        "id": "1370612173297942528",
+        "author": "sheluvbuford",
+        "timestamp": "2025-05-10T00:03:26.857-04:00",
+        "content": "I can send you over some resources my professor suggested for me as I started out @Julius"
+      },
+      {
+        "id": "1370622572739432540",
+        "author": "niclas8888",
+        "timestamp": "2025-05-10T00:44:46.277-04:00",
+        "content": "Funny. \"Resource constrained\" is anything less than an i386 in 1988. My first job inveolved writing an multi-task, real-time operating system, with language runtime and a serial comm network system. In 2kB RAM and 8kB EPROM (grew to 8kB RAM and 32kB EPROM in first product launch), on the 8031 (in the 8051 family mentioned above). And I went from that to making I/O devices in 1997 with a PIC16C73A, 4kB (actually 2,048 14bit wide) program memory and 192 bytes of RAM. Challenging to implement the 1-write protocol for up to 16 devices (each address is 8 bytes long), I2C, SPI, an PLC protocol called Exoline (max packet size of 240 bytes). After shitload of optimization, I proudly had 1-bit in RAM marked \"Reserved for Future Use\" AND found a hardware bug (and figured out a workaround) that Microchip acknowledged (Intel refused to acknowledge it when we found a similar problem in the 1980 edition of the 8031, but had been fixed in the 1982 edition) and promised me 10,000pc pricing even if I ordered smaller quantities for all future purchases. Those were days of \"constrained devices\".",
+        "reference": {
+          "messageId": "1370534481269751969",
+          "channelId": "1347730523824455753",
+          "guildId": "1347730523824455750"
+        }
+      },
+      {
+        "id": "1370623908746887199",
+        "author": "lemercier",
+        "timestamp": "2025-05-10T00:50:04.806-04:00",
+        "content": "While I'll be very grateful for your help, you're overestimated my brain cells😅",
+        "reference": {
+          "messageId": "1370612173297942528",
+          "channelId": "1347730523824455753",
+          "guildId": "1347730523824455750"
+        }
+      },
+      {
+        "id": "1370624123671416925",
+        "author": "lemercier",
+        "timestamp": "2025-05-10T00:50:56.048-04:00",
+        "content": "I have very hard time understanding filter, don't even mention ML."
+      },
+      {
+        "id": "1370624579747188807",
+        "author": "lemercier",
+        "timestamp": "2025-05-10T00:52:44.785-04:00",
+        "content": "Oh, should have said that I learn stm32 because I need audio processing for guitar. So no advanced programming math at all, I only use my little logic, putting puzzles together and if it works it works"
+      },
+      {
+        "id": "1370624856554471555",
+        "author": "lemercier",
+        "timestamp": "2025-05-10T00:53:50.781-04:00",
+        "content": "The only ML that I came across was guitarML, based on Jatin Chowdurry's work"
+      }
+    ],
+    [
+      {
+        "id": "1433830676070924319",
+        "author": "inx42",
+        "timestamp": "2025-10-31T10:51:12.461-04:00",
+        "content": "Hi everyone, I need help with following:\n1. I have one STM32WLE5 module from here: https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/\n2. I have connected its VCC, GND, SWDIO, SWCLK and RST pins of it to corresponding ST-Link-v2. STCubeProgrammer connects automatically in HotPlug mode and cannot connect in Under Reset mode (see the attachment).\n3.  As per OB, the RDP is Level 1, but since its not able to connect in Under Reset mode, am not able to set the RDP to AA. Here are relevant information with CLI:\n---\n➜  bin ./STM32_Programmer_CLI -c port=SWD mode=UR\n\nST-LINK SN  : 540030001500003141474B2E\nST-LINK FW  : V2J46S7\nBoard       : --\nVoltage     : 3.23V\nError: Unable to get core ID\nError: Cannot connect to access port 1!  If you are trying to connect to a device with TrustZone enabled please try to connect with HotPlug mode.  If you are trying to connect to a device which supports Debug Authentication with certificate or password, please open your device using it.\n\n➜  bin ./STM32_Programmer_CLI -c port=SWD mode=HotPlug -ob displ\n\nST-LINK SN  : 540030001500003141474B2E\nST-LINK FW  : V2J46S7\nBoard       : --\nVoltage     : 3.23V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x497\nRevision ID : Rev Y\nDevice name : STM32WLxx\nFlash size  : 256 KBytes (default)\nDevice type : MCU\nDevice CPU  : Cortex-M4\nBL Version  : 0x0\n...\n...\n\nOPTION BYTES BANK: 0\n\n   Read Out Protection:\n\n     RDP          : 0x0 (Level 1, read protection of memories)\n\n   BOR Level:\n\n     BOR_LEV      : 0x0\n\n   User Configuration:\n\n     nBOOT0       : 0x0 (nBOOT0=0)\n     nBOOT1       : 0x0 ()\n...\n...\n\n---"
+      },
+      {
+        "id": "1434290285994840094",
+        "author": "lbthomsen",
+        "timestamp": "2025-11-01T17:17:32.006-04:00",
+        "content": "I guess you will have to flip the read out protection to level 0 - but you will lose whatever is in the flash doing so.  You _can_ do that with the STM32CubeProgrammer.  See https://stm32world.com/wiki/STM32_Readout_Protection_(RDP)",
+        "reference": {
+          "messageId": "1433830676070924319",
+          "channelId": "1347730523824455753",
+          "guildId": "1347730523824455750"
+        }
+      },
+      {
+        "id": "1434299388569850000",
+        "author": "lbthomsen",
+        "timestamp": "2025-11-01T17:53:42.229-04:00",
+        "content": "Also made a video on the topic: https://www.youtube.com/watch?v=4nCFsfzsWqA",
+        "reference": {
+          "messageId": "1433830676070924319",
+          "channelId": "1347730523824455753",
+          "guildId": "1347730523824455750"
+        }
+      }
+    ]
+  ]
+}

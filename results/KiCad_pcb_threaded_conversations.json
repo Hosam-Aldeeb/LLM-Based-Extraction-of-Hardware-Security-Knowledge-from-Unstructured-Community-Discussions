@@ -1,0 +1,877 @@
+{
+  "channel": "KiCad_pcb",
+  "source": "./discord-exports/KiCad_pcb_Jan2025_export.json",
+  "filteredMessages": 20,
+  "totalThreads": 20,
+  "substantialThreads": 14,
+  "threads": [
+    [
+      {
+        "id": "1332984798142271580",
+        "author": "harjits",
+        "timestamp": "2025-01-26T03:05:41.537-05:00",
+        "content": "@i2cjak which chip is acting as the debugger? What software are you using for it? \n\nI've been wanting to port Black Magic debugger to the nrf52832 so that I can connect to it via Bluetooth on a Windows machine using the Windows machine's built in Bluetooth and the other side would be a SWD port to debug the target..."
+      },
+      {
+        "id": "1333126844865712189",
+        "author": "i509vcb",
+        "timestamp": "2025-01-26T12:30:08.115-05:00",
+        "content": "said the 52833",
+        "reference": {
+          "messageId": "1332984798142271580",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1333127002856755271",
+        "author": "i509vcb",
+        "timestamp": "2025-01-26T12:30:45.783-05:00",
+        "content": "For a black magic debugger probe, really you could get away with implementing the 52820, 52833 and 52840 (these have USB in the 528)"
+      }
+    ],
+    [
+      {
+        "id": "1338179069409230971",
+        "author": "immortal_sniper1",
+        "timestamp": "2025-02-09T11:05:52.312-05:00",
+        "content": "```(version 1)\n(rule \"HIgH cLeArAnce BeTWeen LV And HV net\"\n    (constraint clearance (min 5.0mm))\n    (condition \" A.NetClass == 'HVbus*' && B.NetClass != 'HV*'\" ))\n```"
+      },
+      {
+        "id": "1338179091983241216",
+        "author": "immortal_sniper1",
+        "timestamp": "2025-02-09T11:05:57.694-05:00",
+        "content": "this seems to not work"
+      },
+      {
+        "id": "1338180292753621022",
+        "author": "gkeeth",
+        "timestamp": "2025-02-09T11:10:43.98-05:00",
+        "content": "what version? if you're on 9.0 you should use the `hasNetclass()` function rather than the `NetClass` property. See the documentation for why. If that's not it, select both zones and run the clearance inspector to find out what's happening",
+        "reference": {
+          "messageId": "1338179069409230971",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1338180885408907367",
+        "author": "immortal_sniper1",
+        "timestamp": "2025-02-09T11:13:05.28-05:00",
+        "content": "i am on the last 8 version"
+      },
+      {
+        "id": "1338180943982104628",
+        "author": "gkeeth",
+        "timestamp": "2025-02-09T11:13:19.245-05:00",
+        "content": "ok, then run the clearance inspector to see why"
+      },
+      {
+        "id": "1338181004967542888",
+        "author": "immortal_sniper1",
+        "timestamp": "2025-02-09T11:13:33.785-05:00",
+        "content": "how? first time i hear about that thing"
+      },
+      {
+        "id": "1338181141680619611",
+        "author": "gkeeth",
+        "timestamp": "2025-02-09T11:14:06.38-05:00",
+        "content": "select both zones, then click inspect -> clearance inspector"
+      },
+      {
+        "id": "1338181220638396577",
+        "author": "gkeeth",
+        "timestamp": "2025-02-09T11:14:25.205-05:00",
+        "content": "sorry, inspect -> clearance resolution"
+      },
+      {
+        "id": "1338181575707201608",
+        "author": "immortal_sniper1",
+        "timestamp": "2025-02-09T11:15:49.86-05:00",
+        "content": "this?"
+      },
+      {
+        "id": "1338181863789035631",
+        "author": "gkeeth",
+        "timestamp": "2025-02-09T11:16:58.544-05:00",
+        "content": ""
+      },
+      {
+        "id": "1338181963248570419",
+        "author": "immortal_sniper1",
+        "timestamp": "2025-02-09T11:17:22.257-05:00",
+        "content": ""
+      },
+      {
+        "id": "1338182265833787583",
+        "author": "gkeeth",
+        "timestamp": "2025-02-09T11:18:34.399-05:00",
+        "content": "you have exactly two zones selected and nothing else?"
+      },
+      {
+        "id": "1338183336279015435",
+        "author": "immortal_sniper1",
+        "timestamp": "2025-02-09T11:22:49.613-05:00",
+        "content": "i think so"
+      },
+      {
+        "id": "1338183456559202385",
+        "author": "immortal_sniper1",
+        "timestamp": "2025-02-09T11:23:18.29-05:00",
+        "content": "yes every time i try same result"
+      },
+      {
+        "id": "1338183584808304662",
+        "author": "immortal_sniper1",
+        "timestamp": "2025-02-09T11:23:48.867-05:00",
+        "content": "well 1 is on top and the other on the bottom layer but since they are pours they get way to close with normal rules"
+      }
+    ],
+    [
+      {
+        "id": "1343174140269694998",
+        "author": "anachrocomputer",
+        "timestamp": "2025-02-23T05:54:30.009-05:00",
+        "content": "Looks like one mode is JTAG (TDO/TMS) and the other mode is SWD (SWDIO). But SWDIO goes to both pin 6 and pin 3 of the switch"
+      },
+      {
+        "id": "1343174377960640542",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-02-23T05:55:26.679-05:00",
+        "content": "the switch selects between jtag/spi and swd/i2c",
+        "reference": {
+          "messageId": "1343174140269694998",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1343174501755650150",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-02-23T05:55:56.194-05:00",
+        "content": "this is what they said in my github issue but i still dont get it\n```\nThe \"mode switch\" on the board that switches between jtag/spi and i2c/swd basically connects the poci/tdo pin to the pico/tdi pin with a 330 ohm resistor.\nThis is because both i2c and swd have a bidirectional data pin, so we need to be able to both read and write to it, but the FT2232H does not really support that.\n\nIf you mean switching between spi and jtag and i2c and swd for the different tools - that's all taken care of by the software tools. The FTx232H family all support MPSSE, which is their way of doing high throughput I/O. That's what PyFtdi, flashrom, openocd, and others all use to make the ft2232h speak their protocol.\n```"
+      }
+    ],
+    [
+      {
+        "id": "1343174501755650150",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-02-23T05:55:56.194-05:00",
+        "content": "this is what they said in my github issue but i still dont get it\n```\nThe \"mode switch\" on the board that switches between jtag/spi and i2c/swd basically connects the poci/tdo pin to the pico/tdi pin with a 330 ohm resistor.\nThis is because both i2c and swd have a bidirectional data pin, so we need to be able to both read and write to it, but the FT2232H does not really support that.\n\nIf you mean switching between spi and jtag and i2c and swd for the different tools - that's all taken care of by the software tools. The FTx232H family all support MPSSE, which is their way of doing high throughput I/O. That's what PyFtdi, flashrom, openocd, and others all use to make the ft2232h speak their protocol.\n```"
+      },
+      {
+        "id": "1343275273319223357",
+        "author": "vipqualitypost",
+        "timestamp": "2025-02-23T12:36:22.007-05:00",
+        "content": "Did you come up with that SPDT switch thing above? I think the issue is saying that they firmware will take care of figuring out the mode, no need to have a switch at all. Or at least in many cases this is true- maybe you need to explain more (probably in #electronics though)",
+        "reference": {
+          "messageId": "1343174501755650150",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1343276116261212191",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-02-23T12:39:42.98-05:00",
+        "content": "no its from https://github.com/tigard-tools/tigard",
+        "reference": {
+          "messageId": "1343275273319223357",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1343276188101247109",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-02-23T12:40:00.108-05:00",
+        "content": ""
+      }
+    ],
+    [
+      {
+        "id": "1350127435340972073",
+        "author": "cooperg2001",
+        "timestamp": "2025-03-14T11:24:24.74-04:00",
+        "content": "why does KiCAD DRC report silk screen clipping as `Silkscreen clipped by solder mask` ? This pops up when the silkscreen of two different footprints clips"
+      },
+      {
+        "id": "1350129531310182440",
+        "author": "cooperg2001",
+        "timestamp": "2025-03-14T11:32:44.458-04:00",
+        "content": "No. I'm saying it triggers on silk screens clipping",
+        "reference": {
+          "messageId": "1350128824792383579",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1350129791516545077",
+        "author": "cooperg2001",
+        "timestamp": "2025-03-14T11:33:46.496-04:00",
+        "content": "It should be a `Silkscreen clipped by silkscreen` or `Silkscreens overlap` or similar but instead its  `Silkscreen clipped by solder mask`"
+      },
+      {
+        "id": "1350130050812477571",
+        "author": "cooperg2001",
+        "timestamp": "2025-03-14T11:34:48.317-04:00",
+        "content": "at least so far as I can tell. I already moved the components to fix the overlap"
+      },
+      {
+        "id": "1350130491096961177",
+        "author": "cooperg2001",
+        "timestamp": "2025-03-14T11:36:33.289-04:00",
+        "content": "ahhh I got it"
+      },
+      {
+        "id": "1350130700669681704",
+        "author": "cooperg2001",
+        "timestamp": "2025-03-14T11:37:23.255-04:00",
+        "content": "just a UX thing. camera had a bunch of arrows in view so it was in fact clipping one part of a pad but the arrows I noticed were only clipping silkscreen"
+      }
+    ],
+    [
+      {
+        "id": "1353643811418673216",
+        "author": "deulamco",
+        "timestamp": "2025-03-24T04:17:14.128-04:00",
+        "content": "I meansured all components values (R, C, D) seem they fabricated correctly... now just only the chip I can't verify & programmer always show Unknown Device ID"
+      },
+      {
+        "id": "1353644444636938270",
+        "author": "deulamco",
+        "timestamp": "2025-03-24T04:19:45.099-04:00",
+        "content": "Normally, only reason for that is wrong voltage applied 🤷‍♂️"
+      },
+      {
+        "id": "1353644538090229802",
+        "author": "deulamco",
+        "timestamp": "2025-03-24T04:20:07.38-04:00",
+        "content": "The plot file ?",
+        "reference": {
+          "messageId": "1353643737850576906",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1353644745963864144",
+        "author": "deulamco",
+        "timestamp": "2025-03-24T04:20:56.941-04:00",
+        "content": "How many times you guys may try PCBA, until a revision can work properly ?"
+      },
+      {
+        "id": "1353645194737877033",
+        "author": "deulamco",
+        "timestamp": "2025-03-24T04:22:43.937-04:00",
+        "content": "Great, thanks",
+        "reference": {
+          "messageId": "1353645051560853565",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1353645051560853565",
+        "author": "eonostturf",
+        "timestamp": "2025-03-24T04:22:09.801-04:00",
+        "content": "You can get your circuit verified in #electronics or #work-in-progress .. This channel should focus on potential issues with the KiCad pcb tool"
+      },
+      {
+        "id": "1353645194737877033",
+        "author": "deulamco",
+        "timestamp": "2025-03-24T04:22:43.937-04:00",
+        "content": "Great, thanks",
+        "reference": {
+          "messageId": "1353645051560853565",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1353645555649216572",
+        "author": "eonostturf",
+        "timestamp": "2025-03-24T04:24:09.985-04:00",
+        "content": "If you can share the pcb file, I guess there are several of us interested to find the cause of this issue"
+      }
+    ],
+    [
+      {
+        "id": "1354443121219469444",
+        "author": "aqua.regia",
+        "timestamp": "2025-03-26T09:13:24.435-04:00",
+        "content": "https://jlcpcb.com/capabilities/pcb-capabilities"
+      },
+      {
+        "id": "1354443327268978768",
+        "author": "aqua.regia",
+        "timestamp": "2025-03-26T09:14:13.561-04:00",
+        "content": ""
+      },
+      {
+        "id": "1354443598757626050",
+        "author": "aqua.regia",
+        "timestamp": "2025-03-26T09:15:18.289-04:00",
+        "content": "i honestly wish kicad had more drc options"
+      }
+    ],
+    [
+      {
+        "id": "1369354793411416196",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-05-06T12:47:04.131-04:00",
+        "content": "by the fpga som"
+      },
+      {
+        "id": "1369355368056229950",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-05-06T12:49:21.137-04:00",
+        "content": "i either connect both to the left or one of the left and one on the right, but if i connect one of the right i will need to use a via"
+      },
+      {
+        "id": "1369355423576100988",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-05-06T12:49:34.374-04:00",
+        "content": "i think ill just use a via its not like the signal is 100ghz"
+      },
+      {
+        "id": "1369355590383439973",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-05-06T12:50:14.144-04:00",
+        "content": "16 bit hdmi output"
+      },
+      {
+        "id": "1369355635505893557",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-05-06T12:50:24.902-04:00",
+        "content": "~150 mhz"
+      },
+      {
+        "id": "1369355947146874992",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-05-06T12:51:39.203-04:00",
+        "content": "yea but i cant decrease the stub"
+      },
+      {
+        "id": "1369356032723255458",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-05-06T12:51:59.606-04:00",
+        "content": "becuase that means using a buried via afaik"
+      },
+      {
+        "id": "1369356650351427684",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-05-06T12:54:26.86-04:00",
+        "content": "i dont think it will affect it that much just saying"
+      }
+    ],
+    [
+      {
+        "id": "1390404881109614593",
+        "author": "lol044664",
+        "timestamp": "2025-07-03T14:52:36.13-04:00",
+        "content": "my ever first pcb, how would you rate my first"
+      },
+      {
+        "id": "1390405341757440271",
+        "author": "sigstoat",
+        "timestamp": "2025-07-03T14:54:25.957-04:00",
+        "content": "hard to tell without knowing what it is/does or what the schematic looks like. but you're going to find it very hard to plug a usb cable into J1.",
+        "reference": {
+          "messageId": "1390404881109614593",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1390406952336621641",
+        "author": "lol044664",
+        "timestamp": "2025-07-03T15:00:49.949-04:00",
+        "content": "it is a esp32 with a battery charger intend to code like any other esp. I had a few troubles trying to find footprint for ic battery voltage regulation so i had to make it custom"
+      },
+      {
+        "id": "1390407572565131284",
+        "author": "lol044664",
+        "timestamp": "2025-07-03T15:03:17.823-04:00",
+        "content": "here it is"
+      },
+      {
+        "id": "1390407861049233499",
+        "author": "lol044664",
+        "timestamp": "2025-07-03T15:04:26.603-04:00",
+        "content": "what are the improvement i need to work onto"
+      },
+      {
+        "id": "1390408139173658730",
+        "author": "lol044664",
+        "timestamp": "2025-07-03T15:05:32.913-04:00",
+        "content": "i have to mix between new tutorial vids just to get by the old one that im followed"
+      },
+      {
+        "id": "1390417890066567298",
+        "author": "i509vcb",
+        "timestamp": "2025-07-03T15:44:17.707-04:00",
+        "content": "> board outline is malformed\n\nYou probably have a gap in the edge cuts layer",
+        "reference": {
+          "messageId": "1390404881109614593",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1390421019100975256",
+        "author": "lol044664",
+        "timestamp": "2025-07-03T15:56:43.727-04:00",
+        "content": "i was frustation on navigate on each tools"
+      },
+      {
+        "id": "1390421115587006627",
+        "author": "lol044664",
+        "timestamp": "2025-07-03T15:57:06.731-04:00",
+        "content": "project took me a week"
+      }
+    ],
+    [
+      {
+        "id": "1397681836397957150",
+        "author": "wolington",
+        "timestamp": "2025-07-23T16:48:37.47-04:00",
+        "content": "https://jlcpcb.com/capabilities/pcb-capabilities"
+      },
+      {
+        "id": "1397681910603317258",
+        "author": "wolington",
+        "timestamp": "2025-07-23T16:48:55.162-04:00",
+        "content": "That's worth a look through - you can set your board parameters in the \"Board Setup\" window."
+      },
+      {
+        "id": "1397682023149080710",
+        "author": "sardify",
+        "timestamp": "2025-07-23T16:49:21.995-04:00",
+        "content": "Oh this is really helpful I was just randomly tracing till now",
+        "reference": {
+          "messageId": "1397681836397957150",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1397682048877068480",
+        "author": "sardify",
+        "timestamp": "2025-07-23T16:49:28.129-04:00",
+        "content": "Okay let me check",
+        "reference": {
+          "messageId": "1397681910603317258",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1401632727182348338",
+        "author": "cnf",
+        "timestamp": "2025-08-03T14:28:03.237-04:00",
+        "content": "also, the EZsockets expose spi, so we are going to see what we can do there"
+      },
+      {
+        "id": "1401632771851550893",
+        "author": "cnf",
+        "timestamp": "2025-08-03T14:28:13.887-04:00",
+        "content": "again, it's a \"lets see if we can\" 😛"
+      },
+      {
+        "id": "1401632803480670250",
+        "author": "fisheiyy",
+        "timestamp": "2025-08-03T14:28:21.428-04:00",
+        "content": "Use the esp to read the inputs and have it drive the DRV based on what it reads so you have proper control/module for the DRV",
+        "reference": {
+          "messageId": "1401632499120996463",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1401632853166526595",
+        "author": "cnf",
+        "timestamp": "2025-08-03T14:28:33.274-04:00",
+        "content": "yeah, that's the idea",
+        "reference": {
+          "messageId": "1401632803480670250",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1401632898854949059",
+        "author": "cnf",
+        "timestamp": "2025-08-03T14:28:44.167-04:00",
+        "content": "other idea was read a fan PWM, and control it like a fan"
+      },
+      {
+        "id": "1401632916739592214",
+        "author": "fisheiyy",
+        "timestamp": "2025-08-03T14:28:48.431-04:00",
+        "content": "The esp will have to act like a slave and be the middleman",
+        "reference": {
+          "messageId": "1401632727182348338",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1401632973727465532",
+        "author": "cnf",
+        "timestamp": "2025-08-03T14:29:02.018-04:00",
+        "content": "yes, indeed, esp as an spi slave",
+        "reference": {
+          "messageId": "1401632916739592214",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1401633002781413426",
+        "author": "fisheiyy",
+        "timestamp": "2025-08-03T14:29:08.945-04:00",
+        "content": "Not sure what klipper will expect depending on how your config will be set"
+      },
+      {
+        "id": "1401633170151051356",
+        "author": "cnf",
+        "timestamp": "2025-08-03T14:29:48.849-04:00",
+        "content": "yeah, neither am I yet 😛"
+      },
+      {
+        "id": "1401634318152892607",
+        "author": "fisheiyy",
+        "timestamp": "2025-08-03T14:34:22.554-04:00",
+        "content": "Im not sure what everyone uses, I don't use a CPAP but I'm sure the people who do could tell you",
+        "reference": {
+          "messageId": "1401632616846856383",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1401634929489608705",
+        "author": "cnf",
+        "timestamp": "2025-08-03T14:36:48.308-04:00",
+        "content": "far as i can tell, mostly not actual medical cpap blowers, and drivers that just turn on/off from a pin",
+        "reference": {
+          "messageId": "1401634318152892607",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1401635023198617733",
+        "author": "cnf",
+        "timestamp": "2025-08-03T14:37:10.65-04:00",
+        "content": "we have a few old CPAP medical devices here that are out of service, but have good blowers"
+      },
+      {
+        "id": "1401635964660613131",
+        "author": "cnf",
+        "timestamp": "2025-08-03T14:40:55.112-04:00",
+        "content": "ie, official ones of https://nl.aliexpress.com/item/1005006851591062.html"
+      }
+    ],
+    [
+      {
+        "id": "1408809972028014824",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-23T09:47:51.755-04:00",
+        "content": "Is the trace pcb correct?"
+      },
+      {
+        "id": "1408810058321756232",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-23T09:48:12.329-04:00",
+        "content": "if someone can give me a trace pcb footprint it'd be great"
+      },
+      {
+        "id": "1408813815830675486",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:03:08.189-04:00",
+        "content": "well, it doesn't really *look* right, but no way to be sure without dimensions",
+        "reference": {
+          "messageId": "1408809972028014824",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1408813939906711622",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-23T10:03:37.771-04:00",
+        "content": "ikr",
+        "reference": {
+          "messageId": "1408813815830675486",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1408815239390298195",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:08:47.592-04:00",
+        "content": "[well, the specification does have dimensions, but not really anything specifically on making the usb bit part of the pcb](https://www.usb.org/sites/default/files/CCWG_A_Plug_Form_Factor_Guideline_Revision_1.0_.pdf)",
+        "reference": {
+          "messageId": "1408813939906711622",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1408815304385237134",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:09:03.088-04:00",
+        "content": "wait, shouldn't it be in #off-topic"
+      },
+      {
+        "id": "1408815308151590962",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-23T10:09:03.986-04:00",
+        "content": "Do u have any footprints"
+      },
+      {
+        "id": "1408815378552983724",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-23T10:09:20.771-04:00",
+        "content": "Its not off topic I am making a PCB"
+      },
+      {
+        "id": "1408815560455749724",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:10:04.14-04:00",
+        "content": "yeah, but this channel is for stuff specifically about the program",
+        "reference": {
+          "messageId": "1408815378552983724",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1408815599760441485",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:10:13.511-04:00",
+        "content": "and not really designing stuff in it"
+      },
+      {
+        "id": "1408815774021324880",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-23T10:10:55.058-04:00",
+        "content": "which program",
+        "reference": {
+          "messageId": "1408815560455749724",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1408815794149916682",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:10:59.857-04:00",
+        "content": "kicad",
+        "reference": {
+          "messageId": "1408815774021324880",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1408815828966838324",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-23T10:11:08.158-04:00",
+        "content": "im using kicad",
+        "reference": {
+          "messageId": "1408815794149916682",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1408815882502799531",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:11:20.922-04:00",
+        "content": "yes, but the question is kinda about pcbs in general",
+        "reference": {
+          "messageId": "1408815828966838324",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1408815893433028810",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:11:23.528-04:00",
+        "content": "not the program"
+      },
+      {
+        "id": "1408825658997477417",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:50:11.82-04:00",
+        "content": "dammit",
+        "reference": {
+          "messageId": "1408825594958839890",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1408825680925298833",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:50:17.048-04:00",
+        "content": "guess i misremembered"
+      },
+      {
+        "id": "1408825735480868875",
+        "author": "mnem_94475",
+        "timestamp": "2025-08-23T10:50:30.055-04:00",
+        "content": "@Hasnat4763 guess you were actually right, lol"
+      },
+      {
+        "id": "1408913660352532521",
+        "author": "vipqualitypost",
+        "timestamp": "2025-08-23T16:39:52.978-04:00",
+        "content": "I had a library for exactly this purpose but I’d need to go dig it up. I think it was from an open source hardware key project.",
+        "reference": {
+          "messageId": "1408809972028014824",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1409004821192769556",
+        "author": "analogy",
+        "timestamp": "2025-08-23T22:42:07.416-04:00",
+        "content": "I would definitely take a second look at the thickness of the trace coming off the VBus pin - that's a current-carrying trace",
+        "reference": {
+          "messageId": "1408809972028014824",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1409035292534640691",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-24T00:43:12.35-04:00",
+        "content": "It is not more than 500mA ig",
+        "reference": {
+          "messageId": "1409004821192769556",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1409036094854660097",
+        "author": "fisheiyy",
+        "timestamp": "2025-08-24T00:46:23.638-04:00",
+        "content": "still a 0.15 or 0.2mm trace is not enough for that imo",
+        "reference": {
+          "messageId": "1409035292534640691",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1409036214962622464",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-24T00:46:52.274-04:00",
+        "content": "I've been using that width always",
+        "reference": {
+          "messageId": "1409036094854660097",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1409036219962101760",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-24T00:46:53.466-04:00",
+        "content": "lol"
+      },
+      {
+        "id": "1409036308202000435",
+        "author": "fisheiyy",
+        "timestamp": "2025-08-24T00:47:14.504-04:00",
+        "content": "you should increase it to at least 0.35mm"
+      },
+      {
+        "id": "1409037617105731694",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-24T00:52:26.571-04:00",
+        "content": "ok"
+      },
+      {
+        "id": "1409039932542160918",
+        "author": "analogy",
+        "timestamp": "2025-08-24T01:01:38.614-04:00",
+        "content": "Wider traces are also better for manufacturing yield - if your PCB has generous tolerances you'll generally find that you end up with a few extra boards in the package when it shows up. These prototype manufacturers make more boards than you order in case a few come out duds, then they just give you all of the ones that pass inspection cause otherwise they're just gonna throw em away. So if your tolerances are generous, you get more bonus boards."
+      },
+      {
+        "id": "1409040355772334190",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-24T01:03:19.52-04:00",
+        "content": "Fr?"
+      },
+      {
+        "id": "1409040387640655974",
+        "author": "hasnat4763",
+        "timestamp": "2025-08-24T01:03:27.118-04:00",
+        "content": "Like I already get 5  board"
+      }
+    ],
+    [
+      {
+        "id": "1415820514290696305",
+        "author": "nicoya",
+        "timestamp": "2025-09-11T18:05:15.28-04:00",
+        "content": "You can probably get away with a switching regulator, it's just best to place the switching loop as far away from potentially sensitive components as possible"
+      },
+      {
+        "id": "1415820969963946115",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-11T18:07:03.921-04:00",
+        "content": "its not tthat difficult tbh",
+        "reference": {
+          "messageId": "1415820800573051003",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1415821688154886296",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-11T18:09:55.151-04:00",
+        "content": "I will 😜",
+        "reference": {
+          "messageId": "1415821179087753248",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1415821791301210112",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-11T18:10:19.743-04:00",
+        "content": "yo nico how is work?",
+        "reference": {
+          "messageId": "1415820514290696305",
+          "channelId": "813247702732636222",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1415822100576338071",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-11T18:11:33.48-04:00",
+        "content": "(I odered the other pcb so Im  happy rn) 🙂"
+      }
+    ]
+  ]
+}

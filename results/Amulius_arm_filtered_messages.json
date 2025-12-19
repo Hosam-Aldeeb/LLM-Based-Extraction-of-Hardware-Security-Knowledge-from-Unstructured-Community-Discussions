@@ -1,0 +1,2240 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/Amulius_arm_Jan2025_export.json",
+  "totalMessages": 13091,
+  "totalChunks": 13359,
+  "relevantMessages": 223,
+  "results": [
+    {
+      "text": "@Gotbread here my converted code... xD\nhttps://hastebin.com/share/otihokevag.rust",
+      "metadata": {
+        "id": "1324701336197136415",
+        "author": "rennsis",
+        "timestamp": "2025-01-03T06:30:10.31-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5555358149649013
+    },
+    {
+      "text": "```\n{\n    // Use IntelliSense to learn about possible attributes.\n    // Hover to view descriptions of existing attributes.\n    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387\n    \"version\": \"0.2.0\",\n    \"configurations\": [\n        {\n            \"name\": \"Blüstim debug\",\n            \"type\": \"cortex-debug\",\n            \"request\": \"launch\",\n            \"servertype\": \"jlink\",\n            \"serverpath\": \"/Applications/SEGGER/JLink_V788d/JLinkGDBServerCLExe\",\n            ",
+      "metadata": {
+        "id": "1327222027869884446",
+        "author": "onwrikbaar",
+        "timestamp": "2025-01-10T05:26:30.037-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5949333483164229
+    },
+    {
+      "text": ": \"swd\",\n            \"serialNumber\": \"\", // Add the J-Link serial number if you have multiple probes\n            \"svdFile\": \"${workspaceFolder}/debug.svd\",\n            \"armToolchainPath\": \"/usr/bin\",\n            \"swoConfig\": {\n                \"enabled\": true,\n                \"cpuFrequency\": 180000000,\n                \"swoFrequency\": 2000000,\n                \"source\": \"probe\",\n                \"decoders\": [\n                    {\n                        \"type\": \"console\",\n                        \"l",
+      "metadata": {
+        "id": "1327242065876357121",
+        "author": "undefined2001",
+        "timestamp": "2025-01-10T06:46:07.47-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6126472048159475
+    },
+    {
+      "text": "it's a secure boot core, it only runs signed firmware from ST",
+      "metadata": {
+        "id": "1327387765607890985",
+        "author": "hard.fault",
+        "timestamp": "2025-01-10T16:25:04.993-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5653979437670185
+    },
+    {
+      "text": "the secondary core on the CC3220SF is in charge of the wireless stack and the security mechanisms",
+      "metadata": {
+        "id": "1327722150139793451",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-01-11T14:33:48.478-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.58349127426658
+    },
+    {
+      "text": "/rkbin/bin/rv11/rv1103b_usbplug_v1.00.bin\n\nThe following message is printed:\n>   Opening loader failed, exiting download boot!\n\nIt happens because uiTag is different from what rkdeveloptool is expected:\n> \n>         PSTRUCT_RKBOOT_HEAD pBootHead;\n>         pBootHead = (PSTRUCT_RKBOOT_HEAD)(m_BootData);\n>         if (( pBootHead->uiTag!=0x544F4F42)&&(pBootHead->uiTag!=0x2052444C))\n>         {\n>             bCheck=false;\n>             return;\n>         }\nAnd first bytes of rv1103b_usbplug_v1.00.bi",
+      "metadata": {
+        "id": "1328070319394787348",
+        "author": "inisider",
+        "timestamp": "2025-01-12T13:37:18.497-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5778679593243309
+    },
+    {
+      "text": "The debug USB port is not usable by the application, no. It's just for JTAG and virtual com port purposes",
+      "metadata": {
+        "id": "1328519931511312477",
+        "author": "hard.fault",
+        "timestamp": "2025-01-13T19:23:54.379-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5786886597081408
+    },
+    {
+      "text": "Interestingly, when it overflows, it sets _every_ IC bit ?\n```\n\nINFO  ---- capture value: 62928\nINFO  Status flags 0\nINFO  ---- TIM1_CC interrupt: CC1IF\nINFO  ---- capture value: 64928\nINFO  Status flags 0\nINFO  ---- TIM1_CC interrupt: CC2IF\nINFO  ---- TIM1_CC interrupt: CC1IF\nINFO  ---- TIM1_CC interrupt: UIF\nINFO  ---- capture value: 1392\nINFO  Status flags 11101\nINFO  ---- TIM1_CC interrupt: CC1IF\nINFO  ---- capture value: 3393\nINFO  Status flags 0\nINFO  ---- TIM1_CC interrupt: CC1IF\nINFO  --",
+      "metadata": {
+        "id": "1329835413929463839",
+        "author": "zweieuro",
+        "timestamp": "2025-01-17T10:31:09.828-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5509765788396103
+    },
+    {
+      "text": "@Gotbread @Baron \nSo I have bricked my third F411 board. You can literally destroy the chip by setting the PLL wrong",
+      "metadata": {
+        "id": "1329966045191999599",
+        "author": "cc8573",
+        "timestamp": "2025-01-17T19:10:14.748-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5567931376151867
+    },
+    {
+      "text": "You should be able to recover it by putting it into the bootloader. That'll keep it from loading any botched firmware and allow you to erase the chip",
+      "metadata": {
+        "id": "1329973173457784852",
+        "author": "hard.fault",
+        "timestamp": "2025-01-17T19:38:34.259-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.575486660858318
+    },
+    {
+      "text": "You can usually program it through USB if the chip has a USB peripheral, or usually it enables a UART, SPI, and I2C that lets you program it",
+      "metadata": {
+        "id": "1329981527031025726",
+        "author": "hard.fault",
+        "timestamp": "2025-01-17T20:11:45.906-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6028114070055327
+    },
+    {
+      "text": "I also just read about this -> \n```\n1. The Debug Interface (SWD/JTAG) is Affected by Clock Source Changes:\n\nWhen you change the system clock source to PLL, it can also affect peripheral clocks, including the ones used by the SWD (Serial Wire Debug) or JTAG interface. In some cases, if the clock configuration isn't done properly or if the PLL isn't stable yet, it could cause the debug interface to malfunction or become non-functional, making it seem like the MCU is unresponsive.\n```",
+      "metadata": {
+        "id": "1331007428682059808",
+        "author": "cc8573",
+        "timestamp": "2025-01-20T16:08:19.92-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5827819594128907
+    },
+    {
+      "text": "will use hardware",
+      "metadata": {
+        "id": "1331023624659927101",
+        "author": "closed1",
+        "timestamp": "2025-01-20T17:12:41.342-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5720955034082825
+    },
+    {
+      "text": "if you wanna do hardware I believe you on the right track",
+      "metadata": {
+        "id": "1331371176085422090",
+        "author": "pllsz",
+        "timestamp": "2025-01-21T16:13:44.059-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5656132599044107
+    },
+    {
+      "text": "3 things:\n- check that your printf is redirected using the UART. google \"printf uart redirection stm32\" for details on how to do that\n- measure the TX traces with your oscilloscope to verify that the data actually shows up on the wire. you also need to configure your gpio pins properly for that\n- verify that the comport works, you can run an independent terminal tool, and short RX with TX on the board to create a loopback: everything you type should be eachoed to you",
+      "metadata": {
+        "id": "1333209096786284705",
+        "author": "gotbread",
+        "timestamp": "2025-01-26T17:56:58.501-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5518931828978468
+    },
+    {
+      "text": "My guess would be the i2c init sequence.\nNot saying it's wrong, but my gut feeling, without running the code myself, points at the init. That's usually the most fragile part",
+      "metadata": {
+        "id": "1334601316244127744",
+        "author": "gotbread",
+        "timestamp": "2025-01-30T14:09:09.486-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5712160808225651
+    },
+    {
+      "text": "1) Take any STM32 board (Blue pill/Blackpill/nucleo). Set up a 100Hz timer (up counter) and see it on oscilloscope by outputing the value to DAC (If you have a scope)\n2) When an overflow happens, read in data from any analog GPIO and transfer it by DMA to RAM\n3) When the DMA transfer is complete, trigger an interrupt that will send the saved value via any available UART (You can choose the baud rate)\n4) See the value transmitted by uart by displaying it in a serial terminal (You can connect from",
+      "metadata": {
+        "id": "1335589726219927723",
+        "author": "haadinho10.",
+        "timestamp": "2025-02-02T07:36:44.788-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.557133930442947
+    },
+    {
+      "text": "and it uses device tree which is also related to E-Linux",
+      "metadata": {
+        "id": "1336004464083075123",
+        "author": "undefined2001",
+        "timestamp": "2025-02-03T11:04:46-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5535218921203181
+    },
+    {
+      "text": "A proper nucleo will probably run you less or as much as the non-nucleo board + fake ST link + UART to usb bridge :mmLol:",
+      "metadata": {
+        "id": "1336025530704859197",
+        "author": "rustedskull",
+        "timestamp": "2025-02-03T12:28:28.674-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5525865033580164
+    },
+    {
+      "text": "https://www.st.com/en/evaluation-tools/nucleo-f401re.html\n\nThe ST link on boards shaped like this or bigger can be used to program other boards. And it can function as a USB to serial converter.",
+      "metadata": {
+        "id": "1336026471453425684",
+        "author": "rustedskull",
+        "timestamp": "2025-02-03T12:32:12.966-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5547719066433561
+    },
+    {
+      "text": "I am trying to figure out why a wallet tracker I have isn't working. It's running a ARM Cortex M0 CPU. The chip is ST17H65 manufactured by LENZE.\nIs this the channel I could get some pointers on for it? I am quite new to the embedded scene.",
+      "metadata": {
+        "id": "1336491825124606002",
+        "author": "masterrific",
+        "timestamp": "2025-02-04T19:21:21.927-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5601367372115982
+    },
+    {
+      "text": "thanks. unfornutely this is not a option. it uses the i2c protocol.",
+      "metadata": {
+        "id": "1337216762592235625",
+        "author": "goiabinha5733",
+        "timestamp": "2025-02-06T19:22:00.488-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5571732359882674
+    },
+    {
+      "text": "Anyone know why the secure boot library for many 64-bit Mediatek devices are running on an AArch32 execution state?\n\nIs it common for bootloader level stuff to do this?",
+      "metadata": {
+        "id": "1338104960298258442",
+        "author": "xhivo97",
+        "timestamp": "2025-02-09T06:11:23.323-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.589957422795579
+    },
+    {
+      "text": "(If you have the hardware ofc)",
+      "metadata": {
+        "id": "1338318476544180288",
+        "author": "cliffordheath",
+        "timestamp": "2025-02-09T20:19:49.563-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5697714949128216
+    },
+    {
+      "text": "anyways this is what error  message by openocd\n`openocd -f openocd.cfg -c \"program firmware.bin verify reset exit\"\nOpen On-Chip Debugger 0.12.0\nLicensed under GNU GPL v2\nFor bug reports, read\n    http://openocd.org/doc/doxygen/bugs.html\nInfo : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD\nInfo : clock speed 2000 kHz\nInfo : STLINK V2J33M25 (API v2) VID:PID 0483:374B\nInfo : Target voltage: 3.247800\nInfo : [stm32f4x.cpu] Cortex-M4 r0p",
+      "metadata": {
+        "id": "1340156595581227080",
+        "author": "baggybr0",
+        "timestamp": "2025-02-14T22:03:51.292-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.587946519895594
+    },
+    {
+      "text": "a Cortex-M microcontroller will start executing code from whatever address it reads from address 4",
+      "metadata": {
+        "id": "1341606523037810788",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-02-18T22:05:20.936-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5744372634712714
+    },
+    {
+      "text": "It really depends on which one, if you use \"weak\" ones Https might be too intense. HTTP is a very bad idea as the insecurity makes your entire chip be at risk.",
+      "metadata": {
+        "id": "1341792498795679745",
+        "author": "zweieuro",
+        "timestamp": "2025-02-19T10:24:21.012-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5589827301703563
+    },
+    {
+      "text": "and then one level lower is the bootloader, which is by all means \"untouchable\" unless outside software tells it to unlock",
+      "metadata": {
+        "id": "1341796121244209265",
+        "author": "zweieuro",
+        "timestamp": "2025-02-19T10:38:44.671-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5673577616953405
+    },
+    {
+      "text": "remote bricks are easy to recover as loong as they are accessible by your flashing hardware",
+      "metadata": {
+        "id": "1341798456347332702",
+        "author": "zweieuro",
+        "timestamp": "2025-02-19T10:48:01.403-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5546182739170149
+    },
+    {
+      "text": "yep. \nBut remote bricks are practically lethal as well. Imagine your ... smart coffee machine makes a firmware update, doesn't do this correctly or the power fails while only running 1 partition aaaand BAM the thing is effectively dead",
+      "metadata": {
+        "id": "1341798612736409622",
+        "author": "zweieuro",
+        "timestamp": "2025-02-19T10:48:38.689-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5551875983862088
+    },
+    {
+      "text": "All this topic interests me; I'm looking for something that connects cybersecurity and embedded systems. Do you know how I can start improving in that?",
+      "metadata": {
+        "id": "1341801510660735006",
+        "author": "Deleted User",
+        "timestamp": "2025-02-19T11:00:09.608-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.606218176529628
+    },
+    {
+      "text": "Especially embedded and IOT security is a huge and very interesting field. But i wouldn't know where to start without university.",
+      "metadata": {
+        "id": "1341801746946588744",
+        "author": "zweieuro",
+        "timestamp": "2025-02-19T11:01:05.943-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5637375659435333
+    },
+    {
+      "text": "`INFO  TIM3 SR: 0b1011111 ccer: 16969` it keeps saying this and IDFK why.\nYeah the trigger is set to reset so thats the flags, everythnig else is fine.\nIts not overflowing as far as i can tell.",
+      "metadata": {
+        "id": "1341801959136563244",
+        "author": "zweieuro",
+        "timestamp": "2025-02-19T11:01:56.533-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5537278686815814
+    },
+    {
+      "text": "https://www.jotrin.de/userfiles/images/techs/ATMEGA328P%20Microcontroller.png this was just from google",
+      "metadata": {
+        "id": "1342220638227533966",
+        "author": "gotbread",
+        "timestamp": "2025-02-20T14:45:37.407-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5684665173136976
+    },
+    {
+      "text": "https://github.com/Zrocket/Teensy-Rust",
+      "metadata": {
+        "id": "1343830132703629336",
+        "author": "_vaporwaveon",
+        "timestamp": "2025-02-25T01:21:10.793-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5521679768451058
+    },
+    {
+      "text": "[I2C read] register: 0x20\n[I2C status]: 0xB0\n[I2C READ] Sent byte 0x11 from register 0x20\n[I2C status]: 0xD0\n[I2C ERROR] Transmit abort detected",
+      "metadata": {
+        "id": "1343917772656218122",
+        "author": "cvbnm90i",
+        "timestamp": "2025-02-25T07:09:25.786-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5609040904376437
+    },
+    {
+      "text": "The debug interfaces uses either SWD, or JTAG which its own protocol that knows how to \"Talk\" to flash",
+      "metadata": {
+        "id": "1344049175024898059",
+        "author": "pllsz",
+        "timestamp": "2025-02-25T15:51:34.552-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5739515759274634
+    },
+    {
+      "text": "Maybe this can help?\nhttps://stackoverflow.com/questions/74027792/how-does-jtag-flash-memory-programming-work",
+      "metadata": {
+        "id": "1344051922964971562",
+        "author": "pllsz",
+        "timestamp": "2025-02-25T16:02:29.712-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5632335749731757
+    },
+    {
+      "text": "```sh\n➜ arm-none-eabi-objdump -h firmware.elf       \n\nfirmware.elf:     file format elf32-littlearm\n\nSections:\nIdx Name          Size      VMA       LMA       File off  Algn\n  0 .vectors      000001b0  08000000  08000000  00001000  2**2\n                  CONTENTS, ALLOC, LOAD, READONLY, DATA\n  1 .text         0000025c  080001b0  080001b0  000011b0  2**2\n                  CONTENTS, ALLOC, LOAD, READONLY, CODE\n  2 .ARM.exidx    00000008  0800040c  0800040c  0000140c  2**2\n                  CONTENT",
+      "metadata": {
+        "id": "1345867246492323850",
+        "author": "allyedge",
+        "timestamp": "2025-03-02T16:15:56.568-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.550346766096142
+    },
+    {
+      "text": "```\n> arm-none-eabi-nm -n firmware.elf\n08000000 R tab\n080001b0 T main\n08000218 T _reset\n08000264 T memset\n08000308 T memcpy\n08000444 A _sidata\n24000000 R _ebss\n24000000 R _edata\n24000000 R _end\n24000000 R _sbss\n24000000 R _sdata\n24020000 R _estack\n```",
+      "metadata": {
+        "id": "1345877359911370764",
+        "author": "allyedge",
+        "timestamp": "2025-03-02T16:56:07.795-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5732431780891925
+    },
+    {
+      "text": "```\n08000000 R tab\n080001b0 T main\n08000218 T _reset\n08000264 T memset\n08000308 T memcpy\n08000444 A _sidata\n20000000 R _ebss\n20000000 R _end\n20000000 R _sbss\n24000000 R _edata\n24000000 R _sdata\n24050000 R _estack\n```\n\ngot this by using ram linker from a previously cubeide generated project",
+      "metadata": {
+        "id": "1345881073950916659",
+        "author": "allyedge",
+        "timestamp": "2025-03-02T17:10:53.291-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5576506395019188
+    },
+    {
+      "text": "e.g. for their Clang compiler at https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded: ```If your project has long-term maintenance requirements or functional safety requirements (such as EN 50128, IEC 61508, IEC 62304, and ISO 26262), Arm strongly recommends that you consider a LTS and qualified version of Arm Compiler for Embedded FuSa instead.```",
+      "metadata": {
+        "id": "1346614824791965696",
+        "author": "beer_baron",
+        "timestamp": "2025-03-04T17:46:33.124-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5822957852662305
+    },
+    {
+      "text": "small? isnt their jtag connector size huge?",
+      "metadata": {
+        "id": "1347639912752615424",
+        "author": "Deleted User",
+        "timestamp": "2025-03-07T13:39:53.139-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5597826892251972
+    },
+    {
+      "text": "IIRC only the STLink/v3 is picky about what chips you connect to. I suppose some locked down dev board JLink OB firmware might care too, but most of the rest are happy to serve as a dumb channel to bit ang SWD or JTAG to anything you want",
+      "metadata": {
+        "id": "1347643929218125866",
+        "author": "zecritic",
+        "timestamp": "2025-03-07T13:55:50.739-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5909592062997053
+    },
+    {
+      "text": "its weird tho cuz the ic manufacturer recommended a segger jlink for programming the chip",
+      "metadata": {
+        "id": "1347644395402559538",
+        "author": "Deleted User",
+        "timestamp": "2025-03-07T13:57:41.886-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.589488621071435
+    },
+    {
+      "text": "will i (actually my boss but u get the idea) get into trouble if i try to use a segger jlink edu to prototype and program commercial products? my boss not gunna get me a normal segger or maybe i can try to find it second hand hmmmmm (the ic im trying to program requires jlink or its clones to be programmed according to the manufacturer lol idk)",
+      "metadata": {
+        "id": "1347661226821554267",
+        "author": "Deleted User",
+        "timestamp": "2025-03-07T15:04:34.809-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5957720518657433
+    },
+    {
+      "text": "its goverment has pirated windows XD",
+      "metadata": {
+        "id": "1347663730221256755",
+        "author": "Deleted User",
+        "timestamp": "2025-03-07T15:14:31.666-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5598534579327467
+    },
+    {
+      "text": "frommy research there are hacks but st software is not guaranteed to work",
+      "metadata": {
+        "id": "1347672545490501633",
+        "author": "Deleted User",
+        "timestamp": "2025-03-07T15:49:33.39-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6103638717776299
+    },
+    {
+      "text": "thing is, most of my debugging tasks are done with the scope. in most cases, i cant just break in with a breakpoint and look at registers, that would stop the cpu and blow up my mosfet. so all debugging needs to be realtime safe",
+      "metadata": {
+        "id": "1347673396351336509",
+        "author": "gotbread",
+        "timestamp": "2025-03-07T15:52:56.251-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5667635475700075
+    },
+    {
+      "text": "that's true for rc_w1, rc_w0, toggle, and all these kind of idiotic bit accesses",
+      "metadata": {
+        "id": "1347682991102754919",
+        "author": "artessbm",
+        "timestamp": "2025-03-07T16:31:03.818-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5687045307866375
+    },
+    {
+      "text": "Third party jtag debugger",
+      "metadata": {
+        "id": "1347913285390962739",
+        "author": "hard.fault",
+        "timestamp": "2025-03-08T07:46:10.255-05:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6381059482804222
+    },
+    {
+      "text": " with the -O0 flag. I've added many other edits as well, too many to list off...\n\nMy setup\nHost machine: Raspberry Pi 5\nMCU: Raspberry Pi Pico H (debug header/non-wifi)\nDebug probe: Raspberry Pi Debug Probe (not to be confused with Pico Probe)\nDebugger: Probe-RS\nIDE: VS Code",
+      "metadata": {
+        "id": "1348827690085515386",
+        "author": "coffeecup1",
+        "timestamp": "2025-03-10T21:19:41.323-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5628808803259758
+    },
+    {
+      "text": "you can use SWD to tap into a JTAG scan chain",
+      "metadata": {
+        "id": "1349146119665619068",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-03-11T18:25:00.851-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5941087473802396
+    },
+    {
+      "text": "you can use a JTAG scan chain to talk to an embedded flash controller",
+      "metadata": {
+        "id": "1349146203689848832",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-03-11T18:25:20.884-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.587252132841195
+    },
+    {
+      "text": "similarly, you can just tap into a JTAG scan chain for the same effect as above without the need for SWD",
+      "metadata": {
+        "id": "1349146376243511368",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-03-11T18:26:02.024-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.553016732396483
+    },
+    {
+      "text": "all android knows how to do is eat hot chip, i2c read, pwm out, and sometimes i2c write",
+      "metadata": {
+        "id": "1351235415268393122",
+        "author": "mr_arson",
+        "timestamp": "2025-03-17T12:47:07.74-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5553095799678315
+    },
+    {
+      "text": "that is likely overkill. the chip itself has good methods to handle that:\nhttps://www.st.com/resource/en/application_note/dm00771441-stm32h745755-and-stm32h747757-lines-interprocessor-communications-stmicroelectronics.pdf",
+      "metadata": {
+        "id": "1351864715730616421",
+        "author": "gotbread",
+        "timestamp": "2025-03-19T06:27:44.662-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5523875267522994
+    },
+    {
+      "text": "```\nvoid go2app(){\n    uint32_t  JumpAddress;\n    pFunction Jump_To_Application;\n    printf(\"\\n\\rChecking firmware at 0x8004000 address\");\n    fflush(stdout);\n     *SCB_VTOR = FLASH_APP_ADDR;\n    if(((*(uint32_t*) FLASH_APP_ADDR)& 0x2FFE0000)== 0x20000000){\n    printf(\"\\n\\r✓ Code detected, jumping to first firmware\");\n    fflush(stdout);\n    HAL_Delay(100);\n    JumpAddress = *(uint32_t*)(FLASH_APP_ADDR+4);\n    Jump_To_Application = (pFunction)JumpAddress;\n    HAL_RCC_DeInit();\n    HAL_DeInit();\n",
+      "metadata": {
+        "id": "1353037520883024014",
+        "author": "vilgaxelninopolla",
+        "timestamp": "2025-03-22T12:08:03.2-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5942322580823397
+    },
+    {
+      "text": "https://developer.arm.com/documentation/dui0552/a/cortex-m3-peripherals/system-control-block/vector-table-offset-register",
+      "metadata": {
+        "id": "1353038552123838515",
+        "author": "hard.fault",
+        "timestamp": "2025-03-22T12:12:09.067-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5753471064743033
+    },
+    {
+      "text": "```void SystemClock_Config(void)\n{\n  RCC_OscInitTypeDef RCC_OscInitStruct = {0};\n  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};\n\n  /** Configure the main internal regulator output voltage\n  */\n  HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);\n\n  /** Configure LSE Drive Capability\n  */\n  HAL_PWR_EnableBkUpAccess();\n  __HAL_RCC_LSEDRIVE_CONFIG(RCC_LSEDRIVE_LOW);\n\n  /** Initializes the RCC Oscillators according to the specified parameters\n  * in the RCC_OscInitTypeDef structure.\n  */\n",
+      "metadata": {
+        "id": "1354506568355549324",
+        "author": "kinglicorice",
+        "timestamp": "2025-03-26T13:25:31.411-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5503788727910178
+    },
+    {
+      "text": "So, I have a TI chip (IWR6843) that I want to be able to debug in CCStudio via JTAG. All I have is a generic FT232H-based JTAG adapter ( [this one](https://pine64.com/product/usb-jtag-adapter/) ), not one of TI's fancy $100+ ones. Got it all soldered and wired up, but I'm not quite sure where to go from here. Openocd doesn't have a config for this chip, and I'd like to see if this is at all possible before I spend the time figuring out how to create one. Am I on the right path or wasting my time",
+      "metadata": {
+        "id": "1355187133685563432",
+        "author": "zman350x",
+        "timestamp": "2025-03-28T10:29:50.83-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5894832512361434
+    },
+    {
+      "text": "openocd has info on how to scan the JTAG chain here https://openocd.org/doc/html/TAP-Declaration.html",
+      "metadata": {
+        "id": "1355248415935828059",
+        "author": "multiplemonomials",
+        "timestamp": "2025-03-28T14:33:21.657-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5708445266732562
+    },
+    {
+      "text": "If CCS Theia supports the chip maybe they've got the option for generic jtag debuggers",
+      "metadata": {
+        "id": "1355263591007129921",
+        "author": "cooperg2001",
+        "timestamp": "2025-03-28T15:33:39.676-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6327856885250003
+    },
+    {
+      "text": "ive been given this statement in a uni hackathon",
+      "metadata": {
+        "id": "1355430136513695755",
+        "author": "haadinho10.",
+        "timestamp": "2025-03-29T02:35:27.219-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5732536638208755
+    },
+    {
+      "text": "n fact, it did give me a compilation error, but I got fooled into using this address 0xE000ED08 on other microcontrollers, I never noticed the problem until later",
+      "metadata": {
+        "id": "1356324561150283777",
+        "author": "vilgaxelninopolla",
+        "timestamp": "2025-03-31T13:49:34.67-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5626288394681623
+    },
+    {
+      "text": "Are SPI LCD displays generally testable with jumper wires?",
+      "metadata": {
+        "id": "1356326026027864166",
+        "author": "beyerrrrrr",
+        "timestamp": "2025-03-31T13:55:23.924-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5547344774790108
+    },
+    {
+      "text": "Cool, now can you identify which interrupts the SPI configuration enables?",
+      "metadata": {
+        "id": "1356335899998294139",
+        "author": "xhivo97",
+        "timestamp": "2025-03-31T14:34:38.062-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5616102466313964
+    },
+    {
+      "text": "And ARM provides their commercial version of the compiler with clang and gcc for community edition, another proprietary SDK from a semiconductor company I had to use recently also had the same approach (claing main and gcc without full support)",
+      "metadata": {
+        "id": "1358518777460822097",
+        "author": "beer_baron",
+        "timestamp": "2025-04-06T15:08:36.605-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5641840742893383
+    },
+    {
+      "text": "I don't think I've run into an stm32 yet that actually supports a full JTAG port",
+      "metadata": {
+        "id": "1359503719074500709",
+        "author": "hard.fault",
+        "timestamp": "2025-04-09T08:22:24.985-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.576708565681924
+    },
+    {
+      "text": "What is your safety concern with allowing your debugger to use the USB port?",
+      "metadata": {
+        "id": "1359883292731506698",
+        "author": "cooperg2001",
+        "timestamp": "2025-04-10T09:30:42.397-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5546644487115455
+    },
+    {
+      "text": "No. I have USB CDC (Device role) working on F767, G0B1, G491 and H723.",
+      "metadata": {
+        "id": "1361325755031621712",
+        "author": "onwrikbaar",
+        "timestamp": "2025-04-14T09:02:32.209-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5644488036666304
+    },
+    {
+      "text": "arm/jlink related question:",
+      "metadata": {
+        "id": "1361745127063683082",
+        "author": "scottmonk",
+        "timestamp": "2025-04-15T12:48:58.293-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5507701318967246
+    },
+    {
+      "text": "on seggers page for this chip it states:\n_NXP i.MX RT1020\n\nThis article covers the NXP i.MXRT1020 series devices. As for all i.MXRT10xx devices, JTAG is not active per default. Instead SWD can be used. To activate JTAG on this target device eFuses must be set. For more information see the corresponding target reference manual. _",
+      "metadata": {
+        "id": "1361746871571316747",
+        "author": "scottmonk",
+        "timestamp": "2025-04-15T12:55:54.216-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.650327340532048
+    },
+    {
+      "text": "from my understanding the dongle can be swd or jtag",
+      "metadata": {
+        "id": "1361748525670601056",
+        "author": "scottmonk",
+        "timestamp": "2025-04-15T13:02:28.584-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6262206300403437
+    },
+    {
+      "text": "DC_DATA_HS_MAX_PACKET_SIZE / 4U];      /* Force 32-bit alignment */\n  uint8_t  CmdOpCode;\n  uint8_t  CmdLength;\n  uint8_t  *RxBuffer;\n  uint8_t  *TxBuffer;\n  uint32_t RxLength;\n  uint32_t TxLength;\n\n  __IO uint32_t TxState;\n  __IO uint32_t RxState;\n} USBD_CDC_HandleTypeDef;\n```",
+      "metadata": {
+        "id": "1362429983791906816",
+        "author": "l1zard_27",
+        "timestamp": "2025-04-17T10:10:20.861-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5597607306764223
+    },
+    {
+      "text": "several grey hairs later..... it works?\nim not actually sure what removed the \"Cortex-M7 is not supported via MC2WJTAG_TDI\" error though. I cannot replicate it anymore with either JLink probe i have.",
+      "metadata": {
+        "id": "1362549771834884357",
+        "author": "scottmonk",
+        "timestamp": "2025-04-17T18:06:20.556-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5747087088959916
+    },
+    {
+      "text": "Says you're using SWD, is it possible they just don't support JTAG on the chip you're trying to use? Different protocols",
+      "metadata": {
+        "id": "1362580372218581142",
+        "author": "hard.fault",
+        "timestamp": "2025-04-17T20:07:56.256-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6068135647402048
+    },
+    {
+      "text": "shooting from the hip but that acronym maybe means Micro Controller 2 Wire Jtag _ TDI",
+      "metadata": {
+        "id": "1362586051826417836",
+        "author": "scottmonk",
+        "timestamp": "2025-04-17T20:30:30.38-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5796924026244096
+    },
+    {
+      "text": "the issue with the MIMXRT chips seems that you actually have to burn a fuse (not reset-able?) to change the interface between SWD and JTAG. Further reading shows there is some JTag command you can send to temporarily set the port to SWD as well once its burned to be JTAG but the chips are factory fresh and so still SWD.",
+      "metadata": {
+        "id": "1362586932449771630",
+        "author": "scottmonk",
+        "timestamp": "2025-04-17T20:34:00.337-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5881870204625814
+    },
+    {
+      "text": "maybe examine some status registers or somthing liek that. i dont have any experience with that chip but",
+      "metadata": {
+        "id": "1362889998717685962",
+        "author": "scottmonk",
+        "timestamp": "2025-04-18T16:38:16.966-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5540505921146182
+    },
+    {
+      "text": "Hi there, new to the community 🙂 I've found a Lexibook from the 2010s wich has an ARM Processor (compatible with linux) and a Windows CE in it. I want to hack the thing to install an embedded linux (like with buildroot or something). There is one problem. It's a locked up proprietary computer and i probably need to reverse engineer some things. I found the TX/RX serial port but no UART and it seems to have a security chip if i'm not mistaken ? (on the blue card next to the ethernet port, the li",
+      "metadata": {
+        "id": "1363092217027367082",
+        "author": "muskra",
+        "timestamp": "2025-04-19T06:01:49.568-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5897082754576963
+    },
+    {
+      "text": "ttle square chip)\n\nAs i am also a totally beginner at hardware hacking, i also want to learn the process and do the things the right way. Can you walk me throught ? Like what will i need to buy to make this thing and do you think it'll be possible on such board to achieve my goals 🙂\nOne thing i also want is to dump the whole Windows CE OS to make it public for conservation (if it's not illegal of course. Note that i didn't bought the device and never accepted their user agreements). I tried to ",
+      "metadata": {
+        "id": "1363092217027367082",
+        "author": "muskra",
+        "timestamp": "2025-04-19T06:01:49.568-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5799094053965282
+    },
+    {
+      "text": "The thing has everything to be a good target to learn hacking it's having an EEPROM chip with 4Go of storage ant don't seem's to have any security. I'll take a good old usb/serial tool and hack it around whatever effort it takes because of the fun i get from it. It's really toxic from my perspective to discourage people saying that kind of rubbish. Thanks for the honesty but i'll take the hard way of learning hardware because it's my fun to hack and tinker computer things on my weekends.",
+      "metadata": {
+        "id": "1363114837411893378",
+        "author": "muskra",
+        "timestamp": "2025-04-19T07:31:42.688-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6161021387433262
+    },
+    {
+      "text": "Let people hack the things they want to hack",
+      "metadata": {
+        "id": "1363128783116308771",
+        "author": "muskra",
+        "timestamp": "2025-04-19T08:27:07.603-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.634745681817079
+    },
+    {
+      "text": "ing. So i choose this project that is something personnal. The SBC is from an old child computer from my cousins that i want to hack. I need to relearn a lot of things to pursue the hacking and fun it gives me and for that purpose i want to learn more ROM hacks and hardware stuffs. That's all. Stop pursuing me for anything else rubbish you have to give. Just go boxing if you're embittered by what people says or think and be open and supportive for the people who love technology as you are. Peace",
+      "metadata": {
+        "id": "1363442984087191652",
+        "author": "muskra",
+        "timestamp": "2025-04-20T05:15:38.952-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.564803492524571
+    },
+    {
+      "text": "It does feel like wasting time for your purposes, if it is hacking you are interested in there are security specific communities and ethical wargames around those, e.g.: https://www.wechall.net/",
+      "metadata": {
+        "id": "1363542035050795029",
+        "author": "beer_baron",
+        "timestamp": "2025-04-20T11:49:14.542-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5620518321516352
+    },
+    {
+      "text": "I understand the hacker spirit of \"I have this device, _I wonder if I can hack it_?\"",
+      "metadata": {
+        "id": "1363542679845081229",
+        "author": "xhivo97",
+        "timestamp": "2025-04-20T11:51:48.273-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6387459807161714
+    },
+    {
+      "text": "They're specifically interested in hardware hacking though",
+      "metadata": {
+        "id": "1363544753853038602",
+        "author": "xhivo97",
+        "timestamp": "2025-04-20T12:00:02.755-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6644214493077738
+    },
+    {
+      "text": "My plan for learning this one day is with mediatek Android tablets, because they're already broken and it's a good platform to try and recreate the research on your own (it's easier when you already know in detail what the vulnerabilities are)",
+      "metadata": {
+        "id": "1363544903531102459",
+        "author": "xhivo97",
+        "timestamp": "2025-04-20T12:00:38.441-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.637157566026906
+    },
+    {
+      "text": "ne is needed, maybe hardware security chips like TPMs, trust zone of the chip, device trees and how they are signed (FIT), dm-verity and avb formats...\n\nI am not sure how I would tackle this as a beginner just with a device that is a secured black box that I would need to reverse engineer, to begin with most information about the black box device itself is probably behind paywall or innacessible",
+      "metadata": {
+        "id": "1363549193314238544",
+        "author": "beer_baron",
+        "timestamp": "2025-04-20T12:17:41.205-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6203233810829135
+    },
+    {
+      "text": "That's seem really interesting tho to do this on open devices but it's a lot harder if they have a TPM with a anti tampering sequence at boot",
+      "metadata": {
+        "id": "1363586891475193858",
+        "author": "muskra",
+        "timestamp": "2025-04-20T14:47:29.147-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5601918884811905
+    },
+    {
+      "text": "There is a really interesting project, when i was on degree i hacked a little usb car plug and transformed it into a USB charging bank using a circuit i reversed on a PC battery driver. It was really hard and my professor made a lot of things back then",
+      "metadata": {
+        "id": "1363587239015223346",
+        "author": "muskra",
+        "timestamp": "2025-04-20T14:48:52.007-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5685855727083484
+    },
+    {
+      "text": "The worst case scenario I’ve come up with is that the fault was caused by the UART peripheral itself, and that will cause the processor to enter the lockup state until an MCU watchdog asserts a reset signal",
+      "metadata": {
+        "id": "1363901290295464239",
+        "author": "deltafarce",
+        "timestamp": "2025-04-21T11:36:47.667-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5888968653600998
+    },
+    {
+      "text": "namely gmock_main: https://github.com/google/googletest/blob/main/googlemock/src/gmock_main.cc",
+      "metadata": {
+        "id": "1364567809413349397",
+        "author": "beer_baron",
+        "timestamp": "2025-04-23T07:45:18.208-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5558850198598975
+    },
+    {
+      "text": "so i.e. for a UART driver you would be able to verify that your actual firmware is configuring the registers correctly. At a higher level you can make the mocking framework actually mimic the UART TX RX.\n\nReNode was built by Antmicro as a method of doing CI/CD with Embedded IoT so it has a lot of depth available",
+      "metadata": {
+        "id": "1364654978299465880",
+        "author": "cooperg2001",
+        "timestamp": "2025-04-23T13:31:40.89-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6135831652357421
+    },
+    {
+      "text": "those are M4F, they have a hardware fpu",
+      "metadata": {
+        "id": "1364697466431078450",
+        "author": "beer_baron",
+        "timestamp": "2025-04-23T16:20:30.85-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5540074440942331
+    },
+    {
+      "text": ":kek: another reason why these IDEs/code generators are to be avoided",
+      "metadata": {
+        "id": "1364702920637153382",
+        "author": "gotbread",
+        "timestamp": "2025-04-23T16:42:11.234-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5595272658973944
+    },
+    {
+      "text": "that highly depends on what you wanna do.\nembedded controllers?\nembedded linux?\npcb design?\nanalog electronics?\ndigital electronics?\niot?\n\nfield is big",
+      "metadata": {
+        "id": "1365092987528544409",
+        "author": "gotbread",
+        "timestamp": "2025-04-24T18:32:10.428-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5514720092784061
+    },
+    {
+      "text": "```c\n\nuint32_t GetAHB1Clock()\n{\n    uint8_t SysClockSrc = _GET_RCC_2BIT_FLAG(RCC_CFGR_SWS_FLAG);\n    uint32_t SysClockFreq = 0;\n    if (SysClockSrc == 0)\n    {\n        SysClockFreq = HSI_VALUE;\n    }\n    else if (SysClockSrc == 1)\n    {\n        SysClockFreq = HSE_VALUE;\n    }\n    else if (SysClockSrc == 2)\n    {\n        uint8_t PllSrc = _GET_RCC_FLAG(RCC_PLLCFGR_PLLSRC_FLAG);\n        uint32_t pllm = (RCC->PLLCFGR & RCC_PLLCFGR_PLLM_Msk);\n        uint32_t plln = (RCC->PLLCFGR & RCC_PLLCFGR_PLLN_M",
+      "metadata": {
+        "id": "1365937204337311795",
+        "author": "undefined2001",
+        "timestamp": "2025-04-27T02:26:47.4-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5768049111163508
+    },
+    {
+      "text": "New and interesting bugs, bits that get set under debug but not when doing unit testing!",
+      "metadata": {
+        "id": "1366509102330806445",
+        "author": "cooperg2001",
+        "timestamp": "2025-04-28T16:19:18.507-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5619486535974604
+    },
+    {
+      "text": "+100 for Logic Analyzer, I've fixed like 4 bugs in my new SPI driver in record time since I dug out mine",
+      "metadata": {
+        "id": "1366812571168145549",
+        "author": "cooperg2001",
+        "timestamp": "2025-04-29T12:25:11.116-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5583413872256195
+    },
+    {
+      "text": "https://developer.arm.com/documentation/dui0646/c/Cortex-M7-Peripherals/Optional-Memory-Protection-Unit/MPU-access-permission-attributes?lang=en#BIHHEDAE here you can see the cache policies",
+      "metadata": {
+        "id": "1367105245574070302",
+        "author": "gotbread",
+        "timestamp": "2025-04-30T07:48:10.132-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5705190240406102
+    },
+    {
+      "text": "Silly question, is it possible to break the voltage regulator on an stm32f4 discovery by messing with registers. I was trying to get my clock at max speed and all of a sudden I cant flash the device and the 3.3v read 3.9 or >4  most of the time. \nOpemOCD fails as follows \n```\nflash_f4.sh build/inverter.elf \nStarting OpenOCD...\nOpen On-Chip Debugger 0.12.0\nLicensed under GNU GPL v2\nFor bug reports, read\n    http://openocd.org/doc/doxygen/bugs.html\nInfo : The selected transport took over low-level",
+      "metadata": {
+        "id": "1367863026048303164",
+        "author": "superbike_z",
+        "timestamp": "2025-05-02T09:59:19.076-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5551338226441309
+    },
+    {
+      "text": " target control. The results might differ compared to plain JTAG/SWD\nInfo : Listening on port 6666 for tcl connections\nInfo : Listening on port 4444 for telnet connections\nInfo : clock speed 2000 kHz\nInfo : STLINK V2J46M32 (API v2) VID:PID 0483:374B\nInfo : Target voltage: 3.993491\nError: init mode failed (unable to connect to the target)\n\n\nError: OpenOCD failed to start. Check the OpenOCD output or config.\n```\n\nConnected to my machine using a cheap USB dongle and the previous firmware is still r",
+      "metadata": {
+        "id": "1367863026048303164",
+        "author": "superbike_z",
+        "timestamp": "2025-05-02T09:59:19.076-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5527840408671791
+    },
+    {
+      "text": "This is the standard: https://developer.arm.com/documentation/101416/0100/Hardware-Description/Target-Interfaces/Cortex-Debug--10-pin-",
+      "metadata": {
+        "id": "1368555931335659561",
+        "author": "hard.fault",
+        "timestamp": "2025-05-04T07:52:40.57-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5680495342786949
+    },
+    {
+      "text": "What is usually the price? I receive both, people who route the connectors and people who hack the regular pcbs to find the jtags",
+      "metadata": {
+        "id": "1368628135360466987",
+        "author": "slackgeek",
+        "timestamp": "2025-05-04T12:39:35.351-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5565734533390486
+    },
+    {
+      "text": "however that works only for a hardware stack. its also common to have software stacks",
+      "metadata": {
+        "id": "1368690730318434366",
+        "author": "gotbread",
+        "timestamp": "2025-05-04T16:48:19.152-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5501385011265134
+    },
+    {
+      "text": "The lowest level which is the SPI driver is blocking. And there's only one thread of execution.\n\nYet once I get enough things drawing on the screen the behaviour of the driver changes as if a race condition is causing data corruption",
+      "metadata": {
+        "id": "1369029778862243851",
+        "author": "cooperg2001",
+        "timestamp": "2025-05-05T15:15:34.624-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5614764496611245
+    },
+    {
+      "text": "got the proverbial wires crossed with falling trigger and state of IDR",
+      "metadata": {
+        "id": "1370083182665400341",
+        "author": "cooperg2001",
+        "timestamp": "2025-05-08T13:01:25.662-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5567656407860806
+    },
+    {
+      "text": "Putting a checklist on this issue:\n1. GPIOC clock is on\n2. PC4 is set as an input\n3. PC4 has its pullup enabled\n4. EXTI Falling Trigger 4 is enabled\n5. EXTI falling trigger 4 is unmasked\n6. NVIC priority for EXTI4-15 is set at 1\n7. NVIC enable for EXTI4-15 has been called.\n8. EXTI4_15_IRQHandler is defined\n\nYet pulling PC4 to ground does not fire the ISR",
+      "metadata": {
+        "id": "1370132963609808926",
+        "author": "cooperg2001",
+        "timestamp": "2025-05-08T16:19:14.364-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5542666418618668
+    },
+    {
+      "text": "Perhaps it has something to do with the fact that on your Nucleo PC4 is by default used as TX for USART1.",
+      "metadata": {
+        "id": "1370157575915704361",
+        "author": "onwrikbaar",
+        "timestamp": "2025-05-08T17:57:02.395-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5568714323867368
+    },
+    {
+      "text": "swclk goes from -1.6v to 1.8v? when it should be going from 0 to 3.3v theoretically?",
+      "metadata": {
+        "id": "1370583870629478513",
+        "author": "_someguy._",
+        "timestamp": "2025-05-09T22:10:58.975-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5575475474138178
+    },
+    {
+      "text": "these devices all have different ports:\n```\nBus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub\nBus 001 Device 002: ID 05e3:0610 Genesys Logic, Inc. Hub\nBus 001 Device 003: ID 05e3:0610 Genesys Logic, Inc. Hub\nBus 001 Device 004: ID 05e3:0610 Genesys Logic, Inc. Hub\nBus 001 Device 006: ID 0e8d:e616 MediaTek Inc. Wireless_Device\nBus 001 Device 007: ID 27c6:609c Shenzhen Goodix Technology Co.,Ltd. Goodix Fingerprint USB Device\nBus 001 Device 077: ID 32ac:0014 Framework Laptop 16 Numpad ",
+      "metadata": {
+        "id": "1371589985634877481",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-12T16:48:55.485-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5743629152547848
+    },
+    {
+      "text": "To isolate the error, I'd not initialise anything you don't use yet, like SPI3, ADC1 and the timers. Maybe even USB if you just want to test the UART.",
+      "metadata": {
+        "id": "1371721580408868895",
+        "author": "onwrikbaar",
+        "timestamp": "2025-05-13T01:31:50.124-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.577511725984671
+    },
+    {
+      "text": "It doesn't work because this specific configuration is meant for ST's H723ZG Nucleo development board. This one: <https://www.st.com/en/evaluation-tools/nucleo-h723zg.html>",
+      "metadata": {
+        "id": "1372475124472873072",
+        "author": "rustedskull",
+        "timestamp": "2025-05-15T03:26:09.029-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5571436118230252
+    },
+    {
+      "text": "this one: https://uk.rs-online.com/web/p/microcontroller-development-tools/8820278",
+      "metadata": {
+        "id": "1374071541796700211",
+        "author": "garethevs3",
+        "timestamp": "2025-05-19T13:09:44.579-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5629066779389785
+    },
+    {
+      "text": "I use USB for production flashing, and comms with PC programs. Tag-connect 6-pin for JTAG, to an ST-Link for debugging",
+      "metadata": {
+        "id": "1376340632716574770",
+        "author": "the_alchemist0",
+        "timestamp": "2025-05-25T19:26:18.012-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.600382293168487
+    },
+    {
+      "text": "Well there's something I have read online about some flashing method that sometimes locks people out of the chip until they reset by holding the boot pin or something.",
+      "metadata": {
+        "id": "1379181144645570660",
+        "author": "lloyd1031",
+        "timestamp": "2025-06-02T15:33:28.83-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5544885239654054
+    },
+    {
+      "text": "running into issue with stm32H7 and freertos.  everytime I flash the chip, it deadlocks and the debugger wont respond. I have to pull BT0 high and use the stm32programmer to erase the entire chip.  Then in the IDE, I can reflash the chip.  A toxic cycle.  Anyway,  are there any traps or common pitfalls that could be snagging me with this?",
+      "metadata": {
+        "id": "1379877957736075415",
+        "author": "cyo.the.vil3",
+        "timestamp": "2025-06-04T13:42:22.017-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5622334658548859
+    },
+    {
+      "text": "Interesting read but hasnt solved issue.\n\nhttps://community.st.com/t5/stm32-mcus-boards-and-hardware/nucleo-h755zi-q-how-can-i-resolve-st-link-quot-no-device-found/td-p/632372#M16907",
+      "metadata": {
+        "id": "1379889913264345220",
+        "author": "cyo.the.vil3",
+        "timestamp": "2025-06-04T14:29:52.437-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5555377297685303
+    },
+    {
+      "text": "So it may be a race condition between the device booting up and being able to respond to USB packets vs the host seeing the pullup and probing it.",
+      "metadata": {
+        "id": "1381373132518195322",
+        "author": "zecritic",
+        "timestamp": "2025-06-08T16:43:39.464-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5507203705175416
+    },
+    {
+      "text": " }\n}\n```\nDMA and SPI interrupts are enabled and set to priority 5.\nDespite all this, about half the reads return corrupted values. Oscilloscope traces show perfect SPI transactions every time.\nWhat could be the issue?",
+      "metadata": {
+        "id": "1381536069639471135",
+        "author": "terzer",
+        "timestamp": "2025-06-09T03:31:06.701-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5928833262768354
+    },
+    {
+      "text": "Are the corruptions consistent? Do they have a pattern? I recently ran into an spi issue where the host was sending 3 bytes instead of the 4 the peripheral was expecting, so every other transmission was shifted. In my case the cs pin went low for the correct amount of time but the clock was only working for half of it. I guess it may also be good to verify if changing priority or clock speed affect this.",
+      "metadata": {
+        "id": "1381543668858753024",
+        "author": "javacord",
+        "timestamp": "2025-06-09T04:01:18.496-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5548998691717364
+    },
+    {
+      "text": "Finally I made it work faster by enabling Icache and dcache, man...learning hardware sure not easy🥲",
+      "metadata": {
+        "id": "1382284503103438879",
+        "author": "lemercier",
+        "timestamp": "2025-06-11T05:05:07.144-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5514445611099386
+    },
+    {
+      "text": "The i2s signal, I use teensy as i2s master, connected it to audio generator and oscilloscope, that's the easiest way possible for me to check on my algorithm",
+      "metadata": {
+        "id": "1382290110443425792",
+        "author": "lemercier",
+        "timestamp": "2025-06-11T05:27:24.038-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5562270511407994
+    },
+    {
+      "text": "a single USB port actually provides two devices: a USB-CDC device (UART to USB bridge), as well as a CMSIS-DAP debugger",
+      "metadata": {
+        "id": "1383647110867587163",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-14T23:19:38.151-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.552730056225378
+    },
+    {
+      "text": "on the machine in front of me:\n```\nBus 001 Device 005: ID 32ac:0014 Framework Laptop 16 Numpad Module\nBus 001 Device 006: ID 0e8d:e616 MediaTek Inc. Wireless_Device\nBus 001 Device 007: ID 27c6:609c Shenzhen Goodix Technology Co.,Ltd. Goodix Fingerprint USB Device\nBus 001 Device 008: ID 32ac:0012 Framework Laptop 16 Keyboard Module - ANSI\n```",
+      "metadata": {
+        "id": "1383648726333132901",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-14T23:26:03.308-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5974004404403952
+    },
+    {
+      "text": "the kernel sees _two_ devices though: the USB-CDC and the CMSIS-DAP",
+      "metadata": {
+        "id": "1383649778981671034",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-14T23:30:14.279-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5585964010116515
+    },
+    {
+      "text": "it would place the USB controller on my machine in a very poor state",
+      "metadata": {
+        "id": "1383650585236078603",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-14T23:33:26.505-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.562913755182595
+    },
+    {
+      "text": "Is that through jtag?",
+      "metadata": {
+        "id": "1383653387379282013",
+        "author": "sulicat.",
+        "timestamp": "2025-06-14T23:44:34.588-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5663826401261968
+    },
+    {
+      "text": "the I2C controller on the RP2040 is the Synopsys DesignWare ~~dw_i2c_abp~~ DW_apb_i2c",
+      "metadata": {
+        "id": "1383655372497092678",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-14T23:52:27.877-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5600013034020539
+    },
+    {
+      "text": "But like the I2C, SPI and UART peripherals are super easy to use with it",
+      "metadata": {
+        "id": "1385706078833999932",
+        "author": "thegoynextdoor",
+        "timestamp": "2025-06-20T15:41:14.368-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.560554077248965
+    },
+    {
+      "text": "I was amazed to find out the arm pop instruction can pop to the program counter register, effectively the same thing as x86 ret",
+      "metadata": {
+        "id": "1388161281474691103",
+        "author": "uncannyflanigan",
+        "timestamp": "2025-06-27T10:17:20.293-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5598462779584908
+    },
+    {
+      "text": "Anyone here fought with the I2C Lock Problem of STM32F4 ?",
+      "metadata": {
+        "id": "1389230116323987711",
+        "author": "gettygermany",
+        "timestamp": "2025-06-30T09:04:30.379-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5558430850463402
+    },
+    {
+      "text": "i had some i2c lock issues on an F1 in the past",
+      "metadata": {
+        "id": "1389233926819545129",
+        "author": "gotbread",
+        "timestamp": "2025-06-30T09:19:38.872-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5511141561451992
+    },
+    {
+      "text": "So it's like hardware quirk?",
+      "metadata": {
+        "id": "1389234017408258058",
+        "author": "lemercier",
+        "timestamp": "2025-06-30T09:20:00.47-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.555800011280686
+    },
+    {
+      "text": "I don't know when did it start, but I never trusted i2c somehow",
+      "metadata": {
+        "id": "1389234344643530754",
+        "author": "lemercier",
+        "timestamp": "2025-06-30T09:21:18.489-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5600695075000173
+    },
+    {
+      "text": "Oh, it's started when I used Chinese usbi, I have to rip the eeprom out of board to make the i2c working, although pretty sure the eeprom was disconnected but it's just won't work",
+      "metadata": {
+        "id": "1389234699796484116",
+        "author": "lemercier",
+        "timestamp": "2025-06-30T09:22:43.164-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5896117738740453
+    },
+    {
+      "text": "Idk, I will remove everything and only debug the i2c. Put logic analyzer and scramble around for solution.",
+      "metadata": {
+        "id": "1389237586664357888",
+        "author": "lemercier",
+        "timestamp": "2025-06-30T09:34:11.447-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5880336090694275
+    },
+    {
+      "text": "but you have them using the hardware peripheral, which has that bug, and you want to avoid them, right?",
+      "metadata": {
+        "id": "1389237880445993010",
+        "author": "gotbread",
+        "timestamp": "2025-06-30T09:35:21.49-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5673897601524803
+    },
+    {
+      "text": "I2c reading be like : sending address bit, after confirmed by device, it send data to stm, so, where the failure happened according to your logic analyzer?",
+      "metadata": {
+        "id": "1389238892955172997",
+        "author": "lemercier",
+        "timestamp": "2025-06-30T09:39:22.891-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5647050885381687
+    },
+    {
+      "text": "and the problem manifests in the i2C status register constantly reporting \"locked\" ?",
+      "metadata": {
+        "id": "1389241175818633419",
+        "author": "gotbread",
+        "timestamp": "2025-06-30T09:48:27.168-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6043131263272343
+    },
+    {
+      "text": "yes STM32F1 has ALSO an I2C bug, but its a different one 😉",
+      "metadata": {
+        "id": "1389241760424923176",
+        "author": "gettygermany",
+        "timestamp": "2025-06-30T09:50:46.549-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5886692842615329
+    },
+    {
+      "text": "where i get the I2C1_RST from?",
+      "metadata": {
+        "id": "1389242454305144923",
+        "author": "gettygermany",
+        "timestamp": "2025-06-30T09:53:31.983-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5689895157659439
+    },
+    {
+      "text": "Yes.  it is a Uni-T UTP3303 power supply. \n\nThe code i flashed before it going GG is just the auto device configuration  tool code generator which generates the initial files. So basically should be empty files with the general requirements put in the .ioc(bluetooth, seriar wire, button etc)",
+      "metadata": {
+        "id": "1389287547636682763",
+        "author": "x_ma_ryu_x",
+        "timestamp": "2025-06-30T12:52:43.071-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5554674540621521
+    },
+    {
+      "text": "held down, so I don't think that's the issue. The debug lines appear to work the same (there are signals being transmitted), though I haven't analyzed the data transmitted. The chip flashes the bootloader with no problems, it just becomes bricked after the mandatory power cycle. Any ideas would be helpful at this point.",
+      "metadata": {
+        "id": "1389428589438701569",
+        "author": "javacord",
+        "timestamp": "2025-06-30T22:13:10.057-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5527076988748573
+    },
+    {
+      "text": "Great news, the aftermarket ECU I got for my BMW runs on a STM32F4 series part with open source code",
+      "metadata": {
+        "id": "1389969511343587362",
+        "author": "thegoynextdoor",
+        "timestamp": "2025-07-02T10:02:35.889-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5560459886760051
+    },
+    {
+      "text": "@Gotbread avoided the bitbang, errata fix work, there is really a GENERAL problem (which just is not often happening, better underlined haha) with the i2c on the processor of anything STM32F1-F4 😄",
+      "metadata": {
+        "id": "1390069318057988108",
+        "author": "gettygermany",
+        "timestamp": "2025-07-02T16:39:11.664-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6001206086959588
+    },
+    {
+      "text": "I2C is very easily bit-bangable 😳",
+      "metadata": {
+        "id": "1390361125056675840",
+        "author": "xhivo97",
+        "timestamp": "2025-07-03T11:58:43.874-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5652560325488784
+    },
+    {
+      "text": "yes I did find the device on the bus . \nStarting I2C Bus Scan...\n--> I2C Device Found at Address: 0x00\n--> I2C Device Found at Address: 0x40\nI2C Bus Scan Finished.\nThe Device is Ready\nSUCCESS: Reset command sent. Continuing with configuration...\nConfiguration was done Successfully\nCalibration was done Successfully\nInitlization Successfull of First Device\nI ran the code and got this on the logger",
+      "metadata": {
+        "id": "1391821667558363349",
+        "author": "doctordhumketuchutiyahai",
+        "timestamp": "2025-07-07T12:42:24.342-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5654950194384462
+    },
+    {
+      "text": "Okay using their words:\nif Bootloader detects App Loader corruption then you lose DFU unless the App Loader corruption was caused by a botched App Loader update in which case you run the active App slot which will still contain the Updater which will then repair the App Loader (assuming the update itself is not the cause of fault)",
+      "metadata": {
+        "id": "1392864102644322314",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-10T09:44:40.234-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5668276252269212
+    },
+    {
+      "text": "This is where things like checking your ECC if you have it and pro-actively repairing detected errors would save you since this kind of corruption would typically be caused by hardware wearout or cosmic rays",
+      "metadata": {
+        "id": "1392864475169951905",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-10T09:46:09.051-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.61124627146631
+    },
+    {
+      "text": "Needing to load a seperate 2nd Stage updater into an app slot is fine.\n\nIf you want to protect against corruption then read up on your chips CRC, ECC, Write Protection, etc systems and implement an error checking and correction routine",
+      "metadata": {
+        "id": "1392868801514569738",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-10T10:03:20.532-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5891339226426436
+    },
+    {
+      "text": "The most basic way to prevent this is to include some magic number and a CRC with your firmware image.\n\nThe secure way is to do that but also encrypt it.\n\nThe first means at least someone bothered to give you a value to check\n\nThe second means only you or authorized parties can make firmware bundles that your device will load",
+      "metadata": {
+        "id": "1392870540850761870",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-10T10:10:15.222-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5996676975000379
+    },
+    {
+      "text": "if the only way for the device to get firmware updates is via some encrypted internet channel to  a server you control then this issue is mitigated. \n\nIf you give out an update file they load the  you need more verification less they load some random garbage",
+      "metadata": {
+        "id": "1392871057760977039",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-10T10:12:18.463-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6081586925377477
+    },
+    {
+      "text": "Because if you don't verify whats going in there then it becomes much easier to brick your device or break DFU",
+      "metadata": {
+        "id": "1392871171875410002",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-10T10:12:45.67-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.559614033400172
+    },
+    {
+      "text": "So the points of failure you need to verify then are:\n1. Can an unauthorized user spoof that OTA connection\n2. Can the CAN Bus be tapped to load invalid files",
+      "metadata": {
+        "id": "1392872287342034995",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-10T10:17:11.618-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5620864149188324
+    },
+    {
+      "text": "but in my case the most harm they could do with that is spoofing sensor readings (which would only harm them)",
+      "metadata": {
+        "id": "1392872670223401052",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-07-10T10:18:42.904-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5899000431708985
+    },
+    {
+      "text": "i assume in your case the firmware of the device will be interacting with other devices which would be a problem",
+      "metadata": {
+        "id": "1392878550578761789",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-07-10T10:42:04.89-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5575091542936861
+    },
+    {
+      "text": "Not the real example but imagine if some curious slightly tech savvy user managed to load bad firmware (or just anything that wasn't ours) onto say a CT scanner.\n\nNow they might just crash it. Or maybe it wigs out and shakes itself apart because the thing is running whatever the heck they loaded.\n\nDestroyed equipment for them. Possible lawsuit for us.",
+      "metadata": {
+        "id": "1392879416358735932",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-10T10:45:31.308-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5943114066366525
+    },
+    {
+      "text": "Or they want to make your company look bad, attack some other device connected to the same bus, make a viral video, reverse engineer something about the product, give a talk at a hacker conference, etc.",
+      "metadata": {
+        "id": "1392919124467912824",
+        "author": "marshray",
+        "timestamp": "2025-07-10T13:23:18.459-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5836873838630589
+    },
+    {
+      "text": "Hackers gain access to private network via insecure IoT light bulbs",
+      "metadata": {
+        "id": "1392932713773797376",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-10T14:17:18.402-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6392770310389667
+    },
+    {
+      "text": "it's like 30 years of intern code full of mistakes like: #if BSP_FEATURE_CGC_HAS_PLL && !BSP_CFG_USE_LOW_VOLTAGE_MODE && !((1U != BSP_FEATURE_CGC_PLLCCR_TYPE) && 3U != BSP_FEATURE_CGC_PLLCCR_TYPE) && (4U != BSP_FEATURE_CGC_PLLCCR_TYPE) && !BSP_CLOCK_CFG_MAIN_OSC_POPULATED)",
+      "metadata": {
+        "id": "1394112506745851974",
+        "author": "famine0",
+        "timestamp": "2025-07-13T20:25:22.966-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5506745018528793
+    },
+    {
+      "text": "```c\nMEMORY {\n    /* sector 0 */\n    STAGE1_BOOTLOADER (rx):         ORIGIN = 0x08000000, LENGTH = 16k\n    /* sector 1 */\n    STAGE2_BOOTLOADER (rx):         ORIGIN = 0x08004000, LENGTH = 16k\n    /* sector 2 */\n    STAGE2_BOOTLOADER_UPDATER (rx): ORIGIN = 0x08008000, LENGTH = 16K\n    /* sectors 3-7 */\n    APP (rx):                       ORIGIN = 0x0800C000, LENGTH = 464K\n\n    SHARED_RAM (xrw):               ORIGIN = 0x20000000, LENGTH = 256\n    RAM (xrw):                      ORIGIN = 0x20000100",
+      "metadata": {
+        "id": "1394376597146177739",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-07-14T13:54:47.024-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5669520867108959
+    },
+    {
+      "text": "_has never looked at I2S, sounds way too close to I2C, which is slow :kek:_",
+      "metadata": {
+        "id": "1394421993440415865",
+        "author": "thehexacube",
+        "timestamp": "2025-07-14T16:55:10.344-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5738449802069961
+    },
+    {
+      "text": "errrr wat, I2S peripheral sits on the OSC_IN pins?!",
+      "metadata": {
+        "id": "1394439804833235095",
+        "author": "thehexacube",
+        "timestamp": "2025-07-14T18:05:56.911-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5652134109070591
+    },
+    {
+      "text": "but generally speaking, a totally wrong firmware on wrong hardware really cant come that far anyway, or? if we talk different processor series.",
+      "metadata": {
+        "id": "1397044796454862989",
+        "author": "gettygermany",
+        "timestamp": "2025-07-21T22:37:15.312-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5580484808647487
+    },
+    {
+      "text": "i was working with a device that had a very sparse ISA",
+      "metadata": {
+        "id": "1397050570795253870",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-21T23:00:12.022-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5546139469825722
+    },
+    {
+      "text": "instructions were fetched encrypted and decrypted in the CPU's pipeline",
+      "metadata": {
+        "id": "1397050938144850030",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-21T23:01:39.605-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6118801699784223
+    },
+    {
+      "text": "if you tamper with the instruction stream somehow, because of the sparsity of the ISA you are very likely to end with an invalid instruction being decrypted and the CPU would then go into a secure illegal instruction trap",
+      "metadata": {
+        "id": "1397051191740989451",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-21T23:02:40.067-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6190124651485049
+    },
+    {
+      "text": "so this method of \"hiding\" software even works if your ISA is dense",
+      "metadata": {
+        "id": "1397051705882972281",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-21T23:04:42.648-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.551490980007462
+    },
+    {
+      "text": "that thing has a cryptographic core that sits in between the CPU's instruction port and flash memory",
+      "metadata": {
+        "id": "1397052035064533082",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-07-21T23:06:01.131-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5863558560061873
+    },
+    {
+      "text": "```\nC:/cmsis/ARM/inc/cmsis_gcc.h: In function 'uint32_t __get_PSP()':\nC:/cmsis/ARM/inc/cmsis_gcc.h:249:21: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]\n  249 |   register uint32_t result;\n      |                     ^~~~~~\nC:/cmsis/ARM/inc/cmsis_gcc.h: In function 'uint32_t __get_MSP()':\nC:/cmsis/ARM/inc/cmsis_gcc.h:303:21: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]\n  303 |   register uint32_t result;\n      |            ",
+      "metadata": {
+        "id": "1397609556376420502",
+        "author": "undefined2001",
+        "timestamp": "2025-07-23T12:01:24.57-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5513112976096066
+    },
+    {
+      "text": "Trying to get a debugger connection via JTAG to a TM4C1294 via Code Composer Studio 20.1.\n\nUnsure if TI supports generic JTAG probes in their software. Can anyone confirm or deny? Thx",
+      "metadata": {
+        "id": "1397663728362848447",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-23T15:36:40.178-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6221022340108754
+    },
+    {
+      "text": "Any generic JTAG debugger is my point.\n\nRn I have a Orbtrace Mini and a BMP to choose from",
+      "metadata": {
+        "id": "1397700267423826082",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-23T18:01:51.769-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5814219469412075
+    },
+    {
+      "text": "Like the ideal is a big red glowing \"Generic JTAG / SWD / CMSIS-DAP / OpenOCD\" button instead of a list of specific debuggers",
+      "metadata": {
+        "id": "1397700910808825966",
+        "author": "cooperg2001",
+        "timestamp": "2025-07-23T18:04:25.164-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5571826520174873
+    },
+    {
+      "text": "as you guys are more experienced than me can you guys please explain me about how you handle error in embedded firmware. as far as i know using try catch is not a good option to handle error in embedded systems also handling and minimizing errors are crucial in embedded system",
+      "metadata": {
+        "id": "1399058461253304491",
+        "author": "undefined2001",
+        "timestamp": "2025-07-27T11:58:50.412-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5641881447331282
+    },
+    {
+      "text": "there is your error \"cannot verify st device\". so its a clone, and the IDE checks if its a clone. you can either disable that check, or flash firmware to make it think its the real one",
+      "metadata": {
+        "id": "1401298045777477763",
+        "author": "gotbread",
+        "timestamp": "2025-08-02T16:18:08.972-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5544683916369222
+    },
+    {
+      "text": "for this particular case, \"making sure\" implies the hardware is broken beyond belief",
+      "metadata": {
+        "id": "1401566189616103498",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-08-03T10:03:39.445-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5763596648277532
+    },
+    {
+      "text": "Do Cortex M4's have the ability to protect writes/reads to peripherals to only code living at specific memory addresses or am I thinking of more full MMU level?",
+      "metadata": {
+        "id": "1401770169189011591",
+        "author": "cooperg2001",
+        "timestamp": "2025-08-03T23:34:11.965-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5594945426100597
+    },
+    {
+      "text": "Not sure if the MMU can do that, but IIRC that's what all the TrustZone stuff is about in ARM v8-M.",
+      "metadata": {
+        "id": "1401774050526760970",
+        "author": "zecritic",
+        "timestamp": "2025-08-03T23:49:37.348-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5545944126071847
+    },
+    {
+      "text": "I recently had a problem of losing like just a few bytes in RTS / CTS UART at high baudrates with stress testing, as in 3 bytes or so in 10MB loopback and not every test iteration... after some headache with queues and race conditions I ended figuring it was the CH340 based usb2ttl in between, and a (real) FTDI2226 fixed it :/",
+      "metadata": {
+        "id": "1401852612994928710",
+        "author": "beer_baron",
+        "timestamp": "2025-08-04T05:01:48.1-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5587400299821641
+    },
+    {
+      "text": "it should be mentioned that the security extension requires you to configure the SAU (and in some systems the IDAU); the former works more or less the same way as the MPU; you will need to have a veneer area, and you still need to rely switching the CPU from a secure mode to a non-secure mode",
+      "metadata": {
+        "id": "1401931580779270145",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-08-04T10:15:35.487-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.585770967986656
+    },
+    {
+      "text": "It might be my code's problem, I initialized a new project with the nucleo-H563ZI, and I was able to flash the firmware. I was working on an Ethernet project and pull this repo from github:\nhttps://github.com/ShadiElshazly/STM32H7-Ethernet-issue-solved",
+      "metadata": {
+        "id": "1402215426955673712",
+        "author": "ml248",
+        "timestamp": "2025-08-05T05:03:29.689-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5628110400111743
+    },
+    {
+      "text": "that is one big issue with code generators. you are relying on the blessing of ST, hoping that your particular path is not buggy. and there is no real timeline on that. this issue can take 5 minutes or 5 months. its a big risk. i would do these things not via the .ioc, but just use the peripheral (sai) directly, via its register settings. bit more work upfront, but its predictable and debugable",
+      "metadata": {
+        "id": "1404839161650872351",
+        "author": "gotbread",
+        "timestamp": "2025-08-12T10:49:16.787-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5712910452533271
+    },
+    {
+      "text": "I don't think the microcontroller I'm using has it. From what I've read it's more of a \"quick fix\" rather than a proper solution",
+      "metadata": {
+        "id": "1404914361297797240",
+        "author": "emiel0314",
+        "timestamp": "2025-08-12T15:48:05.78-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5532933558482691
+    },
+    {
+      "text": "But like gotbread mentioned this microcontroller has a hardware peripheral for that so why they're not using it is beyond me. Maybe because it isn't internally connected to the sai peripheral? I don't know",
+      "metadata": {
+        "id": "1404914747119374356",
+        "author": "emiel0314",
+        "timestamp": "2025-08-12T15:49:37.767-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5549002639665763
+    },
+    {
+      "text": "It has an AM1802 CPU chip connected to Blackfin BF523 DSP through these aforementioned peripherals",
+      "metadata": {
+        "id": "1405924791264870562",
+        "author": "novictim",
+        "timestamp": "2025-08-15T10:43:11.057-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5785579470631675
+    },
+    {
+      "text": "https://github.com/bangcorrupt/freetribe/blob/215d01c1c14257c2071c2ad8cab8c5982f4b3c8c/dsp/src/kernel/peripheral/per_hostdma.c\nhttps://github.com/bangcorrupt/freetribe/blob/215d01c1c14257c2071c2ad8cab8c5982f4b3c8c/cpu/src/kernel/peripheral/per_emifa.c",
+      "metadata": {
+        "id": "1405925142495756379",
+        "author": "novictim",
+        "timestamp": "2025-08-15T10:44:34.797-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5734059030034809
+    },
+    {
+      "text": "Seems to be secure boot related",
+      "metadata": {
+        "id": "1407761363711037450",
+        "author": "xhivo97",
+        "timestamp": "2025-08-20T12:21:04.05-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5588186734092454
+    },
+    {
+      "text": "@Franky as for the next project, the htu21d is a good option if you want to learn about i2c.   if you wanted to learn more about ADCs you could use  a 4-20mA sensor instead",
+      "metadata": {
+        "id": "1407788411695267940",
+        "author": "famine0",
+        "timestamp": "2025-08-20T14:08:32.792-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5508996328947934
+    },
+    {
+      "text": "hardware development is just pure madness! 😄",
+      "metadata": {
+        "id": "1408784776873119784",
+        "author": "gettygermany",
+        "timestamp": "2025-08-23T08:07:44.762-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5664429626651515
+    },
+    {
+      "text": "```\nDEBUG nusb::platform::linux_usbfs::device: Opening usbfs device /dev/bus/usb/003/006    \nDEBUG nusb::platform::linux_usbfs::device: Opened device fd=9 with id 0    \nDEBUG nusb::platform::linux_usbfs::device: Opened device bus=3 addr=6    \nDEBUG probe_rs::probe::stlink::usb_interface: Aquired handle for probe\nDEBUG nusb::platform::linux_usbfs::device: Claimed interface 0 on device id 0    \nDEBUG probe_rs::probe::stlink::usb_interface: Claimed interface 0 of USB device.\nDEBUG probe_rs::probe::",
+      "metadata": {
+        "id": "1409598170924711946",
+        "author": "trapture",
+        "timestamp": "2025-08-25T13:59:53.016-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5758809492171615
+    },
+    {
+      "text": "stlink::usb_interface: Succesfully attached to STLink.\nDEBUG probe_rs::probe::stlink: Initializing STLink...\nDEBUG nusb::platform::linux_usbfs::device: Submitted URB 0x7fa1380097a0 on ep 2    \nDEBUG nusb::platform::linux_usbfs::device: Handling events for device 0    \nDEBUG nusb::platform::linux_usbfs::device: URB 0x7fa1380097a0 for ep 2 completed, status=0 actual_length=16    \nDEBUG nusb::platform::linux_usbfs::device: Submitted URB 0x7fa138009270 on ep 81    \nDEBUG nusb::platform::linux_usbfs:",
+      "metadata": {
+        "id": "1409598170924711946",
+        "author": "trapture",
+        "timestamp": "2025-08-25T13:59:53.016-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5819125520431783
+    },
+    {
+      "text": ":device: Handling events for device 0    \nDEBUG nusb::platform::linux_usbfs::device: URB 0x7fa138009270 for ep 81 completed, status=0 actual_length=2    \nDEBUG probe_rs::probe::stlink: Current device mode: Dfu\n```",
+      "metadata": {
+        "id": "1409598170924711946",
+        "author": "trapture",
+        "timestamp": "2025-08-25T13:59:53.016-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5953378541172237
+    },
+    {
+      "text": "so that you can copy your firmware to it",
+      "metadata": {
+        "id": "1409601544227262597",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-08-25T14:13:17.274-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5508160431850588
+    },
+    {
+      "text": "A5, that's it)\n\nAnd I have 2 boards with the same chip: same issue, I tried with a different computer, different STLink and different power delivery\n\n**EDIT**: SUBGHSPISD register was set to 0.. setting it to 1 made SPI reachable again",
+      "metadata": {
+        "id": "1410723001426640998",
+        "author": "orenii",
+        "timestamp": "2025-08-28T16:29:33.506-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5591271688610085
+    },
+    {
+      "text": "```\nuint64_t ticksSinceBoot()\n{\n    static uint32_t ticks_since_boot[] = { 0UL, 0UL };\n\n    BSP_criticalSectionEnter();                 // Protect our static var.\n    uint32_t last_ticks = ticks_since_boot[0];  // Assuming little-Endian.\n    NRF_TIMER4->TASKS_CAPTURE[1] = 1;\n    if ((ticks_since_boot[0] = NRF_TIMER4->CC[1]) < last_ticks) {\n        ticks_since_boot[1] += 1;               // The 32-bit timer wrapped.\n    }\n    BSP_criticalSectionExit();\n    return *(uint64_t *)ticks_since_boot;\n}\n",
+      "metadata": {
+        "id": "1411116181909405788",
+        "author": "onwrikbaar",
+        "timestamp": "2025-08-29T18:31:55.038-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5858585875371429
+    },
+    {
+      "text": "macos intel",
+      "metadata": {
+        "id": "1411390444860080248",
+        "author": "kurt_steiner",
+        "timestamp": "2025-08-30T12:41:44.421-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5634212006469504
+    },
+    {
+      "text": "the i2c bus. you are trying to get an i2c sensor to work, right?",
+      "metadata": {
+        "id": "1411403088014606516",
+        "author": "gotbread",
+        "timestamp": "2025-08-30T13:31:58.784-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5531835307778994
+    },
+    {
+      "text": "I would start with an i2c scanner to make sure the device shows up.",
+      "metadata": {
+        "id": "1411683455401726056",
+        "author": "gotbread",
+        "timestamp": "2025-08-31T08:06:03.578-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5582302179404656
+    },
+    {
+      "text": "try to remome -nostdlib flag from https://github.com/undefined2001/stm32f405rgt6/blob/master/arm-none-eabi-toolchain.cmake#L24",
+      "metadata": {
+        "id": "1412123068033269913",
+        "author": ".alex312",
+        "timestamp": "2025-09-01T13:12:55.397-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5621756781938677
+    },
+    {
+      "text": "which compiler do you use?\none from there https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads ?",
+      "metadata": {
+        "id": "1412311070483288118",
+        "author": ".alex312",
+        "timestamp": "2025-09-02T01:39:58.674-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5505013206592084
+    },
+    {
+      "text": "Should you try to write code against CMSIS? Generally speaking, when is that not an option when working with arm processors? I assume device-specific functionality would be one of them?",
+      "metadata": {
+        "id": "1412953634143997952",
+        "author": "637.8nm",
+        "timestamp": "2025-09-03T20:13:17.789-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.554298988983189
+    },
+    {
+      "text": "```\nINFO:    BL31: Initializing runtime services\nINFO:    BL31: cortex_a55: CPU workaround for erratum 1530923 was applied\nINFO:    BL31: Initializing BL32\nI/TC:\nI/TC: OP-TEE version: 3.13.0-891-g9f2aca7d1 #hisping.lin (gcc version 10.2.1 20201103 (GNU Toolchain for the A-profile Architecture 10.2-2020.11 (arm-10.16))) #2 Thu Oct 31 10:26:19 CST 2024 aarch64, fwver: v2.15\nI/TC: OP-TEE memory: TEEOS 0x200000 TA 0xc00000 SHM 0x200000\nI/TC: Primary CPU initializing\nI/TC: CRYPTO_CRYPTO_VERSION_NEW n",
+      "metadata": {
+        "id": "1418606731801530451",
+        "author": "xhivo97",
+        "timestamp": "2025-09-19T10:36:41.3-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6036158923661188
+    },
+    {
+      "text": "different hardware peripherals",
+      "metadata": {
+        "id": "1420220739763699833",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-09-23T21:30:10.785-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5640030757706259
+    },
+    {
+      "text": "Is there anything else that might have changed such as the version of the libraries or any of the hardware? Have you tried doing a factory reset and reprogramming?",
+      "metadata": {
+        "id": "1421888069216243712",
+        "author": "javacord",
+        "timestamp": "2025-09-28T11:55:33.104-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5527877870539725
+    },
+    {
+      "text": "apparently two spi pins on the devkit are overlaid with the usb uart pins... yet dropping the uart jumpers did nothing 😔",
+      "metadata": {
+        "id": "1422878135124496455",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-01T05:29:43.211-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6145956293824775
+    },
+    {
+      "text": "depends on who you ask it might be many things 🙂 , but it is a well known auto architecture with well known codegen in embedded",
+      "metadata": {
+        "id": "1424531621691789314",
+        "author": "beer_baron",
+        "timestamp": "2025-10-05T19:00:05.129-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5555922839876389
+    },
+    {
+      "text": "(i work in IoT so they aren't as notorious to me :P)",
+      "metadata": {
+        "id": "1424532154037305478",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-05T19:02:12.05-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5950765804084625
+    },
+    {
+      "text": "Again. JTAG/SWD and vcom are two separate topics. Implementing JTAG or SWD will not get you vcom.\n\nStlinks on nucleo boards have additional capability of translating a UART line into a vcom.\n\nStandalone STlink V2 lacks this capability.\nIt looks like a standalone STLink V3 does have this capability.\nAnd it could be that you can wire a UART into your nucleo board's STLink header for it to do the same.\n\nBut for this to be possible, in addition to the SWD lines, you must expose a UART line pair on y",
+      "metadata": {
+        "id": "1426188060261093517",
+        "author": "rustedskull",
+        "timestamp": "2025-10-10T08:42:10.859-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5864019115251592
+    },
+    {
+      "text": "```c\nerr_t uart_init(uart_handle_t *p_handle)\n{\n    if (p_handle->config.direction == UART_DIR_TX_ONLY || p_handle->config.direction == UART_DIR_RX_TX)\n    {\n        gpio_init(&p_handle->tx_pin);\n    }\n    if (p_handle->config.direction == UART_DIR_RX_ONLY || p_handle->config.direction == UART_DIR_RX_TX)\n    {\n        gpio_init(&p_handle->rx_pin);\n    }\n    uart_enable_peripheral_clock(p_handle->p_instance);\n    uart_force_peripheral_reset(p_handle->p_instance); \n    p_handle->p_instance->CR1 &=",
+      "metadata": {
+        "id": "1426883981592236082",
+        "author": "undefined2001",
+        "timestamp": "2025-10-12T06:47:31.434-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5597209623132603
+    },
+    {
+      "text": "_wants to hack into that 10.137.yyy.xxx address_",
+      "metadata": {
+        "id": "1430227408513929327",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-21T12:13:06.53-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.6076166939826959
+    },
+    {
+      "text": "so your first setup will be:\n\nyour laptop + someone elses phone in the network of your hotspot phone.\nthen put your laptop into monitoring mode and see the traffic.\n\nyou have 2 layers of encryption to deal with:\n- the wifi encryption (which you can decrypt in wireshark with the wifi key)\n- the web traffic encryption. you can go to an http website, e.g. http://www.example.com/",
+      "metadata": {
+        "id": "1430231918334574783",
+        "author": "gotbread",
+        "timestamp": "2025-10-21T12:31:01.755-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5691026045094093
+    },
+    {
+      "text": "https on embedded is always fun :kek:",
+      "metadata": {
+        "id": "1430239456568545532",
+        "author": "gotbread",
+        "timestamp": "2025-10-21T13:00:59.01-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5595777922748513
+    },
+    {
+      "text": "seems to be not too bad: https://circuitlabs.net/https-with-tls-ssl-in-esp-idf/",
+      "metadata": {
+        "id": "1430241562633179257",
+        "author": "gotbread",
+        "timestamp": "2025-10-21T13:09:21.135-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.558995731878784
+    },
+    {
+      "text": "STM32L475VGT6 chip\nB-L476E-IOT01A2 board",
+      "metadata": {
+        "id": "1430247491005059164",
+        "author": "kaneki.re",
+        "timestamp": "2025-10-21T13:32:54.569-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.579228599060446
+    },
+    {
+      "text": "there's also a arduino library for using that WiFi chip. Might help with reverse engineering a bit. <https://github.com/stm32duino/WiFi-ISM43362-M3G-L44>",
+      "metadata": {
+        "id": "1430268153476419765",
+        "author": "rustedskull",
+        "timestamp": "2025-10-21T14:55:00.886-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5693387044377842
+    },
+    {
+      "text": "You'll have a debug header like SWD or JTAG, and the programming will be done on the assembly line with pogo-pins or similar",
+      "metadata": {
+        "id": "1431089743562539069",
+        "author": "hard.fault",
+        "timestamp": "2025-10-23T21:19:43.227-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.567573478248801
+    },
+    {
+      "text": "What microcontroller? For example, STM32 have debug programmer pin so that you can utilize that",
+      "metadata": {
+        "id": "1431188348734668801",
+        "author": "lemercier",
+        "timestamp": "2025-10-24T03:51:32.532-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5625503685207514
+    },
+    {
+      "text": "if you want to protect your program code, you will need a bootloader",
+      "metadata": {
+        "id": "1432059763197476897",
+        "author": "bla2c",
+        "timestamp": "2025-10-26T13:34:13.93-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5655877918617118
+    },
+    {
+      "text": "they provide different firmwares for it so you can have j-link or opensda or some other function",
+      "metadata": {
+        "id": "1432169703349944493",
+        "author": "scottmonk",
+        "timestamp": "2025-10-26T20:51:05.705-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5844935131150021
+    },
+    {
+      "text": "A B-L475E-IOT01A2 board with an stm32l475vgt6 chip",
+      "metadata": {
+        "id": "1434227882145878076",
+        "author": "kaneki.re",
+        "timestamp": "2025-11-01T13:09:33.769-04:00",
+        "channel": "Amulius_arm"
+      },
+      "similarity": 0.5829140414437085
+    }
+  ]
+}

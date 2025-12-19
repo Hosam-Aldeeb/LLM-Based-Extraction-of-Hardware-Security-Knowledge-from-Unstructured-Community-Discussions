@@ -1,0 +1,45 @@
+[1] Similarity: 0.592 | thedju | 6/4/2025
+If you're talking about the JST header on the MB, it's connected to the SoC and you can use recovery mode with it.
+The JST is USB. The MB needs to be powered by the USB 5V power.
+======================================================================
+
+[2] Similarity: 0.550 | thedju | 6/4/2025
+I did a full backup a few month ago, removed the private stuff and uploaded it here: https://jbatonnet.github.io/Rinkhals/printers/recover-boot-issues/
+======================================================================
+
+[3] Similarity: 0.559 | basvd | 6/4/2025
+https://rinkhals.meowcat285.com/ (stock firmwares)
+======================================================================
+
+[4] Similarity: 0.576 | topes1 | 6/7/2025
+`WARNING:root:Unable to open serial port: [Errno 11] Could not exclusively lock port /dev/ttyS3: [Errno 11] Resource temporarily unavailable`
+Do i need to kill klipper?
+======================================================================
+
+[5] Similarity: 0.563 | topes1 | 6/24/2025
+https://github.com/hdscmcu/pyOCD/commit/61a4349c4d87beb79689c16909e43ffc16030052
+Theres also a branch with direct support for the especific chip
+======================================================================
+
+[6] Similarity: 0.572 | _antiriad_ | 7/16/2025
+Its done: 🥳 
+
+```(gdb) monitor version
+Black Magic Probe (ST-Link/v2) v2.0.0-rc2-84-g75070c15, Hardware Version 257
+Copyright (C) 2010-2025 Black Magic Debug Project
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+(gdb) monitor targets
+Available Targets:
+No. Att Driver
+*** 1 * Unknown ARM Cortex-M Designer 0x751 Part ID 0x324 M4
+```
+======================================================================
+
+[7] Similarity: 0.587 | csnoopy35 | 7/30/2025
+what hardware device is this or software are you using?
+======================================================================
+
+[8] Similarity: 0.552 | pulsar256 | 8/5/2025
+ages ago the saleae guys were either on the amphour or embedded fm podcast and were talking about being able to detect the clones with ease but not doing anything to lock them out of the software yet.
+======================================================================

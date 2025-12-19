@@ -1,0 +1,210 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/KiCad_pcb_Jan2025_export.json",
+  "totalMessages": 9659,
+  "totalChunks": 9458,
+  "relevantMessages": 20,
+  "results": [
+    {
+      "text": "@i2cjak which chip is acting as the debugger? What software are you using for it? \n\nI've been wanting to port Black Magic debugger to the nrf52832 so that I can connect to it via Bluetooth on a Windows machine using the Windows machine's built in Bluetooth and the other side would be a SWD port to debug the target...",
+      "metadata": {
+        "id": "1332984798142271580",
+        "author": "harjits",
+        "timestamp": "2025-01-26T03:05:41.537-05:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.6026103815963137
+    },
+    {
+      "text": "For a black magic debugger probe, really you could get away with implementing the 52820, 52833 and 52840 (these have USB in the 528)",
+      "metadata": {
+        "id": "1333127002856755271",
+        "author": "i509vcb",
+        "timestamp": "2025-01-26T12:30:45.783-05:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5777695189392928
+    },
+    {
+      "text": "#electronics",
+      "metadata": {
+        "id": "1337907088445145129",
+        "author": "mnem_94475",
+        "timestamp": "2025-02-08T17:05:06.997-05:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5659297482265137
+    },
+    {
+      "text": "what version? if you're on 9.0 you should use the `hasNetclass()` function rather than the `NetClass` property. See the documentation for why. If that's not it, select both zones and run the clearance inspector to find out what's happening",
+      "metadata": {
+        "id": "1338180292753621022",
+        "author": "gkeeth",
+        "timestamp": "2025-02-09T11:10:43.98-05:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.561381455931801
+    },
+    {
+      "text": "The story was similar for Fomu: https://github.com/im-tomu/fomu-hardware/tree/pvt/hardware/pcb",
+      "metadata": {
+        "id": "1340908606102569010",
+        "author": "xobs",
+        "timestamp": "2025-02-16T23:52:04.572-05:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5666530667734542
+    },
+    {
+      "text": "the switch selects between jtag/spi and swd/i2c",
+      "metadata": {
+        "id": "1343174377960640542",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-02-23T05:55:26.679-05:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5889047971127664
+    },
+    {
+      "text": " the software tools. The FTx232H family all support MPSSE, which is their way of doing high throughput I/O. That's what PyFtdi, flashrom, openocd, and others all use to make the ft2232h speak their protocol.\n```",
+      "metadata": {
+        "id": "1343174501755650150",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-02-23T05:55:56.194-05:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5616423503610056
+    },
+    {
+      "text": "why does KiCAD DRC report silk screen clipping as `Silkscreen clipped by solder mask` ? This pops up when the silkscreen of two different footprints clips",
+      "metadata": {
+        "id": "1350127435340972073",
+        "author": "cooperg2001",
+        "timestamp": "2025-03-14T11:24:24.74-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5515347192714241
+    },
+    {
+      "text": "Is there any chance JLC has fake chip ? Or I/MV variant is way too different from I/P in microchip PIC family ?",
+      "metadata": {
+        "id": "1353437488529670175",
+        "author": "deulamco",
+        "timestamp": "2025-03-23T14:37:22.918-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5845535891006483
+    },
+    {
+      "text": "I meansured all components values (R, C, D) seem they fabricated correctly... now just only the chip I can't verify & programmer always show Unknown Device ID",
+      "metadata": {
+        "id": "1353643811418673216",
+        "author": "deulamco",
+        "timestamp": "2025-03-24T04:17:14.128-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5616200404790734
+    },
+    {
+      "text": "You can get your circuit verified in #electronics or #work-in-progress .. This channel should focus on potential issues with the KiCad pcb tool",
+      "metadata": {
+        "id": "1353645051560853565",
+        "author": "eonostturf",
+        "timestamp": "2025-03-24T04:22:09.801-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.556350546464482
+    },
+    {
+      "text": "https://jlcpcb.com/capabilities/pcb-capabilities",
+      "metadata": {
+        "id": "1354443121219469444",
+        "author": "aqua.regia",
+        "timestamp": "2025-03-26T09:13:24.435-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5520557032408278
+    },
+    {
+      "text": "by the fpga som",
+      "metadata": {
+        "id": "1369354793411416196",
+        "author": "hasanthesyrian_",
+        "timestamp": "2025-05-06T12:47:04.131-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5540221664741698
+    },
+    {
+      "text": "apart from just setting the net class clearance parameter to be higher\nthat works, but if the clearance is set to a sort of high value, the drc starts triggering on a million things",
+      "metadata": {
+        "id": "1379710110892560456",
+        "author": "delta011",
+        "timestamp": "2025-06-04T02:35:24.211-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5589671471360607
+    },
+    {
+      "text": "hard to tell without knowing what it is/does or what the schematic looks like. but you're going to find it very hard to plug a usb cable into J1.",
+      "metadata": {
+        "id": "1390405341757440271",
+        "author": "sigstoat",
+        "timestamp": "2025-07-03T14:54:25.957-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5561724836856631
+    },
+    {
+      "text": "Bugged how?",
+      "metadata": {
+        "id": "1391701671427702919",
+        "author": "fisheiyy",
+        "timestamp": "2025-07-07T04:45:35.035-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5638575966030043
+    },
+    {
+      "text": "https://jlcpcb.com/capabilities/pcb-capabilities",
+      "metadata": {
+        "id": "1397681836397957150",
+        "author": "wolington",
+        "timestamp": "2025-07-23T16:48:37.47-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5520557032408278
+    },
+    {
+      "text": "also, the EZsockets expose spi, so we are going to see what we can do there",
+      "metadata": {
+        "id": "1401632727182348338",
+        "author": "cnf",
+        "timestamp": "2025-08-03T14:28:03.237-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.553290066889377
+    },
+    {
+      "text": "I had a library for exactly this purpose but I’d need to go dig it up. I think it was from an open source hardware key project.",
+      "metadata": {
+        "id": "1408913660352532521",
+        "author": "vipqualitypost",
+        "timestamp": "2025-08-23T16:39:52.978-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.5593577945520635
+    },
+    {
+      "text": "You can probably get away with a switching regulator, it's just best to place the switching loop as far away from potentially sensitive components as possible",
+      "metadata": {
+        "id": "1415820514290696305",
+        "author": "nicoya",
+        "timestamp": "2025-09-11T18:05:15.28-04:00",
+        "channel": "KiCad_pcb"
+      },
+      "similarity": 0.562435852755504
+    }
+  ]
+}

@@ -1,0 +1,2236 @@
+[1] Similarity: 0.558 | caribbeanparadise_52540 | 1/4/2025
+Here is a guide to test mosfets.. Also would be better to post full pic of mboard so can see where those mosfets are located. Also what is history of laptop and what is the issue.
+======================================================================
+
+[2] Similarity: 0.550 | sephir0th1984 | 1/5/2025
+That you have possibly fried the CPU for example
+======================================================================
+
+[3] Similarity: 0.551 | niksbrotha | 1/6/2025
+Mike, in your experience. The ITE chip fails out of the blue often or generally caused by another underlying issue?
+======================================================================
+
+[4] Similarity: 0.562 | volko76 | 1/8/2025
+I'm sorry I'm not enough hardware experimented to help you with that but I will be please to see how we can repair this type of thing
+======================================================================
+
+[5] Similarity: 0.553 | sephir0th1984 | 1/8/2025
+This is bad and most likely means, the PCH was damaged at the USB data lines
+======================================================================
+
+[6] Similarity: 0.568 | tokyoskies. | 1/9/2025
+You can repurpose old hardware. I did that successfully in India, sending lots of old hardware to Indian universities as study material
+======================================================================
+
+[7] Similarity: 0.568 | alc47r42 | 1/9/2025
+its flooded with 7th, 8th gen hardwares imported from middle east and china
+======================================================================
+
+[8] Similarity: 0.571 | san_dro_711 | 1/10/2025
+Thinking about a corrupted bios tho i cannot program it, it seems to be locked
+======================================================================
+
+[9] Similarity: 0.565 | fiifi9ce | 1/10/2025
+I need some help. That IC was producing 4.3v on the 3.3v line on an HP Probook 450 g9 motherboard.  The most likely culprit is the IC right?
+======================================================================
+
+[10] Similarity: 0.561 | sephir0th1984 | 1/11/2025
+But never blindly trust them as long as the device doesn't boot up with it
+======================================================================
+
+[11] Similarity: 0.587 | sephir0th1984 | 1/11/2025
+It probably happened the worst what can happen for a technician. The device has failed on your bench. Either by coincidence or by accident. And because it isn't bad enough already, it has most likely failed irreparable.
+If everything checks out, it's a chipset fault.
+======================================================================
+
+[12] Similarity: 0.599 | creative.shadow | 1/13/2025
+@Alexroosteren U40 mosfet needs to be investigated further, looks like it's terminated goofy compared to the others
+======================================================================
+
+[13] Similarity: 0.576 | creative.shadow | 1/13/2025
+Mosfet Test rear side
+
+U22 pass
+
+U36 pass 
+
+PU16 pass
+
+PQ5 pass
+
+U40 investigate
+
+U10 pass
+
+PU2 pass
+
+U56 pass
+
+PQ36 pass
+
+PQ35 pass
+
+PQ28 pass
+
+PQ29 pass
+
+PQ32 pass
+
+PQ31 pass
+
+PQ38 pass
+
+PQ39 pass
+
+Mosfet test front side
+
+PQ3 pass
+
+PQ4 pass
+
+U8 pass
+
+PQ21 pass
+
+PQ14 pass
+
+PQ6 pass
+
+PQ13 pass
+
+PQ15 pass
+
+PQ17 pass
+
+PQ19 pass
+
+Unidentified01 pass
+
+Unidentified02 pass
+
+U26 pass
+
+PU5 pass
+
+U25 pass 
+
+U23 pasa
+
+U21 pass
+
+U24 pass
+======================================================================
+
+[14] Similarity: 0.570 | creative.shadow | 1/13/2025
+Jack can you write me an easy on malicious downloads?
+======================================================================
+
+[15] Similarity: 0.562 | creative.shadow | 1/13/2025
+Yea it's malicious software I think
+======================================================================
+
+[16] Similarity: 0.562 | sephir0th1984 | 1/14/2025
+For me those jumpers, JP0601, JP0602 and JP0603 are jumpers which have to be set depending on the CPU configuration so whether there a 7th gen or 8th gen CPU is soldered.
+======================================================================
+
+[17] Similarity: 0.569 | sephir0th1984 | 1/14/2025
+That's most likely adapter detection then.
+======================================================================
+
+[18] Similarity: 0.557 | sephir0th1984 | 1/14/2025
+The device
+======================================================================
+
+[19] Similarity: 0.553 | sephir0th1984 | 1/15/2025
+Would be new for me that the KBC sources the firmware from a external flash
+======================================================================
+
+[20] Similarity: 0.578 | darkmoons2899 | 1/15/2025
+at should I test ?
+
+Laptop model : MSI GE75 Raider 10SGS MS-17E91 VER.1.0
+======================================================================
+
+[21] Similarity: 0.572 | niksbrotha | 1/15/2025
+Best is to remove nosfets and don't throw them obviously. Then test rhe device. If stable it should be fine.
+======================================================================
+
+[22] Similarity: 0.570 | teslasapple | 1/16/2025
+Device: Laptop
+Model: Dell Lattiude 5420
+Motherboard: LA-K491P REV 3.0
+
+Hey guys! A quick question if anyone knows…
+
+Can a corrupt BIOS prevent USB C PD negotiation?
+
+Stuck on 5V and can’t find issue anywhere.
+
+5V gets through to the two mosfets, drops to 4.6V gets the main power rail.
+
+No short on main power rail and even measure 16 volts present around the battery charging circuit, so buck and boost seem okay.
+
+Only one if the two USB C port works with my USB meter. Swapped out the 2 x INTEL c
+======================================================================
+
+[23] Similarity: 0.586 | sephir0th1984 | 1/17/2025
+Yes, in some rare cases corrupted firmware can result in not negotiating 20V, however it seems the importance observation that one port is not working was not taken into account for some reason. This clearly points to a hardware fault. The Intel ICs have nothing to do with PD. They are Thunderbolt controller. Thunderbolt and power delivery are different things controlled by different ICs
+You did not share whether you checked the rails heading from the non-working USB-C port to GND, nor whether y
+======================================================================
+
+[24] Similarity: 0.593 | sephir0th1984 | 1/17/2025
+ou have checked or at least inspected the not working USB-C port, the Switches and protection ICs connected to it or whatever is used on your device.
+======================================================================
+
+[25] Similarity: 0.567 | suddenattack_sa_ | 1/18/2025
+Hi. My laptop rog strix scar 18 keeping crashed games alot of time after update firmware. Should I downgrade firmware? Is safe? I check asus website said if rollback will depend cause black screen or not boot.
+======================================================================
+
+[26] Similarity: 0.573 | sephir0th1984 | 1/18/2025
+The part near the battery is a SPI flash IC for firmware
+======================================================================
+
+[27] Similarity: 0.581 | sephir0th1984 | 1/18/2025
+Sure
+
+https://www.badcaps.net/forum/troubleshooting-hardware-devices-and-electronics-theory/troubleshooting-laptops-tablets-and-mobile-devices/80630-ic-marking-codes-and-datasheets
+======================================================================
+
+[28] Similarity: 0.582 | alexroosteren | 1/19/2025
+That's most likely a hardware issue.
+======================================================================
+
+[29] Similarity: 0.556 | taemr | 1/19/2025
+cuz the current bios was trying to update and got bricked
+======================================================================
+
+[30] Similarity: 0.566 | alexroosteren | 1/19/2025
+What I would like to know is how that laptop got bricked ?
+======================================================================
+
+[31] Similarity: 0.573 | aalexandraa007 | 1/20/2025
+ck, Lights, ect. 
+
+**What parts do i have** : An EEPROM Flash BIOS Programmer (CH431), SolderStation
+**Parts maby needed** : 1.8V adapter for Flasher? 
+What part i **DONT **have : HotAirGun, Flux
+
+
+**Research**: 
+
+- Probaby a corrupted BIOS?
+
+Links Provided to Lenovo Forum related to this error : 
+https://forums.lenovo.com/t5/ThinkPad-11e-Windows-13-E-and-Edge-series-Laptops/Yoga-11e-20LM-CMOS-Checksum-Bad-boot-loop/m-p/5113663
+
+Video to** same fault** on YT : 
+https://www.youtube.com/watch?v=fr
+======================================================================
+
+[32] Similarity: 0.576 | sephir0th1984 | 1/21/2025
+Device issue after Windows update usually leads to BIOS corruption
+======================================================================
+
+[33] Similarity: 0.556 | alexroosteren | 1/21/2025
+Can be that this is a CPU fault or chipset
+======================================================================
+
+[34] Similarity: 0.582 | sephir0th1984 | 1/21/2025
+More likely a bad chipset. Display signals are controlled by the chipset in recent devices
+======================================================================
+
+[35] Similarity: 0.550 | caribbeanparadise_52540 | 1/22/2025
+Its not stored on the motherboard, now its in the computer's UEFI firmware or BIOS chip.
+======================================================================
+
+[36] Similarity: 0.564 | alexroosteren | 1/22/2025
+If you stressed the CPU beyond it's limits (that's the reason for using XTU) it can be bricked.
+======================================================================
+
+[37] Similarity: 0.562 | mehmet2162 | 1/23/2025
+the laptop owner who gave it to me to fix is exactly lived what you lived instant feeze and no post after that ,device is CH341A 24 25  bios programmer with its fastener ,fastaner is important cause you dont have air solder station ı assume so you can stick it on bios chip and program it from outside
+======================================================================
+
+[38] Similarity: 0.577 | niksbrotha | 1/23/2025
+I would suggest flashing a working bios. Could be corrupt bios.
+======================================================================
+
+[39] Similarity: 0.576 | t4k_ | 1/24/2025
+@Harumb1 what chipset is it? That may narrow it down.
+======================================================================
+
+[40] Similarity: 0.559 | venci04 | 1/24/2025
+@djdjhacks will search for schematic. Not sure what to desolder 🙂
+======================================================================
+
+[41] Similarity: 0.568 | reisharman | 1/24/2025
+I bought the device in bad condition. Other user was using laptop with a bad charger. Charger’s fuse was jumped with a wire. And some other modifications for bypassing protection mode of charger. I thought maybe those fried the power IC or something else
+======================================================================
+
+[42] Similarity: 0.587 | t4k_ | 1/24/2025
+Which is all "Can bus sniffing" across multiple operating systems. One device to rule them all. 🙂
+======================================================================
+
+[43] Similarity: 0.573 | sephir0th1984 | 1/24/2025
+Main suspect are the IC right next to PL301 but especially the Platform Controller Hub
+======================================================================
+
+[44] Similarity: 0.552 | sephir0th1984 | 1/24/2025
+Can you source a known working Chipset?
+======================================================================
+
+[45] Similarity: 0.562 | .harounhd | 1/25/2025
+Also looks like the bios chip has been worked on
+======================================================================
+
+[46] Similarity: 0.562 | sephir0th1984 | 1/25/2025
+What device?
+======================================================================
+
+[47] Similarity: 0.554 | sephir0th1984 | 1/25/2025
+It's a old device with high-end hardware (at the release time)
+======================================================================
+
+[48] Similarity: 0.555 | alexroosteren | 1/27/2025
+Looks like everybody is asleep. You are wrong about this circuit. The IC is a combined buck/boost IC with charging function. The 12.6V comes from the battery or from the AC adapter. The 12.6V is created by this IC by its buck converter to lower the 19V input voltage in 12.6V. The 4 mosfets are placed in a bridge configuration and by switching the mosfets the output voltage can be changed. There are two current resistors, one for monitoring the input voltage and and a current resistor to monitor 
+======================================================================
+
+[49] Similarity: 0.556 | alexroosteren | 1/27/2025
+The ME region stands for Management Engine region. It's a part of the BIOS firmware on Intel-based systems that contains the Intel Management Engine (ME) firmware. The ME firmware is responsible for various low-level functions, including system management, security, and remote administration. It operates independently of the main CPU and can perform tasks even when the system is in sleep or hibernation mode.
+
+The ME region is crucial for the proper functioning of the system, and issues with it c
+======================================================================
+
+[50] Similarity: 0.557 | sephir0th1984 | 1/28/2025
+https://www.badcaps.net/forum/troubleshooting-hardware-devices-and-electronics-theory/troubleshooting-laptops-tablets-and-mobile-devices/bios-requests-only/73800-bios-chips?p=1389069#post1389069
+======================================================================
+
+[51] Similarity: 0.564 | sephir0th1984 | 1/28/2025
+And from there will appear other possibilities like BIOS corruption for example
+======================================================================
+
+[52] Similarity: 0.551 | sephir0th1984 | 1/28/2025
+The device is old and the CPU works with a fully integrated voltage regulator. If it is at fault we have almost no way to find out
+======================================================================
+
+[53] Similarity: 0.561 | alexroosteren | 1/30/2025
+could be a corrupted bios,
+======================================================================
+
+[54] Similarity: 0.563 | sephir0th1984 | 1/30/2025
+It's obviously a adapter detection issue as clearly stated in the BIOS
+======================================================================
+
+[55] Similarity: 0.559 | sephir0th1984 | 1/30/2025
+And how it could prevent the CPU from powering up
+======================================================================
+
+[56] Similarity: 0.566 | lukypol | 1/30/2025
+But cool thing I found in that sketchy program was, that one ram chip was divided with ok and error status. So maybe the other chips were good.
+======================================================================
+
+[57] Similarity: 0.574 | piukspauks | 1/31/2025
+@NiksBrotha @Soul Slash
+
+Removed PL4001 and PL4401 to get power off shorted dram fets - black screen
+then removed PL4006, PL4407, PL4408 and PL4409 to get power off gpu fets - same issue, black screen
+then removed PR2006 to remove VDD getting onto gpu driver that drives nvvdd fets - same issue, black screen
+then removed PR4002 to remove VDD getting onto gpu memory driver that drives fets - same issue, black screen.
+
+Next thing would try putting all back and replacing the shorted fet (PQ4001 was 
+======================================================================
+
+[58] Similarity: 0.555 | tboyda | 2/1/2025
+You're right. It was a corrupted bios. After reprogramming it the laptop is working fine. Thank you.
+======================================================================
+
+[59] Similarity: 0.580 | emix8310 | 2/1/2025
+o 0.9V
+PL4502 FIXED 3.3V
+PL4501 FIXED 5V
+PL8201 PL8202 0V
+PL4701 JUMPS TO 1.1V
+PL4801 JUMPS TO 0.66V
+PL4401 FIXED 2.75V without battery
+
+after uploading another Bios still the same
+======================================================================
+
+[60] Similarity: 0.556 | btubbs200 | 2/1/2025
+Is it possible/feasible to fix a faulty USB C PD controller that may have faulty firmware by flashing the bios chip?
+======================================================================
+
+[61] Similarity: 0.575 | andre07904 | 2/5/2025
+Hey, why does my laptop have 2 super io chips? IT81201E and IT8227VG
+======================================================================
+
+[62] Similarity: 0.559 | surfergeek | 2/7/2025
+It has a Vcore RT3602AC PWM controller. Could it be the culprit component?
+======================================================================
+
+[63] Similarity: 0.559 | craftbenmine | 2/8/2025
++ someone else had this issue on the same model here in this discord (laptop crashing with loud beep noise when pressure on the board) and i told them is bga issue, i will try to find them and tell its a mosfet issue
+======================================================================
+
+[64] Similarity: 0.555 | sephir0th1984 | 2/9/2025
+Well, actually it sounds like a worse and hard to identify hardware issue
+======================================================================
+
+[65] Similarity: 0.552 | sephir0th1984 | 2/11/2025
+If there isn't a discrete USB Controller then it is a faulty chipset
+======================================================================
+
+[66] Similarity: 0.563 | erick1236505 | 2/11/2025
+everything point to that direction faulty chipset because the touchscreen respond neither. anyway if someone has the schematic could be tremendous help.
+======================================================================
+
+[67] Similarity: 0.561 | andysnow | 2/12/2025
+so on these laptops with the 2 dual mosfets one for each usb-c - that both mosfets seem to fry and unsolder themselves from the board.... my understanding is changing the mosfets isn't gonna fix it? its a problem with the pd controller not supplying enough voltage on the gate?
+======================================================================
+
+[68] Similarity: 0.551 | korikmate | 2/13/2025
+ip, still hotspot on the board, now a small mosfet on the other side, miles from the faults before.... What the hell is happening? Can it all caused by the shorted PCH (chipset) which is still on the board? Any idea of what the connection of this fault-chain can be?? I am only go with my power supply on the main power rail, right on the current sensor...
+======================================================================
+
+[69] Similarity: 0.559 | sephir0th1984 | 2/13/2025
+This all doesn't matter, since you are testing the device with a obviously blown IC(?)
+High possibility to make the issue worse this way if not already being a no-fix anyway.
+The Controller has to be replaced first, before doing anything else
+======================================================================
+
+[70] Similarity: 0.554 | niksbrotha | 2/14/2025
+Let's see the chip schematic is using
+======================================================================
+
+[71] Similarity: 0.553 | ralfono | 2/15/2025
+After removing these 2x 3.3V Switches or Voltage Regulators, another IC got hot, this one.
+It was near a BQ and MPS Chip
+======================================================================
+
+[72] Similarity: 0.563 | sephir0th1984 | 2/15/2025
+This might help till some extent. Study it:
+
+https://www.badcaps.net/forum/troubleshooting-hardware-devices-and-electronics-theory/troubleshooting-laptops-tablets-and-mobile-devices/80630-ic-marking-codes-and-datasheets
+======================================================================
+
+[73] Similarity: 0.589 | ralfono | 2/15/2025
+"The family is a highly-configurable, mixed signal, advanced I/O controller architecture. Every device in the family incorporates a 32-bit ARM Cortex M4F Microcontroller core with a closely-coupled SRAM for code and data."
+
+I could solder a BGA, would be no problem. I have balls/stencil etc.
+======================================================================
+
+[74] Similarity: 0.560 | niksbrotha | 2/16/2025
+Lol in other news. My tech 100% knocked off a resistor from an iPhone 8 plus board yesterday
+======================================================================
+
+[75] Similarity: 0.558 | sephir0th1984 | 2/17/2025
+The ISL88738 acts as a Buck-Boost Converter so there is nothing strange, that the voltage of the main power rail is stepped down to battery voltage. Laptops without gaming capabilities are designed like that for a few years already. It's the standard design these days since the laws regarding USB-C in electronics
+======================================================================
+
+[76] Similarity: 0.563 | peter200311 | 2/18/2025
+osfet but kind of unique, so I need your help for telling me what might be problem and what is this chip, the laptop was new from shop it just worked for 2 days until the problem occurred, multimeter readings showed that main power rails was okay but after the chip there was no voltage in inductors, and those inductors are for secondary power rails, so help me what can i do to fix here.
+======================================================================
+
+[77] Similarity: 0.560 | alexroosteren | 2/19/2025
+e datasheet because these mosfets are all high power mosfets. If he swaps a mosfet of the charging circuit he will swap that mosfet with one of the charging circuit of the donor board. And even these are usable as DC in mosfets. Most mosfets in a laptop are high power ( high Amp) mosfets.
+======================================================================
+
+[78] Similarity: 0.551 | niksbrotha | 2/19/2025
+I doubt your richtek chip is at fault because you have 3v and 5v assuming your laptop is working
+======================================================================
+
+[79] Similarity: 0.562 | niksbrotha | 2/19/2025
+Or you can check resistances of the richtek chip
+======================================================================
+
+[80] Similarity: 0.565 | niksbrotha | 2/19/2025
+See if that audio ic is the culprit
+======================================================================
+
+[81] Similarity: 0.556 | sephir0th1984 | 2/20/2025
+There is also a decent chance that you have fried each RAM module you have inserted
+======================================================================
+
+[82] Similarity: 0.578 | sephir0th1984 | 2/20/2025
+Hardware fails, for these cases exists the warranty of 1 year and in some countries even 2 years warranty by law
+======================================================================
+
+[83] Similarity: 0.580 | louisr_89777 | 2/21/2025
+Help please i have ch341 programmer, when plug it into laptop without chip laptop detects it, But when I put the chip it is no longer detected. here is the video
+======================================================================
+
+[84] Similarity: 0.552 | niksbrotha | 2/21/2025
+@Mike the laptop from yesterday with the shorted 5v rail, the client took a sata adapter and kept trying to pluf the USB AB cable into those 4 exposed pins. The sata reader runs at 12v, likely why it died when he shorted 12v to ground while cable was plugged to his pc
+======================================================================
+
+[85] Similarity: 0.561 | lacapssoula | 2/22/2025
+It has intel cpu
+======================================================================
+
+[86] Similarity: 0.553 | rudiar7a | 2/22/2025
+what laptop schematic is this ?
+======================================================================
+
+[87] Similarity: 0.578 | sephir0th1984 | 2/23/2025
+Did you rule out corrupted BIOS firmware?
+======================================================================
+
+[88] Similarity: 0.559 | ongobongo123 | 2/27/2025
+evening everyone. is someone here able to programm bga ec-chips? I have an rog ally here with a burned out ec-chip and replacing it with an empty one doesn't do the trick. Any clue how to externally programm an ite 5125vg-192 for this purpose??
+======================================================================
+
+[89] Similarity: 0.578 | codeconnoisseur | 2/27/2025
+You can *read* any of them without harm, assuming you don't blow them up with overvoltage. Then compare to the files you have to determine which you want to update. You should take a backup of the contents of a chip before you flash it so you can always return to a known state; little risk involved there.
+
+I highly doubt flashing the firmware will help resolve your issue, but I suppose it's worth a try and a good learning experience. Though, I think we should take a step back before jumping into
+======================================================================
+
+[90] Similarity: 0.567 | techstuff | 2/28/2025
+Laptop HP X360 convertible 13-ap0008ca / Motherboard da0x36mbae0 Rev E looking for schematic , battery was plugged with the connector reversed and now one ic is getting hot.
+======================================================================
+
+[91] Similarity: 0.558 | kuma5092 | 3/1/2025
+in bios repair  ?
+======================================================================
+
+[92] Similarity: 0.633 | sephir0th1984 | 3/1/2025
+My guess is that while reprogramming itself it reprogrammed all the ICs connected via I2C too.
+======================================================================
+
+[93] Similarity: 0.611 | codeconnoisseur | 3/2/2025
+From [the datasheet](https://www.ti.com/lit/ds/symlink/tps65994ad.pdf): "The TPS65994AD firmware implements a host interface over I2C to allow for the configuration and control of all device options. Initial device configuration is configured through a configuration bundle loaded onto the device during boot. The bundle may be loaded through the I2C_EC port or it may be loaded over I2C3m from an external EEPROM. The TPS65994AD configuration bundle and host interface allow the device to be customi
+======================================================================
+
+[94] Similarity: 0.561 | codeconnoisseur | 3/2/2025
+zed for each specific application. The configuration bundle can be generated through the Application Customization Tool."
+
+From what I can gather, the board engineers use TI's Application Customization Tool to generate a config, which is stored then loaded by the chip from an external EEPROM via I2C3m or from the EC (probably from its own EEPROM) over I2C_EC into its RAM. Theoretically though, this should all just mean that it will configure itself automatically on boot and so there shouldn't be
+======================================================================
+
+[95] Similarity: 0.566 | codeconnoisseur | 3/2/2025
+ anything you'd need to do other than replace the chip.
+
+Evidently though, as you said, it's still not working, so maybe there is some serialization information for the chip that the EC reads on first power on after manufacturing and stores or vice versa (see screenshot of register 0x05 that I got from one of the below manuals). TI and the board designers of course have all this info locked up tight under NDA, so either you find a leak or reverse engineer a live board using [this manual](https:/
+======================================================================
+
+[96] Similarity: 0.570 | alexroosteren | 3/3/2025
+That code means major failure MB and can be anything.  You also have to check the coils to ground for short. If no short found check the voltages on the coils.
+======================================================================
+
+[97] Similarity: 0.567 | codeconnoisseur | 3/4/2025
+RST/VMD drivers should be available on Intel’s website by CPU generation.
+======================================================================
+
+[98] Similarity: 0.578 | lucky.11. | 3/4/2025
+You can have caps-lock working on a laptop with a corrupt bios?
+======================================================================
+
+[99] Similarity: 0.570 | lucky.11. | 3/4/2025
+Plus this laptop would show error code if the bios was corrupt most likely
+======================================================================
+
+[100] Similarity: 0.563 | yeri_1699 | 3/4/2025
+I am guessing its corrupted BIOS. Does anyone have any idea what maybe the cause?
+======================================================================
+
+[101] Similarity: 0.564 | ace800907 | 3/5/2025
+u at least 3 month warranty. They will push on this ONLY if they have used a fake part or trying to scam you.
+- Run CPU Z, and Cinebench to test your CPU. Run GPU Z, Cinebench, and Furmark 2 to test your dedicated GPU. This ensures they haven't damaged your other parts.
+- Take pictures. Take tons of pictures as proof. Document everything. It's hard to lie when you have written the truth before.
+- Do NOT give the repair or any sensitive tasks to 3rd party shops unless you know them personally and
+======================================================================
+
+[102] Similarity: 0.576 | smaxx | 3/6/2025
+There might be some issue with the charging circuitry, so might want to wait for some other opinions on this. Totally possible to EC chip turns off the power supply after noticing something fishy to protect the laptop.
+======================================================================
+
+[103] Similarity: 0.597 | algrey. | 3/6/2025
+XPS 9510 LA-J143P, cpu is triggering VRALERT# and that pulls 1V to 0.3V after the schottky diode on PROCHOT#. Cpu is locking at 0.2GHz all the time from boot to shutdown. VRALERT# 
+ comes directly from cpu, nothing else connected ( resistor PR217 not populated to communicate with the controllers). What triggers that signal exactly?
+======================================================================
+
+[104] Similarity: 0.555 | alexroosteren | 3/7/2025
+I mean, what the exact cause is, faulty sensor or cracked soldering at that sensor. And how that sensor could shutoff the laptop.
+======================================================================
+
+[105] Similarity: 0.570 | kurlozmakara | 3/7/2025
+ somewhere else?
+
+On top of all this, after a visual inspection, I found a 5-pin mosfet (not sure?) corroded by oxidation, probably due to the liquid damage my friend mentioned. However, i removed it but I’m not sure if it’s related to the main issue since it didnt fix anything. Anyway on the schematic provided is the component U7403.
+
+Edited: I forgot to mention that 3.3 on the keyboard is present.
+======================================================================
+
+[106] Similarity: 0.557 | alexroosteren | 3/8/2025
+Frozen BIOS, corrupted BIOS or RAM issue
+======================================================================
+
+[107] Similarity: 0.571 | lucky.11. | 3/8/2025
+if this is a hardware problem and not the driver then I believe it could be faulty usb device like SD card reader, webcam, RGB keyboard ect
+======================================================================
+
+[108] Similarity: 0.577 | lucky.11. | 3/8/2025
+It's good Idea to try find out what device is causing this disconnect connect loop
+======================================================================
+
+[109] Similarity: 0.602 | codeconnoisseur | 3/8/2025
+The chipset often controls some USB ports on its own and provides the host controller for the system. If it is disrupted, it can certainly cause the behavior you are seeing.
+======================================================================
+
+[110] Similarity: 0.576 | lucky.11. | 3/8/2025
+I'd just expect more things to fail with chipset failure. Like at least chipset not being able to recognize some usb devices ect
+======================================================================
+
+[111] Similarity: 0.562 | lucky.11. | 3/8/2025
+chipset is open as well probably :leo:
+======================================================================
+
+[112] Similarity: 0.551 | lucky.11. | 3/8/2025
+ah screw it. It's probably some weird chipset fault
+======================================================================
+
+[113] Similarity: 0.553 | icanic | 3/9/2025
+Or maybe there is corrosion under the chipset because of water dmg
+======================================================================
+
+[114] Similarity: 0.557 | lawfets | 3/9/2025
+I found some info on hp endpoint security controller and they had to replace the motherboard, so it must be some kind of hardware problem
+======================================================================
+
+[115] Similarity: 0.551 | lawfets | 3/9/2025
+the video I'm watching, the guy is removing both and flashes them both to remove the security error
+======================================================================
+
+[116] Similarity: 0.568 | ace800907 | 3/10/2025
+@Alexroosteren I just ran a Bios diagnostics. I got this.
+======================================================================
+
+[117] Similarity: 0.557 | neboel | 3/10/2025
+And someone told me the endpoint security controller problem is because I replaced the ec chip
+======================================================================
+
+[118] Similarity: 0.582 | lawfets | 3/13/2025
+could be that secure boot has to be disabled in bios
+======================================================================
+
+[119] Similarity: 0.580 | lawfets | 3/13/2025
+If you cannot see the target drive at the beginning of the installation, that usually means you need to go to the support page for that PC on the manufacturers website, to download the Intel RST chipset drivers installer, then extract the drivers out of that installer and put them in a new folder on your bootable USB.
+======================================================================
+
+[120] Similarity: 0.553 | guesswho_7316 | 3/13/2025
+Yes. Ewerything was unpluged. Only the usb dongel was pluged in. It's always pluged in and i did forget about it
+======================================================================
+
+[121] Similarity: 0.554 | guesswho_7316 | 3/13/2025
+No problem. That chip is the problem i'm shure but i t he video it says it's not awailable on the market. I check and hope for the best
+======================================================================
+
+[122] Similarity: 0.558 | sephir0th1984 | 3/14/2025
+Well, the safest way is to remove, solder it to a small flash ic programming board and put it into the programmer
+======================================================================
+
+[123] Similarity: 0.554 | josephur | 3/15/2025
+I'm guessing it's a SY8386B chip?
+======================================================================
+
+[124] Similarity: 0.587 | sephir0th1984 | 3/15/2025
+Usually you rule out BIOS corruption by nothing else than flashing a known working BIOS... 🙂
+======================================================================
+
+[125] Similarity: 0.586 | alexroosteren | 3/15/2025
+Try AS programmer. Autodetect should work with that chip.
+======================================================================
+
+[126] Similarity: 0.558 | alexroosteren | 3/15/2025
+And check if that chip needs to be programmed with 1.8V or 3.3V Should be 3.3V I think.
+======================================================================
+
+[127] Similarity: 0.562 | thefuzzy | 3/15/2025
+@Alexroosteren okay erased, program and verify is successful. Ill go solder the bios chip and report back. Thank you for the help!
+======================================================================
+
+[128] Similarity: 0.571 | niksbrotha | 3/16/2025
+https://arduino.ua/files/1903051031_JoulWatt-Tech-JW5068A_C371422.pdf?srsltid=AfmBOopiai2wG1VY-ogL2c1sYSS7iPrK0izerO9_JvIQhEtCPRSxrHzQ
+======================================================================
+
+[129] Similarity: 0.560 | andre07904 | 3/16/2025
+Is there someone that has information about the IT8227 chip? This chip got burned and I replaced it. I took one from a Chinese donor board. Everything seems to be fine - CPU getting power and getting warm. Symptons are no display and no activity. I'm not sure if that could be caused by that chip. Is there anyone that knows if they always need to be programmed or something like that?
+======================================================================
+
+[130] Similarity: 0.582 | niksbrotha | 3/17/2025
+You can test the BIOS I posted if you are suspecting a corrupted firmware in the mean time
+======================================================================
+
+[131] Similarity: 0.617 | sephir0th1984 | 3/17/2025
+A requirement for BIOS corruption in combination with device turns on would be, that all power rails are present, including CPU Core and GPU Core (if present)
+======================================================================
+
+[132] Similarity: 0.553 | .dony. | 3/17/2025
+we have cpu warmth, device draws 0.125mA @ 18v pulses to 0.160mA for 15-ish seconds then "boot loops" (drops to under 50mA for a second then back to 0.125>0.160 etc)
+
+Device belongs to a teenage daughter of a colleage
+======================================================================
+
+[133] Similarity: 0.581 | .dony. | 3/17/2025
+i dont understand?
+
+to note:
+With no BIOS SPI Flash installed. the LEDs DO NOT turn on however there is a parasitic 0.035mA current draw
+
+scrubbing the internet looking for a schematic / boardview now
+======================================================================
+
+[134] Similarity: 0.553 | dipsy666. | 3/17/2025
+I have a usb c port with fast charging capabilitys that doesnt charge the laptop or the laptop doesnt put voltage out on. When trying to charge the laptop the chip with the code Z27J, 3712B pulses hot and when injecting 5v on the rail behind the chip it gets red hot. looks like its trying to communicate with the pd controller over and over again but shutting down and won't get over 1.2v at 0.01a (when trying to charge this laptop throught that usb port). Also noticed physical damage on that chip
+======================================================================
+
+[135] Similarity: 0.559 | nelpi3723 | 3/18/2025
+In case this is helpful for anyone, I found the lines going from the gates of first and second mosfets to the bq chip rusted, so I cleaned them up and applied UV gel, laptop is working fine again.
+======================================================================
+
+[136] Similarity: 0.575 | sephir0th1984 | 3/19/2025
+In best case a guy caused some sort of BIOS corruption by cutting power all the time
+======================================================================
+
+[137] Similarity: 0.562 | lucky.11. | 3/19/2025
+if its cpu then it could be spreading the heat out. It's a big component. Inject 0.9v and see if cpu gets warm
+======================================================================
+
+[138] Similarity: 0.587 | alexroosteren | 3/19/2025
+A BIOS can be so corrupted that the laptop does nothing at all. If the laptop gives specific codes the CPU will be active most likely.
+======================================================================
+
+[139] Similarity: 0.586 | lucky.11. | 3/19/2025
+So those laptops that are supposed to give specific code for bios fault can have such a corrupted bios that it wouldn't be able to even indicate bios fault with the code?
+======================================================================
+
+[140] Similarity: 0.553 | im.reny | 3/19/2025
+"**JE 16**" chip is **MPS MP5016-L** Current Limit Switch
+======================================================================
+
+[141] Similarity: 0.560 | lucky.11. | 3/19/2025
+bios corruption - that magical last straw that will save the day
+======================================================================
+
+[142] Similarity: 0.582 | alexroosteren | 3/20/2025
+That board has a USB-C PD controller TPS95988 ? If so that controller controls both USB-C ports and could also be the culprit.
+======================================================================
+
+[143] Similarity: 0.559 | smaxx | 3/20/2025
+There are obviously boards that do more with this, like some USB testers showing you the used PD/QC standard etc. those might indeed use a programmable chip to handle this.
+======================================================================
+
+[144] Similarity: 0.563 | mrinkryption | 3/21/2025
+What kind of an issue would cause a laptop to start and run but only detect the intel graphics. I cannot diagnose properly yet as I’m waiting on a buck converter to come from overseas to make sure I have my 3 and 5 volt rails.
+======================================================================
+
+[145] Similarity: 0.551 | smaxx | 3/21/2025
+~~PQH8101 is the top MOSFET you originally had under suspicion?~~
+======================================================================
+
+[146] Similarity: 0.554 | lucky.11. | 3/21/2025
+ic maybe pull the PGOOD signal low if it detects some fault
+======================================================================
+
+[147] Similarity: 0.557 | gtx_computers | 3/27/2025
+Kb9548gf is this chip needed programming
+======================================================================
+
+[148] Similarity: 0.574 | odtech | 3/27/2025
+Some laptops has a IC between the keyboard and EC. Saw Sorin talk about it once explaining why it's difficult to program some new EC's because of that chip.
+======================================================================
+
+[149] Similarity: 0.604 | lucky.11. | 3/28/2025
+That's some high tier hacker repair right there
+======================================================================
+
+[150] Similarity: 0.560 | abel2b_95444 | 4/1/2025
+@Mike  After our last talk, I could not get my PSU to lower than 1V precisely at 0.6v, so I went ahead and hacked me a real VTT power supply, from a scrap HP mother board, but guess what ? when I tested chip on bench it gave me 0.6V but after cutting out and placing on the lenovo ... nothing, as I was rechecking my jumpers I noticed I had my S5 signal at 3.3V but my S3 was low or jumping around.... checking boardviewe for the V310 I did not have DDR_PG coming from the previous 2Meg ohm.. resisto
+======================================================================
+
+[151] Similarity: 0.582 | codeconnoisseur | 4/3/2025
+On a modern Intel platform:
+1. EC reads the power button going low
+2. EC verifies that all power good signals are present
+3. EC turns on +1.8 V core logic for the PCH
+4. EC waits for the PCH to tell it that its power wells are stable
+5. EC asserts `RSMRST` (resume reset) to the PCH
+6. PCH replies with `PLTRST` (platform reset, final high-level signal) and takes it from there, reading the main BIOS ROM and starting the CPU
+======================================================================
+
+[152] Similarity: 0.558 | g.l_ | 4/5/2025
+Its 10 gen intel cpu , so chipset must be srjau,  hard to find good ones . You know on aliexpress your going to find seller with new chipset 100% original.  But all off them ar used already because intel doesn't sell chipset
+======================================================================
+
+[153] Similarity: 0.584 | g.l_ | 4/5/2025
+Also there is another problem with chipset  , boot guard profile must be setup on 0 ( from manufacter  )in order to use it to other boards
+======================================================================
+
+[154] Similarity: 0.559 | g.l_ | 4/5/2025
+Well you backup bios from donor board and open it in the right version of intel FITC   ,
+======================================================================
+
+[155] Similarity: 0.557 | doctorcreampie | 4/6/2025
+i assume too but i do not know how the hardware fault startet or from what it happend. I can measure the voltage on the chip when i plug in a charger or any point that is relevant. 
+
+I am quite new to this sector but I have little bit understandig about electronics.
+======================================================================
+
+[156] Similarity: 0.581 | sephir0th1984 | 4/8/2025
+Theoretically it gets it's firmware from the EC via I2C
+======================================================================
+
+[157] Similarity: 0.603 | i_am_windows | 4/10/2025
+That's probably corrupt bios, someone gotta remove the chip and reflash it.
+======================================================================
+
+[158] Similarity: 0.561 | niksbrotha | 4/10/2025
+U3502 is the chip closest to keyboard connector.
+======================================================================
+
+[159] Similarity: 0.592 | gtx_computers | 4/11/2025
+ould be the issue here. ? Firmware or hardware,?
+======================================================================
+
+[160] Similarity: 0.565 | sephir0th1984 | 4/11/2025
+Depending of what exact power rail related to the GPU is affected, the GPU might be fried already. Device is working on iGPU instead.
+======================================================================
+
+[161] Similarity: 0.555 | lucky.11. | 4/11/2025
+are you going to install remote control program tho like we talked? Device manager will show some device not working if there's a problem like with iGPU
+======================================================================
+
+[162] Similarity: 0.551 | chasefournier | 4/11/2025
+@PitStopComputers.ro do you happen to have a ite it5571e-128 SIO ec IC 
+
+Programmed for the MS-17Q21 board
+======================================================================
+
+[163] Similarity: 0.559 | stetofix | 4/11/2025
+The lower one of the mosfets closer to the jack is shorted between Source and Drain.
+The marked chip is a Intersil. The BQ is on the other side of the screwhole towards the four RAM chips
+======================================================================
+
+[164] Similarity: 0.552 | sephir0th1984 | 4/12/2025
+Or locked via bootguard
+======================================================================
+
+[165] Similarity: 0.563 | niksbrotha | 4/12/2025
+But for me to learn as well next time to search for richtek chip if I see that coding
+======================================================================
+
+[166] Similarity: 0.591 | sunshineyou | 4/14/2025
+@Smaxx @CodeConnoisseur i found the culprit it is MOSFET (it's Corrupted I mean shorted)
+======================================================================
+
+[167] Similarity: 0.554 | sephir0th1984 | 4/15/2025
+EC firmware almost never gets corrupted. Actually I can not recall any case from the last 5 years where I had to deal with EC corruption.
+======================================================================
+
+[168] Similarity: 0.578 | sephir0th1984 | 4/16/2025
+Your EC has strange connections to the circuit with pins which are normally used for programming. There might be a chance for Programming automatically from the Main BIOS. Someone should inspect the dump for being EC firmware inside. Other than that I only see the solution to work with wires.
+======================================================================
+
+[169] Similarity: 0.568 | mersa_ofc | 4/17/2025
+Could it be possible the cause of this problem is The bios chip needs  to be flashed?
+Cus i checked the 19.5 power rails and its positive and also the 3.3 and 5 v rails
+======================================================================
+
+[170] Similarity: 0.598 | sephir0th1984 | 4/18/2025
+And you have played with disabling hardware
+======================================================================
+
+[171] Similarity: 0.565 | monet6196 | 4/18/2025
+Update: after testing few things, I’m 100% sure these issues are from Intel
+======================================================================
+
+[172] Similarity: 0.553 | eddytech_ | 4/19/2025
+p (HP ProBook 640 G1) I discovered one of the charging MOSFET was removed and jumped with a wire I thought that was the problem but when I replaced that missing FET, it started giving battery not detect, so in order to return it back as it was, I remove the FET and jumped it source to drain and behold battery started charging I don't know the logic behind it but I've noticed this method from other PC I've worked on. 
+
+
+@Mike @G.L @anyone pls 🙏
+======================================================================
+
+[173] Similarity: 0.574 | smaxx | 4/19/2025
+[Badcaps thread](https://www.badcaps.net/forum/troubleshooting-hardware-devices-and-electronics-theory/troubleshooting-laptops-tablets-and-mobile-devices/81121-gl502vsk-programming-it8995vg-128)
+======================================================================
+
+[174] Similarity: 0.592 | mub00 | 4/19/2025
+I did something not sure if it busted my laptop but when I got the ch341a programmer I did not know my chip was 1.8v so I just put the clip on the chip and the the programmer would always disconnect
+======================================================================
+
+[175] Similarity: 0.560 | monet6196 | 4/20/2025
+Disabled secure boot on bios
+Everything works on linux now
+======================================================================
+
+[176] Similarity: 0.601 | billswan | 4/20/2025
+pen setting "Prevent installation of devices that match any of these device IDs."
+
+click enable click show add respective Hardware Ids you grabbed from device manager. Apply.
+======================================================================
+
+[177] Similarity: 0.572 | eddytech_ | 4/20/2025
+Source- 19.3v 
+Gate - 5.9v 
+Drain - 19.3v 
+
+2nd FET
+Source -19.3v 
+Gate - 25.3v 
+Drain - 19.3v
+======================================================================
+
+[178] Similarity: 0.568 | sephir0th1984 | 4/20/2025
+I'm more the hardware guy. I try to avoid firmware/software as often as possible. And this seems to be even more special than usual. I have no idea what this is and what's the goal. Looks kyrrillic to me.
+======================================================================
+
+[179] Similarity: 0.564 | sephir0th1984 | 4/21/2025
+That's the main supply for the chipset und could mean lethal damage for the board
+======================================================================
+
+[180] Similarity: 0.568 | codeconnoisseur | 4/21/2025
+I would imagine that this would cause the firmware to disable the iGPU, yes.
+======================================================================
+
+[181] Similarity: 0.550 | rambobg78 | 4/21/2025
+This is the usb port related.
+Be careful whit high voltage infection.  I whont use more then 1V if im not sure what circuit is related to.
+======================================================================
+
+[182] Similarity: 0.582 | lacapssoula | 4/21/2025
+oh my god , i can see that the bios chip is being messed with before
+======================================================================
+
+[183] Similarity: 0.573 | marcebele | 4/21/2025
+ne what wrong with that EC because all the rail massurment is good but somehow it bad ( Mac5200).
+
+If your board doesn't gave SIO_SLP_S5# always doubt you EC Chip.
+
+Ps : as far as I know Mac5200 can't be auto reprogram for the  2th time, the 1th is auto program  the chip can't be used on other laptop otherwise the laptop fan will always run on full speed, maybe idle work if you have svod4 to reprogram the EC
+======================================================================
+
+[184] Similarity: 0.557 | eddytech_ | 4/22/2025
+U4404 MOSFET 
+D - S - 5.2m 
+G - S - 139k 
+G - D - 51k 
+
+drain - 19.31
+source 2.68v
+gate - 2.66v
+
+PU4402 MOSFET 
+D- S - 2.6m
+G - S - 4.2m 
+G - D - 3.0m 
+
+drain2.68v 
+source 19.31v
+gate - 19.31v
+
+bat connector has 2.68v (battery connected)
+======================================================================
+
+[185] Similarity: 0.554 | lucky.11. | 4/24/2025
+You can disable iGPU through bios
+======================================================================
+
+[186] Similarity: 0.554 | hobostove. | 4/24/2025
+That chip is G781, a temperature monitoring thing that talks over the SMBus
+======================================================================
+
+[187] Similarity: 0.558 | hobostove. | 4/24/2025
+Easy diagnosis, doesn't put the chipset at risk
+======================================================================
+
+[188] Similarity: 0.576 | hobostove. | 4/24/2025
+The broken chip is SY8288BRAC
+======================================================================
+
+[189] Similarity: 0.569 | ace800907 | 4/25/2025
+So can I cross off hardware from my list of suspects excluding the SSD?
+======================================================================
+
+[190] Similarity: 0.575 | lucky.11. | 4/25/2025
+Pointing to hardware issue then
+======================================================================
+
+[191] Similarity: 0.558 | ace800907 | 4/25/2025
+```
+- DISM check and restore health: component repairable, but after repair issue still persisted
+- sfc /scannow: no errors found
+- Windows memory diagnostics: no errors found
+- cpu-z benchmark: passed
+- cinebench benchmarks: passed
+- occt stability tests: passed (including CPU, RAM, and GPU tests, each for 20 minutes, and RAM for one hour)
+- chkdsk for drives C and D: no errors found
+- Drive C health 71 percent, Drive D 100 percent, based on crystaldisk info
+- Checked Event View and Reliability
+======================================================================
+
+[192] Similarity: 0.572 | codeconnoisseur | 4/25/2025
+For educational purposes: Driver Verifier. But this is definitely looking like a hardware issue.
+======================================================================
+
+[193] Similarity: 0.551 | codeconnoisseur | 4/25/2025
+Or perhaps https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/forcing-a-system-crash-from-the-keyboard depending at what IRQL it’s freezing at.
+======================================================================
+
+[194] Similarity: 0.562 | switchnsides | 4/27/2025
+https://www.badcaps.net/forum/troubleshooting-hardware-devices-and-electronics-theory/troubleshooting-laptops-tablets-and-mobile-devices/bios-requests-only/3624591-jvhfc1-he430-he540-rev-1-0-bios-request
+======================================================================
+
+[195] Similarity: 0.565 | in1pe | 4/28/2025
+And overheating the exposed CPU and GPU
+======================================================================
+
+[196] Similarity: 0.572 | codeconnoisseur | 4/29/2025
+Interesting, probably a firmware issue but that could be caused by the firmware tripping up on enumerating faulty hardware. Have you tried different RAM and removed any internal drives?
+======================================================================
+
+[197] Similarity: 0.569 | codeconnoisseur | 4/29/2025
+Happy to help! Helping is also how I learn more myself. But yeah, I think it's most likely to be an EC firmware or chip failure at that point. I don't have a whole lot of experience yet with troubleshooting power sequencing at that level, but as far as I know most laptops should just need power good signals from the ALW rails, then they bring up the system S0 rails, and then PCH and DRAM. Then the PCH and EC does some final handshaking before spinning up the CPU and loading the firmware. Between
+======================================================================
+
+[198] Similarity: 0.563 | in1pe | 4/29/2025
+4th (uh secure boot fails)
+======================================================================
+
+[199] Similarity: 0.554 | i_am_windows | 4/30/2025
+s a hardware issue, because it is restarting Even with linux running off via usb. 
+
+It has got 4gb soldered ram and a 4 gig stick. 
+
+I have never seen such an issue,
+Asus vivobook x415jf, i5 1035g1, 8 gb ram. 
+
+If anyone has any idea, I'll appreciate it. (I personally think it's gonna be a chipset dead issue because I've heard sorin say that )
+
+Thank you.
+======================================================================
+
+[200] Similarity: 0.574 | codeconnoisseur | 5/1/2025
+Theoretically, there is a very small chance that the firmware is not transferred over and it sends bad signals that could cause something to explode.
+======================================================================
+
+[201] Similarity: 0.551 | codeconnoisseur | 5/1/2025
+The EC is directly connected to `UB3`, so it's possible that it loads its firmware from it.
+======================================================================
+
+[202] Similarity: 0.576 | nartiko_ | 5/2/2025
+ device
+======================================================================
+
+[203] Similarity: 0.600 | si.one | 5/2/2025
+IT8587 with 128K-byte e-flash
+Auto load code condition:
+1. Let PCH SPI interface in High-Z state.
+2. RSMRST# pull low
+ (PCH SPI pins are tri-stated prior to RSMRST# de-assertion)
+3. EC pin 100(GPG2) pull high(force EC load code)
+4. Supply power to SPI flash ROM,PCH(VCCSPI,+1.05V_SUS) and
+======================================================================
+
+[204] Similarity: 0.575 | craftbenmine | 5/3/2025
+@Harilampi did something and now has 8 ohm on mainpowerrail, and cpu gets hot when injecting 0.7v intomainpowerrail
+======================================================================
+
+[205] Similarity: 0.580 | craftbenmine | 5/3/2025
+@Harilampi what was the original fault before the mosfet blew when you were working on the laptop?
+======================================================================
+
+[206] Similarity: 0.558 | gocku_boomy | 5/3/2025
+Seems like a plug in security
+======================================================================
+
+[207] Similarity: 0.577 | m.q0304 | 5/4/2025
+*** WE NEED SPONSORS 
+
+DOWNLOAD SCHEMATIC LAPTOP
+https://t.me/schematicslaptop
+https://t.me/schematicslaptop
+—————————————
+biosarchive98@gmail.com
+—————————————
+@schematicslaptop
+ADMIN : @MAHMOODJAVAN
+—-
+#DONATE: webmoney walet : Z062745682033
+—-
+https://t.me/schematicslaptop
+======================================================================
+
+[208] Similarity: 0.565 | bossxxxl | 5/8/2025
+okey because once bro its got fixed with firmware updated intel me then it back as before after flashing newer bios
+======================================================================
+
+[209] Similarity: 0.592 | codeconnoisseur | 5/10/2025
+And you're going to go insane looking for any hardware fault for this kind of issue.
+======================================================================
+
+[210] Similarity: 0.550 | bossxxxl | 5/10/2025
+So maybe 🤔🤔 some electronics are damaged
+======================================================================
+
+[211] Similarity: 0.556 | bossxxxl | 5/10/2025
+They said intel sst sit between realtek and other stuff
+======================================================================
+
+[212] Similarity: 0.566 | bossxxxl | 5/10/2025
+From firmware or from other stuffs
+======================================================================
+
+[213] Similarity: 0.573 | bossxxxl | 5/10/2025
+Intel me firmware
+======================================================================
+
+[214] Similarity: 0.553 | sephir0th1984 | 5/11/2025
+If BIOS is a suspect, Flash it?
+======================================================================
+
+[215] Similarity: 0.564 | codeconnoisseur | 5/11/2025
+Then flashing firmware will most likely do nothing because we aren't at a point yet where the CPU can even begin executing it.
+======================================================================
+
+[216] Similarity: 0.560 | joel_22302 | 5/11/2025
+Q24780S):
+- Charger IC signals initially inconsistent.
+- Found open connection between MOSFETs PQ201 and PQ202 on "P2" net.
+- Performed jumper wire fix to reconnect PQ201 and PQ202 → Restored main charging path (20 V).
+
+3. Post-repair results:
+- Charging circuit started working.
+- Laptop powered on again, charging LED stable amber.
+- 3.3 V and 5 V always-on rails tested:
+    +3VALW rail: OK, stable at 3.3 V.
+    **+5VALW rail: Unstable, showing abnormal volt**
+======================================================================
+
+[217] Similarity: 0.550 | codeconnoisseur | 5/13/2025
+Okay, I don’t have much reference for this ancient thing to know but if +1.05VM is shorted the Intel Cantiga chip (U51) is dead. But it doesn’t sound like it is shorted. If you inject voltage at the drain of the MOSFET on the main power rail as normal, how much appears at the source?
+======================================================================
+
+[218] Similarity: 0.570 | niksbrotha | 5/13/2025
+Download schematic, open it and check what was there at pu6601
+======================================================================
+
+[219] Similarity: 0.578 | sephir0th1984 | 5/13/2025
+That there is the high possibility that this is a Chipset fault
+======================================================================
+
+[220] Similarity: 0.557 | sephir0th1984 | 5/13/2025
+Rectified? Well, if confirmed,  the cure is to replace the while APU which includes the chipset
+======================================================================
+
+[221] Similarity: 0.573 | sephir0th1984 | 5/13/2025
+The cause is it is electronics. And electronics fails. The more complicated the IC, the higher the chance that it will fail. That's it.
+======================================================================
+
+[222] Similarity: 0.604 | sephir0th1984 | 5/15/2025
+To minimise the risk of data corruption
+======================================================================
+
+[223] Similarity: 0.551 | _sloppynuts | 5/16/2025
+I’ve already opened the device, I’ve started with unplugging unnecessary devices like the keyboard, display, touchpad etc. but no difference. I had done some research and it seemed like it was a bios related issue. I extracted the bios and made a backup. I then tried flashing a clean bios only to get the same results.
+======================================================================
+
+[224] Similarity: 0.606 | sephir0th1984 | 5/16/2025
+Don't get wrong, but people causing corruption on firmware while flashing AND reading with CH341A is a common problem
+======================================================================
+
+[225] Similarity: 0.564 | _sloppynuts | 5/16/2025
+Which of the bios was corrupt you would be missing important data linked to info about the device correct.
+======================================================================
+
+[226] Similarity: 0.560 | northrigde | 5/16/2025
+It’s an intel system
+======================================================================
+
+[227] Similarity: 0.571 | blixowh | 5/17/2025
+the chip is detected
+======================================================================
+
+[228] Similarity: 0.551 | sephir0th1984 | 5/17/2025
+https://www.badcaps.net/forum/troubleshooting-hardware-devices-and-electronics-theory/troubleshooting-laptops-tablets-and-mobile-devices/bios-requests-only/3520758-lenovo-thinkbook-14-g3-acl-bios-password-help?p=3521005#post3521005
+======================================================================
+
+[229] Similarity: 0.652 | sephir0th1984 | 5/18/2025
+The goal was to find out whether firmware corruption could have caused that, aside that normally almost always the CPU is at fault.
+======================================================================
+
+[230] Similarity: 0.551 | sephir0th1984 | 5/21/2025
+From my understanding a corrupted BIOS can not cause this behaviour. At least never heard of something similar
+======================================================================
+
+[231] Similarity: 0.554 | sephir0th1984 | 5/22/2025
+And this way we found two fried Ethernet Transceiver
+======================================================================
+
+[232] Similarity: 0.558 | dorsushi | 5/24/2025
+lable again, and the laptop is starting up again. That was a great feeling yesterday 😄
+MOSFET: "E6930 GA0T32" Thank you @Sorin for inspiring me to repair broken electronic things 😉
+======================================================================
+
+[233] Similarity: 0.553 | sephir0th1984 | 5/25/2025
+Afaik many Fujitsu laptops have a design flaw with their DrMOS powering the CPU, resulting in unexpected and frequently shut-downs
+======================================================================
+
+[234] Similarity: 0.562 | codeconnoisseur | 5/25/2025
+And how have you confirmed that the EC accepts firmware flashing from the keyboard connector?
+======================================================================
+
+[235] Similarity: 0.564 | kumarraja. | 5/26/2025
+hi @Mike replaced resistor but no luck hey i forgot to mention when i got this laptop while diagnosing i found a blown chip near mosfets back in 2023 at that time i don’t have the data sheet of this laptop but replaced with another ic according to data sheet ic name was ABLIC s1000 series Ultra small package high precession voltage detector linked data sheet below
+======================================================================
+
+[236] Similarity: 0.560 | codeconnoisseur | 5/26/2025
+[RT8532A](https://www.richtek.com/assets/product_file/RT8532A/DS8532A-01.pdf).
+======================================================================
+
+[237] Similarity: 0.602 | codeconnoisseur | 5/26/2025
+Is there a BIOS chip on the board? I'm appalled that such a thing as bricking a device by overwriting its internal storage would be possible.
+======================================================================
+
+[238] Similarity: 0.555 | just_bubba | 5/26/2025
+yep this is specifically for recovering these devices
+======================================================================
+
+[239] Similarity: 0.589 | sephir0th1984 | 5/27/2025
+What about the Hardware IDs with the problematic devices in device manager?
+======================================================================
+
+[240] Similarity: 0.619 | sephir0th1984 | 5/27/2025
+The hardware of this ID is known
+======================================================================
+
+[241] Similarity: 0.558 | sephir0th1984 | 5/27/2025
+I'm talking about the IDs of the UNKNOWN devices
+======================================================================
+
+[242] Similarity: 0.552 | monet6196 | 5/27/2025
+so do you think my machine doesn't get black screen again 🤣 
+this machine is evil, @lucky.11. knows that
+======================================================================
+
+[243] Similarity: 0.586 | bak. | 5/27/2025
+intel wont customise things for companies, so usually anything intel you can use the standard intel driver detector tool to get the latest versions
+======================================================================
+
+[244] Similarity: 0.579 | sephir0th1984 | 5/27/2025
+Regarding the schematics, Intruder is stuffed with a button so it just may not like it that you test it out of the chassis.
+======================================================================
+
+[245] Similarity: 0.575 | iuggio99 | 5/27/2025
+intel
+======================================================================
+
+[246] Similarity: 0.599 | marhd2.0 | 5/27/2025
+some more info:
+
+- SUS_STAT = 0v (SUS_STAT is connected from CPU_LPC to thinkengine)
+- All pins of SPI Flash (Bios) are 0v
+- VCC3_SUS = 0v
+- SUS_DRV = 0v (VCC3_SUS enable PQ25 gate)
+- PQ25 pos MM pin on source, neg on drain, vdrop = 0.52V. neg MM pin on source, pos on drain, vdrop =  0.957v
+
+- EC_RESET = 3.3v
+- CLKRUN = 0v (VCC3B = 0v)
+- LPCCLK_EC_24M = 0v
+- PLTRST_FAR = 0v
+- TP4_RESET = 0v
+- LID_CLOSE_EC = 0v
+- JTAG_RST = 0v
+- EC_PWRREQ = 0v
+- TBT_RESET_EC = 3.3v
+======================================================================
+
+[247] Similarity: 0.561 | codeconnoisseur | 5/27/2025
+That looks like it’s from one of the Intel PCH datasheets.
+======================================================================
+
+[248] Similarity: 0.559 | sephir0th1984 | 5/28/2025
+However, most likely it was a chipset fault from the beginning.
+======================================================================
+
+[249] Similarity: 0.556 | dumb.guy | 5/29/2025
+I have a laptop here that is having all kinds of hardware issues
+======================================================================
+
+[250] Similarity: 0.554 | sephir0th1984 | 5/29/2025
+Which is the first signal of the chipset supposed to be de-asserted after power button press
+======================================================================
+
+[251] Similarity: 0.564 | codeconnoisseur | 5/29/2025
+Shouldn't need to worry about ME at all. In fact, I don't think a separate chip for the ME firmware is common.
+======================================================================
+
+[252] Similarity: 0.581 | niksbrotha | 5/31/2025
+Bios can get corrupted.
+======================================================================
+
+[253] Similarity: 0.569 | codeconnoisseur | 5/31/2025
+But yes, that could also be caused by firmware.
+======================================================================
+
+[254] Similarity: 0.564 | sephir0th1984 | 6/1/2025
+I don't see anything suspicious. Regarding the given history i would start to recover the main BIOS Firmware instead.
+======================================================================
+
+[255] Similarity: 0.560 | sephir0th1984 | 6/1/2025
+The only thing what these guys need to understand now is that the Chipset is part of this BGA
+======================================================================
+
+[256] Similarity: 0.557 | meggarox | 6/1/2025
+Usually the CPU plugs in and can be unplugged, the chipset is soldered into the board
+======================================================================
+
+[257] Similarity: 0.562 | sephir0th1984 | 6/1/2025
+And even the discrete Chipset is not the standard anymore. Only in Intel laptops and only the most expensive devices
+======================================================================
+
+[258] Similarity: 0.555 | kosmo555 | 6/2/2025
+Hello, pin 8 of bios chip resistance? if its ok try to flash main and ec
+======================================================================
+
+[259] Similarity: 0.571 | sephir0th1984 | 6/4/2025
+I don't know whether there are different solutions other than BCU. But this is some difficult software stuff for a beginner and it is absolutely possible to cause firmware corruption this way
+======================================================================
+
+[260] Similarity: 0.570 | koby058 | 6/4/2025
+Hi People. 
+dell after water damage, area of the 5valw regulator was cleaned. the 5v ic (SY8288CRAC ) and another ic  that supply power to cpu (RT3612EBGQW )
+5 volt restored and also cpu 1.8v 
+but now when connecting charger the laptop pulling 0.070mA and chipset getting worm. power button not responding not changing the amps pulled
+do you think its the end ? think it could be bios?
+======================================================================
+
+[261] Similarity: 0.555 | dylon9036 | 6/5/2025
+The model is: RZ09-0484UEH4-R3U1
+OCCT GPU VRAM test shows exponentially escalating errors(19 → 223,795+ errors within seconds).  
+GPU memory usage reports 0% utilization during failures.  
+System crashes under any GPU load (including games/stress tests).  
+Dedicated Graphics system is rapidly declining since stressing the GPU in testing, the system will crash under no load (i have since disabled the GPU and system runs fine)
+Tried any and all driver related fixes, underclocking vram memory etc t
+======================================================================
+
+[262] Similarity: 0.557 | mini1477 | 6/5/2025
+What is chipset resistance? I mean if you measure chipset power supply coil. Was there water damage near chipset?
+======================================================================
+
+[263] Similarity: 0.554 | codeconnoisseur | 6/7/2025
+[RT8243AZQW](https://www.richtek.com/assets/product_file/RT8243A=RT8243B=RT8243C/DS8243ABC-07.pdf).
+======================================================================
+
+[264] Similarity: 0.570 | nadexx_ | 6/7/2025
+Intruder 0v
+Batlow 3.4v
+Ac_present 3.35v
+Rtcrst 0.5v
+Srtcrst 2.5v
+On crystal is 0.25 on pin2
+And on pin 1 is 0.43v
+Resistance to gnd rtcvcc is 24kOhms
+======================================================================
+
+[265] Similarity: 0.562 | nadexx_ | 6/7/2025
+Intruder is definitely 0v,
+Rtcrst is 0.54v checked on different locations as well
+And srtcrst is 2.55v
+======================================================================
+
+[266] Similarity: 0.573 | leadfarmer813 | 6/7/2025
+smells super IO chip issues or somethign got scraped. resistor
+======================================================================
+
+[267] Similarity: 0.557 | codeconnoisseur | 6/8/2025
+~~[RT6214AHRGJ8F](https://www.richtek.com/assets/product_file/RT6214A=RT6214B/DS6214AB-04.pdf)~~.
+======================================================================
+
+[268] Similarity: 0.555 | sephir0th1984 | 6/8/2025
+Adapter detection?
+======================================================================
+
+[269] Similarity: 0.571 | sephir0th1984 | 6/10/2025
+Okay. Let's clarify some things at this point. This is one of the most common and at the same time one of the most complicated faults which exists on Intel platforms.
+
+Namely the Chipset not de-asserted SLP_S5#, SLP_S4# and SLP_3#
+======================================================================
+
+[270] Similarity: 0.553 | sephir0th1984 | 6/10/2025
+Even of the Chipset is in perfect condition it will not work on your board when BootGuard is enabled
+======================================================================
+
+[271] Similarity: 0.556 | mini1477 | 6/10/2025
+There is small chance that it will unlock by itself if you put it into laptop and charge it with lab power supply directly. Sorin has done it few times. But its quite rare. If it's locked also if you can open it up and let's say cells unbalaced. If you balance cells might unlock. Of course if fuse blown have to repair fuse as well. Worth a shot without NLBA if ur desperate. Also by measuring cells directly you get an idea what the cells are doing.
+======================================================================
+
+[272] Similarity: 0.567 | .futyimre | 6/12/2025
+Hi guys!
+
+I have a question regarding supervisor password removal and EC flashing on modern Lenovo Thinkpads.
+More precisely a T14 Gen 2 Intel.
+
+I read that the password cant be patched out like in the older series and the EC needs to be programmed.
+Also that there are special tools for the job like the Vertyanov programmer.
+
+My question is that the only way is to use these special tools or can it be done with a simple microcontroller as well?
+If yes do you guys know any sources for information 
+======================================================================
+
+[273] Similarity: 0.557 | codeconnoisseur | 6/12/2025
+Answering generally, you can do anything with a microcontroller. The main issue is figuring out how to get the chip to accept new firmware.
+======================================================================
+
+[274] Similarity: 0.565 | niksbrotha | 6/12/2025
+Or why do you suspect your chipset os faulty?
+======================================================================
+
+[275] Similarity: 0.602 | .futyimre | 6/13/2025
+Yup, understandable.
+Sorry for not reading the rules properly.
+
+It turns out that this exact ec cant even be read because it doesnt use jtag.
+On Vlab the only solution was to salvage a microcontroller from another board, but because of the underfill thats almost impossible (for me)
+======================================================================
+
+[276] Similarity: 0.551 | niksbrotha | 6/13/2025
+https://www.digikey.ca/en/products/detail/richtek-usa-inc/rt6256bgquf/16376852
+
+This is my chip version.
+======================================================================
+
+[277] Similarity: 0.552 | nexkg_28147 | 6/14/2025
+Anyway, save your original bios files from both chips before trying other. You can post them here in #🔑bios  section and maybe someone can fix your original bios files if they are corupted.
+======================================================================
+
+[278] Similarity: 0.580 | nexkg_28147 | 6/14/2025
+If it is not a hardware fault, don't worry gonna be ok.
+======================================================================
+
+[279] Similarity: 0.551 | mac068408 | 6/14/2025
+May it be a bad programming on the EC chip through the BIOS?
+======================================================================
+
+[280] Similarity: 0.603 | sephir0th1984 | 6/14/2025
+Hehe, "bad Programming" resulting in a hardware damage is a myth. Especially when so obvious like that
+======================================================================
+
+[281] Similarity: 0.551 | lupusetflos | 6/16/2025
+Have you tried another OS to see if it's just a Secure Boot type thing affecting it? And if so, try modifying your Windows ISO with MicroWin from TechUtil.
+======================================================================
+
+[282] Similarity: 0.580 | h43to | 6/17/2025
+https://www.badcaps.net/forum/troubleshooting-hardware-devices-and-electronics-theory/troubleshooting-laptops-tablets-and-mobile-devices/3661239-ite-it8390-it8390e-256-programmer-ite-download-board-4-user-manual-firmware-flashing-ite-ecs-on-the-cheap
+======================================================================
+
+[283] Similarity: 0.556 | experiment81 | 6/18/2025
+https://www.intel.com/content/www/us/en/content-details/792044/intel-core-ultra-processor-datasheet-volume-1-of-2.html
+======================================================================
+
+[284] Similarity: 0.553 | sephir0th1984 | 6/18/2025
+Hmm, it would be possibly helpful to understand the Pinout after lifting the IC. This could help to identify it by restricting the search on this exact package type.
+What Laptop and board make/model is it?
+======================================================================
+
+[285] Similarity: 0.553 | sephir0th1984 | 6/18/2025
+You understand that a IC getting hot only in rare cases means that the IC is defective, but mkre likely that something on the load is wrong, yeah? @ub6ib969
+======================================================================
+
+[286] Similarity: 0.551 | sephir0th1984 | 6/18/2025
+---
+So you are trying to identify a IC although you have serious problems like multiple shorted power rails?
+======================================================================
+
+[287] Similarity: 0.558 | dues0488 | 6/19/2025
+problem on mother probably EC Chip need to reprogram
+======================================================================
+
+[288] Similarity: 0.562 | danielpires | 6/19/2025
+completely disconnected, the moment I connected the CH341A programmer (which is powered by my PC's USB port) to the BIOS chip, I noticed that the main chipset (the Intel HM370 PCH) started to get noticeably warm, and then hot. This was happening with only the 3.3V power being supplied from the programmer to the BIOS chip, before I had even initiated a read or write command.
+
+Despite this strange behavior, I decided to proceed with the re-flash. The software was able to communicate with the chip 
+======================================================================
+
+[289] Similarity: 0.551 | niksbrotha | 6/19/2025
+Which leads to dead EC chip or w/e rail they sparked.
+======================================================================
+
+[290] Similarity: 0.553 | the_rem_39139 | 6/20/2025
+S battery. Of course I have removed the main battery to do some test so it shoud have alreay reset the BIOS. 
+
+Could it be a corrupted bios ? I am really thinking it is. But I have no knowledge in clearing Intel ME region.
+
+Anyone able to help ?
+
+Thanks
+
+Denis
+======================================================================
+
+[291] Similarity: 0.575 | the_rem_39139 | 6/21/2025
+he mb before (stickers and "fresh" connectors). I really think it is a corrupted BIOS but of course I am not gonna work on this... except if the end user has a good explanation for not sending it back to HP ! BTW do you know some sources where I could find help/tutorials how to prepare (remove ME region ?) an Intel BIOS to be flashed whith a programmer ?
+======================================================================
+
+[292] Similarity: 0.553 | xcommunicado713 | 6/21/2025
+Yeap, I think I will buy it and try to reprogram the chip.
+Any heads up?
+======================================================================
+
+[293] Similarity: 0.551 | niksbrotha | 6/22/2025
+@Mike going to just replace with 24780s, and change that fet. Seems shorted 0.4ohm between source to drain and source to gate.
+======================================================================
+
+[294] Similarity: 0.556 | buzzer091 | 6/23/2025
+Device: Laptop
+Brand: MSI 
+Model: MS-17K2
+Board number:  MS-17K21 ver 1.0
+
+Hi All
+Laptop stopped working during AI rendering. 
+The power supply goes to block and clicks as short circuit
+Found overheating MOSFET as per picture, took it off, and now power supply does not goes to block itself.
+however the pins 123 shows 5 Ohms and when apply 0.6V on the pins 123, all the VRAM CHIPS are getting heat spots.
+The Taken out MOSFET on the multimeter I do not see as shorted.
+So my opinion there is VRAM/GP
+======================================================================
+
+[295] Similarity: 0.552 | mac068408 | 6/23/2025
+Does anybody know anything about the EC chip ENE KB9542QG? Does it have intenal rom? Is it programmable? Datasheet?
+======================================================================
+
+[296] Similarity: 0.555 | codeconnoisseur | 6/25/2025
+You can remove the heatsink and check resistance from that resistor to your CPU and GPU Vcore to determine if there is a high-side MOSFET that is responsible (hopefully not) or if there are any exploded low-side MOSFETs.
+======================================================================
+
+[297] Similarity: 0.575 | sephir0th1984 | 6/26/2025
+Which excludes BIOS corruption as a possible reason per default
+======================================================================
+
+[298] Similarity: 0.559 | sephir0th1984 | 6/27/2025
+General information: TPS65994AD PD-Controller gets programmed via I2C from SAM (EC) on Microsoft Surface Laptop Studio (Gen 1)
+======================================================================
+
+[299] Similarity: 0.557 | thomasl_de | 6/27/2025
+"ME" = Management Engine, basically the firmware of the intel Platform Controller Hub (PCH)/Chipset
+======================================================================
+
+[300] Similarity: 0.557 | laloo5804 | 6/27/2025
+question:
+I have a gaming laptop with a burnt power mosfet right near the charging port, I'm knew to electronics and would like to know what the most likely problem that caused the MOSFET to blow up and what is the solution to repairing this laptop
+======================================================================
+
+[301] Similarity: 0.556 | codeconnoisseur | 6/28/2025
+Yeah, this is usually a sign of a PD controller fault. Though, I'm not sure how that could have happened from messing with the BIOS chip. I'd want a general board overview (voltage and resistance on all inductors) and specifically on the PD controller input voltage(s) as additional proof.
+======================================================================
+
+[302] Similarity: 0.575 | paruccone | 6/29/2025
+trying to find the link from a forum where someone was asserting there's a new security mechanism on recent (intel 11th gen and later) business machines that links BIOS/EC content to the TPM. I'll share if I find it again but it's probably easier to just get the missing components and try (the soldered BIOS EEPROM in the photo is the one I programmed using an image from another machine).
+======================================================================
+
+[303] Similarity: 0.553 | paruccone | 6/29/2025
+yes and that is true for all systems with TPM and I already know. But Lenovo in the last decades has been trying, at least on its Thinkpad line, to secure more and more the BIOS' security through its ThinkShield chip
+======================================================================
+
+[304] Similarity: 0.561 | mac068408 | 6/30/2025
+The problem is that not only it restarts the laptop but often corrupts the bios (somehow??). In fact it does a "bios repair flashback" when it restarts.
+
+The device is a Lenovo ThinkPad X1 Carbon 9th Gen
+======================================================================
+
+[305] Similarity: 0.550 | sephir0th1984 | 7/1/2025
+Most likely not. More likely the fault lies where the Mosfets are controlled from or further down the track (emergency shutdown)
+======================================================================
+
+[306] Similarity: 0.576 | codeconnoisseur | 7/1/2025
+`U4003` is a [G2898](https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588911223656497153).
+======================================================================
+
+[307] Similarity: 0.555 | niksbrotha | 7/2/2025
+Hey Mac, I missed your message. No, bypassing those mosfets will not cause a shut down during use. Your issue is somewhere else. I would check resistances on coils but it seems like you have some sort of a cpu drmos issue possibly, maybe some mosfet is failing and is crashing under any load. The bios can get corrupted if battery locks/is too low.
+======================================================================
+
+[308] Similarity: 0.558 | mohamadmoheb | 7/3/2025
+i have a surface model 1769 with a blown up EC chip im guessing
+======================================================================
+
+[309] Similarity: 0.585 | sephir0th1984 | 7/3/2025
+And incompatible firmware (the sample firmware from the SDK for example) can result in absolutely weird behaviour as we know from the video... 🙂
+======================================================================
+
+[310] Similarity: 0.571 | wachenanggo | 7/5/2025
+Device: Laptop
+Brand: ASUS
+Model: Asus tuf f15  FX-506IV-AL129T
+Board number: dabkxbmbad0 rev d 
+
+can this model disable DGPU?? because its giving random BlueScreen caused by ntoskrnl.exe i think its the Nvidia GPU is the reason for random bsod.
+======================================================================
+
+[311] Similarity: 0.580 | gusto_m | 7/6/2025
+its hardware
+======================================================================
+
+[312] Similarity: 0.568 | gusto_m | 7/6/2025
+EC and BIOS – If EC or BIOS is corrupted, power rails may not turn on at all
+======================================================================
+
+[313] Similarity: 0.554 | mini1477 | 7/6/2025
+So someone earning some quick cash from it lol. Kind of funny tbh since they are all stolen from manufacturers and chinese are known to not respect anything properiaty. i have heard chinese have access to crazy amounts of schematics/data. But no wonder. Since they all are made in china anyways.
+======================================================================
+
+[314] Similarity: 0.571 | sephir0th1984 | 7/6/2025
+Damn, so it's most likely CPU or Chipset fault.
+======================================================================
+
+[315] Similarity: 0.556 | nexkg_28147 | 7/7/2025
+These days people in general think every fault is caused by corrupted bios and think everything can be fixed just by flashing it. So have you updated your firmware yet? 😀
+======================================================================
+
+[316] Similarity: 0.580 | nexkg_28147 | 7/7/2025
+nged that voltage regulator chip (H1B2C) because it is the known issue on the chromebooks but with no success. Nothing helped till I removed this chip: Slimport anx7447. That is some kind of usb-C switcher and after I removed it next instalation try went through to the end and now the Laptop is working without issues except for usc-C near the removed chip but the device have second fully working so it doesn't matter, so be advised.
+======================================================================
+
+[317] Similarity: 0.560 | nexkg_28147 | 7/7/2025
+I don't know how, but this faulty chip was blocking instalation of fresh ChromeOs (recovery process).
+======================================================================
+
+[318] Similarity: 0.567 | nexkg_28147 | 7/7/2025
+What is this thing about flashing bios with ch341 on a working laptop. What's the catch? If you can update it conventional way why mess with the board risking of damaging it. Bios frenzy nowdays or what?
+======================================================================
+
+[319] Similarity: 0.562 | nexkg_28147 | 7/10/2025
+Go to that SY8386 chip that is getting hot and check pin nuber 13, it's resistance to ground.
+======================================================================
+
+[320] Similarity: 0.568 | codeconnoisseur | 7/12/2025
+Seems like an `INTRUDER#` issue. We'll probably need to find a boardview or just start identifying a bunch of components on the board to find the sensor. Weird that disabling it in BIOS wouldn't prevent that message though.
+======================================================================
+
+[321] Similarity: 0.556 | mistyowo12 | 7/13/2025
+ystem down, after reboot the card was no longer being detected, today i booted up my laptop on linux and the card was again being detected in "off" state, crashed again when i tried to run some test. Any ideas?
+======================================================================
+
+[322] Similarity: 0.560 | radioactivebunker | 7/13/2025
+Could the EC chip skew the value down, the Caps Lock self Diagnostic gives a EC chip/Bios error
+======================================================================
+
+[323] Similarity: 0.614 | sevenhealer. | 7/14/2025
+Never mind if found the problem for the hardware bsod due to it being caused by a sandisk ssd.
+======================================================================
+
+[324] Similarity: 0.573 | thelink23 | 7/16/2025
+Could it be that the BIOS is corrupt?
+======================================================================
+
+[325] Similarity: 0.553 | sephir0th1984 | 7/17/2025
+In the these cases the clue comes from checking the supplying power rails, enables, other logic signals and to know what is supposed to be asserted/de-asserted next
+======================================================================
+
+[326] Similarity: 0.550 | codeconnoisseur | 7/19/2025
+Which is cut the trace to pin 6 and inject anywhere from 2.4 V to 3.15 V and see if the board works.
+======================================================================
+
+[327] Similarity: 0.557 | userexit | 7/19/2025
+Do u think its safe to jump to bios reprogramming
+======================================================================
+
+[328] Similarity: 0.591 | sephir0th1984 | 7/21/2025
+Makes no sense to me. Between corrupt firmware and a hardware fault like that is no correlation.
+
+First solve the hardware fault. Then move on with a proper diagnosis beginning with a overview about the situation (voltages/resistances).
+======================================================================
+
+[329] Similarity: 0.551 | idkn0248 | 7/21/2025
+So the error now is the Capslock  + esc light on the keyboard  -referring  to google its a motherboard  issue. I but i am just asking, shorting that mosfet can it break that motherboard  like passing voltage  to CPU? Or there is still a chance to fix?
+======================================================================
+
+[330] Similarity: 0.556 | sephir0th1984 | 7/21/2025
+It's clearly a Richtek IC. So RT6258B
+======================================================================
+
+[331] Similarity: 0.559 | sephir0th1984 | 7/21/2025
+As I said, solve the obvious faulty hardware part and then you start over with a proper diagnosis.
+Or flash BIOS if you want. But don't expect too much. It simply doesn't fit.
+======================================================================
+
+[332] Similarity: 0.555 | mini1477 | 7/21/2025
+https://www.msi.com/Laptop/GS65-Stealth-Thin-8RF/Specification
+======================================================================
+
+[333] Similarity: 0.610 | sephir0th1984 | 7/22/2025
+The behaviour really points to a hardware fault
+======================================================================
+
+[334] Similarity: 0.550 | sephir0th1984 | 7/22/2025
+Sure, but I bet with you that the chipset is part of the CPU and that the 1.8VALW is shorted (through Chipset).
+======================================================================
+
+[335] Similarity: 0.559 | nqkaf_16002 | 7/24/2025
+PU etc. but rather a BIOS is maybe corrupted? Not sure if it's coincidence or not, but the whole issue starts after I paused my Anti-virus for like 5 minutes, so maybe a Virus?  I tried resetting CMOS battery and re-seating RAM sticks but didnt help.
+======================================================================
+
+[336] Similarity: 0.552 | sephir0th1984 | 7/26/2025
+At least this would explain why even both rails are compromised
+======================================================================
+
+[337] Similarity: 0.582 | dg1600 | 7/28/2025
+How likely is to have the I/O controller fried? I have injected voltage into shorted 3.3v rail and the ite chip got warm.
+======================================================================
+
+[338] Similarity: 0.554 | sephir0th1984 | 7/31/2025
+It could be BIOS corruption
+======================================================================
+
+[339] Similarity: 0.557 | samuelgift | 8/2/2025
+On the Drain (D) and  (S) of the U8300, there was short, i removed the U8300 and no short anymore on the (S) terminal upon 3v injection BUT on the (D) termina there is 740v diode reading yet upon 3v injection, the PMIC got mad hot consuming about 500mA on injection and on USBC meter 419mA from other two USBC port.
+
+So my suggestion is to chamge the U8300, PMIC, and the 2-CD chip with aftermarket chip from china :emoji_104: 
+
+Do you guys encourage that?
+======================================================================
+
+[340] Similarity: 0.560 | sephir0th1984 | 8/5/2025
+Some devices do it like that
+======================================================================
+
+[341] Similarity: 0.561 | sephir0th1984 | 8/7/2025
+The theory on modern platform is as follows. Main Power Rail up, EC up, Chipset up but just for a moment to sent it back to sleep (DeepSleep). If the Chipset can not send itself into deep sleep, then RSMRST# stays low, therefore the EC staying in reset state, although technically fully functional.
+======================================================================
+
+[342] Similarity: 0.568 | mini1477 | 8/7/2025
+Also we can see if battery is locked and why over I2C.
+======================================================================
+
+[343] Similarity: 0.554 | edbsinger | 8/8/2025
+so is bios corrupt then?
+======================================================================
+
+[344] Similarity: 0.556 | buzzer091 | 8/10/2025
+Device : Laptop
+Brand : Acer
+Model : AN517-54-79L1 
+Board Number : GH51G LA-l181P REV 1C
+Problem: 
+While using laptop slight physical movement halts the OS, no response on CAPS lock, Screen is freeze. Slight knock on the mainboard makes the screen to flicker and freeze the screen.
+
+RAM slots are fine, physically tested them by gentle pressures. 
+
+When knocking on the mainboard closer to GPU it flickers the screen and halts the OS. sometimes it goes to BSOD with the same flickering and halt.
+
+Tak
+======================================================================
+
+[345] Similarity: 0.592 | sephir0th1984 | 8/11/2025
+There are a few very sensitive tracks directly connecting to the Chipset.
+======================================================================
+
+[346] Similarity: 0.563 | codeconnoisseur | 8/12/2025
+If it's a separate chip hardware flashing may be an option, but that's a lot for a seemingly minor issue.
+======================================================================
+
+[347] Similarity: 0.552 | dumahbrazorf | 8/13/2025
+check Parts-People yt channel, he's specialized in dell/alienware. in some video show how he prepare the bios to flash
+======================================================================
+
+[348] Similarity: 0.561 | sephir0th1984 | 8/14/2025
+A bad hack could be to feed the BACKLIGHT track with 3V
+======================================================================
+
+[349] Similarity: 0.553 | darensensei | 8/14/2025
+What could be the problem of this laptop main power rail is good🥹 
+Device: Asus TUF FX505DT
+======================================================================
+
+[350] Similarity: 0.557 | mini1477 | 8/14/2025
+Is this bios 3.3V or 1.8V? Using clamps is sketchy. But when you use clamps at least you have to power laptop too and have voltage on bios from laptop. Otherwise your programmer probably can't supply enough current. But yeah just program it out of circuit.
+======================================================================
+
+[351] Similarity: 0.562 | dumahbrazorf | 8/15/2025
+may be bios corrupted
+======================================================================
+
+[352] Similarity: 0.574 | nexkg_28147 | 8/15/2025
+When and how you did that? You mentioned resplacing mosfet 2 years ago but not the bios flashing done recently. So these symptoms are new after your work on bios?
+======================================================================
+
+[353] Similarity: 0.576 | sephir0th1984 | 8/15/2025
+Sometimes applying pressure on certain points of the PCB or BGA brings the device back to life temporarily
+======================================================================
+
+[354] Similarity: 0.557 | sephir0th1984 | 8/15/2025
+Chipset for example
+======================================================================
+
+[355] Similarity: 0.565 | mini1477 | 8/16/2025
+Looks like today a lot of chipset faults.
+======================================================================
+
+[356] Similarity: 0.552 | meharimran | 8/19/2025
+Hi. Is this IO chip need to be programmed?
+======================================================================
+
+[357] Similarity: 0.559 | mini1477 | 8/20/2025
+And soldered testing nails meant for ICT in it.
+======================================================================
+
+[358] Similarity: 0.574 | stevedb | 8/22/2025
+How did you do that. I will not investigate far keep it simple start with basics . When a laptop throttle or shutdown with power . Keep it simple and start with basics. Dcin mosfets are suspects and also the mosfets from charging and sys to bat mosfet.
+======================================================================
+
+[359] Similarity: 0.552 | g.l_ | 8/24/2025
+Just extract new bios ussing  serial number,  yea some stupid low cost laptop can have problems if wrong bios
+======================================================================
+
+[360] Similarity: 0.560 | sephir0th1984 | 8/25/2025
+Could have something to do with adapter detection
+======================================================================
+
+[361] Similarity: 0.575 | noshortyno | 8/27/2025
+Can anyone tell me what the purpose is of the 0.95VS_VGAP rail? I have a G15 5530 IDQ50 LA-M531P coffee spill. The puf1 of this rail was blown with dead short on plf1. After removing the chip and checking the short was gone i was able to power on into bios. What are the risks of running the laptop without replacing this?
+======================================================================
+
+[362] Similarity: 0.575 | codeconnoisseur | 8/29/2025
+USB over current detection is a thing that board circuitry links to a pin on the PCH for the xHCI Host Controller, but generally all that does is disable the port and Windows and/or the firmware logs a warning. This must be a real physical short for it to be resetting.
+======================================================================
+
+[363] Similarity: 0.601 | blopa1961_44362 | 8/30/2025
+That chip has encryption, are you sure it's the BIOS?
+======================================================================
+
+[364] Similarity: 0.574 | luiisgonzallez | 8/30/2025
+i read the chip then cleaned/clear and then opened a file i downloaded and reprogrammed it
+======================================================================
+
+[365] Similarity: 0.558 | sephir0th1984 | 9/1/2025
+It is probably meaningless what we're trying to prove here anyway and it's simply BIOS corruption (in best case) or something wrong around the Chipset.
+======================================================================
+
+[366] Similarity: 0.555 | nexkg_28147 | 9/1/2025
+I don't think flashing bios gonna do anything. Instead, turn off power and measure resistance to ground of the drains of these two mosfets, Q6012 and Q6001. Results should be the same and should pinpoint your charging coil and give us further answers.
+======================================================================
+
+[367] Similarity: 0.578 | codeconnoisseur | 9/1/2025
+That code would generally indicate some form of hardware fault to me though, yes.
+======================================================================
+
+[368] Similarity: 0.565 | nexkg_28147 | 9/1/2025
+In other words, check the resistances to ground of pins 13 and 16 of that Sylergy chip. That will tell us more about the fault. Those are two outputs of the chip.
+======================================================================
+
+[369] Similarity: 0.593 | niksbrotha | 9/3/2025
+Blown chip could be the usb c controller or thunderbolt controller. Would need to type the writing on the ic to confirm.
+======================================================================
+
+[370] Similarity: 0.559 | fiddyonfiddy | 9/3/2025
+Some has spilled in a few random spots around the CPU, including the integrated MOSFETs driver I believe they're called
+======================================================================
+
+[371] Similarity: 0.572 | niksbrotha | 9/3/2025
+Device.
+======================================================================
+
+[372] Similarity: 0.560 | rajneeshpanwar1481 | 9/4/2025
+C is likely bypassed in this case (USB power switch, TVS diode, charging/power-path controller, etc.), and should I insist on replacing it to restore proper shutdown isolation and protection?
+======================================================================
+
+[373] Similarity: 0.569 | codeconnoisseur | 9/4/2025
+Maybe language barrier. By "EC firmware" you mean the chip storing it, not the data on the chip.
+======================================================================
+
+[374] Similarity: 0.562 | nexkg_28147 | 9/5/2025
+At the source of pqb26 is ground, yes? So defenitily yeah, isl chip shouldn't take anything by injecting on the gate of that mosfet.
+======================================================================
+
+[375] Similarity: 0.562 | measy1828 | 9/7/2025
+does reflashing the bios solve the supervioser password on Lenovo?
+======================================================================
+
+[376] Similarity: 0.570 | mini1477 | 9/11/2025
+If you put 0 ohm here your enable can never get low. But bigger problem would be whoever is controlling this 3P3VA_EN when this IC tries to pull it to GND it literally will short your +3P3VAS. So yes it will cause damage most likely.
+======================================================================
+
+[377] Similarity: 0.552 | mini1477 | 9/11/2025
+It is getting already to the point where needs to be reverse engineered.
+======================================================================
+
+[378] Similarity: 0.558 | br45h0g4n3762 | 9/13/2025
+@Nemanja i read that this type i think BGA no need the be programmed the bios flash the chip when power up the laptop  what do you think
+======================================================================
+
+[379] Similarity: 0.551 | d_onn_y | 9/13/2025
+Yeap its posted once since after i flashed bios at 3.3v and when i was checking for voltage of the bios
+======================================================================
+
+[380] Similarity: 0.555 | sephir0th1984 | 9/13/2025
+What Gate? This is not a Mosfet but a fully integrated power management IC. Are you sure that you understood with what you are dealing here?
+======================================================================
+
+[381] Similarity: 0.590 | sephir0th1984 | 9/13/2025
+Interesting. Lenovo's are known for BIOS corruption resulting exactly in the described behaviour
+======================================================================
+
+[382] Similarity: 0.619 | sephir0th1984 | 9/13/2025
+(If it isn't firmware corruption)
+======================================================================
+
+[383] Similarity: 0.578 | hotelquebec81 | 9/14/2025
+Hello. 
+I have this argentine government issued laptop SF20PA2 v1.1. It was given to me in order to change the BIOS to bypass a block. Basically, the BIOS controls how many times the laptop has been turned ON, and if it doesn't connect to a certain certificate server, the laptop blocks itself and you have to enter a code. The code is no longer provided by the local education authorities and the servers are down.
+Process is relatively simple, just flash the BIOS chip with a new one using the CH34
+======================================================================
+
+[384] Similarity: 0.580 | sephir0th1984 | 9/15/2025
+Sure, when you're used to chip-level repairs then you will know that this is unique Richtek marking code and therefore a RT5768A
+======================================================================
+
+[385] Similarity: 0.551 | sephir0th1984 | 9/15/2025
+BIOS corruption should be ruled out at this point in my opinion
+======================================================================
+
+[386] Similarity: 0.575 | niksbrotha | 9/15/2025
+Intel
+======================================================================
+
+[387] Similarity: 0.590 | niksbrotha | 9/15/2025
+I can see the richtek chip responsible for it.
+======================================================================
+
+[388] Similarity: 0.575 | codeconnoisseur | 9/15/2025
+Since that should be safe for all CPUs.
+======================================================================
+
+[389] Similarity: 0.555 | tunahanbr | 9/16/2025
+cant wait for the malware to install on my ssd
+======================================================================
+
+[390] Similarity: 0.567 | liammmmmmmmmmmmmmmmm | 9/17/2025
+I also have an MSI Stealth 15M MS-1563
+
+I'm presuming a corrupt BIOS?
+
+Turns on as soon as USB C plugged in
+Pulls 2A @ 20V
+Battery doesn't charge
+Power button LED is initially white, then stays orange
+CPU and GPU both warm up
+Fans spin when too hot
+No response from caps lock light
+No output on HDMI
+It responds to power button being pressed for ~5 seconds, restarts and repeat
+======================================================================
+
+[391] Similarity: 0.559 | sephir0th1984 | 9/17/2025
+Imagine that this diode most likely prevented not onky the HDMI Encoder but also the Chipset from being fried.
+======================================================================
+
+[392] Similarity: 0.563 | codeconnoisseur | 9/17/2025
+The safest option would be to compile that list, mark them on the board, do a full round of injecting, then proceed with increasing the voltage and current as needed, repeating until the culprit is found.
+======================================================================
+
+[393] Similarity: 0.559 | bassem1 | 9/17/2025
+@CodeConnoisseur let me confirm i got you right. i'll inject at that 3.3v coil with 1A and 0.8V and check every IC on the motherboard ?
+======================================================================
+
+[394] Similarity: 0.551 | niksbrotha | 9/18/2025
+And found another schematic that apparently uses it
+======================================================================
+
+[395] Similarity: 0.551 | niksbrotha | 9/18/2025
+This schematic has the same silergy chip
+======================================================================
+
+[396] Similarity: 0.557 | etanol_666 | 9/19/2025
+Seems consistent to JW5068A 2sJ01uR
+======================================================================
+
+[397] Similarity: 0.551 | chipbuster. | 9/20/2025
+it8987e is very common, rt809f with peb1 expansion board will able to program it,  thats what i used
+======================================================================
+
+[398] Similarity: 0.551 | mini1477 | 9/21/2025
+anyway will try to find U9 from this horrible schematic
+======================================================================
+
+[399] Similarity: 0.553 | craftbenmine | 9/22/2025
+MPS chips are designed to short the internal lowside fet to ground incase of highside failure
+======================================================================
+
+[400] Similarity: 0.552 | sergio_a_v | 9/22/2025
+Because the drmos the laptop has are pretty good at protecting the cpu
+======================================================================
+
+[401] Similarity: 0.557 | craftbenmine | 9/22/2025
+yes ! i really like the protection of the monolithic power system chips. so far I didnt have a single burnt CPU or GPU when their chips went short.
+======================================================================
+
+[402] Similarity: 0.551 | obizai | 9/24/2025
+hello is the ec KB9542qg auto programmable ?
+======================================================================
+
+[403] Similarity: 0.557 | abdallah_02l | 9/25/2025
+Pin 8 of bios chip resistance to ground
+======================================================================
+
+[404] Similarity: 0.555 | niksbrotha | 9/25/2025
+@craftbenmine soldered the mosfets back and same symptoms. Gpu detected. Time waste laptop.
+======================================================================
+
+[405] Similarity: 0.554 | smaxx | 9/26/2025
+If you need mishandled PCBs https://discord.com/channels/448464581677809676/448465198718648320/1417846516923760721
+======================================================================
+
+[406] Similarity: 0.558 | michael_a._knight | 9/26/2025
+He showed me the display devices on device manager and there was only the igpu, he also got me more info about the history of the laptop, he said it has been tampered by other technicians at least 3 times, 1. Ram upgrade 2. The first one broke the screen flex and they had to install a new one 3. Replacing the thermal paste.
+======================================================================
+
+[407] Similarity: 0.559 | parawizard | 9/27/2025
+How common is the chipset on 11th and 12th gen intel cpus to short on the 1.8V rail? I've got two Framework 13 mainboards both with a shorted 1.8V and the chipset lights up like a christmas tree
+======================================================================
+
+[408] Similarity: 0.573 | niksbrotha | 9/27/2025
+JHL6540 thunderbolt 3 controller burnt. Rx- lines shorted. It's joever right? I believe these require programming? @Mike
+======================================================================
+
+[409] Similarity: 0.559 | alpar_99106 | 9/27/2025
+I replaced a thunderbolt controller on a lenovo once, idk what type of jhl chip it was, but docking and hdmi worked after that. Just be careful when you take the chip off the motherboard, because it is glued. You can easily tare off pads. Also be careful when cleaning the glue off the motherboard.
+======================================================================
+
+[410] Similarity: 0.550 | bassem1 | 9/27/2025
+any explanation?
+those are the symptoms after programming Bios firmware
+======================================================================
+
+[411] Similarity: 0.560 | craftbenmine | 9/28/2025
+Good Sunday morning everyone! @Mike I removed shorted mosfet, gate diode drop on board is perfect so pd controller survived 🙂 Is a well marked E180AJ can be sourced easily. Do you have anything for repair today Mike?
+======================================================================
+
+[412] Similarity: 0.578 | bassem1 | 9/28/2025
+so how can i diagnose this hardware fault? i did measurements to coils resistance .. what would be the next step?
+======================================================================
+
+[413] Similarity: 0.559 | sephir0th1984 | 9/28/2025
+Change of behaviour after BIOS programming but still not working most likely means now it's either corrupted for sure or at least incompatible
+======================================================================
+
+[414] Similarity: 0.584 | juma0496 | 9/29/2025
+s on 0.1002  before if finally drops
+
+Swapped a working ec chip with no changes
+Swapped a working bios chip with no changes
+
+I NEED ASSISTANCE
+======================================================================
+
+[415] Similarity: 0.575 | bassem1 | 9/29/2025
+according to schematic it's within Overcurrent protection circuits those are r219 and c135
+======================================================================
+
+[416] Similarity: 0.553 | chipbuster. | 9/29/2025
+b4 that, check those fets on the battery charging circuits...
+======================================================================
+
+[417] Similarity: 0.562 | dumahbrazorf | 9/30/2025
+if the chip has only to open the mosfet you may sorin it just removing mosfet and chip and connecting 19V directly to the screen connector
+======================================================================
+
+[418] Similarity: 0.581 | _ilililil_ | 9/30/2025
+esent, all inductors have good Resistance. But what is strange is that SPI CLK, SPI MOSI, MISO is just dont get any data. CS always HIGH, VCC good 3.3, WP - 3.3, Hold - 3.3, so i think this is somone APU, or FCH or VGA chip, but how it prove.
+======================================================================
+
+[419] Similarity: 0.579 | sephir0th1984 | 9/30/2025
+This preferably happens with Intel 11th and 12th gen systems
+======================================================================
+
+[420] Similarity: 0.585 | dusan6076 | 9/30/2025
+Looks like someone was trying to sabotage that laptop
+======================================================================
+
+[421] Similarity: 0.554 | sephir0th1984 | 10/1/2025
+Personally I see no indication for BIOS corruption at this point
+======================================================================
+
+[422] Similarity: 0.557 | dayaah | 10/1/2025
+i was assembling the laptop back after a usb swap but i accidentaly touched the 3v-5v reg and it made a mini taser sound
+======================================================================
+
+[423] Similarity: 0.601 | mini1477 | 10/2/2025
+What is used for EC programming? Is it over JTAG, SPI or what?
+======================================================================
+
+[424] Similarity: 0.562 | mini1477 | 10/2/2025
+JTAG, SPI etc all serial.
+======================================================================
+
+[425] Similarity: 0.568 | mini1477 | 10/2/2025
+Yeah especially who can program ITE chips with revelprog:leo:
+======================================================================
+
+[426] Similarity: 0.552 | niksbrotha | 10/2/2025
+Let me show you the supported ITE chips.
+======================================================================
+
+[427] Similarity: 0.553 | sephir0th1984 | 10/2/2025
+Intel 11th gen?
+======================================================================
+
+[428] Similarity: 0.567 | codeconnoisseur | 10/2/2025
+In the future, you can also download the VMD/RST setup app from Intel's or the OEM's site, extract the actual driver files, then inject the driver into an existing installation from recovery with `dism /Image:C:\ /Add-Driver /Driver:iaStorVD.inf` after first doing `drvload iaStorVD.inf` and mounting it in `diskpart`.
+======================================================================
+
+[429] Similarity: 0.604 | niksbrotha | 10/3/2025
+Really annoying. Even drivers from intels website wouldn't work and claim its being downloaded for an unsupported device lol..
+======================================================================
+
+[430] Similarity: 0.568 | niksbrotha | 10/4/2025
+Dogsht repair. I think I'm gonna order a replacement sy8288 ic and test. I suspect it's partially faulty hence the 0.3v output and randomly it decided to work a few times.
+======================================================================
+
+[431] Similarity: 0.552 | nexkg_28147 | 10/6/2025
+After checking coils you can try flashing bios with programmer, but try flashing it with a usb first.
+======================================================================
+
+[432] Similarity: 0.580 | sephir0th1984 | 10/8/2025
+Yes, these faults are known, the reason differs though. Can be anything between Software, failed or even missing (ripped) components. There is no overall solution for each single device
+======================================================================
+
+[433] Similarity: 0.570 | niksbrotha | 10/8/2025
+To confirm if it's a fried chipset injecting 19v 5A also can help :leo:
+======================================================================
+
+[434] Similarity: 0.553 | nexkg_28147 | 10/13/2025
+I would open the laptop and ckeck the coils: Voltages plugged in, and resistances to ground unplugged.
+======================================================================
+
+[435] Similarity: 0.589 | mig.gonc78 | 10/14/2025
+Hi everyone, can anyone tell me if by replacing an io ec chip that is locked with a password with another unlocked chip, I also have to reprogram the bios on a lenovo thinkbook 14 itl gen2?
+======================================================================
+
+[436] Similarity: 0.589 | mig.gonc78 | 10/14/2025
+Hi everyone, can anyone tell me if by replacing an io ec chip that is locked with a password with another unlocked chip, I also have to reprogram the bios on a lenovo thinkbook 14 itl gen2?
+======================================================================
+
+[437] Similarity: 0.565 | abdallah_02l | 10/15/2025
+@BoyKisserTech and why did u mess with the 80 mb chip
+======================================================================
+
+[438] Similarity: 0.561 | abdallah_02l | 10/15/2025
+Never touch this BIOS chip on any laptop it's for thunderbolt
+======================================================================
+
+[439] Similarity: 0.569 | sephir0th1984 | 10/16/2025
+At least not without loading Intel RST driver
+======================================================================
+
+[440] Similarity: 0.566 | maormark | 10/16/2025
+* **Function:** This is a high-current (up to 8A) **Synchronous Buck Converter** commonly used on laptop motherboards to generate major power rails, such as the **3.3V and 5V Always-On (ALW or PCU) supply lines** for the system.
+
+The concentrated burn mark indicates a **catastrophic internal failure** of the IC, which may have been triggered by a short circuit on its output or by a failure in one of the external MOSFETs.
+======================================================================
+
+[441] Similarity: 0.555 | bestagons | 10/17/2025
+I the client had me thinking he knew more than I did about this stuff and I've been testing a mosfet thats apparently part of the PE616BA chip
+======================================================================
+
+[442] Similarity: 0.585 | nexkg_28147 | 10/18/2025
+Firmware region within a system's flash memory that stores the Intel Management Engine (ME)'s data.
+======================================================================
+
+[443] Similarity: 0.568 | sephir0th1984 | 10/19/2025
+Also it's a miracle that the devices still worked all the time with this damage at the Driver ICs it's absolutely possibl to easily fry the CPU this way.
+======================================================================
+
+[444] Similarity: 0.552 | abdallah_02l | 10/19/2025
+and how do u know if donor board chpset is boot guarded or nt
+======================================================================
+
+[445] Similarity: 0.558 | abdallah_02l | 10/19/2025
+@dom I want to learn from. U how can I. Know if the PCH is boot guarded or not
+======================================================================
+
+[446] Similarity: 0.576 | codeconnoisseur | 10/19/2025
+It’s theoretically possible that there is a certain portion of the BIOS that is device-specific included in the Boot Guard hash calculation which would explain why other images online aren’t working.
+======================================================================
+
+[447] Similarity: 0.568 | majster1966 | 10/19/2025
+I was also thinking about corrupted bios... But not sure. It's getting a bit late here, I'll have to come back to it tomorrow. If anyone have any Ideas please drop your message I'll check it later on today. Thank you for help @CodeConnoisseur
+======================================================================
+
+[448] Similarity: 0.574 | codeconnoisseur | 10/20/2025
+You might be able to disable the affected chip(s) with an SPD BIOS mod.
+======================================================================
+
+[449] Similarity: 0.569 | josephur | 10/21/2025
+https://github.com/mounika2906/PCBDEFECTDETECTION (2 years old)
+======================================================================
+
+[450] Similarity: 0.550 | niksbrotha | 10/21/2025
+Removed that fet, resistance normal, replaced it, same resistance. Turned it on, brain dead cpu. No caps activity, keyboard lights up. Not a bios fault, not a ram issue.
+======================================================================
+
+[451] Similarity: 0.564 | cafeyroquefort | 10/22/2025
+t. Could this be caused by these transistors or should i be looking at mosfets and caps?
+
+I'm wondering what else I could check to make sure its safe to turn on and test if the computer is still alive.
+======================================================================
+
+[452] Similarity: 0.565 | josephur | 10/22/2025
+let me pujt something on that CPU
+======================================================================
+
+[453] Similarity: 0.557 | craftbenmine | 10/23/2025
+@4TMRepairs @NiksBrotha not charging issue: i see replacing CSD87501L isnt working good for you guys.. should i just bypass them? both of mine look blown up
+*i know if i bypass one, only one port will be working, if i bypass both, plugging something different into usb-C will blow the device up
+======================================================================
+
+[454] Similarity: 0.565 | codeconnoisseur | 10/23/2025
+It might still work. Modern BGA packages like this use a "flip chip" method of manufacturing where the etched silicon circuitry is actually on the bottom of the piece that is chipped.
+======================================================================
+
+[455] Similarity: 0.570 | kamenni | 10/24/2025
+Hello!
+Can I remowe BIOS password on Thinkpad T14 Gen 2
+with reprogramming BIOS or I must reprogramm EC chip?
+Thanx in advance!
+======================================================================
+
+[456] Similarity: 0.616 | josephur | 10/26/2025
+Do most laptops have JTAG ports?!
+======================================================================
+
+[457] Similarity: 0.552 | codeconnoisseur | 10/29/2025
+[RT8816C](https://www.richtek.com/assets/product_file/RT8816C/DS8816C-01.pdf).
+======================================================================
+
+[458] Similarity: 0.552 | rizsha | 10/30/2025
+May be fault in keyboard.u remove the keyboard.check yhe power button track in kbc ic using dchematic.and short that line to ground and see.
+======================================================================
+
+[459] Similarity: 0.568 | 4tmtv | 10/30/2025
+To see if it causes it to get programmed?
+======================================================================
+
+[460] Similarity: 0.568 | josephur | 10/30/2025
+With no Caps lock response, and no video output I'm struggling on what to look at next, god I wish all boards had a low level JTAG that spewed magical information 😉
+======================================================================
+
+[461] Similarity: 0.560 | josephur | 10/31/2025
+@EagleTG: I have LENOVO ThinkPad X1 Carbon 20QE NM-C881 BIOS with clean ME if you need it.
+======================================================================
+
+[462] Similarity: 0.550 | tilink | 10/31/2025
+No other work was done; getting close to 0 on the cpu coils is what makes me suspect an ic that drives the mosfets before cpu coils
+======================================================================
+
+[463] Similarity: 0.593 | sephir0th1984 | 11/2/2025
+Typical suspects are soldered RAM, soldered APU and ripped components from here
+======================================================================
+
+[464] Similarity: 0.573 | craftbenmine | 11/2/2025
+PCI bus crashing means some device is not timing right and stopping all communication by its nonsense thrown on the bus
+======================================================================
+
+[465] Similarity: 0.558 | codeconnoisseur | 11/2/2025
+Inconsistent issues are normally caused by a bad connection. The source of a bad connection is most likely to be the solder balls beneath a large BGA chip like the CPU because it is the most susceptible to board twisting and general movement. Pressing down helps to temporarily rejoin any cracked balls, which may cause the fault to disappear while it is held.
+======================================================================

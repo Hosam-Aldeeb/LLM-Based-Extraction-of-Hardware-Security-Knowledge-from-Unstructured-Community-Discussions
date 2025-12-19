@@ -1,0 +1,437 @@
+{
+  "guild": {
+    "id": "820414977231814696",
+    "name": "Cut Freedom",
+    "iconUrl": "https://cdn.discordapp.com/icons/820414977231814696/51eac9b4c73fe67001c6b63c2814d882.png?size=512"
+  },
+  "channel": {
+    "id": "820486961532764180",
+    "type": "GuildTextChat",
+    "categoryId": "820414977231814697",
+    "category": "Specifics",
+    "name": "hardware-info",
+    "topic": "Discussion of Cricut hardware and hardware modding. See the pins for photos and other info discovered so far."
+  },
+  "dateRange": {
+    "after": "2025-01-01T00:00:00-05:00",
+    "before": null
+  },
+  "exportedAt": "2025-10-22T14:02:30.7933015-04:00",
+  "messages": [
+    {
+      "id": "1333874828674994319",
+      "type": "Default",
+      "timestamp": "2025-01-28T14:02:21.352-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Anyone know the belt used in the maker 3?",
+      "author": {
+        "id": "244928456348008449",
+        "name": "isitaplane",
+        "discriminator": "0000",
+        "nickname": "isitaplane",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/244928456348008449/3a423db2673d79e34cebc42d48f061c0.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1333874889328820264",
+      "type": "Default",
+      "timestamp": "2025-01-28T14:02:35.813-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Mines broken so I need to replace it",
+      "author": {
+        "id": "244928456348008449",
+        "name": "isitaplane",
+        "discriminator": "0000",
+        "nickname": "isitaplane",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/244928456348008449/3a423db2673d79e34cebc42d48f061c0.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1334147560100855838",
+      "type": "Default",
+      "timestamp": "2025-01-29T08:06:05.591-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://www.reddit.com/r/cricut/comments/1bdjwd8/cricut_maker_belt_size_950mm_long_gt2_2mm_pitch/",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "From the cricut community on Reddit",
+          "url": "https://www.reddit.com/r/cricut/comments/1bdjwd8/cricut_maker_belt_size_950mm_long_gt2_2mm_pitch/",
+          "timestamp": null,
+          "description": "Explore this post and more from the cricut community",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/7mE0ao8OL2gjPM3HqG2oHPpOIkr3lVdR5f8qw2QQVxo/https/share.redd.it/preview/post/1bdjwd8",
+            "width": 1120,
+            "height": 584
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1334147590807097478",
+      "type": "Default",
+      "timestamp": "2025-01-29T08:06:12.912-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "This is maker, not maker 3 though",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1345096153502584924",
+      "type": "Default",
+      "timestamp": "2025-02-28T13:11:53.673-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://discord.com/channels/820414977231814696/823287313052336168/1344490601176891553 @Technologyman00 I am supprised no one has made a drop in PCB replacement, as cricuts are a nice form factor!",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "996353125562720376",
+              "name": "szabo7619",
+              "discriminator": "0000",
+              "nickname": "Joe",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/996353125562720376/2d6d57b96ca47f6c51a4b6241383a018.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [
+        {
+          "id": "144917365602123776",
+          "name": "technologyman00",
+          "discriminator": "0000",
+          "nickname": "Technologyman00",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/144917365602123776/0eb490cfbd1d2bb9c201b475d07db151.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1345127478842232953",
+      "type": "Default",
+      "timestamp": "2025-02-28T15:16:22.216-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Ywah",
+      "author": {
+        "id": "144917365602123776",
+        "name": "technologyman00",
+        "discriminator": "0000",
+        "nickname": "Technologyman00",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/144917365602123776/0eb490cfbd1d2bb9c201b475d07db151.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392606661247504395",
+      "type": "Default",
+      "timestamp": "2025-07-09T16:41:41.422-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Is this relevant to our cricut pic's ?\nhttps://wiki.recessim.com/view/PIC_Burnout",
+      "author": {
+        "id": "192730450077286401",
+        "name": "xtremegamer007",
+        "discriminator": "0000",
+        "nickname": "xtremegamer™",
+        "color": "#842BD7",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "820855181196525588",
+            "name": "admin",
+            "color": "#842BD7",
+            "position": 18
+          },
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457604324622396",
+            "name": "Hardware Fuckery",
+            "color": null,
+            "position": 11
+          },
+          {
+            "id": "821457644354535425",
+            "name": "Software Fuckery",
+            "color": null,
+            "position": 10
+          },
+          {
+            "id": "821457724322742283",
+            "name": "Taking Apart Machines",
+            "color": null,
+            "position": 8
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/192730450077286401/b6509e228bc0c0140f4ac9a780ef259d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "PIC Burnout",
+          "url": "https://wiki.recessim.com/view/PIC_Burnout",
+          "timestamp": null,
+          "description": "",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392744010698723392",
+      "type": "Reply",
+      "timestamp": "2025-07-10T01:47:28.083-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I dont find the fw for pic32mk1024.. \uD83D\uDE42",
+      "author": {
+        "id": "996353125562720376",
+        "name": "szabo7619",
+        "discriminator": "0000",
+        "nickname": "Joe",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/996353125562720376/2d6d57b96ca47f6c51a4b6241383a018.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1345096153502584924",
+        "channelId": "820486961532764180",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE42",
+          "code": "slight_smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f642.svg"
+        }
+      ]
+    },
+    {
+      "id": "1392747217135079434",
+      "type": "Reply",
+      "timestamp": "2025-07-10T02:00:12.557-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "My plan is to write a complete FW for a cricut explore 3 and now I'm looking for free software for PC that is close to one of the plotter cut.. and if I have it, I need to find out what protocol it works with and then write a fw that already handles it.. \uD83D\uDE04",
+      "author": {
+        "id": "996353125562720376",
+        "name": "szabo7619",
+        "discriminator": "0000",
+        "nickname": "Joe",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/996353125562720376/2d6d57b96ca47f6c51a4b6241383a018.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "305802712644059137",
+          "name": "akudaikon",
+          "discriminator": "0000",
+          "nickname": "akudaikon",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/305802712644059137/8a5d3601f15f3f516d02bf37de6023e1.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1181714659573760000",
+        "channelId": "820486961532764180",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE04",
+          "code": "smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f604.svg"
+        }
+      ]
+    }
+  ],
+  "messageCount": 9
+}

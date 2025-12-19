@@ -1,0 +1,61 @@
+[1] Similarity: 0.659 | arity0 | 5/21/2025
+I don't have hardware hacking experience but maybe someone else will feel comfortable answering
+======================================================================
+
+[2] Similarity: 0.558 | coyoteklz | 5/29/2025
+usup guys, starting now in this hacking world. i am using a mac, and i know its not the best machine for it. i live in brazil, so i am not a rich guy lol. could u guys please recommend a good machine to start ?
+======================================================================
+
+[3] Similarity: 0.612 | loredous | 5/29/2025
+Most things that you would do in ethical hacking would be fine running on anything more powerful than maybe a raspberry pi
+======================================================================
+
+[4] Similarity: 0.631 | Carl-bot | 5/29/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[5] Similarity: 0.571 | dogwater3301 | 7/23/2025
+could be stolen, could be bought off of ebay, no way of knowing. he is asking how to bypass windows bios/login which smells like against tos. if he has a proof of ownership he may be able to contact the seller or manufacturer for help
+======================================================================
+
+[6] Similarity: 0.555 | dogwater3301 | 7/23/2025
+nothing to do here, you're in possession of stolen hardware, you can't unlock it without the company and they very likely want their laptop back don't you think?
+======================================================================
+
+[7] Similarity: 0.565 | nuclearmaster100 | 8/1/2025
+and keep in mind it is illegal to tamper with electronics that don't belong to you, it depends on what you mean by "wipe" and how you do it
+======================================================================
+
+[8] Similarity: 0.581 | nuclearmaster100 | 8/1/2025
+same with changing os or modifying firmware, in fact if it belongs to the school it most likely has a secure boot bios password
+======================================================================
+
+[9] Similarity: 0.589 | the_sapphire_guy | 10/3/2025
+Yes, you're on the right track. Firmware repair typically uses chip programmers (like CH341A) with specialized software and correct firmware images. Your resources are good for learning. With practice, you could become a professional technician.
+======================================================================
+
+[10] Similarity: 0.610 | _cosmicecho | 10/3/2025
+Thank you
+
+Actually my hobby is just simple for now - to understand how to defend my laptop XD firmware reflashing is the sort of recovery phase if all defenses fail and a compromise happens
+======================================================================
+
+[11] Similarity: 0.635 | _cosmicecho | 10/3/2025
+yooo,
+
+So there's an even deeper form of spyware called hardware implants
+
+Because it is implanted on the hardware itself, and its probably purely physical
+
+Just buy from the right supplier and manufacturer though it should be almost zero
+
+https://www.ghtinc.com/supply-chain-security-addressing-serialization-risks-and-hardware-implants-in-information-security/
+======================================================================
+
+[12] Similarity: 0.671 | loredous | 10/3/2025
+To put this in perspective, the chances of having compromised hardware are almost zero. Typically this is going to be something that is specifically targeted towards a device or entity. Most often it will be high-end networking equipment.
+======================================================================
+
+[13] Similarity: 0.577 | whyme33 | 10/20/2025
+Best laptop for ethical hacking under 600 usd
+======================================================================

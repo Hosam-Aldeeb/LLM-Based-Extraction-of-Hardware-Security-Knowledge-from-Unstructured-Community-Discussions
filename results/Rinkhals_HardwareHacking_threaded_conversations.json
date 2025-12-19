@@ -1,0 +1,1276 @@
+{
+  "channel": "Rinkhals_HardwareHacking",
+  "source": "./discord-exports/Rinkhals_HardwareHacking_Jan2025_export.json",
+  "filteredMessages": 8,
+  "totalThreads": 8,
+  "substantialThreads": 6,
+  "threads": [
+    [
+      {
+        "id": "1379890903673733260",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:33:48.569-04:00",
+        "content": "If you're talking about the JST header on the MB, it's connected to the SoC and you can use recovery mode with it.\nThe JST is USB. The MB needs to be powered by the USB 5V power."
+      },
+      {
+        "id": "1379891066337235016",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:34:27.351-04:00",
+        "content": "To talk to the MCU it's another path, not sure where to solder or connect for that, but you can do it from the SoC itself"
+      },
+      {
+        "id": "1379891200571473970",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:34:59.355-04:00",
+        "content": "If you want the content of the EMMC (connected to the SoC), the stock updates contain almost all the needed partitions"
+      },
+      {
+        "id": "1379891271581171796",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:35:16.285-04:00",
+        "content": "Userdata and Useremain are not included for example, but the rest is"
+      },
+      {
+        "id": "1379891701757247578",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:36:58.847-04:00",
+        "content": "I did a full backup a few month ago, removed the private stuff and uploaded it here: https://jbatonnet.github.io/Rinkhals/printers/recover-boot-issues/"
+      },
+      {
+        "id": "1379891751711408239",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:37:10.757-04:00",
+        "content": "In the Restore broken partitions section"
+      },
+      {
+        "id": "1379895115195224284",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:50:32.674-04:00",
+        "content": "The MCU memory?"
+      },
+      {
+        "id": "1379895341650018454",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:51:26.665-04:00",
+        "content": "The EMMC, the backup link contains all the partitions. Or you can have the .img dumps in every stock update"
+      },
+      {
+        "id": "1379895628699537459",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:52:35.103-04:00",
+        "content": "Yeah, in the stock SWU, there are the .img for the EMMC partitions, the app files for the /userdata partition, and the MCU image\nThe MCU image is then used to flash the MCU itself"
+      },
+      {
+        "id": "1379896167961202840",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:54:43.673-04:00",
+        "content": "The MCU is the klipper-mcu program. The K3 update .swu is only for the EMMC.\nI'm not 100% sure, but I believe this is the klupper MCU image:"
+      },
+      {
+        "id": "1379896480621531207",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:55:58.217-04:00",
+        "content": "I'll check in Ghidra"
+      }
+    ],
+    [
+      {
+        "id": "1379891701757247578",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:36:58.847-04:00",
+        "content": "I did a full backup a few month ago, removed the private stuff and uploaded it here: https://jbatonnet.github.io/Rinkhals/printers/recover-boot-issues/"
+      },
+      {
+        "id": "1379891751711408239",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:37:10.757-04:00",
+        "content": "In the Restore broken partitions section"
+      },
+      {
+        "id": "1379895115195224284",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:50:32.674-04:00",
+        "content": "The MCU memory?"
+      },
+      {
+        "id": "1379895341650018454",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:51:26.665-04:00",
+        "content": "The EMMC, the backup link contains all the partitions. Or you can have the .img dumps in every stock update"
+      },
+      {
+        "id": "1379895628699537459",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:52:35.103-04:00",
+        "content": "Yeah, in the stock SWU, there are the .img for the EMMC partitions, the app files for the /userdata partition, and the MCU image\nThe MCU image is then used to flash the MCU itself"
+      },
+      {
+        "id": "1379896167961202840",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:54:43.673-04:00",
+        "content": "The MCU is the klipper-mcu program. The K3 update .swu is only for the EMMC.\nI'm not 100% sure, but I believe this is the klupper MCU image:"
+      },
+      {
+        "id": "1379896480621531207",
+        "author": "thedju",
+        "timestamp": "2025-06-04T14:55:58.217-04:00",
+        "content": "I'll check in Ghidra"
+      }
+    ],
+    [
+      {
+        "id": "1379938700355567666",
+        "author": "basvd",
+        "timestamp": "2025-06-04T17:43:44.186-04:00",
+        "content": "https://rinkhals.meowcat285.com/ (stock firmwares)"
+      },
+      {
+        "id": "1379938930199236659",
+        "author": "basvd",
+        "timestamp": "2025-06-04T17:44:38.985-04:00",
+        "content": "to extract a .swu file you need the ZIP password, which I always grab from this script: <https://github.com/jbatonnet/Rinkhals/blob/master/build/tools.sh>"
+      },
+      {
+        "id": "1379939058842603675",
+        "author": "basvd",
+        "timestamp": "2025-06-04T17:45:09.656-04:00",
+        "content": "it's always the same for a given printer model"
+      },
+      {
+        "id": "1379939158365044809",
+        "author": "basvd",
+        "timestamp": "2025-06-04T17:45:33.384-04:00",
+        "content": "oh yeah we have nice docs now 😄"
+      },
+      {
+        "id": "1379939442080485486",
+        "author": "basvd",
+        "timestamp": "2025-06-04T17:46:41.027-04:00",
+        "content": "alright I'm going to bed now. good luck investigating!"
+      }
+    ],
+    [
+      {
+        "id": "1380949978306056212",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:42:11.638-04:00",
+        "content": "`WARNING:root:Unable to open serial port: [Errno 11] Could not exclusively lock port /dev/ttyS3: [Errno 11] Resource temporarily unavailable`\nDo i need to kill klipper?"
+      },
+      {
+        "id": "1380950060602228766",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:42:31.259-04:00",
+        "content": "got the command there?"
+      },
+      {
+        "id": "1380950136733044887",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:42:49.41-04:00",
+        "content": "I need to stop. But every single time i try, i want to try something new wtf"
+      },
+      {
+        "id": "1380950326668038145",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:43:34.694-04:00",
+        "content": "im on vanilla. so not gklib right?"
+      },
+      {
+        "id": "1380950468519526420",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:44:08.514-04:00",
+        "content": "right now is find the firmware. Then ill start messing with pins and checking logs, since i think im on the way to be able to update it on the fly",
+        "reference": {
+          "messageId": "1380950306539700266",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1380950589927723028",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:44:37.46-04:00",
+        "content": "i only see klippy"
+      },
+      {
+        "id": "1380950966739800105",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:46:07.299-04:00",
+        "content": "got console working"
+      },
+      {
+        "id": "1380951158327087215",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:46:52.977-04:00",
+        "content": "Theres a function called dump firmware, not even Filedump.I just need a good way to trigger it"
+      },
+      {
+        "id": "1380951261544976454",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:47:17.586-04:00",
+        "content": "I know the code is there in the mcu, i just need to modifiy console.py to use it"
+      },
+      {
+        "id": "1380951328309772289",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:47:33.504-04:00",
+        "content": "yeah i think it might be that"
+      },
+      {
+        "id": "1380951723509813349",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:49:07.727-04:00",
+        "content": "`'SUPPRESS analog_in_state 18\nSUPPRESS analog_in_state 11'`"
+      },
+      {
+        "id": "1380952025910476922",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:50:19.825-04:00",
+        "content": "this is all the mcu commands"
+      },
+      {
+        "id": "1380953014277373974",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:54:15.47-04:00",
+        "content": "i told you its modified, the 1.1.0 has to be a internal thing"
+      },
+      {
+        "id": "1380953083621937172",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:54:32.003-04:00",
+        "content": "i think so yes"
+      },
+      {
+        "id": "1380953179667038260",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:54:54.902-04:00",
+        "content": "but it strange, because like the mcu needs to be put on a special mode right?"
+      },
+      {
+        "id": "1380953233710649375",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:55:07.787-04:00",
+        "content": "and it does mess with the pins on start"
+      },
+      {
+        "id": "1380953722376425572",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:57:04.294-04:00",
+        "content": "that would make it so we could switch firmwares on boot."
+      },
+      {
+        "id": "1380953862139281552",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:57:37.616-04:00",
+        "content": "Theres a ota_data_get_version function but no comamnd"
+      },
+      {
+        "id": "1380954288486092891",
+        "author": "topes1",
+        "timestamp": "2025-06-07T12:59:19.265-04:00",
+        "content": "Oh, yeah. That would not be good. We would need a special version with AC code for the ota functions"
+      },
+      {
+        "id": "1380954569378627626",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:00:26.235-04:00",
+        "content": "what, klipper flash? You think that would work?"
+      },
+      {
+        "id": "1380954746025934890",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:01:08.351-04:00",
+        "content": "yeah, are you saying if i compile klipper and take the bin or whatever and do klipper flash it should do something?"
+      },
+      {
+        "id": "1380955113652359199",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:02:36-04:00",
+        "content": "Let me check what the command is"
+      },
+      {
+        "id": "1380955451092500621",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:03:56.452-04:00",
+        "content": "From what i understand, I need to pull the klipper git into the printer and do make flash"
+      },
+      {
+        "id": "1380955458944372796",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:03:58.324-04:00",
+        "content": "What"
+      },
+      {
+        "id": "1380955612963409971",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:04:35.045-04:00",
+        "content": "Let me be honest. If I brick this and cant fix it ill just a mks robin or a bttree something or other",
+        "reference": {
+          "messageId": "1380955310616871062",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1380955664251355248",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:04:47.273-04:00",
+        "content": "and i have a SpeA board on the shelf, that is fine and works"
+      },
+      {
+        "id": "1380956831869960223",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:09:25.655-04:00",
+        "content": "You think if i send a \"update\" from AC but change the mcu version string normal klipper would stop complaining?"
+      },
+      {
+        "id": "1380957209063587862",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:10:55.585-04:00",
+        "content": "I mean, the fact that it has funcionts built around the klipper release 11"
+      },
+      {
+        "id": "1380957237379334164",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:11:02.336-04:00",
+        "content": "If I use that it should work"
+      },
+      {
+        "id": "1380957295588151356",
+        "author": "topes1",
+        "timestamp": "2025-06-07T13:11:16.214-04:00",
+        "content": "Also i thought our boards would be a lot closers jesus"
+      }
+    ],
+    [
+      {
+        "id": "1394356232281788506",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T12:33:51.662-04:00",
+        "content": "https://black-magic.org"
+      },
+      {
+        "id": "1394356420476145764",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T12:34:36.531-04:00",
+        "content": "and you can run it on a bluepill"
+      },
+      {
+        "id": "1394356451761459260",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T12:34:43.99-04:00",
+        "content": "https://andy-preston.github.io/blue-pill-black-magic-probe/"
+      },
+      {
+        "id": "1394356957971746926",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T12:36:44.68-04:00",
+        "content": "i would not expect the hardware to run any open/py-ocd compatible bootloader"
+      },
+      {
+        "id": "1394407691895705771",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T15:58:20.59-04:00",
+        "content": "not without accessing the hardware. iirc you had to fiddle with the boot pins and trigger a reset to get into the serial flash bootloader. it was also bound to one specific uart port on the stm32. not sure if the motherboard is connected to that."
+      },
+      {
+        "id": "1394407763123372183",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T15:58:37.572-04:00",
+        "content": "so you would have to get access to the controller board anyway"
+      },
+      {
+        "id": "1394407845071683774",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T15:58:57.11-04:00",
+        "content": "at this point, finding the swd test points might be even easier"
+      },
+      {
+        "id": "1394408546497728563",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:01:44.343-04:00",
+        "content": ""
+      },
+      {
+        "id": "1394408602088898620",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:01:57.597-04:00",
+        "content": "been there a while ago 🙂"
+      },
+      {
+        "id": "1394409367801036950",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:05:00.157-04:00",
+        "content": "maybe they are just using the smoothieware bootloader"
+      },
+      {
+        "id": "1394409546465939606",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:05:42.754-04:00",
+        "content": "oh, no. mixing things up with the lpcx mcu line"
+      },
+      {
+        "id": "1394409805606555880",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:06:44.538-04:00",
+        "content": "https://www.klipper3d.org/Bootloaders.html#stm32f103-micro-controllers-blue-pill-devices"
+      },
+      {
+        "id": "1394409996338462851",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:07:30.012-04:00",
+        "content": "dfu works only with usb"
+      },
+      {
+        "id": "1394410061182275717",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:07:45.472-04:00",
+        "content": "all the mcu boards are connected via serial only"
+      },
+      {
+        "id": "1394410092518047947",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:07:52.943-04:00",
+        "content": "but your point is valid, they must be able to do that."
+      },
+      {
+        "id": "1394410550120677550",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:09:42.044-04:00",
+        "content": "from the looks of it, it is a custom klipper protocol based method to upload an new firwmare image and let the microcontroller flash it after reset"
+      },
+      {
+        "id": "1394410881009324214",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:11:00.934-04:00",
+        "content": "just writing."
+      },
+      {
+        "id": "1394411202767228998",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:12:17.647-04:00",
+        "content": "therefore, have a swd port routed / available for flashing"
+      },
+      {
+        "id": "1394411242159869982",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:12:27.039-04:00",
+        "content": "but... right now there is no real reason to do so."
+      },
+      {
+        "id": "1394411383646457948",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:13:00.772-04:00",
+        "content": "the firmware on the toolhead and the stepper board is fine. it supports already the custom sensors which are not upstreamed"
+      },
+      {
+        "id": "1394411573358887074",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:13:46.003-04:00",
+        "content": "from the host process / klippy perspective, it does not need to know the hardware sensors, just what api the mcu exposes to abstract the hardware."
+      },
+      {
+        "id": "1394411752631832656",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:14:28.745-04:00",
+        "content": "one theoretically only needs to adapt klippy and implement missing protocol handling for the accelerometer and the load cell."
+      },
+      {
+        "id": "1394412323346841722",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:16:44.814-04:00",
+        "content": "the protocol is generic and meant to be extendable"
+      },
+      {
+        "id": "1394412739119677500",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:18:23.942-04:00",
+        "content": "on the other hand, if one picks up the task of backporting those two sensors to vanilla klipper it would make a lot sense to have all software running on the printer in a well understood, open way."
+      },
+      {
+        "id": "1394412901388783868",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:19:02.63-04:00",
+        "content": "dunno. i could connect to the control boards with a vaniall klippy instance"
+      },
+      {
+        "id": "1394412949409366096",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:19:14.079-04:00",
+        "content": "control the hardware and start the homing procedure"
+      },
+      {
+        "id": "1394413084533198849",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:19:46.295-04:00",
+        "content": "but it was only a 5 minute test, did not dig deep"
+      },
+      {
+        "id": "1394413140342739025",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:19:59.601-04:00",
+        "content": "k1s"
+      },
+      {
+        "id": "1394413273474007111",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:20:31.342-04:00",
+        "content": "@Topes1"
+      },
+      {
+        "id": "1394413299327696956",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:20:37.506-04:00",
+        "content": "this is how far i got."
+      },
+      {
+        "id": "1394413436439625820",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:21:10.196-04:00",
+        "content": "i didnt use gkapi"
+      },
+      {
+        "id": "1394413607974076427",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:21:51.093-04:00",
+        "content": "and keep the display?"
+      },
+      {
+        "id": "1394413612877090858",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:21:52.262-04:00",
+        "content": "i see."
+      },
+      {
+        "id": "1394414186045636678",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:24:08.916-04:00",
+        "content": "i wonder what display that is."
+      },
+      {
+        "id": "1394414269293920399",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:24:28.764-04:00",
+        "content": "octoscreen is an option 🙂 but that would require x11 iirc"
+      },
+      {
+        "id": "1394414360671162480",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:24:50.55-04:00",
+        "content": "errr"
+      },
+      {
+        "id": "1394414369508556841",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:24:52.657-04:00",
+        "content": "klipperscreen"
+      },
+      {
+        "id": "1394414640414462102",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:25:57.246-04:00",
+        "content": "but what is the protocol, fb?"
+      },
+      {
+        "id": "1394414690305572864",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:26:09.141-04:00",
+        "content": "dsi?"
+      },
+      {
+        "id": "1394414727324762214",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:26:17.967-04:00",
+        "content": "drm"
+      },
+      {
+        "id": "1394414760489128088",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:26:25.874-04:00",
+        "content": "so... wayland compositor next?"
+      },
+      {
+        "id": "1394414772405014538",
+        "author": "pulsar256",
+        "timestamp": "2025-07-14T16:26:28.715-04:00",
+        "content": "😄"
+      },
+      {
+        "id": "1394696640614498324",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T11:06:31.333-04:00",
+        "content": "the sbc mainboard? that is running the rockchip soc"
+      },
+      {
+        "id": "1394696673128611971",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T11:06:39.085-04:00",
+        "content": "or do you mean the stepper board?"
+      },
+      {
+        "id": "1394696724445921444",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T11:06:51.32-04:00",
+        "content": "high res photos would be awesome if you have this already on your desk"
+      },
+      {
+        "id": "1394696761481887876",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T11:07:00.15-04:00",
+        "content": "we need to map out a bunch of connections"
+      },
+      {
+        "id": "1394697087043637419",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T11:08:17.77-04:00",
+        "content": "firmware-wise i dont see any urgent need. it is running a klipper fork with some additional sensors. most of them on the toolhead though."
+      },
+      {
+        "id": "1394697153099731126",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T11:08:33.519-04:00",
+        "content": "cant hurt if you find the swd port"
+      },
+      {
+        "id": "1394697287510528010",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T11:09:05.565-04:00",
+        "content": "@evil_santa"
+      },
+      {
+        "id": "1394701284896018506",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T11:24:58.616-04:00",
+        "content": "I think the MCU(s) code is included in the SWU update file: firmware_v1.4.0_20250509.bin\n\nThe binary contains evens a string which seems to be the one to enter bootloader:  \"Request Serial Bootloader!! ~\". It seems also to contains at offest 0x7AC4 a compressed section which uncompressed looks like MCU strings:\n\ncat 7AC4.bin\n{\"build_versions\":\"gcc: (15:10.3-2021.07-4) 10.3.1 20210621 (release) binutils: (2.38-3ubuntu1+15build1) 2.38\",\"commands\":{\"allocate_oids count=%c\":8,\"buttons_ack oid=%c count=%c\":38,\"buttons_add oid=%c pos=%c pin=%u pull_up=%c\":40,\"buttons_query oid=%c clock=%u rest_ticks=%u retransmit_count=%c invert=%c\":39,\"checkself_cs1237 oid=%c write=%c\":50,\"clear_shutdown\":2,\"config_analog_in oid=%c pin=%u\":28,\"config_buttons oid=%c button_count=%c\":41,\"config_cs1237 oid=%c level_pin=%u dout_pin=%u sclk_pin=%u register=%u sensitivity=%u\":51,\"config_digital_out oid=%c\n\nWhen i send the Enter bootloader command via console the toolhead MCU, it gets indeed unresponsive, i need to power off/on the printer to get it working again."
+      },
+      {
+        "id": "1394705030006837459",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T11:39:51.52-04:00",
+        "content": "I can provide some  PrintHead PCB pictures"
+      },
+      {
+        "id": "1394705788370550785",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T11:42:52.328-04:00",
+        "content": "Printhead PCB back side"
+      },
+      {
+        "id": "1394706335102140498",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T11:45:02.679-04:00",
+        "content": "Yeah that is the \"UPPER\" SoC Mainboard (with the RockChip), MCU/driver board on the back of the machine has \"LOWER\" written on it.",
+        "reference": {
+          "messageId": "1394705219656355921",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1394725389766758593",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:00:45.665-04:00",
+        "content": "https://media.discordapp.net/attachments/1379872672619692152/1394705782871822417/20220309_062446.JPG?ex=6877c87b&is=687676fb&hm=3eff2b6b38b55d4be7783af42840f894cac251a1c46d027d4f1c4ecea5ba8dae&=&format=webp&width=3100&height=1744 - so there is a unpopulated pin header with swd port exposed. connect debugger / programmere here 🙂"
+      },
+      {
+        "id": "1394730659800420423",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T13:21:42.139-04:00",
+        "content": "Blue pill is already ordered. 😉",
+        "reference": {
+          "messageId": "1394725389766758593",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1394733852680917133",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T13:34:23.381-04:00",
+        "content": "You get the linux boot/root serial console at that port.",
+        "reference": {
+          "messageId": "1394733640491073658",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1394734510871937127",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T13:37:00.306-04:00",
+        "content": "Toolhead PCB has also some serial pads marked, that is what i get when i power only the toolhead alone (i choose 15200 baudrate):\nPrinted as Hexdump, as no real human readable strings show up:\n\n0 F5 1B 56 - 1C 55 54 F5    ...V  .UT.\n56 9C 85 5D - 47 E9 7B 7D    V..]  G.{}\n1D 01 A0 00 - DD BB FB 27    ....  ...'",
+        "reference": {
+          "messageId": "1394725389766758593",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1394734709413511189",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:37:47.642-04:00",
+        "content": "Baudrate is ok?"
+      },
+      {
+        "id": "1394734743014342837",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:37:55.653-04:00",
+        "content": "Try pulseview"
+      },
+      {
+        "id": "1394734873280774245",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:38:26.711-04:00",
+        "content": "It can help with protocol detection"
+      },
+      {
+        "id": "1394737443567046908",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:48:39.515-04:00",
+        "content": "you can also grab one of the super old saleae clones, they work fine with pulseview"
+      },
+      {
+        "id": "1394737453956595883",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:48:41.992-04:00",
+        "content": "https://de.aliexpress.com/item/1005007053196904.html"
+      },
+      {
+        "id": "1394737584323821638",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:49:13.074-04:00",
+        "content": "these work too:"
+      },
+      {
+        "id": "1394737595342393587",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:49:15.701-04:00",
+        "content": "https://de.aliexpress.com/item/1005008695596102.html"
+      },
+      {
+        "id": "1394737628640710657",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:49:23.64-04:00",
+        "content": "(iirc even same usb chip in both of them)"
+      },
+      {
+        "id": "1394739018075472023",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:54:54.907-04:00",
+        "content": "these should work out of the box with openocd or stutil and i have flashed mine with blackbox some time ago. was a bit fiddly. https://de.aliexpress.com/item/1005005273159580.html"
+      },
+      {
+        "id": "1394739809133658244",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T13:58:03.51-04:00",
+        "content": "https://github.com/blackmagic-debug/blackmagic/blob/main/src/platforms/stlink/README.md"
+      },
+      {
+        "id": "1394742478346911775",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T14:08:39.9-04:00",
+        "content": "As said, blue pill already ordered for that. 😉",
+        "reference": {
+          "messageId": "1394739809133658244",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1394742805905014814",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T14:09:57.996-04:00",
+        "content": "I have that thing, but regardless which baudrate i try Logic2 shows framing errors.",
+        "reference": {
+          "messageId": "1394737453956595883",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1394744021422968983",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:14:47.798-04:00",
+        "content": "maybe not serial then?"
+      },
+      {
+        "id": "1394744060698296330",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:14:57.162-04:00",
+        "content": "or aliasing"
+      },
+      {
+        "id": "1394744175064387705",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:15:24.429-04:00",
+        "content": "as the dongle captures in a specific frequency. you have probably to sample at twice the baud rate"
+      },
+      {
+        "id": "1394744298246766612",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:15:53.798-04:00",
+        "content": "maybe it is also some different protocol"
+      },
+      {
+        "id": "1394746074455081103",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T14:22:57.279-04:00",
+        "content": "Hm, i checked the baudrate for /dev/ttyS5 on the SOC its there set to 576000, and i think that could be it, at least no frame errors.",
+        "reference": {
+          "messageId": "1394744175064387705",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1394746305989054608",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T14:23:52.481-04:00",
+        "content": "Yup, its text. 😉"
+      },
+      {
+        "id": "1394746776355078224",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T14:25:44.625-04:00",
+        "content": ""
+      },
+      {
+        "id": "1394746802552570017",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:25:50.871-04:00",
+        "content": "nice"
+      },
+      {
+        "id": "1394747237401100530",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:27:34.547-04:00",
+        "content": "debug output from gklib?"
+      },
+      {
+        "id": "1394747270590894111",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:27:42.46-04:00",
+        "content": "i wonder what it is"
+      },
+      {
+        "id": "1394748606036312175",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T14:33:00.855-04:00",
+        "content": "Cant be, i run the board standalone on a old Ender 3 24V Powersupply, no serial connection to the SoC.\nOutput comes directly from the MCU TX pin after switching on the power-supply.",
+        "reference": {
+          "messageId": "1394747237401100530",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1394749008555020348",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:34:36.823-04:00",
+        "content": "oh, the toolhead board."
+      },
+      {
+        "id": "1394752194082766860",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:47:16.312-04:00",
+        "content": "so i believe this is the OTA reset handler"
+      },
+      {
+        "id": "1394752295887179969",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:47:40.584-04:00",
+        "content": "briefly looked at the mcu code in the anycubic k3 release"
+      },
+      {
+        "id": "1394752397942853695",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:48:04.916-04:00",
+        "content": "there is a non standard klipper protocol for uploading ota images to the mcu"
+      },
+      {
+        "id": "1394752440208855140",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:48:14.993-04:00",
+        "content": "after uploading the mcu is reset"
+      },
+      {
+        "id": "1394752573956689930",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T14:48:46.881-04:00",
+        "content": "i guess this is the check if the mcu should either start from the new firmware or perhaps copy it into the regular slot"
+      },
+      {
+        "id": "1394760667398934700",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:20:56.508-04:00",
+        "content": "https://github.com/ANYCUBIC-3D/Kobra3/blob/main/klipper-mcu/src/otacmd.c"
+      },
+      {
+        "id": "1394761762049495190",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T15:25:17.493-04:00",
+        "content": "Sounds reasonable.\nAs i have the Salea connected i checked also which pins on the upper board (RockChip) are the serial pins to the lower board (Driverboard MCU). Only tested the location of the TX pin though, so RX pin is guessed. 😉"
+      },
+      {
+        "id": "1394762682426720276",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:28:56.928-04:00",
+        "content": "is there any signal present on the two other pins?"
+      },
+      {
+        "id": "1394762773937913953",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:29:18.746-04:00",
+        "content": "last ressort would be to beep them out and see where they go"
+      },
+      {
+        "id": "1394762869316386916",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T15:29:41.486-04:00",
+        "content": "What i dont know what this unpopulated 3-pin connector could be for on the upper board.",
+        "reference": {
+          "messageId": "1394733640491073658",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1394763060849283103",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:30:27.151-04:00",
+        "content": "looks like a smd jst or flatflex connector. with either protection resistors or just jumpers to the left"
+      },
+      {
+        "id": "1394763197818343545",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:30:59.807-04:00",
+        "content": "could be a button or somthing."
+      },
+      {
+        "id": "1394766276970156142",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:43:13.934-04:00",
+        "content": "not likely to be a button."
+      },
+      {
+        "id": "1394766488904269926",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:44:04.463-04:00",
+        "content": "gnd is probably on the lowermost unpopulated component. looks like a solder jumper, different to the above. so signal with input protection resistors i guess."
+      },
+      {
+        "id": "1394768120492851340",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T15:50:33.464-04:00",
+        "content": "One of the two pins goes to the connector of the toolhead as it seems.",
+        "reference": {
+          "messageId": "1394762682426720276",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1394768202499624960",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:50:53.016-04:00",
+        "content": "huh"
+      },
+      {
+        "id": "1394768233965293590",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:51:00.518-04:00",
+        "content": "really?"
+      },
+      {
+        "id": "1394768350219079821",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:51:28.235-04:00",
+        "content": "some additional sensor which is not handled by the toolhead mcu (and thus communicated over serial)"
+      },
+      {
+        "id": "1394768368543858708",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:51:32.604-04:00",
+        "content": "reset maybe?"
+      },
+      {
+        "id": "1394768514815889528",
+        "author": "pulsar256",
+        "timestamp": "2025-07-15T15:52:07.478-04:00",
+        "content": "i guess there must be a way how the gklib can hardware reset the mcus for ota"
+      },
+      {
+        "id": "1394773999262634165",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-15T16:13:55.072-04:00",
+        "content": "That pin goes to this one on the Toolhead PCB. Two of the unmarked will be TX/RX, purpose of last remaining pin yet unclear."
+      },
+      {
+        "id": "1394943006301487211",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T03:25:29.49-04:00",
+        "content": "That is the corresponding connector view from upper board (RockChip), I was able to identify the TX PIN.\n\nUnfortunately as I tried to find out which of the two remaining pins is RX, I must have shortened something out, because now this serial port (/dev/ttyS5) is not working anymore at all, I think the complete  serial port on the rockchip is now toast, no connection to toolhead MCU possible, logic analyzer shows only high level if i try to send some text out from RockChip side. 😒"
+      },
+      {
+        "id": "1394974872727191593",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T05:32:07.038-04:00",
+        "content": "Any body knows what U5 is? Search for CX44 in google has not helped me much. 😉"
+      },
+      {
+        "id": "1394984299085828128",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T06:09:34.457-04:00",
+        "content": "esd protection probably"
+      },
+      {
+        "id": "1394992702717689906",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T06:42:58.039-04:00",
+        "content": "Hm, that could make sense, have to check if i find same think for the other serial port too and measure if i maybe roasted that one. 😉"
+      },
+      {
+        "id": "1395125983845290086",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T15:32:34.736-04:00",
+        "content": "Your red box is blocking the text, but the right one shows RX,TX,GND right? Then its a serial console. Connector left of it is unclear, maybe the SWD programming interface, similar to toolhead PCB.",
+        "reference": {
+          "messageId": "1395109267375263824",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1395131317288570903",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T15:53:46.328-04:00",
+        "content": "The big 10 pin connector on the left goes to the upper-pcb, there i measured some voltages, it looks like there is a 5V rail. You can try to measure that at the lower-pcb connector and verify its indeed stable 5V. If in doubt you can also always use a cheap step-down voltage converter to make 5V out of the 24V.",
+        "reference": {
+          "messageId": "1395129287828443177",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1395160957411397803",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T17:51:33.084-04:00",
+        "content": "Its done: 🥳 \n\n```(gdb) monitor version\nBlack Magic Probe (ST-Link/v2) v2.0.0-rc2-84-g75070c15, Hardware Version 257\nCopyright (C) 2010-2025 Black Magic Debug Project\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n\n(gdb) monitor targets\nAvailable Targets:\nNo. Att Driver\n*** 1 * Unknown ARM Cortex-M Designer 0x751 Part ID 0x324 M4\n```",
+        "reference": {
+          "messageId": "1394356232281788506",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1395161048671322385",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T17:51:54.842-04:00",
+        "content": "bluepill with blackprobe?"
+      },
+      {
+        "id": "1395161091671068693",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T17:52:05.094-04:00",
+        "content": "ah, log says so."
+      },
+      {
+        "id": "1395161096033275904",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T17:52:06.134-04:00",
+        "content": "nice!"
+      },
+      {
+        "id": "1395161263025160273",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T17:52:45.948-04:00",
+        "content": "Yup. Flash and RAM are readable&dumpable, no protection active."
+      },
+      {
+        "id": "1395161298035146883",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T17:52:54.295-04:00",
+        "content": "so we can back up / dump fw now, right? no protection fuses?"
+      },
+      {
+        "id": "1395161315529723914",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T17:52:58.466-04:00",
+        "content": "cool"
+      },
+      {
+        "id": "1395161382449582262",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T17:53:14.421-04:00",
+        "content": "I did not try to erase/write yet. 😉"
+      },
+      {
+        "id": "1395161431392911370",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T17:53:26.09-04:00",
+        "content": "you bricked enough lately 🙂"
+      },
+      {
+        "id": "1395162241099235368",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T17:56:39.139-04:00",
+        "content": "Grrrrr. 😉\nstrings commands show some known strings to, so i guess flashdump is good (not sure how big the flash is exactly, i dumped the maximum the datasheet says is available):\n\n```ota data check error\nback_addr error\nNo need to update the app\napp_fla:%x,crc32:%x,offset:%x\nback_copy flash write error\nota data flash write error\nNo need to copy ,ready goto app \nUpgrade copy of backup area successful,ready goto app\nGotoApp->addr=0x%X\nGotoApp app_start_address error\niap init\n...\n```"
+      },
+      {
+        "id": "1395163751178703048",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T18:02:39.17-04:00",
+        "content": "That must be the main function."
+      },
+      {
+        "id": "1395165906530861146",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T18:11:13.046-04:00",
+        "content": "0x08000000 is executed after rest. first couple of things to find is the setup of the interrupt vectors IIRC"
+      },
+      {
+        "id": "1395165940001280071",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T18:11:21.026-04:00",
+        "content": "then a jump into this main loop"
+      },
+      {
+        "id": "1395166282940158073",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T18:12:42.789-04:00",
+        "content": "i believe this is pretty much a clone of the stm32f103c8"
+      },
+      {
+        "id": "1395166444911591526",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T18:13:21.406-04:00",
+        "content": "i did some programming on those ... 11 (🤯 )years ago"
+      },
+      {
+        "id": "1395166458568507645",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T18:13:24.662-04:00",
+        "content": "https://github.com/pulsar256/STM32RGBMatrixDriver/blob/master/ldscripts/mem.ld"
+      },
+      {
+        "id": "1395167013185388699",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-16T18:15:36.893-04:00",
+        "content": "Yep, before that it initialises/copies stuff to RAM before jumping back to execute the main function.\nLooking at how much is currently used, i think the flashsize is 128KB."
+      },
+      {
+        "id": "1395167199844372531",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T18:16:21.396-04:00",
+        "content": "usually copy & paste asm code doing that. looking in the cmsis where it was again..."
+      },
+      {
+        "id": "1395167556972581047",
+        "author": "pulsar256",
+        "timestamp": "2025-07-16T18:17:46.542-04:00",
+        "content": "must be 50/50 for ota and live code"
+      }
+    ],
+    [
+      {
+        "id": "1396398069322616872",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-20T03:47:23.548-04:00",
+        "content": "FYI:\nOn the S1 the GPIO116 of the SoC seems to control the MCUs reset line. Anycubic uses that in there restart script to restart the MCUs before starting gklib&Co again."
+      },
+      {
+        "id": "1396498778508365915",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-20T10:27:34.489-04:00",
+        "content": "I am trying to flash the GD32F MCU with blackmagic probe.\n\nMCU gets detected as \" Unknown ARM Cortex-M Designer 0x751 Part ID 0xb72 M4\",\n\nFlash reading possible, but erase and write commands are failing:\n'''\n(gdb) monitor erase_range 0x08008000 0x800\nFailed\n(gdb) monitor erase_mass\nErasing device Flash: done\nFailed\n'''\n\nFlashing via restore command does not show any error, but nothing in the flash has changed afterwards, so its silently failing.\n\nAnybody any ideas what i am doing wrong?  😉\n\nBased on blackmagic pages, the GD32F MCU are \"fully supported\" since v1.8 / 1.10, i am running newer: \"Black Magic Probe (ST-Link/v2) v2.0.0-rc2-84-g75070c15\"."
+      },
+      {
+        "id": "1396537520820588634",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-20T13:01:31.376-04:00",
+        "content": "Never mind, got it working now, GD32F3 support was not properly enabled in my blackmagic firmware build.",
+        "reference": {
+          "messageId": "1396498778508365915",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1398425991864647720",
+        "author": "csnoopy35",
+        "timestamp": "2025-07-25T18:05:37.959-04:00",
+        "content": "Definetly want to follow this",
+        "reference": {
+          "messageId": "1396180148692193331",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1398923558712901676",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-27T03:02:47.14-04:00",
+        "content": "",
+        "reference": {
+          "messageId": "1398869831079432383",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1400200562112335923",
+        "author": "csnoopy35",
+        "timestamp": "2025-07-30T15:37:08.476-04:00",
+        "content": "what hardware device is this or software are you using?",
+        "reference": {
+          "messageId": "1396398069322616872",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1400200730115047445",
+        "author": "csnoopy35",
+        "timestamp": "2025-07-30T15:37:48.531-04:00",
+        "content": "In the config file the odd part is there is a 16 instead of 8 as the max number of devices sooo.",
+        "reference": {
+          "messageId": "1396180148692193331",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1400200989809840190",
+        "author": "csnoopy35",
+        "timestamp": "2025-07-30T15:38:50.447-04:00",
+        "content": "Honestly I recommend just going on ebay buy the refurbished kobra 3 combos....then just sell the printers only for like 100 to 150 bucks or you just get another test printer for the same price as an ace pro 😛",
+        "reference": {
+          "messageId": "1396200125084471407",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1400205387965268048",
+        "author": "csnoopy35",
+        "timestamp": "2025-07-30T15:56:19.049-04:00",
+        "content": "same 😛",
+        "reference": {
+          "messageId": "1400203793324576969",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      },
+      {
+        "id": "1400210833115713696",
+        "author": "_antiriad_",
+        "timestamp": "2025-07-30T16:17:57.274-04:00",
+        "content": "Cheap $2 china clone of a Saleae 8-channel Logicanalyzer",
+        "reference": {
+          "messageId": "1400200562112335923",
+          "channelId": "1379872672619692152",
+          "guildId": "1332498592539345069"
+        }
+      }
+    ]
+  ]
+}

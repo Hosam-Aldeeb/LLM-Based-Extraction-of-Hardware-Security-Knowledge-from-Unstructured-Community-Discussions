@@ -1,0 +1,12 @@
+[1] Similarity: 0.564 | zynelabidin | 3/26/2025
+there are too many pins on the schematic of original stlink circuit for communications jtag and swd
+I want to know which pins are used for swd communication to program the mcu from stlink 
+stm_jtck(swclk) and stm_jtms(swdio) for program to stm32f103 mcu  Im okey with this 
+T_JTMS pin 27-25 this pins swdio 
+ T_JTCK pin 26-15  this pins swclk 
+so We use these T_JTMS and T_JTCK pins to program another processor via stm32f103?
+======================================================================
+
+[2] Similarity: 0.565 | niclas8888 | 10/27/2025
+This is something from 10 years ago, where an ESP-12F (ESP8266 inside) were used and programming over USB was done. HOWEVER, it has some problems. The 1N4148 voltage drop is too high to guarantee tghe RESET. So, this doesn't work with every produced unit. But if you drop the WatchDog and remove the diode, this should work (at least with the programmer back then).
+======================================================================

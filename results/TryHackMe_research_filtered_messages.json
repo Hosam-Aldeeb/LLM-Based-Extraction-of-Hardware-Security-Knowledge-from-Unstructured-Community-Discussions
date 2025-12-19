@@ -1,0 +1,430 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/TryHackMe_research_Jan2025_export.json",
+  "totalMessages": 330,
+  "totalChunks": 338,
+  "relevantMessages": 42,
+  "results": [
+    {
+      "text": "After all my research i've uncovered a universal truth installing Linux won’t make you a hacker",
+      "metadata": {
+        "id": "1299457710424854601",
+        "author": "Deleted User",
+        "timestamp": "2024-10-25T15:41:00.922-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5866803134127947
+    },
+    {
+      "text": "Yeah, disk-level encryption these days can take advantage of the TPM in your machine's motherboard, such as Bitlocker on Windows, or the LUKS disk encryption mechanism in Linux. File level encryption might allow you to store the keys elsewhere, such as on a USB stick to store the key, like with AES on a ZIP file; or using PGP to send/receive files through email (PKE, asychronous)",
+      "metadata": {
+        "id": "1300903120636739646",
+        "author": "so_much_for_subtlety",
+        "timestamp": "2024-10-29T15:24:33.571-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5597471316750654
+    },
+    {
+      "text": "Just adding a couple things I thought of as well related to this\n\nAn attack may be possible in some situations where the attacker has extended unrestricted access to your hardware. The attack could enable them to retrieve your key from the TPM. Because of this, some people prefer to use disk level encryption in the other configurations mentioned, where the key had to be either inserted, manually entered, or even delivered by a Tang server or bitlocker network unlock. These configurations can ope",
+      "metadata": {
+        "id": "1300911755324559431",
+        "author": "xorist",
+        "timestamp": "2024-10-29T15:58:52.241-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5632063094020006
+    },
+    {
+      "text": "An excellent point. Encryption and key security/management require the use of other tools/techniques to safeguard your systems. You could do something like hosting the user's work desktop on a cloud server (pub/priv) and require a vpn key on an external device or dot1x system in the office to allow a dumb/limited laptop to connect to the network",
+      "metadata": {
+        "id": "1300913053138681976",
+        "author": "so_much_for_subtlety",
+        "timestamp": "2024-10-29T16:04:01.664-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5563954257671171
+    },
+    {
+      "text": "Yo everyone, recently did a deep dive on a recent 0 click CVE with a 9.8 CVSS score. Also developed a PoC for it and published a video on YouTube showcasing how it works.\n\nMy full article with a deep dive into how the kernel level exploit works:\nhttps://dragkob.notion.site/ipv6-the-0-click-gateway-to-hacking-windows",
+      "metadata": {
+        "id": "1310128820568985654",
+        "author": "dragkob",
+        "timestamp": "2024-11-24T01:24:11.84-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.6445441586298832
+    },
+    {
+      "text": "Wow! Very in depth analysis of how a simple function, if exploited via manipulating the IPv6 extension headers can lead to an integer overflow and cause a dos attack.",
+      "metadata": {
+        "id": "1310801077498544128",
+        "author": "aces1735",
+        "timestamp": "2024-11-25T21:55:30.382-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.6121917243176264
+    },
+    {
+      "text": "My friend just posted their first ever blog post about a research project they did, I am really proud of them!\nThe project was reverse engineering a phone that they had gotten, really cool what they have found 😄\nhttps://zestfulzodiac.substack.com/p/from-secure-to-exposed-a-forensic",
+      "metadata": {
+        "id": "1311160451895398410",
+        "author": "kyootybella",
+        "timestamp": "2024-11-26T21:43:31.915-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5667542640251283
+    },
+    {
+      "text": "Because it's a growing problem in certain parts of the world, it's definitely on some peoples' radars, from TCM, an introduction to replay attacks in car theft:\n\nhttps://www.linkedin.com/comm/pulse/intro-car-hacking-replay-attacks-tcm-security-inc-qpb0c",
+      "metadata": {
+        "id": "1313537216672301118",
+        "author": "so_much_for_subtlety",
+        "timestamp": "2024-12-03T11:07:56.796-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.566825721663323
+    },
+    {
+      "text": "Over the past few months, has anyone seen any particularly interesting vulnerabilities or threats?\n\nFurther reading would be great 😊",
+      "metadata": {
+        "id": "1314653283104849990",
+        "author": "jabba.sh",
+        "timestamp": "2024-12-06T13:02:47.769-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5870305401580247
+    },
+    {
+      "text": "ubuntu linux targeting uefi malware called bootkitty",
+      "metadata": {
+        "id": "1314655796671283241",
+        "author": "shadow_absorber",
+        "timestamp": "2024-12-06T13:12:47.05-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.6163847209245961
+    },
+    {
+      "text": "https://dragkob.notion.site/ipv6-the-0-click-gateway-to-hacking-windows",
+      "metadata": {
+        "id": "1317174534385700885",
+        "author": "dragkob",
+        "timestamp": "2024-12-13T12:01:20.917-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5845067015942754
+    },
+    {
+      "text": "Tracking an NK campaign right now, someone in here reached out with a file malwarebytes detected as a stealer, turned out to be invisibleferret - worked with victim to find the initial IOC and started tracking a multitude of LI profiles spreading beavertail + invisibleferret combo through contagious interviews, almost all of them are crypto related and ask the interviewee/victim to run a node project, usually some boilerplate web app with an exec snuck in that executes obfuscated node (beavertai",
+      "metadata": {
+        "id": "1317176151508254760",
+        "author": "hex4a",
+        "timestamp": "2024-12-13T12:07:46.469-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5963315522091015
+    },
+    {
+      "text": "Hey y’all, I wanted to share my analysis of the Akira ransomware. Feel free to give me feedback on it. It would be truly appreciated. https://medium.com/@Not_AceS/static-analysis-of-the-infamous-akira-ransomware-808ff3fd047f",
+      "metadata": {
+        "id": "1321257115851161601",
+        "author": "aces1735",
+        "timestamp": "2024-12-24T18:24:04.189-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5502237349641582
+    },
+    {
+      "text": "writer from my lil research / ctf team finished summarizing our analysis of beavertail/invisibleferret :) \nhttps://team-bytesized.github.io/articles/malware/beavertail_invisbleferret.html",
+      "metadata": {
+        "id": "1321894652718223472",
+        "author": "hex4a",
+        "timestamp": "2024-12-26T12:37:24.823-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5530593145529963
+    },
+    {
+      "text": "Former NSA cyberspy's not-so-secret hobby: Hacking Christmas lights\nhttps://www.theregister.com/2024/12/25/joyce_christmas_lights/",
+      "metadata": {
+        "id": "1323678919584649249",
+        "author": "so_much_for_subtlety",
+        "timestamp": "2024-12-31T10:47:27.194-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.608325074538088
+    },
+    {
+      "text": "Awesome analysis! I'd definitely like to come back to this post as a later point and see if this Malware creator is behind any other of the popular malware scripts.\n\nIt's actually incredibly common for Roblox DLL injectors and scripts to actually be malicious.\nSomething about Solara is that it actually was a real 'legitimate' cheat but, if I remember correctly, someone created their own fake Discord and started distributing a fake version.",
+      "metadata": {
+        "id": "1325168532836847627",
+        "author": "jabba.sh",
+        "timestamp": "2025-01-04T13:26:38.669-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5594734038616411
+    },
+    {
+      "text": "https://www.404media.co/violent-hackers-are-using-u-haul-to-dox-targets/",
+      "metadata": {
+        "id": "1325848304747024455",
+        "author": ".canyon",
+        "timestamp": "2025-01-06T10:27:48.922-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5668981881076407
+    },
+    {
+      "text": "https://trufflesecurity.com/blog/millions-at-risk-due-to-google-s-oauth-flaw",
+      "metadata": {
+        "id": "1333110515269898261",
+        "author": "Deleted User",
+        "timestamp": "2025-01-26T11:25:14.836-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5728021474430136
+    },
+    {
+      "text": "I found the link above after being inspired by https://tryhackme.com/r/room/oauthvulnerabilities",
+      "metadata": {
+        "id": "1333110676150812693",
+        "author": "Deleted User",
+        "timestamp": "2025-01-26T11:25:53.193-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5558569444166807
+    },
+    {
+      "text": "Hello everyone, this would be my 2nd analysis blog and this time it is on the notorious malware “Industroyer”. Any feedback is welcome https://medium.com/@Not_AceS/industroyer-analysis-187bd1f5ffc7",
+      "metadata": {
+        "id": "1333216086472130560",
+        "author": "aces1735",
+        "timestamp": "2025-01-26T18:24:44.972-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.6222039485108034
+    },
+    {
+      "text": "An old story from back in 2017 popped up while scrolling. Though you might find it of interest\n\nHere's the article: \nhttps://www.wired.com/story/malware-dna-hack/\n\nAnd here's one from the IEEE: \nhttps://spectrum.ieee.org/researchers-embed-malicious-code-into-dna-to-hack-dna-sequencing-software",
+      "metadata": {
+        "id": "1337565867088678954",
+        "author": "so_much_for_subtlety",
+        "timestamp": "2025-02-07T18:29:13.486-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5941014386114065
+    },
+    {
+      "text": "<https://github.com/mschwartz/assembly-tutorial>\n<https://pwn.college/>\n<https://crackmy.app/> or <https://crackmes.one>\nYoutube: OALabs, Low Level Learning, MalwareTech\n\nIMO, Best practice for reverse engineering is writing your own C/C++ code and disassembling the binary. You will spot the similarities and understand how certain code works in low-level environment.",
+      "metadata": {
+        "id": "1338164152304140338",
+        "author": "heapsoverflow",
+        "timestamp": "2025-02-09T10:06:35.797-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.6208637747443287
+    },
+    {
+      "text": "https://medium.com/@Not_AceS/fake-fortnite-exploit-malware-analysis-21d908696642 For this malware analysis blog i analyzed a fake Fortnite exploit that is actually malware. Feedback is welcome!",
+      "metadata": {
+        "id": "1352417715662618734",
+        "author": "aces1735",
+        "timestamp": "2025-03-20T19:05:10.12-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5829703440930075
+    },
+    {
+      "text": "Hello y’all, I made another blog about the malware called Formbook and it’s a stealer. Instead of your normal executable, it’s a java script file. Feedback is welcome 🙏\n\nhttps://medium.com/@Not_AceS/formbook-javascript-malware-analysis-098c37137189",
+      "metadata": {
+        "id": "1379948061975117854",
+        "author": "aces1735",
+        "timestamp": "2025-06-04T18:20:56.17-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.6011895817447566
+    },
+    {
+      "text": "do you have IPv6 RA Guard enabled?",
+      "metadata": {
+        "id": "1387857584916271245",
+        "author": "iltkms",
+        "timestamp": "2025-06-26T14:10:33.391-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.567898762753221
+    },
+    {
+      "text": "arp poisoning, mitm, lateral movement, IoT device acting like botnets, rough routers using ipv6",
+      "metadata": {
+        "id": "1387858141349154958",
+        "author": ".soulskeeper",
+        "timestamp": "2025-06-26T14:12:46.055-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5604530236434029
+    },
+    {
+      "text": "i think they know this hardware because of the way they are attacking",
+      "metadata": {
+        "id": "1387858997121646593",
+        "author": ".soulskeeper",
+        "timestamp": "2025-06-26T14:16:10.087-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.6134135709397794
+    },
+    {
+      "text": "New Report Uncovers Major Overlaps in Cybercrime and State-Sponsored Espionage\n\nhttps://www.infosecurity-magazine.com/news/major-overlaps-cybercrime-espionage/",
+      "metadata": {
+        "id": "1393011489258078249",
+        "author": "so_much_for_subtlety",
+        "timestamp": "2025-07-10T19:30:19.941-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5767926327688104
+    },
+    {
+      "text": "How the NSA Hacked Huawei: Operation Shotgiant\n\nhttps://www.youtube.com/watch?v=aQNgelm7JeE",
+      "metadata": {
+        "id": "1395488335622963432",
+        "author": "so_much_for_subtlety",
+        "timestamp": "2025-07-17T15:32:26.132-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.6187808255819943
+    },
+    {
+      "text": "Happy to share my latest finding on how to bypass CVE-2025-24054 security patch and get a NTLM challenge from explorer.exe in 0 click \n\nhttps://cymulate.com/blog/zero-click-one-ntlm-microsoft-security-patch-bypass-cve-2025-50154/",
+      "metadata": {
+        "id": "1404948777827303595",
+        "author": "n_440",
+        "timestamp": "2025-08-12T18:04:51.32-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5762469027204367
+    },
+    {
+      "text": "Technique to exfiltrate git  credentials from Argocd: https://futuresight.club/posts/0x00_exfiltrate_git_credentials_argocd.html",
+      "metadata": {
+        "id": "1415765051893088337",
+        "author": "mar0n0",
+        "timestamp": "2025-09-11T14:24:52.014-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5830825915076882
+    },
+    {
+      "text": "Boys, what do you think about this method of encryption?\nhttps://github.com/Whitecat18/Rust-for-Malware-Development/tree/main/Encryption%20Methods/ecc_shellcode_exec",
+      "metadata": {
+        "id": "1424449603016724600",
+        "author": "Deleted User",
+        "timestamp": "2025-10-05T13:34:10.353-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5918449078284626
+    },
+    {
+      "text": "DeTraced Security has finished our second engagement! This time we followed a TA across the internet. This time we've published both a blog post and also IOCs/YARA rules. Feel free to check them out!\n\nBLOG:\nhttps://detraced.org/posts/infostealer-turned-ransomware/\n\nIOCs:\nhttps://github.com/DeTraced-Security/detection-rules/tree/main/groups/betray",
+      "metadata": {
+        "id": "1430499527386861661",
+        "author": "slavetomints",
+        "timestamp": "2025-10-22T06:14:24.725-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.6007516321799107
+    },
+    {
+      "text": "Plus since most PQC algorithms are pretty new there's a higher risk of new vulnerabilities being found. Patched now but KyberSlash springs to mind",
+      "metadata": {
+        "id": "1434064223234822245",
+        "author": "zaaaaaaak",
+        "timestamp": "2025-11-01T02:19:14.444-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5681318821338035
+    },
+    {
+      "text": "https://arxiv.org/abs/1909.07353\nRelevant paper, brings up the concept of \"cryptographic agility\"",
+      "metadata": {
+        "id": "1434069294362398751",
+        "author": "zaaaaaaak",
+        "timestamp": "2025-11-01T02:39:23.495-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5566757654424981
+    },
+    {
+      "text": "Hello everyone, I have a question: would anyone be willing to take a look at a vulnerability report I created earlier this year? \n\nIt’s based around an audio exploit I caught in the wild and reversed engineered. I sent the report & exploit to Google’s research team on April 11th and on April 16th, Apple pushed out emergency patches that match the description of the report provided and accredited Google. \n\nI found what I believe is a hardware flaw on the iPhone and would like an opinion of whethe",
+      "metadata": {
+        "id": "1434338969650200599",
+        "author": "atlien404_92168",
+        "timestamp": "2025-11-01T20:30:59.094-04:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.6210741741680149
+    },
+    {
+      "text": "Hello guys, can anyone explain to me why can't i crack my own kali linux password using John the ripper. I just finished doin task 6 of \"John the Ripper: The Basics\" room and i wanted to try it out on my own system.\n\nI'm using a usb bootable OS of kali linux.",
+      "metadata": {
+        "id": "1438533053814145034",
+        "author": "sma254",
+        "timestamp": "2025-11-13T09:16:46.681-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5521778484601058
+    },
+    {
+      "text": "I found that fileName parameters in the ms-photos URI handler supports UNC paths. \n\nCombined with a server redirection, it allows to leak NTLM hashes, with a one click condition (open photos popup) from any browser. \n\nThis combination could allow wide supply chain attacks, since it moves from a browser redirection to NTLM hashes leak. \n\nFind more details and a POC about it\n\nhttps://github.com/rubenformation/ms-photos_NTLM_Leak",
+      "metadata": {
+        "id": "1440058109639786737",
+        "author": "n_440",
+        "timestamp": "2025-11-17T14:16:48.324-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.600216701704615
+    },
+    {
+      "text": "I found it while researching about a new MOTW bypass I found on Intranet",
+      "metadata": {
+        "id": "1443271049629405316",
+        "author": "n_440",
+        "timestamp": "2025-11-26T11:03:52.911-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5619202191547497
+    },
+    {
+      "text": "Yea... \nIt because i am planning to build an unbreakable antivirus.....\nIt can be impossible but until i see what make it impossible....\nTo learn why it is impossible i need data about the common things of malware... M",
+      "metadata": {
+        "id": "1449059625390575666",
+        "author": "kiaro0316",
+        "timestamp": "2025-12-12T10:25:36.919-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5982508285454952
+    },
+    {
+      "text": "Hi everyone,\n\nI’m an ISC2 CC-certified cybersecurity undergrad( final year) with solid theoretical knowledge and intermediate Python skills. \n\nLooking for Final Year Project (FYP) ideas that are feasible, doable, and novel  in cybersecurity.\nPlease share your thoughts 🍀",
+      "metadata": {
+        "id": "1449338028479873107",
+        "author": "lucixsherry06",
+        "timestamp": "2025-12-13T04:51:53.388-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5639822168952584
+    },
+    {
+      "text": "Is wsl good for hacking ?(I have a old laptop which only has one port so I can't boot into kali Linux)",
+      "metadata": {
+        "id": "1450186941529063518",
+        "author": "whyme33",
+        "timestamp": "2025-12-15T13:05:10.031-05:00",
+        "channel": "TryHackMe_research"
+      },
+      "similarity": 0.5890769284256179
+    }
+  ]
+}

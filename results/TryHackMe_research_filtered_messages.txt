@@ -1,0 +1,232 @@
+[1] Similarity: 0.587 | Deleted User | 10/25/2024
+After all my research i've uncovered a universal truth installing Linux won’t make you a hacker
+======================================================================
+
+[2] Similarity: 0.560 | so_much_for_subtlety | 10/29/2024
+Yeah, disk-level encryption these days can take advantage of the TPM in your machine's motherboard, such as Bitlocker on Windows, or the LUKS disk encryption mechanism in Linux. File level encryption might allow you to store the keys elsewhere, such as on a USB stick to store the key, like with AES on a ZIP file; or using PGP to send/receive files through email (PKE, asychronous)
+======================================================================
+
+[3] Similarity: 0.563 | xorist | 10/29/2024
+Just adding a couple things I thought of as well related to this
+
+An attack may be possible in some situations where the attacker has extended unrestricted access to your hardware. The attack could enable them to retrieve your key from the TPM. Because of this, some people prefer to use disk level encryption in the other configurations mentioned, where the key had to be either inserted, manually entered, or even delivered by a Tang server or bitlocker network unlock. These configurations can ope
+======================================================================
+
+[4] Similarity: 0.556 | so_much_for_subtlety | 10/29/2024
+An excellent point. Encryption and key security/management require the use of other tools/techniques to safeguard your systems. You could do something like hosting the user's work desktop on a cloud server (pub/priv) and require a vpn key on an external device or dot1x system in the office to allow a dumb/limited laptop to connect to the network
+======================================================================
+
+[5] Similarity: 0.645 | dragkob | 11/24/2024
+Yo everyone, recently did a deep dive on a recent 0 click CVE with a 9.8 CVSS score. Also developed a PoC for it and published a video on YouTube showcasing how it works.
+
+My full article with a deep dive into how the kernel level exploit works:
+https://dragkob.notion.site/ipv6-the-0-click-gateway-to-hacking-windows
+======================================================================
+
+[6] Similarity: 0.612 | aces1735 | 11/25/2024
+Wow! Very in depth analysis of how a simple function, if exploited via manipulating the IPv6 extension headers can lead to an integer overflow and cause a dos attack.
+======================================================================
+
+[7] Similarity: 0.567 | kyootybella | 11/26/2024
+My friend just posted their first ever blog post about a research project they did, I am really proud of them!
+The project was reverse engineering a phone that they had gotten, really cool what they have found 😄
+https://zestfulzodiac.substack.com/p/from-secure-to-exposed-a-forensic
+======================================================================
+
+[8] Similarity: 0.567 | so_much_for_subtlety | 12/3/2024
+Because it's a growing problem in certain parts of the world, it's definitely on some peoples' radars, from TCM, an introduction to replay attacks in car theft:
+
+https://www.linkedin.com/comm/pulse/intro-car-hacking-replay-attacks-tcm-security-inc-qpb0c
+======================================================================
+
+[9] Similarity: 0.587 | jabba.sh | 12/6/2024
+Over the past few months, has anyone seen any particularly interesting vulnerabilities or threats?
+
+Further reading would be great 😊
+======================================================================
+
+[10] Similarity: 0.616 | shadow_absorber | 12/6/2024
+ubuntu linux targeting uefi malware called bootkitty
+======================================================================
+
+[11] Similarity: 0.585 | dragkob | 12/13/2024
+https://dragkob.notion.site/ipv6-the-0-click-gateway-to-hacking-windows
+======================================================================
+
+[12] Similarity: 0.596 | hex4a | 12/13/2024
+Tracking an NK campaign right now, someone in here reached out with a file malwarebytes detected as a stealer, turned out to be invisibleferret - worked with victim to find the initial IOC and started tracking a multitude of LI profiles spreading beavertail + invisibleferret combo through contagious interviews, almost all of them are crypto related and ask the interviewee/victim to run a node project, usually some boilerplate web app with an exec snuck in that executes obfuscated node (beavertai
+======================================================================
+
+[13] Similarity: 0.550 | aces1735 | 12/24/2024
+Hey y’all, I wanted to share my analysis of the Akira ransomware. Feel free to give me feedback on it. It would be truly appreciated. https://medium.com/@Not_AceS/static-analysis-of-the-infamous-akira-ransomware-808ff3fd047f
+======================================================================
+
+[14] Similarity: 0.553 | hex4a | 12/26/2024
+writer from my lil research / ctf team finished summarizing our analysis of beavertail/invisibleferret :) 
+https://team-bytesized.github.io/articles/malware/beavertail_invisbleferret.html
+======================================================================
+
+[15] Similarity: 0.608 | so_much_for_subtlety | 12/31/2024
+Former NSA cyberspy's not-so-secret hobby: Hacking Christmas lights
+https://www.theregister.com/2024/12/25/joyce_christmas_lights/
+======================================================================
+
+[16] Similarity: 0.559 | jabba.sh | 1/4/2025
+Awesome analysis! I'd definitely like to come back to this post as a later point and see if this Malware creator is behind any other of the popular malware scripts.
+
+It's actually incredibly common for Roblox DLL injectors and scripts to actually be malicious.
+Something about Solara is that it actually was a real 'legitimate' cheat but, if I remember correctly, someone created their own fake Discord and started distributing a fake version.
+======================================================================
+
+[17] Similarity: 0.567 | .canyon | 1/6/2025
+https://www.404media.co/violent-hackers-are-using-u-haul-to-dox-targets/
+======================================================================
+
+[18] Similarity: 0.573 | Deleted User | 1/26/2025
+https://trufflesecurity.com/blog/millions-at-risk-due-to-google-s-oauth-flaw
+======================================================================
+
+[19] Similarity: 0.556 | Deleted User | 1/26/2025
+I found the link above after being inspired by https://tryhackme.com/r/room/oauthvulnerabilities
+======================================================================
+
+[20] Similarity: 0.622 | aces1735 | 1/26/2025
+Hello everyone, this would be my 2nd analysis blog and this time it is on the notorious malware “Industroyer”. Any feedback is welcome https://medium.com/@Not_AceS/industroyer-analysis-187bd1f5ffc7
+======================================================================
+
+[21] Similarity: 0.594 | so_much_for_subtlety | 2/7/2025
+An old story from back in 2017 popped up while scrolling. Though you might find it of interest
+
+Here's the article: 
+https://www.wired.com/story/malware-dna-hack/
+
+And here's one from the IEEE: 
+https://spectrum.ieee.org/researchers-embed-malicious-code-into-dna-to-hack-dna-sequencing-software
+======================================================================
+
+[22] Similarity: 0.621 | heapsoverflow | 2/9/2025
+<https://github.com/mschwartz/assembly-tutorial>
+<https://pwn.college/>
+<https://crackmy.app/> or <https://crackmes.one>
+Youtube: OALabs, Low Level Learning, MalwareTech
+
+IMO, Best practice for reverse engineering is writing your own C/C++ code and disassembling the binary. You will spot the similarities and understand how certain code works in low-level environment.
+======================================================================
+
+[23] Similarity: 0.583 | aces1735 | 3/20/2025
+https://medium.com/@Not_AceS/fake-fortnite-exploit-malware-analysis-21d908696642 For this malware analysis blog i analyzed a fake Fortnite exploit that is actually malware. Feedback is welcome!
+======================================================================
+
+[24] Similarity: 0.601 | aces1735 | 6/4/2025
+Hello y’all, I made another blog about the malware called Formbook and it’s a stealer. Instead of your normal executable, it’s a java script file. Feedback is welcome 🙏
+
+https://medium.com/@Not_AceS/formbook-javascript-malware-analysis-098c37137189
+======================================================================
+
+[25] Similarity: 0.568 | iltkms | 6/26/2025
+do you have IPv6 RA Guard enabled?
+======================================================================
+
+[26] Similarity: 0.560 | .soulskeeper | 6/26/2025
+arp poisoning, mitm, lateral movement, IoT device acting like botnets, rough routers using ipv6
+======================================================================
+
+[27] Similarity: 0.613 | .soulskeeper | 6/26/2025
+i think they know this hardware because of the way they are attacking
+======================================================================
+
+[28] Similarity: 0.577 | so_much_for_subtlety | 7/10/2025
+New Report Uncovers Major Overlaps in Cybercrime and State-Sponsored Espionage
+
+https://www.infosecurity-magazine.com/news/major-overlaps-cybercrime-espionage/
+======================================================================
+
+[29] Similarity: 0.619 | so_much_for_subtlety | 7/17/2025
+How the NSA Hacked Huawei: Operation Shotgiant
+
+https://www.youtube.com/watch?v=aQNgelm7JeE
+======================================================================
+
+[30] Similarity: 0.576 | n_440 | 8/12/2025
+Happy to share my latest finding on how to bypass CVE-2025-24054 security patch and get a NTLM challenge from explorer.exe in 0 click 
+
+https://cymulate.com/blog/zero-click-one-ntlm-microsoft-security-patch-bypass-cve-2025-50154/
+======================================================================
+
+[31] Similarity: 0.583 | mar0n0 | 9/11/2025
+Technique to exfiltrate git  credentials from Argocd: https://futuresight.club/posts/0x00_exfiltrate_git_credentials_argocd.html
+======================================================================
+
+[32] Similarity: 0.592 | Deleted User | 10/5/2025
+Boys, what do you think about this method of encryption?
+https://github.com/Whitecat18/Rust-for-Malware-Development/tree/main/Encryption%20Methods/ecc_shellcode_exec
+======================================================================
+
+[33] Similarity: 0.601 | slavetomints | 10/22/2025
+DeTraced Security has finished our second engagement! This time we followed a TA across the internet. This time we've published both a blog post and also IOCs/YARA rules. Feel free to check them out!
+
+BLOG:
+https://detraced.org/posts/infostealer-turned-ransomware/
+
+IOCs:
+https://github.com/DeTraced-Security/detection-rules/tree/main/groups/betray
+======================================================================
+
+[34] Similarity: 0.568 | zaaaaaaak | 11/1/2025
+Plus since most PQC algorithms are pretty new there's a higher risk of new vulnerabilities being found. Patched now but KyberSlash springs to mind
+======================================================================
+
+[35] Similarity: 0.557 | zaaaaaaak | 11/1/2025
+https://arxiv.org/abs/1909.07353
+Relevant paper, brings up the concept of "cryptographic agility"
+======================================================================
+
+[36] Similarity: 0.621 | atlien404_92168 | 11/1/2025
+Hello everyone, I have a question: would anyone be willing to take a look at a vulnerability report I created earlier this year? 
+
+It’s based around an audio exploit I caught in the wild and reversed engineered. I sent the report & exploit to Google’s research team on April 11th and on April 16th, Apple pushed out emergency patches that match the description of the report provided and accredited Google. 
+
+I found what I believe is a hardware flaw on the iPhone and would like an opinion of whethe
+======================================================================
+
+[37] Similarity: 0.552 | sma254 | 11/13/2025
+Hello guys, can anyone explain to me why can't i crack my own kali linux password using John the ripper. I just finished doin task 6 of "John the Ripper: The Basics" room and i wanted to try it out on my own system.
+
+I'm using a usb bootable OS of kali linux.
+======================================================================
+
+[38] Similarity: 0.600 | n_440 | 11/17/2025
+I found that fileName parameters in the ms-photos URI handler supports UNC paths. 
+
+Combined with a server redirection, it allows to leak NTLM hashes, with a one click condition (open photos popup) from any browser. 
+
+This combination could allow wide supply chain attacks, since it moves from a browser redirection to NTLM hashes leak. 
+
+Find more details and a POC about it
+
+https://github.com/rubenformation/ms-photos_NTLM_Leak
+======================================================================
+
+[39] Similarity: 0.562 | n_440 | 11/26/2025
+I found it while researching about a new MOTW bypass I found on Intranet
+======================================================================
+
+[40] Similarity: 0.598 | kiaro0316 | 12/12/2025
+Yea... 
+It because i am planning to build an unbreakable antivirus.....
+It can be impossible but until i see what make it impossible....
+To learn why it is impossible i need data about the common things of malware... M
+======================================================================
+
+[41] Similarity: 0.564 | lucixsherry06 | 12/13/2025
+Hi everyone,
+
+I’m an ISC2 CC-certified cybersecurity undergrad( final year) with solid theoretical knowledge and intermediate Python skills. 
+
+Looking for Final Year Project (FYP) ideas that are feasible, doable, and novel  in cybersecurity.
+Please share your thoughts 🍀
+======================================================================
+
+[42] Similarity: 0.589 | whyme33 | 12/15/2025
+Is wsl good for hacking ?(I have a old laptop which only has one port so I can't boot into kali Linux)
+======================================================================

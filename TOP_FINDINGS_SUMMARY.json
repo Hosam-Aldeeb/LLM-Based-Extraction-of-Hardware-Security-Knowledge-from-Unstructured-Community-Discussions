@@ -1,0 +1,338 @@
+{
+  "totalThreadsAnalyzed": 1524,
+  "totalChannels": 22,
+  "topVulnerabilities": [
+    {
+      "name": "power issue",
+      "channels": 2
+    },
+    {
+      "name": "Potential BIOS corruption",
+      "channels": 2
+    },
+    {
+      "name": "Corrupted BIOS",
+      "channels": 2
+    },
+    {
+      "name": "Locked BIOS",
+      "channels": 2
+    },
+    {
+      "name": "BIOS corruption",
+      "channels": 2
+    },
+    {
+      "name": "Node acts as a DDoS amplifier when receiving a lot of messages",
+      "channels": 2
+    },
+    {
+      "name": "Difficulty in device re-use without available keys",
+      "channels": 2
+    },
+    {
+      "name": "Assumption that admin packets are signed with the private key may not be secure",
+      "channels": 2
+    },
+    {
+      "name": "Node spoofing",
+      "channels": 2
+    },
+    {
+      "name": "Inadequate monitoring of router message lists",
+      "channels": 2
+    },
+    {
+      "name": "Potential for unauthorized access if admin key is reused or improperly managed",
+      "channels": 2
+    },
+    {
+      "name": "Key collision mechanism",
+      "channels": 2
+    },
+    {
+      "name": "Node ID spoofing",
+      "channels": 2
+    },
+    {
+      "name": "Unintentional DDoS due to excessive position packet requests",
+      "channels": 2
+    },
+    {
+      "name": "DDoS attacks using custom firmware",
+      "channels": 2
+    },
+    {
+      "name": "Unintentional spamming due to bugs",
+      "channels": 2
+    },
+    {
+      "name": "Frequency drift due to lack of TXCO in Waveshare hats",
+      "channels": 2
+    },
+    {
+      "name": "Undocumented backdoor in ESP32 Bluetooth chip",
+      "channels": 2
+    },
+    {
+      "name": "minor vulnerabilities",
+      "channels": 2
+    },
+    {
+      "name": "unintended behaviours",
+      "channels": 2
+    }
+  ],
+  "topTechniques": [
+    {
+      "name": "Reverse engineering",
+      "channels": 5
+    },
+    {
+      "name": "debugging",
+      "channels": 4
+    },
+    {
+      "name": "reverse engineering",
+      "channels": 4
+    },
+    {
+      "name": "JTAG debugging",
+      "channels": 4
+    },
+    {
+      "name": "flashing firmware",
+      "channels": 4
+    },
+    {
+      "name": "programming",
+      "channels": 3
+    },
+    {
+      "name": "flashing",
+      "channels": 3
+    },
+    {
+      "name": "updating firmware",
+      "channels": 3
+    },
+    {
+      "name": "Flashing firmware",
+      "channels": 3
+    },
+    {
+      "name": "compiling firmware",
+      "channels": 3
+    },
+    {
+      "name": "building firmware",
+      "channels": 3
+    },
+    {
+      "name": "recompile",
+      "channels": 3
+    },
+    {
+      "name": "In-circuit programming",
+      "channels": 2
+    },
+    {
+      "name": "hacking",
+      "channels": 2
+    },
+    {
+      "name": "factory reset",
+      "channels": 2
+    },
+    {
+      "name": "reverse engineering firmware",
+      "channels": 2
+    },
+    {
+      "name": "troubleshooting",
+      "channels": 2
+    },
+    {
+      "name": "Measuring resistance to GND",
+      "channels": 2
+    },
+    {
+      "name": "Checking voltages",
+      "channels": 2
+    },
+    {
+      "name": "flashing BIOS",
+      "channels": 2
+    }
+  ],
+  "topHardware": [
+    {
+      "name": "ESP32",
+      "channels": 7
+    },
+    {
+      "name": "Raspberry Pi",
+      "channels": 7
+    },
+    {
+      "name": "RP2040",
+      "channels": 6
+    },
+    {
+      "name": "CPU",
+      "channels": 6
+    },
+    {
+      "name": "STM32",
+      "channels": 6
+    },
+    {
+      "name": "laptop",
+      "channels": 5
+    },
+    {
+      "name": "Arduino",
+      "channels": 5
+    },
+    {
+      "name": "esp32",
+      "channels": 5
+    },
+    {
+      "name": "MCU",
+      "channels": 4
+    },
+    {
+      "name": "battery",
+      "channels": 4
+    },
+    {
+      "name": "ESP",
+      "channels": 4
+    },
+    {
+      "name": "USB devices",
+      "channels": 4
+    },
+    {
+      "name": "PCB",
+      "channels": 4
+    },
+    {
+      "name": "microcontrollers",
+      "channels": 3
+    },
+    {
+      "name": "STM32F103",
+      "channels": 3
+    },
+    {
+      "name": "SoC",
+      "channels": 3
+    },
+    {
+      "name": "stm32",
+      "channels": 3
+    },
+    {
+      "name": "x86",
+      "channels": 3
+    },
+    {
+      "name": "Raspberry Pi (rpi)",
+      "channels": 3
+    },
+    {
+      "name": "EEPROM",
+      "channels": 3
+    }
+  ],
+  "topProtocols": [
+    {
+      "name": "SPI",
+      "channels": 12
+    },
+    {
+      "name": "USB",
+      "channels": 11
+    },
+    {
+      "name": "I2C",
+      "channels": 10
+    },
+    {
+      "name": "JTAG",
+      "channels": 10
+    },
+    {
+      "name": "UART",
+      "channels": 9
+    },
+    {
+      "name": "Bluetooth",
+      "channels": 7
+    },
+    {
+      "name": "SWD",
+      "channels": 5
+    },
+    {
+      "name": "HTTP",
+      "channels": 5
+    },
+    {
+      "name": "HTTPS",
+      "channels": 5
+    },
+    {
+      "name": "TLS",
+      "channels": 5
+    },
+    {
+      "name": "TCP",
+      "channels": 4
+    },
+    {
+      "name": "MQTT",
+      "channels": 4
+    },
+    {
+      "name": "GPIO",
+      "channels": 4
+    },
+    {
+      "name": "Ethernet",
+      "channels": 3
+    },
+    {
+      "name": "i2c",
+      "channels": 3
+    },
+    {
+      "name": "USB CDC",
+      "channels": 3
+    },
+    {
+      "name": "UDP",
+      "channels": 3
+    },
+    {
+      "name": "QSPI",
+      "channels": 3
+    },
+    {
+      "name": "USB-C",
+      "channels": 3
+    },
+    {
+      "name": "WiFi",
+      "channels": 3
+    }
+  ],
+  "allFindings": {
+    "totalUniqueVulnerabilities": 1692,
+    "totalUniqueTechniques": 2808,
+    "totalUniqueHardware": 1891,
+    "totalUniqueProtocols": 336
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "channel": "Amulius_risc-v",
+  "threadsAnalyzed": 8,
+  "aggregatedFindings": {
+    "vulnerabilities": [
+      "misaligned accesses",
+      "alignment faults",
+      "hardware trojans",
+      "window overflow",
+      "kernel page swapping issues",
+      "Context switch may require saving and restoring entire sets of register windows"
+    ],
+    "techniques": [
+      "programming without an IDE",
+      "using LLVM toolchain",
+      "using SDKs",
+      "loading a bootloader via JTAG",
+      "flashing images from a bootloader",
+      "using one wire programming",
+      "malloc",
+      "memcpy",
+      "patching",
+      "reformatting for alignment",
+      "design using Cortex-M0 as a security and bootstrapping processor",
+      "OpenCL",
+      "OpenMP",
+      "providing cryptographic services",
+      "using OpTEE in the boot chain",
+      "delegating secure monitor calls",
+      "formal verification",
+      "trap handling",
+      "KPTI (Kernel Page Table Isolation)",
+      "Hardware assistance for context switching",
+      "Using register windows to improve performance"
+    ],
+    "hardware": [
+      "RISC-V MCU",
+      "CH32V3 MCU development kits",
+      "CH32V003 chips",
+      "ESP32-S2",
+      "RP2040",
+      "embeddedDOOM",
+      "Cortex-M0",
+      "MiSTer cores",
+      "PS7",
+      "security coprocessor",
+      "RISC-V",
+      "SPARC",
+      "x86",
+      "ARMv8-A",
+      "ARMv6-M",
+      "SPARC cores"
+    ],
+    "protocols": [
+      "JTAG",
+      "One Wire"
+    ]
+  },
+  "detailedAnalyses": [
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "programming without an IDE",
+        "using LLVM toolchain",
+        "using SDKs",
+        "loading a bootloader via JTAG",
+        "flashing images from a bootloader",
+        "using one wire programming"
+      ],
+      "hardware": [
+        "RISC-V MCU",
+        "CH32V3 MCU development kits",
+        "CH32V003 chips",
+        "ESP32-S2",
+        "RP2040"
+      ],
+      "protocols": [
+        "JTAG",
+        "One Wire"
+      ],
+      "summary": "The conversation revolves around programming RISC-V MCUs, specifically the CH32V3, using various toolchains and methods. Participants discuss the use of LLVM, SDKs, and programming techniques, including JTAG for bootloading."
+    },
+    {
+      "vulnerabilities": [
+        "misaligned accesses",
+        "alignment faults"
+      ],
+      "techniques": [
+        "malloc",
+        "memcpy",
+        "patching",
+        "reformatting for alignment"
+      ],
+      "hardware": [
+        "embeddedDOOM"
+      ],
+      "protocols": [],
+      "summary": "The conversation revolves around handling misaligned accesses in a software context, discussing potential methods for patching and alignment in the context of an embedded DOOM project."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "design using Cortex-M0 as a security and bootstrapping processor",
+        "OpenCL",
+        "OpenMP"
+      ],
+      "hardware": [
+        "Cortex-M0",
+        "MiSTer cores"
+      ],
+      "protocols": [],
+      "summary": "The conversation discusses the use of a Cortex-M0 processor for security and bootstrapping, while recommending alternatives to CUDA such as OpenCL and OpenMP, and mentions MiSTer cores."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "providing cryptographic services",
+        "using OpTEE in the boot chain",
+        "delegating secure monitor calls"
+      ],
+      "hardware": [
+        "PS7",
+        "security coprocessor"
+      ],
+      "protocols": [],
+      "summary": "The conversation discusses integrating a security coprocessor to provide cryptographic services for the PS7 and using OpTEE as part of the boot chain to handle secure monitor calls."
+    },
+    {
+      "vulnerabilities": [
+        "hardware trojans"
+      ],
+      "techniques": [
+        "formal verification"
+      ],
+      "hardware": [
+        "RISC-V"
+      ],
+      "protocols": [],
+      "summary": "The conversation discusses hardware security, specifically focusing on hardware trojans and formal verification in relation to RISC-V implementations. One participant expresses interest in collaborating on research related to RISC-V, while another emphasizes the importance of defining research goals and not limiting the scope to just RISC-V."
+    },
+    {
+      "vulnerabilities": [
+        "window overflow",
+        "kernel page swapping issues"
+      ],
+      "techniques": [
+        "trap handling",
+        "KPTI (Kernel Page Table Isolation)"
+      ],
+      "hardware": [
+        "SPARC"
+      ],
+      "protocols": [],
+      "summary": "The conversation discusses vulnerabilities related to window overflow and kernel page management, emphasizing the importance of proper software design to mitigate these issues. It also mentions KPTI as a technique related to kernel page handling."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [],
+      "hardware": [
+        "x86"
+      ],
+      "protocols": [],
+      "summary": "The conversation discusses the handling of double faults and paging in the Linux kernel, along with a mention of triple faults."
+    },
+    {
+      "vulnerabilities": [
+        "Context switch may require saving and restoring entire sets of register windows"
+      ],
+      "techniques": [
+        "Hardware assistance for context switching",
+        "Using register windows to improve performance"
+      ],
+      "hardware": [
+        "ARMv8-A",
+        "ARMv6-M",
+        "x86",
+        "SPARC cores"
+      ],
+      "protocols": [],
+      "summary": "The conversation discusses the benefits of hardware assistance in managing register windows and context switching in modern microarchitectures, highlighting specific architectures like ARM and SPARC."
+    }
+  ]
+}

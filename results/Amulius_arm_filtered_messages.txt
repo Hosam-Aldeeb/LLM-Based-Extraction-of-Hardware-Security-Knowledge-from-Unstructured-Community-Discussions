@@ -1,0 +1,1294 @@
+[1] Similarity: 0.556 | rennsis | 1/3/2025
+@Gotbread here my converted code... xD
+https://hastebin.com/share/otihokevag.rust
+======================================================================
+
+[2] Similarity: 0.595 | onwrikbaar | 1/10/2025
+```
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Blüstim debug",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "jlink",
+            "serverpath": "/Applications/SEGGER/JLink_V788d/JLinkGDBServerCLExe",
+            
+======================================================================
+
+[3] Similarity: 0.613 | undefined2001 | 1/10/2025
+: "swd",
+            "serialNumber": "", // Add the J-Link serial number if you have multiple probes
+            "svdFile": "${workspaceFolder}/debug.svd",
+            "armToolchainPath": "/usr/bin",
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 180000000,
+                "swoFrequency": 2000000,
+                "source": "probe",
+                "decoders": [
+                    {
+                        "type": "console",
+                        "l
+======================================================================
+
+[4] Similarity: 0.565 | hard.fault | 1/10/2025
+it's a secure boot core, it only runs signed firmware from ST
+======================================================================
+
+[5] Similarity: 0.583 | madman.in.a.box | 1/11/2025
+the secondary core on the CC3220SF is in charge of the wireless stack and the security mechanisms
+======================================================================
+
+[6] Similarity: 0.578 | inisider | 1/12/2025
+/rkbin/bin/rv11/rv1103b_usbplug_v1.00.bin
+
+The following message is printed:
+>   Opening loader failed, exiting download boot!
+
+It happens because uiTag is different from what rkdeveloptool is expected:
+> 
+>         PSTRUCT_RKBOOT_HEAD pBootHead;
+>         pBootHead = (PSTRUCT_RKBOOT_HEAD)(m_BootData);
+>         if (( pBootHead->uiTag!=0x544F4F42)&&(pBootHead->uiTag!=0x2052444C))
+>         {
+>             bCheck=false;
+>             return;
+>         }
+And first bytes of rv1103b_usbplug_v1.00.bi
+======================================================================
+
+[7] Similarity: 0.579 | hard.fault | 1/13/2025
+The debug USB port is not usable by the application, no. It's just for JTAG and virtual com port purposes
+======================================================================
+
+[8] Similarity: 0.551 | zweieuro | 1/17/2025
+Interestingly, when it overflows, it sets _every_ IC bit ?
+```
+
+INFO  ---- capture value: 62928
+INFO  Status flags 0
+INFO  ---- TIM1_CC interrupt: CC1IF
+INFO  ---- capture value: 64928
+INFO  Status flags 0
+INFO  ---- TIM1_CC interrupt: CC2IF
+INFO  ---- TIM1_CC interrupt: CC1IF
+INFO  ---- TIM1_CC interrupt: UIF
+INFO  ---- capture value: 1392
+INFO  Status flags 11101
+INFO  ---- TIM1_CC interrupt: CC1IF
+INFO  ---- capture value: 3393
+INFO  Status flags 0
+INFO  ---- TIM1_CC interrupt: CC1IF
+INFO  --
+======================================================================
+
+[9] Similarity: 0.557 | cc8573 | 1/17/2025
+@Gotbread @Baron 
+So I have bricked my third F411 board. You can literally destroy the chip by setting the PLL wrong
+======================================================================
+
+[10] Similarity: 0.575 | hard.fault | 1/17/2025
+You should be able to recover it by putting it into the bootloader. That'll keep it from loading any botched firmware and allow you to erase the chip
+======================================================================
+
+[11] Similarity: 0.603 | hard.fault | 1/17/2025
+You can usually program it through USB if the chip has a USB peripheral, or usually it enables a UART, SPI, and I2C that lets you program it
+======================================================================
+
+[12] Similarity: 0.583 | cc8573 | 1/20/2025
+I also just read about this -> 
+```
+1. The Debug Interface (SWD/JTAG) is Affected by Clock Source Changes:
+
+When you change the system clock source to PLL, it can also affect peripheral clocks, including the ones used by the SWD (Serial Wire Debug) or JTAG interface. In some cases, if the clock configuration isn't done properly or if the PLL isn't stable yet, it could cause the debug interface to malfunction or become non-functional, making it seem like the MCU is unresponsive.
+```
+======================================================================
+
+[13] Similarity: 0.572 | closed1 | 1/20/2025
+will use hardware
+======================================================================
+
+[14] Similarity: 0.566 | pllsz | 1/21/2025
+if you wanna do hardware I believe you on the right track
+======================================================================
+
+[15] Similarity: 0.552 | gotbread | 1/26/2025
+3 things:
+- check that your printf is redirected using the UART. google "printf uart redirection stm32" for details on how to do that
+- measure the TX traces with your oscilloscope to verify that the data actually shows up on the wire. you also need to configure your gpio pins properly for that
+- verify that the comport works, you can run an independent terminal tool, and short RX with TX on the board to create a loopback: everything you type should be eachoed to you
+======================================================================
+
+[16] Similarity: 0.571 | gotbread | 1/30/2025
+My guess would be the i2c init sequence.
+Not saying it's wrong, but my gut feeling, without running the code myself, points at the init. That's usually the most fragile part
+======================================================================
+
+[17] Similarity: 0.557 | haadinho10. | 2/2/2025
+1) Take any STM32 board (Blue pill/Blackpill/nucleo). Set up a 100Hz timer (up counter) and see it on oscilloscope by outputing the value to DAC (If you have a scope)
+2) When an overflow happens, read in data from any analog GPIO and transfer it by DMA to RAM
+3) When the DMA transfer is complete, trigger an interrupt that will send the saved value via any available UART (You can choose the baud rate)
+4) See the value transmitted by uart by displaying it in a serial terminal (You can connect from
+======================================================================
+
+[18] Similarity: 0.554 | undefined2001 | 2/3/2025
+and it uses device tree which is also related to E-Linux
+======================================================================
+
+[19] Similarity: 0.553 | rustedskull | 2/3/2025
+A proper nucleo will probably run you less or as much as the non-nucleo board + fake ST link + UART to usb bridge :mmLol:
+======================================================================
+
+[20] Similarity: 0.555 | rustedskull | 2/3/2025
+https://www.st.com/en/evaluation-tools/nucleo-f401re.html
+
+The ST link on boards shaped like this or bigger can be used to program other boards. And it can function as a USB to serial converter.
+======================================================================
+
+[21] Similarity: 0.560 | masterrific | 2/4/2025
+I am trying to figure out why a wallet tracker I have isn't working. It's running a ARM Cortex M0 CPU. The chip is ST17H65 manufactured by LENZE.
+Is this the channel I could get some pointers on for it? I am quite new to the embedded scene.
+======================================================================
+
+[22] Similarity: 0.557 | goiabinha5733 | 2/6/2025
+thanks. unfornutely this is not a option. it uses the i2c protocol.
+======================================================================
+
+[23] Similarity: 0.590 | xhivo97 | 2/9/2025
+Anyone know why the secure boot library for many 64-bit Mediatek devices are running on an AArch32 execution state?
+
+Is it common for bootloader level stuff to do this?
+======================================================================
+
+[24] Similarity: 0.570 | cliffordheath | 2/9/2025
+(If you have the hardware ofc)
+======================================================================
+
+[25] Similarity: 0.588 | baggybr0 | 2/14/2025
+anyways this is what error  message by openocd
+`openocd -f openocd.cfg -c "program firmware.bin verify reset exit"
+Open On-Chip Debugger 0.12.0
+Licensed under GNU GPL v2
+For bug reports, read
+    http://openocd.org/doc/doxygen/bugs.html
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+Info : clock speed 2000 kHz
+Info : STLINK V2J33M25 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.247800
+Info : [stm32f4x.cpu] Cortex-M4 r0p
+======================================================================
+
+[26] Similarity: 0.574 | madman.in.a.box | 2/18/2025
+a Cortex-M microcontroller will start executing code from whatever address it reads from address 4
+======================================================================
+
+[27] Similarity: 0.559 | zweieuro | 2/19/2025
+It really depends on which one, if you use "weak" ones Https might be too intense. HTTP is a very bad idea as the insecurity makes your entire chip be at risk.
+======================================================================
+
+[28] Similarity: 0.567 | zweieuro | 2/19/2025
+and then one level lower is the bootloader, which is by all means "untouchable" unless outside software tells it to unlock
+======================================================================
+
+[29] Similarity: 0.555 | zweieuro | 2/19/2025
+remote bricks are easy to recover as loong as they are accessible by your flashing hardware
+======================================================================
+
+[30] Similarity: 0.555 | zweieuro | 2/19/2025
+yep. 
+But remote bricks are practically lethal as well. Imagine your ... smart coffee machine makes a firmware update, doesn't do this correctly or the power fails while only running 1 partition aaaand BAM the thing is effectively dead
+======================================================================
+
+[31] Similarity: 0.606 | Deleted User | 2/19/2025
+All this topic interests me; I'm looking for something that connects cybersecurity and embedded systems. Do you know how I can start improving in that?
+======================================================================
+
+[32] Similarity: 0.564 | zweieuro | 2/19/2025
+Especially embedded and IOT security is a huge and very interesting field. But i wouldn't know where to start without university.
+======================================================================
+
+[33] Similarity: 0.554 | zweieuro | 2/19/2025
+`INFO  TIM3 SR: 0b1011111 ccer: 16969` it keeps saying this and IDFK why.
+Yeah the trigger is set to reset so thats the flags, everythnig else is fine.
+Its not overflowing as far as i can tell.
+======================================================================
+
+[34] Similarity: 0.568 | gotbread | 2/20/2025
+https://www.jotrin.de/userfiles/images/techs/ATMEGA328P%20Microcontroller.png this was just from google
+======================================================================
+
+[35] Similarity: 0.552 | _vaporwaveon | 2/25/2025
+https://github.com/Zrocket/Teensy-Rust
+======================================================================
+
+[36] Similarity: 0.561 | cvbnm90i | 2/25/2025
+[I2C read] register: 0x20
+[I2C status]: 0xB0
+[I2C READ] Sent byte 0x11 from register 0x20
+[I2C status]: 0xD0
+[I2C ERROR] Transmit abort detected
+======================================================================
+
+[37] Similarity: 0.574 | pllsz | 2/25/2025
+The debug interfaces uses either SWD, or JTAG which its own protocol that knows how to "Talk" to flash
+======================================================================
+
+[38] Similarity: 0.563 | pllsz | 2/25/2025
+Maybe this can help?
+https://stackoverflow.com/questions/74027792/how-does-jtag-flash-memory-programming-work
+======================================================================
+
+[39] Similarity: 0.550 | allyedge | 3/2/2025
+```sh
+➜ arm-none-eabi-objdump -h firmware.elf       
+
+firmware.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .vectors      000001b0  08000000  08000000  00001000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .text         0000025c  080001b0  080001b0  000011b0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .ARM.exidx    00000008  0800040c  0800040c  0000140c  2**2
+                  CONTENT
+======================================================================
+
+[40] Similarity: 0.573 | allyedge | 3/2/2025
+```
+> arm-none-eabi-nm -n firmware.elf
+08000000 R tab
+080001b0 T main
+08000218 T _reset
+08000264 T memset
+08000308 T memcpy
+08000444 A _sidata
+24000000 R _ebss
+24000000 R _edata
+24000000 R _end
+24000000 R _sbss
+24000000 R _sdata
+24020000 R _estack
+```
+======================================================================
+
+[41] Similarity: 0.558 | allyedge | 3/2/2025
+```
+08000000 R tab
+080001b0 T main
+08000218 T _reset
+08000264 T memset
+08000308 T memcpy
+08000444 A _sidata
+20000000 R _ebss
+20000000 R _end
+20000000 R _sbss
+24000000 R _edata
+24000000 R _sdata
+24050000 R _estack
+```
+
+got this by using ram linker from a previously cubeide generated project
+======================================================================
+
+[42] Similarity: 0.582 | beer_baron | 3/4/2025
+e.g. for their Clang compiler at https://developer.arm.com/Tools%20and%20Software/Arm%20Compiler%20for%20Embedded: ```If your project has long-term maintenance requirements or functional safety requirements (such as EN 50128, IEC 61508, IEC 62304, and ISO 26262), Arm strongly recommends that you consider a LTS and qualified version of Arm Compiler for Embedded FuSa instead.```
+======================================================================
+
+[43] Similarity: 0.560 | Deleted User | 3/7/2025
+small? isnt their jtag connector size huge?
+======================================================================
+
+[44] Similarity: 0.591 | zecritic | 3/7/2025
+IIRC only the STLink/v3 is picky about what chips you connect to. I suppose some locked down dev board JLink OB firmware might care too, but most of the rest are happy to serve as a dumb channel to bit ang SWD or JTAG to anything you want
+======================================================================
+
+[45] Similarity: 0.589 | Deleted User | 3/7/2025
+its weird tho cuz the ic manufacturer recommended a segger jlink for programming the chip
+======================================================================
+
+[46] Similarity: 0.596 | Deleted User | 3/7/2025
+will i (actually my boss but u get the idea) get into trouble if i try to use a segger jlink edu to prototype and program commercial products? my boss not gunna get me a normal segger or maybe i can try to find it second hand hmmmmm (the ic im trying to program requires jlink or its clones to be programmed according to the manufacturer lol idk)
+======================================================================
+
+[47] Similarity: 0.560 | Deleted User | 3/7/2025
+its goverment has pirated windows XD
+======================================================================
+
+[48] Similarity: 0.610 | Deleted User | 3/7/2025
+frommy research there are hacks but st software is not guaranteed to work
+======================================================================
+
+[49] Similarity: 0.567 | gotbread | 3/7/2025
+thing is, most of my debugging tasks are done with the scope. in most cases, i cant just break in with a breakpoint and look at registers, that would stop the cpu and blow up my mosfet. so all debugging needs to be realtime safe
+======================================================================
+
+[50] Similarity: 0.569 | artessbm | 3/7/2025
+that's true for rc_w1, rc_w0, toggle, and all these kind of idiotic bit accesses
+======================================================================
+
+[51] Similarity: 0.638 | hard.fault | 3/8/2025
+Third party jtag debugger
+======================================================================
+
+[52] Similarity: 0.563 | coffeecup1 | 3/10/2025
+ with the -O0 flag. I've added many other edits as well, too many to list off...
+
+My setup
+Host machine: Raspberry Pi 5
+MCU: Raspberry Pi Pico H (debug header/non-wifi)
+Debug probe: Raspberry Pi Debug Probe (not to be confused with Pico Probe)
+Debugger: Probe-RS
+IDE: VS Code
+======================================================================
+
+[53] Similarity: 0.594 | madman.in.a.box | 3/11/2025
+you can use SWD to tap into a JTAG scan chain
+======================================================================
+
+[54] Similarity: 0.587 | madman.in.a.box | 3/11/2025
+you can use a JTAG scan chain to talk to an embedded flash controller
+======================================================================
+
+[55] Similarity: 0.553 | madman.in.a.box | 3/11/2025
+similarly, you can just tap into a JTAG scan chain for the same effect as above without the need for SWD
+======================================================================
+
+[56] Similarity: 0.555 | mr_arson | 3/17/2025
+all android knows how to do is eat hot chip, i2c read, pwm out, and sometimes i2c write
+======================================================================
+
+[57] Similarity: 0.552 | gotbread | 3/19/2025
+that is likely overkill. the chip itself has good methods to handle that:
+https://www.st.com/resource/en/application_note/dm00771441-stm32h745755-and-stm32h747757-lines-interprocessor-communications-stmicroelectronics.pdf
+======================================================================
+
+[58] Similarity: 0.594 | vilgaxelninopolla | 3/22/2025
+```
+void go2app(){
+    uint32_t  JumpAddress;
+    pFunction Jump_To_Application;
+    printf("\n\rChecking firmware at 0x8004000 address");
+    fflush(stdout);
+     *SCB_VTOR = FLASH_APP_ADDR;
+    if(((*(uint32_t*) FLASH_APP_ADDR)& 0x2FFE0000)== 0x20000000){
+    printf("\n\r✓ Code detected, jumping to first firmware");
+    fflush(stdout);
+    HAL_Delay(100);
+    JumpAddress = *(uint32_t*)(FLASH_APP_ADDR+4);
+    Jump_To_Application = (pFunction)JumpAddress;
+    HAL_RCC_DeInit();
+    HAL_DeInit();
+
+======================================================================
+
+[59] Similarity: 0.575 | hard.fault | 3/22/2025
+https://developer.arm.com/documentation/dui0552/a/cortex-m3-peripherals/system-control-block/vector-table-offset-register
+======================================================================
+
+[60] Similarity: 0.550 | kinglicorice | 3/26/2025
+```void SystemClock_Config(void)
+{
+  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+
+  /** Configure the main internal regulator output voltage
+  */
+  HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
+
+  /** Configure LSE Drive Capability
+  */
+  HAL_PWR_EnableBkUpAccess();
+  __HAL_RCC_LSEDRIVE_CONFIG(RCC_LSEDRIVE_LOW);
+
+  /** Initializes the RCC Oscillators according to the specified parameters
+  * in the RCC_OscInitTypeDef structure.
+  */
+
+======================================================================
+
+[61] Similarity: 0.589 | zman350x | 3/28/2025
+So, I have a TI chip (IWR6843) that I want to be able to debug in CCStudio via JTAG. All I have is a generic FT232H-based JTAG adapter ( [this one](https://pine64.com/product/usb-jtag-adapter/) ), not one of TI's fancy $100+ ones. Got it all soldered and wired up, but I'm not quite sure where to go from here. Openocd doesn't have a config for this chip, and I'd like to see if this is at all possible before I spend the time figuring out how to create one. Am I on the right path or wasting my time
+======================================================================
+
+[62] Similarity: 0.571 | multiplemonomials | 3/28/2025
+openocd has info on how to scan the JTAG chain here https://openocd.org/doc/html/TAP-Declaration.html
+======================================================================
+
+[63] Similarity: 0.633 | cooperg2001 | 3/28/2025
+If CCS Theia supports the chip maybe they've got the option for generic jtag debuggers
+======================================================================
+
+[64] Similarity: 0.573 | haadinho10. | 3/29/2025
+ive been given this statement in a uni hackathon
+======================================================================
+
+[65] Similarity: 0.563 | vilgaxelninopolla | 3/31/2025
+n fact, it did give me a compilation error, but I got fooled into using this address 0xE000ED08 on other microcontrollers, I never noticed the problem until later
+======================================================================
+
+[66] Similarity: 0.555 | beyerrrrrr | 3/31/2025
+Are SPI LCD displays generally testable with jumper wires?
+======================================================================
+
+[67] Similarity: 0.562 | xhivo97 | 3/31/2025
+Cool, now can you identify which interrupts the SPI configuration enables?
+======================================================================
+
+[68] Similarity: 0.564 | beer_baron | 4/6/2025
+And ARM provides their commercial version of the compiler with clang and gcc for community edition, another proprietary SDK from a semiconductor company I had to use recently also had the same approach (claing main and gcc without full support)
+======================================================================
+
+[69] Similarity: 0.577 | hard.fault | 4/9/2025
+I don't think I've run into an stm32 yet that actually supports a full JTAG port
+======================================================================
+
+[70] Similarity: 0.555 | cooperg2001 | 4/10/2025
+What is your safety concern with allowing your debugger to use the USB port?
+======================================================================
+
+[71] Similarity: 0.564 | onwrikbaar | 4/14/2025
+No. I have USB CDC (Device role) working on F767, G0B1, G491 and H723.
+======================================================================
+
+[72] Similarity: 0.551 | scottmonk | 4/15/2025
+arm/jlink related question:
+======================================================================
+
+[73] Similarity: 0.650 | scottmonk | 4/15/2025
+on seggers page for this chip it states:
+_NXP i.MX RT1020
+
+This article covers the NXP i.MXRT1020 series devices. As for all i.MXRT10xx devices, JTAG is not active per default. Instead SWD can be used. To activate JTAG on this target device eFuses must be set. For more information see the corresponding target reference manual. _
+======================================================================
+
+[74] Similarity: 0.626 | scottmonk | 4/15/2025
+from my understanding the dongle can be swd or jtag
+======================================================================
+
+[75] Similarity: 0.560 | l1zard_27 | 4/17/2025
+DC_DATA_HS_MAX_PACKET_SIZE / 4U];      /* Force 32-bit alignment */
+  uint8_t  CmdOpCode;
+  uint8_t  CmdLength;
+  uint8_t  *RxBuffer;
+  uint8_t  *TxBuffer;
+  uint32_t RxLength;
+  uint32_t TxLength;
+
+  __IO uint32_t TxState;
+  __IO uint32_t RxState;
+} USBD_CDC_HandleTypeDef;
+```
+======================================================================
+
+[76] Similarity: 0.575 | scottmonk | 4/17/2025
+several grey hairs later..... it works?
+im not actually sure what removed the "Cortex-M7 is not supported via MC2WJTAG_TDI" error though. I cannot replicate it anymore with either JLink probe i have.
+======================================================================
+
+[77] Similarity: 0.607 | hard.fault | 4/17/2025
+Says you're using SWD, is it possible they just don't support JTAG on the chip you're trying to use? Different protocols
+======================================================================
+
+[78] Similarity: 0.580 | scottmonk | 4/17/2025
+shooting from the hip but that acronym maybe means Micro Controller 2 Wire Jtag _ TDI
+======================================================================
+
+[79] Similarity: 0.588 | scottmonk | 4/17/2025
+the issue with the MIMXRT chips seems that you actually have to burn a fuse (not reset-able?) to change the interface between SWD and JTAG. Further reading shows there is some JTag command you can send to temporarily set the port to SWD as well once its burned to be JTAG but the chips are factory fresh and so still SWD.
+======================================================================
+
+[80] Similarity: 0.554 | scottmonk | 4/18/2025
+maybe examine some status registers or somthing liek that. i dont have any experience with that chip but
+======================================================================
+
+[81] Similarity: 0.590 | muskra | 4/19/2025
+Hi there, new to the community 🙂 I've found a Lexibook from the 2010s wich has an ARM Processor (compatible with linux) and a Windows CE in it. I want to hack the thing to install an embedded linux (like with buildroot or something). There is one problem. It's a locked up proprietary computer and i probably need to reverse engineer some things. I found the TX/RX serial port but no UART and it seems to have a security chip if i'm not mistaken ? (on the blue card next to the ethernet port, the li
+======================================================================
+
+[82] Similarity: 0.580 | muskra | 4/19/2025
+ttle square chip)
+
+As i am also a totally beginner at hardware hacking, i also want to learn the process and do the things the right way. Can you walk me throught ? Like what will i need to buy to make this thing and do you think it'll be possible on such board to achieve my goals 🙂
+One thing i also want is to dump the whole Windows CE OS to make it public for conservation (if it's not illegal of course. Note that i didn't bought the device and never accepted their user agreements). I tried to 
+======================================================================
+
+[83] Similarity: 0.616 | muskra | 4/19/2025
+The thing has everything to be a good target to learn hacking it's having an EEPROM chip with 4Go of storage ant don't seem's to have any security. I'll take a good old usb/serial tool and hack it around whatever effort it takes because of the fun i get from it. It's really toxic from my perspective to discourage people saying that kind of rubbish. Thanks for the honesty but i'll take the hard way of learning hardware because it's my fun to hack and tinker computer things on my weekends.
+======================================================================
+
+[84] Similarity: 0.635 | muskra | 4/19/2025
+Let people hack the things they want to hack
+======================================================================
+
+[85] Similarity: 0.565 | muskra | 4/20/2025
+ing. So i choose this project that is something personnal. The SBC is from an old child computer from my cousins that i want to hack. I need to relearn a lot of things to pursue the hacking and fun it gives me and for that purpose i want to learn more ROM hacks and hardware stuffs. That's all. Stop pursuing me for anything else rubbish you have to give. Just go boxing if you're embittered by what people says or think and be open and supportive for the people who love technology as you are. Peace
+======================================================================
+
+[86] Similarity: 0.562 | beer_baron | 4/20/2025
+It does feel like wasting time for your purposes, if it is hacking you are interested in there are security specific communities and ethical wargames around those, e.g.: https://www.wechall.net/
+======================================================================
+
+[87] Similarity: 0.639 | xhivo97 | 4/20/2025
+I understand the hacker spirit of "I have this device, _I wonder if I can hack it_?"
+======================================================================
+
+[88] Similarity: 0.664 | xhivo97 | 4/20/2025
+They're specifically interested in hardware hacking though
+======================================================================
+
+[89] Similarity: 0.637 | xhivo97 | 4/20/2025
+My plan for learning this one day is with mediatek Android tablets, because they're already broken and it's a good platform to try and recreate the research on your own (it's easier when you already know in detail what the vulnerabilities are)
+======================================================================
+
+[90] Similarity: 0.620 | beer_baron | 4/20/2025
+ne is needed, maybe hardware security chips like TPMs, trust zone of the chip, device trees and how they are signed (FIT), dm-verity and avb formats...
+
+I am not sure how I would tackle this as a beginner just with a device that is a secured black box that I would need to reverse engineer, to begin with most information about the black box device itself is probably behind paywall or innacessible
+======================================================================
+
+[91] Similarity: 0.560 | muskra | 4/20/2025
+That's seem really interesting tho to do this on open devices but it's a lot harder if they have a TPM with a anti tampering sequence at boot
+======================================================================
+
+[92] Similarity: 0.569 | muskra | 4/20/2025
+There is a really interesting project, when i was on degree i hacked a little usb car plug and transformed it into a USB charging bank using a circuit i reversed on a PC battery driver. It was really hard and my professor made a lot of things back then
+======================================================================
+
+[93] Similarity: 0.589 | deltafarce | 4/21/2025
+The worst case scenario I’ve come up with is that the fault was caused by the UART peripheral itself, and that will cause the processor to enter the lockup state until an MCU watchdog asserts a reset signal
+======================================================================
+
+[94] Similarity: 0.556 | beer_baron | 4/23/2025
+namely gmock_main: https://github.com/google/googletest/blob/main/googlemock/src/gmock_main.cc
+======================================================================
+
+[95] Similarity: 0.614 | cooperg2001 | 4/23/2025
+so i.e. for a UART driver you would be able to verify that your actual firmware is configuring the registers correctly. At a higher level you can make the mocking framework actually mimic the UART TX RX.
+
+ReNode was built by Antmicro as a method of doing CI/CD with Embedded IoT so it has a lot of depth available
+======================================================================
+
+[96] Similarity: 0.554 | beer_baron | 4/23/2025
+those are M4F, they have a hardware fpu
+======================================================================
+
+[97] Similarity: 0.560 | gotbread | 4/23/2025
+:kek: another reason why these IDEs/code generators are to be avoided
+======================================================================
+
+[98] Similarity: 0.551 | gotbread | 4/24/2025
+that highly depends on what you wanna do.
+embedded controllers?
+embedded linux?
+pcb design?
+analog electronics?
+digital electronics?
+iot?
+
+field is big
+======================================================================
+
+[99] Similarity: 0.577 | undefined2001 | 4/27/2025
+```c
+
+uint32_t GetAHB1Clock()
+{
+    uint8_t SysClockSrc = _GET_RCC_2BIT_FLAG(RCC_CFGR_SWS_FLAG);
+    uint32_t SysClockFreq = 0;
+    if (SysClockSrc == 0)
+    {
+        SysClockFreq = HSI_VALUE;
+    }
+    else if (SysClockSrc == 1)
+    {
+        SysClockFreq = HSE_VALUE;
+    }
+    else if (SysClockSrc == 2)
+    {
+        uint8_t PllSrc = _GET_RCC_FLAG(RCC_PLLCFGR_PLLSRC_FLAG);
+        uint32_t pllm = (RCC->PLLCFGR & RCC_PLLCFGR_PLLM_Msk);
+        uint32_t plln = (RCC->PLLCFGR & RCC_PLLCFGR_PLLN_M
+======================================================================
+
+[100] Similarity: 0.562 | cooperg2001 | 4/28/2025
+New and interesting bugs, bits that get set under debug but not when doing unit testing!
+======================================================================
+
+[101] Similarity: 0.558 | cooperg2001 | 4/29/2025
++100 for Logic Analyzer, I've fixed like 4 bugs in my new SPI driver in record time since I dug out mine
+======================================================================
+
+[102] Similarity: 0.571 | gotbread | 4/30/2025
+https://developer.arm.com/documentation/dui0646/c/Cortex-M7-Peripherals/Optional-Memory-Protection-Unit/MPU-access-permission-attributes?lang=en#BIHHEDAE here you can see the cache policies
+======================================================================
+
+[103] Similarity: 0.555 | superbike_z | 5/2/2025
+Silly question, is it possible to break the voltage regulator on an stm32f4 discovery by messing with registers. I was trying to get my clock at max speed and all of a sudden I cant flash the device and the 3.3v read 3.9 or >4  most of the time. 
+OpemOCD fails as follows 
+```
+flash_f4.sh build/inverter.elf 
+Starting OpenOCD...
+Open On-Chip Debugger 0.12.0
+Licensed under GNU GPL v2
+For bug reports, read
+    http://openocd.org/doc/doxygen/bugs.html
+Info : The selected transport took over low-level
+======================================================================
+
+[104] Similarity: 0.553 | superbike_z | 5/2/2025
+ target control. The results might differ compared to plain JTAG/SWD
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 2000 kHz
+Info : STLINK V2J46M32 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.993491
+Error: init mode failed (unable to connect to the target)
+
+
+Error: OpenOCD failed to start. Check the OpenOCD output or config.
+```
+
+Connected to my machine using a cheap USB dongle and the previous firmware is still r
+======================================================================
+
+[105] Similarity: 0.568 | hard.fault | 5/4/2025
+This is the standard: https://developer.arm.com/documentation/101416/0100/Hardware-Description/Target-Interfaces/Cortex-Debug--10-pin-
+======================================================================
+
+[106] Similarity: 0.557 | slackgeek | 5/4/2025
+What is usually the price? I receive both, people who route the connectors and people who hack the regular pcbs to find the jtags
+======================================================================
+
+[107] Similarity: 0.550 | gotbread | 5/4/2025
+however that works only for a hardware stack. its also common to have software stacks
+======================================================================
+
+[108] Similarity: 0.561 | cooperg2001 | 5/5/2025
+The lowest level which is the SPI driver is blocking. And there's only one thread of execution.
+
+Yet once I get enough things drawing on the screen the behaviour of the driver changes as if a race condition is causing data corruption
+======================================================================
+
+[109] Similarity: 0.557 | cooperg2001 | 5/8/2025
+got the proverbial wires crossed with falling trigger and state of IDR
+======================================================================
+
+[110] Similarity: 0.554 | cooperg2001 | 5/8/2025
+Putting a checklist on this issue:
+1. GPIOC clock is on
+2. PC4 is set as an input
+3. PC4 has its pullup enabled
+4. EXTI Falling Trigger 4 is enabled
+5. EXTI falling trigger 4 is unmasked
+6. NVIC priority for EXTI4-15 is set at 1
+7. NVIC enable for EXTI4-15 has been called.
+8. EXTI4_15_IRQHandler is defined
+
+Yet pulling PC4 to ground does not fire the ISR
+======================================================================
+
+[111] Similarity: 0.557 | onwrikbaar | 5/8/2025
+Perhaps it has something to do with the fact that on your Nucleo PC4 is by default used as TX for USART1.
+======================================================================
+
+[112] Similarity: 0.558 | _someguy._ | 5/9/2025
+swclk goes from -1.6v to 1.8v? when it should be going from 0 to 3.3v theoretically?
+======================================================================
+
+[113] Similarity: 0.574 | madman.in.a.box | 5/12/2025
+these devices all have different ports:
+```
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 002: ID 05e3:0610 Genesys Logic, Inc. Hub
+Bus 001 Device 003: ID 05e3:0610 Genesys Logic, Inc. Hub
+Bus 001 Device 004: ID 05e3:0610 Genesys Logic, Inc. Hub
+Bus 001 Device 006: ID 0e8d:e616 MediaTek Inc. Wireless_Device
+Bus 001 Device 007: ID 27c6:609c Shenzhen Goodix Technology Co.,Ltd. Goodix Fingerprint USB Device
+Bus 001 Device 077: ID 32ac:0014 Framework Laptop 16 Numpad 
+======================================================================
+
+[114] Similarity: 0.578 | onwrikbaar | 5/13/2025
+To isolate the error, I'd not initialise anything you don't use yet, like SPI3, ADC1 and the timers. Maybe even USB if you just want to test the UART.
+======================================================================
+
+[115] Similarity: 0.557 | rustedskull | 5/15/2025
+It doesn't work because this specific configuration is meant for ST's H723ZG Nucleo development board. This one: <https://www.st.com/en/evaluation-tools/nucleo-h723zg.html>
+======================================================================
+
+[116] Similarity: 0.563 | garethevs3 | 5/19/2025
+this one: https://uk.rs-online.com/web/p/microcontroller-development-tools/8820278
+======================================================================
+
+[117] Similarity: 0.600 | the_alchemist0 | 5/25/2025
+I use USB for production flashing, and comms with PC programs. Tag-connect 6-pin for JTAG, to an ST-Link for debugging
+======================================================================
+
+[118] Similarity: 0.554 | lloyd1031 | 6/2/2025
+Well there's something I have read online about some flashing method that sometimes locks people out of the chip until they reset by holding the boot pin or something.
+======================================================================
+
+[119] Similarity: 0.562 | cyo.the.vil3 | 6/4/2025
+running into issue with stm32H7 and freertos.  everytime I flash the chip, it deadlocks and the debugger wont respond. I have to pull BT0 high and use the stm32programmer to erase the entire chip.  Then in the IDE, I can reflash the chip.  A toxic cycle.  Anyway,  are there any traps or common pitfalls that could be snagging me with this?
+======================================================================
+
+[120] Similarity: 0.556 | cyo.the.vil3 | 6/4/2025
+Interesting read but hasnt solved issue.
+
+https://community.st.com/t5/stm32-mcus-boards-and-hardware/nucleo-h755zi-q-how-can-i-resolve-st-link-quot-no-device-found/td-p/632372#M16907
+======================================================================
+
+[121] Similarity: 0.551 | zecritic | 6/8/2025
+So it may be a race condition between the device booting up and being able to respond to USB packets vs the host seeing the pullup and probing it.
+======================================================================
+
+[122] Similarity: 0.593 | terzer | 6/9/2025
+ }
+}
+```
+DMA and SPI interrupts are enabled and set to priority 5.
+Despite all this, about half the reads return corrupted values. Oscilloscope traces show perfect SPI transactions every time.
+What could be the issue?
+======================================================================
+
+[123] Similarity: 0.555 | javacord | 6/9/2025
+Are the corruptions consistent? Do they have a pattern? I recently ran into an spi issue where the host was sending 3 bytes instead of the 4 the peripheral was expecting, so every other transmission was shifted. In my case the cs pin went low for the correct amount of time but the clock was only working for half of it. I guess it may also be good to verify if changing priority or clock speed affect this.
+======================================================================
+
+[124] Similarity: 0.551 | lemercier | 6/11/2025
+Finally I made it work faster by enabling Icache and dcache, man...learning hardware sure not easy🥲
+======================================================================
+
+[125] Similarity: 0.556 | lemercier | 6/11/2025
+The i2s signal, I use teensy as i2s master, connected it to audio generator and oscilloscope, that's the easiest way possible for me to check on my algorithm
+======================================================================
+
+[126] Similarity: 0.553 | madman.in.a.box | 6/14/2025
+a single USB port actually provides two devices: a USB-CDC device (UART to USB bridge), as well as a CMSIS-DAP debugger
+======================================================================
+
+[127] Similarity: 0.597 | madman.in.a.box | 6/14/2025
+on the machine in front of me:
+```
+Bus 001 Device 005: ID 32ac:0014 Framework Laptop 16 Numpad Module
+Bus 001 Device 006: ID 0e8d:e616 MediaTek Inc. Wireless_Device
+Bus 001 Device 007: ID 27c6:609c Shenzhen Goodix Technology Co.,Ltd. Goodix Fingerprint USB Device
+Bus 001 Device 008: ID 32ac:0012 Framework Laptop 16 Keyboard Module - ANSI
+```
+======================================================================
+
+[128] Similarity: 0.559 | madman.in.a.box | 6/14/2025
+the kernel sees _two_ devices though: the USB-CDC and the CMSIS-DAP
+======================================================================
+
+[129] Similarity: 0.563 | madman.in.a.box | 6/14/2025
+it would place the USB controller on my machine in a very poor state
+======================================================================
+
+[130] Similarity: 0.566 | sulicat. | 6/14/2025
+Is that through jtag?
+======================================================================
+
+[131] Similarity: 0.560 | madman.in.a.box | 6/14/2025
+the I2C controller on the RP2040 is the Synopsys DesignWare ~~dw_i2c_abp~~ DW_apb_i2c
+======================================================================
+
+[132] Similarity: 0.561 | thegoynextdoor | 6/20/2025
+But like the I2C, SPI and UART peripherals are super easy to use with it
+======================================================================
+
+[133] Similarity: 0.560 | uncannyflanigan | 6/27/2025
+I was amazed to find out the arm pop instruction can pop to the program counter register, effectively the same thing as x86 ret
+======================================================================
+
+[134] Similarity: 0.556 | gettygermany | 6/30/2025
+Anyone here fought with the I2C Lock Problem of STM32F4 ?
+======================================================================
+
+[135] Similarity: 0.551 | gotbread | 6/30/2025
+i had some i2c lock issues on an F1 in the past
+======================================================================
+
+[136] Similarity: 0.556 | lemercier | 6/30/2025
+So it's like hardware quirk?
+======================================================================
+
+[137] Similarity: 0.560 | lemercier | 6/30/2025
+I don't know when did it start, but I never trusted i2c somehow
+======================================================================
+
+[138] Similarity: 0.590 | lemercier | 6/30/2025
+Oh, it's started when I used Chinese usbi, I have to rip the eeprom out of board to make the i2c working, although pretty sure the eeprom was disconnected but it's just won't work
+======================================================================
+
+[139] Similarity: 0.588 | lemercier | 6/30/2025
+Idk, I will remove everything and only debug the i2c. Put logic analyzer and scramble around for solution.
+======================================================================
+
+[140] Similarity: 0.567 | gotbread | 6/30/2025
+but you have them using the hardware peripheral, which has that bug, and you want to avoid them, right?
+======================================================================
+
+[141] Similarity: 0.565 | lemercier | 6/30/2025
+I2c reading be like : sending address bit, after confirmed by device, it send data to stm, so, where the failure happened according to your logic analyzer?
+======================================================================
+
+[142] Similarity: 0.604 | gotbread | 6/30/2025
+and the problem manifests in the i2C status register constantly reporting "locked" ?
+======================================================================
+
+[143] Similarity: 0.589 | gettygermany | 6/30/2025
+yes STM32F1 has ALSO an I2C bug, but its a different one 😉
+======================================================================
+
+[144] Similarity: 0.569 | gettygermany | 6/30/2025
+where i get the I2C1_RST from?
+======================================================================
+
+[145] Similarity: 0.555 | x_ma_ryu_x | 6/30/2025
+Yes.  it is a Uni-T UTP3303 power supply. 
+
+The code i flashed before it going GG is just the auto device configuration  tool code generator which generates the initial files. So basically should be empty files with the general requirements put in the .ioc(bluetooth, seriar wire, button etc)
+======================================================================
+
+[146] Similarity: 0.553 | javacord | 6/30/2025
+held down, so I don't think that's the issue. The debug lines appear to work the same (there are signals being transmitted), though I haven't analyzed the data transmitted. The chip flashes the bootloader with no problems, it just becomes bricked after the mandatory power cycle. Any ideas would be helpful at this point.
+======================================================================
+
+[147] Similarity: 0.556 | thegoynextdoor | 7/2/2025
+Great news, the aftermarket ECU I got for my BMW runs on a STM32F4 series part with open source code
+======================================================================
+
+[148] Similarity: 0.600 | gettygermany | 7/2/2025
+@Gotbread avoided the bitbang, errata fix work, there is really a GENERAL problem (which just is not often happening, better underlined haha) with the i2c on the processor of anything STM32F1-F4 😄
+======================================================================
+
+[149] Similarity: 0.565 | xhivo97 | 7/3/2025
+I2C is very easily bit-bangable 😳
+======================================================================
+
+[150] Similarity: 0.565 | doctordhumketuchutiyahai | 7/7/2025
+yes I did find the device on the bus . 
+Starting I2C Bus Scan...
+--> I2C Device Found at Address: 0x00
+--> I2C Device Found at Address: 0x40
+I2C Bus Scan Finished.
+The Device is Ready
+SUCCESS: Reset command sent. Continuing with configuration...
+Configuration was done Successfully
+Calibration was done Successfully
+Initlization Successfull of First Device
+I ran the code and got this on the logger
+======================================================================
+
+[151] Similarity: 0.567 | cooperg2001 | 7/10/2025
+Okay using their words:
+if Bootloader detects App Loader corruption then you lose DFU unless the App Loader corruption was caused by a botched App Loader update in which case you run the active App slot which will still contain the Updater which will then repair the App Loader (assuming the update itself is not the cause of fault)
+======================================================================
+
+[152] Similarity: 0.611 | cooperg2001 | 7/10/2025
+This is where things like checking your ECC if you have it and pro-actively repairing detected errors would save you since this kind of corruption would typically be caused by hardware wearout or cosmic rays
+======================================================================
+
+[153] Similarity: 0.589 | cooperg2001 | 7/10/2025
+Needing to load a seperate 2nd Stage updater into an app slot is fine.
+
+If you want to protect against corruption then read up on your chips CRC, ECC, Write Protection, etc systems and implement an error checking and correction routine
+======================================================================
+
+[154] Similarity: 0.600 | cooperg2001 | 7/10/2025
+The most basic way to prevent this is to include some magic number and a CRC with your firmware image.
+
+The secure way is to do that but also encrypt it.
+
+The first means at least someone bothered to give you a value to check
+
+The second means only you or authorized parties can make firmware bundles that your device will load
+======================================================================
+
+[155] Similarity: 0.608 | cooperg2001 | 7/10/2025
+if the only way for the device to get firmware updates is via some encrypted internet channel to  a server you control then this issue is mitigated. 
+
+If you give out an update file they load the  you need more verification less they load some random garbage
+======================================================================
+
+[156] Similarity: 0.560 | cooperg2001 | 7/10/2025
+Because if you don't verify whats going in there then it becomes much easier to brick your device or break DFU
+======================================================================
+
+[157] Similarity: 0.562 | cooperg2001 | 7/10/2025
+So the points of failure you need to verify then are:
+1. Can an unauthorized user spoof that OTA connection
+2. Can the CAN Bus be tapped to load invalid files
+======================================================================
+
+[158] Similarity: 0.590 | escalator_enjoyer | 7/10/2025
+but in my case the most harm they could do with that is spoofing sensor readings (which would only harm them)
+======================================================================
+
+[159] Similarity: 0.558 | escalator_enjoyer | 7/10/2025
+i assume in your case the firmware of the device will be interacting with other devices which would be a problem
+======================================================================
+
+[160] Similarity: 0.594 | cooperg2001 | 7/10/2025
+Not the real example but imagine if some curious slightly tech savvy user managed to load bad firmware (or just anything that wasn't ours) onto say a CT scanner.
+
+Now they might just crash it. Or maybe it wigs out and shakes itself apart because the thing is running whatever the heck they loaded.
+
+Destroyed equipment for them. Possible lawsuit for us.
+======================================================================
+
+[161] Similarity: 0.584 | marshray | 7/10/2025
+Or they want to make your company look bad, attack some other device connected to the same bus, make a viral video, reverse engineer something about the product, give a talk at a hacker conference, etc.
+======================================================================
+
+[162] Similarity: 0.639 | cooperg2001 | 7/10/2025
+Hackers gain access to private network via insecure IoT light bulbs
+======================================================================
+
+[163] Similarity: 0.551 | famine0 | 7/13/2025
+it's like 30 years of intern code full of mistakes like: #if BSP_FEATURE_CGC_HAS_PLL && !BSP_CFG_USE_LOW_VOLTAGE_MODE && !((1U != BSP_FEATURE_CGC_PLLCCR_TYPE) && 3U != BSP_FEATURE_CGC_PLLCCR_TYPE) && (4U != BSP_FEATURE_CGC_PLLCCR_TYPE) && !BSP_CLOCK_CFG_MAIN_OSC_POPULATED)
+======================================================================
+
+[164] Similarity: 0.567 | escalator_enjoyer | 7/14/2025
+```c
+MEMORY {
+    /* sector 0 */
+    STAGE1_BOOTLOADER (rx):         ORIGIN = 0x08000000, LENGTH = 16k
+    /* sector 1 */
+    STAGE2_BOOTLOADER (rx):         ORIGIN = 0x08004000, LENGTH = 16k
+    /* sector 2 */
+    STAGE2_BOOTLOADER_UPDATER (rx): ORIGIN = 0x08008000, LENGTH = 16K
+    /* sectors 3-7 */
+    APP (rx):                       ORIGIN = 0x0800C000, LENGTH = 464K
+
+    SHARED_RAM (xrw):               ORIGIN = 0x20000000, LENGTH = 256
+    RAM (xrw):                      ORIGIN = 0x20000100
+======================================================================
+
+[165] Similarity: 0.574 | thehexacube | 7/14/2025
+_has never looked at I2S, sounds way too close to I2C, which is slow :kek:_
+======================================================================
+
+[166] Similarity: 0.565 | thehexacube | 7/14/2025
+errrr wat, I2S peripheral sits on the OSC_IN pins?!
+======================================================================
+
+[167] Similarity: 0.558 | gettygermany | 7/21/2025
+but generally speaking, a totally wrong firmware on wrong hardware really cant come that far anyway, or? if we talk different processor series.
+======================================================================
+
+[168] Similarity: 0.555 | madman.in.a.box | 7/21/2025
+i was working with a device that had a very sparse ISA
+======================================================================
+
+[169] Similarity: 0.612 | madman.in.a.box | 7/21/2025
+instructions were fetched encrypted and decrypted in the CPU's pipeline
+======================================================================
+
+[170] Similarity: 0.619 | madman.in.a.box | 7/21/2025
+if you tamper with the instruction stream somehow, because of the sparsity of the ISA you are very likely to end with an invalid instruction being decrypted and the CPU would then go into a secure illegal instruction trap
+======================================================================
+
+[171] Similarity: 0.551 | madman.in.a.box | 7/21/2025
+so this method of "hiding" software even works if your ISA is dense
+======================================================================
+
+[172] Similarity: 0.586 | madman.in.a.box | 7/21/2025
+that thing has a cryptographic core that sits in between the CPU's instruction port and flash memory
+======================================================================
+
+[173] Similarity: 0.551 | undefined2001 | 7/23/2025
+```
+C:/cmsis/ARM/inc/cmsis_gcc.h: In function 'uint32_t __get_PSP()':
+C:/cmsis/ARM/inc/cmsis_gcc.h:249:21: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+  249 |   register uint32_t result;
+      |                     ^~~~~~
+C:/cmsis/ARM/inc/cmsis_gcc.h: In function 'uint32_t __get_MSP()':
+C:/cmsis/ARM/inc/cmsis_gcc.h:303:21: warning: ISO C++17 does not allow 'register' storage class specifier [-Wregister]
+  303 |   register uint32_t result;
+      |            
+======================================================================
+
+[174] Similarity: 0.622 | cooperg2001 | 7/23/2025
+Trying to get a debugger connection via JTAG to a TM4C1294 via Code Composer Studio 20.1.
+
+Unsure if TI supports generic JTAG probes in their software. Can anyone confirm or deny? Thx
+======================================================================
+
+[175] Similarity: 0.581 | cooperg2001 | 7/23/2025
+Any generic JTAG debugger is my point.
+
+Rn I have a Orbtrace Mini and a BMP to choose from
+======================================================================
+
+[176] Similarity: 0.557 | cooperg2001 | 7/23/2025
+Like the ideal is a big red glowing "Generic JTAG / SWD / CMSIS-DAP / OpenOCD" button instead of a list of specific debuggers
+======================================================================
+
+[177] Similarity: 0.564 | undefined2001 | 7/27/2025
+as you guys are more experienced than me can you guys please explain me about how you handle error in embedded firmware. as far as i know using try catch is not a good option to handle error in embedded systems also handling and minimizing errors are crucial in embedded system
+======================================================================
+
+[178] Similarity: 0.554 | gotbread | 8/2/2025
+there is your error "cannot verify st device". so its a clone, and the IDE checks if its a clone. you can either disable that check, or flash firmware to make it think its the real one
+======================================================================
+
+[179] Similarity: 0.576 | madman.in.a.box | 8/3/2025
+for this particular case, "making sure" implies the hardware is broken beyond belief
+======================================================================
+
+[180] Similarity: 0.559 | cooperg2001 | 8/3/2025
+Do Cortex M4's have the ability to protect writes/reads to peripherals to only code living at specific memory addresses or am I thinking of more full MMU level?
+======================================================================
+
+[181] Similarity: 0.555 | zecritic | 8/3/2025
+Not sure if the MMU can do that, but IIRC that's what all the TrustZone stuff is about in ARM v8-M.
+======================================================================
+
+[182] Similarity: 0.559 | beer_baron | 8/4/2025
+I recently had a problem of losing like just a few bytes in RTS / CTS UART at high baudrates with stress testing, as in 3 bytes or so in 10MB loopback and not every test iteration... after some headache with queues and race conditions I ended figuring it was the CH340 based usb2ttl in between, and a (real) FTDI2226 fixed it :/
+======================================================================
+
+[183] Similarity: 0.586 | madman.in.a.box | 8/4/2025
+it should be mentioned that the security extension requires you to configure the SAU (and in some systems the IDAU); the former works more or less the same way as the MPU; you will need to have a veneer area, and you still need to rely switching the CPU from a secure mode to a non-secure mode
+======================================================================
+
+[184] Similarity: 0.563 | ml248 | 8/5/2025
+It might be my code's problem, I initialized a new project with the nucleo-H563ZI, and I was able to flash the firmware. I was working on an Ethernet project and pull this repo from github:
+https://github.com/ShadiElshazly/STM32H7-Ethernet-issue-solved
+======================================================================
+
+[185] Similarity: 0.571 | gotbread | 8/12/2025
+that is one big issue with code generators. you are relying on the blessing of ST, hoping that your particular path is not buggy. and there is no real timeline on that. this issue can take 5 minutes or 5 months. its a big risk. i would do these things not via the .ioc, but just use the peripheral (sai) directly, via its register settings. bit more work upfront, but its predictable and debugable
+======================================================================
+
+[186] Similarity: 0.553 | emiel0314 | 8/12/2025
+I don't think the microcontroller I'm using has it. From what I've read it's more of a "quick fix" rather than a proper solution
+======================================================================
+
+[187] Similarity: 0.555 | emiel0314 | 8/12/2025
+But like gotbread mentioned this microcontroller has a hardware peripheral for that so why they're not using it is beyond me. Maybe because it isn't internally connected to the sai peripheral? I don't know
+======================================================================
+
+[188] Similarity: 0.579 | novictim | 8/15/2025
+It has an AM1802 CPU chip connected to Blackfin BF523 DSP through these aforementioned peripherals
+======================================================================
+
+[189] Similarity: 0.573 | novictim | 8/15/2025
+https://github.com/bangcorrupt/freetribe/blob/215d01c1c14257c2071c2ad8cab8c5982f4b3c8c/dsp/src/kernel/peripheral/per_hostdma.c
+https://github.com/bangcorrupt/freetribe/blob/215d01c1c14257c2071c2ad8cab8c5982f4b3c8c/cpu/src/kernel/peripheral/per_emifa.c
+======================================================================
+
+[190] Similarity: 0.559 | xhivo97 | 8/20/2025
+Seems to be secure boot related
+======================================================================
+
+[191] Similarity: 0.551 | famine0 | 8/20/2025
+@Franky as for the next project, the htu21d is a good option if you want to learn about i2c.   if you wanted to learn more about ADCs you could use  a 4-20mA sensor instead
+======================================================================
+
+[192] Similarity: 0.566 | gettygermany | 8/23/2025
+hardware development is just pure madness! 😄
+======================================================================
+
+[193] Similarity: 0.576 | trapture | 8/25/2025
+```
+DEBUG nusb::platform::linux_usbfs::device: Opening usbfs device /dev/bus/usb/003/006    
+DEBUG nusb::platform::linux_usbfs::device: Opened device fd=9 with id 0    
+DEBUG nusb::platform::linux_usbfs::device: Opened device bus=3 addr=6    
+DEBUG probe_rs::probe::stlink::usb_interface: Aquired handle for probe
+DEBUG nusb::platform::linux_usbfs::device: Claimed interface 0 on device id 0    
+DEBUG probe_rs::probe::stlink::usb_interface: Claimed interface 0 of USB device.
+DEBUG probe_rs::probe::
+======================================================================
+
+[194] Similarity: 0.582 | trapture | 8/25/2025
+stlink::usb_interface: Succesfully attached to STLink.
+DEBUG probe_rs::probe::stlink: Initializing STLink...
+DEBUG nusb::platform::linux_usbfs::device: Submitted URB 0x7fa1380097a0 on ep 2    
+DEBUG nusb::platform::linux_usbfs::device: Handling events for device 0    
+DEBUG nusb::platform::linux_usbfs::device: URB 0x7fa1380097a0 for ep 2 completed, status=0 actual_length=16    
+DEBUG nusb::platform::linux_usbfs::device: Submitted URB 0x7fa138009270 on ep 81    
+DEBUG nusb::platform::linux_usbfs:
+======================================================================
+
+[195] Similarity: 0.595 | trapture | 8/25/2025
+:device: Handling events for device 0    
+DEBUG nusb::platform::linux_usbfs::device: URB 0x7fa138009270 for ep 81 completed, status=0 actual_length=2    
+DEBUG probe_rs::probe::stlink: Current device mode: Dfu
+```
+======================================================================
+
+[196] Similarity: 0.551 | madman.in.a.box | 8/25/2025
+so that you can copy your firmware to it
+======================================================================
+
+[197] Similarity: 0.559 | orenii | 8/28/2025
+A5, that's it)
+
+And I have 2 boards with the same chip: same issue, I tried with a different computer, different STLink and different power delivery
+
+**EDIT**: SUBGHSPISD register was set to 0.. setting it to 1 made SPI reachable again
+======================================================================
+
+[198] Similarity: 0.586 | onwrikbaar | 8/29/2025
+```
+uint64_t ticksSinceBoot()
+{
+    static uint32_t ticks_since_boot[] = { 0UL, 0UL };
+
+    BSP_criticalSectionEnter();                 // Protect our static var.
+    uint32_t last_ticks = ticks_since_boot[0];  // Assuming little-Endian.
+    NRF_TIMER4->TASKS_CAPTURE[1] = 1;
+    if ((ticks_since_boot[0] = NRF_TIMER4->CC[1]) < last_ticks) {
+        ticks_since_boot[1] += 1;               // The 32-bit timer wrapped.
+    }
+    BSP_criticalSectionExit();
+    return *(uint64_t *)ticks_since_boot;
+}
+
+======================================================================
+
+[199] Similarity: 0.563 | kurt_steiner | 8/30/2025
+macos intel
+======================================================================
+
+[200] Similarity: 0.553 | gotbread | 8/30/2025
+the i2c bus. you are trying to get an i2c sensor to work, right?
+======================================================================
+
+[201] Similarity: 0.558 | gotbread | 8/31/2025
+I would start with an i2c scanner to make sure the device shows up.
+======================================================================
+
+[202] Similarity: 0.562 | .alex312 | 9/1/2025
+try to remome -nostdlib flag from https://github.com/undefined2001/stm32f405rgt6/blob/master/arm-none-eabi-toolchain.cmake#L24
+======================================================================
+
+[203] Similarity: 0.551 | .alex312 | 9/2/2025
+which compiler do you use?
+one from there https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads ?
+======================================================================
+
+[204] Similarity: 0.554 | 637.8nm | 9/3/2025
+Should you try to write code against CMSIS? Generally speaking, when is that not an option when working with arm processors? I assume device-specific functionality would be one of them?
+======================================================================
+
+[205] Similarity: 0.604 | xhivo97 | 9/19/2025
+```
+INFO:    BL31: Initializing runtime services
+INFO:    BL31: cortex_a55: CPU workaround for erratum 1530923 was applied
+INFO:    BL31: Initializing BL32
+I/TC:
+I/TC: OP-TEE version: 3.13.0-891-g9f2aca7d1 #hisping.lin (gcc version 10.2.1 20201103 (GNU Toolchain for the A-profile Architecture 10.2-2020.11 (arm-10.16))) #2 Thu Oct 31 10:26:19 CST 2024 aarch64, fwver: v2.15
+I/TC: OP-TEE memory: TEEOS 0x200000 TA 0xc00000 SHM 0x200000
+I/TC: Primary CPU initializing
+I/TC: CRYPTO_CRYPTO_VERSION_NEW n
+======================================================================
+
+[206] Similarity: 0.564 | madman.in.a.box | 9/23/2025
+different hardware peripherals
+======================================================================
+
+[207] Similarity: 0.553 | javacord | 9/28/2025
+Is there anything else that might have changed such as the version of the libraries or any of the hardware? Have you tried doing a factory reset and reprogramming?
+======================================================================
+
+[208] Similarity: 0.615 | magnetrwn | 10/1/2025
+apparently two spi pins on the devkit are overlaid with the usb uart pins... yet dropping the uart jumpers did nothing 😔
+======================================================================
+
+[209] Similarity: 0.556 | beer_baron | 10/5/2025
+depends on who you ask it might be many things 🙂 , but it is a well known auto architecture with well known codegen in embedded
+======================================================================
+
+[210] Similarity: 0.595 | magnetrwn | 10/5/2025
+(i work in IoT so they aren't as notorious to me :P)
+======================================================================
+
+[211] Similarity: 0.586 | rustedskull | 10/10/2025
+Again. JTAG/SWD and vcom are two separate topics. Implementing JTAG or SWD will not get you vcom.
+
+Stlinks on nucleo boards have additional capability of translating a UART line into a vcom.
+
+Standalone STlink V2 lacks this capability.
+It looks like a standalone STLink V3 does have this capability.
+And it could be that you can wire a UART into your nucleo board's STLink header for it to do the same.
+
+But for this to be possible, in addition to the SWD lines, you must expose a UART line pair on y
+======================================================================
+
+[212] Similarity: 0.560 | undefined2001 | 10/12/2025
+```c
+err_t uart_init(uart_handle_t *p_handle)
+{
+    if (p_handle->config.direction == UART_DIR_TX_ONLY || p_handle->config.direction == UART_DIR_RX_TX)
+    {
+        gpio_init(&p_handle->tx_pin);
+    }
+    if (p_handle->config.direction == UART_DIR_RX_ONLY || p_handle->config.direction == UART_DIR_RX_TX)
+    {
+        gpio_init(&p_handle->rx_pin);
+    }
+    uart_enable_peripheral_clock(p_handle->p_instance);
+    uart_force_peripheral_reset(p_handle->p_instance); 
+    p_handle->p_instance->CR1 &=
+======================================================================
+
+[213] Similarity: 0.608 | madman.in.a.box | 10/21/2025
+_wants to hack into that 10.137.yyy.xxx address_
+======================================================================
+
+[214] Similarity: 0.569 | gotbread | 10/21/2025
+so your first setup will be:
+
+your laptop + someone elses phone in the network of your hotspot phone.
+then put your laptop into monitoring mode and see the traffic.
+
+you have 2 layers of encryption to deal with:
+- the wifi encryption (which you can decrypt in wireshark with the wifi key)
+- the web traffic encryption. you can go to an http website, e.g. http://www.example.com/
+======================================================================
+
+[215] Similarity: 0.560 | gotbread | 10/21/2025
+https on embedded is always fun :kek:
+======================================================================
+
+[216] Similarity: 0.559 | gotbread | 10/21/2025
+seems to be not too bad: https://circuitlabs.net/https-with-tls-ssl-in-esp-idf/
+======================================================================
+
+[217] Similarity: 0.579 | kaneki.re | 10/21/2025
+STM32L475VGT6 chip
+B-L476E-IOT01A2 board
+======================================================================
+
+[218] Similarity: 0.569 | rustedskull | 10/21/2025
+there's also a arduino library for using that WiFi chip. Might help with reverse engineering a bit. <https://github.com/stm32duino/WiFi-ISM43362-M3G-L44>
+======================================================================
+
+[219] Similarity: 0.568 | hard.fault | 10/23/2025
+You'll have a debug header like SWD or JTAG, and the programming will be done on the assembly line with pogo-pins or similar
+======================================================================
+
+[220] Similarity: 0.563 | lemercier | 10/24/2025
+What microcontroller? For example, STM32 have debug programmer pin so that you can utilize that
+======================================================================
+
+[221] Similarity: 0.566 | bla2c | 10/26/2025
+if you want to protect your program code, you will need a bootloader
+======================================================================
+
+[222] Similarity: 0.584 | scottmonk | 10/26/2025
+they provide different firmwares for it so you can have j-link or opensda or some other function
+======================================================================
+
+[223] Similarity: 0.583 | kaneki.re | 11/1/2025
+A B-L475E-IOT01A2 board with an stm32l475vgt6 chip
+======================================================================

@@ -1,0 +1,120 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/Amulius_risc-v_Jan2025_export.json",
+  "totalMessages": 968,
+  "totalChunks": 980,
+  "relevantMessages": 11,
+  "results": [
+    {
+      "text": "with jtag you could load a bootloader, and from the bootloader flash any other image",
+      "metadata": {
+        "id": "1370035063118495907",
+        "author": "slackgeek",
+        "timestamp": "2025-05-08T09:50:13.068-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.5840222603234917
+    },
+    {
+      "text": "Would you reccomend creating a software handler for the misaligned accesses this may cause, trying to implement misaligned accesses in hardware, or trying to edit the source?",
+      "metadata": {
+        "id": "1371518078029922445",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:03:11.376-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.5740696622988768
+    },
+    {
+      "text": "and i have the verilog for a Cortex-M0, so i have been thinking about making a design that uses the M0 as a security and bootstrapping processor",
+      "metadata": {
+        "id": "1371627939430400090",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-12T19:19:44.375-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.5860029088425432
+    },
+    {
+      "text": "also, have the security coprocessor provide cryptographic services for the PS7",
+      "metadata": {
+        "id": "1373504444800696431",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-17T23:36:18.119-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.5649996786187105
+    },
+    {
+      "text": "and have any secure monitor calls be delegated by OpTEE to the services provided by the coprocessor",
+      "metadata": {
+        "id": "1373504626611191889",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-17T23:37:01.466-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.5509060221925917
+    },
+    {
+      "text": "there's no graphical \"bling\" to speak of with this, but there's a lot of security intensive stuff (which is my area of work)",
+      "metadata": {
+        "id": "1373504750879903797",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-17T23:37:31.094-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.5576761433815419
+    },
+    {
+      "text": "\"hardware security\" as in traditional hardware security where you're dealing with hardware trojans, formal verification, and the such?",
+      "metadata": {
+        "id": "1412387971381989376",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-09-02T06:45:33.277-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.6671250697012684
+    },
+    {
+      "text": "Being in good terms does not guarantee you funding. You probably want to find out exactly what the professor is interested in. Again, hardware security does not necessarily relate to RISC-V. You could target some RISC-V _implementation_ as a test platform for some hardware security research, but you would need to define what the end-goal here is. For example, if you're looking at hardware trojans then you could test whatever framework you're developing on that RISC-V implementation. However, if ",
+      "metadata": {
+        "id": "1412400383984406529",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-09-02T07:34:52.672-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.6163288175638006
+    },
+    {
+      "text": "having worked at the hardware level with SPARC before i can attest to some of this",
+      "metadata": {
+        "id": "1433187183489192097",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-29T16:14:11.874-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.5890596355793205
+    },
+    {
+      "text": "oh please, the linux kernel handles x86 double faults all the time 😛",
+      "metadata": {
+        "id": "1433187466373894318",
+        "author": "hard.fault",
+        "timestamp": "2025-10-29T16:15:19.319-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.5704676139905679
+    },
+    {
+      "text": "_but_ you can hardware assist those things",
+      "metadata": {
+        "id": "1433460962685620265",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-30T10:22:05.921-04:00",
+        "channel": "Amulius_risc-v"
+      },
+      "similarity": 0.5686770778959781
+    }
+  ]
+}

@@ -1,0 +1,3821 @@
+{
+  "channel": "ElectronicRepair_pc-repair",
+  "source": "./discord-exports/ElectronicRepair_pc-repair_Jan2025_export.json",
+  "filteredMessages": 55,
+  "totalThreads": 51,
+  "substantialThreads": 41,
+  "threads": [
+    [
+      {
+        "id": "1324037576189022280",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-01T10:32:37.592-05:00",
+        "content": "Hello guys  . This is a retro question  .  Can this 40GB Hard disk work with this retro pc  which is an IBM PC330 .. When plugged it detects the drive but shows only 0mb available  .. Any help"
+      },
+      {
+        "id": "1324038067329306745",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-01T10:34:34.689-05:00",
+        "content": ""
+      },
+      {
+        "id": "1324042225293856862",
+        "author": "panflak",
+        "timestamp": "2025-01-01T10:51:06.025-05:00",
+        "content": "what options do you see in bios when you enter the \"hard disk drive 0\"?",
+        "reference": {
+          "messageId": "1324037576189022280",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1324042387575672893",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-01T10:51:44.716-05:00",
+        "content": "High performance \nCompatible\n\nBut both shows 0mb"
+      },
+      {
+        "id": "1324042529045479445",
+        "author": "panflak",
+        "timestamp": "2025-01-01T10:52:18.445-05:00",
+        "content": "did you setup master/slave properly?"
+      },
+      {
+        "id": "1324042757118885899",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-01T10:53:12.822-05:00",
+        "content": "This drive jumper set to master  . And connected to master of ide cable",
+        "reference": {
+          "messageId": "1324042529045479445",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1324042940389261403",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-01T10:53:56.517-05:00",
+        "content": ""
+      },
+      {
+        "id": "1324043446398353458",
+        "author": "panflak",
+        "timestamp": "2025-01-01T10:55:57.159-05:00",
+        "content": "I'll be guessing now\nmaybe the drive is bad\nmaybe this board is too old to use LBA addressing (in such case an older drive with CHS addressing may be needed)"
+      },
+      {
+        "id": "1324043864209887232",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-01T10:57:36.773-05:00",
+        "content": "I see  . I'll check the drive on another pc  .",
+        "reference": {
+          "messageId": "1324043446398353458",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1324044279324082176",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-01T10:59:15.744-05:00",
+        "content": "Any idea from this chart"
+      },
+      {
+        "id": "1324045247029969088",
+        "author": "panflak",
+        "timestamp": "2025-01-01T11:03:06.463-05:00",
+        "content": "nothing related to hdd addressing here"
+      },
+      {
+        "id": "1324046910792663095",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-01T11:09:43.135-05:00",
+        "content": "I see . I ll look up maxtor fireball3 ata/133 for lba or csa compatibility"
+      },
+      {
+        "id": "1324322672968204319",
+        "author": "bitrehab",
+        "timestamp": "2025-01-02T05:25:29.961-05:00",
+        "content": "Ahoy. If the drive detects (for example) as VAM52JBZ in MHDD or HDAT2 and shows as 0 capacity instead of VAM51JJ0 what is on it's label then the drive has firmware corruption what you can't repair at home. If you have further questions then we can continue it in https://discord.com/channels/448464581677809676/508329749647458344",
+        "reference": {
+          "messageId": "1324037576189022280",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1324383607665459322",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-02T09:27:37.925-05:00",
+        "content": "I think the issue is with compatibility",
+        "reference": {
+          "messageId": "1324322672968204319",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1324384926245716028",
+        "author": "bitrehab",
+        "timestamp": "2025-01-02T09:32:52.299-05:00",
+        "content": "You can try cable select (CS) instead of master. But if the drive jumpered correctly and the mainboard's controller in IDE mode then it should work flawlessly if the drive is okay (and ofc the cable too).",
+        "reference": {
+          "messageId": "1324383607665459322",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1324387033975750667",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-02T09:41:14.821-05:00",
+        "content": "Drive is working perfectly. Health is over 80%. Both cable and drive is checked with another pc.",
+        "reference": {
+          "messageId": "1324384926245716028",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1324387087599796318",
+        "author": "gtx_computers",
+        "timestamp": "2025-01-02T09:41:27.606-05:00",
+        "content": "I’ll try cs mode"
+      }
+    ],
+    [
+      {
+        "id": "1329915109140856842",
+        "author": "nightmaretechstuffs",
+        "timestamp": "2025-01-17T15:47:50.647-05:00",
+        "content": "Got a Sony VAIO SVL2412M1E and it has an unusual fault\n\nWithout RAM installed it will stay on but obviously will not POST\n\nWith any kind of RAM installed the unit will be launched into an endless power cycle and will not turn on fully.\n\nWithout RAM the CPU, GPU and Chip set heat up (not concerningly hot)\n\nI have tried many different combinations of RAM including PC3L and Regular DDR3,\n\nI have reseated all the connector's and have tried booting the board without anything connected except the necessities.\n\nI have also reseated the CPU\n\nAttached is a video of the behaviour of the device."
+      },
+      {
+        "id": "1329915163800899594",
+        "author": "nightmaretechstuffs",
+        "timestamp": "2025-01-17T15:48:03.679-05:00",
+        "content": "Also please find Attached photos of the main chips under the heatpipe assembly"
+      },
+      {
+        "id": "1329929432819040356",
+        "author": "sephir0th1984",
+        "timestamp": "2025-01-17T16:44:45.678-05:00",
+        "content": "CPU can be ruled out and should be ruled out.",
+        "reference": {
+          "messageId": "1329915109140856842",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1329929591715790909",
+        "author": "sephir0th1984",
+        "timestamp": "2025-01-17T16:45:23.562-05:00",
+        "content": "Additionally power rails can be checked for short to GND and it could be checked whether every single power rail is present before the next cycle"
+      },
+      {
+        "id": "1329929602113470476",
+        "author": "sephir0th1984",
+        "timestamp": "2025-01-17T16:45:26.041-05:00",
+        "content": "For example"
+      },
+      {
+        "id": "1329934841789153311",
+        "author": "nightmaretechstuffs",
+        "timestamp": "2025-01-17T17:06:15.277-05:00",
+        "content": "I probably should get some schematics and prod around,\n\nI'm gonna probably check the BIOS isn't corrupted also as it does stay on without RAM",
+        "reference": {
+          "messageId": "1329929591715790909",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1329600524420518040",
+        "author": "kabutokun5373",
+        "timestamp": "2025-01-16T18:57:47.805-05:00",
+        "content": "Hello, I have a problem with an OEM motherboard, \"IS8XM rev1.0\" from a M93P Lenovo for Intel Haswell CPUs. I know it's old at this point but I like fix stuff.\nAt first it was not POSTing, and it wasn't beeping when removing the RAMs. After a lot of testing, at one point I noticed that it had 2 SPI/BIOS chips side by side (there is a 3rd one with 8MB very close to the superIO), and I thought that maybe one of them worked as a backup, so for one of them I shorted the CLK pin to GND while turning on the PC and that's the only way I can make the motherboard POST"
+      },
+      {
+        "id": "1329600749419888732",
+        "author": "kabutokun5373",
+        "timestamp": "2025-01-16T18:58:41.449-05:00",
+        "content": "I read some good info here: https://www.badcaps.net/forum/troubleshooting-hardware-devices-and-electronics-theory/troubleshooting-desktop-motherboards-graphics-cards-and-pc-peripherals/bios-schematic-requests/80221-lenovo-thinkcentre-m93p-bios\nUser \"SMDFlea\" said:\n```The M93p comes with either a single bios chip or 2. Yours has 2 (12MB split across 2 X chips, 8MB + 4MB)```\nThe chip I shorted above was the 4MB one (MXIC 25L3273E), I don't have to do anything with the other one (MXIC 25L6473E), so how it's possible that this makes the motherboard work?\nDoing this \"trick\" allowed me to update the BIOS using the regular motherboard vendor tools running them from the same machine, but the problem persists, it won't POST normally by itself, it only works when shorting the CLK pin of the 4MB chip, any idea/suggestions?"
+      },
+      {
+        "id": "1338603159714660424",
+        "author": "kabutokun5373",
+        "timestamp": "2025-02-10T15:11:03.32-05:00",
+        "content": "I still have this problem I want to get back to it.\nMy theory at this point is that the BIOS bootblock is corrupted and by messing with the clock pin of the 4MB chip I'm forcing the motherboard to run an alternative code path which still works so it POSTs that way.\nThe bootblock is not normally written when you run the default vendor BIOS flashing tools, that's why performing a regular BIOS update didn't fix the issue.\nI tried to use intel FPT to flash the whole BIOS ROM but Lenovo added write-protection and I couldn't remove it via NVAR modding.\nI also tried to use an external programmer (CH341A) to flash the chips and it could not read/write, the 8MB chip (MX25L6473E) says this on its datasheet \"Permanently fixed QE bit, QE=1; and 4 I/O mode is enabled\" and \"The flash always performs Quad I/O mode\", which means that it can't be used as a simple SPI device (with single MOSI/MISO lines) because it's in permanent QuadEnable mode from factory; this greatly limits my options for external programmers.\nI even have another Haswell motherboard (MSI Z97 MATE) with what seems to be a corrupted BIOS too: it beeps when no RAM memory is inserted but with memory inserted (I've tested many modules on different slots) there are no beeps yet it doesn't POST, and while I don't have an oscilloscope at hand, when probing the clock pin of the BIOS chip with a multimeter I see constant activity. Unfortunately for me this 2nd mobo also has the same 8MB chip \"MX25L6473E\" 😦\nAt this point my *only option* to fix both motherboards is to power on the Lenovo mobo using the mentioned *trick*, somehow remove the write-protection on the original Lenovo BIOS (I know assembly x86/x64 but I have not modded any BIOS before) so I can use intel FPT for full ROM flashing, use it to hot-swap the MSI chip (so flashing the MSI BIOS while inserted on the Lenovo mobo), and with this one fixed then flash the Lenovo chip on its own mobo with a non-corrupted BIOS so it always POST by itself",
+        "reference": {
+          "messageId": "1329600524420518040",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1339824310423916564",
+        "author": "zaurus7477",
+        "timestamp": "2025-02-14T00:03:28.337-05:00",
+        "content": "Hi all. I have an hp 290 g4. All the USB ports on this desktop computer are not working. Computer starts normally but it has only usb ports, no ps/2 for mouse or keyboard. The motherboard is labeled KENT REV:A M11. I searched online for a schematic but couldn't find it. I checked the USB port EMI filters to see if any were broken, but they are all ok (they all beep). I have 5 volts on a 5 pin SMD component labeled REDFC (see photo) that is near each USB port, but 5 volts are not present on the USB port pin. I don't know where to start. Need schematic"
+      },
+      {
+        "id": "1339890099617267712",
+        "author": "thetechmechanic",
+        "timestamp": "2025-02-14T04:24:53.703-05:00",
+        "content": "the USB ports ain’t workin’, could be the BIOS is actin’ up—kinda like when yer truck’s ignition switch ain’t sendin’ power to the starter. Sometimes, the BIOS has security settings that shut off the USB ports, just like how a bad ignition switch won’t let the truck crank even if the battery’s fine. Best thing to do? Reset the BIOS, kinda like poppin’ the hood and givin’ the ignition system a once-over. Pull the CMOS battery for a bit, slap it back in, and see if that fires up them USB ports. If that don’t work, ya might need a BIOS update—like reprogrammin’ the truck’s ECU to fix a glitchy ignition.”",
+        "reference": {
+          "messageId": "1339824310423916564",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1339964641820020828",
+        "author": "zaurus7477",
+        "timestamp": "2025-02-14T09:21:05.949-05:00",
+        "content": "bios reset done, nothing changed.....i dont have 5volt rail on usb pin",
+        "reference": {
+          "messageId": "1339890099617267712",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1339964802109538334",
+        "author": "zaurus7477",
+        "timestamp": "2025-02-14T09:21:44.165-05:00",
+        "content": "yes, no short. i dont have any voltage on 5volt rail",
+        "reference": {
+          "messageId": "1339953258780819496",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1340127730221711381",
+        "author": "vanduc_gb",
+        "timestamp": "2025-02-14T20:09:09.254-05:00",
+        "content": "I guess the IC is fault, 5v on input pin, 3v on enble pin and 0v on output pin\nSo u can jump a wire from 5v input pin to output pin\nBefore do that make sure output pin not shorted to ground, and output pin connected to 5v pin on USB port",
+        "reference": {
+          "messageId": "1339824310423916564",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1340130318639697940",
+        "author": "vanduc_gb",
+        "timestamp": "2025-02-14T20:19:26.381-05:00",
+        "content": "this IC do the same thing, have no voltage on output pin?\n2 pins have 0v, 1 pin is ground"
+      },
+      {
+        "id": "1340220903849463858",
+        "author": "zaurus7477",
+        "timestamp": "2025-02-15T02:19:23.578-05:00",
+        "content": "yes same story on the other ic. I bridged the 5v input with the output and now the usb port works. I accessed the bios via the keyboard (f10) and I saw that all 8 usb ports are activated. However they still do not work. Should I bridge all the other ic that manage the 5v?? this is very strange. Are all these ic broken??",
+        "reference": {
+          "messageId": "1340127730221711381",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1340221440732954684",
+        "author": "zaurus7477",
+        "timestamp": "2025-02-15T02:21:31.581-05:00",
+        "content": ""
+      },
+      {
+        "id": "1340288160793366589",
+        "author": "vanduc_gb",
+        "timestamp": "2025-02-15T06:46:38.883-05:00",
+        "content": "Yes, It is strange\nNormaly, all the ic have same function doesnt work when missing enable signal but in this case it has 3v"
+      },
+      {
+        "id": "1340344104546205706",
+        "author": "zaurus7477",
+        "timestamp": "2025-02-15T10:28:56.913-05:00",
+        "content": "without schematic it's very difficult",
+        "reference": {
+          "messageId": "1340288160793366589",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1340344313762156544",
+        "author": "zaurus7477",
+        "timestamp": "2025-02-15T10:29:46.794-05:00",
+        "content": "probably pch",
+        "reference": {
+          "messageId": "1340277863969984626",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1340576060034646097",
+        "author": "thetechmechanic",
+        "timestamp": "2025-02-16T01:50:39.411-05:00",
+        "content": "Use an external 5v  power supply on the usb 5v pin and make sure the ground on the power supply is connected to the commmon ground on the. Computer for reference v and plug in a keyboard to see if it works usb is only a 5v power supply with serial Communication lines  check the voltage on the data lines to see if it’s only power that’s  gone should get 3.3 to 4 v on the data pins .",
+        "reference": {
+          "messageId": "1339964641820020828",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1340634162427727914",
+        "author": "atroce2180",
+        "timestamp": "2025-02-16T05:41:32.101-05:00",
+        "content": "For REDFC all my research point to XC6368F435MR",
+        "reference": {
+          "messageId": "1339824310423916564",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1340634657284292671",
+        "author": "atroce2180",
+        "timestamp": "2025-02-16T05:43:30.084-05:00",
+        "content": "http://www.smdmarkingcodes.com/Index/sdetails?id=XC6368F435MR check here for code"
+      },
+      {
+        "id": "1340635572934283347",
+        "author": "atroce2180",
+        "timestamp": "2025-02-16T05:47:08.392-05:00",
+        "content": "Or here : https://www.repaircompanion.com/smd_code_search/RED?package=&pin_count=5&manufacturer="
+      }
+    ],
+    [
+      {
+        "id": "1340277863969984626",
+        "author": "dumahbrazorf",
+        "timestamp": "2025-02-15T06:05:43.929-05:00",
+        "content": "they could have in common an enable signal. where this signal coming from? probably a big ic."
+      },
+      {
+        "id": "1340344104546205706",
+        "author": "zaurus7477",
+        "timestamp": "2025-02-15T10:28:56.913-05:00",
+        "content": "without schematic it's very difficult",
+        "reference": {
+          "messageId": "1340288160793366589",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1340344313762156544",
+        "author": "zaurus7477",
+        "timestamp": "2025-02-15T10:29:46.794-05:00",
+        "content": "probably pch",
+        "reference": {
+          "messageId": "1340277863969984626",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1344534030963572787",
+        "author": "mwila",
+        "timestamp": "2025-02-26T23:58:13.216-05:00",
+        "content": "HP pavilion 23 all in one USB ports and touch screen not working. What could be the issue causing all this? Board number: dan61amb6f0 Rev : f"
+      },
+      {
+        "id": "1344537399618699337",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-27T00:11:36.366-05:00",
+        "content": "Double check that the ports are enabled in the \"Security\" tab in the firmware settings. Apparently, that is an option.",
+        "reference": {
+          "messageId": "1344534030963572787",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1344541008968548402",
+        "author": "mwila",
+        "timestamp": "2025-02-27T00:25:56.902-05:00",
+        "content": "Since all usb ports are not working I can't even access the bios too. The touch screen is not working. Hence the keyboard isn't responding even when it's booting up",
+        "reference": {
+          "messageId": "1344537399618699337",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1344541321096073268",
+        "author": "mwila",
+        "timestamp": "2025-02-27T00:27:11.319-05:00",
+        "content": "They touch and USB ports stopped at the same time",
+        "reference": {
+          "messageId": "1344537399618699337",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1344543219924336660",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-27T00:34:44.035-05:00",
+        "content": "Is there +5 V on the USB Vcc pins?"
+      },
+      {
+        "id": "1344543977327820871",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-27T00:37:44.614-05:00",
+        "content": "If so, the only other two things I can think of is clearing the CMOS or looking closer at where everything connects to the motherboard. Otherwise, a chipset or CPU issue is possible."
+      },
+      {
+        "id": "1344545863493746710",
+        "author": "mwila",
+        "timestamp": "2025-02-27T00:45:14.311-05:00",
+        "content": "Unfortunately I don't really what it means VCC pins. Do I need to find that through the schematic or it's something that I can easily spot on the motherboard direct. I actually don't know where I can easily find the 5v responsible for USB ports",
+        "reference": {
+          "messageId": "1344543977327820871",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1344546665519906886",
+        "author": "mwila",
+        "timestamp": "2025-02-27T00:48:25.529-05:00",
+        "content": "At the same time how possible is it that the touch isn't responding. Do you really think this can be an issue relating to usb issue? Couldn't it be the bios issue or something else.? I tried to reset the CMOS battery but it didn't work. Maybe I didn't do it correctly???",
+        "reference": {
+          "messageId": "1344543977327820871",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1345060462169030746",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T10:50:04.196-05:00",
+        "content": "Maybe somewhere one trace from the current sense to the monitoring chip is lost. Could be a cracked solder joint for all we know. Plus I am making about a million and one assumptions about how this is actually designed, so that could be entirely the wrong path. Need a schematic and boardview to take that much further."
+      },
+      {
+        "id": "1345071405229801515",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-02-28T11:33:33.225-05:00",
+        "content": "I have the Boardview if you want. and one more thing I have just discovered that  2 of the back USB port is not working but 5V is present",
+        "reference": {
+          "messageId": "1345060462169030746",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345085532652437504",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T12:29:41.465-05:00",
+        "content": "Sure, I could take a look at the boardview.",
+        "reference": {
+          "messageId": "1345071405229801515",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345085815273033849",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-02-28T12:30:48.847-05:00",
+        "content": "",
+        "reference": {
+          "messageId": "1345085532652437504",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345086249794273461",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-02-28T12:32:32.445-05:00",
+        "content": "@CodeConnoisseur U31G1_56 is not working ."
+      },
+      {
+        "id": "1345087336714735626",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T12:36:51.587-05:00",
+        "content": "But there is +5 V on it?"
+      },
+      {
+        "id": "1345088131233218634",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-02-28T12:40:01.015-05:00",
+        "content": "Yes 5.0 V is present",
+        "reference": {
+          "messageId": "1345087336714735626",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345090393880137869",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-02-28T12:49:00.472-05:00",
+        "content": "I have even tested and found that no voltage is droped when connecting load (mobile phone charging over USB)",
+        "reference": {
+          "messageId": "1345087336714735626",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345092644908433558",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T12:57:57.159-05:00",
+        "content": "From what I can gather from the boardview URN181 looks to be a resistor network that is connected to the Vcc rails for each port. The outputs of that network are then used by transistors UD81, UD82, UD83, and UD66 for generating the overcurrent signal that goes to the chipset."
+      },
+      {
+        "id": "1345093005476106272",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T12:59:23.125-05:00",
+        "content": "You should be able to find out which port the motherboard thinks is overcurrent by measuring the output of each of those transistors."
+      }
+    ],
+    [
+      {
+        "id": "1345093005476106272",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T12:59:23.125-05:00",
+        "content": "You should be able to find out which port the motherboard thinks is overcurrent by measuring the output of each of those transistors."
+      },
+      {
+        "id": "1345093492052983869",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-02-28T13:01:19.134-05:00",
+        "content": "2 of those rear  usb ports (U31G1_56) are not working (Charging the device but no data ) so isnt it obvious that those ports have fault ? or  I may be wrong ?",
+        "reference": {
+          "messageId": "1345093005476106272",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345095112736116826",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-02-28T13:07:45.535-05:00",
+        "content": "@CodeConnoisseur what exactly should be my next move now ?"
+      },
+      {
+        "id": "1345097289928151193",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T13:16:24.618-05:00",
+        "content": "How do you know there is no data? Do you have a keyboard you can test with the caps lock key? This could be two different issues, or more likely there is a disconnect between the board and the xHCI Host Controller inside of the chipset where the data lines are being disabled but not the power during overcurrent.",
+        "reference": {
+          "messageId": "1345093492052983869",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345097938388389969",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T13:18:59.223-05:00",
+        "content": "I.e. the chipset may realize there is a problem and disable the data lines, but the board doesn't know and continues to supply voltage."
+      },
+      {
+        "id": "1345098775894429728",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T13:22:18.9-05:00",
+        "content": "A lot of this is speculation about the design of the motherboard, but it's the best I can offer myself. There's much I have left to study and experience."
+      },
+      {
+        "id": "1345100544565313688",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-02-28T13:29:20.584-05:00",
+        "content": "I have tested USB Flash Drive , Wireless Keyboard and mouse combo dongle , wired keyboard, smart phones and then I realised that even the usb power is supplied as soon I short the power pins , there is no data",
+        "reference": {
+          "messageId": "1345097289928151193",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345104049250500678",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T13:43:16.166-05:00",
+        "content": "I'm a little confused by your wording. Are you confirming that when you manually short the power pins you stop getting data? That would line up with my theory above.",
+        "reference": {
+          "messageId": "1345100544565313688",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345106196410925087",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T13:51:48.089-05:00",
+        "content": ""
+      },
+      {
+        "id": "1345106287272132640",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T13:52:09.752-05:00",
+        "content": ""
+      },
+      {
+        "id": "1345106346877522024",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-02-28T13:52:23.963-05:00",
+        "content": "From the xHCI spec."
+      },
+      {
+        "id": "1345225991840202832",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-02-28T21:47:49.545-05:00",
+        "content": "What I meant is 5 V is present at the USB pot but the device is not being detected and this behaviour can be seen with 2 usb port at the back",
+        "reference": {
+          "messageId": "1345104049250500678",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345267071281266759",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-01T00:31:03.647-05:00",
+        "content": "Given the symptoms you've described, I do believe what is happening is the chipset is receiving an over-current signal for the nonworking ports and is disabling their data lines. The motherboard doesn't implement any functionality to cut VBUS, so the +5 V is always present. You already measured VBUS to GND and found no short, so the port isn't the issue.\n\nI would start by getting pictures and measuring the outputs of each of those transistors down there: `UD81`, `UD82`, `UD83`, `UD66`, and `UCD120`. If we do verify this as the issue and you just want to fix it and don't care about the root cause, you should just be able to remove the offending transistor(s).",
+        "reference": {
+          "messageId": "1345225991840202832",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345403335968034836",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-01T09:32:31.68-05:00",
+        "content": "A power supply and thermal camera certainly helps to (safely) find a shorted component. I would recommend watching some videos by northwestrepair on YouTube to get a general idea of troubleshooting steps. Really, all you'll be able to do with just a multimeter is confirm that there is a short on some rail. You won't know which component is the problem.",
+        "reference": {
+          "messageId": "1345346312396341258",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345498631754481714",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-01T15:51:11.966-05:00",
+        "content": "You’d be lucky to find it on DigiKey or Mouser. Otherwise, eBay then AliExpress.",
+        "reference": {
+          "messageId": "1345495101182447657",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345504501523812402",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-01T16:14:31.428-05:00",
+        "content": "No, the packaging only matters for manufacturing."
+      },
+      {
+        "id": "1345505409951072379",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-01T16:18:08.014-05:00",
+        "content": "Yes, boardviews are incredibly useful especially for beginners."
+      },
+      {
+        "id": "1345567559813959700",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-01T20:25:05.696-05:00",
+        "content": "No USB port for flashing?",
+        "reference": {
+          "messageId": "1345567092078022708",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345603223184085043",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-01T22:46:48.506-05:00",
+        "content": "@CodeConnoisseur  Thanks for the help. Today I will post you all reading as advised by you. I hope we can fix this together 👍",
+        "reference": {
+          "messageId": "1345267071281266759",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345720526563184641",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-02T06:32:55.811-05:00",
+        "content": "@CodeConnoisseur Only UD82 and UD83 can be seen on the board UD81,UD66 and UCD120 is not equipped from factory. What should I do now because UD82 and UD83 looks like BAV70W (High Speed Double Diode ) for ESD I think",
+        "reference": {
+          "messageId": "1345267071281266759",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345732892671737856",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-02T07:22:04.121-05:00",
+        "content": "There is a specific Power supply section for help with any kind of power supplies, this is PC repair section. Please post your query in the Power supply section and while you do that please remove this post to keep the server clean.",
+        "reference": {
+          "messageId": "1345724939444944918",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345936183263367252",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-02T20:49:52.375-05:00",
+        "content": "Ah, okay, sorry. You are correct that those are BAV70Ws, not transistors as I assumed. It's still possible that there is a communication loss because pin 1 for the gates I'm about to talk about comes from there, but I did some more research and found a schematic for a very similar board and someone with the same issue.\n\nIt looks like `SU3` and `SU4` are XOR gates that actually terminate the OC signal into the CPU. I found a thread on a Chinese repair forum (https://www.chinafix.com/thread-1378327-1-1.html) that mentions a bad pull-up resistor on pin 2 of those gates (`H_CORETYPE1`) causing this exact issue. I would check voltages on each of those pins, especially that pin 2. Not sure how likely it is that it's the same fault considering I think that would cause none of the ports to work, but we're still on the right track.",
+        "reference": {
+          "messageId": "1345720526563184641",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345973561839452230",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-02T23:18:24.122-05:00",
+        "content": "@CodeConnoisseur If  you are talking about SU3C1 and SU4C1 then let me tell you that both of those are not equipped from factory and I would like to tell you something more if it helps that   OC pin number 4 of the SU3 and SU4 it must be 3.3v not low but I have checked that  pin 4 of the SU3 measures 0.3 V only, and the SU4 Measures 3.17 V.",
+        "reference": {
+          "messageId": "1345936183263367252",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345979927245357068",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-02T23:43:41.753-05:00",
+        "content": "@CodeConnoisseur And Sir please share your time zone (country if possible) and your free availability in discord. I will match my time with you because I believe that we both belong to different time zones."
+      },
+      {
+        "id": "1345980121185517700",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-02T23:44:27.992-05:00",
+        "content": "Okay, so that means that `S_USB3_OC#34_R` is being pulled low (active) somewhere. Following that signal will lead us to our issue. Though, to verify this you can try shorting pins 4 and 5 on `SU3` then the board should boot fine.",
+        "reference": {
+          "messageId": "1345973561839452230",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345980138814181397",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-02T23:44:32.195-05:00",
+        "content": "I'm Eastern Time. New York, United States. I don't really have any schedule in terms of availability, just that I check Discord often throughout the day whenever I have time.",
+        "reference": {
+          "messageId": "1345979927245357068",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345993692393246783",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T00:38:23.62-05:00",
+        "content": "@CodeConnoisseur very glad to know that. Now I know where you live so now I know when to expect your reply (I mean I can differentiate between Day and Night time )",
+        "reference": {
+          "messageId": "1345980138814181397",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1345995091080249355",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T00:43:57.093-05:00",
+        "content": "@CodeConnoisseur Are you sure that I should short pin 4 and 5 of SU3 and see if it boots ? there will be no damage right ?",
+        "reference": {
+          "messageId": "1345980121185517700",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1346045300057440307",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T04:03:27.846-05:00",
+        "content": "@peter  the model is \"HELLCAT 13 TGL MB 19827-1 , so there should be no difference at all",
+        "reference": {
+          "messageId": "1346026488926965790",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1346195936581390408",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-03T14:02:02.392-05:00",
+        "content": "It’s perfectly safe. You’re operating at signal voltages into a high impedance IO pin, and you just measured 3.17 V on the other gate. Just be careful not to short anything else.",
+        "reference": {
+          "messageId": "1345995091080249355",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1346307538773344367",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T21:25:30.428-05:00",
+        "content": "@CodeConnoisseur I have tried shorting PIN 4 and 5 but still not booting same error",
+        "reference": {
+          "messageId": "1346195936581390408",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1346307805271031829",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T21:26:33.966-05:00",
+        "content": "@CodeConnoisseur do I have to remove the SU3 then short those pins ?"
+      },
+      {
+        "id": "1346319166512169002",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T22:11:42.697-05:00",
+        "content": "@CodeConnoisseur Sir, dont you think as the board is not equipped with SU3C1 from factory , may be the design is different than ASUS TUF B450M-PRO Gaming REV1.03  (the board from china fix you have referred the other day)"
+      },
+      {
+        "id": "1346321937407807559",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-03T22:22:43.33-05:00",
+        "content": "No, you don't have to remove `SU3`. Try measuring the voltage on `UCR197`, `UR166`, and `UR181`; perhaps we have multiple signals being pulled low. The CPU seems to handle two of the USB 3 OC signals but the chipset handles the rest. Also check that `PMR82`, `PMR83`, `PMR84`, `PMR85`, and `PMR130` are all present as they look to be pull-ups for unused signals.\n\nCPU: `S_USB3_OC#34` (`SU3`), `S_USB3_OC#56` (`SU4`)\nChipset: `S_USB3_OC#12` (`UR181`), `S_USB3D1_OC#12` (`UCR197`), `S_USB_OC_#3456` (`UR166`)\nUnused (connected to chipset): `PM_USB_OC#1` (`PMR82`), `PM_USB_OC#3` (`PMR83`), `PM_USB_OC#4` (`PMR85`), `PM_USB_OC#5` (`PMR84`), `PM_USB_OC#6` (`PMR130`)\n\nDon't worry about `SU3C1` or `SU4C1`, those are capacitors. The pull-up resistor they were referring to in that post is probably `HR104`, but like I said I don't think that's our issue since we would have measured low at both `SU3` and `SU4`.",
+        "reference": {
+          "messageId": "1346307538773344367",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1346323727511588955",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T22:29:50.124-05:00",
+        "content": "@CodeConnoisseur The pin 2 of the UCR197 masures 0.389 V standby and 3.4 V while the board is in On state",
+        "reference": {
+          "messageId": "1346321937407807559",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1346324881964400764",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-03T22:34:25.367-05:00",
+        "content": "That one sounds normal then. We only really care about when the board is on."
+      },
+      {
+        "id": "1346325672481521676",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T22:37:33.841-05:00",
+        "content": "@CodeConnoisseur the system stays on for about 15 sec so I had to turn it on repeatedly thats why its taking more time and the Irony is your day is about to end but mine is just started."
+      },
+      {
+        "id": "1346326697401909290",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T22:41:38.201-05:00",
+        "content": "@CodeConnoisseur sir there is an update , I was masuring pin 2 of the UR166 and it masures 3.4 V but the update is while I was checking it , the computer posts and the U31G1_56 ports working again"
+      }
+    ],
+    [
+      {
+        "id": "1346340485417013300",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T23:36:25.52-05:00",
+        "content": "@CodeConnoisseur* UPDATE:- The computer worked for like half an hour and worked even after restarting but once I have disconnected the power for 2 mins the system showing the same error again."
+      },
+      {
+        "id": "1346340817027203154",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-03T23:37:44.582-05:00",
+        "content": "Interesting, if you do the same thing and measure `UR166` when it's booting does it work temporarily again? Your probes will have some impedance and capacitance, which can actually affect high frequency digital circuits.",
+        "reference": {
+          "messageId": "1346340485417013300",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1346340999672107033",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T23:38:28.128-05:00",
+        "content": "@CodeConnoisseur let me check and post you the result. give me 5 mins",
+        "reference": {
+          "messageId": "1346340817027203154",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1346342558883774525",
+        "author": "s.g_kills_all",
+        "timestamp": "2025-03-03T23:44:39.873-05:00",
+        "content": "@CodeConnoisseur the reading was normal 3.4V and yes the system posts normally again"
+      },
+      {
+        "id": "1346346893927780414",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-03-04T00:01:53.428-05:00",
+        "content": "Very interesting. I think you might be able to get a better look with an oscilloscope, though I wouldn't expect you to have one sitting around. For whatever reason, the signal must be taking too long to go high during POST when the firmware samples it.\n\nI'm not really an electrical engineer, but perhaps there is some \"rogue capacitance\" on the rail that it's charging? Maybe the easiest way to \"fix\" the board and maybe be a little dodgy is to just tie it high, but for the same reason of it being a high frequency signal I think a solder blob could throw it off.\n\nI'll try to think about it a bit more."
+      }
+    ],
+    [
+      {
+        "id": "1348179895330799656",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:25:35.018-05:00",
+        "content": "In such cases you should measure resistance to GND of VGT to get a possible clue. If it measures lower compared to CORE you will immediately know that the CPU is fried on this rail."
+      },
+      {
+        "id": "1348180189468692512",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:26:45.146-05:00",
+        "content": "And last but not least, a CPU rarely survives a incident like a high-side short (Q3). It being fried afterwards is the common outcome."
+      },
+      {
+        "id": "1348181792364040264",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:33:07.306-05:00",
+        "content": "GPU LED is for discrete GPU, no?",
+        "reference": {
+          "messageId": "1348181571689254944",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1348181843912167515",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:33:19.596-05:00",
+        "content": "However I don't care about LED or other error codes"
+      },
+      {
+        "id": "1348181910672900128",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:33:35.513-05:00",
+        "content": "They are often misleading, based on a chip-level approach"
+      },
+      {
+        "id": "1348182233034391566",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:34:52.37-05:00",
+        "content": "Board, i don't know",
+        "reference": {
+          "messageId": "1348182157037666306",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1348182260741832825",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:34:58.976-05:00",
+        "content": "But the CPU pretty sure, yes"
+      },
+      {
+        "id": "1348182713412354130",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:36:46.901-05:00",
+        "content": "Didn't a make it clear about VGT being a requirement?",
+        "reference": {
+          "messageId": "1348182438886510683",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1348182728645939220",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:36:50.533-05:00",
+        "content": "It is not"
+      },
+      {
+        "id": "1348182793200472097",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:37:05.924-05:00",
+        "content": "It comes up only under load, graphical load"
+      },
+      {
+        "id": "1348182817829556265",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:37:11.796-05:00",
+        "content": "In OS"
+      },
+      {
+        "id": "1348183016882569317",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:37:59.254-05:00",
+        "content": "And the CPU is necessary, since the VRM Controller has to \"talk\" to the CPU and the other way around"
+      },
+      {
+        "id": "1348184004225929269",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:41:54.655-05:00",
+        "content": "Strange. Maybe there is more wrong with this board or it can somehow deliver initial voltage without SVID",
+        "reference": {
+          "messageId": "1348183487571562497",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1348184264784478241",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:42:56.777-05:00",
+        "content": "However common sequence is, VRM talks to the CPU, CPU talks to the VRM and AFTER the \"conversation\" the voltages come up"
+      },
+      {
+        "id": "1348184373538590730",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:43:22.706-05:00",
+        "content": "Of course only, when the CPU and the VRM are healthy"
+      },
+      {
+        "id": "1348184580162584616",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:44:11.969-05:00",
+        "content": "And it doesn't change anything about the CPU being shorted on VGT rail"
+      },
+      {
+        "id": "1348185357530824845",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:47:17.308-05:00",
+        "content": "My profession is more in laptops, so can be that the design is slightly different for some desktops",
+        "reference": {
+          "messageId": "1348184262322688092",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1348185384802324624",
+        "author": "sephir0th1984",
+        "timestamp": "2025-03-09T01:47:23.81-05:00",
+        "content": "Alright 👍"
+      }
+    ],
+    [
+      {
+        "id": "1349055697697898550",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T12:25:42.574-04:00",
+        "content": "Bugcheck code:  0xD1(0x32, 0x2, 0x0, 0xFFFFF8800110A80A) \nBugcheck name: DRIVER_IRQL_NOT_LESS_OR_EQUAL \nBug check description: This indicates that a kernel-mode driver attempted to access pageable memory at a process IRQL that was too high. \nAnalysis: This is a typical software problem. Most likely this is caused by a bug in a driver."
+      },
+      {
+        "id": "1349055826593058927",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T12:26:13.305-04:00",
+        "content": "only once in safemode , while uploading a pic to discord - i got bsod",
+        "reference": {
+          "messageId": "1349055697697898550",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349056061331738695",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T12:27:09.271-04:00",
+        "content": "when i try to upload the pic or copy and paste a image to discord - it wont paste , it would not do anything, but my computer will work , but with no internet , internet stops ."
+      },
+      {
+        "id": "1349056260628152383",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T12:27:56.787-04:00",
+        "content": "so i removed the ram one by one to reproduce or repair this upload problem - i found - if one ram is present, the upload or copy paste image works in discord  ."
+      },
+      {
+        "id": "1349056718172328087",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T12:29:45.874-04:00",
+        "content": "i have p5ql pro mobo , which have 4 dimms , so 2 ram slots nearby  ie  a1a2 or b1b2 , i put rams together - the upload pic to discord works"
+      },
+      {
+        "id": "1349057177930694697",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T12:31:35.489-04:00",
+        "content": "if i keep rams in distance ie . a1 b1 , or a2 b2 -- the upload doenst work ,  now i put all 4 ram slots - the upload donest work , the internet will stop if i try to . then i went to safemode - it works there. the upload works . al my rams are cl6 ddr2 800 but i am running them in 400 .. fsb dram ratio in 1:1 ."
+      },
+      {
+        "id": "1349057283627155606",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T12:32:00.689-04:00",
+        "content": "3x 2 gb and 1gb ram ddr2 in all 4 ram slots now ."
+      },
+      {
+        "id": "1349057479061012582",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T12:32:47.284-04:00",
+        "content": "same thing happens in telegram , when i try to upload files to it, i would get this bsod but in safemode, it works all ."
+      },
+      {
+        "id": "1349057837501906974",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T12:34:12.743-04:00",
+        "content": "once i tried to reseat my gt730 ddr5 1gb nvidea graphics card and unintall graphics card driver  -- then it would work in normal boot windows 7 too ."
+      }
+    ],
+    [
+      {
+        "id": "1349112230129438870",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-11T16:10:20.956-04:00",
+        "content": "@Zolibyte i'm not sure about warming up that chip....it could be it. To determine this chip find SMD capacitors nearby chip, choose capacitor connected to bigger track (that would be power rail for this chip) check resistance of this capacitor."
+      },
+      {
+        "id": "1349112390884790446",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-11T16:10:59.283-04:00",
+        "content": "Let me know the resistance."
+      },
+      {
+        "id": "1349113089915752448",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-11T16:13:45.945-04:00",
+        "content": "Nuvoton is super cold or warm. If as cold as when pc is off than find capacitor nearby connected to big track and check the voltage while power on.",
+        "reference": {
+          "messageId": "1349085934418792519",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349115569453928510",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-11T16:23:37.113-04:00",
+        "content": "@bbb2222 I believe those solder joints look healthy, It doesn't hurt to resolder them using rosin."
+      },
+      {
+        "id": "1349119175729217587",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-11T16:37:56.916-04:00",
+        "content": "@Zolibyte looks Ok to me."
+      },
+      {
+        "id": "1349119708577923204",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-11T16:40:03.957-04:00",
+        "content": "@Zolibyte find capacitor nearby with big track, measure resistance"
+      }
+    ],
+    [
+      {
+        "id": "1349143357728882698",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:14:02.354-04:00",
+        "content": "when with telegram upload problem i use to get ntoskrnl .exe bsod, now its with ndis . so i might have to think , may be the graphics card is fixed well but now ethernet driver is the proeblm caused by northbirdige.. just thinking assuming imagining all possible corelations"
+      },
+      {
+        "id": "1349143747274870816",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:15:35.229-04:00",
+        "content": "but i am getting this both - i reproduced it with telegram desktop uploading now - its the same 2 things",
+        "reference": {
+          "messageId": "1349088970805477387",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349144536944742451",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:18:43.501-04:00",
+        "content": "mm nods i did try to touch and see any unusual heating occuring somewhere",
+        "reference": {
+          "messageId": "1349144170576744550",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349144666615844965",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:19:14.417-04:00",
+        "content": "mm i dont have debug card.. it culd be handy , hope i get one soon"
+      },
+      {
+        "id": "1349144731124367412",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:19:29.797-04:00",
+        "content": "its totally out of my budget"
+      },
+      {
+        "id": "1349144763550404609",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:19:37.528-04:00",
+        "content": "very expensive for me thermal cam."
+      },
+      {
+        "id": "1349144887462854667",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:20:07.071-04:00",
+        "content": "btw the bsod occurs only when tryin to upload a file thru telegram app desktop ."
+      },
+      {
+        "id": "1349145044971425862",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:20:44.624-04:00",
+        "content": "no bsod while uploading a file to discord - its only make internet stop . and nothing will upload , no bsod . the comptuer can work fine jus with no internet ."
+      },
+      {
+        "id": "1349145129172209684",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:21:04.699-04:00",
+        "content": "20$ is near 2k for me. 50$ - i shoudl forget about it .",
+        "reference": {
+          "messageId": "1349144913459019806",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349145251465396244",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:21:33.856-04:00",
+        "content": "exactly many forums and videos said about that",
+        "reference": {
+          "messageId": "1349145164320342108",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349145300690014370",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:21:45.592-04:00",
+        "content": "after they made that crap cool down,. problems disapapered."
+      },
+      {
+        "id": "1349145384252866700",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:22:05.515-04:00",
+        "content": "i gota a give a try on it"
+      },
+      {
+        "id": "1349145619440074842",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:23:01.588-04:00",
+        "content": "this is why i have kept 2 fans cooling down the ram and air flows till the northbridge, until i get all the things bought , i am still workign on what else to buy to repair other things in home i have got .. so to save shipping charges."
+      },
+      {
+        "id": "1349145953772240956",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:24:21.299-04:00",
+        "content": "oh whos that , please telling me name of that guy and his vids ?"
+      },
+      {
+        "id": "1349146621920940134",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:27:00.598-04:00",
+        "content": "in a summary i would say - with help of @flak -- said single channel populated dimm slots - upload works . dual channel ram slots occupied .. on trying to upload - internet will stop working. and nothing will upload. the lan icon woudl be normal . i had to restart to make intenret work agian i mean browse or download .",
+        "reference": {
+          "messageId": "1349145884411297843",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349147052357189726",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:28:43.222-04:00",
+        "content": "but for this exact problem , i am reluctant to blame it on northbridge as in safe mode - the upload worked flawless -- only once i got bsod .. may be i was too hurried to upload before the system settled down ."
+      },
+      {
+        "id": "1349147197429780600",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:29:17.81-04:00",
+        "content": "thanks will watch some",
+        "reference": {
+          "messageId": "1349146553843056691",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349148312523243561",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:33:43.669-04:00",
+        "content": "brand are different . 3 samsung and 1 knigston , but thsi same config worked for years in uploadin with no problem"
+      },
+      {
+        "id": "1349148438461157467",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:34:13.695-04:00",
+        "content": "today i narrowed it down with random differnet rams in single channel - works with upload.."
+      },
+      {
+        "id": "1349148936123977839",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:36:12.347-04:00",
+        "content": "why woudl thsi work flawless in safemode tho upload  even more than 1 gb files sizes ."
+      },
+      {
+        "id": "1349149058253717554",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:36:41.465-04:00",
+        "content": "if its northbridge problem or ram problem , it should have shut me in safemode too"
+      },
+      {
+        "id": "1349149498340937800",
+        "author": "qwest01",
+        "timestamp": "2025-03-11T18:38:26.39-04:00",
+        "content": "i believe so.  other thing i will try after lan driver default .. next i would try with default driver came with graphics when bought . as safemode dont have graphics drivers active ,its workign there. also when i uninstalled grpahics driver , then non safe mode - the uplaod works ."
+      }
+    ],
+    [
+      {
+        "id": "1349279306907385937",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-12T03:14:15.164-04:00",
+        "content": "Ok, do super i/o is responding , the system is halted at POST procedure. Check all the power rails and write them down here. Sorin mentioned it mamy times how to find and verify power rails on board but do You know how to locate them?"
+      },
+      {
+        "id": "1349280479089659906",
+        "author": "zolibyte",
+        "timestamp": "2025-03-12T03:18:54.634-04:00",
+        "content": "@JarosławK yes with coils, will do it afternoon."
+      },
+      {
+        "id": "1349343930369703948",
+        "author": "zolibyte",
+        "timestamp": "2025-03-12T07:31:02.598-04:00",
+        "content": "12v present\n1.05v present\n1.8v present\n1.24v present\n3v present\n5v present, every power rail looks good.",
+        "reference": {
+          "messageId": "1349279306907385937",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349352287952441359",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-12T08:04:15.201-04:00",
+        "content": "So it looks like a software issue. Maybe a corrupted bios or sio firmware. You said You have programmed it twice. Was the programmer connected to mobo directly or have You desolder eeprom?",
+        "reference": {
+          "messageId": "1349343930369703948",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349365624647843892",
+        "author": "zolibyte",
+        "timestamp": "2025-03-12T08:57:14.917-04:00",
+        "content": "I programmed bios without desolder. It ran without any error.",
+        "reference": {
+          "messageId": "1349352287952441359",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349371532685869239",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-12T09:20:43.503-04:00",
+        "content": "If your 100% sure about the bios and sio firmware then You could try Play with linear power supply checking any suspicious current consumption but at this moment i think it's software issue like i said before.",
+        "reference": {
+          "messageId": "1349365624647843892",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349376682217181296",
+        "author": "zolibyte",
+        "timestamp": "2025-03-12T09:41:11.247-04:00",
+        "content": "I will  reprogram bios with desoldering. Think SIO is fine it reacts to power button press and long press.",
+        "reference": {
+          "messageId": "1349371532685869239",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349379266793570304",
+        "author": "jaro.ka",
+        "timestamp": "2025-03-12T09:51:27.458-04:00",
+        "content": "Before you start, i see You haven't mentioned graphic card replacement. Also find you flash bios with cleared me region?",
+        "reference": {
+          "messageId": "1349376682217181296",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1349380150562652182",
+        "author": "zolibyte",
+        "timestamp": "2025-03-12T09:54:58.165-04:00",
+        "content": "Using integrated graphic card. I download bios from asus website then the cap file i get i extract body from it and save as bin file. I didnt cleared the me. Is that neccessary?",
+        "reference": {
+          "messageId": "1349379266793570304",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1352872451025014898",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T01:12:07.479-04:00",
+        "content": "Hi I have install windows 10 to a I5 6th gen PC. While installing fire fox I get a crash report.chrome install ,but if I open, it close at the same time.also I get a error 'procedure entry point could not be loaded"
+      },
+      {
+        "id": "1352872690670633052",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T01:13:04.615-04:00",
+        "content": ""
+      },
+      {
+        "id": "1352893094961479743",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:34:09.377-04:00",
+        "content": "There's something going on that's very weird `GetCurrendDirectoryW` is not a function, the actual function is called `GetCurrentDirectoryW`. This is not a system issue. It's a problem with the executable in question (or some of its dependencies).",
+        "reference": {
+          "messageId": "1352872451025014898",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352893403876167711",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T02:35:23.028-04:00",
+        "content": "You mean hardware fault",
+        "reference": {
+          "messageId": "1352893094961479743",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352893734160961576",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:36:41.774-04:00",
+        "content": "No."
+      },
+      {
+        "id": "1352893797444485182",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:36:56.862-04:00",
+        "content": "it's an issue with the actual software file."
+      },
+      {
+        "id": "1352893857205063681",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:37:11.11-04:00",
+        "content": "(unless it's a really random memory issue that flipped that one byte in question)"
+      },
+      {
+        "id": "1352893872799350815",
+        "author": "neyodickson",
+        "timestamp": "2025-03-22T02:37:14.828-04:00",
+        "content": "Kindly uninstall the firefox restart your PC and install a clean one. \nAlso the error message is directly pointing to your one drive app it couldn't locate the GetcurrentDirectoryw function kindly reinstall the application",
+        "reference": {
+          "messageId": "1352872451025014898",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352894209350307863",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:38:35.068-04:00",
+        "content": "Read carefully, it tries to access `GetCurren`**d**`DirectoryW`",
+        "reference": {
+          "messageId": "1352893872799350815",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352894612867514448",
+        "author": "neyodickson",
+        "timestamp": "2025-03-22T02:40:11.274-04:00",
+        "content": "Download the one drive directly from Microsoft site",
+        "reference": {
+          "messageId": "1352872451025014898",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352895887420035103",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:45:15.151-04:00",
+        "content": "Try the following:\n\n* Open a Terminal/Command Prompt/Powershell window (no admin privileges required) and run: `winget`\n* If this returns an error/command not found, this won't work on your machine.\n* Run: `winget uninstall onedrive firefox`\n* Run: `winget install onedrive firefox`\n\nThis will remove your existing installations of both onedrive and firefox (as far as they exist) and reinstall both from the official sources.\n\nIf the tool asks you to allow the use of a certain source, accept that.",
+        "reference": {
+          "messageId": "1352872451025014898",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352896259576561675",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T02:46:43.88-04:00",
+        "content": "i triedn different hard disk, and windows10 from microsft site downloaded. i installed it. even now when i click microsoft edge browser its open and close"
+      },
+      {
+        "id": "1352896510618112061",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:47:43.733-04:00",
+        "content": "There's definitely something going wrong. Have you tried different RAM sticks or tested the existing RAM?"
+      },
+      {
+        "id": "1352896515076653087",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T02:47:44.796-04:00",
+        "content": ""
+      },
+      {
+        "id": "1352897126400659588",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:50:10.547-04:00",
+        "content": "That would indicate a crash for whatever reason, Windows just won't display any messages anymore."
+      },
+      {
+        "id": "1352897200165883935",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:50:28.134-04:00",
+        "content": "Win+R, `eventvwr`"
+      },
+      {
+        "id": "1352897738785816648",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T02:52:36.551-04:00",
+        "content": "up to now i didnt get\" the procedure entry point error \" message, but  browser open and closing exist."
+      },
+      {
+        "id": "1352898216751923201",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T02:54:30.507-04:00",
+        "content": "eventvwr is open now. what should i look for",
+        "reference": {
+          "messageId": "1352897126400659588",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352898311417368576",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:54:53.077-04:00",
+        "content": "Windows Protocols > Applications"
+      },
+      {
+        "id": "1352898408960098356",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:55:16.333-04:00",
+        "content": "This should list all crashes like Edge, maybe with more information, but this looks kind of strange, especially for a fresh installation."
+      },
+      {
+        "id": "1352898460575072256",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T02:55:28.639-04:00",
+        "content": ""
+      },
+      {
+        "id": "1352898646466760804",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:56:12.959-04:00",
+        "content": "check the tree view on the left"
+      },
+      {
+        "id": "1352898734886883359",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:56:34.04-04:00",
+        "content": "there should be a category \"Windows Protocols\" with a sub category \"Applications\" or \"Apps\" or similar"
+      },
+      {
+        "id": "1352898805166510120",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:56:50.796-04:00",
+        "content": "You should get something like this"
+      },
+      {
+        "id": "1352898854533468222",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:57:02.566-04:00",
+        "content": "(not in German, obviously)"
+      },
+      {
+        "id": "1352899299742322738",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T02:58:48.712-04:00",
+        "content": "And that list should contain at least on error message for every program that crashed, whether you saw a message about it or not."
+      },
+      {
+        "id": "1352899437843710013",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T02:59:21.638-04:00",
+        "content": ""
+      },
+      {
+        "id": "1352899596736663552",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T02:59:59.521-04:00",
+        "content": "I  try to run eventvwr again.a message comes"
+      },
+      {
+        "id": "1352899624616333312",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T03:00:06.168-04:00",
+        "content": "This is odd"
+      },
+      {
+        "id": "1352899721055961148",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T03:00:29.161-04:00",
+        "content": "Is this a freshly installed image based on an official source?"
+      },
+      {
+        "id": "1352899849296810046",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T03:00:59.736-04:00",
+        "content": "Yes"
+      },
+      {
+        "id": "1352899946742812763",
+        "author": "neyodickson",
+        "timestamp": "2025-03-22T03:01:22.969-04:00",
+        "content": "I still have a strong feeling is software level issue. \nCan you try to install a  new operating system windows 11 from the official site if the system is compatible",
+        "reference": {
+          "messageId": "1352896259576561675",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352899999603752960",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T03:01:35.572-04:00",
+        "content": "Your UAC shouldn't be that strict, this would scream malware to me."
+      },
+      {
+        "id": "1352900228214161489",
+        "author": "neyodickson",
+        "timestamp": "2025-03-22T03:02:30.077-04:00",
+        "content": "What's the model of this computer and specifications?",
+        "reference": {
+          "messageId": "1352896515076653087",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352900247571009576",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T03:02:34.692-04:00",
+        "content": "Shall I try a nother, fresh copy from microsoft"
+      },
+      {
+        "id": "1352900465729208401",
+        "author": "neyodickson",
+        "timestamp": "2025-03-22T03:03:26.705-04:00",
+        "content": "Great idea",
+        "reference": {
+          "messageId": "1352900247571009576",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352900595375149137",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T03:03:57.615-04:00",
+        "content": "Its a Samsung PC.",
+        "reference": {
+          "messageId": "1352900356022996992",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352900900250718219",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T03:05:10.303-04:00",
+        "content": "Yes"
+      },
+      {
+        "id": "1352901063031914568",
+        "author": "neyodickson",
+        "timestamp": "2025-03-22T03:05:49.113-04:00",
+        "content": "Model and specifications",
+        "reference": {
+          "messageId": "1352900595375149137",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1352901218988589118",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T03:06:26.296-04:00",
+        "content": "Before reinstalling, hit Win+R and run `mdsched` just to make sure all this isn't random (considering the crashes etc.)."
+      },
+      {
+        "id": "1352901888252711032",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T03:09:05.861-04:00",
+        "content": ""
+      },
+      {
+        "id": "1352902274099183616",
+        "author": "rizsha",
+        "timestamp": "2025-03-22T03:10:37.854-04:00",
+        "content": "I gave the 1St one and now PC restart and running the scan"
+      },
+      {
+        "id": "1352902497034833920",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T03:11:31.006-04:00",
+        "content": "yep, that's the right option"
+      }
+    ],
+    [
+      {
+        "id": "1352899999603752960",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T03:01:35.572-04:00",
+        "content": "Your UAC shouldn't be that strict, this would scream malware to me."
+      },
+      {
+        "id": "1352901218988589118",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T03:06:26.296-04:00",
+        "content": "Before reinstalling, hit Win+R and run `mdsched` just to make sure all this isn't random (considering the crashes etc.)."
+      },
+      {
+        "id": "1352902497034833920",
+        "author": "smaxx",
+        "timestamp": "2025-03-22T03:11:31.006-04:00",
+        "content": "yep, that's the right option"
+      }
+    ],
+    [
+      {
+        "id": "1358281538646708535",
+        "author": "lurizan96",
+        "timestamp": "2025-04-05T23:25:54.464-04:00",
+        "content": "Where I can buy this filter? All usb port not working because of this faulty filter"
+      },
+      {
+        "id": "1358284930458587177",
+        "author": ".scarycarrie",
+        "timestamp": "2025-04-05T23:39:23.135-04:00",
+        "content": "im doctor home",
+        "reference": {
+          "messageId": "1358259626600304721",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1358284936393785536",
+        "author": ".scarycarrie",
+        "timestamp": "2025-04-05T23:39:24.55-04:00",
+        "content": ""
+      },
+      {
+        "id": "1358286611305205942",
+        "author": ".scarycarrie",
+        "timestamp": "2025-04-05T23:46:03.88-04:00",
+        "content": "I would try aliexpress, that's where I resource all my miscellaneous electronic crap",
+        "reference": {
+          "messageId": "1358281538646708535",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1358286811767509014",
+        "author": ".scarycarrie",
+        "timestamp": "2025-04-05T23:46:51.674-04:00",
+        "content": "if you can't figure out what specific part it is then screw it, get a smorgasboard of similar components and see what works"
+      },
+      {
+        "id": "1358349006995984500",
+        "author": "smaxx",
+        "timestamp": "2025-04-06T03:54:00.172-04:00",
+        "content": "> my 'workshop' is the spare room that used to be a child's bedroom, hence the wall squiggles.\nOh! Good you mention it. That might have been some improvised oscilloscope, too! 😄",
+        "reference": {
+          "messageId": "1358250449895034951",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1358349193416020051",
+        "author": "smaxx",
+        "timestamp": "2025-04-06T03:54:44.618-04:00",
+        "content": "I just love how my comparison picture above gets better and better 😉",
+        "reference": {
+          "messageId": "1358259626600304721",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1358350010093404270",
+        "author": "smaxx",
+        "timestamp": "2025-04-06T03:57:59.329-04:00",
+        "content": "Try looking for \"USB common mode choke\" or similar terms.",
+        "reference": {
+          "messageId": "1358281538646708535",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1358460171453600140",
+        "author": ".scarycarrie",
+        "timestamp": "2025-04-06T11:15:43.844-04:00",
+        "content": "this guy to the rescue, doing what my drunk ass said to do would probably fry something",
+        "reference": {
+          "messageId": "1358350010093404270",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1358488074413150361",
+        "author": "smaxx",
+        "timestamp": "2025-04-06T13:06:36.428-04:00",
+        "content": "hm? 😄"
+      },
+      {
+        "id": "1358502142385590436",
+        "author": ".scarycarrie",
+        "timestamp": "2025-04-06T14:02:30.494-04:00",
+        "content": "",
+        "reference": {
+          "messageId": "1358488074413150361",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1358502563581792267",
+        "author": "smaxx",
+        "timestamp": "2025-04-06T14:04:10.915-04:00",
+        "content": "ah"
+      },
+      {
+        "id": "1358502688752664770",
+        "author": "smaxx",
+        "timestamp": "2025-04-06T14:04:40.758-04:00",
+        "content": "You could probably find some on any random donor board 😉"
+      },
+      {
+        "id": "1358502976930709554",
+        "author": "smaxx",
+        "timestamp": "2025-04-06T14:05:49.465-04:00",
+        "content": "And even shorting the data lines would probably be \"fine\", considering the other side would just interpret this as a charger or cable issue and do nothing."
+      },
+      {
+        "id": "1358777311071043735",
+        "author": "vanduc_gb",
+        "timestamp": "2025-04-07T08:15:55.821-04:00",
+        "content": "How this things can be faulty?\nUsb not working when: \n-Missing 5v\n-ESD protect diode faulty(shorted or leak)\n-USB_OC voltage drop(working voltage around 3v up)\n-PCH faulty",
+        "reference": {
+          "messageId": "1358281538646708535",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1358778274850803735",
+        "author": "lurizan96",
+        "timestamp": "2025-04-07T08:19:45.604-04:00",
+        "content": "I replaced that thing and USB port work",
+        "reference": {
+          "messageId": "1358777311071043735",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1358778442644197457",
+        "author": "lurizan96",
+        "timestamp": "2025-04-07T08:20:25.609-04:00",
+        "content": "I fixed 3 PC with same problem"
+      },
+      {
+        "id": "1358780028707541022",
+        "author": "smaxx",
+        "timestamp": "2025-04-07T08:26:43.756-04:00",
+        "content": "Chokes can indeed fail. The port itself will provide basic 5V, but no communication.",
+        "reference": {
+          "messageId": "1358777311071043735",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1359196705328857248",
+        "author": "yo3iga",
+        "timestamp": "2025-04-08T12:02:27.204-04:00",
+        "content": "PlayStation boards near the hdmi connector.",
+        "reference": {
+          "messageId": "1358281538646708535",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1359407920797978634",
+        "author": "smaxx",
+        "timestamp": "2025-04-09T02:01:44.896-04:00",
+        "content": "The repeating block pattern might indicate a video memory issue but also possible it just randomly tripped (hardware or driver hiccup), if it's gone after a reboot and doesn't return."
+      },
+      {
+        "id": "1359620951561601105",
+        "author": "smaxx",
+        "timestamp": "2025-04-09T16:08:15.388-04:00",
+        "content": "Can't say for sure. I've definitely had similar artifacts once or twice on a desktop GPU (Nvidia, too) that continued to work for years."
+      },
+      {
+        "id": "1359796658690588763",
+        "author": "i_am_windows",
+        "timestamp": "2025-04-10T03:46:27.232-04:00",
+        "content": "Any old laptop has got these. You can temporarily bypass these just to confirm these are bad. I had them bad on my laptop but along with that the controller ic was bad too",
+        "reference": {
+          "messageId": "1358281538646708535",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1360749396333035651",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T18:52:17.587-04:00",
+        "content": "Should I grab this?\nWhat is the k4 variant of the 1080ti? I’ve never heard of that\nI looked it up to find people confused at a k3 variant, but no answers\nIt *might* have something to do with locked memory?"
+      },
+      {
+        "id": "1360749422123810868",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T18:52:23.736-04:00",
+        "content": "Idk that’s what I heard on the thread"
+      },
+      {
+        "id": "1360753022178689134",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:06:42.056-04:00",
+        "content": "I’ve never done so and I want to learn,\nI’ve replaced the bios and I’ve done mats & mods, I am going to lower the core voltage and see if that fixes it; but if it does then yes"
+      },
+      {
+        "id": "1360753415910723825",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:08:15.929-04:00",
+        "content": "For some reason msi afterburner has greyed out the voltage slider but I will figure this out later"
+      },
+      {
+        "id": "1360753514644770977",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:08:39.469-04:00",
+        "content": "Right now I’m super interested in this k4 mystery"
+      },
+      {
+        "id": "1360753866416590949",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:10:03.338-04:00",
+        "content": "My dad mentioned reflowing the core"
+      },
+      {
+        "id": "1360753882975830057",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:10:07.286-04:00",
+        "content": "Maybe that’s a good next step"
+      },
+      {
+        "id": "1360753938810278080",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:10:20.598-04:00",
+        "content": "I think you might be right"
+      },
+      {
+        "id": "1360754033178054797",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:10:43.097-04:00",
+        "content": "I should really not consider this as dead as I think it is"
+      },
+      {
+        "id": "1360754104481091786",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:11:00.097-04:00",
+        "content": "Still, is the 1000 yen core even real?"
+      },
+      {
+        "id": "1360754126040076340",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:11:05.237-04:00",
+        "content": "I’m suspicious of it"
+      },
+      {
+        "id": "1360754653981315113",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:13:11.108-04:00",
+        "content": "My dad does arcade repair he’s been doing surface mount lately, I doubt he’ll have a stencil but I think he’ll have everything else I need"
+      },
+      {
+        "id": "1360754707567476855",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:13:23.884-04:00",
+        "content": "Ohh"
+      },
+      {
+        "id": "1360754718393241860",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:13:26.465-04:00",
+        "content": "No he won’t"
+      },
+      {
+        "id": "1360754743907193052",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:13:32.548-04:00",
+        "content": "Have one of these"
+      },
+      {
+        "id": "1360754755571421425",
+        "author": "fliggo1",
+        "timestamp": "2025-04-12T19:13:35.329-04:00",
+        "content": "Ok thank you"
+      }
+    ],
+    [
+      {
+        "id": "1363611604087738600",
+        "author": "shido7991",
+        "timestamp": "2025-04-20T16:25:41.093-04:00",
+        "content": "Asus z79-pro gamer\nCPU i5-4670K Max Turbo Frequency 3.80 GHz\n32GB G Skill Ripjaws 4x8GB\nASUS STRIX GTX 750Ti 4GB version\n240GB SSD\nEVGA 850W BQ 80 Plus Bronze Power supply"
+      },
+      {
+        "id": "1363613005178212613",
+        "author": "shido7991",
+        "timestamp": "2025-04-20T16:31:15.139-04:00",
+        "content": "I have gpu disconnected and monitor is directly connected to motherboard.. I connected sdd directly via USB cable no joy .. cpu is compatible with motherboard (sorry not sure if this is what you mean when you say cpu consistent with igpu)"
+      },
+      {
+        "id": "1363615119828844687",
+        "author": "shido7991",
+        "timestamp": "2025-04-20T16:39:39.311-04:00",
+        "content": "Appreciate you taking time and helping with troubleshooting it..\n\nNo unfortunately I donot have thermal camera.. have been thinking to buy jt long time \n\nI tried every possible suggestions and as yiu pointed it could be motherboard or cpu itself left to rule out..  what's the best way to clean cpu pads and motherboard pins? Used brush yesterday to rub off slightly and didnot see any damaged pins.. Will inspect it again closely",
+        "reference": {
+          "messageId": "1363613168173187134",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1370464103512019064",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-09T14:15:04.269-04:00",
+        "content": "It isn't a good sign that one software can recognise the IC and the other can't. The flash being full of Zeroes is another bad sign. If not being \"bad\" flash IC already, it points at least to interference or connection issues"
+      },
+      {
+        "id": "1370464452813652018",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-09T14:16:27.549-04:00",
+        "content": "Using the clip is bad practice to start with",
+        "reference": {
+          "messageId": "1370464353312182324",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1370464500398030919",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-09T14:16:38.894-04:00",
+        "content": "Which would explain why you have issues"
+      },
+      {
+        "id": "1370464895665176727",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-09T14:18:13.133-04:00",
+        "content": "When using the clip it's very important to check the dump with a hex editor. Otherwise the original firmware might be lost already"
+      },
+      {
+        "id": "1370465068244009061",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-09T14:18:54.279-04:00",
+        "content": "Also it's a common issue that the flash IC can't be read or written in-circuit on many boards."
+      },
+      {
+        "id": "1370465162880094219",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-09T14:19:16.842-04:00",
+        "content": "In these cases desoldering + programming board is the way to go"
+      },
+      {
+        "id": "1370465591332311170",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-09T14:20:58.993-04:00",
+        "content": "You will possibly write code which will be distorted when the flash IC receives it"
+      },
+      {
+        "id": "1370468993562837013",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-09T14:34:30.148-04:00",
+        "content": "Reverse logic applies here. You can use the clip when you know how to deal with corruption and how to minimise the risk. But not earlier...^^"
+      }
+    ],
+    [
+      {
+        "id": "1377744848232255589",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:26:09.08-04:00",
+        "content": "Or BIOS corruption in best case"
+      },
+      {
+        "id": "1377745097520709743",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:27:08.515-04:00",
+        "content": "This is a very important observation which is supposed to be stated in your initial post.",
+        "reference": {
+          "messageId": "1377744766510567424",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1377745180353888478",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:27:28.264-04:00",
+        "content": "Because now it's about where the power up sequence stops (before the board shuts down)"
+      },
+      {
+        "id": "1377745246187683913",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:27:43.96-04:00",
+        "content": "Not about why there is no +3V"
+      },
+      {
+        "id": "1377745646068699166",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:29:19.299-04:00",
+        "content": "You are not looking at a board which doesn't start, but at a board which immediately goes into protection after power up"
+      },
+      {
+        "id": "1377745863480442930",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:30:11.134-04:00",
+        "content": "This is a very hard fault. Not really ideal for a beginner"
+      },
+      {
+        "id": "1377746127213953116",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:31:14.013-04:00",
+        "content": "Possibly.\n\nHowever, actually you have to check the whole board",
+        "reference": {
+          "messageId": "1377745990861459577",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1377746144502874213",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:31:18.135-04:00",
+        "content": "All power supplies"
+      },
+      {
+        "id": "1377746158797197395",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:31:21.543-04:00",
+        "content": "All of them"
+      },
+      {
+        "id": "1377746193777430640",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:31:29.883-04:00",
+        "content": "In the moment BEFORE it turns off"
+      },
+      {
+        "id": "1377746464675070012",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:32:34.47-04:00",
+        "content": "To get a momentary view after everything happened is the wrong approach. You need to catch what happens in these 0.5 seconds"
+      },
+      {
+        "id": "1377746477086146740",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:32:37.429-04:00",
+        "content": "And what not"
+      },
+      {
+        "id": "1377746540898029629",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:32:52.643-04:00",
+        "content": "And build your conclusions from this data collection"
+      },
+      {
+        "id": "1377747251551670373",
+        "author": "sephir0th1984",
+        "timestamp": "2025-05-29T16:35:42.076-04:00",
+        "content": "Nobody said Chip-Level is easy... 🙂"
+      }
+    ],
+    [
+      {
+        "id": "1379325433698451476",
+        "author": "sephir0th1984",
+        "timestamp": "2025-06-03T01:06:50.021-04:00",
+        "content": "Only thing which is left is a detailed visual inspection of the board i would say"
+      },
+      {
+        "id": "1379385560837132339",
+        "author": "hieutcg98",
+        "timestamp": "2025-06-03T05:05:45.448-04:00",
+        "content": "There is a strange thing is that when I install tl631, I see the PCIE RST indicator flashing, I have never encountered this case before.",
+        "reference": {
+          "messageId": "1379325433698451476",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1379385927775817770",
+        "author": "hieutcg98",
+        "timestamp": "2025-06-03T05:07:12.933-04:00",
+        "content": "Everything is original. No fire, explosion, damage, or moisture"
+      }
+    ],
+    [
+      {
+        "id": "1380930014618456236",
+        "author": "dumb.guy",
+        "timestamp": "2025-06-07T11:22:51.924-04:00",
+        "content": "i dont think so"
+      },
+      {
+        "id": "1380930057283047484",
+        "author": "dumb.guy",
+        "timestamp": "2025-06-07T11:23:02.096-04:00",
+        "content": "when the firmware dies, it wont boot at all"
+      },
+      {
+        "id": "1381020535940714618",
+        "author": "pklrsx",
+        "timestamp": "2025-06-07T17:22:33.889-04:00",
+        "content": "Sorry if im completely missing what has happened i thought i was following but could whatever microprocessor that your device has is damaged from the failure you fixed?",
+        "reference": {
+          "messageId": "1380930014618456236",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1381020625451356200",
+        "author": "pklrsx",
+        "timestamp": "2025-06-07T17:22:55.23-04:00",
+        "content": "Be not is*"
+      }
+    ],
+    [
+      {
+        "id": "1389740528014459112",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-01T18:52:42.009-04:00",
+        "content": "I'm assuming by \"electromagnetic pulse\" you mean power surge?"
+      },
+      {
+        "id": "1389741012003590204",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-01T18:54:37.401-04:00",
+        "content": "You should still check resistances on power rails to ensure there are no partial shorts."
+      },
+      {
+        "id": "1389742539896258601",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:00:41.679-04:00",
+        "content": "No. The power company has power surge surpressors on the residences at the power meter which are meant to stop those.  Also had my own surge surpressors on the lines. This was a EMP that induced itself into the computer and a few other devices.  I suspect via the cat 5 cables.  Everything that died was plugged into my network. But not everything plugged into the network died.",
+        "reference": {
+          "messageId": "1389740528014459112",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1389742660675178609",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:01:10.475-04:00",
+        "content": "Ok. That’s not a bad idea.  So I’m basically looking for the inductors with mosfets",
+        "reference": {
+          "messageId": "1389741012003590204",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1389742907082149889",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:02:09.223-04:00",
+        "content": "Like these for the CPUs"
+      },
+      {
+        "id": "1389743301812293772",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:03:43.334-04:00",
+        "content": "The lower set reads 2.4 and upper set 2.5"
+      },
+      {
+        "id": "1389743365808980030",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-01T19:03:58.592-04:00",
+        "content": "Sounds fine."
+      },
+      {
+        "id": "1389743441633742959",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:04:16.67-04:00",
+        "content": "Measured in the inductor since the mosfets are under those sinks"
+      },
+      {
+        "id": "1389743523368144936",
+        "author": "mini1477",
+        "timestamp": "2025-07-01T19:04:36.157-04:00",
+        "content": "It basically means you got overvoltage on ethernet or whatever lines. It is not really worth fixing. Lightning damage is bad. It would be worth a shot only if your device is expensive. I have fixed lightning damaged routers and stuff. Not worth the hassle.",
+        "reference": {
+          "messageId": "1389742539896258601",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1389743713022115991",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:05:21.374-04:00",
+        "content": "The hassle in this case is to be for learning.  The device was expensive at the time.  But a Mac mini now is more powerful than this",
+        "reference": {
+          "messageId": "1389743523368144936",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1389743789417037895",
+        "author": "mini1477",
+        "timestamp": "2025-07-01T19:05:39.588-04:00",
+        "content": "Also the other thing is like the story with ESD. You may have partially working IC-s. Meaning they might fail who knows when in the future."
+      },
+      {
+        "id": "1389743909831311451",
+        "author": "mini1477",
+        "timestamp": "2025-07-01T19:06:08.297-04:00",
+        "content": "You won't learn anything from it. You got overvoltage. Who knows which chips might be damaged.",
+        "reference": {
+          "messageId": "1389743713022115991",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1389743921118052443",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:06:10.988-04:00",
+        "content": "All true",
+        "reference": {
+          "messageId": "1389743789417037895",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1389744015104278559",
+        "author": "mini1477",
+        "timestamp": "2025-07-01T19:06:33.396-04:00",
+        "content": "Better fix something thats worth your time. Lightning damage is quite bad."
+      },
+      {
+        "id": "1389744132368367666",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:07:01.354-04:00",
+        "content": "Everything I fix is unfixable 😂",
+        "reference": {
+          "messageId": "1389744015104278559",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1389744240162115685",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:07:27.054-04:00",
+        "content": "I should say everything I TRY to fix is unfixable"
+      },
+      {
+        "id": "1389744313142870016",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-01T19:07:44.454-04:00",
+        "content": "Surge damage is a pain, sure, but if we understand that going in I don't see the problem. Still likely to be repairable, even if you do have to replace every component on a net."
+      },
+      {
+        "id": "1389744351382474802",
+        "author": "mini1477",
+        "timestamp": "2025-07-01T19:07:53.571-04:00",
+        "content": "Yeah, but this one is really different. And lot's of stuff is unfixable or hard to fix.",
+        "reference": {
+          "messageId": "1389744240162115685",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1389744582526242877",
+        "author": "mini1477",
+        "timestamp": "2025-07-01T19:08:48.68-04:00",
+        "content": "Not really worth it unless device is expensive. You don't know which chips overvoltage really hit. Could be working today and not working in a few months.",
+        "reference": {
+          "messageId": "1389744313142870016",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1389744834931331163",
+        "author": "mini1477",
+        "timestamp": "2025-07-01T19:09:48.858-04:00",
+        "content": "I would say overvoltage is worst case if it reaches logic. And lightening definitely could reach anything on your board."
+      },
+      {
+        "id": "1389744863150608444",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-01T19:09:55.586-04:00",
+        "content": "I know."
+      },
+      {
+        "id": "1389745885172203601",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:13:59.255-04:00",
+        "content": "If an inductor reads open to ground what does that mean?"
+      },
+      {
+        "id": "1389746061467189309",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-01T19:14:41.287-04:00",
+        "content": "Probably that the resistance is too high for your multimeter to measure."
+      },
+      {
+        "id": "1389746083885744139",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:14:46.632-04:00",
+        "content": "That I measured it wrong lol"
+      },
+      {
+        "id": "1389746443312566292",
+        "author": "tallguypns",
+        "timestamp": "2025-07-01T19:16:12.326-04:00",
+        "content": "If I measure and see the resistance climbing it means it’s charging capacitors and confirm by reversing the leads see the resistance drop?"
+      },
+      {
+        "id": "1389746956724863160",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-01T19:18:14.733-04:00",
+        "content": "I suppose that's a thing you can do."
+      }
+    ],
+    [
+      {
+        "id": "1390559454495510650",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:06:49.297-04:00",
+        "content": "This means that it is running into trouble with the firmware (initializing CPU, memory, peripherals)."
+      },
+      {
+        "id": "1390559643989708881",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:07:34.476-04:00",
+        "content": "If you have a stick inserted in the DIMM slot, remove it and see if there are any changes."
+      },
+      {
+        "id": "1390560272216887296",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:10:04.257-04:00",
+        "content": "Okay, so here is our procedure moving forward:\n1. Back up current firmware and flash new firmware \n1.1. If nothing changes, restore old firmware\n2. Attempt disabling the onboard RAM and falling back to DIMM\n2.1. Check if there is a board ID strap we can use for this or if BIOS mods are needed\n3. Lift the RAM\n4. Lift the CPU"
+      },
+      {
+        "id": "1390560800476758208",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:12:10.204-04:00",
+        "content": "Yes.",
+        "reference": {
+          "messageId": "1390560563225952417",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1390560839504887992",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:12:19.509-04:00",
+        "content": "A statement."
+      },
+      {
+        "id": "1390560957453045761",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:12:47.63-04:00",
+        "content": "Looking at the schematic now, they are part of the voltage divider."
+      },
+      {
+        "id": "1390560998812811326",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:12:57.491-04:00",
+        "content": "They are not the only two."
+      },
+      {
+        "id": "1390561054295199767",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:13:10.719-04:00",
+        "content": "Though, the system seems to be happy to work \"on battery\", so I've largely ignored that for now."
+      },
+      {
+        "id": "1390561151120838799",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:13:33.804-04:00",
+        "content": "Though, I suppose there are also oddities that could come into play like `BATLOW#` and such. (In that specific case, however, the system should just power off.)"
+      },
+      {
+        "id": "1390561409502285844",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:14:35.407-04:00",
+        "content": "Yeah, that could be worth the time for sure too."
+      },
+      {
+        "id": "1390562578547347558",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T01:19:14.129-04:00",
+        "content": "If you want to investigate the charging input like Mike suggested that's still a lead we can follow. Sorry, I didn't mean to jumpscare you with all that. I get carried away sometimes."
+      }
+    ],
+    [
+      {
+        "id": "1390830655205671015",
+        "author": "phoenix34",
+        "timestamp": "2025-07-04T19:04:28.585-04:00",
+        "content": "Hey there! I've seen several ways to debug PS5 consoles where you soldered some pins from a usb programmer (ch341a) onto the board and was able to read errors and perform basic functions for debugging. What about GPUs and computer hardware, is there anything as such?"
+      },
+      {
+        "id": "1390831070261285014",
+        "author": "phoenix34",
+        "timestamp": "2025-07-04T19:06:07.542-04:00",
+        "content": "Is there a way to debug things out through a ch341a for a computer? E.g. say GPU isn't' working, it might communicate something like bad VRM error."
+      },
+      {
+        "id": "1390831110833049643",
+        "author": "phoenix34",
+        "timestamp": "2025-07-04T19:06:17.215-04:00",
+        "content": "Or something like that."
+      },
+      {
+        "id": "1390833698995441754",
+        "author": "phoenix34",
+        "timestamp": "2025-07-04T19:16:34.281-04:00",
+        "content": "Well, I guess Sony just wanted to help their warranty department and make things simpler.",
+        "reference": {
+          "messageId": "1390832213313982645",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1390833897969025157",
+        "author": "phoenix34",
+        "timestamp": "2025-07-04T19:17:21.72-04:00",
+        "content": "I've seen several repairs go like that... Bad SSD controller error, replace, work."
+      },
+      {
+        "id": "1390835254117400727",
+        "author": "phoenix34",
+        "timestamp": "2025-07-04T19:22:45.051-04:00",
+        "content": "I just happened to get a broken 1050, and I just feel embarrassed that I can't manage to make it work... Maybe after a while I will buy an APU to see if the system boots and if it does try something. Some errors are just tricky and you must know things from inside out. Otherwise I need to learn more things to see what's actually wrong with it.",
+        "reference": {
+          "messageId": "1390834097097805967",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1390835595332550686",
+        "author": "phoenix34",
+        "timestamp": "2025-07-04T19:24:06.403-04:00",
+        "content": "In the mean time I got a bunch of PS5s to see how far I can go with those. I suspect it will be easier since the debugging process is kind of simpler."
+      }
+    ],
+    [
+      {
+        "id": "1390833351044370444",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T19:15:11.323-04:00",
+        "content": "Of course, CPUs themselves and any kind of microcontroller literally provide JTAG debugging capability, but some hardware hacking may be needed and the tooling and experience needed would not be worth it. Plus, you'd need to reverse engineer the firmware still to find out where things are going wrong. The shops that go this far would just lift and replace the CPU. Faster, cheaper."
+      },
+      {
+        "id": "1390833797305470976",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T19:16:57.72-04:00",
+        "content": "Sure, and Apple does the same thing."
+      },
+      {
+        "id": "1390834097097805967",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T19:18:09.196-04:00",
+        "content": "But there's no catch-all for every motherboard. There are standards like ACPI Platform Error Interfaces (APEI) and Crash Log which I mentioned above, but you could spend a lifetime working on devices and maybe have that help you lead you to a problematic component a handful of times."
+      },
+      {
+        "id": "1390834993974214747",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-07-04T19:21:43.028-04:00",
+        "content": "Of course, some desktop boards provide POST codes through a speaker, seven-segment display, or EZ Debug LEDs, but the only times those have helped me are for basic problems like when someone didn't install a CPU or RAM properly to begin with. Laptops often have blink codes, but you can ask Mike what he thinks about those."
+      }
+    ],
+    [
+      {
+        "id": "1393121726174597206",
+        "author": "feferon98",
+        "timestamp": "2025-07-11T02:48:22.47-04:00",
+        "content": "hi i have a gigabyte barebone mini pc gb-bxi3h-4010 rev 1.0 which does not boot ... cpu gets hot, power is present, draw is around 0,4A (starts at 0,477 and gets to 0,42 ish). Any clue what could be wrong ? i have tried with and without ram, same outcome, hdmi and dp port too, reflashed the bios, no change ...."
+      },
+      {
+        "id": "1393144891797799012",
+        "author": "nexkg_28147",
+        "timestamp": "2025-07-11T04:20:25.585-04:00",
+        "content": "Maybe faulty ram module? Have you tried different ram modules in different ram slots? If that is ok, I suggest you check the coils, their resistances to ground (powered off) and voltages (powered on) - see if there is something suspicious. Post the results here with good photo of the board, maybe we can find something together.",
+        "reference": {
+          "messageId": "1393121726174597206",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1393148696941826099",
+        "author": "feferon98",
+        "timestamp": "2025-07-11T04:35:32.802-04:00",
+        "content": "i have tried different ram modules, in one or in both slots, no change.... the draw behaviour is the same with or without ram modules....i believe the voltages are OK but will do this later on  and send You ....",
+        "reference": {
+          "messageId": "1393144891797799012",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1393453486623952988",
+        "author": "dues0488",
+        "timestamp": "2025-07-12T00:46:40.325-04:00",
+        "content": "you have missing vcore voltages the cpu get warm but the current draw still low",
+        "reference": {
+          "messageId": "1393121726174597206",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1393917727843815436",
+        "author": "feferon98",
+        "timestamp": "2025-07-13T07:31:24.057-04:00",
+        "content": "thanks, will have a look on this ...",
+        "reference": {
+          "messageId": "1393453486623952988",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1393918583448539216",
+        "author": "feferon98",
+        "timestamp": "2025-07-13T07:34:48.049-04:00",
+        "content": "Can it be a BIOS issue too ?",
+        "reference": {
+          "messageId": "1393453486623952988",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1394137235657457674",
+        "author": "dues0488",
+        "timestamp": "2025-07-13T22:03:38.798-04:00",
+        "content": "for me its a low chance could be a bios issue but you try to reprogram",
+        "reference": {
+          "messageId": "1393918583448539216",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1410384997327573153",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:06:27.049-04:00",
+        "content": "Hi everyone, I'm working on a strange case of an Asus rog g15 g513qm notebook pc. Pc starts normally for 2 3 mins then freezes suddenly. But it never freezes when you stay on Bios. Reprogrammed Bios ec with no help, tried different ram/disk/os still the same. It freezes also on bootable usb and does not read nvme disks during fresh installation even when given drivers. I am kinda lost and wonder if there is any solution to this problem. Next I am thinking of doing after approval is disabling gpu then on last resort, deep clean and reflow cpu chip. It came back to me I saw all these articles about a recent windows update causing problems with nvme drives not sure if it is related, also strangely I plugged my own system nvme drive with windows and when it started, Defender reported some kind of a trojan malware that infected the drive and also one of my usb keys. I immediately cleaned them on my linux system, which make me worry if it is some kind of firmware embedded malware, I really hope I'm wrong. Please let me know if anyone has a solution. the cpu and gpu seem to work fine with temp not exceeding 80 degree."
+      },
+      {
+        "id": "1410391390621536317",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T18:31:51.329-04:00",
+        "content": "Apart from the suggestions above, also try loosening the CPU cooler screws a tiny bit to release some pressure and see if anything changes (if not, tighten them again).",
+        "reference": {
+          "messageId": "1410308829446537346",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410391501749485600",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:32:17.824-04:00",
+        "content": "If BIOS infection is suspected (what else could it be except your SSD already been infected before?), it's quite obvious what to do, no? \nOther than that the reported issue with NVME SSDs is something completely different with specific but different symptoms if you read attentive.",
+        "reference": {
+          "messageId": "1410384997327573153",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410392494482395247",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T18:36:14.51-04:00",
+        "content": "Unless you've got an ASUS gaming mainboard. -cough- Armoury -cough- Crate -cough- 😄"
+      },
+      {
+        "id": "1410392903871889520",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T18:37:52.116-04:00",
+        "content": "And just to be sure, does it actually freeze (e.g. capslock status no longer changing) or is just the image stuck? I could imagine both.",
+        "reference": {
+          "messageId": "1410384997327573153",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410393293388382259",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:39:24.984-04:00",
+        "content": "Absolutely agree",
+        "reference": {
+          "messageId": "1410392009692156014",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410393357292666882",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:39:40.22-04:00",
+        "content": "Thank you for guidance. It came with a chineese system and I am 100% wrong about malware, maybe my ssd was infected before without me noticing. My guess is something wrong with ssd lines or cpu if I m not mistaken...",
+        "reference": {
+          "messageId": "1410391501749485600",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410393566110416958",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:40:30.006-04:00",
+        "content": "This is way more plausible, yes",
+        "reference": {
+          "messageId": "1410393357292666882",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410393802580955146",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:41:26.385-04:00",
+        "content": "Total freeze without shutdown and consistent with it. Tried shift ctl win B nothing works not caps",
+        "reference": {
+          "messageId": "1410392903871889520",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410393893219864639",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:41:47.995-04:00",
+        "content": "However if there are issues from USB too, it will exclude the SSD (and USB) itself ofc"
+      },
+      {
+        "id": "1410394326470754448",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:43:31.29-04:00",
+        "content": "I would say chipset or CPU related. In best case something obvious to find by a detailed visual inspection. Partial BIOS corruption should be ruled out for sanity too"
+      },
+      {
+        "id": "1410394347605594162",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:43:36.329-04:00",
+        "content": "I disabled it and everything I could from Bios",
+        "reference": {
+          "messageId": "1410392494482395247",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410394482897060004",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T18:44:08.585-04:00",
+        "content": "That one was a joke. 😉 It's essentially just a hardware ID that gets windows to install the tool as a \"driver\" as far as I'm aware.",
+        "reference": {
+          "messageId": "1410394347605594162",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410394626170290176",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T18:44:42.744-04:00",
+        "content": "If the freezing doesn't happen in BIOS/UEFI, but happens outside, does it happen if you just boot like a Windows setup on a stick and do nothing significant with it?"
+      },
+      {
+        "id": "1410394966706098187",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:46:03.934-04:00",
+        "content": "I agree, either chipset or cpu. Chipset is integrated in this motherboard",
+        "reference": {
+          "messageId": "1410394326470754448",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410395538372952176",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:48:20.23-04:00",
+        "content": "I tried Hirens boot 15, it froze, same timing. Archlinux didn't boot at all, didnt gave me much detail as to why. Fresh instalation doesn't detect nvme drives even when given drivers from usb. I tried AHCI and raid from Bios, didnt help",
+        "reference": {
+          "messageId": "1410394626170290176",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410396521484255294",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T18:52:14.622-04:00",
+        "content": "Never heard of Hiren's BootCD, definitely have to check that out some time 🙂"
+      },
+      {
+        "id": "1410396659308957767",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:52:47.482-04:00",
+        "content": "Basically just a live system from usb.",
+        "reference": {
+          "messageId": "1410396521484255294",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410396694545432667",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T18:52:55.883-04:00",
+        "content": "yep, have the homepage open"
+      },
+      {
+        "id": "1410397151338434591",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T18:54:44.791-04:00",
+        "content": "Do you have enough time to open the advanced Windows boot options, i.e. the boot manager selection for recovery, safe mode, etc.? Would be really curious whether that freezes, too. If that works, try Safe Mode next."
+      },
+      {
+        "id": "1410397298986455040",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T18:55:19.993-04:00",
+        "content": "But as mentioned, might be even faster to have a look at the board itself."
+      },
+      {
+        "id": "1410397511214170305",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:56:10.592-04:00",
+        "content": "Really good idea. I have enough time to set it up on \"msconfig\"",
+        "reference": {
+          "messageId": "1410397151338434591",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410397632014061569",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:56:39.393-04:00",
+        "content": "Not sure whether it will be faster but definitely shouldn't be missed. Would be the first time that something is ripped or disconnected"
+      },
+      {
+        "id": "1410398159464829021",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T18:58:45.147-04:00",
+        "content": "If all else fails, you might at least be able to disconnect internal stuff you couldn't toggle otherwise."
+      },
+      {
+        "id": "1410399074569420830",
+        "author": "47gg",
+        "timestamp": "2025-08-27T19:02:23.325-04:00",
+        "content": "It froze even in safe mode",
+        "reference": {
+          "messageId": "1410397151338434591",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410400617738010655",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T19:08:31.245-04:00",
+        "content": "So I'd suspect it's not the GPU under stress and since it happens with the live system, too, I think we can rule out the SSD itself. So might be CPU and/or chipset after all."
+      },
+      {
+        "id": "1410400909179224148",
+        "author": "smaxx",
+        "timestamp": "2025-08-27T19:09:40.73-04:00",
+        "content": "As stupid as it might sounds, I just remembered one of Sorin's videos having something similar (or maybe I remember it wrong?): Open it up, remove and reset the memory sticks (assuming RAM isn't just soldered in)."
+      }
+    ],
+    [
+      {
+        "id": "1410392009692156014",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-08-27T18:34:18.927-04:00",
+        "content": "Firmware-embedded malware is extremely improbable in my opinion."
+      },
+      {
+        "id": "1410393293388382259",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:39:24.984-04:00",
+        "content": "Absolutely agree",
+        "reference": {
+          "messageId": "1410392009692156014",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410393566110416958",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:40:30.006-04:00",
+        "content": "This is way more plausible, yes",
+        "reference": {
+          "messageId": "1410393357292666882",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410393893219864639",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:41:47.995-04:00",
+        "content": "However if there are issues from USB too, it will exclude the SSD (and USB) itself ofc"
+      },
+      {
+        "id": "1410394326470754448",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:43:31.29-04:00",
+        "content": "I would say chipset or CPU related. In best case something obvious to find by a detailed visual inspection. Partial BIOS corruption should be ruled out for sanity too"
+      },
+      {
+        "id": "1410397632014061569",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:56:39.393-04:00",
+        "content": "Not sure whether it will be faster but definitely shouldn't be missed. Would be the first time that something is ripped or disconnected"
+      }
+    ],
+    [
+      {
+        "id": "1410394326470754448",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:43:31.29-04:00",
+        "content": "I would say chipset or CPU related. In best case something obvious to find by a detailed visual inspection. Partial BIOS corruption should be ruled out for sanity too"
+      },
+      {
+        "id": "1410394347605594162",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:43:36.329-04:00",
+        "content": "I disabled it and everything I could from Bios",
+        "reference": {
+          "messageId": "1410392494482395247",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410394966706098187",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:46:03.934-04:00",
+        "content": "I agree, either chipset or cpu. Chipset is integrated in this motherboard",
+        "reference": {
+          "messageId": "1410394326470754448",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410395538372952176",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:48:20.23-04:00",
+        "content": "I tried Hirens boot 15, it froze, same timing. Archlinux didn't boot at all, didnt gave me much detail as to why. Fresh instalation doesn't detect nvme drives even when given drivers from usb. I tried AHCI and raid from Bios, didnt help",
+        "reference": {
+          "messageId": "1410394626170290176",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410396659308957767",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:52:47.482-04:00",
+        "content": "Basically just a live system from usb.",
+        "reference": {
+          "messageId": "1410396521484255294",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410397511214170305",
+        "author": "47gg",
+        "timestamp": "2025-08-27T18:56:10.592-04:00",
+        "content": "Really good idea. I have enough time to set it up on \"msconfig\"",
+        "reference": {
+          "messageId": "1410397151338434591",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1410397632014061569",
+        "author": "sephir0th1984",
+        "timestamp": "2025-08-27T18:56:39.393-04:00",
+        "content": "Not sure whether it will be faster but definitely shouldn't be missed. Would be the first time that something is ripped or disconnected"
+      },
+      {
+        "id": "1410399074569420830",
+        "author": "47gg",
+        "timestamp": "2025-08-27T19:02:23.325-04:00",
+        "content": "It froze even in safe mode",
+        "reference": {
+          "messageId": "1410397151338434591",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1418013946253672479",
+        "author": "amame72omg",
+        "timestamp": "2025-09-17T19:21:10.212-04:00",
+        "content": "hey guys! anyone know what this chip is? It looks like a bios chip \nfrom MSI stealth GS66\nnumbers X28A XX711"
+      },
+      {
+        "id": "1418037922384314468",
+        "author": "gexreal",
+        "timestamp": "2025-09-17T20:56:26.567-04:00",
+        "content": "this wouldnt be a bios chip, bios chips usually have bigger legs like this chip on another msi stealth gs66",
+        "reference": {
+          "messageId": "1418013946253672479",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1418038045722284164",
+        "author": "gexreal",
+        "timestamp": "2025-09-17T20:56:55.973-04:00",
+        "content": "usually bios chip will be located near the embedded controller/chipset rather than the usb c port"
+      },
+      {
+        "id": "1418087567840247852",
+        "author": "amame72omg",
+        "timestamp": "2025-09-18T00:13:42.966-04:00",
+        "content": "so any idea what it can be?",
+        "reference": {
+          "messageId": "1418037922384314468",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1418104654608470158",
+        "author": "sephir0th1984",
+        "timestamp": "2025-09-18T01:21:36.769-04:00",
+        "content": "It's possibly a load switch. Have seen those with same layout on older lenovo devices.\nBut without a more abstract view to it (to the surrounding circuit in particular) it is not possible to share a better hint remotely.",
+        "reference": {
+          "messageId": "1418087567840247852",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1418105533570744443",
+        "author": "sephir0th1984",
+        "timestamp": "2025-09-18T01:25:06.33-04:00",
+        "content": "Something similar to a AP2820CMMTR-G1, just to get an idea"
+      },
+      {
+        "id": "1418114201762795612",
+        "author": "amame72omg",
+        "timestamp": "2025-09-18T01:59:32.988-04:00",
+        "content": "",
+        "reference": {
+          "messageId": "1418104654608470158",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1418114368260014081",
+        "author": "amame72omg",
+        "timestamp": "2025-09-18T02:00:12.684-04:00",
+        "content": "my camera is shite"
+      },
+      {
+        "id": "1418116014129938475",
+        "author": "amame72omg",
+        "timestamp": "2025-09-18T02:06:45.09-04:00",
+        "content": "I JUST GOT AN IDEA! I CAN JUST CHECK THE SCHEMATICS!  its from a  MSI stealth GS66",
+        "reference": {
+          "messageId": "1418104654608470158",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1418686193800843266",
+        "author": "sephir0th1984",
+        "timestamp": "2025-09-19T15:52:26.517-04:00",
+        "content": "For the CPU to turn on the RAM supply has to be present too.",
+        "reference": {
+          "messageId": "1418595183246708867",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1419216690004099112",
+        "author": "vanduc_gb",
+        "timestamp": "2025-09-21T03:00:26.668-04:00",
+        "content": "look like usb voltage supply ic",
+        "reference": {
+          "messageId": "1418013946253672479",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1419053360832839702",
+        "author": "s7_elektron",
+        "timestamp": "2025-09-20T16:11:25.959-04:00",
+        "content": "Hello everyone, I’m new here, greetings. I’m looking for the BIOS for my Terra (or Gigabyte) MCH37AI motherboard. This is an all-in-one PC. I just replaced the PCH because it had a short circuit. I didn’t know that the BIOS had also been damaged earlier. I can’t make anything out of the ME Analyzer; ultimately, I could only read the BIOS, and according to the ME Analyzer, it is either defective or locked.\n\nThe UEFI tool shows:\n\nFixed: Yes\n\nBase: 0h\n\nOffset: 0h\n\nFull size: 1000000h (16,777,216)\n\nFlash chips: 1\n\nRegions: 1\n\nMasters: 3\n\nPCH straps: 90\n\nPROC straps: 3"
+      },
+      {
+        "id": "1419053554340991136",
+        "author": "s7_elektron",
+        "timestamp": "2025-09-20T16:12:12.095-04:00",
+        "content": "Can someone help me in this case?"
+      },
+      {
+        "id": "1419592283116011542",
+        "author": "vibrantpickle13213",
+        "timestamp": "2025-09-22T03:52:55.044-04:00",
+        "content": "Get a bios flasher with a clip attachment, identify ypur bios chip model and use AI to find a compatible flshing setup. The bios file shouldnt be very hard to fins",
+        "reference": {
+          "messageId": "1419053360832839702",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1420860972947476610",
+        "author": "sicilianul",
+        "timestamp": "2025-09-25T15:54:14.271-04:00",
+        "content": "You can try with almost any H370 BIOS platform. Like this one https://www.gigabyte.com/de/Motherboard/H370-HD3-rev-10/support#dl",
+        "reference": {
+          "messageId": "1419053360832839702",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1420861827079995464",
+        "author": "sicilianul",
+        "timestamp": "2025-09-25T15:57:37.912-04:00",
+        "content": "When it's soldered on the board - put the multimeter on diode mode. Then put minus on the ground and plus on Gate . Compare with a good one and you will see.",
+        "reference": {
+          "messageId": "1420449648476291082",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1420347721205940234",
+        "author": "chrisis5300",
+        "timestamp": "2025-09-24T05:54:45.52-04:00",
+        "content": "Hi everyone,\n\nI've an issue with a laptop. It's a compaq presario cq62. The laptop turn on for one second then shutdown immediatly. \n\nI've checked the psu coils, all are fine. The thing which is funny is that clicking sound corresponds to the main power rail voltage constantly changing from 19v to 0v. \n\nDo you have an idea and what can be the issue ?\n\nThanks for your help"
+      },
+      {
+        "id": "1420359339469832255",
+        "author": "phoenix.yk",
+        "timestamp": "2025-09-24T06:40:55.53-04:00",
+        "content": "Could be a *partially* shorted MOSFET or power ic *(anything really)* on that rail. Forward to #💻laptops",
+        "reference": {
+          "messageId": "1420347721205940234",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1420449050955612261",
+        "author": "chrisis5300",
+        "timestamp": "2025-09-24T12:37:24.415-04:00",
+        "content": "It was exactly that, thanks for your help, it helped me a lot !\n\n\nHere's how I proceed : \nI took off the first MOSFET and then soldered one \"proper calibrated wire\" between the source and the drain. When I plugged the power, the laptop stopped clicking and the main power rail voltage stopped dropping and instead was constant 19v. \nI then replaced the MOSFET and rechecked and everything was ok !",
+        "reference": {
+          "messageId": "1420359339469832255",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1420449648476291082",
+        "author": "chrisis5300",
+        "timestamp": "2025-09-24T12:39:46.875-04:00",
+        "content": "I choosed arbitrarily one of the two MOSFET as I didn't have any clues on how to spot the faulty one. I got lucky.\n\nDo you know how to check for a partially shorted MOSFET ?"
+      },
+      {
+        "id": "1420453746713825381",
+        "author": "phoenix.yk",
+        "timestamp": "2025-09-24T12:56:03.971-04:00",
+        "content": "> *Do you know how to check for a partially shorted MOSFET ?*\nSome clue is when it heats up disproportionately, or you get a lower resistance *(diode test)* reading on the partially shorted one compared with the exact other.",
+        "reference": {
+          "messageId": "1420449050955612261",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1422983426914390168",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:28:06.73-04:00",
+        "content": "Possibly. You can check the hardware ID in the \"Details\" tab."
+      },
+      {
+        "id": "1422983709308747856",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:29:14.058-04:00",
+        "content": "",
+        "reference": {
+          "messageId": "1422983426914390168",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1422983841743769661",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:29:45.633-04:00",
+        "content": "It must be, all other devices are shown"
+      },
+      {
+        "id": "1422984113018769579",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:30:50.31-04:00",
+        "content": "That's apparently a \"TU102 USB Type-C UCSI Controller\", which is probably for the USB-C port on one of the GPUs."
+      },
+      {
+        "id": "1422984184133193834",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:31:07.265-04:00",
+        "content": "OH, the 2080ti"
+      },
+      {
+        "id": "1422984205100646480",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:31:12.264-04:00",
+        "content": "it has the usb-c"
+      },
+      {
+        "id": "1422984342916825179",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:31:45.122-04:00",
+        "content": "I feel so stuck"
+      },
+      {
+        "id": "1422984433874632714",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:32:06.808-04:00",
+        "content": "Yeah, most likely the 4090 is not being detected at all. I don't think it will function at all without the PCIe power connectors."
+      },
+      {
+        "id": "1422984543115415714",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:32:32.853-04:00",
+        "content": "If it wasn't obvious already, I'm not the most experienced with GPUs either. Though, I have a general idea and desire to learn."
+      },
+      {
+        "id": "1422984602527727747",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:32:47.018-04:00",
+        "content": "I just didn't connect the 12VHPWR"
+      },
+      {
+        "id": "1422984645682659458",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:32:57.307-04:00",
+        "content": "It is connected to the first pci-e 5.0 slot"
+      },
+      {
+        "id": "1422984766856237106",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:33:26.197-04:00",
+        "content": ""
+      },
+      {
+        "id": "1422985212446507028",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:35:12.434-04:00",
+        "content": "I don't think the card will be detected without the PCIe power connectors like I said."
+      },
+      {
+        "id": "1422985286677434569",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:35:30.132-04:00",
+        "content": "You may need a test bench/motherboard that allows you to use the iGPU to run MATS/MODS for more information on the specific fault."
+      },
+      {
+        "id": "1422986815547375909",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:41:34.643-04:00",
+        "content": "I couldn't flash the vbios so, rip"
+      },
+      {
+        "id": "1422987284575158385",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:43:26.468-04:00",
+        "content": "Well yeah, if the card isn't detected then of course not."
+      },
+      {
+        "id": "1422987304921862144",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:43:31.319-04:00",
+        "content": "I thought you meant the motherboard BIOS."
+      },
+      {
+        "id": "1422987557766959277",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:44:31.602-04:00",
+        "content": "Nono, If the VGA doesn't turn on and everything seems fine on the board, I don't have any other explanation. I should try every pin on the pci lanes"
+      },
+      {
+        "id": "1422987665686401056",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:44:57.332-04:00",
+        "content": "Well, if you want to keep checking things on the card, you should check voltages."
+      },
+      {
+        "id": "1422987754240737310",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-01T12:45:18.445-04:00",
+        "content": "You can also check the 3.3 V resistance on the PCIe pins."
+      },
+      {
+        "id": "1422987829071314966",
+        "author": "dhalon",
+        "timestamp": "2025-10-01T12:45:36.286-04:00",
+        "content": "Ok",
+        "reference": {
+          "messageId": "1422987754240737310",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1423677483777003600",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-03T10:26:02.781-04:00",
+        "content": "And then find out why it isn't detected. For example with the help of the video linked above."
+      },
+      {
+        "id": "1423698076757000365",
+        "author": "dhalon",
+        "timestamp": "2025-10-03T11:47:52.53-04:00",
+        "content": "I can't reach windows or any way to test it. So that my guess, I don't know how to test it, I'm learning all by myself, so I'm probably still too far from learning what I need, even if I would like to know anything related to. I guess I'm moving in the wrong way so",
+        "reference": {
+          "messageId": "1423675534596112505",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1423698372866478080",
+        "author": "dhalon",
+        "timestamp": "2025-10-03T11:49:03.128-04:00",
+        "content": "I created the usb test device, but I can't reach it, that's what softlock me to understand why the problem is beyond my comprehension",
+        "reference": {
+          "messageId": "1423677483777003600",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1423698724923768933",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-03T11:50:27.065-04:00",
+        "content": "tl;dr simply check whether all voltages are present to start with.",
+        "reference": {
+          "messageId": "1423698372866478080",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1423698852195864636",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-03T11:50:57.409-04:00",
+        "content": "And forget the \"usb test device\" for the moment. Whatever it is."
+      },
+      {
+        "id": "1423701674928771204",
+        "author": "dhalon",
+        "timestamp": "2025-10-03T12:02:10.401-04:00",
+        "content": "Is there a way to check the voltages safely? I'm scared to short something 🧐",
+        "reference": {
+          "messageId": "1423698724923768933",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1423702015279759443",
+        "author": "dhalon",
+        "timestamp": "2025-10-03T12:03:31.547-04:00",
+        "content": "I found a cooler for an old cpu that I can use with a riser with the gpu to make it work for a longer time",
+        "reference": {
+          "messageId": "1423698724923768933",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1423702235950481408",
+        "author": "dhalon",
+        "timestamp": "2025-10-03T12:04:24.159-04:00",
+        "content": "I will place it on the core, and with some courage i will try to check the voltages"
+      },
+      {
+        "id": "1423703892964802642",
+        "author": "dhalon",
+        "timestamp": "2025-10-03T12:10:59.222-04:00",
+        "content": "It is the one with YUMI and the iso for checking the gpu that is contained here:",
+        "reference": {
+          "messageId": "1423698852195864636",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1423704220917432441",
+        "author": "dhalon",
+        "timestamp": "2025-10-03T12:12:17.412-04:00",
+        "content": "https://drive.google.com/drive/folders/19LryTNhKsC_5MDtTAxZxQJgAPbjoUeLo here"
+      },
+      {
+        "id": "1423707593360019456",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-03T12:25:41.465-04:00",
+        "content": "Just don't try to probe anything small. Hook your black probe into a screw standoff or something else that is grounded and don't touch it. Then just check voltage on each inductor. Each side of each coil should have plenty of surface area to measure without blowing things up.",
+        "reference": {
+          "messageId": "1423701674928771204",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1423707841759285440",
+        "author": "dhalon",
+        "timestamp": "2025-10-03T12:26:40.688-04:00",
+        "content": "Is it safer on coils?",
+        "reference": {
+          "messageId": "1423707593360019456",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1423707877092360426",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-03T12:26:49.112-04:00",
+        "content": "Yes, where else would you measure?"
+      },
+      {
+        "id": "1423707984944566444",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-03T12:27:14.826-04:00",
+        "content": "A coil is placed at the output of every major switching power supply on the board. They are the easiest to see and probe."
+      },
+      {
+        "id": "1423708130126332017",
+        "author": "dhalon",
+        "timestamp": "2025-10-03T12:27:49.44-04:00",
+        "content": "Some resistors?",
+        "reference": {
+          "messageId": "1423707877092360426",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1423708277031829646",
+        "author": "dhalon",
+        "timestamp": "2025-10-03T12:28:24.465-04:00",
+        "content": "Does it matter in which side of the coil is being checked?",
+        "reference": {
+          "messageId": "1423707984944566444",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1423708500772786268",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-03T12:29:17.809-04:00",
+        "content": "Just do both sides and record which has the more stable and reasonable voltage, which should always be the load side. Though, with most multimeters, either side should work."
+      }
+    ],
+    [
+      {
+        "id": "1425432775993065513",
+        "author": "zuldan",
+        "timestamp": "2025-10-08T06:40:57.057-04:00",
+        "content": "So then inspected the board under a microscope and found this ESD Protection IC (U3U1) looking dodgy. I removed the IC but unfortunately I still get the \"USB Over Current Status Detected\" message."
+      },
+      {
+        "id": "1425432824009330770",
+        "author": "zuldan",
+        "timestamp": "2025-10-08T06:41:08.505-04:00",
+        "content": "I checked the voltages on the USB ports and ESD Protection IC's are they all report 5v"
+      },
+      {
+        "id": "1425432886462382090",
+        "author": "zuldan",
+        "timestamp": "2025-10-08T06:41:23.395-04:00",
+        "content": "I also checked the relavent Fuses and Resistors and they appear to be fine as well"
+      },
+      {
+        "id": "1425432932444672142",
+        "author": "zuldan",
+        "timestamp": "2025-10-08T06:41:34.358-04:00",
+        "content": "Going by Google it looks like this is a common problem, I'm just not sure what the next step is in the diagnosis. Some people say reflashing the BIOS can resolve the problem sometimes but that seems a bit odd. Any hints / tips would be greatly appreciated. FYI, I have an identical, same revision 100% working motherboard sitting next to this one I can use for comparison."
+      },
+      {
+        "id": "1425437339131580437",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-08T06:59:04.994-04:00",
+        "content": "You need to look deeper into that",
+        "reference": {
+          "messageId": "1425432775993065513",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1425437444525785088",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-08T06:59:30.122-04:00",
+        "content": "At O3U3 for example, the Pin called U_USBOC#23"
+      },
+      {
+        "id": "1425438023281147904",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-08T07:01:48.108-04:00",
+        "content": "None of the OC Pins at this and other Switches related to USB should show 0V"
+      },
+      {
+        "id": "1425438389280182323",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-08T07:03:15.369-04:00",
+        "content": "It's not about the voltage not reaching the Ports but about OC detected at one of these switches, or in worst case \"just\" the Chipset being in this failure mode permantenly (for whatever reason)"
+      },
+      {
+        "id": "1425438837126987807",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-08T07:05:02.144-04:00",
+        "content": "For sanity data pairs of each port should be checked in diode mode (red probe to GND)"
+      },
+      {
+        "id": "1425438913211662366",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-08T07:05:20.284-04:00",
+        "content": "And of course visual inspection of the ports themselves"
+      },
+      {
+        "id": "1425439582358470717",
+        "author": "zuldan",
+        "timestamp": "2025-10-08T07:07:59.821-04:00",
+        "content": "Mike thanks so much for the response. Will check all of this tomorrow and report back 🙌"
+      }
+    ],
+    [
+      {
+        "id": "1425438389280182323",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-08T07:03:15.369-04:00",
+        "content": "It's not about the voltage not reaching the Ports but about OC detected at one of these switches, or in worst case \"just\" the Chipset being in this failure mode permantenly (for whatever reason)"
+      },
+      {
+        "id": "1425438837126987807",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-08T07:05:02.144-04:00",
+        "content": "For sanity data pairs of each port should be checked in diode mode (red probe to GND)"
+      },
+      {
+        "id": "1425438913211662366",
+        "author": "sephir0th1984",
+        "timestamp": "2025-10-08T07:05:20.284-04:00",
+        "content": "And of course visual inspection of the ports themselves"
+      }
+    ],
+    [
+      {
+        "id": "1427411710788239493",
+        "author": "dhalon",
+        "timestamp": "2025-10-13T17:44:31.879-04:00",
+        "content": "@CodeConnoisseur i had the time to check the MANLI 4090 24GB CYBERTANK voltages. Pex passes from 0.9 to 0V"
+      },
+      {
+        "id": "1427411970059014235",
+        "author": "dhalon",
+        "timestamp": "2025-10-13T17:45:33.694-04:00",
+        "content": "Pex turns off when something is being showed on screen (before post)"
+      },
+      {
+        "id": "1427412846165364837",
+        "author": "dhalon",
+        "timestamp": "2025-10-13T17:49:02.574-04:00",
+        "content": "Sorry, voltages were wrong, fixed with blue colour"
+      },
+      {
+        "id": "1427414690878717982",
+        "author": "dhalon",
+        "timestamp": "2025-10-13T17:56:22.388-04:00",
+        "content": ""
+      },
+      {
+        "id": "1427414889198125230",
+        "author": "dhalon",
+        "timestamp": "2025-10-13T17:57:09.671-04:00",
+        "content": "I found the problem? Seems relatable or not? 🤓"
+      }
+    ],
+    [
+      {
+        "id": "1429176961351159870",
+        "author": "raywulf2717",
+        "timestamp": "2025-10-18T14:39:00.41-04:00",
+        "content": "NCP303150 gets super hot when power is plugged into MB. Not good?"
+      },
+      {
+        "id": "1429177093333455020",
+        "author": "raywulf2717",
+        "timestamp": "2025-10-18T14:39:31.877-04:00",
+        "content": "I assume something is wrong since the other two exact chips next to it are cooler, much cooler."
+      },
+      {
+        "id": "1429177276330934354",
+        "author": "raywulf2717",
+        "timestamp": "2025-10-18T14:40:15.507-04:00",
+        "content": "Not to mention the coil below it as well"
+      },
+      {
+        "id": "1429197517068963920",
+        "author": "nexkg_28147",
+        "timestamp": "2025-10-18T16:00:41.275-04:00",
+        "content": "Main power rail is probably shorted through that ic with cpu/gpu(what do you have there). What device is this about?",
+        "reference": {
+          "messageId": "1429176961351159870",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1429197985371389972",
+        "author": "raywulf2717",
+        "timestamp": "2025-10-18T16:02:32.927-04:00",
+        "content": "GPU, there's definitely a short. I'm working on it now",
+        "reference": {
+          "messageId": "1429197517068963920",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1429198096188838000",
+        "author": "raywulf2717",
+        "timestamp": "2025-10-18T16:02:59.348-04:00",
+        "content": "This is for a Lenovo Legion 5017ACH6 type 82k0",
+        "reference": {
+          "messageId": "1429197517068963920",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1429198187566207149",
+        "author": "raywulf2717",
+        "timestamp": "2025-10-18T16:03:21.134-04:00",
+        "content": "5-17ACH6*"
+      },
+      {
+        "id": "1429198209837830358",
+        "author": "nexkg_28147",
+        "timestamp": "2025-10-18T16:03:26.444-04:00",
+        "content": "Stop powering it up, you are pushing high voltage to your gpu. But I suppose it is already fried."
+      },
+      {
+        "id": "1429198326326100019",
+        "author": "raywulf2717",
+        "timestamp": "2025-10-18T16:03:54.217-04:00",
+        "content": "Yeah, it's already fried anyway... Sadly"
+      },
+      {
+        "id": "1429199326017622188",
+        "author": "raywulf2717",
+        "timestamp": "2025-10-18T16:07:52.562-04:00",
+        "content": "I'm not THAT worried about it, this is one of my personal laptops, was looking at it to see what was wrong on my extra time."
+      }
+    ],
+    [
+      {
+        "id": "1429473566709252116",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-19T10:17:36.638-04:00",
+        "content": "What is going to protection? The PSU?"
+      },
+      {
+        "id": "1429473967269351568",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-19T10:19:12.139-04:00",
+        "content": "I think this is more likely an issue with the PSU than your home circuit. You can plug in a device that takes over 4 A to confirm this."
+      },
+      {
+        "id": "1429474900204191825",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-19T10:22:54.568-04:00",
+        "content": "Two others? Three total? One is working?",
+        "reference": {
+          "messageId": "1429474211818111048",
+          "channelId": "499238475690672154",
+          "guildId": "448464581677809676"
+        }
+      },
+      {
+        "id": "1429475606361542818",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-19T10:25:42.929-04:00",
+        "content": "So one is working and one that you worked on isn’t?"
+      },
+      {
+        "id": "1429475631225372894",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-19T10:25:48.857-04:00",
+        "content": "Still seems like a PSU issue."
+      },
+      {
+        "id": "1429475808040190054",
+        "author": "codeconnoisseur",
+        "timestamp": "2025-10-19T10:26:31.013-04:00",
+        "content": "Or do you mean that the “working” one also has the same issue at 4 A draw?"
+      }
+    ]
+  ]
+}

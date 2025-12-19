@@ -1,0 +1,4084 @@
+{
+  "guild": {
+    "id": "820414977231814696",
+    "name": "Cut Freedom",
+    "iconUrl": "https://cdn.discordapp.com/icons/820414977231814696/51eac9b4c73fe67001c6b63c2814d882.png?size=512"
+  },
+  "channel": {
+    "id": "820487358780538920",
+    "type": "GuildTextChat",
+    "categoryId": "820414977231814697",
+    "category": "Specifics",
+    "name": "software-info",
+    "topic": null
+  },
+  "dateRange": {
+    "after": "2025-01-01T00:00:00-05:00",
+    "before": null
+  },
+  "exportedAt": "2025-10-22T14:04:17.8724857-04:00",
+  "messages": [
+    {
+      "id": "1325525347839774751",
+      "type": "Default",
+      "timestamp": "2025-01-05T13:04:29.995-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@AndrewA  hi Andrew any chance of a possible share for this. Thanks",
+      "author": {
+        "id": "1064262904658006027",
+        "name": "maduser3662",
+        "discriminator": "0000",
+        "nickname": "maduser",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/1.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1332756645121495150",
+      "type": "Default",
+      "timestamp": "2025-01-25T11:59:05.618-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "hey @AndrewA , I appreciate the scripts, is there any documentation you can share on your mitm? is the communication flow just app -> circut servers —> printer and you’re using wireshark or something similar, + finding endpoints through the electron codebase?",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1332756920448188559",
+      "type": "Reply",
+      "timestamp": "2025-01-25T12:00:11.261-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I use another worker on CF to MITM",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "259729239216095234",
+          "name": "gsp",
+          "discriminator": "0000",
+          "nickname": "gsp",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1332756645121495150",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1332757220081012748",
+      "type": "Default",
+      "timestamp": "2025-01-25T12:01:22.699-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ty, yep, I see how it's working, just curious about your process if you don't mind sharing. I'm going to be getting one of these soon and might want to do my digging",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1332757619806310481",
+      "type": "Default",
+      "timestamp": "2025-01-25T12:02:58.001-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I'm curious which endpoints are those that need `machineTypeId` and if a proxy is necessary. I'm guessing they're for more than just auth, hence the proxy",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1332759902048751716",
+      "type": "Default",
+      "timestamp": "2025-01-25T12:12:02.13-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "So the endpoint we respond for is the one that tells design space if a machine is deactived. Other then that it's just a pass through.",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1332760783171620894",
+      "type": "Default",
+      "timestamp": "2025-01-25T12:15:32.206-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ah, okay, perfect. so the deactivate check is more or less just one external request from the electron app, if that's good, then the app client just trusts everything is good thereafter?",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1332760969100660777",
+      "type": "Default",
+      "timestamp": "2025-01-25T12:16:16.535-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "or does it grab some sort of token or something",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1332762506107813928",
+      "type": "Default",
+      "timestamp": "2025-01-25T12:22:22.986-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I should probably do a little bit more digging before asking more quests lol, I'm somewhat interested in if I can capture `certificate-error` [events](https://www.electronjs.org/docs/latest/api/app#event-certificate-error) for the specific endpoint after the asar unpacking, tossing the error, and then not have to spin up a worker. I'm not terribly concerned about mitms against me here",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "app | Electron",
+          "url": "https://www.electronjs.org/docs/latest/api/app",
+          "timestamp": null,
+          "description": "Control your application's event lifecycle.",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1332763422579888130",
+      "type": "Default",
+      "timestamp": "2025-01-25T12:26:01.49-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "or even better, if there really is a naive approach that they are taking, not needing a webserver at all and just dropping in mock data straight in the unpackaged app",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1332773047932944496",
+      "type": "Default",
+      "timestamp": "2025-01-25T13:04:16.353-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I have been trying DLL injection",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1333921796201910342",
+      "type": "Default",
+      "timestamp": "2025-01-28T17:08:59.283-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I would have thought that it's easier to and less infringy (is that a word?) to block a request or fake a request for a machine ID?",
+      "author": {
+        "id": "672327409822990337",
+        "name": "gigovx",
+        "discriminator": "0000",
+        "nickname": "GiGo",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/672327409822990337/0b58832b83a4714d1442d533500fba4b.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1333968030279012514",
+      "type": "Reply",
+      "timestamp": "2025-01-28T20:12:42.346-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Either way that takes a MITM still. \n\nUnless you can spoof the serial to the software from the machine",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "672327409822990337",
+          "name": "gigovx",
+          "discriminator": "0000",
+          "nickname": "GiGo",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/672327409822990337/0b58832b83a4714d1442d533500fba4b.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1333921796201910342",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1333968109173870662",
+      "type": "Default",
+      "timestamp": "2025-01-28T20:13:01.156-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "You can just disconnect DS from the Internet and it will let you cut a design",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1334957042095620106",
+      "type": "Default",
+      "timestamp": "2025-01-31T13:42:41.138-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Has anyone had luck connecting to their cricut at all via a 3rd party app? I can see in a binary I have decompiled a SetSerial function and I want to try executing it manually",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1342437443621883955",
+      "type": "Reply",
+      "timestamp": "2025-02-21T05:07:07.841-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "slicebug works, but only on a Mac, I've never been able to figure out why it doesn't on Windows",
+      "author": {
+        "id": "449200822400581632",
+        "name": "thirda",
+        "discriminator": "0000",
+        "nickname": "thirda",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          },
+          {
+            "id": "821457644354535425",
+            "name": "Software Fuckery",
+            "color": null,
+            "position": 10
+          },
+          {
+            "id": "821457676343967774",
+            "name": "Willing to beta test stuff",
+            "color": null,
+            "position": 9
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/449200822400581632/dc7732747809b5967aab1f5b5174017d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1334957042095620106",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348086868285329488",
+      "type": "Default",
+      "timestamp": "2025-03-08T19:15:55.642-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "??? in the main.js",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1348086868071284746",
+          "url": "https://cdn.discordapp.com/attachments/820487358780538920/1348086868071284746/image.png?ex=68fa1c7b&is=68f8cafb&hm=4d5243ea5e3d59ed161b5cff318b12399d1c092a1b1fbf69da39ac7c3eb0ce48&",
+          "fileName": "image.png",
+          "fileSizeBytes": 6502
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE06",
+            "code": "laughing",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f606.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "221462689849802752",
+              "name": "insert._.coin",
+              "discriminator": "0000",
+              "nickname": "⸘Insert Coin‽",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/221462689849802752/dede67e38e4081194e401f15cad133e8.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348090532836147321",
+      "type": "Default",
+      "timestamp": "2025-03-08T19:30:29.339-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "long shot, does anyone have a copy of the design space pc client code prior to the more aggressive obfuscation introduced around early 2021? (assuming this isn't against the rules to ask for)",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348106804093124701",
+      "type": "Default",
+      "timestamp": "2025-03-08T20:35:08.709-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@AndrewA I got your script working without the need to stand up a cloudflare worker remotely",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348106846732423242",
+      "type": "Default",
+      "timestamp": "2025-03-08T20:35:18.875-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "or rather, just broadly not requiring a good cert",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348107274207625256",
+      "type": "Reply",
+      "timestamp": "2025-03-08T20:37:00.793-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Aha nice I used a worker for simplicity",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "259729239216095234",
+          "name": "gsp",
+          "discriminator": "0000",
+          "nickname": "gsp",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1348106804093124701",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348107549139927052",
+      "type": "Default",
+      "timestamp": "2025-03-08T20:38:06.342-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "it's not clean, but I was able to find where the code was doing the electron import, then configured a custom cert error callback",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1348107548988805260",
+          "url": "https://cdn.discordapp.com/attachments/820487358780538920/1348107548988805260/image.png?ex=68fa2fbe&is=68f8de3e&hm=2fd16dbb93bf5adf1f5f1e077b2f5857fd079413843a6406b828ae3428fc916a&",
+          "fileName": "image.png",
+          "fileSizeBytes": 81913
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348107655142441020",
+      "type": "Default",
+      "timestamp": "2025-03-08T20:38:31.615-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "so with this `wrangler` can be used directly with your script, otherwise any other http server",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348107964543795314",
+      "type": "Default",
+      "timestamp": "2025-03-08T20:39:45.382-05:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "the real goal here I think would be to inline the request interception so no need for the external mitm... which might not be too hard",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348306944301207618",
+      "type": "Default",
+      "timestamp": "2025-03-09T10:50:25.853-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Yellow, everyone ! \nI've been using @AndrewA script for a while, but I was wondering if there was an alternative to use with iPad and Bluetooth. Is it still a no no?",
+      "author": {
+        "id": "224555077199724555",
+        "name": "kindertheegg",
+        "discriminator": "0000",
+        "nickname": "KinderEgg",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          },
+          {
+            "id": "821457676343967774",
+            "name": "Willing to beta test stuff",
+            "color": null,
+            "position": 9
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/224555077199724555/0cb2d7ce2ffa5f6f4690192633088b36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348311443455348747",
+      "type": "Reply",
+      "timestamp": "2025-03-09T11:08:18.535-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I have been able to get it on Android to work but not IOS",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "224555077199724555",
+          "name": "kindertheegg",
+          "discriminator": "0000",
+          "nickname": "KinderEgg",
+          "color": null,
+          "isBot": false,
+          "roles": [
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            },
+            {
+              "id": "821457676343967774",
+              "name": "Willing to beta test stuff",
+              "color": null,
+              "position": 9
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/224555077199724555/0cb2d7ce2ffa5f6f4690192633088b36.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1348306944301207618",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348410771989856378",
+      "type": "Default",
+      "timestamp": "2025-03-09T17:43:00.303-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I believe I have a working no server/external deps version of andrew's mod, is anyone willing to give it a proper test before I publish it (at their own risk)?",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348412538450350181",
+      "type": "Default",
+      "timestamp": "2025-03-09T17:50:01.46-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I don't have the materials to actually do an e2e print, but I think it's working",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348678447219605504",
+      "type": "Reply",
+      "timestamp": "2025-03-10T11:26:39.051-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "If you can make it past the \"Make it\" button and the device connects asking for the Material then it works \uD83D\uDE42",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "259729239216095234",
+          "name": "gsp",
+          "discriminator": "0000",
+          "nickname": "gsp",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1348412538450350181",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE42",
+          "code": "slight_smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f642.svg"
+        }
+      ]
+    },
+    {
+      "id": "1348678573032214621",
+      "type": "Reply",
+      "timestamp": "2025-03-10T11:27:09.047-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "However this doesnt help for when using apple as you cant redirect the host",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "259729239216095234",
+          "name": "gsp",
+          "discriminator": "0000",
+          "nickname": "gsp",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1348410771989856378",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348678636995219557",
+      "type": "Default",
+      "timestamp": "2025-03-10T11:27:24.297-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I have a modded APK to let me do it on Android",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1348908457092452352",
+      "type": "Default",
+      "timestamp": "2025-03-11T02:40:37.678-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Charles web proxy with self signed CA cert can be imported into ios, needs additional confirmation but can be done, then most traffic is readable by Charles and can be redirected.",
+      "author": {
+        "id": "192730450077286401",
+        "name": "xtremegamer007",
+        "discriminator": "0000",
+        "nickname": "xtremegamer™",
+        "color": "#842BD7",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "820855181196525588",
+            "name": "admin",
+            "color": "#842BD7",
+            "position": 18
+          },
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457604324622396",
+            "name": "Hardware Fuckery",
+            "color": null,
+            "position": 11
+          },
+          {
+            "id": "821457644354535425",
+            "name": "Software Fuckery",
+            "color": null,
+            "position": 10
+          },
+          {
+            "id": "821457724322742283",
+            "name": "Taking Apart Machines",
+            "color": null,
+            "position": 8
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/192730450077286401/b6509e228bc0c0140f4ac9a780ef259d.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1349032173348589680",
+      "type": "Reply",
+      "timestamp": "2025-03-11T10:52:13.932-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Huh I thought apple apps didnt trust custom CAs but I guess it has to for things like Cloudflare Warm",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "192730450077286401",
+          "name": "xtremegamer007",
+          "discriminator": "0000",
+          "nickname": "xtremegamer™",
+          "color": "#842BD7",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "820855181196525588",
+              "name": "admin",
+              "color": "#842BD7",
+              "position": 18
+            },
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457604324622396",
+              "name": "Hardware Fuckery",
+              "color": null,
+              "position": 11
+            },
+            {
+              "id": "821457644354535425",
+              "name": "Software Fuckery",
+              "color": null,
+              "position": 10
+            },
+            {
+              "id": "821457724322742283",
+              "name": "Taking Apart Machines",
+              "color": null,
+              "position": 8
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/192730450077286401/b6509e228bc0c0140f4ac9a780ef259d.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1348908457092452352",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1349058419872497736",
+      "type": "Reply",
+      "timestamp": "2025-03-11T12:36:31.591-04:00",
+      "timestampEdited": "2025-03-11T15:58:10.645-04:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "thank you, this is the assumption I was making, but couldn't know for sure without a full cut",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1348678447219605504",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1349058594536030230",
+      "type": "Default",
+      "timestamp": "2025-03-11T12:37:13.234-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "anyway here's the new gist:\n\nhttps://gist.github.com/ATMarcks/e69f639d9b3c73ae76514e7d5aca4ddb\n\nlet me know if anyone has any issues with it",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Cricut V2.md",
+          "url": "https://gist.github.com/ATMarcks/e69f639d9b3c73ae76514e7d5aca4ddb",
+          "timestamp": null,
+          "description": "GitHub Gist: instantly share code, notes, and snippets.",
+          "color": "#1E2327",
+          "thumbnail": {
+            "url": "https://images-ext-1.discordapp.net/external/7lesHV5TJfXV9rDct_prZ0T8dzM8AdALoVfer2-rnhs/https/github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png",
+            "width": 1280,
+            "height": 640
+          },
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1349059670773338112",
+      "type": "Default",
+      "timestamp": "2025-03-11T12:41:29.829-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I haven't investigated this at all, BUT if the devs are defining an electron protocol for communication with the printer and/or bifrost (however it works) there might be more potential with this approach beyond just https interception. I didn't see any documented function for listing defined protocols, so I didn't bother digging deeper, but I'm sure it can be checked relatively easily",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1349060585605824556",
+      "type": "Default",
+      "timestamp": "2025-03-11T12:45:07.942-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "be careful if you're modifying the script, remove `bypassCustomProtocolHandlers: true` and you'll get stuck in a loop of sending out infinite requests",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1356440377263128729",
+      "type": "Default",
+      "timestamp": "2025-03-31T21:29:47.383-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@gsp @AndrewA Hey just an FYI. I just tried using both of your bypass methods and was having trouble. Turns out my machineTypeId is 11, which isn't in the myArray array. Once I added it, it worked",
+      "author": {
+        "id": "305802712644059137",
+        "name": "akudaikon",
+        "discriminator": "0000",
+        "nickname": "akudaikon",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/305802712644059137/8a5d3601f15f3f516d02bf37de6023e1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        },
+        {
+          "id": "259729239216095234",
+          "name": "gsp",
+          "discriminator": "0000",
+          "nickname": "gsp",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1356441836713021521",
+      "type": "Reply",
+      "timestamp": "2025-03-31T21:35:35.343-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Somewhere in the cricut app it had a JSON that had all of them",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "305802712644059137",
+          "name": "akudaikon",
+          "discriminator": "0000",
+          "nickname": "akudaikon",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/305802712644059137/8a5d3601f15f3f516d02bf37de6023e1.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1356440377263128729",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1356443093175369928",
+      "type": "Default",
+      "timestamp": "2025-03-31T21:40:34.907-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "If you don't want to have to modify the app.asar using your cloudflare worker method and you're running something like adguard, you can just tell adguard to do a dns rewrite of apis.cricut.com to your worker url",
+      "author": {
+        "id": "305802712644059137",
+        "name": "akudaikon",
+        "discriminator": "0000",
+        "nickname": "akudaikon",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/305802712644059137/8a5d3601f15f3f516d02bf37de6023e1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1356446306587119636",
+      "type": "Reply",
+      "timestamp": "2025-03-31T21:53:21.044-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://pyrope-apis.cricut.com/machine/v1/MachineFamilies",
+      "author": {
+        "id": "305802712644059137",
+        "name": "akudaikon",
+        "discriminator": "0000",
+        "nickname": "akudaikon",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/305802712644059137/8a5d3601f15f3f516d02bf37de6023e1.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1356441836713021521",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1356449866318086269",
+      "type": "Reply",
+      "timestamp": "2025-03-31T22:07:29.75-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Aha nice",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "305802712644059137",
+          "name": "akudaikon",
+          "discriminator": "0000",
+          "nickname": "akudaikon",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/305802712644059137/8a5d3601f15f3f516d02bf37de6023e1.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1356443093175369928",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1356449902061948958",
+      "type": "Default",
+      "timestamp": "2025-03-31T22:07:38.272-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "My version of the worker also disables updates",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1358554497701646376",
+      "type": "Default",
+      "timestamp": "2025-04-06T17:30:32.974-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "not sure if anyone would find this useful to them, but in my efforts of reversing the live app I managed to get devtools loaded by putting this at the top of cricut-ele-design-space/main.js:\n```js\nconst { app } = require('electron');\n\napp.on('web-contents-created', (event, contents) => {\n    contents.once('did-finish-load', () => {\n        contents.openDevTools({ mode: 'detach' });\n    });\n});\n```",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDD25",
+            "code": "fire",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f525.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "186799462914588673",
+              "name": "_andrew_a",
+              "discriminator": "0000",
+              "nickname": "AndrewA",
+              "color": "#1ABC9C",
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+            },
+            {
+              "id": "221462689849802752",
+              "name": "insert._.coin",
+              "discriminator": "0000",
+              "nickname": "⸘Insert Coin‽",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/221462689849802752/dede67e38e4081194e401f15cad133e8.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1358773440085229690",
+      "type": "Reply",
+      "timestamp": "2025-04-07T08:00:32.906-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "with this you could likely actually block the request for activation",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "140846282905354240",
+          "name": "unverified",
+          "discriminator": "0000",
+          "nickname": "Unverified",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1358554497701646376",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1358918570960093355",
+      "type": "Default",
+      "timestamp": "2025-04-07T17:37:14.803-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I'm pretty new to cricut's software here but I don't think the activation request could be cut with just devtools sadly",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1358918789915476209",
+      "type": "Default",
+      "timestamp": "2025-04-07T17:38:07.006-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "given the amount of obfuscation and the fact it uses usb/bluetooth makes me think it might be an outside exe registering the device",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1358919075484537013",
+      "type": "Default",
+      "timestamp": "2025-04-07T17:39:15.091-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I'm still debating on trying to make a client mod for people to create plugins to do whatever they'd like with the software (like vencord for discord) but I'm still questioning the legality of it",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1358919138960998440",
+      "type": "Default",
+      "timestamp": "2025-04-07T17:39:30.225-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "id hate to put the work in for an immediate takedown",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359672161232490516",
+      "type": "Reply",
+      "timestamp": "2025-04-09T19:31:44.725-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "It can be.",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "140846282905354240",
+          "name": "unverified",
+          "discriminator": "0000",
+          "nickname": "Unverified",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1358918570960093355",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359672270607618170",
+      "type": "Default",
+      "timestamp": "2025-04-09T19:32:10.802-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "It it can be bypassed just by turning off your internet too",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359682893764624436",
+      "type": "Reply",
+      "timestamp": "2025-04-09T20:14:23.56-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "is there a way to list registered electron protocols? I’d start there. I did it with https calls in my workerless andrew script, didn’t bother to see if any other protocols were registered",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "140846282905354240",
+          "name": "unverified",
+          "discriminator": "0000",
+          "nickname": "Unverified",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1358918570960093355",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359682969660293251",
+      "type": "Default",
+      "timestamp": "2025-04-09T20:14:41.655-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I didn’t see any docs for listing them and just gave up there lol",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359683178104619008",
+      "type": "Default",
+      "timestamp": "2025-04-09T20:15:31.352-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://www.electronjs.org/docs/latest/api/protocol",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "protocol | Electron",
+          "url": "https://www.electronjs.org/docs/latest/api/protocol",
+          "timestamp": null,
+          "description": "Register a custom protocol and intercept existing protocol requests.",
+          "images": [],
+          "fields": [],
+          "inlineEmojis": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359683205757665400",
+      "type": "Default",
+      "timestamp": "2025-04-09T20:15:37.945-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "actually I think I found something that might deal with it in their webpacks",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1359683205443354694",
+          "url": "https://cdn.discordapp.com/attachments/820487358780538920/1359683205443354694/image.png?ex=68fa1c69&is=68f8cae9&hm=6f702a1e3aeb1d3fbaa9266f2f7c3c2bb2b0bac48073e5b8737db69028b712bb&",
+          "fileName": "image.png",
+          "fileSizeBytes": 17796
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359683261059563593",
+      "type": "Default",
+      "timestamp": "2025-04-09T20:15:51.13-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "they just have the functions you can call if you wish",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359683429666521232",
+      "type": "Default",
+      "timestamp": "2025-04-09T20:16:31.329-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "so you prob dont even need to check for any custom protocols, patching these functions might give you what you need",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359683442656280800",
+      "type": "Default",
+      "timestamp": "2025-04-09T20:16:34.426-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "they have a lot of them",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359683636613353683",
+      "type": "Default",
+      "timestamp": "2025-04-09T20:17:20.669-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "ah okay yeah, that’s probably a higher-level approach",
+      "author": {
+        "id": "259729239216095234",
+        "name": "gsp",
+        "discriminator": "0000",
+        "nickname": "gsp",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/259729239216095234/6a052570ceb5898891c8b146c59cae36.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359683966637965433",
+      "type": "Default",
+      "timestamp": "2025-04-09T20:18:39.353-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "yeah, but im only focused on working on custom plugins for design space so im not too worried about going more in depth atm",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1359684000981061815",
+      "type": "Default",
+      "timestamp": "2025-04-09T20:18:47.541-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "im just working on the PoC",
+      "author": {
+        "id": "140846282905354240",
+        "name": "unverified",
+        "discriminator": "0000",
+        "nickname": "Unverified",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/140846282905354240/3af3781576466e606988f5a54d5ae6ed.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1386012539774697524",
+      "type": "Default",
+      "timestamp": "2025-06-21T11:59:00.35-04:00",
+      "timestampEdited": "2025-06-22T01:00:04.651-04:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hello,\n\nI tried both methods but none of them seems working, am I the only one in this case ?",
+      "author": {
+        "id": "838114708128399390",
+        "name": "neonox31",
+        "discriminator": "0000",
+        "nickname": "Neonox31",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1386738021650665482",
+      "type": "Reply",
+      "timestamp": "2025-06-23T12:01:48.708-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "What do you mean sorry",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "838114708128399390",
+          "name": "neonox31",
+          "discriminator": "0000",
+          "nickname": "Neonox31",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1386012539774697524",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1386744374804611235",
+      "type": "Reply",
+      "timestamp": "2025-06-23T12:27:03.418-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Sorry, I deployed my cloudflare worker and changed endpoints using `asar` but the software seems not activated when I launch it.\nAm I missed something ?",
+      "author": {
+        "id": "838114708128399390",
+        "name": "neonox31",
+        "discriminator": "0000",
+        "nickname": "Neonox31",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1386738021650665482",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1386748746900963511",
+      "type": "Reply",
+      "timestamp": "2025-06-23T12:44:25.807-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "That should do it. When you check the workers logs are you seing it be invoked?",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "838114708128399390",
+          "name": "neonox31",
+          "discriminator": "0000",
+          "nickname": "Neonox31",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1386744374804611235",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1386755785345728532",
+      "type": "Reply",
+      "timestamp": "2025-06-23T13:12:23.903-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Yes, I can see requests incomming",
+      "author": {
+        "id": "838114708128399390",
+        "name": "neonox31",
+        "discriminator": "0000",
+        "nickname": "Neonox31",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1386748746900963511",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1386755800399085699",
+      "type": "Default",
+      "timestamp": "2025-06-23T13:12:27.492-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "838114708128399390",
+        "name": "neonox31",
+        "discriminator": "0000",
+        "nickname": "Neonox31",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1386755800160276530",
+          "url": "https://cdn.discordapp.com/attachments/820487358780538920/1386755800160276530/image.png?ex=68fa61fb&is=68f9107b&hm=b08dd0c4309fbab439baf1fff718e400f32b0774d872b5e48291dea2533abe2c&",
+          "fileName": "image.png",
+          "fileSizeBytes": 176406
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1386756040305016842",
+      "type": "Default",
+      "timestamp": "2025-06-23T13:13:24.69-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "What Cricut is it?",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1386756066221621509",
+      "type": "Default",
+      "timestamp": "2025-06-23T13:13:30.869-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "and what errors are you getting",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1388626505315389451",
+      "type": "Default",
+      "timestamp": "2025-06-28T17:05:58.3-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "so... I am trying to use the workers method, but i get stuck on the detection step...",
+      "author": {
+        "id": "254092739547889666",
+        "name": "leyed0",
+        "discriminator": "0000",
+        "nickname": "Leyed",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1388626637788020838",
+      "type": "Default",
+      "timestamp": "2025-06-28T17:06:29.884-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Any help?",
+      "author": {
+        "id": "254092739547889666",
+        "name": "leyed0",
+        "discriminator": "0000",
+        "nickname": "Leyed",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1388626649314230354",
+      "type": "Default",
+      "timestamp": "2025-06-28T17:06:32.632-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "actually. Booth methods gives same problem",
+      "author": {
+        "id": "254092739547889666",
+        "name": "leyed0",
+        "discriminator": "0000",
+        "nickname": "Leyed",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1389033947140329473",
+      "type": "Default",
+      "timestamp": "2025-06-29T20:05:00.001-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@Leyed screenshot please",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "254092739547889666",
+          "name": "leyed0",
+          "discriminator": "0000",
+          "nickname": "Leyed",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1389752814896680992",
+      "type": "Default",
+      "timestamp": "2025-07-01T19:41:31.43-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Fixed! \n\n  var myArray = {'14': \"Scamander\", '15': \"Voldemort\", '11': \"Maker\"};",
+      "author": {
+        "id": "254092739547889666",
+        "name": "leyed0",
+        "discriminator": "0000",
+        "nickname": "Leyed",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1389752893716037713",
+      "type": "Default",
+      "timestamp": "2025-07-01T19:41:50.222-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I think this line should be fixed in the git repo just in case",
+      "author": {
+        "id": "254092739547889666",
+        "name": "leyed0",
+        "discriminator": "0000",
+        "nickname": "Leyed",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1389752937621749881",
+      "type": "Default",
+      "timestamp": "2025-07-01T19:42:00.69-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "11 maker is not in the repos lists",
+      "author": {
+        "id": "254092739547889666",
+        "name": "leyed0",
+        "discriminator": "0000",
+        "nickname": "Leyed",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1390243771421032508",
+      "type": "Default",
+      "timestamp": "2025-07-03T04:12:24.587-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Aha yea!",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392788014542884916",
+      "type": "Default",
+      "timestamp": "2025-07-10T04:42:19.417-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1392788014014398504",
+          "url": "https://cdn.discordapp.com/attachments/820487358780538920/1392788014014398504/image.png?ex=68f9ea6b&is=68f898eb&hm=d7844f1eda101df66f2a759c1eda835ca877b1f179f7f04999939042458e1cd5&",
+          "fileName": "image.png",
+          "fileSizeBytes": 63910
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83E\uDD23",
+            "code": "rofl",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f923.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "447455865054822401",
+              "name": "rockman18",
+              "discriminator": "0000",
+              "nickname": "Rockman18",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/447455865054822401/9df89256f44925a5a683a619ebea88e8.png?size=512"
+            },
+            {
+              "id": "838114708128399390",
+              "name": "neonox31",
+              "discriminator": "0000",
+              "nickname": "Neonox31",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392788030754132028",
+      "type": "Default",
+      "timestamp": "2025-07-10T04:42:23.282-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "That billing seems wrong",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392792716701601832",
+      "type": "Default",
+      "timestamp": "2025-07-10T05:01:00.499-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1392792716437622906",
+          "url": "https://cdn.discordapp.com/attachments/820487358780538920/1392792716437622906/image.png?ex=68f9eecc&is=68f89d4c&hm=ee186b84a67f9fd8adc6e865b2c02ff93f980f134b1100b5a8be455b38e4f627&",
+          "fileName": "image.png",
+          "fileSizeBytes": 64359
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE06",
+            "code": "laughing",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f606.svg"
+          },
+          "count": 4,
+          "users": [
+            {
+              "id": "221462689849802752",
+              "name": "insert._.coin",
+              "discriminator": "0000",
+              "nickname": "⸘Insert Coin‽",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/221462689849802752/dede67e38e4081194e401f15cad133e8.png?size=512"
+            },
+            {
+              "id": "800501212990406666",
+              "name": "krysanity",
+              "discriminator": "0000",
+              "nickname": "Krystal",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/800501212990406666/84653c55701e15a3351aa5b0684a16a3.png?size=512"
+            },
+            {
+              "id": "838114708128399390",
+              "name": "neonox31",
+              "discriminator": "0000",
+              "nickname": "Neonox31",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+            },
+            {
+              "id": "1087978262820569159",
+              "name": "starlitdreamzz",
+              "discriminator": "0000",
+              "nickname": "\uD83D\uDC51✨Starzz\uD83D\uDCAB\uD83D\uDC51",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1087978262820569159/da1289c065be9872208c42db4c965de4.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392792724616253471",
+      "type": "Default",
+      "timestamp": "2025-07-10T05:01:02.386-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thats better \uD83D\uDE04",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83D\uDE04",
+          "code": "smile",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f604.svg"
+        }
+      ]
+    },
+    {
+      "id": "1392793373915480227",
+      "type": "Default",
+      "timestamp": "2025-07-10T05:03:37.191-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Script v3 ? \uD83E\uDD70 I'm very curious",
+      "author": {
+        "id": "447455865054822401",
+        "name": "rockman18",
+        "discriminator": "0000",
+        "nickname": "Rockman18",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/447455865054822401/9df89256f44925a5a683a619ebea88e8.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": [
+        {
+          "id": "",
+          "name": "\uD83E\uDD70",
+          "code": "smiling_face_with_3_hearts",
+          "isAnimated": false,
+          "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f970.svg"
+        }
+      ]
+    },
+    {
+      "id": "1392794308389900299",
+      "type": "Default",
+      "timestamp": "2025-07-10T05:07:19.987-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Idk if Ill share it fully since I dont want it patched but if you want to try it message me and you can use my worker",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392794349754122320",
+      "type": "Default",
+      "timestamp": "2025-07-10T05:07:29.849-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "it also blocks updates to stop it randomly being removed",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392796848330248275",
+      "type": "Default",
+      "timestamp": "2025-07-10T05:17:25.556-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1392796848078454815",
+          "url": "https://cdn.discordapp.com/attachments/820487358780538920/1392796848078454815/image.png?ex=68f9f2a5&is=68f8a125&hm=8977100aee07f76edca2fc2c79899e0bbbcf751b6f2788cc57b9de31ebe9bb4a&",
+          "fileName": "image.png",
+          "fileSizeBytes": 56683
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDE0D",
+            "code": "heart_eyes",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f60d.svg"
+          },
+          "count": 3,
+          "users": [
+            {
+              "id": "447455865054822401",
+              "name": "rockman18",
+              "discriminator": "0000",
+              "nickname": "Rockman18",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/447455865054822401/9df89256f44925a5a683a619ebea88e8.png?size=512"
+            },
+            {
+              "id": "838114708128399390",
+              "name": "neonox31",
+              "discriminator": "0000",
+              "nickname": "Neonox31",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+            },
+            {
+              "id": "1160275829138407485",
+              "name": "zrxdgamer",
+              "discriminator": "0000",
+              "nickname": "wowthisissopog",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/1160275829138407485/b30730595436e41ed2b2ece02961e9fc.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392796873143746624",
+      "type": "Default",
+      "timestamp": "2025-07-10T05:17:31.472-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Free, wonderful freeeee",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392797053528314016",
+      "type": "Default",
+      "timestamp": "2025-07-10T05:18:14.479-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "This is how to block updates btw, in case anyone wants to add it to their worker \n\n```js\n if (url.pathname.includes('/desktopdownload/UpdateJson')) {\n    return jsonResponse({});\n  }\n```",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "838114708128399390",
+              "name": "neonox31",
+              "discriminator": "0000",
+              "nickname": "Neonox31",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392799450576977990",
+      "type": "Default",
+      "timestamp": "2025-07-10T05:27:45.98-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "```\nconst MACHINE_TYPE_MAP = {\n  '22': 'Newt',\n  '14': 'Scamander',\n  '11': 'Maker',\n  '19': 'Mars',\n  '12': 'Cupid',\n  '-111': 'Vulcan',\n  '-119': 'Atmosphere',\n  '-118': 'Atmosphere',\n  '-117': 'Atmosphere',\n  '-116': 'Atmosphere',\n  '23': 'Riddle',\n  '15': 'Voldemort',\n  '-121': 'Brooklyn',\n  '-120': 'Brooklyn',\n  '7': 'Explore',\n  '8': 'Explore',\n  '9': 'Explore',\n  '10': 'Explore',\n  '-112': 'MugPress',\n  '-110': 'MugPress',\n  '13': 'Morpheus',\n  '-107': 'EasyPress2',\n  '-106': 'EasyPress2',\n  '-104': 'EasyPress2',\n  '-103': 'EasyPress2',\n  '-105': 'EasyPressMini',\n  '-102': 'EasyPressMini'\n};\n```",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 2,
+          "users": [
+            {
+              "id": "783411277250428978",
+              "name": "n1anre",
+              "discriminator": "0000",
+              "nickname": "star",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/783411277250428978/698df9adf75d165bb9f6f1e57f68b844.png?size=512"
+            },
+            {
+              "id": "838114708128399390",
+              "name": "neonox31",
+              "discriminator": "0000",
+              "nickname": "Neonox31",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/avatars/838114708128399390/2b47906c44be51d95080f05112251336.png?size=512"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1392799687140048927",
+      "type": "Reply",
+      "timestamp": "2025-07-10T05:28:42.381-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I belive with this you can re-activate deactivated heat presses too",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "reference": {
+        "messageId": "1392799450576977990",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1399606363067256925",
+      "type": "Reply",
+      "timestamp": "2025-07-29T00:16:00.384-04:00",
+      "timestampEdited": "2025-07-29T00:16:19.268-04:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "There no way to do function loopback in Electron? Does the app absolutely require responses?",
+      "author": {
+        "id": "351254373286019072",
+        "name": "redneckhax0r",
+        "discriminator": "0000",
+        "nickname": "RedneckHax0r",
+        "color": null,
+        "isBot": false,
+        "roles": [
+          {
+            "id": "821478610732318730",
+            "name": "Explore-Air 2",
+            "color": null,
+            "position": 5
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/351254373286019072/162fef0036697c81c1348bcd0d33b60e.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "reference": {
+        "messageId": "1392799687140048927",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1429496454711349258",
+      "type": "Default",
+      "timestamp": "2025-10-19T11:48:33.563-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Hello\nVersion 9.35.100 looks like modifying app.asar is not working, anyone has the same issue??",
+      "author": {
+        "id": "684414272129859584",
+        "name": "djtalls",
+        "discriminator": "0000",
+        "nickname": "djtalls",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1429904430647480443",
+      "type": "Reply",
+      "timestamp": "2025-10-20T14:49:42.606-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "let me take a look",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "684414272129859584",
+          "name": "djtalls",
+          "discriminator": "0000",
+          "nickname": "djtalls",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+        }
+      ],
+      "reference": {
+        "messageId": "1429496454711349258",
+        "channelId": "820487358780538920",
+        "guildId": "820414977231814696"
+      },
+      "inlineEmojis": []
+    },
+    {
+      "id": "1429904832419991783",
+      "type": "Default",
+      "timestamp": "2025-10-20T14:51:18.396-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1429904832109482055",
+          "url": "https://cdn.discordapp.com/attachments/820487358780538920/1429904832109482055/image.png?ex=68f9d066&is=68f87ee6&hm=7b760565984d9b2c36fe2d96e6f988cf492d2dd89674e9e7102dfc4f0b4ccfc8&",
+          "fileName": "image.png",
+          "fileSizeBytes": 71129
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1429905662829264896",
+      "type": "Default",
+      "timestamp": "2025-10-20T14:54:36.381-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "@djtalls works for me",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [
+        {
+          "id": "1429905662376284343",
+          "url": "https://cdn.discordapp.com/attachments/820487358780538920/1429905662376284343/image.png?ex=68f9d12c&is=68f87fac&hm=c16e7af7863f98c077ca96047b8a94484bb5c6c5ddf6b988f425e6bae2d5a36e&",
+          "fileName": "image.png",
+          "fileSizeBytes": 104205
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "684414272129859584",
+          "name": "djtalls",
+          "discriminator": "0000",
+          "nickname": "djtalls",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1429906279496814714",
+      "type": "Default",
+      "timestamp": "2025-10-20T14:57:03.406-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Thanks @AndrewA  I'll try it again",
+      "author": {
+        "id": "684414272129859584",
+        "name": "djtalls",
+        "discriminator": "0000",
+        "nickname": "djtalls",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "186799462914588673",
+          "name": "_andrew_a",
+          "discriminator": "0000",
+          "nickname": "AndrewA",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "roles": [
+            {
+              "id": "822207134951276564",
+              "name": "Probably Not Spies (frequent contributors)",
+              "color": "#1ABC9C",
+              "position": 15
+            },
+            {
+              "id": "821457404843524226",
+              "name": "Cricut Maker",
+              "color": null,
+              "position": 13
+            }
+          ],
+          "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1429906427694289079",
+      "type": "Default",
+      "timestamp": "2025-10-20T14:57:38.739-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Are you on windows/linux or mac? @djtalls",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "684414272129859584",
+          "name": "djtalls",
+          "discriminator": "0000",
+          "nickname": "djtalls",
+          "color": null,
+          "isBot": false,
+          "roles": [],
+          "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+        }
+      ],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1429924241016492032",
+      "type": "Default",
+      "timestamp": "2025-10-20T16:08:25.766-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "On windows",
+      "author": {
+        "id": "684414272129859584",
+        "name": "djtalls",
+        "discriminator": "0000",
+        "nickname": "djtalls",
+        "color": null,
+        "isBot": false,
+        "roles": [],
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [],
+      "inlineEmojis": []
+    },
+    {
+      "id": "1429929160985415690",
+      "type": "Default",
+      "timestamp": "2025-10-20T16:27:58.778-04:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Yeah should work just finem feel free to message me if you want me to try with your worker",
+      "author": {
+        "id": "186799462914588673",
+        "name": "_andrew_a",
+        "discriminator": "0000",
+        "nickname": "AndrewA",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "roles": [
+          {
+            "id": "822207134951276564",
+            "name": "Probably Not Spies (frequent contributors)",
+            "color": "#1ABC9C",
+            "position": 15
+          },
+          {
+            "id": "821457404843524226",
+            "name": "Cricut Maker",
+            "color": null,
+            "position": 13
+          }
+        ],
+        "avatarUrl": "https://cdn.discordapp.com/avatars/186799462914588673/ce27a6dbcba241b934d71f41aff00dc7.png?size=512"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [
+        {
+          "emoji": {
+            "id": "",
+            "name": "\uD83D\uDC4D",
+            "code": "thumbsup",
+            "isAnimated": false,
+            "imageUrl": "https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f44d.svg"
+          },
+          "count": 1,
+          "users": [
+            {
+              "id": "684414272129859584",
+              "name": "djtalls",
+              "discriminator": "0000",
+              "nickname": "djtalls",
+              "color": null,
+              "isBot": false,
+              "avatarUrl": "https://cdn.discordapp.com/embed/avatars/0.png"
+            }
+          ]
+        }
+      ],
+      "mentions": [],
+      "inlineEmojis": []
+    }
+  ],
+  "messageCount": 98
+}

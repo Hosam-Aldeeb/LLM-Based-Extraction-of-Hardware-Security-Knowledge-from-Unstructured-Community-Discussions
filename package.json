@@ -1,0 +1,29 @@
+{
+  "name": "ollama-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server that bridges to local Ollama",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node --esm src/server.ts",
+    "bot": "node dist/discord.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "ollama",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.0",
+    "@types/node": "^24.5.1",
+    "chromadb": "^3.1.4",
+    "discord.js": "^14.22.1",
+    "dotenv": "^17.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}

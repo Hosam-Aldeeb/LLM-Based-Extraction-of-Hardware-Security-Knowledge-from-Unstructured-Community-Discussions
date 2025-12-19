@@ -1,0 +1,40 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/SDRplusplus_programming_Jan2025_export.json",
+  "totalMessages": 151,
+  "totalChunks": 144,
+  "relevantMessages": 3,
+  "results": [
+    {
+      "text": "apparently before being repurposed for IoT it was for oil pipeline SCADA systems",
+      "metadata": {
+        "id": "1420619347382239273",
+        "author": "ryzerth",
+        "timestamp": "2025-09-24T23:54:06.247-04:00",
+        "channel": "SDRplusplus_programming"
+      },
+      "similarity": 0.5776988999604413
+    },
+    {
+      "text": "So I can git pull, recompile and hack at the source if I want to.",
+      "metadata": {
+        "id": "1421167809064468490",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:13:29.702-04:00",
+        "channel": "SDRplusplus_programming"
+      },
+      "similarity": 0.594166782497545
+    },
+    {
+      "text": "I dunno what the actual legality is, but it _should_ be legal to reverse engineer the software to just get the hardware going on your machine.",
+      "metadata": {
+        "id": "1421172798608506951",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:33:19.302-04:00",
+        "channel": "SDRplusplus_programming"
+      },
+      "similarity": 0.5627394264253458
+    }
+  ]
+}

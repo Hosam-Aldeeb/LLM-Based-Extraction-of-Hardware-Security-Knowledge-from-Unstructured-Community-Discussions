@@ -1,0 +1,380 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/KiCad_general_Jan2025_export.json",
+  "totalMessages": 10891,
+  "totalChunks": 10758,
+  "relevantMessages": 37,
+  "results": [
+    {
+      "text": "They apparently mangled JTAG as well, so debugging is a good time",
+      "metadata": {
+        "id": "1324956530356781090",
+        "author": "fossify_37988",
+        "timestamp": "2025-01-03T23:24:13.339-05:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.638697558037769
+    },
+    {
+      "text": "The main problem with the CH569W reverse engineering was that they didn’t include the register map for the USB3- functionality in the documentation. So it was a real detective work!",
+      "metadata": {
+        "id": "1325100332723998830",
+        "author": "_andax",
+        "timestamp": "2025-01-04T08:55:38.495-05:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5568330832508349
+    },
+    {
+      "text": "whats the rshunt and cshunt option? a general capacitance and resistance?",
+      "metadata": {
+        "id": "1325946195599687680",
+        "author": "lud_en",
+        "timestamp": "2025-01-06T16:56:47.92-05:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5653247472685682
+    },
+    {
+      "text": "For electrical verification, it Could cause issues compared to a separate netlist, but I don't know if JLC even does testing?",
+      "metadata": {
+        "id": "1328772729285115934",
+        "author": "orange.scone",
+        "timestamp": "2025-01-14T12:08:26.065-05:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5650913931959094
+    },
+    {
+      "text": "the entire linux version was slowed down due to boilerplate code to work around BS from Apple. It was rewritten later and a significant minimum version bump to move away from that BS",
+      "metadata": {
+        "id": "1338156190500261920",
+        "author": "naib",
+        "timestamp": "2025-02-09T09:34:57.555-05:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5647821856207133
+    },
+    {
+      "text": "#electronics",
+      "metadata": {
+        "id": "1356982251744919714",
+        "author": "eonostturf",
+        "timestamp": "2025-04-02T09:23:00.327-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5659297482265137
+    },
+    {
+      "text": "Sure, if its that obvious. Not new to computers, operating systems or electronics. But to Kicad - this smells like a bug / systemic issue.",
+      "metadata": {
+        "id": "1358339452992360579",
+        "author": "holger_04887",
+        "timestamp": "2025-04-06T03:16:02.32-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5588234824209738
+    },
+    {
+      "text": "https://bugs.gentoo.org/911120",
+      "metadata": {
+        "id": "1363071438369587311",
+        "author": "naib",
+        "timestamp": "2025-04-19T04:39:15.55-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5539384730242157
+    },
+    {
+      "text": "Unrelated, but the radar ic looks like wide ddr ram",
+      "metadata": {
+        "id": "1364505602264666162",
+        "author": "mnem_94475",
+        "timestamp": "2025-04-23T03:38:06.868-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5655133861525764
+    },
+    {
+      "text": "any help on how these clearance violations can be solved? i am trying to use jlcpcb for this project",
+      "metadata": {
+        "id": "1364681814060433600",
+        "author": ".kikoroo",
+        "timestamp": "2025-04-23T15:18:19.034-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5897096744224462
+    },
+    {
+      "text": "There's an RS232 driver and a couple of RS422/RS485 drivers, OPO7 low-offset comparator, 74HC595, a few LDOs and buck converters, TVS and other protection diode devices, lots of diodes, transistors (incl ULN2003 octal array) and FETs, including high-current (>4A) PFET and NFETs, a few different op-amps, crystals, even a 16MByte SPI Flash chip. Obviously a selection of different R's (including 4-way arrays) and C's from 0402 up to 1206, and capacitors up to 50uF",
+      "metadata": {
+        "id": "1367821263560642601",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-02T07:13:22.123-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.6216191489378109
+    },
+    {
+      "text": "I just wanted something to hack jlcbasic with",
+      "metadata": {
+        "id": "1368857646978830408",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-05T03:51:35.185-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.6091714973688457
+    },
+    {
+      "text": "#electronics",
+      "metadata": {
+        "id": "1378294330703482901",
+        "author": "aqua.regia",
+        "timestamp": "2025-05-31T04:49:35.91-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5659297482265137
+    },
+    {
+      "text": "if only there was an actual ai startup for pcb design that isn't a scam",
+      "metadata": {
+        "id": "1384952248135581706",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T13:45:47.124-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.551292410542886
+    },
+    {
+      "text": "Try to be a bit careful about asking chatgpt electronics questions. It does get it wrong quite often",
+      "metadata": {
+        "id": "1384980332637454366",
+        "author": "emiel0314",
+        "timestamp": "2025-06-18T15:37:22.991-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5575792393937772
+    },
+    {
+      "text": "Thank you! I'm looking for fun projects to work on for sharpening my skills as a hardware engineer / embedded engineer",
+      "metadata": {
+        "id": "1385119442345656370",
+        "author": "jtrance",
+        "timestamp": "2025-06-19T00:50:09.33-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.559917699183763
+    },
+    {
+      "text": "guys need help with my undergrad project, anyone got any good project ideas in the vlsi or embedded domain",
+      "metadata": {
+        "id": "1387332951641165824",
+        "author": "daddysaurus7",
+        "timestamp": "2025-06-25T03:25:51.071-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5630493970825601
+    },
+    {
+      "text": "pretty common for jellybean ICs like logic, amps, transceivers, drivers, etc",
+      "metadata": {
+        "id": "1391105566171992125",
+        "author": "fossify_37988",
+        "timestamp": "2025-07-05T13:16:52.467-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5788567482815578
+    },
+    {
+      "text": "~~Okay direct em to hackclub then~~",
+      "metadata": {
+        "id": "1397455392010670080",
+        "author": "cyao.",
+        "timestamp": "2025-07-23T01:48:48.921-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5679261829083582
+    },
+    {
+      "text": "u can use fets also to do it",
+      "metadata": {
+        "id": "1400927566386299123",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:45:59.802-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.565851568247254
+    },
+    {
+      "text": "Hey I need some help I got various SMD components and i'm getting DFM Warnings on JLC PCB's automated DFM check about silkscreen to smd clearance. Would this really be a big issue?",
+      "metadata": {
+        "id": "1400974669854674954",
+        "author": "xpguyforealz",
+        "timestamp": "2025-08-01T18:53:10.144-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5598208453705503
+    },
+    {
+      "text": "more realted to IoT automation and maybe even hacking",
+      "metadata": {
+        "id": "1402519370294493194",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:11:15.428-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.6494501352788036
+    },
+    {
+      "text": "and installing it on a pcb with bluetooth and wifi which will enable the device to hack or monitor wifi",
+      "metadata": {
+        "id": "1402519542898495600",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:11:56.58-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.6127462859066993
+    },
+    {
+      "text": "I am just intrested in IoT and embedded systems",
+      "metadata": {
+        "id": "1403806658945355887",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:26:28.959-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5947188834289439
+    },
+    {
+      "text": "you dont know about how to test your hardware?",
+      "metadata": {
+        "id": "1407014755775942788",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T10:54:18.847-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5804591481785233
+    },
+    {
+      "text": "can you quantify exactly what you want to fix and why you think it comes from the inductor shielding",
+      "metadata": {
+        "id": "1411751503668056174",
+        "author": "aqua.regia",
+        "timestamp": "2025-08-31T12:36:27.549-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5625094641199849
+    },
+    {
+      "text": "So using a mosfet here kind of opens up a little bit of a can of worms. They're ESD sensitive and they can have some unintuitive behaviour if you're new to electronics and are just expecting them to magically work. Using a BJT here, either a very ordinary 2n2222 if your load current is under 500mA or maybe a TIP41 if you need a bit more current, will simplify things a lot.",
+      "metadata": {
+        "id": "1413640080160985091",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:40:59.273-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5647225715013081
+    },
+    {
+      "text": "A circuit like this with BJTs would be sufficient for your application (you can add power input protection as you see fit)",
+      "metadata": {
+        "id": "1413642450756698124",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:50:24.467-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5547295786827797
+    },
+    {
+      "text": "https://jlcpcb.com/capabilities/pcb-capabilities",
+      "metadata": {
+        "id": "1413649657204314113",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:19:02.618-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5520557032408278
+    },
+    {
+      "text": "You'll have a hard time programming it without connecting wires up. Run IO18 to USB_D- and IO19 to USB_D+ on a USB connector.",
+      "metadata": {
+        "id": "1414633482021502997",
+        "author": "xobs",
+        "timestamp": "2025-09-08T11:28:24.733-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5623173455603904
+    },
+    {
+      "text": "AI does not understand electronics.",
+      "metadata": {
+        "id": "1414638319173767402",
+        "author": "davidjrobertson",
+        "timestamp": "2025-09-08T11:47:38-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5633622781310501
+    },
+    {
+      "text": "You need to flash code onto it, feed it nicely regulated low-voltage power, protect its inputs and outputs from transients and overcurrents",
+      "metadata": {
+        "id": "1414690715878817792",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:15:50.348-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5791129087591247
+    },
+    {
+      "text": "git smudging: https://jnavila.github.io/plotkicadsch/",
+      "metadata": {
+        "id": "1428442222474559549",
+        "author": "orange.scone",
+        "timestamp": "2025-10-16T13:59:25.011-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5733742837726008
+    },
+    {
+      "text": "A sure sign of an AI-generated schematic. Do not use AI",
+      "metadata": {
+        "id": "1429427877656662037",
+        "author": "anachrocomputer",
+        "timestamp": "2025-10-19T07:16:03.519-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5827404526203962
+    },
+    {
+      "text": "a hardware based random number generator",
+      "metadata": {
+        "id": "1429517183993647144",
+        "author": "thebuckethatgirl",
+        "timestamp": "2025-10-19T13:10:55.809-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.55387408516439
+    },
+    {
+      "text": "that uses stuff like a background radiation sensor to generate keys",
+      "metadata": {
+        "id": "1429517254651023400",
+        "author": "thebuckethatgirl",
+        "timestamp": "2025-10-19T13:11:12.655-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5616453780118849
+    },
+    {
+      "text": "```Unhandled exception at 0x000000018013ECA0 (ngspice.dll) in kicad.exe: 0xC0000005: Access violation reading location 0xFFFFFFFFFFFFFFFF.```\n\n🙁 Silly spice!",
+      "metadata": {
+        "id": "1431446608708632687",
+        "author": "wolington",
+        "timestamp": "2025-10-24T20:57:46.508-04:00",
+        "channel": "KiCad_general"
+      },
+      "similarity": 0.5514072955205838
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/CutFreedom_hwinfo_Jan2025_export.json",
+  "totalMessages": 9,
+  "totalChunks": 9,
+  "relevantMessages": 0,
+  "results": []
+}

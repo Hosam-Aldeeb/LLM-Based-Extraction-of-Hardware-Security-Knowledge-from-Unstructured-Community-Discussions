@@ -1,0 +1,534 @@
+[1] Similarity: 0.564 | slackgeek | 1/2/2025
+And no, it is unlikely that you will cause any damage, you will probably get out of ranges of the hardware first
+======================================================================
+
+[2] Similarity: 0.593 | madman.in.a.box | 1/2/2025
+in ARM you have things like the Snoop Control Unit which handles L1D coherency on multiprocessor systems
+======================================================================
+
+[3] Similarity: 0.557 | madman.in.a.box | 1/2/2025
+all of these are hardware functions that are "invisible" to the software
+======================================================================
+
+[4] Similarity: 0.557 | slackgeek | 1/3/2025
+before using "debian IoT", you need to fully understand your platform, using whatever the chip/board vendor gave as example
+======================================================================
+
+[5] Similarity: 0.568 | madman.in.a.box | 1/3/2025
+the `perf` subsystem in linux has been around for a while; the entire hardware monitoring stuff in both ARM and x86 have been around for quite some time too
+======================================================================
+
+[6] Similarity: 0.553 | slackgeek | 1/19/2025
+Verify your kernel config, I think that should give some information
+======================================================================
+
+[7] Similarity: 0.552 | slackgeek | 1/20/2025
+In the end it uses scripts, so it may be hackable
+======================================================================
+
+[8] Similarity: 0.605 | gotbread | 1/20/2025
+could be. never heard VPID of 0 to be valid before. so yeah, likely a hack
+======================================================================
+
+[9] Similarity: 0.550 | slackgeek | 1/25/2025
+There is a kernel module called Linux gadget or something
+======================================================================
+
+[10] Similarity: 0.572 | slackgeek | 1/31/2025
+maybe some fancy IDE added support for device trees
+======================================================================
+
+[11] Similarity: 0.594 | madman.in.a.box | 2/2/2025
+security research
+======================================================================
+
+[12] Similarity: 0.553 | madman.in.a.box | 2/3/2025
+doesn't buildroot have an `x86(_64)?-pc-linux-gnu` target?
+======================================================================
+
+[13] Similarity: 0.605 | madman.in.a.box | 2/16/2025
+that is extremely poor security practice
+======================================================================
+
+[14] Similarity: 0.586 | exp.lol | 2/27/2025
+for the hardware that's connected, the most important thing to know first is how to use the device-tree
+======================================================================
+
+[15] Similarity: 0.561 | tonydawarrior | 3/7/2025
+What are the best places to learn how to configure Uboot for custom hardware based on a board (ARM) for example a custom board based on ROCK3A how I would configure it for a custom board from a vanilla uboot install.
+======================================================================
+
+[16] Similarity: 0.550 | slackgeek | 3/9/2025
+Or patch it into your local kernel sources
+======================================================================
+
+[17] Similarity: 0.559 | ginobeano | 3/9/2025
+So in theory since this already has tiny drm if I add my display's driver and set this to my kernel and add the config to my device tree  it will work
+======================================================================
+
+[18] Similarity: 0.561 | slackgeek | 3/9/2025
+https://web.git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/Documentation/devicetree/bindings/display/ilitek,ili9486.yaml?h=v6.6.82
+======================================================================
+
+[19] Similarity: 0.585 | slackgeek | 3/9/2025
+Do you have jtag or a way to recover the board in case you brick it?
+======================================================================
+
+[20] Similarity: 0.595 | exp.lol | 3/11/2025
+is it possible there is some breakout to its hardware translation?
+======================================================================
+
+[21] Similarity: 0.563 | bestinfinity | 4/23/2025
+Some of the smartest people in tech ik are on rolling release distros everywhere  ¯\_(ツ)_/¯
+======================================================================
+
+[22] Similarity: 0.562 | kanken6174 | 5/7/2025
+it does 4 software programmable voltages and provides usb uart + sequencing
+======================================================================
+
+[23] Similarity: 0.574 | slackgeek | 5/13/2025
+For embedded systems, this is quite nice
+======================================================================
+
+[24] Similarity: 0.664 | exp.lol | 5/15/2025
+for the uefi firmware / bios i don't know anything about hacking it
+======================================================================
+
+[25] Similarity: 0.550 | seha10 | 5/15/2025
+```
+Startup finished in 3.496s (firmware) + 2.261s (loader) + 4.782s (kernel) + 7.064s (userspace) = 17.604s
+graphical.target reached after 7.064s in userspace.
+```
+======================================================================
+
+[26] Similarity: 0.607 | exp.lol | 5/15/2025
+my hardware is oold
+======================================================================
+
+[27] Similarity: 0.555 | slackgeek | 5/16/2025
+the thing is most tooling is normally tested in x86_64
+======================================================================
+
+[28] Similarity: 0.551 | slackgeek | 5/23/2025
+need to patch other people's software
+======================================================================
+
+[29] Similarity: 0.569 | slackgeek | 6/2/2025
+(when I was working on my thesis with cuda I used CentOS, as at least CUDA releases were tested on RedHat)
+======================================================================
+
+[30] Similarity: 0.581 | exp.lol | 6/4/2025
+reading through lots of source code to see what flags it expects and what it might be doing wrong
+======================================================================
+
+[31] Similarity: 0.604 | slackgeek | 6/4/2025
+but @Sam2G you need to reverse engineer the original firmware a bit more
+======================================================================
+
+[32] Similarity: 0.567 | slackgeek | 6/4/2025
+and there is a PL5 for jtag
+======================================================================
+
+[33] Similarity: 0.553 | slackgeek | 6/5/2025
+everything is possible, this kind of code could be more portable across operating systems and kernel versions
+======================================================================
+
+[34] Similarity: 0.562 | hardcoreprawn69 | 6/14/2025
+Hello, here is btmgmt log:
+
+Index list with 1 item
+hci1: Primary controller
+      addr 08:BE:AC:42:79:C5 version 10 manufacturer 93 class 0x6c0000
+      supported settings: powered connectable fast-connectable discoverable bondable link-security ssp br/edr le advertising secure-conn debug-keys privacy static-addr phy-configuration wide-band-speech
+      current settings: powered ssp br/edr le secure-conn
+      name dev-VirtualBox
+      short name, 
+
+Yeah, I use nrfConnect and LightBlue and yes t
+======================================================================
+
+[35] Similarity: 0.550 | madman.in.a.box | 6/17/2025
+why? because the way i configure serial devices on my system is completely different from the way that is done by default in ubuntu
+======================================================================
+
+[36] Similarity: 0.625 | madman.in.a.box | 6/17/2025
+this is a huge security vulnerability
+======================================================================
+
+[37] Similarity: 0.581 | the_alchemist0 | 6/17/2025
+Could do describe the exploit?
+======================================================================
+
+[38] Similarity: 0.573 | madman.in.a.box | 6/17/2025
+if you did do that, then `${random_user}` can go on to tamper with the device
+======================================================================
+
+[39] Similarity: 0.629 | madman.in.a.box | 6/17/2025
+and if the device is something like a connection into a SCADA system, then well, you just compromised an entire plant
+======================================================================
+
+[40] Similarity: 0.573 | the_alchemist0 | 6/17/2025
+Containers sound like another level of complication if there's hardware access involved!
+======================================================================
+
+[41] Similarity: 0.580 | madman.in.a.box | 6/17/2025
+and you avoid accidentally breaking people's stuff by the potential overwrite of system files
+======================================================================
+
+[42] Similarity: 0.597 | eljohn28 | 6/19/2025
+we enabled support for USB-to-RS485 adapters by customizing the Yocto kernel: added a config fragment and prepared a patch to include the ch343 driver, since the default ch341 wasn't matching our device
+======================================================================
+
+[43] Similarity: 0.583 | zyakim | 7/9/2025
+Would anyone be interested in remotely accessible real embedded Linux IOT devices for learning Embedded Linux development
+======================================================================
+
+[44] Similarity: 0.593 | slackgeek | 7/13/2025
+https://hackerbikepacker.com/tag/linux/
+======================================================================
+
+[45] Similarity: 0.567 | madman.in.a.box | 7/20/2025
+yes, i've coded the kernel modules for those pieces of hardware in C
+======================================================================
+
+[46] Similarity: 0.584 | madman.in.a.box | 7/21/2025
+the kernel side of the GPU driver for the Apple Silicon M1 chips is written in Rust
+======================================================================
+
+[47] Similarity: 0.552 | madman.in.a.box | 7/21/2025
+[for multiple reasons, chief among them was to push the Rust subsystem in the kernel to the limit to see what else was needed]
+======================================================================
+
+[48] Similarity: 0.620 | madman.in.a.box | 7/21/2025
+and see how many dangling pointer vulnerabilities have been found in the kernel
+======================================================================
+
+[49] Similarity: 0.582 | fshiro | 7/22/2025
+is that during the boot process, flash identification fails:
+> [    0.252682] spi-ar934x 1f000000.spi: registered master spi0
+> [    0.266090] spi spi0.0: setup mode 0, 8 bits/w, 50000000 Hz max --> 0
+> [    0.267022] spi-ar934x 1f000000.spi: registered child spi0.0
+> [    0.267082] spi spi0.3: setup mode 0, cs_high, 8 bits/w, 4000000 Hz max --> 0
+> [    0.267768] spi-ar934x 1f000000.spi: registered child spi0.3
+> [    0.267827] spi spi0.4: setup mode 0, 8 bits/w, 20000000 Hz max --> 0
+> [    0.
+======================================================================
+
+[50] Similarity: 0.586 | fshiro | 7/22/2025
+268528] spi-ar934x 1f000000.spi: registered child spi0.4
+> [    0.272281] spi-nor spi0.0: w25q128 (16384 Kbytes)
+> [    0.272381] 4 fixed-partitions partitions found on MTD device spi0.0
+> [    0.274452] Creating 4 MTD partitions on "spi0.0":
+> [    0.274487] 0x000000000000-0x000000040000 : "u-boot"
+> [    0.280532] 0x000000040000-0x000000050000 : "u-boot-env"
+> [    0.285364] 0x000000050000-0x000000ff0000 : "firmware"
+> [    0.288493] 2 uimage-fw partitions found on MTD device firmware
+> [    0
+======================================================================
+
+[51] Similarity: 0.557 | fshiro | 7/22/2025
+.288521] Creating 2 MTD partitions on "firmware":
+> [    0.288545] 0x000000000000-0x000000210000 : "kernel"
+> [    0.291305] 0x000000210000-0x000000fa0000 : "rootfs"
+> [    0.293689] mtd: setting mtd4 (rootfs) as root device
+> [    0.294398] 1 squashfs-split partitions found on MTD device rootfs
+> [    0.294455] 0x000000da0000-0x000000fa0000 : "rootfs_data"
+> [    0.296927] 0x000000ff0000-0x000001000000 : "art"
+> [    0.314323] spi-nor spi0.4: unrecognized JEDEC id bytes: 00 00 00 00 00 00
+
+But 
+======================================================================
+
+[52] Similarity: 0.553 | fshiro | 7/22/2025
+if bind spi0.4 to the driver once I get to ssh into the device, it does work:
+> root@board:/# echo "spi0.4" >/sys/bus/spi/drivers/spi-nor/bind
+> root@board:/# dmesg | grep spi
+> [  196.648201] spi-nor spi0.4: found w25q256, expected s25fl512s
+> [  196.648384] spi-nor spi0.4: w25q256 (32768 Kbytes)
+> [  196.648448] 1 fixed-partitions partitions found on MTD device spi0.4
+> [  196.648464] Creating 1 MTD partitions on "spi0.4":
+======================================================================
+
+[53] Similarity: 0.588 | fshiro | 7/22/2025
+does anyone know what could cause this? 
+I've attached my attempt at a patch and my device tree, in case that helps
+======================================================================
+
+[54] Similarity: 0.572 | slackgeek | 7/22/2025
+0.314323] spi-nor spi0.4: unrecognized JEDEC id bytes: 00 00 00 00 00 00
+======================================================================
+
+[55] Similarity: 0.563 | fshiro | 7/22/2025
+I've taken the board specific patches and added them to the device tree, which is where those extra cs-gpio's come from 🙂
+======================================================================
+
+[56] Similarity: 0.576 | slackgeek | 7/22/2025
+and there is something else for the chip detection not working at boot
+======================================================================
+
+[57] Similarity: 0.582 | fshiro | 7/22/2025
+they're there so that the spiar934x driver does not attempt to use a hardware chipselect when talking to the devices connecting to the GPIO's, they're working as offsets
+======================================================================
+
+[58] Similarity: 0.554 | slackgeek | 7/22/2025
+that should be right, because in a 5.4 kernel, the .dtsi uses ar934x-spi
+======================================================================
+
+[59] Similarity: 0.587 | slackgeek | 7/22/2025
+```
+&spi {
+        status = "okay";
+
+        flash@0 {
+                compatible = "jedec,spi-nor";
+                spi-max-frequency = <50000000>;
+                reg = <0>;
+
+                partitions {
+                        compatible = "fixed-partitions";
+                        #address-cells = <1>;
+                        #size-cells = <1>;
+
+                        uboot: partition@0 {
+                                label = "u-boot";
+                                reg = <0x000000 0x04
+======================================================================
+
+[60] Similarity: 0.553 | mike7c2 | 7/24/2025
+Does the unsigned kernel also mean you don't have secureboot btw?
+======================================================================
+
+[61] Similarity: 0.577 | madman.in.a.box | 7/24/2025
+for the secure boot thing, just generate a UKI and sign that
+======================================================================
+
+[62] Similarity: 0.560 | madman.in.a.box | 7/24/2025
+[and yes, if you're tampering with the wireless regulatory domain then you're very likely doing something you should not be doing]
+======================================================================
+
+[63] Similarity: 0.550 | madman.in.a.box | 7/24/2025
+i can not think of a legitimate reason to bypass/modify the kernel's wireless regulatory domain database
+======================================================================
+
+[64] Similarity: 0.568 | exp.lol | 7/24/2025
+but there's an increasing focus on configurable radios and ensuring they are locked down away from the user through cryptographic means
+======================================================================
+
+[65] Similarity: 0.561 | madman.in.a.box | 7/24/2025
+there are aftermarket firmwares for those machines that allow you to bypass that check
+======================================================================
+
+[66] Similarity: 0.577 | madman.in.a.box | 7/24/2025
+but now you're patching your machine's UEFI with some non-vetted product which you may not have the ability to check yourself
+======================================================================
+
+[67] Similarity: 0.595 | madman.in.a.box | 7/24/2025
+so security risk beware
+======================================================================
+
+[68] Similarity: 0.553 | madman.in.a.box | 7/24/2025
+the firmware update pulled an Intel and disabled creating an access point in the 5 GHz band
+======================================================================
+
+[69] Similarity: 0.591 | madman.in.a.box | 7/24/2025
+(this goes beyond wireless hardware)
+======================================================================
+
+[70] Similarity: 0.563 | zen_desu | 7/26/2025
+would anyone who's not afraid of boot stuff with a board that uses device trees mind testing this? https://github.com/desultory/ugrd/pull/341
+======================================================================
+
+[71] Similarity: 0.584 | mike7c2 | 7/27/2025
+Oh and using devicetree is neat - not the easiest learning curve either - but - separating hardware config from code is pretty good
+======================================================================
+
+[72] Similarity: 0.603 | dr.sudo | 7/27/2025
+Doesn't matter. Cybersecurity when it comes to defense work operates very differently
+======================================================================
+
+[73] Similarity: 0.567 | exp.lol | 8/1/2025
+most likely this is some 'security' feature on the router then
+======================================================================
+
+[74] Similarity: 0.551 | slackgeek | 8/1/2025
+also, test this with a smartphone in manual IP config, to rule out any Debian/networkmanager shenanigans
+======================================================================
+
+[75] Similarity: 0.575 | madman.in.a.box | 8/2/2025
+without knowing the kind of hardware you have on your machine it will be difficult to say what could be going wrong
+======================================================================
+
+[76] Similarity: 0.550 | rawada0000 | 8/3/2025
+i dont even know what tools are for what function in vlsi but my uni has all the tools purchased
+======================================================================
+
+[77] Similarity: 0.560 | stackglock | 8/4/2025
+56] of_get_named_gpiod_flags: parsed 'pwdn-gpios' property of node '/i2c@ff510000/imx378@1a[0]' - status (0)
+[    0.562042] imx378 1-001a: Linked as a consumer to regulator.14
+[    0.562177] imx378 1-001a: Linked as a consumer to regulator.12
+[    0.562234] imx378 1-001a: Linked as a consumer to regulator.13
+[    0.565848] imx378 1-001a: reg_H=0x00, reg_L=0x00, sensor_id=0x0000
+[    0.565885] imx378 1-001a: Unexpected sensor id(000000), ret(-5)
+[    0.566332] imx378 1-001a: Dropping the link to 
+======================================================================
+
+[78] Similarity: 0.594 | madman.in.a.box | 8/6/2025
+Think of the kernel as a layered architecture. You have your subsystems (I2C, SPI, PCIe...). For the subsystems to interact with the hardware, you need drivers for your hardware. You need to make your drivers and register them with that subsystem. Now, you have drivers that make use of a particular subsystem. For example, say that you're dealing with an SGP30 sensor. That is an air quality/chemical sensor. It uses I2C to communicate with your platform.
+======================================================================
+
+[79] Similarity: 0.584 | madman.in.a.box | 8/6/2025
+In Linux, the driver for that is in the IIO subsystem. It registers itself in the IIO subsystem of the kernel, and it calls upon functions from the I2C subsystem to perform reads/writes to the sensor.
+======================================================================
+
+[80] Similarity: 0.597 | madman.in.a.box | 8/6/2025
+The I2C subsystem then talks to your I2C controller driver (a platform driver) to actually access the hardware.
+======================================================================
+
+[81] Similarity: 0.557 | madman.in.a.box | 8/6/2025
+since those are related to a subsystem or a piece of hardware
+======================================================================
+
+[82] Similarity: 0.550 | slackgeek | 8/7/2025
+you need hardware datasheets to do low level work
+======================================================================
+
+[83] Similarity: 0.555 | exp.lol | 8/14/2025
+```root      794382  0.4  2.1 4576796 714208 
+root      794333  0.4  2.2 4576796 726540 
+root      792826  0.5  3.1 4578016 1028432
+```
+
+like so
+======================================================================
+
+[84] Similarity: 0.594 | nomi516 | 8/21/2025
+So, I can grow up and getting skilled  in Embedded System Field 
+
+I don't know about Hardware devices 
+But I see in the videos or From Session they use Respberry Pi Models 
+Which are effective and they're  Getting Valuable Results as well from these devices
+
+I have a beginner level experience with Linux , just Essential Commands 🙂
+======================================================================
+
+[85] Similarity: 0.598 | madman.in.a.box | 8/28/2025
+you can go multiple ways:
+- add an overlay at boot time to add the proper node(s) so that your device can be detected
+- obtain the original device tree, modify it by adding the additional node(s) for your device
+- decompile the current devie tree, and modify it by adding the additional node(s)
+======================================================================
+
+[86] Similarity: 0.559 | madman.in.a.box | 8/28/2025
+for that you need to consult the documentation for the device tree bindings for whatever kernel module you need to use for your device
+======================================================================
+
+[87] Similarity: 0.557 | exp.lol | 9/2/2025
+as long as the chip supports it, linux should be able to hook up interrupts sufficiently
+======================================================================
+
+[88] Similarity: 0.600 | madman.in.a.box | 9/4/2025
+as far as i am aware, the kernel may provide interfaces to cryptographic accelerators (if available) to userspace
+======================================================================
+
+[89] Similarity: 0.558 | xhivo97 | 9/11/2025
+It's from the device tree, according to which it's `uart2` so I suspect `ttyS2`
+======================================================================
+
+[90] Similarity: 0.554 | madman.in.a.box | 9/11/2025
+i _think_ earlyprintk requires you to have one of the de-facto industry standard UART cores
+======================================================================
+
+[91] Similarity: 0.564 | xhivo97 | 9/12/2025
+But let's look where the kernel actually fails now :
+```
+[    1.234118][    T1] dw-apb-uart fe660000.serial: probe with driver dw-apb-uart failed with error -22
+```
+======================================================================
+
+[92] Similarity: 0.567 | exp.lol | 9/12/2025
+and i'm slightly concerned you're loading `uart8250` but your device-tree segment shows `rk3568-uart`
+======================================================================
+
+[93] Similarity: 0.551 | xhivo97 | 9/13/2025
+Finally figured out what the `--kernel_offset` does in `mkbootimg`, rather, what u-boot does with the addresses.
+======================================================================
+
+[94] Similarity: 0.578 | xhivo97 | 9/14/2025
+ultFstab(): failed to find device default fstab
+[    2.914412][    T1] init: Failed to create FirstStageMount : failed to read default fstab for first stage mount
+[    2.915635][    T1] init: FirstStageMount not available
+[    2.921182][    T1] init: InitFatalReboot: signal 6
+[    2.928233][    T1] init:   #00 pc 00000000003d4274  /init
+[    2.928843][    T1] init: Reboot ending, jumping to kernel
+```
+Oh how nice it feels to see this, lol
+======================================================================
+
+[95] Similarity: 0.610 | exp.lol | 9/15/2025
+i have had to do this on a number of linuxy embedded platforms, but have done only the tiniest hacking on android
+======================================================================
+
+[96] Similarity: 0.579 | exp.lol | 9/15/2025
+the device tree does not provide the hardware support
+======================================================================
+
+[97] Similarity: 0.564 | exp.lol | 9/15/2025
+the kernel modules provide the hardware support
+======================================================================
+
+[98] Similarity: 0.556 | madman.in.a.box | 9/17/2025
+if you add that to the device tree, you're telling the kernel to never shut off that regulator
+======================================================================
+
+[99] Similarity: 0.556 | madman.in.a.box | 9/17/2025
+when dealing with a GPIO regulator, the kernel will reserve the pin on the GPIO port you specified for regulator usage
+======================================================================
+
+[100] Similarity: 0.551 | zk472103 | 9/21/2025
+Hi all, can you suggest projects to level up my Yocto skills?
+I’ve been working with Embedded Linux/Yocto for ~1 year but feel like I’ve just scratched the surface.
+
+Boards: BeagleBone Black, i.MX93, STM32MP157
+Yocto: custom psplash logo, USB Wi-Fi, UART/TFTP, SSD1306 (I²C), ILI9341 (SPI), Weston/Sato + RDP
+Boot: U-Boot, BusyBox, Buildroot
+
+Next targets i plan to do, 
+- Security: TrustZone/OP-TEE, Secure Boot, dm-verity
+- Debug: GUI to drive GDB on A-core while debugging M-core (STM32MP157/i.MX9
+======================================================================
+
+[101] Similarity: 0.554 | kaede_x86 | 10/1/2025
+can you link exact kernel sources? as I find only quick hacks to only pass through video from DRM system
+======================================================================
+
+[102] Similarity: 0.554 | kaede_x86 | 10/1/2025
+dev_warn can be scrubbed from logs - see printk/dmesg/console settings
+======================================================================
+
+[103] Similarity: 0.595 | exp.lol | 10/17/2025
+that and they steal open source code and reproduce it without attribution or licencing
+======================================================================
+
+[104] Similarity: 0.571 | exp.lol | 10/31/2025
+short of trolling through git commits for the driver subdirectory, i would stat with git bisecting this because what a bizarro issue!
+======================================================================
+
+[105] Similarity: 0.556 | dr.sudo | 10/31/2025
+the device tree, and then it read correctly. However, when I erased the QSPI it went back to 0x99C5.
+
+In some cases, it would read 0x19C5 instead of 0x1985.
+
+So, I think it could be the SPI timing.
+
+Just for reference, in the old working kernel version, the max frequency was set to 133 MHz. And this lines up with what's stated in their [datasheet](https://www.mxic.com.tw/Lists/Datasheet/Attachments/8959/MX66L2G45G,%203V,%202Gb,%20v1.1.pdf), particularly Page 28.
+
+I'll keep lowering the frequency
+======================================================================
+
+[106] Similarity: 0.592 | kaede_x86 | 10/31/2025
+looking at bindings and datasheet `256Mb Address Protocol` seems like needs futher investigation, "jedec,spi-nor" autodetection should work ok
+======================================================================
+
+[107] Similarity: 0.559 | magnetrwn | 11/3/2025
+disabled secure boot?
+======================================================================

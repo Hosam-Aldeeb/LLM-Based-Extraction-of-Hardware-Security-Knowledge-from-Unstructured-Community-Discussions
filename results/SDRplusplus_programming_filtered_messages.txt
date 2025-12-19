@@ -1,0 +1,11 @@
+[1] Similarity: 0.578 | ryzerth | 9/24/2025
+apparently before being repurposed for IoT it was for oil pipeline SCADA systems
+======================================================================
+
+[2] Similarity: 0.594 | kousje | 9/26/2025
+So I can git pull, recompile and hack at the source if I want to.
+======================================================================
+
+[3] Similarity: 0.563 | kousje | 9/26/2025
+I dunno what the actual legality is, but it _should_ be legal to reverse engineer the software to just get the hardware going on your machine.
+======================================================================

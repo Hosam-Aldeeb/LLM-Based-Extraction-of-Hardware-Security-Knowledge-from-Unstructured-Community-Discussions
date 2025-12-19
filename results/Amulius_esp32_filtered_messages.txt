@@ -1,0 +1,476 @@
+[1] Similarity: 0.554 | hard.fault | 1/5/2025
+@ByteWelder it's probably just DRAM that _also_ happens to have code in it
+======================================================================
+
+[2] Similarity: 0.553 | m_a_v_e_r_i_c_k | 1/14/2025
+It depends if you want to use ESP-IDF (C), the Arduino framework (C++) or Rust.
+Micropython is also a possibility.
+======================================================================
+
+[3] Similarity: 0.582 | eithanz | 1/19/2025
+i could try and hack something but i'd prefer not to which is why im waiting for my 12v 4A powersupply
+======================================================================
+
+[4] Similarity: 0.566 | milo.sh | 1/21/2025
+@A Rusted Skull What bothers me for instance is an example "controller_hci_uart_demo" there is only one reference to CONFIG_BTDM_CTRL_HCI_UART_BAUDRATE, which is not even in the initialization, but in the log "    ESP_LOGI(tag, "HCI UART%d Pin select: TX 5, RX 18, CTS 23, RTS 19 Baudrate:%d", CONFIG_BTDM_CTRL_HCI_UART_NO, CONFIG_BTDM_CTRL_HCI_UART_BAUDRATE);
+"
+======================================================================
+
+[5] Similarity: 0.559 | falk6773 | 2/16/2025
+s::link_patches();
+
+    // Bind the log crate to the ESP Logging facilities
+    esp_idf_svc::log::EspLogger::initialize_default();
+
+    // Setting up receiver
+    let join_handle: JoinHandle<()> = spawn(|| {
+        wifi_init();
+        // Initialize ESP-NOW
+        let mut receiver = EspNow::take().expect("Failed to take ownership of an ESP-NOW instance");
+
+        loop {
+            match receiver.fetch_peer(true) {
+                Ok(info) => println!("Peer Info: {info:?}"),
+                E
+======================================================================
+
+[6] Similarity: 0.566 | beegcat | 3/1/2025
+```c
+#include <stdio.h>
+#include <driver/i2c.h>
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
+#include <esp_log.h>
+#include <esp_task_wdt.h>
+
+#define I2S_NUM         I2S_NUM_0
+#define SAMPLE_RATE     44100
+#define I2S_BCLK        26
+#define I2S_LRC         27
+#define I2S_DOUT        25
+#define PI              3.14159265358979323846
+#define SINE_WAVE_FREQ  440  // 440Hz (A4 note)
+#define AMPLITUDE       2000
+#define BUFFER_SIZE     512
+
+void i2s_init(void) {
+    i2s_config_t i2s_confi
+======================================================================
+
+[7] Similarity: 0.553 | cpt_seablue | 3/3/2025
+You're including I2C driver but using I2S btw
+======================================================================
+
+[8] Similarity: 0.553 | brandon7716 | 3/5/2025
+x-debug/extension/support/openocd-helpers.tcl" -f board/esp32s3-builtin.cfg
+Open On-Chip Debugger v0.12.0-esp32-20241016 (2024-10-16-14:17)
+Licensed under GNU GPL v2
+For bug reports, read
+        http://openocd.org/doc/doxygen/bugs.html
+DEPRECATED! use 'gdb port', not 'gdb_port'
+DEPRECATED! use 'tcl port' not 'tcl_port'
+CDRTOSConfigure
+Info : only one transport option; autoselecting 'jtag'
+Info : esp_usb_jtag: VID set to 0x303a and PID to 0x1001
+Info : esp_usb_jtag: capabilities descriptor set t
+======================================================================
+
+[9] Similarity: 0.558 | brandon7716 | 3/5/2025
+o 0x2000
+Info : Listening on port 50001 for tcl connections
+Info : Listening on port 50002 for telnet connections
+Error: esp_usb_jtag: could not find or open device!
+C:/Users/oneto/AppData/Local/Arduino15/packages/esp32/tools/openocd-esp32/v0.12.0-esp32-20241016/bin/../share/openocd/scripts/target/esp_common.cfg:9: Error: 
+at file "C:/Users/oneto/AppData/Local/Arduino15/packages/esp32/tools/openocd-esp32/v0.12.0-esp32-20241016/bin/../share/openocd/scripts/target/esp_common.cfg", line 9
+[2025-03-
+======================================================================
+
+[10] Similarity: 0.569 | brandon7716 | 3/5/2025
+Then with these devices, there is like no way you can actually "brick" them just by uploading code to them right? At the very least, not unintentionally brick them?
+======================================================================
+
+[11] Similarity: 0.611 | cliffordheath | 3/8/2025
+https://www.bleepingcomputer.com/news/security/undocumented-backdoor-found-in-bluetooth-chip-used-by-a-billion-devices/
+======================================================================
+
+[12] Similarity: 0.638 | hard.fault | 3/8/2025
+Hold on. This is just silly though 
+> Depending on how Bluetooth stacks handle HCI commands on the device, remote exploitation of the backdoor might be possible via malicious firmware or rogue Bluetooth connections.
+
+> This is especially the case if an attacker already has root access, planted malware, or pushed a malicious update on the device that opens up low-level access.
+======================================================================
+
+[13] Similarity: 0.611 | hard.fault | 3/8/2025
+Anyone who has worked at the hci level knows that vendors often include patch commands to the chipsets because they're usually ROM based with a way to patch code via RAM
+======================================================================
+
+[14] Similarity: 0.580 | mike7c2 | 3/9/2025
+I just read over this, the rhetoric severely misrepresents the issue, undocumented hci commands is sloppy but not an exploit in and of itself, certainly not one that let's someone own your device over BT
+======================================================================
+
+[15] Similarity: 0.584 | cliffordheath | 3/9/2025
+Code on an ESP32 acting as a Bluetooth for something else (in the same box, basically), and not careful of what commands it allows, might allow the something else, if it is compromised, to mess with the Bluetooth.
+
+That is a very niche issue. And documenting may indeed be the “fix”.
+======================================================================
+
+[16] Similarity: 0.589 | thedecryptor | 3/21/2025
+ nice, easily modified react-based webpage used for configuration and various applications.
+Some example applications that will be provided include an ECM spoofer (ISO 14229 server) , general bus logger, Wi-Fi configuration via the web GUI, UDS/kwp2000 module flashing, and more.  The hardware design features a two level board system that breaks up the circuitry in a semi-modular way to allow for different physical layer protocols to be added in by making small modifications to our bottom board t
+======================================================================
+
+[17] Similarity: 0.558 | thedecryptor | 3/21/2025
+emplate. Schematics will also be available in the repo once it goes online.  Much more robust power circuitry  and canbus protection than other devices like macchina a0. Top boards will be either s3 or c6 for now, but planning on a hybrid P4/c6 as well as another form factor for integrating other bus inputs and gpio
+======================================================================
+
+[18] Similarity: 0.551 | the_alchemist0 | 4/13/2025
+What's up? I'm looking for someone to QC this ESP32-C3-Mini wiring schematic. The Espressif manual leaves several passive values as "TBD", and I'm not clear how to get the boot init and USB set up correctly. Important context: The USB is for JTAG; no normal serial comms required. Not serial flashing required; JTAG is fine. Ty!
+======================================================================
+
+[19] Similarity: 0.570 | the_alchemist0 | 4/15/2025
+THe prob is, they all don't use USB JTAG
+======================================================================
+
+[20] Similarity: 0.566 | the_alchemist0 | 4/15/2025
+P sure that Seed board does NOT use JTAG
+======================================================================
+
+[21] Similarity: 0.581 | m_a_v_e_r_i_c_k | 4/15/2025
+GPIO 8 and 9 are strapping pins. If 8 is pulled up and 9 down, the chip will boot in download mode.
+Have you read this description of the USB JTAG? https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/api-guides/usb-serial-jtag-console.html
+======================================================================
+
+[22] Similarity: 0.573 | the_alchemist0 | 4/15/2025
+I just want to be able to flash and debug using JTAG over USB...
+======================================================================
+
+[23] Similarity: 0.648 | m_a_v_e_r_i_c_k | 4/15/2025
+The Xiao board is correct for flashing and debugging via USB JTAG. I would use that schematic as a reference.
+======================================================================
+
+[24] Similarity: 0.552 | beegcat | 4/16/2025
+.
+Running stub...
+Stub running...
+Changing baud rate to 921600
+Changed.
+WARNING: Failed to communicate with the flash chip, read/write operations will fail. Try checking the chip connections or removing any other hardware connected to IOs.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000e000 to 0x0000ffff...
+Flash will be erased from 0x00010000 to 0x00054fff...
+Compressed 24976 b
+======================================================================
+
+[25] Similarity: 0.551 | beegcat | 4/16/2025
+and so i was wondering, in the case of overvoltage the regulator should instantly sacrifice itself right? and should prevent any voltage from going in?
+
+because my computer can still detect the cp2102 driver so im wondering only the regulator and the flash is damaged
+======================================================================
+
+[26] Similarity: 0.557 | cliffordheath | 4/22/2025
+ESP-IDF uses FreeRTOS so you are compiling an operating system along with Arduino and your code
+======================================================================
+
+[27] Similarity: 0.587 | gotbread | 5/15/2025
+First of all, the hardware. Make sure the i2c bus Actually communicates, check the scl and sda lines with your oscilloscope. Also ensure that you have a proper pullup on both lines.
+
+Does your chip send an ACK on the line?
+======================================================================
+
+[28] Similarity: 0.564 | escalator_enjoyer | 5/21/2025
+yeah
+```rs
+fn main() {
+    esp_idf_svc::sys::link_patches();
+    esp_idf_svc::log::EspLogger::initialize_default();
+
+    let p = unsafe {
+        EspPartition::find_first(EspPartitionType::Data(
+            esp_idf_svc::partition::EspDataPartitionSubtype::Fat,
+        ))
+    }
+    .unwrap()
+    .unwrap();
+    let p = EspWlPartition::new(p).unwrap();
+    let wl = unsafe { Fatfs::new_wl_part(0, p.handle()).unwrap() };
+    let _mounted_fs = MountedFatfs::mount(wl, "/fat", 4).unwrap();
+
+    let mut 
+======================================================================
+
+[29] Similarity: 0.565 | nsnfksamfsamlfas | 6/19/2025
+Sketch uses 1245294 bytes (95%) of program storage space. Maximum is 1310720 bytes.
+Global variables use 50968 bytes (15%) of dynamic memory, leaving 276712 bytes for local variables. Maximum is 327680 bytes.
+esptool.py v4.8.1
+Serial port /dev/cu.usbserial-0001
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 14:2b:2f:c1:6a:fc
+Uploading stub...
+Running stub...
+Stub running...
+WARNING: 
+======================================================================
+
+[30] Similarity: 0.566 | madman.in.a.box | 6/20/2025
+[also, they are now exposing a command interface on a serial port... i am sure i can find creative ways of making the system crash]
+======================================================================
+
+[31] Similarity: 0.568 | __thanks_ | 6/23/2025
+Most likely in flash.
+What if at the start, when esp is powered ,an STM chip is supplying the credentials. Then how safe the system will be?
+======================================================================
+
+[32] Similarity: 0.577 | gotbread | 6/23/2025
+What stops the attacker from eavesdropping on the stm32 connection?
+======================================================================
+
+[33] Similarity: 0.575 | __thanks_ | 6/23/2025
+To protect from a dedicated attack on routers??
+======================================================================
+
+[34] Similarity: 0.571 | gotbread | 6/23/2025
+That should be dealt with on the router though. Sure, don't give away the plaintext wifi, but your attack surface is already small.
+======================================================================
+
+[35] Similarity: 0.582 | madman.in.a.box | 6/23/2025
+what part(s) of your system does the adversary have access to
+======================================================================
+
+[36] Similarity: 0.577 | gotbread | 6/23/2025
+Also consider that in many cases, the attacker must have physical access to the device, which already changes the model
+======================================================================
+
+[37] Similarity: 0.560 | gotbread | 6/24/2025
+No, that is part of the espessif package. PlatformIO just sits on top. Before we can really debug anything, you need to find out if the problem is in platformio or the setup in general.
+So I would always cut out layers and use the provided idf
+======================================================================
+
+[38] Similarity: 0.551 | zaika_6o6o6 | 6/24/2025
+From experience with esp, it's better to use esp_idf then arduino / pio stack
+idf.py monitor --port  /dev/cu/,,,  solves monitoring
+it's also possible to reload code straight from monitor with a hotkey
+======================================================================
+
+[39] Similarity: 0.552 | m_a_v_e_r_i_c_k | 6/25/2025
+If this is not defined, the Arduino framework will use the UART instead of USB CDC. Many boards have a USB to TTL chip that facilitates communication with your computer using the UART, so that is the default setting.
+======================================================================
+
+[40] Similarity: 0.564 | proforest1234_95641 | 6/29/2025
+Hello, im kinda new to all this but i think its because you forgot to add the pull up resistors for the i2c lines, i checked the seedstudio datasheet and there are no onboard pull ups for the i2c gpio, this can cause data instability and glitching and random failures in sensors (like you have described). to fix this i mean there are a few ways but it depends on the amount of time you have, you can just modify the pcb or add one externally
+======================================================================
+
+[41] Similarity: 0.558 | proforest1234_95641 | 6/29/2025
+looking at your code i noticed you are changing the frequency of the i2c bus mid loop? as far as i know i2c uses one common clock speed for the entire bus and chaging it while one sensor is uploading can cause faulty readings, have you tried runnning both sensors at 100khz?
+======================================================================
+
+[42] Similarity: 0.553 | frostbite4093 | 7/2/2025
+but it could be the security as well
+======================================================================
+
+[43] Similarity: 0.551 | chagishades_93854 | 7/2/2025
+plus the wifi scanner did show the apartment wifi on various ports so it shouldn't be a telecommunication problem but a cybersecurity one
+======================================================================
+
+[44] Similarity: 0.588 | ._.mintraven | 7/15/2025
+https://github.com/serene-brew/espionage
+
+I along with my friend @RiserSama made this project for reverse engineering esp based firmwares.....maybe u guyz will be intrested and contribute....
+======================================================================
+
+[45] Similarity: 0.573 | zecritic | 7/15/2025
+UART is a solid option. On the newer ESP32's some support USB serial xor USB JTAG on chip, which is great and doesn't take all that much space vs 0.1" headers
+======================================================================
+
+[46] Similarity: 0.633 | b1ack1323 | 7/15/2025
+You can debug over USB with the on board JTAG controller which gives you access to GDB or the physical JTAG interface
+======================================================================
+
+[47] Similarity: 0.572 | mitgobla | 7/19/2025
+(i'm using arduino core on platformio)
+======================================================================
+
+[48] Similarity: 0.555 | flyingtoast3r | 8/16/2025
+I don't know, and I see the pio page says 'debug=no' for all the esp8266 boards.
+
+But, maybe if there is access to the pins mentioned in the following articles you might be able to do something with it and an external debugger?
+
+https://visualgdb.com/tutorials/esp8266/gdbstub/
+
+https://visualgdb.com/tutorials/esp8266/
+
+Node MCU seems to have JTAG pins available  https://visualgdb.com/tutorials/esp8266/nodemcu/jtag/
+======================================================================
+
+[49] Similarity: 0.554 | omg_itsgollum69 | 8/16/2025
+r: s_i2c_synchronous_transaction(945): I2C transaction failed" 
+I'm using this skript i found on the internet: "#include <Wire.h>
+#include <ADXL345_WE.h>
+
+#define ADXL345_I2CADDR 0x53  // or 0x1D if SDO = HIGH
+
+TwoWire Wire2 = TwoWire(0);  // Use I2C port 0 (or 1 if preferred)
+ADXL345_WE myAcc = ADXL345_WE(&Wire2, ADXL345_I2CADDR);
+
+void setup() {
+  Serial.begin(115200);
+
+  // Initialize Wire2 with your SDA and SCL pins
+  Wire2.begin(4, 5);  // SDA = GPIO4 (D4), SCL = GPIO5 (D5)
+
+  // Then initi
+======================================================================
+
+[50] Similarity: 0.555 | gtadictos21 | 8/19/2025
+Hi there! Has anyone worked with ESP-IDF and AWS IoT Core? Specifically with the AWS library for ESP-IDF. The MQTT connection is extremely complicated and the OTA update... well aint very straight foward.
+======================================================================
+
+[51] Similarity: 0.551 | gotbread | 8/20/2025
+that will be an uphill battle.
+if you want to test bare metal, go to a platform which has widespread support for it, e.g. stm32 or avr.
+the esp32 offers you the framework, for anything else, you are on your own, good luck with reverse engineering that framework.
+======================================================================
+
+[52] Similarity: 0.562 | bytewelder | 8/20/2025
+Speaking of which, this is a great video on a WiFi reverse engineering project:
+https://www.youtube.com/watch?v=r8IqkUTGjlA
+======================================================================
+
+[53] Similarity: 0.562 | gotbread | 8/27/2025
+oh, you are using arduino on it, not the idf.py directly
+======================================================================
+
+[54] Similarity: 0.554 | gotbread | 8/27/2025
+the idf.py is the frondend of the sdk you interact with usually. but you are not doing that here, you are using an arduino layer on top of it
+======================================================================
+
+[55] Similarity: 0.583 | bytewelder | 8/30/2025
+No, I want to identify the hardware they're running my firmware on.
+e.g. Lilygo T-Deck, M5Stack Core S3, etc.
+======================================================================
+
+[56] Similarity: 0.580 | 637.8nm | 9/21/2025
+Unit tests (1/2)
+```c
+#include "unity.h"
+#include "../include/app_imu.h"
+#include "esp_intr_alloc.h"
+#include "driver/gpio.h"
+#include "esp_log.h"
+#include "freertos/task.h"
+
+static const char *TAG = "test_app_imu";
+static const spi_bus_config_t bus_config = {
+    .data2_io_num = -1,
+    .data3_io_num = -1,
+    .data4_io_num = -1,
+    .data5_io_num = -1,
+    .data6_io_num = -1,
+    .data7_io_num = -1,
+    .data_io_default_level = false,
+    .max_transfer_sz = 4092,
+    .isr_cpu_id = ESP_INTR_CPU
+======================================================================
+
+[57] Similarity: 0.565 | 637.8nm | 9/21/2025
+G, "Test setup spi bus status code: %i", status_code);
+    assert(status_code == ESP_OK);
+    status_code = app_teardown_spi_bus();
+    assert(status_code == ESP_OK);
+}
+
+TEST_CASE("Test setup of IMU spi device and WHOAMI", "[app_imu]")
+{
+    spi_device_handle_t imu_spi_device;
+    esp_err_t status_code = app_setup_spi_bus(&bus_config);
+    ESP_LOGI(TAG, "bus setup status_code: %i", status_code);
+    assert(status_code == ESP_OK);
+    status_code = app_setup_imu_spi(&device_interface_config, &imu
+======================================================================
+
+[58] Similarity: 0.608 | 637.8nm | 9/21/2025
+_spi_device);
+    ESP_LOGI(TAG, "Test setup of IMU spi device status code: %i", status_code);
+    assert(status_code == ESP_OK);
+    vTaskDelay(5000 / portTICK_PERIOD_MS);
+    status_code = app_imu_test_whoami(&imu_spi_device);
+    ESP_LOGI(TAG, "Test IMU whoami status code: %i", status_code);
+    assert(status_code == ESP_OK);
+    status_code = app_teardown_imu_spi(&imu_spi_device);
+    assert(status_code == ESP_OK);
+    status_code = app_teardown_spi_bus();
+    assert(status_code == ESP_OK);
+}
+======================================================================
+
+[59] Similarity: 0.569 | 637.8nm | 9/21/2025
+app_imu.c (1/2)
+```c
+esp_err_t app_setup_spi_bus(spi_bus_config_t *bus) {
+    return spi_bus_initialize(SPI2_HOST, bus, SPI_DMA_CH_AUTO);  
+}
+
+esp_err_t app_teardown_spi_bus() {
+    return spi_bus_free(SPI2_HOST);
+}
+
+esp_err_t app_setup_imu_spi(spi_device_interface_config_t *imu_spi_dev_config, spi_device_handle_t *imu_spi_dev) {
+    return spi_bus_add_device(SPI2_HOST, imu_spi_dev_config, imu_spi_dev);
+}
+
+esp_err_t app_teardown_imu_spi(spi_device_handle_t *imu_spi_dev) {
+    return spi_bus_remo
+======================================================================
+
+[60] Similarity: 0.561 | 637.8nm | 9/21/2025
+ve_device(*imu_spi_dev);
+}
+```
+======================================================================
+
+[61] Similarity: 0.600 | 637.8nm | 9/21/2025
+app_imu.c (2/2)
+```c
+esp_err_t app_imu_test_whoami(spi_device_handle_t *imu_spi_handle) {
+    /// WHOAMI register value per icm20948 datasheet
+    uint8_t correct = 0xea;
+    // Only need to send zero on the mosi for whoami register
+    uint8_t whoamicommand = 0;
+    spi_transaction_t trans = {
+        .cmd = whoamicommand,
+        .flags = SPI_TRANS_USE_RXDATA,
+        .length = 8,
+        .override_freq_hz = 0,
+        .tx_buffer = NULL
+    };
+    // Conduct polling transaction since this is s
+======================================================================
+
+[62] Similarity: 0.565 | beer_baron | 9/23/2025
+be reliable for a clone, then play with the sample buffer size depending how long the transaction takes or ser a worst case value... A trigger can be cs low... If it doesn't trigger then something is not working on software / hardware side
+======================================================================
+
+[63] Similarity: 0.630 | magnetrwn | 10/4/2025
+it usually uses the xtensa toolchain, then you just flash over usb-to-uart on a devboard (or an esp-prog if you're fancy) and debug over the also usb available jtag
+======================================================================
+
+[64] Similarity: 0.588 | epicstuhl | 10/12/2025
+Its because the c3 version used usb jtag seriel
+======================================================================
+
+[65] Similarity: 0.572 | epicstuhl | 10/12/2025
+No the code Expectes usb jtag
+======================================================================
+
+[66] Similarity: 0.560 | _sathvikande | 10/15/2025
+try this udemey course (which is paid ), but worth !,you will able to use esp  idf , course name :IoT Application Development with the ESP32 Using the ESP-IDF
+(Develop a WiFi based application on the ESP32 and Subscribe/Publish MQTT Messages to AWS IoT using ESP-IDF & FreeRTOS)
+======================================================================
+
+[67] Similarity: 0.580 | magnetrwn | 10/16/2025
+(or maybe spi/i2c, idk what the driver uses)
+======================================================================

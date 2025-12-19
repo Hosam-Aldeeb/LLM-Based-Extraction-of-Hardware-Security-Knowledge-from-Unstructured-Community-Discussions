@@ -1,0 +1,190 @@
+{
+  "channel": "SDRplusplus_programming",
+  "source": "./discord-exports/SDRplusplus_programming_Jan2025_export.json",
+  "filteredMessages": 3,
+  "totalThreads": 3,
+  "substantialThreads": 2,
+  "threads": [
+    [
+      {
+        "id": "1421167464800063585",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:12:07.623-04:00",
+        "content": "That way, I can just git pull and recompile it"
+      },
+      {
+        "id": "1421167585348554782",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:12:36.364-04:00",
+        "content": "Or is the only solution to compile and install the SDRPlay library?"
+      },
+      {
+        "id": "1421167809064468490",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:13:29.702-04:00",
+        "content": "So I can git pull, recompile and hack at the source if I want to.",
+        "reference": {
+          "messageId": "1421167464800063585",
+          "channelId": "752673189854838885",
+          "guildId": "752669522883903601"
+        }
+      },
+      {
+        "id": "1421167819554291774",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:13:32.203-04:00",
+        "content": "I'm oldschool like that."
+      },
+      {
+        "id": "1421167887657468047",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:13:48.44-04:00",
+        "content": "Thanks. I'll figure it out."
+      },
+      {
+        "id": "1421167944615985434",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:14:02.02-04:00",
+        "content": "If all else fails, thanks for the nightly link, @Ryzerth [ON5RYZ/KE8SUI]"
+      },
+      {
+        "id": "1421168013192728658",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:14:18.37-04:00",
+        "content": "Can't change my name here, btw."
+      },
+      {
+        "id": "1421168058785075281",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:14:29.24-04:00",
+        "content": "lmao"
+      },
+      {
+        "id": "1421168073330790470",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:14:32.708-04:00",
+        "content": "dogfooding at its finest."
+      },
+      {
+        "id": "1421168088199598183",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:14:36.253-04:00",
+        "content": "👍"
+      },
+      {
+        "id": "1421169836926697533",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:21:33.182-04:00",
+        "content": "@Ryzerth [ON5RYZ/KE8SUI] Wait. SDRPlay is not supported by default?\nI'm looking through the modules and I don't see anything here. 😭"
+      },
+      {
+        "id": "1421170096990326824",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:22:35.186-04:00",
+        "content": "oh damn, I thought that was all integrated."
+      },
+      {
+        "id": "1421170103399223379",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:22:36.714-04:00",
+        "content": "okay"
+      },
+      {
+        "id": "1421170171418120252",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:22:52.931-04:00",
+        "content": "@Ryzerth [ON5RYZ/KE8SUI] this is with the nightly .deb"
+      },
+      {
+        "id": "1421170423986389143",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:23:53.148-04:00",
+        "content": "yeah, you're right, thank you!"
+      },
+      {
+        "id": "1421171080038449343",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:26:29.563-04:00",
+        "content": "rip"
+      },
+      {
+        "id": "1421172798608506951",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:33:19.302-04:00",
+        "content": "I dunno what the actual legality is, but it _should_ be legal to reverse engineer the software to just get the hardware going on your machine."
+      },
+      {
+        "id": "1421172859597885482",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:33:33.843-04:00",
+        "content": "Software patent law be damned."
+      },
+      {
+        "id": "1421173282178207875",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:35:14.594-04:00",
+        "content": "nice"
+      },
+      {
+        "id": "1421173775625490534",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:37:12.241-04:00",
+        "content": "it's all working now, btw."
+      }
+    ],
+    [
+      {
+        "id": "1421172798608506951",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:33:19.302-04:00",
+        "content": "I dunno what the actual legality is, but it _should_ be legal to reverse engineer the software to just get the hardware going on your machine."
+      },
+      {
+        "id": "1421172859597885482",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:33:33.843-04:00",
+        "content": "Software patent law be damned."
+      },
+      {
+        "id": "1421173082768277625",
+        "author": "ryzerth",
+        "timestamp": "2025-09-26T12:34:27.051-04:00",
+        "content": "long story, but I offered to do it and they didn't want it",
+        "reference": {
+          "messageId": "1421171776196706325",
+          "channelId": "752673189854838885",
+          "guildId": "752669522883903601"
+        }
+      },
+      {
+        "id": "1421173108089294929",
+        "author": "ryzerth",
+        "timestamp": "2025-09-26T12:34:33.088-04:00",
+        "content": "already done",
+        "reference": {
+          "messageId": "1421172798608506951",
+          "channelId": "752673189854838885",
+          "guildId": "752669522883903601"
+        }
+      },
+      {
+        "id": "1421173237190103211",
+        "author": "ryzerth",
+        "timestamp": "2025-09-26T12:35:03.868-04:00",
+        "content": "I've reversed their shit so much I've had my own code running on the housekeeping MCU inside of their MSi2500 chip"
+      },
+      {
+        "id": "1421173282178207875",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:35:14.594-04:00",
+        "content": "nice"
+      },
+      {
+        "id": "1421173775625490534",
+        "author": "kousje",
+        "timestamp": "2025-09-26T12:37:12.241-04:00",
+        "content": "it's all working now, btw."
+      }
+    ]
+  ]
+}

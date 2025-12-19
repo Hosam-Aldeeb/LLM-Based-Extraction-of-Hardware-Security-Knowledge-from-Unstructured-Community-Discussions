@@ -1,0 +1,29 @@
+{
+  "channel": "CutFreedom_swinfo",
+  "source": "./discord-exports/CutFreedom_swinfo_Jan2025_export.json",
+  "filteredMessages": 1,
+  "totalThreads": 1,
+  "substantialThreads": 1,
+  "threads": [
+    [
+      {
+        "id": "1358918789915476209",
+        "author": "unverified",
+        "timestamp": "2025-04-07T17:38:07.006-04:00",
+        "content": "given the amount of obfuscation and the fact it uses usb/bluetooth makes me think it might be an outside exe registering the device"
+      },
+      {
+        "id": "1358919075484537013",
+        "author": "unverified",
+        "timestamp": "2025-04-07T17:39:15.091-04:00",
+        "content": "I'm still debating on trying to make a client mod for people to create plugins to do whatever they'd like with the software (like vencord for discord) but I'm still questioning the legality of it"
+      },
+      {
+        "id": "1358919138960998440",
+        "author": "unverified",
+        "timestamp": "2025-04-07T17:39:30.225-04:00",
+        "content": "id hate to put the work in for an immediate takedown"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "channel": "Amulius_risc-v",
+  "source": "./discord-exports/Amulius_risc-v_Jan2025_export.json",
+  "filteredMessages": 11,
+  "totalThreads": 11,
+  "substantialThreads": 8,
+  "threads": [
+    [
+      {
+        "id": "1365759363754627263",
+        "author": "mccakit",
+        "timestamp": "2025-04-26T14:40:06.901-04:00",
+        "content": "Hi people, I wanna program a RISC-V mcu without an ide or a tool like esp-idf. I wanna program it with whatever build tool I want with whatever language I want. RISC-V has an LLVM backend so this should be possible.\n\nHowever, I do not have any experience in this. People suggested downloading an sdk, configuring the toolchain to use llvm/risc-v and just compiling like usual, but I'm not sure.\n\nTo try it out, I ordered 2 ch32v3 MCU development kits, I already have an llvm based development enviroment setup in my computer, msys2 + xmake + llvm toolchain(I don't know msys2 packages have risc-v backend) + and clang based dev tools like clangd.\n\nSo in theory all I have to do is make sure my llvm toolchain can compile to risc-v targets and use the sdk as I would any other library.\n\nIf this is correct where can I download the sdk for ch32v3, do I need to port it? I program in c++ currently but also want to try out zig in electronic spaces.\n\nI found one sdk but it is gcc based and none of my dev tools work with gcc, mostly clangd"
+      },
+      {
+        "id": "1365803797548367893",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-26T17:36:40.743-04:00",
+        "content": "ESP-IDF is for Espressif MCUs, so it's not compatible with the CH32V003 anyway.\nI used this when programming CH32V003 chips: https://github.com/cnlohr/ch32fun\nThere is also a guide here for Rust: https://noxim.xyz/blog/rust-ch32v003/\nI wanted to use Rust originally but I had issues getting it to work.\nI programmed the chips using an ESP32-S2 or an RP2040 as a programmer.\nhttps://github.com/cnlohr/esp32s2-cookbook/tree/master/ch32v003programmer\nhttps://github.com/aappleby/PicoRVD",
+        "reference": {
+          "messageId": "1365759363754627263",
+          "channelId": "708982159217524798",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1370035063118495907",
+        "author": "slackgeek",
+        "timestamp": "2025-05-08T09:50:13.068-04:00",
+        "content": "with jtag you could load a bootloader, and from the bootloader flash any other image",
+        "reference": {
+          "messageId": "1365759363754627263",
+          "channelId": "708982159217524798",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1370035132173652070",
+        "author": "slackgeek",
+        "timestamp": "2025-05-08T09:50:29.532-04:00",
+        "content": "that may be the most generic approach"
+      },
+      {
+        "id": "1370035174988841082",
+        "author": "slackgeek",
+        "timestamp": "2025-05-08T09:50:39.74-04:00",
+        "content": "but you don't always have something like that"
+      },
+      {
+        "id": "1370036630844604447",
+        "author": "slackgeek",
+        "timestamp": "2025-05-08T09:56:26.843-04:00",
+        "content": "these CH32 may use one wire to be programmed"
+      }
+    ],
+    [
+      {
+        "id": "1371518078029922445",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:03:11.376-04:00",
+        "content": "Would you reccomend creating a software handler for the misaligned accesses this may cause, trying to implement misaligned accesses in hardware, or trying to edit the source?"
+      },
+      {
+        "id": "1371518104592711812",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:03:17.709-04:00",
+        "content": "I can't think of a smart way to do the 3rd one"
+      },
+      {
+        "id": "1371518193692311648",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:03:38.952-04:00",
+        "content": "I guess I could malloc a patch and memcpy it",
+        "reference": {
+          "messageId": "1371518113081983026",
+          "channelId": "708982159217524798",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1371518245676519454",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:03:51.346-04:00",
+        "content": "but that feels like itd have such substantial overhead when I alreadyh have the rawwad"
+      },
+      {
+        "id": "1371518373346672670",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:04:21.785-04:00",
+        "content": "This may be doable\nThe way emdoom works is by converting the doom `wad` file into the `rawwad` array with another C program",
+        "reference": {
+          "messageId": "1371518221978701956",
+          "channelId": "708982159217524798",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1371518426224529528",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:04:34.392-04:00",
+        "content": "Maybe I can try altering that to store patches with proper alignment at the expense of some padding"
+      },
+      {
+        "id": "1371518578528096330",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:05:10.704-04:00",
+        "content": "Which I guess this file sort of does\nhttps://github.com/cnlohr/embeddedDOOM/blob/master/src/support/rawwad.c",
+        "reference": {
+          "messageId": "1371518417957556374",
+          "channelId": "708982159217524798",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1371518586748801094",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:05:12.664-04:00",
+        "content": "oh oops"
+      },
+      {
+        "id": "1371518592712970251",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:05:14.086-04:00",
+        "content": "wrong one"
+      },
+      {
+        "id": "1371518608357720255",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:05:17.816-04:00",
+        "content": "https://github.com/cnlohr/embeddedDOOM/blob/master/src/support/wadder.c"
+      },
+      {
+        "id": "1371518704877043773",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:05:40.828-04:00",
+        "content": "Alright\nI'll try to see if I can reformat it to align patches better"
+      },
+      {
+        "id": "1371518748191621131",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:05:51.155-04:00",
+        "content": "Ty TRON 🙏 saving me as always"
+      },
+      {
+        "id": "1371519051075026945",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:07:03.368-04:00",
+        "content": "My malloc comes from newlib (so I only had to write sbrk)"
+      },
+      {
+        "id": "1371519078090543287",
+        "author": "parallaxerror",
+        "timestamp": "2025-05-12T12:07:09.809-04:00",
+        "content": "so I shouldnt have alignment faults there atleast"
+      }
+    ],
+    [
+      {
+        "id": "1371627939430400090",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-12T19:19:44.375-04:00",
+        "content": "and i have the verilog for a Cortex-M0, so i have been thinking about making a design that uses the M0 as a security and bootstrapping processor"
+      },
+      {
+        "id": "1371628065926549505",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-12T19:20:14.534-04:00",
+        "content": "personally, i would stay away from CUDA on the grounds that it locks you down to nvidia stuff"
+      },
+      {
+        "id": "1371628101796102245",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-12T19:20:23.086-04:00",
+        "content": "look into OpenCL, OpenMP, or the likes better"
+      },
+      {
+        "id": "1371628283757858916",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-12T19:21:06.469-04:00",
+        "content": "look into the MiSTer cores"
+      }
+    ],
+    [
+      {
+        "id": "1373504444800696431",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-17T23:36:18.119-04:00",
+        "content": "also, have the security coprocessor provide cryptographic services for the PS7"
+      },
+      {
+        "id": "1373504496398762004",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-17T23:36:30.421-04:00",
+        "content": "make something like OpTEE part of your boot chain"
+      },
+      {
+        "id": "1373504626611191889",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-17T23:37:01.466-04:00",
+        "content": "and have any secure monitor calls be delegated by OpTEE to the services provided by the coprocessor"
+      },
+      {
+        "id": "1373504750879903797",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-05-17T23:37:31.094-04:00",
+        "content": "there's no graphical \"bling\" to speak of with this, but there's a lot of security intensive stuff (which is my area of work)"
+      }
+    ],
+    [
+      {
+        "id": "1412387971381989376",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-09-02T06:45:33.277-04:00",
+        "content": "\"hardware security\" as in traditional hardware security where you're dealing with hardware trojans, formal verification, and the such?"
+      },
+      {
+        "id": "1412388056597794896",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-09-02T06:45:53.594-04:00",
+        "content": "if so, how does RISC-V come into that mix?"
+      },
+      {
+        "id": "1412396036407689216",
+        "author": "noe7841",
+        "timestamp": "2025-09-02T07:17:36.129-04:00",
+        "content": "The thing is, I’m in really good terms with a teacher/researcher whose main focus is hardware security. I really want to work on RISC-V, and he’s also interested in it, so it feels like a great opportunity to do something together. Now I just need to find a way to mix the two. It might lean more towards a computer science angle than pure hardware. I was kinda counting on the courses I’ll take this year to help me narrow it down, but I have to propose a topic really soon 😅",
+        "reference": {
+          "messageId": "1412387971381989376",
+          "channelId": "708982159217524798",
+          "guildId": "694859291680702495"
+        }
+      },
+      {
+        "id": "1412400383984406529",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-09-02T07:34:52.672-04:00",
+        "content": "Being in good terms does not guarantee you funding. You probably want to find out exactly what the professor is interested in. Again, hardware security does not necessarily relate to RISC-V. You could target some RISC-V _implementation_ as a test platform for some hardware security research, but you would need to define what the end-goal here is. For example, if you're looking at hardware trojans then you could test whatever framework you're developing on that RISC-V implementation. However, if I am reviewing your publication based on that, then my first question would be \"why are you limiting yourself to testing on a RISC-V implementation?\" or \"why are you focusing on RISC-V instead of doing something more generic?\"."
+      }
+    ],
+    [
+      {
+        "id": "1433187183489192097",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-29T16:14:11.874-04:00",
+        "content": "having worked at the hardware level with SPARC before i can attest to some of this"
+      },
+      {
+        "id": "1433187313575395328",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-29T16:14:42.889-04:00",
+        "content": "his complaint is rooted on the fact that if you have a window overflow then you need to handle that trap"
+      },
+      {
+        "id": "1433187348207894649",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-29T16:14:51.146-04:00",
+        "content": "so you may have to trap within a trap"
+      },
+      {
+        "id": "1433187425554923540",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-29T16:15:09.587-04:00",
+        "content": "_but_ i would argue that if your software is properly written that should not be an issue"
+      },
+      {
+        "id": "1433187600486895798",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-29T16:15:51.294-04:00",
+        "content": "normally you want to avoid swapping out kernel pages"
+      },
+      {
+        "id": "1433187749254660316",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-29T16:16:26.763-04:00",
+        "content": "_although_ if your kernel is KPTI-enabled you are _kind of_ swapping in and out kernel pages"
+      }
+    ],
+    [
+      {
+        "id": "1433187466373894318",
+        "author": "hard.fault",
+        "timestamp": "2025-10-29T16:15:19.319-04:00",
+        "content": "oh please, the linux kernel handles x86 double faults all the time 😛"
+      },
+      {
+        "id": "1433187521885634632",
+        "author": "hard.fault",
+        "timestamp": "2025-10-29T16:15:32.554-04:00",
+        "content": "isn't that how paging works?"
+      },
+      {
+        "id": "1433187608929767607",
+        "author": "hard.fault",
+        "timestamp": "2025-10-29T16:15:53.307-04:00",
+        "content": "or maybe I'm thinking of the reboot with the triple fault"
+      }
+    ],
+    [
+      {
+        "id": "1433460962685620265",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-30T10:22:05.921-04:00",
+        "content": "_but_ you can hardware assist those things"
+      },
+      {
+        "id": "1433465016559861770",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-30T10:38:12.44-04:00",
+        "content": "the thing is that there are some interesting microarchitectural things you can do with register windows"
+      },
+      {
+        "id": "1433465057815298070",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-30T10:38:22.276-04:00",
+        "content": "yes, having more registers == good thing"
+      },
+      {
+        "id": "1433465178212663326",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-30T10:38:50.981-04:00",
+        "content": "[see ARMv8-A as an example, compare to ARMv6-M, newer iterations of x86]"
+      },
+      {
+        "id": "1433465287771951165",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-30T10:39:17.102-04:00",
+        "content": "the thing with register windows is that as long as you don't have to spill them to RAM you'll be good"
+      },
+      {
+        "id": "1433465399109750845",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-30T10:39:43.647-04:00",
+        "content": "the real problem is on a context switch you may need to save an entire set of register windows and restore them"
+      },
+      {
+        "id": "1433465500817686696",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-30T10:40:07.896-04:00",
+        "content": "however, what if you're able to avoid doing the context switch or have hardware support for context switching?"
+      },
+      {
+        "id": "1433465543016452137",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-30T10:40:17.957-04:00",
+        "content": "modern SPARC cores are massively superscalar"
+      },
+      {
+        "id": "1433465632900513833",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-10-30T10:40:39.387-04:00",
+        "content": "which in part is due to the ability to juggle around things with the register windows"
+      }
+    ]
+  ]
+}

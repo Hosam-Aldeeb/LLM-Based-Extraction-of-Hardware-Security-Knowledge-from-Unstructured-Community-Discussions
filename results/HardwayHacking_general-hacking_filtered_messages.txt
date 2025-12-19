@@ -1,0 +1,2370 @@
+[1] Similarity: 0.616 | youpaki | 1/14/2025
+i wanna know whats the most used port hacking tool?
+======================================================================
+
+[2] Similarity: 0.554 | loredous | 1/14/2025
+I wanna know what you think "port hacking" is?
+======================================================================
+
+[3] Similarity: 0.612 | youpaki | 1/14/2025
+Ports serve as entry points for communication between devices and are associated with specific services or protocols, such as HTTP port 80 or SSH port 22. When improperly secured, these ports can become an attack
+======================================================================
+
+[4] Similarity: 0.583 | loredous | 1/14/2025
+Sure, but what is "port hacking"?
+======================================================================
+
+[5] Similarity: 0.582 | loredous | 1/14/2025
+There's port scanning... there's attacks on specific services...
+======================================================================
+
+[6] Similarity: 0.645 | youpaki | 1/14/2025
+refers to the act of exploiting vulnerabilities or weaknesses
+======================================================================
+
+[7] Similarity: 0.616 | loredous | 1/14/2025
+regardless, back to your original question now that I know what you're asking: There isn't a single specific tool that gets used for exploiting vulnerabilities. Probably the closest thing to a universal tool would be Metasploit, but that might only help you with 20% of the vulnerabilities out there...
+======================================================================
+
+[8] Similarity: 0.602 | loredous | 1/18/2025
+For example if you want to write an exploit that takes advantage of a buffer overflow, you need to understand how the system works at a low level, and be able to set up and make syscalls directly from binary shellcode
+======================================================================
+
+[9] Similarity: 0.609 | loredous | 1/18/2025
+It is also going to be important for malware development if you want to write something that attempts to properly bypass detection (not just silly Python malware)
+======================================================================
+
+[10] Similarity: 0.613 | .eevee | 1/18/2025
+Also Grey Hat Hacking, latest edition
+======================================================================
+
+[11] Similarity: 0.560 | loredous | 1/18/2025
+It's a solid read still for binary exploitation
+======================================================================
+
+[12] Similarity: 0.631 | Carl-bot | 1/19/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[13] Similarity: 0.609 | siddarth90999x | 1/20/2025
+intro to cybersecurity
+======================================================================
+
+[14] Similarity: 0.556 | loredous | 1/22/2025
+If you're trying to do anything custom with those keyboards, you probably would benefit from understanding embedded programming, and at least the basics of the HID protocols
+======================================================================
+
+[15] Similarity: 0.550 | freeviruzdotorg | 1/25/2025
+Or do vulnhub and hack those VMs since they are local
+======================================================================
+
+[16] Similarity: 0.563 | freeviruzdotorg | 1/25/2025
+You download, add to virtualization software, attack
+======================================================================
+
+[17] Similarity: 0.558 | loredous | 1/27/2025
+First off, is your "phishing site" running on port 80, or maybe some other port
+======================================================================
+
+[18] Similarity: 0.631 | Carl-bot | 1/27/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[19] Similarity: 0.583 | loredous | 1/29/2025
+There are lots of ways to find the password without fully brute forcing, and even potentially ways to connect and gain root without ever knowing the password. You could look for other services that might have vulnerabilities, such as SQL injections, directory traversals, arbitrary reads/writes, etc
+======================================================================
+
+[20] Similarity: 0.583 | aspect_of_hate | 1/29/2025
+No clue really i mean im confortable with basics of networking ,operating systems commen vulns that no one uses in real life scenarios ehhh i dont what else really
+======================================================================
+
+[21] Similarity: 0.631 | Carl-bot | 1/29/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[22] Similarity: 0.559 | loredous | 1/29/2025
+The other thing you mentioned is "commen vulns that no one uses in real life scenarios". The thing to understand is that the vast majority of the time, people fail at the most basic levels of security. You might think that something like a directory traversal, or a basic SQLi, or even a default password is something silly that you will never see in the real world, but you'd be shocked how often those are seen in the wild
+======================================================================
+
+[23] Similarity: 0.557 | loredous | 2/9/2025
+It's not critical knowledge to have for ethical hacking, but to be honest, if you really want to get into the world of cybersecurity you should start exercising your learning skills
+======================================================================
+
+[24] Similarity: 0.605 | mrpinkdoingchem | 2/12/2025
+question how do i know if my entire wifi router and my entire computer has been hacked this from twitter
+======================================================================
+
+[25] Similarity: 0.551 | arity0 | 2/12/2025
+such as stealing your passwords and tokens to log into your accounts
+======================================================================
+
+[26] Similarity: 0.588 | mrpinkdoingchem | 2/12/2025
+and how would i know if they hacked my laptop
+======================================================================
+
+[27] Similarity: 0.561 | kamjam21xx | 2/13/2025
+but idk im not a hacker, im a graphics programmer.
+======================================================================
+
+[28] Similarity: 0.612 | kamjam21xx | 2/13/2025
+cuz this the hacking one.
+======================================================================
+
+[29] Similarity: 0.551 | kamjam21xx | 2/13/2025
+i just blocked it cuz i got sus that dangling functionality built into windows for something nobody wants, is acting weird, and isnt installed, might be a source for exploitation.
+======================================================================
+
+[30] Similarity: 0.576 | mrpinkdoingchem | 2/13/2025
+alos hacking people wifi
+======================================================================
+
+[31] Similarity: 0.599 | loredous | 2/13/2025
+It really depends on what you want to actually test with it. There are lots of different projects out there around using the ESP32 family chips for security work
+======================================================================
+
+[32] Similarity: 0.607 | hammerfox | 2/14/2025
+reverse engineering is the art of taking compiled binaries and attempting to uncover how the software works
+======================================================================
+
+[33] Similarity: 0.561 | root_mitsu | 2/14/2025
+i fount vulnerable ports on my google home mini
+======================================================================
+
+[34] Similarity: 0.671 | hammerfox | 2/14/2025
+you've found vulnerabilities in the software running on those ports?
+======================================================================
+
+[35] Similarity: 0.564 | hammerfox | 2/14/2025
+but make sure you've proven it can be exploited first
+======================================================================
+
+[36] Similarity: 0.579 | hammerfox | 2/14/2025
+but like i said, you should have proof that those pieces of software can be exploited first
+======================================================================
+
+[37] Similarity: 0.601 | root_mitsu | 2/14/2025
+port 8009 is vulnerable to CVE-2020-1938 (ghostcat)
+======================================================================
+
+[38] Similarity: 0.592 | hammerfox | 2/14/2025
+that exploit may only work on a specific version
+======================================================================
+
+[39] Similarity: 0.620 | root_mitsu | 2/14/2025
+the exploit
+======================================================================
+
+[40] Similarity: 0.602 | root_mitsu | 2/14/2025
+w that exploit if it works you can execute code and access internal files
+======================================================================
+
+[41] Similarity: 0.566 | root_mitsu | 2/14/2025
+Initiating SYN Stealth Scan at 15:57
+Scanning Google-Home-Mini.homenet.telecomitalia.it (192.168.1.4) [1000 ports]
+Discovered open port 9000/tcp on 192.168.1.4
+Discovered open port 10001/tcp on 192.168.1.4
+Discovered open port 8008/tcp on 192.168.1.4
+Discovered open port 8443/tcp on 192.168.1.4
+Discovered open port 10002/tcp on 192.168.1.4
+Discovered open port 8009/tcp on 192.168.1.4
+Completed SYN Stealth Scan at 15:57, 0.44s elapsed (1000 total ports)
+Initiating Service scan at 15:57
+======================================================================
+
+[42] Similarity: 0.570 | mrsskelli | 2/14/2025
+Dude thought he found a bug in a Google home and now you're begging him to hack you
+======================================================================
+
+[43] Similarity: 0.637 | doritogod98 | 2/15/2025
+can someone link me to that hacking tools github list, i cant find
+======================================================================
+
+[44] Similarity: 0.556 | doritogod98 | 2/15/2025
+i dont know i was looking the other day through this server and saw a tools list that had tons of stuff related to osint, i thought there was a recourses channel but maybe im schizo
+======================================================================
+
+[45] Similarity: 0.559 | _pi | 2/15/2025
+and make sure Malwarebytes is not doing regular scans
+======================================================================
+
+[46] Similarity: 0.559 | annirudha | 2/15/2025
+My INDIAN mechanic said to trust QH and dad purchased it for me...also i got free version of malwarebyres
+======================================================================
+
+[47] Similarity: 0.554 | _pi | 2/15/2025
+This is how I handle antivirus in my device and I have never had to deal with a Malware infection
+======================================================================
+
+[48] Similarity: 0.577 | lenny_leonard | 2/15/2025
+It's mostly threat intel I think and ability to respond and shut down data exfil
+======================================================================
+
+[49] Similarity: 0.586 | root_mitsu | 2/20/2025
+someone intrested in hacking my website
+======================================================================
+
+[50] Similarity: 0.654 | mrsskelli | 2/21/2025
+50+ vulnerabilities and you’re allowed to hack it
+======================================================================
+
+[51] Similarity: 0.577 | doritogod98 | 2/24/2025
+Hello how does obfuscation work I want to know how malware is conducted with JavaScript
+======================================================================
+
+[52] Similarity: 0.627 | evranovich | 2/27/2025
+Specific to hacking ?
+======================================================================
+
+[53] Similarity: 0.582 | evranovich | 2/27/2025
+I don't exactly know but I think it'll be the finding of vulnerabilities
+======================================================================
+
+[54] Similarity: 0.622 | arity0 | 2/27/2025
+finding new vulnerabilities is what most hackers do
+======================================================================
+
+[55] Similarity: 0.627 | arity0 | 2/27/2025
+which things do you want to focus on first though? website hacking? hardware hacking?
+======================================================================
+
+[56] Similarity: 0.595 | arity0 | 2/27/2025
+wifi hacking?
+======================================================================
+
+[57] Similarity: 0.599 | dogwater3301 | 2/27/2025
+game hacking
+======================================================================
+
+[58] Similarity: 0.554 | arity0 | 2/27/2025
+home security?
+======================================================================
+
+[59] Similarity: 0.606 | arity0 | 2/27/2025
+malware development? reverse engineering?
+======================================================================
+
+[60] Similarity: 0.576 | arity0 | 2/27/2025
+but existing exploits and issues still exist and cause problems
+======================================================================
+
+[61] Similarity: 0.594 | evranovich | 2/27/2025
+What is the type of hacking we use in FBI ?
+======================================================================
+
+[62] Similarity: 0.651 | .eevee | 3/3/2025
+The job of a hacker, is to figure out what inputs are vulnerable.
+======================================================================
+
+[63] Similarity: 0.591 | loredous | 3/4/2025
+Also to note: the repo I pulled that screenshot from is 100% malware
+======================================================================
+
+[64] Similarity: 0.599 | dogwater3301 | 3/4/2025
+game cheats with malware in it?
+======================================================================
+
+[65] Similarity: 0.609 | dogwater3301 | 3/4/2025
+github or not, game cheats surely rank #1 in malware distribution
+======================================================================
+
+[66] Similarity: 0.569 | dogwater3301 | 3/4/2025
+also fun how google flags the site as malicious, but the repo is still up
+======================================================================
+
+[67] Similarity: 0.565 | dogwater3301 | 3/4/2025
+one upside, its an endless supply of malware for training
+======================================================================
+
+[68] Similarity: 0.568 | dogwater3301 | 3/4/2025
+people are spamming malware crazy on yt
+======================================================================
+
+[69] Similarity: 0.594 | mrsskelli | 3/9/2025
+- Source I’ve worked as an ethical hacker and in cybersecurity for 10 years and that’s one of the most common myths
+======================================================================
+
+[70] Similarity: 0.557 | tuhholainen | 3/9/2025
+any easy cybersec/hacking courses i should do?
+======================================================================
+
+[71] Similarity: 0.591 | zeozgiant | 3/12/2025
+Can anyone with a decent virus scanner confirm for me this link doesnt have the potential to capture your IP, steal your data, or anything else as such:
+
+
+
+https://pin.it/JfBiHZQjR
+
+
+
+When I scanned it using virustotal, I got this as a result and am still confused if it's good or not......
+======================================================================
+
+[72] Similarity: 0.556 | tuhholainen | 3/12/2025
+If someone tella their hack it for money, their scamming
+======================================================================
+
+[73] Similarity: 0.552 | dogwater3301 | 3/12/2025
+You’ll sometimes get all sorts of alerts from some security vendors that aren’t critical
+======================================================================
+
+[74] Similarity: 0.612 | gigachad_s_38055 | 3/12/2025
+Do i can hacking in Ios?
+======================================================================
+
+[75] Similarity: 0.594 | gigachad_s_38055 | 3/12/2025
+Do i can use Ios like hacking tool
+======================================================================
+
+[76] Similarity: 0.603 | gigachad_s_38055 | 3/12/2025
+Do i can use my ios as hack tool
+======================================================================
+
+[77] Similarity: 0.559 | tuhholainen | 3/12/2025
+There isnt way to hack u trought an link
+======================================================================
+
+[78] Similarity: 0.562 | tuhholainen | 3/12/2025
+Like getting malware to ya
+======================================================================
+
+[79] Similarity: 0.562 | radonreborn | 3/12/2025
+false positives are possible from security vendors
+======================================================================
+
+[80] Similarity: 0.552 | zeozgiant | 3/12/2025
+possible
+
+
+see if we scan a grabify link through virustotal, it gives us "malicious" which means its doing is job. i dont wanna say false positives are not a thing but could there possibly be more going on for it to have "malicious"?
+======================================================================
+
+[81] Similarity: 0.641 | dogwater3301 | 3/12/2025
+for example attackers can try distributing malicious code or software through compromised websites
+======================================================================
+
+[82] Similarity: 0.630 | radonreborn | 3/12/2025
+could be anything, imagine you have an app installed on your machine that uses links such as `steam://open/console` to interact with the software and the website redirects to such URL. what if the software on your system is outdated and has a vulnerability? :D
+======================================================================
+
+[83] Similarity: 0.602 | radonreborn | 3/12/2025
+https://nvd.nist.gov/vuln/detail/CVE-2025-1080
+======================================================================
+
+[84] Similarity: 0.623 | radonreborn | 3/12/2025
+what do you want to hack?
+======================================================================
+
+[85] Similarity: 0.669 | gigachad_s_38055 | 3/12/2025
+Cybersecurity
+======================================================================
+
+[86] Similarity: 0.597 | dogwater3301 | 3/12/2025
+there you go https://roadmap.sh/cyber-security
+======================================================================
+
+[87] Similarity: 0.628 | radonreborn | 3/12/2025
+#✔｜learn-hacking
+======================================================================
+
+[88] Similarity: 0.586 | ohiogigglefarts | 3/13/2025
+is there anyways to do and learn cybersecurity by just using iphone/ios
+======================================================================
+
+[89] Similarity: 0.613 | mrsskelli | 3/13/2025
+If it’s web app hacking, likely not, but if you’re trying to reverse engineer iOS apps then you’d have better luck
+======================================================================
+
+[90] Similarity: 0.631 | Carl-bot | 3/13/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[91] Similarity: 0.637 | loredous | 3/13/2025
+The details of hacking are pretty much independent of what OS you are using
+======================================================================
+
+[92] Similarity: 0.571 | gigachad_s_38055 | 3/14/2025
+Guys i want some one to hack my wifi house
+======================================================================
+
+[93] Similarity: 0.580 | mrsskelli | 3/14/2025
+You should review the rules and also spend time learning about how hacking works
+======================================================================
+
+[94] Similarity: 0.653 | gigachad_s_38055 | 3/14/2025
+Hacking
+======================================================================
+
+[95] Similarity: 0.595 | tuhholainen | 3/14/2025
+If u want to learn hacking id recommend
+======================================================================
+
+[96] Similarity: 0.631 | Carl-bot | 3/14/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[97] Similarity: 0.631 | Carl-bot | 3/14/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[98] Similarity: 0.601 | mrpinkdoingchem | 3/19/2025
+his hacking skills
+======================================================================
+
+[99] Similarity: 0.603 | mrpinkdoingchem | 3/19/2025
+and hacking wont do it
+======================================================================
+
+[100] Similarity: 0.556 | loredous | 3/19/2025
+Correct . You would need to physically compromise the vehicle and disable multiple security systems in order to do something like that
+======================================================================
+
+[101] Similarity: 0.551 | mrpinkdoingchem | 3/19/2025
+if flipper zero cant hack in the tesla
+======================================================================
+
+[102] Similarity: 0.605 | loredous | 3/19/2025
+So, any device that can't hack a Tesla is garbage?
+======================================================================
+
+[103] Similarity: 0.551 | loredous | 3/19/2025
+The F0 has a ton of different uses, and is a hugely helpful device for specific types of security work
+======================================================================
+
+[104] Similarity: 0.575 | mrpinkdoingchem | 3/19/2025
+are there any hacking device that is better than F0
+======================================================================
+
+[105] Similarity: 0.633 | mrpinkdoingchem | 3/19/2025
+Im going to build a hacking device that literally hacked anything
+======================================================================
+
+[106] Similarity: 0.586 | mrpinkdoingchem | 3/19/2025
+I must hack in everything
+======================================================================
+
+[107] Similarity: 0.631 | Carl-bot | 3/21/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[108] Similarity: 0.586 | mrpinkdoingchem | 3/21/2025
+btw @Javert (He/Him)  do you see kali linux as a more of usage of hacking tool
+======================================================================
+
+[109] Similarity: 0.590 | mrpinkdoingchem | 3/21/2025
+So what do you consider  a hacking platform
+======================================================================
+
+[110] Similarity: 0.598 | cssoftware | 3/21/2025
+What do you imagine a "hacking platform" to be?
+======================================================================
+
+[111] Similarity: 0.613 | mrpinkdoingchem | 3/21/2025
+Is there a hacking platform
+======================================================================
+
+[112] Similarity: 0.655 | .eevee | 3/21/2025
+Hacking platforms:
+======================================================================
+
+[113] Similarity: 0.579 | cssoftware | 3/21/2025
+Maybe, depends on what you want out of a "hacking platform"
+======================================================================
+
+[114] Similarity: 0.582 | cssoftware | 3/21/2025
+What do you want out of a "hacking platform"
+======================================================================
+
+[115] Similarity: 0.553 | loredous | 3/21/2025
+(and I can guarantee you that every single torrent, zipfile, etc, that claims to be "Cobalt Strike" is just malware)
+======================================================================
+
+[116] Similarity: 0.608 | mrpinkdoingchem | 3/21/2025
+So @Javert (He/Him)  is kali linux is consider hacking tool
+======================================================================
+
+[117] Similarity: 0.638 | tuhholainen | 3/22/2025
+u can literally hack on ios
+======================================================================
+
+[118] Similarity: 0.579 | mrpinkdoingchem | 3/22/2025
+I know it not a hacking tool platform
+======================================================================
+
+[119] Similarity: 0.608 | werdna710 | 3/22/2025
+Can ai teach me to cybersecurity?
+======================================================================
+
+[120] Similarity: 0.565 | cssoftware | 3/23/2025
+idk about the "hack anything" part. It's not like they are loaded with previously unseen 0days that would be required to come close to that
+======================================================================
+
+[121] Similarity: 0.631 | Carl-bot | 3/24/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[122] Similarity: 0.581 | cssoftware | 3/24/2025
+It's a mix of it being intentional and unintentional through misconfigurations. Whether it's a real vulnerability depends on the website and what they have going on
+======================================================================
+
+[123] Similarity: 0.578 | z3rox1 | 3/25/2025
+also if i2p is illeagal somewhere  can it be detected if so how can i protect
+======================================================================
+
+[124] Similarity: 0.593 | robloxsam_1 | 3/27/2025
+Can anyone teach me how to hack?
+======================================================================
+
+[125] Similarity: 0.631 | Carl-bot | 3/27/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[126] Similarity: 0.585 | tuhholainen | 3/28/2025
+U said u can hack an ig account for money
+======================================================================
+
+[127] Similarity: 0.588 | tuhholainen | 3/28/2025
+Then I asked can u hack ig accs
+======================================================================
+
+[128] Similarity: 0.574 | Deleted User | 3/28/2025
+i guess he just said he has the potential to hack someones ig and that he charges for it implying he does that in aome sort of give and take type of method also implying hes involved in violating metas protocols making him liable for punishment
+======================================================================
+
+[129] Similarity: 0.587 | thereal_apollo | 3/28/2025
+is there a way to hack that????
+======================================================================
+
+[130] Similarity: 0.580 | thereal_apollo | 3/28/2025
+are u a hacker
+======================================================================
+
+[131] Similarity: 0.560 | hammerfox | 3/28/2025
+highly unlikely it got infected with malware
+======================================================================
+
+[132] Similarity: 0.566 | r00tz1ll4 | 3/28/2025
+is it possible to has malware inside?
+======================================================================
+
+[133] Similarity: 0.581 | dragon_shad | 3/28/2025
+Any process hackers here
+======================================================================
+
+[134] Similarity: 0.571 | arity0 | 4/7/2025
+hacking accounts with exploits just isn't practical, but it is possible
+======================================================================
+
+[135] Similarity: 0.610 | arity0 | 4/7/2025
+you have to keep in mind there are countless extremely talented hackers trying to discover new exploits
+======================================================================
+
+[136] Similarity: 0.597 | arity0 | 4/7/2025
+finding an exploit is like a lawyer finding a loophole in a law
+======================================================================
+
+[137] Similarity: 0.632 | arity0 | 4/7/2025
+if you want a basic understanding of how exploits work, look up "buffer overflow" on youtube or something
+======================================================================
+
+[138] Similarity: 0.562 | arity0 | 4/7/2025
+it's one of the most famous types of exploit
+======================================================================
+
+[139] Similarity: 0.577 | arity0 | 4/7/2025
+because it's still technically hacking their service, which you don't own
+======================================================================
+
+[140] Similarity: 0.580 | Deleted User | 4/8/2025
+Guys (for educational purposes) is it possible to hack into a school network?
+======================================================================
+
+[141] Similarity: 0.601 | hammerfox | 4/8/2025
+anything is hackable
+but it's not necessarily about the establishment so much as it is the technology
+======================================================================
+
+[142] Similarity: 0.631 | Carl-bot | 4/9/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[143] Similarity: 0.568 | arity0 | 4/9/2025
+doing challenges on a CTF website such as hack the box is one of the best ways to practice hacking skills
+======================================================================
+
+[144] Similarity: 0.631 | arity0 | 4/9/2025
+you can also set up vulnhub to practice hacking on your on devices
+======================================================================
+
+[145] Similarity: 0.577 | arity0 | 4/9/2025
+one way to stay curious is by watching quality hacking related content
+======================================================================
+
+[146] Similarity: 0.560 | arity0 | 4/9/2025
+https://www.youtube.com/@Seytonic regularly talks about the latest infosec news and often explains these real world attacks on a surface level
+======================================================================
+
+[147] Similarity: 0.603 | arity0 | 4/9/2025
+https://www.youtube.com/@samykamkar demonstrates awesome hardware and software exploits but he doesn't have much content
+======================================================================
+
+[148] Similarity: 0.634 | arity0 | 4/9/2025
+https://www.youtube.com/@_JohnHammond explains software exploits and social engineering attacks such as phishing
+======================================================================
+
+[149] Similarity: 0.624 | arity0 | 4/9/2025
+https://www.youtube.com/@LiveOverflow explores vulnerabilities and other infosec topics in a fun way
+======================================================================
+
+[150] Similarity: 0.602 | Deleted User | 4/11/2025
+i want to hack my school class pc (linux unubuntu and projector ) and also school windows pc
+======================================================================
+
+[151] Similarity: 0.581 | radonreborn | 4/11/2025
+very :hackerman:
+======================================================================
+
+[152] Similarity: 0.594 | loredous | 4/11/2025
+https://www.fortinet.com/resources/cyberglossary/email-spoofing
+======================================================================
+
+[153] Similarity: 0.554 | bugthrive | 4/13/2025
+checkout the tool setoolkit. Also for advance phishing you must have your own smtp servers set
+======================================================================
+
+[154] Similarity: 0.612 | never4355 | 4/13/2025
+how do i hack
+======================================================================
+
+[155] Similarity: 0.603 | never4355 | 4/13/2025
+and what can i hack from learning from this server
+======================================================================
+
+[156] Similarity: 0.631 | Carl-bot | 4/13/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[157] Similarity: 0.631 | Carl-bot | 4/13/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[158] Similarity: 0.581 | .eevee | 4/13/2025
+You can hack basically nothing right away
+======================================================================
+
+[159] Similarity: 0.553 | hamza_81279 | 4/13/2025
+@Javert (He/Him)like for example you learn about Social-Engineer and you know how it works but how would you know how the make the phishing link or how to spoof
+======================================================================
+
+[160] Similarity: 0.604 | tuhholainen | 4/14/2025
+now u can hack any passwords
+======================================================================
+
+[161] Similarity: 0.577 | seojabsksn | 4/16/2025
+does anybody understand how webcam hacking works
+======================================================================
+
+[162] Similarity: 0.559 | toxic_slayer_bacon | 4/16/2025
+is there any hacker who is free and looking for projects??
+======================================================================
+
+[163] Similarity: 0.558 | toxic_slayer_bacon | 4/16/2025
+like is there any hacker who is willing to work on a project with me?
+======================================================================
+
+[164] Similarity: 0.600 | toxic_slayer_bacon | 4/16/2025
+an cyber security software
+======================================================================
+
+[165] Similarity: 0.576 | zaking_z | 4/22/2025
+nice, what kind of hacking do you do?'
+======================================================================
+
+[166] Similarity: 0.622 | killerbee_91196 | 4/22/2025
+I am very much intrested in hacking
+======================================================================
+
+[167] Similarity: 0.578 | zaking_z | 4/22/2025
+what kind of hacking do you like? python, java, JavaScript, shell-scripting, etc.?
+======================================================================
+
+[168] Similarity: 0.571 | zzz._stubbs_.zzz | 4/22/2025
+Does anyone in here hack?
+======================================================================
+
+[169] Similarity: 0.582 | joshuavanblommestein6124 | 4/23/2025
+Does anybody know of any Cyber Security Courses and Ethical Hacking?
+======================================================================
+
+[170] Similarity: 0.631 | Carl-bot | 4/23/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[171] Similarity: 0.598 | mrsskelli | 4/26/2025
+Track or hack
+======================================================================
+
+[172] Similarity: 0.567 | lenny_leonard | 4/27/2025
+We're not gonna help you unlock a stolen phone.  Any bypass will probably need manufacturer support (IF they have a bypass method)
+======================================================================
+
+[173] Similarity: 0.564 | westy599 | 4/29/2025
+Is there a safe wat to hack my mates phone when I'm at his he is always glued to his phone is there any way to safely controle his phone and tern it off using my phone ?
+======================================================================
+
+[174] Similarity: 0.552 | westy599 | 4/29/2025
+I have his consent to hack his phone
+======================================================================
+
+[175] Similarity: 0.562 | freeviruzdotorg | 4/30/2025
+ethically hacking is allowed
+unethical hacking doesnt belong here
+======================================================================
+
+[176] Similarity: 0.631 | Carl-bot | 4/30/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[177] Similarity: 0.552 | 727272727270 | 5/1/2025
+i know, i wanted to know about a flash game hack that cannot be hacked with a cheaat engine... its kinda specific
+======================================================================
+
+[178] Similarity: 0.560 | loredous | 5/1/2025
+Also, there is no quick "tutorial" for a general solution to "how to hack". It requires having good knowledge of the systems you are trying to work with and change
+======================================================================
+
+[179] Similarity: 0.607 | 727272727270 | 5/1/2025
+That's what they told me. THey use hyper exclusive tools that only the most prestigius universities have the access to because thats the only way this type of issue/hack could be done..
+======================================================================
+
+[180] Similarity: 0.611 | loredous | 5/1/2025
+some people will expand it to include things like "Red-hat hacking" (vigilantism)
+======================================================================
+
+[181] Similarity: 0.586 | loredous | 5/1/2025
+Yeah, it's probably malware
+======================================================================
+
+[182] Similarity: 0.586 | loredous | 5/1/2025
+scratch that, it's guaranteed malware
+======================================================================
+
+[183] Similarity: 0.557 | loredous | 5/1/2025
+if someone had a "tool" that magically hacked CS2 accounts, it would be worth a hell of a lot more than 50 euro
+======================================================================
+
+[184] Similarity: 0.578 | loredous | 5/1/2025
+You joke, but that's 100% a part of what companies do. They will have a whole team of people out there acting as buyers for hack software, just so they can get it, look at how it works, and make it not work anymore
+======================================================================
+
+[185] Similarity: 0.581 | sova.afk | 5/1/2025
+breaching... = extremely legit and hacking valve itself
+======================================================================
+
+[186] Similarity: 0.579 | elifas_07 | 5/3/2025
+ought my Kali machine was outdated and I updated it but nothing still.
+
+Could you please help me?
+I am doing all this in the test environment I was provided with (VMware). Maybe I need the right exploits, which I have no idea where to find.
+======================================================================
+
+[187] Similarity: 0.578 | elifas_07 | 5/4/2025
+I managed to get all the open ports, services running on them and their versions. I did a Nessus scan and also got some vulnerabilities.
+I just can’t seem to exploit any
+======================================================================
+
+[188] Similarity: 0.569 | loredous | 5/4/2025
+magically exploit the vulns for you.
+======================================================================
+
+[189] Similarity: 0.666 | loredous | 5/4/2025
+https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+======================================================================
+
+[190] Similarity: 0.576 | levoxy | 5/4/2025
+anyone interested in hacking videos and stories? (XZ backdoor incident; FTX heist; GTA 6 leaks; etc.)
+======================================================================
+
+[191] Similarity: 0.566 | midkeavil | 5/6/2025
+the problem is when i put it into cyberchef im not getting binary code.. im getting more encrypted stuff like above
+======================================================================
+
+[192] Similarity: 0.563 | g_fifforellini | 5/6/2025
+if you are asking from people if someone could hack him
+======================================================================
+
+[193] Similarity: 0.563 | sharpmate | 5/6/2025
+@ser3n1ty I have made a program that listens to all mdns traffick and filter out unecessary information, then i want to create fake mdns responses to say that my computer provides the service that is being requested. If the wifi is badly secured i may be able to do service spoofing.
+======================================================================
+
+[194] Similarity: 0.562 | sharpmate | 5/8/2025
+where would i find data breaches
+======================================================================
+
+[195] Similarity: 0.580 | arity0 | 5/11/2025
+there's no 1 way to discover exploits
+======================================================================
+
+[196] Similarity: 0.579 | arity0 | 5/11/2025
+if someone explained an existing RCE to you right now you wouldn't understand it or be able to abuse it, and if you downloaded a script to exploit it for you it wouldn't work anyway because most devices would have been patched or hacked already
+======================================================================
+
+[197] Similarity: 0.553 | arity0 | 5/12/2025
+rce is a type of vulnerability
+======================================================================
+
+[198] Similarity: 0.602 | lenny_leonard | 5/12/2025
+Is the exploit that you have to ask them to download and run it without defender on?
+======================================================================
+
+[199] Similarity: 0.632 | incalt. | 5/13/2025
+what are some common things you guys might hack?
+======================================================================
+
+[200] Similarity: 0.612 | loredous | 5/13/2025
+A service, some code, some hardware, pretty much anything, but "hacking" is a hugely broad concept
+======================================================================
+
+[201] Similarity: 0.560 | incalt. | 5/13/2025
+oh, well hacking is also a bit vague to me. it does seem interesting tho. i would want to learn it but idk what to use it for
+======================================================================
+
+[202] Similarity: 0.569 | loredous | 5/13/2025
+This is possibly the worst thing to use "hacking" for 🤷‍♂️
+======================================================================
+
+[203] Similarity: 0.611 | sharpmate | 5/13/2025
+What type of hacking do you guys perefer?
+======================================================================
+
+[204] Similarity: 0.617 | loredous | 5/13/2025
+Personally, I like hardware hacking, reverse engineering, network/web hacking, and just general tinkering
+======================================================================
+
+[205] Similarity: 0.609 | incalt. | 5/13/2025
+what is something easy i would be able to hack?
+======================================================================
+
+[206] Similarity: 0.573 | incalt. | 5/13/2025
+i can't really hack, but i want to learn it and then maybe hack something easy
+======================================================================
+
+[207] Similarity: 0.581 | incalt. | 5/13/2025
+and i can learn how to in #✔｜learn-hacking
+======================================================================
+
+[208] Similarity: 0.631 | Carl-bot | 5/13/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[209] Similarity: 0.554 | sharpmate | 5/13/2025
+how common are local file inclusion vulnerabilities
+======================================================================
+
+[210] Similarity: 0.569 | doubt6082 | 5/14/2025
+Is it possible to hack a modern phone with landline phones like I heard that they can access the internet but is there hardware enough for it
+======================================================================
+
+[211] Similarity: 0.556 | Deleted User | 5/14/2025
+since when a 90's landline would be capable of modern hacking? o.o
+======================================================================
+
+[212] Similarity: 0.591 | axjesss | 5/14/2025
+Crafting a CSRF Attack:
+Crafting a CSRF attack typically involves creating HTML that triggers an HTTP request to the target website. Common methods include:
+ * <img src="..."> tags: These can be used for GET requests that might change data on the server. For example:
+   <img src="https://legit-bank.com/transfer?to=attacker&amount=1000">
+
+   If the bank's transfer function uses a simple GET request without proper CSRF protection, visiting the evil-hacker.com page could unknowingly trigger this tr
+======================================================================
+
+[213] Similarity: 0.559 | axjesss | 5/14/2025
+ of how the web works – allowing different websites to link to and interact with each other.
+The vulnerability lies in the target website (legit-bank.com) not being able to distinguish between a legitimate request originating from its own forms and a malicious request triggered by a third-party site, because both carry the same valid session cookie.
+Defense Mechanisms:
+Modern web frameworks and security best practices employ various techniques to prevent CSRF attacks. The most common is the use 
+======================================================================
+
+[214] Similarity: 0.560 | axjesss | 5/14/2025
+e user's session on legit-bank.com, it cannot know or include the correct CSRF token in its forged request. This prevents the attack.
+Other defense mechanisms include:
+ * SameSite Cookies: This browser security feature allows developers to control whether cookies are sent along with cross-site requests. Setting the SameSite attribute to Strict or Lax can significantly reduce the risk of CSRF.
+ *
+======================================================================
+
+[215] Similarity: 0.597 | z3rox1 | 5/16/2025
+thats definetely either chatgpt or claude jailbroken     or if not there could uncensored ai
+======================================================================
+
+[216] Similarity: 0.622 | peypey01. | 5/17/2025
+How I hack
+======================================================================
+
+[217] Similarity: 0.631 | Carl-bot | 5/18/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[218] Similarity: 0.554 | lost.loss. | 5/19/2025
+what about hacking russian companies if i'm not supported by the US in doing so
+======================================================================
+
+[219] Similarity: 0.564 | lost.loss. | 5/19/2025
+what ur finding is youtube history full of a shit ton of hacking videos lol
+======================================================================
+
+[220] Similarity: 0.570 | lost.loss. | 5/19/2025
+you've never heard of cases of people hacking opposition countries without the help of their government to do so
+======================================================================
+
+[221] Similarity: 0.593 | lost.loss. | 5/19/2025
+you think I hack?
+======================================================================
+
+[222] Similarity: 0.581 | lost.loss. | 5/19/2025
+if I knew how to hack that question wouldnt have been asked
+======================================================================
+
+[223] Similarity: 0.569 | Deleted User | 5/19/2025
+is this even hacking topic now?
+======================================================================
+
+[224] Similarity: 0.555 | arity0 | 5/19/2025
+because hacking movies
+======================================================================
+
+[225] Similarity: 0.612 | ser3n1ty | 5/19/2025
+if its intentionally vulnerable, id start looking for misconfigured services, what is running on the machine?
+======================================================================
+
+[226] Similarity: 0.567 | arity0 | 5/20/2025
+however we can say that there's a very high chance it's malware
+======================================================================
+
+[227] Similarity: 0.590 | freeviruzdotorg | 5/20/2025
+ye, cheats are bad
+and i can guarantee, its malware
+======================================================================
+
+[228] Similarity: 0.608 | arity0 | 5/20/2025
+one of the most common giveaways for fake hacking/cheating tools is obfuscated code
+======================================================================
+
+[229] Similarity: 0.557 | freeviruzdotorg | 5/20/2025
+what im surprised about is, all the sketchy ass boot legged software ive downloaded, none of it root kitted/stole info that i know about
+======================================================================
+
+[230] Similarity: 0.564 | ser3n1ty | 5/20/2025
+depends on the pllace that youre downloading from, there is still potential for malware
+======================================================================
+
+[231] Similarity: 0.602 | cicada01100011 | 5/21/2025
+I want to create a hacking group similar to Lapsus$, but with the goal of identifying individuals involved in child exploitation, terrorism, or extremist activities online — especially on the dark web. We would use OSINT to gather as much information as possible and then report everything to the appropriate authorities, such as the NIA or on missing children.
+======================================================================
+
+[232] Similarity: 0.558 | enterteinos | 5/21/2025
+I remember that I tried to create a group like the lulzsec and I hacked MIT which then I got warned by the cops
+======================================================================
+
+[233] Similarity: 0.631 | Carl-bot | 5/21/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[234] Similarity: 0.599 | ser3n1ty | 5/21/2025
+your vulnerability scanner doesnt even actually detect vulnerabilities
+======================================================================
+
+[235] Similarity: 0.574 | ser3n1ty | 5/21/2025
+```def sql_injection_check(ip):
+    return "No SQL Injection Vulnerability Detected"
+
+def ddos_check(ip):
+    return "No DDoS Vulnerability Detected"```
+======================================================================
+
+[236] Similarity: 0.625 | monitoring_0 | 5/24/2025
+Who can hack here
+======================================================================
+
+[237] Similarity: 0.586 | kawaiijynx666 | 5/24/2025
+hey quick question for hackers
+======================================================================
+
+[238] Similarity: 0.586 | freeviruzdotorg | 5/24/2025
+it was about hacking a server 
+https://discord.com/channels/135499198865997824/984917526209257473/1375745904430026895
+======================================================================
+
+[239] Similarity: 0.573 | mrsskelli | 5/24/2025
+“Hack this for me” “how do I commit this crime”
+======================================================================
+
+[240] Similarity: 0.550 | xeilith | 5/24/2025
+Guys is someone a hacker here
+======================================================================
+
+[241] Similarity: 0.631 | spidee.ftw | 5/24/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[242] Similarity: 0.561 | xeilith | 5/24/2025
+I need a hackerrrrrrr
+======================================================================
+
+[243] Similarity: 0.585 | voxi7y | 5/26/2025
+dose anyone know any websites that give you hacking scenarios. with guidance cause idk what im doing tbh.
+======================================================================
+
+[244] Similarity: 0.554 | Deleted User | 5/26/2025
+like talking about hacking NASA with HTML
+======================================================================
+
+[245] Similarity: 0.573 | spoon4200 | 5/26/2025
+so you can theortically use svg in a profile upload as an exploit right?
+any suggestion for places to learn more about this topic?
+tryna learn more about file upload with images and how to hack them
+======================================================================
+
+[246] Similarity: 0.551 | arity0 | 5/26/2025
+@Hacker Spoon here's a 4chan hack discussion we had, and a video link that goes right to the juicy part
+https://discord.com/channels/135499198865997824/984917526209257473/1362189109384315114
+======================================================================
+
+[247] Similarity: 0.628 | mrsskelli | 5/28/2025
+#✔｜learn-hacking
+======================================================================
+
+[248] Similarity: 0.631 | Carl-bot | 5/28/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[249] Similarity: 0.622 | arity0 | 5/29/2025
+if it's hacking related then yes. however github questions would probably be best in #💬｜general-programming
+======================================================================
+
+[250] Similarity: 0.558 | slothy_96466 | 5/29/2025
+And is ethical hacking allowed in here?
+======================================================================
+
+[251] Similarity: 0.615 | arity0 | 5/29/2025
+such as vigilante hacking
+======================================================================
+
+[252] Similarity: 0.581 | useafterfree | 5/29/2025
+the ethical hacking one also says before the highlight that it is also known as white-hat hacking lol
+======================================================================
+
+[253] Similarity: 0.555 | ask.jaisal | 6/2/2025
+I'm currently a web developer learning about cybersecurity. In two or three years, AI is gonna f up most of the web developers. so being prepared for a future proof job   :ok:
+======================================================================
+
+[254] Similarity: 0.655 | arity0 | 6/2/2025
+hacking is all about finding flaws in program logic. you can't know what a flaw looks like unless you first learn how the system works
+======================================================================
+
+[255] Similarity: 0.574 | arity0 | 6/2/2025
+what "learn hacking stuff"? the roadmap?
+======================================================================
+
+[256] Similarity: 0.589 | perx0421 | 6/2/2025
+yea it was one of the guides on the hacking learning
+======================================================================
+
+[257] Similarity: 0.584 | perx0421 | 6/2/2025
+or learn hacking channel
+======================================================================
+
+[258] Similarity: 0.587 | .diego_ryuji_rego_01 | 6/5/2025
+But, @Skelli (they/them) Do you know about malware? is it good? i know it's a common thing for Red Team Hackers and there's Sektor 7 i heard of it
+======================================================================
+
+[259] Similarity: 0.570 | mrsskelli | 6/5/2025
+I think the only exposure ive had to malware in an ethical context was malware analysis
+======================================================================
+
+[260] Similarity: 0.599 | mrsskelli | 6/5/2025
+Where people will analyse malware to break it down or help scan for it/prevent it.
+======================================================================
+
+[261] Similarity: 0.557 | mrsskelli | 6/5/2025
+I primarily do pentest engagements or bug bounty where malware is an absolute no-no and violates ethical boundaries and laws.
+======================================================================
+
+[262] Similarity: 0.583 | .diego_ryuji_rego_01 | 6/5/2025
+That's why malware is some red flag but it is wrong to be illegal since Red Team Hackers still uses them
+======================================================================
+
+[263] Similarity: 0.605 | .diego_ryuji_rego_01 | 6/5/2025
+Anyway, @Skelli (they/them) i also do pentesting on stuff (like the one from Apache2) and i use Malware for Malware Analysis too
+======================================================================
+
+[264] Similarity: 0.556 | .diego_ryuji_rego_01 | 6/5/2025
+Malware Analysis is legal, right?
+======================================================================
+
+[265] Similarity: 0.588 | _smoil | 6/6/2025
+so like its someone else's apache2 server running on their pc, and u hacked it
+======================================================================
+
+[266] Similarity: 0.610 | loredous | 6/7/2025
+https://faq.hackncode.dev/basic-computer-hardware-and-software/
+======================================================================
+
+[267] Similarity: 0.614 | hammerfox | 6/8/2025
+where is the hacking
+======================================================================
+
+[268] Similarity: 0.568 | _smoil | 6/9/2025
+hello, as there are many fields in ethical hacking (for ex-> network pentest, mob pentest, web app pentest, web server pentest) so I want to ask that in what category is Operating system pentesting ? like Windows, linux ? and if operating system pentesting includes active directory, but it's also a part of network pentesting. so how should I see it. I am confused
+======================================================================
+
+[269] Similarity: 0.582 | __swayzgl1tzyyy | 6/13/2025
+Anyone knows how pgp shit works? Found a crit vuln on a government site and trying to report it. Can i maybe dm you? @Skelli (they/them)
+======================================================================
+
+[270] Similarity: 0.558 | mrsskelli | 6/14/2025
+I spent most of my life hacking as a hobby, when I decided I wanted to work in the field I networked around and got a job as an AppSec Engineer, then pivoted to ethical hacking full time
+======================================================================
+
+[271] Similarity: 0.556 | onikibinyedi | 6/15/2025
+Hi everyone,
+
+I’m currently exploring the idea of running a game server and wanted to include some kind of HWID protection to improve security. I purchased a pre-built system and integrated it into the game, but since I only have usage rights and not the source code, I’ve been doing a series of tests to better understand how it actually works.
+
+I’ve simulated different scenarios — even wrote a few basic drivers — to see how the protection responds. While I was able to bypass certain versions of 
+======================================================================
+
+[272] Similarity: 0.572 | onikibinyedi | 6/15/2025
+it, there’s one specific layer I haven’t been able to overcome yet.
+
+I’m doing this not just out of curiosity, but because I want to fully understand the protection mechanism in order to modify and adapt it for my own server setup.
+
+If anyone here has experience with reverse engineering or analyzing protection systems, I’d really appreciate any tips, tools, or general guidance you could offer.
+
+Thanks in advance!
+======================================================================
+
+[273] Similarity: 0.615 | .eevee | 6/15/2025
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MachineGuid` spoofable with `sysprep`
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProductId`
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\DigitalProductId`
+======================================================================
+
+[274] Similarity: 0.583 | .eevee | 6/15/2025
+These are also often usded for fingerprinting devices
+======================================================================
+
+[275] Similarity: 0.575 | freeviruzdotorg | 6/18/2025
+adding things like latency checks and constantly adding other things to slow the attack down help because they give up
+like, i had ssh open online and was being brute forced. every attempt adds 600 seconds to timeout
+they had to wait like a year to attempt again at some point i remembered
+======================================================================
+
+[276] Similarity: 0.568 | freeviruzdotorg | 6/18/2025
+idk, its a bot net. 
+scan open ports online > password spray/brute force accounts until success lol
+======================================================================
+
+[277] Similarity: 0.586 | loredous | 6/21/2025
+Typically that is a sign that the installer is corrupted, and potentially has been modified with malware
+======================================================================
+
+[278] Similarity: 0.566 | gdlink_94844 | 6/23/2025
+Does anyone know a good OSINT tool
+======================================================================
+
+[279] Similarity: 0.624 | mrpinkdoingchem | 6/23/2025
+To learn hacking
+======================================================================
+
+[280] Similarity: 0.597 | loredous | 6/23/2025
+Knowledge of Linux is definitely important for security, as most tools are designed to run on Linux, and it is the most common OS for targets to be running
+======================================================================
+
+[281] Similarity: 0.567 | tanjiro534 | 6/24/2025
+i need someone who know how to hack game acounts
+======================================================================
+
+[282] Similarity: 0.565 | radonreborn | 6/25/2025
+depending on what software was used to encrypt it, probably impossible to bruteforce the encryption key directly. 7zip for example uses AES-256 with a key derived from the password using multiple iterations
+======================================================================
+
+[283] Similarity: 0.553 | loredous | 6/30/2025
+What exactly do you mean by "hack a phone"
+======================================================================
+
+[284] Similarity: 0.629 | infinityrayan | 6/30/2025
+Guys, I am trying to hack a device that I have installed in VMware using Kali Linux, but how do I hack the https system easily?
+======================================================================
+
+[285] Similarity: 0.560 | ser3n1ty | 7/1/2025
+Theres a lot to unpack there. Are you hosting an intentionally vulnerable service that you can access? Do you know what vulns you would be testing for?
+======================================================================
+
+[286] Similarity: 0.569 | infinityrayan | 7/1/2025
+Look, I have two systems installed on VMware Workstation Pro, Kali and Windows, and I saw a clip that he was able to decrypt HTTPS with Bettercap using hstshijack/hstshijack, and I tried to do the same, but unfortunately, HTTPS was not decrypted
+======================================================================
+
+[287] Similarity: 0.556 | __cdeclan | 7/1/2025
+It is super easy to decrypt https traffic, you just need a break and inspect setup
+======================================================================
+
+[288] Similarity: 0.592 | __cdeclan | 7/1/2025
+In the case of an attack in the lab you’d need to intercept the handshakes and send alternate certificates @R
+======================================================================
+
+[289] Similarity: 0.567 | __cdeclan | 7/1/2025
+Some security products hook into the TCP/IP stack so they can view things like this
+======================================================================
+
+[290] Similarity: 0.574 | loredous | 7/1/2025
+This is a whole different can of worms, and there is a large part of the security world that actively thinks this is harmful
+======================================================================
+
+[291] Similarity: 0.589 | loredous | 7/1/2025
+But yes, I can confirm that done properly, a trusted party can run an HTTPS MITM attack and the user will have no idea. I have this set up in my homelab to investigate android apps to see what traffic they send
+======================================================================
+
+[292] Similarity: 0.561 | loredous | 7/1/2025
+Eh, most enterprise security systems and methods are close enough to blackhat methods
+======================================================================
+
+[293] Similarity: 0.590 | ordinaryfelix | 7/1/2025
+If you got the exploit chain for it
+======================================================================
+
+[294] Similarity: 0.550 | loredous | 7/1/2025
+It's hard to protect against because the attack is on the human psyche and not on a technical system
+======================================================================
+
+[295] Similarity: 0.631 | Carl-bot | 7/1/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[296] Similarity: 0.584 | __swayzgl1tzyyy | 7/1/2025
+You gotta like the errors, and trial otherwise hacking isnt really for u mate
+======================================================================
+
+[297] Similarity: 0.598 | yourknow333 | 7/1/2025
+is it good for hacking???
+======================================================================
+
+[298] Similarity: 0.578 | ser3n1ty | 7/2/2025
+Lmao. Yeah wait till you find out that hacking is literally doing a bunch of learning about how computers work
+======================================================================
+
+[299] Similarity: 0.562 | hexrays | 7/5/2025
+@lou1s Pure Crypter loader uses NtManageHotPatch a lot to bypass win11 memory protection mechanisms
+======================================================================
+
+[300] Similarity: 0.554 | mr_antoni0 | 7/7/2025
+Hello i am new to hacking, how can i start the best ?
+======================================================================
+
+[301] Similarity: 0.631 | Carl-bot | 7/7/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[302] Similarity: 0.569 | 0ldrepublic | 7/8/2025
+if your very good at hacking plz dm me
+======================================================================
+
+[303] Similarity: 0.554 | __swayzgl1tzyyy | 7/10/2025
+I’ve read somewhere they prioritze high/critical vulnerabilities not sure if thats true
+======================================================================
+
+[304] Similarity: 0.557 | warex. | 7/13/2025
+ok nvm but can a malware be installed on a pc that automaticly spreads to other pc on the same internet?
+======================================================================
+
+[305] Similarity: 0.558 | loredous | 7/13/2025
+Sure... Plenty of malware has spread itself over the years. Things like Code Red from the early 2000s or WannaCry from ~2017 or so are well known examples of this
+======================================================================
+
+[306] Similarity: 0.600 | arity0 | 7/15/2025
+rather than figure out some kind of exploit that allows you to DoS/DDoS a single device under that network/ip
+======================================================================
+
+[307] Similarity: 0.590 | arity0 | 7/15/2025
+I mean... the setup requirements depend on the exploit
+======================================================================
+
+[308] Similarity: 0.561 | samaei | 7/15/2025
+Give the try hack me website a chance
+======================================================================
+
+[309] Similarity: 0.640 | vojtisli | 7/15/2025
+which software are you using while you trying to hack somebody?
+======================================================================
+
+[310] Similarity: 0.592 | samaei | 7/15/2025
+You should follow our advises. ATM you are lacking parts of knowledge understanding what even hacking etc is. You first need to learn the basics. You need to understand them. If you want a list of exploits, then you are at the wrong place because you are making it very clear you intend to use them for illegal purposes
+======================================================================
+
+[311] Similarity: 0.588 | samaei | 7/15/2025
+Then why dont you go to the sites and resources that tell you how it works? You wont learn to hack (in a legal matter) someone without applying knowledge you learn.
+======================================================================
+
+[312] Similarity: 0.554 | ser3n1ty | 7/15/2025
+It does. What do you think real hacking is?
+======================================================================
+
+[313] Similarity: 0.556 | loredous | 7/15/2025
+Hacking isn't about the tools. You can do most anything without any real tools at all beyond a basic bash shell
+======================================================================
+
+[314] Similarity: 0.582 | loredous | 7/15/2025
+Ahh. The "I use LOIC to hack people"
+======================================================================
+
+[315] Similarity: 0.573 | bttea | 7/15/2025
+There are countless resources available online to help you learn. You need to start from scratch and gradually understand all the various attack techniques. Along the way, you’ll also come to learn what ethical hacking truly means.
+
+Hacking is a double-edged sword. That’s why, when you ask about many hacking techniques, most people won’t directly teach you how to do them—because no one can guarantee you won’t use them for illegal purposes.
+
+However, if you encounter problems and ask questions he
+======================================================================
+
+[316] Similarity: 0.582 | loredous | 7/15/2025
+hacking is a life-long pursuit
+======================================================================
+
+[317] Similarity: 0.589 | .eevee | 7/15/2025
+Hacking is a state of mind
+======================================================================
+
+[318] Similarity: 0.631 | Carl-bot | 7/16/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[319] Similarity: 0.607 | albert22222_hul | 7/17/2025
+Comeon bro I'm talking ABT hacking why you trolling me
+======================================================================
+
+[320] Similarity: 0.635 | dogwater3301 | 7/17/2025
+infect tons of machines with malware, incriminate yourself and get whooped by law enforcement
+======================================================================
+
+[321] Similarity: 0.576 | 5mplug | 7/19/2025
+A simple password input via software then server validated how can that be hacked other than brute force
+======================================================================
+
+[322] Similarity: 0.587 | flossyhacks | 7/20/2025
+Free hacks
+======================================================================
+
+[323] Similarity: 0.588 | mrsskelli | 7/21/2025
+Free hacks you say
+======================================================================
+
+[324] Similarity: 0.560 | __swayzgl1tzyyy | 7/21/2025
+free robux hacks?
+======================================================================
+
+[325] Similarity: 0.580 | dogwater3301 | 7/22/2025
+cyber security is also very broad, maybe you have a specific niche you're interested in, like pentesting, defensive security, malware analysis and reverse engineering, etc.
+======================================================================
+
+[326] Similarity: 0.631 | Carl-bot | 7/22/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[327] Similarity: 0.590 | gil7089 | 7/24/2025
+We're trynna learn and create a project with the updated source code coz it's fun to see if we can actually manage to crack the safe exam browser and bypass location locks and stuff.
+======================================================================
+
+[328] Similarity: 0.554 | loredous | 7/25/2025
+Most likely it wasn't anything like a brute force attack. The most likely option is phishing or password reuse
+======================================================================
+
+[329] Similarity: 0.618 | 1andonlydannydan | 7/27/2025
+just to know how does it work , like i can try to reverse engineer and try to find protection for me and make it opensource ofc
+======================================================================
+
+[330] Similarity: 0.612 | mrsskelli | 7/27/2025
+Best protection is to not download things from untrusted sources or run untrusted applications
+======================================================================
+
+[331] Similarity: 0.588 | dre7i | 7/27/2025
+illegal/ hacks mb
+======================================================================
+
+[332] Similarity: 0.594 | dre7i | 7/27/2025
+it is hacks
+======================================================================
+
+[333] Similarity: 0.555 | dre7i | 7/27/2025
+u literally have hack next to ur name
+======================================================================
+
+[334] Similarity: 0.593 | dre7i | 7/27/2025
+ur also in a hacking server
+======================================================================
+
+[335] Similarity: 0.579 | dre7i | 7/27/2025
+is that wat u call hack?
+======================================================================
+
+[336] Similarity: 0.554 | hammerfox | 7/27/2025
+so in your mind, a hacker is someone who commits felonies?
+======================================================================
+
+[337] Similarity: 0.559 | dre7i | 7/27/2025
+thats a hacker
+======================================================================
+
+[338] Similarity: 0.574 | dre7i | 7/27/2025
+that is a hacker
+======================================================================
+
+[339] Similarity: 0.586 | hammerfox | 7/27/2025
+that is a type of hacker technically
+======================================================================
+
+[340] Similarity: 0.554 | dre7i | 7/27/2025
+no ,i ts a hacker
+======================================================================
+
+[341] Similarity: 0.557 | dre7i | 7/27/2025
+its a hacker,
+======================================================================
+
+[342] Similarity: 0.566 | mrsskelli | 7/27/2025
+Source, my friend who committed cyber crimes is in prison for it 🙂
+======================================================================
+
+[343] Similarity: 0.555 | mrsskelli | 7/27/2025
+Yes, because I’m an ethical hacker
+======================================================================
+
+[344] Similarity: 0.565 | dre7i | 7/27/2025
+so ur a hacker?
+======================================================================
+
+[345] Similarity: 0.572 | dre7i | 7/27/2025
+ur a hacker?
+======================================================================
+
+[346] Similarity: 0.565 | ibot_hakx | 7/31/2025
+Help hacking a Snapchat?
+======================================================================
+
+[347] Similarity: 0.552 | bttea | 7/31/2025
+If it were me, I would take your question and ask chatGPT directly.
+
+e.g. : Right now, I'm conducting a penetration test and I’ve already obtained a shell on the target system. Next, I need to escalate privileges — could you list some methods or techniques I can use for privilege escalation?
+======================================================================
+
+[348] Similarity: 0.593 | sythor_420 | 8/4/2025
+How do I learn how to hack
+======================================================================
+
+[349] Similarity: 0.628 | luis146265 | 8/4/2025
+#✔｜learn-hacking
+======================================================================
+
+[350] Similarity: 0.604 | dogwater3301 | 8/4/2025
+programming is developing software, applications, websites, etc. by writing instructions in a given programming language and hacking is manipulating and exploiting digital but also physical systems. basically trying to make a thing behave in a way that was not intended by its developers
+======================================================================
+
+[351] Similarity: 0.617 | sythor_420 | 8/4/2025
+But hacking is kind of from programming
+======================================================================
+
+[352] Similarity: 0.593 | dogwater3301 | 8/4/2025
+knowing how to program is generally useful FOR hacking but not a bare necessity
+======================================================================
+
+[353] Similarity: 0.585 | sythor_420 | 8/4/2025
+Hacking is mostly malicous
+======================================================================
+
+[354] Similarity: 0.572 | sythor_420 | 8/4/2025
+Will I pick up hacking easily if I learn programming
+======================================================================
+
+[355] Similarity: 0.553 | sythor_420 | 8/4/2025
+Or can I learn hacking without programming
+======================================================================
+
+[356] Similarity: 0.583 | dogwater3301 | 8/4/2025
+hacking itself is a skill, and while not malicious itself, it can be used to do malicious things. you can make a perfectly valid career by hacking companies to help them become more secure for example
+======================================================================
+
+[357] Similarity: 0.574 | dogwater3301 | 8/4/2025
+hacking requires extensive knowledge of several technical areas. you will not automatically pick up hacking by learning how to program. programming is a skill that can helps understand how systems work and how you can manipulate them. hacking without programming knowledge is really just executing scripts that another person wrote without really knowing what actually is going on.
+======================================================================
+
+[358] Similarity: 0.631 | Carl-bot | 8/4/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[359] Similarity: 0.593 | dogwater3301 | 8/4/2025
+https://roadmap.sh/cyber-security
+======================================================================
+
+[360] Similarity: 0.564 | dogwater3301 | 8/4/2025
+many exploits are written in python
+======================================================================
+
+[361] Similarity: 0.588 | dogwater3301 | 8/4/2025
+python makes it very easy to quickly write exploits but more low-level languages are commonly used in malware development
+======================================================================
+
+[362] Similarity: 0.553 | dogwater3301 | 8/4/2025
+just because language A is impractical for task B doesn't make it a bad language for hacking
+======================================================================
+
+[363] Similarity: 0.610 | sythor_420 | 8/4/2025
+And whatever is best for hacking I’ll learn that
+======================================================================
+
+[364] Similarity: 0.588 | nuclearmaster100 | 8/5/2025
+but again this is something i am less experienced on in the lab, wifi attacks in general are something i am still learning to understand and utilise
+======================================================================
+
+[365] Similarity: 0.565 | crackinschools | 8/6/2025
+i just want to learn cybersecurity
+======================================================================
+
+[366] Similarity: 0.550 | _pi | 8/7/2025
+carl warn @skadooshonfire I need someone to hack inside my girlfriend’s account to see if shes cheating
+======================================================================
+
+[367] Similarity: 0.558 | epickproballer | 8/7/2025
+i mean even if that shit aint mentioned on the rules that aint how hacking works
+======================================================================
+
+[368] Similarity: 0.559 | .eevee | 8/7/2025
+At least pikachu packet exploits still work https://www.youtube.com/watch?v=TZOXdQP2H8M
+======================================================================
+
+[369] Similarity: 0.584 | nuclearmaster100 | 8/7/2025
+but so would being caught hacking her
+======================================================================
+
+[370] Similarity: 0.568 | choochanlee | 8/7/2025
+any ideas in the hacker channel? i have a bash bunny mark II which can run the commands to kill defender
+======================================================================
+
+[371] Similarity: 0.577 | mrdorin | 8/8/2025
+#osint
+======================================================================
+
+[372] Similarity: 0.631 | Carl-bot | 8/8/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[373] Similarity: 0.597 | arity0 | 8/9/2025
+the attacker or a device they control/compromised would have to be nearby to deauth
+======================================================================
+
+[374] Similarity: 0.593 | arity0 | 8/9/2025
+well if it is a deauth attack then see if you can make all of your devices use wpa3
+======================================================================
+
+[375] Similarity: 0.589 | bankai_sz | 8/12/2025
+guys i am a beginner who can help me understand hacking so i can prevent myself from getting hacked
+======================================================================
+
+[376] Similarity: 0.622 | loredous | 8/12/2025
+#✔｜online-safety  #✔｜learn-hacking
+======================================================================
+
+[377] Similarity: 0.566 | arity0 | 8/14/2025
+some hackers do hacking both for their career and as a hobby
+======================================================================
+
+[378] Similarity: 0.555 | xeon0399 | 8/15/2025
+hey guys, where can i get scripts to install in my Arduino to exploit networks?...
+======================================================================
+
+[379] Similarity: 0.585 | loredous | 8/15/2025
+"exploit networks"... :wat:
+======================================================================
+
+[380] Similarity: 0.553 | __cdeclan | 8/15/2025
+Kinda why sysadmins make good hackers with training
+======================================================================
+
+[381] Similarity: 0.580 | lieutenantdv20 | 8/19/2025
+hello all, I have a question please.
+I have been programming for 12 years, languages like C, C++, Java, Javascript, Python and Visual Basic.
+I am graduated from CS with a specialty/major in AI/ML.
+I have a lot of love for Cybersecurity and often join hackathons and do decently well, i studied a lot of the concepts theoretically (phishing, ddos, reverse shell... etc), installed and played around with Kali linux a little bit and learned some basics like SQL Injection, but I would like to dive deep
+======================================================================
+
+[382] Similarity: 0.584 | lieutenantdv20 | 8/19/2025
+er into it and learn as much as possible.
+If I had to pick a specific field of CyberSecurity I'd say pentesting and finding vulnerabilities.
+Can you please recommend me some resources to learn from? And what's the best and maybe even fastest path to take?
+======================================================================
+
+[383] Similarity: 0.631 | Carl-bot | 8/19/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[384] Similarity: 0.571 | dogwater3301 | 8/19/2025
+i also love this one https://roadmap.sh/cyber-security
+======================================================================
+
+[385] Similarity: 0.555 | loredous | 8/19/2025
+(e.g. tell you to download "tools" full of malware)
+======================================================================
+
+[386] Similarity: 0.588 | loredous | 8/19/2025
+So typically when someone has "hacked" your phone, what you're dealing with is that they have managed to get you to download and install a malicious app. Once this happens, the best way to deal with it would be to perform a factory reset of the phone.
+======================================================================
+
+[387] Similarity: 0.570 | loredous | 8/19/2025
+This will ensure that any malicious apps are no longer installed
+======================================================================
+
+[388] Similarity: 0.631 | Carl-bot | 8/20/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[389] Similarity: 0.585 | arity0 | 8/27/2025
+malware can still steal your tokens even with a password manager, but it's easy to invalidate tokens
+======================================================================
+
+[390] Similarity: 0.571 | toadyloady | 8/27/2025
+Ok I got it downloaded it and I heard a lot of people reinstall windows in order to debug the hacker for a while
+======================================================================
+
+[391] Similarity: 0.563 | dogwater3301 | 8/28/2025
+Specialized in what? Account hacking?
+======================================================================
+
+[392] Similarity: 0.631 | Carl-bot | 8/28/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[393] Similarity: 0.605 | z3rc0 | 8/28/2025
+U realize account hacking is either social engineering or finding passwords from data breaches
+======================================================================
+
+[394] Similarity: 0.588 | z3rc0 | 8/28/2025
+Anything I learned from hacking is never trust nobody
+======================================================================
+
+[395] Similarity: 0.561 | toadyloady | 8/28/2025
+I would have done that if the hacker didn't get access to it.
+======================================================================
+
+[396] Similarity: 0.569 | _dismillah_ | 8/28/2025
+No, it’s not. I just think it’s good for the companies to know how hackers operate, then they can take precautions
+======================================================================
+
+[397] Similarity: 0.567 | lenny_leonard | 8/28/2025
+interesting, i fell for this when in uni cause my friend who studied game dev got his account compromised lol
+======================================================================
+
+[398] Similarity: 0.576 | ahadali0041 | 8/29/2025
+and like ethical hacking
+======================================================================
+
+[399] Similarity: 0.631 | Carl-bot | 8/29/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[400] Similarity: 0.579 | perx0421 | 8/30/2025
+Hey I’ve got some people hacking all of my social medias and accounts and Amazon accounts and etc right now I need some help
+======================================================================
+
+[401] Similarity: 0.615 | lokoojuaan | 8/30/2025
+to test the security
+======================================================================
+
+[402] Similarity: 0.652 | bttea | 9/4/2025
+You can try uploading your software and see which security defenses it can bypass.
+======================================================================
+
+[403] Similarity: 0.659 | bttea | 9/4/2025
+from chatGPT:
+```
+Good question — I’ll answer carefully and responsibly.
+
+People who create or spread trojans are usually doing malicious things, because trojans are a type of malware. Some common (illegal) uses include:
+
+Stealing data (passwords, credit card numbers, personal files).
+
+Remote access (allowing attackers to control the victim’s computer).
+
+Installing more malware (like ransomware or cryptominers).
+
+Using the victim’s computer in botnets (for spam or DDoS attacks).
+
+Surveillance (l
+======================================================================
+
+[404] Similarity: 0.649 | bttea | 9/4/2025
+ogging keystrokes, activating webcams, etc.).
+
+⚠️ Important: Using or distributing trojans without permission is cybercrime.
+
+On the defensive side, security researchers and penetration testers may study trojans in a controlled environment to:
+
+Learn how they work (reverse engineering).
+
+Improve antivirus / endpoint detection.
+
+Test defenses in red team exercises.
+
+So the legit, ethical use is for research, education, and improving defenses — but in the wild, criminals mainly use them for theft,
+======================================================================
+
+[405] Similarity: 0.552 | bttea | 9/4/2025
+ spying, and sabotage.
+
+👉 Do you want me to give you a defensive perspective (like how to detect and protect against trojans), or more of a research perspective (like how analysts study them)?
+```
+======================================================================
+
+[406] Similarity: 0.590 | touringermany | 9/4/2025
+it bypassed alot it got flagged 4 times   but it didnt say it was a worm key logger spyware and ransomware but i made a tool that  is like virustotal but better it makes it into a graph    with like connect ips  what it gets flagged and all that  but the best part is if  the person who made  the exe hosted  the file on a website or has a api key connected  that api key might log his ip with the graph somehow idk
+======================================================================
+
+[407] Similarity: 0.562 | __swayzgl1tzyyy | 9/4/2025
+Uploading those malware only feeds virustotal to detect malware
+======================================================================
+
+[408] Similarity: 0.598 | parrot_alt_ | 9/4/2025
+idc what it does aslong as it makes it look like there fully getting hacked
+======================================================================
+
+[409] Similarity: 0.591 | touringermany | 9/4/2025
+clyp jsut use ransomware
+======================================================================
+
+[410] Similarity: 0.565 | hankfrost883 | 9/5/2025
+how can i hack into wifi
+======================================================================
+
+[411] Similarity: 0.597 | touringermany | 9/5/2025
+why hack into wifi
+======================================================================
+
+[412] Similarity: 0.567 | 1waye | 9/5/2025
+Or just general malware but primarily rats and stealers
+======================================================================
+
+[413] Similarity: 0.625 | x7624 | 9/6/2025
+so u know how to hack someone?
+======================================================================
+
+[414] Similarity: 0.558 | einfacher | 9/6/2025
+Bro, the stuff ur asking (phishing, bans, malware) is basically just illegal. Real hacking is about understanding how systems work. Like yeah, to phish someone u‘d need to know protocols, host servers, clone sites… but that only comes once u‘ve built up al lot of general knowledge. The way u actually get there is by learning a language (python is a good start), understanding networks and massing around with legal labs like hackthebox or tryhackme.
+======================================================================
+
+[415] Similarity: 0.558 | x7624 | 9/6/2025
+so ur job rn is cyber security?
+======================================================================
+
+[416] Similarity: 0.578 | dogwater3301 | 9/6/2025
+Not too much. It will spawn a fake ransomware window, create a bunch of files in ~/Desktop and try to terminate running processes. taskkill is a Windows utility though, so it won't run on other systems.
+======================================================================
+
+[417] Similarity: 0.559 | touringermany | 9/6/2025
+make alot of random text docs on your desktop and  pull up a  fake ransomware screen i didnt try for ity
+======================================================================
+
+[418] Similarity: 0.637 | touringermany | 9/6/2025
+i dont hack people i make malware and test which parts it can bypass
+======================================================================
+
+[419] Similarity: 0.573 | bttea | 9/9/2025
+Using the excuse of research to apply hacking techniques for illegal purposes is exactly why white-hat hackers have a job — because there are too many people like you in the world.
+======================================================================
+
+[420] Similarity: 0.575 | bttea | 9/9/2025
+hackone or bug bounty，~~e.g. pwn2own~~
+======================================================================
+
+[421] Similarity: 0.593 | mrsskelli | 9/9/2025
+HackerOne is bug bounty. It’s one of the biggest bug bounty platforms
+======================================================================
+
+[422] Similarity: 0.565 | bttea | 9/12/2025
+These are not the final set of features or parameters—for example, I have not yet implemented various RCE techniques, pearcmd exploitation, phpinfo race conditions, 4096-character truncation detection, or vulnerabilities such as CVE-2024-4577 and CVE-2024-2961. Therefore, there is still plenty of room for design improvements, and this will also include automated WAF bypass techniques.
+======================================================================
+
+[423] Similarity: 0.624 | c32berpunk2077 | 9/14/2025
+Did some research on practical malware analysis programmed, read, did some binary/hex, network fundamentals, some scada system understanding. Repeat.
+======================================================================
+
+[424] Similarity: 0.618 | boboiboy_fan_people | 9/14/2025
+how to hack
+======================================================================
+
+[425] Similarity: 0.597 | bttea | 9/14/2025
+This is essentially a human-related vulnerability. Human errors are hard to prevent and are related to awareness of fraud prevention.
+======================================================================
+
+[426] Similarity: 0.571 | c32berpunk2077 | 9/14/2025
+Our systems ever since we got WWW out there for the world to use have been secured. But it’s us humans that bring all the issues and cause vulnerabilities to appear
+======================================================================
+
+[427] Similarity: 0.564 | 3kck0 | 9/15/2025
+Only way one could get away with it is if they know how to do SS7 attacks which requires them to get a license to connect to it. Which average scammer can’t do and if someone is capable of such thing, they’ll sell it for a lot which desperate for quick money people can’t afford.
+======================================================================
+
+[428] Similarity: 0.575 | lostintheworld75 | 9/15/2025
+Ok thank you I’m just curious what are the different types of hacking and how can we start learning software??
+======================================================================
+
+[429] Similarity: 0.566 | loredous | 9/15/2025
+Hacking isn't really something that has a specific list of "types" that can really be put out there. It is a HUGE space, and changes on a daily basis
+======================================================================
+
+[430] Similarity: 0.554 | loredous | 9/15/2025
+You can absolutely learn about hacking without a PC. The initial stages of learning are mainly just that, learning.
+======================================================================
+
+[431] Similarity: 0.631 | Carl-bot | 9/15/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[432] Similarity: 0.607 | lostintheworld75 | 9/15/2025
+How can I start learning on the fields of hacking to understand the system
+======================================================================
+
+[433] Similarity: 0.613 | lostintheworld75 | 9/15/2025
+Are iPhone or apple products good to use to learn to hack?
+======================================================================
+
+[434] Similarity: 0.631 | Carl-bot | 9/15/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[435] Similarity: 0.596 | lostintheworld75 | 9/16/2025
+Or to learn to hack
+======================================================================
+
+[436] Similarity: 0.560 | mrsskelli | 9/16/2025
+There's Portswigger's Web Security Academy
+======================================================================
+
+[437] Similarity: 0.588 | x1vi_zi | 9/17/2025
+is my system design of malware bad ?
+======================================================================
+
+[438] Similarity: 0.614 | x1vi_zi | 9/17/2025
+can u please help me some resources for better system designs malware and applications both
+======================================================================
+
+[439] Similarity: 0.565 | loredous | 9/17/2025
+so, if you want to learn about real-world malware C2 architecture, that's going to be VERY different from something like designing an optimal architecture for malware C2
+======================================================================
+
+[440] Similarity: 0.581 | loredous | 9/17/2025
+that's the whole infrastructure between the malware sitting on a victim's system, and the attacker
+======================================================================
+
+[441] Similarity: 0.612 | x1vi_zi | 9/17/2025
+okay do u know any resources I know I will find plenty on defending but not on malware itself
+======================================================================
+
+[442] Similarity: 0.556 | loredous | 9/17/2025
+Yeah, you're not gonna find a lot about how to design malware
+======================================================================
+
+[443] Similarity: 0.564 | loredous | 9/17/2025
+There are plenty of blogs and research articles looking at describing known malware C2 frameworks
+======================================================================
+
+[444] Similarity: 0.563 | loredous | 9/17/2025
+Malware C2 isn't about optimization
+======================================================================
+
+[445] Similarity: 0.571 | x1vi_zi | 9/17/2025
+And hacking jobs aint no chance
+======================================================================
+
+[446] Similarity: 0.559 | loredous | 9/17/2025
+If you want to get your foot in the door, learn security, and start looking for jobs like:
+- automation engineer 
+- devsecops
+- security software engineer 
+- SOC analyst
+======================================================================
+
+[447] Similarity: 0.551 | loredous | 9/17/2025
+Hacking really isn't about the tools
+======================================================================
+
+[448] Similarity: 0.577 | ash_real0 | 9/17/2025
+hi everyone, i am posting this here cause i don't know where else to post it, si i m 16 year old, i started hacking 4 years ago (just basic wifi hacking, and script kiddie thing and all) slowly i learned and now i am doing cyber security from craw.in institute (offline) and i am also doing try hack me and current rank is LEGEND, i have read books such as The hacker playbook 2,3, Practical guide to reverse engeneering, the hackers shellcode and i am also doing portswigger labs and i have doing sc
+======================================================================
+
+[449] Similarity: 0.631 | Carl-bot | 9/17/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[450] Similarity: 0.571 | loredous | 9/17/2025
+or tech support, maybe spending some time doing sysadmin work, and building a good understanding of the concepts of tech in general, along with building your security knowledge
+======================================================================
+
+[451] Similarity: 0.581 | arity0 | 9/18/2025
+google is one of the best tools for osint, it's not just a way to find osint tools
+======================================================================
+
+[452] Similarity: 0.607 | arity0 | 9/18/2025
+here's more info
+https://www.imperva.com/learn/application-security/google-dorking-hacking/
+======================================================================
+
+[453] Similarity: 0.574 | mehdijji2 | 9/21/2025
+YO HOW  TO START  HACKING
+======================================================================
+
+[454] Similarity: 0.628 | mrsskelli | 9/21/2025
+#✔｜learn-hacking
+======================================================================
+
+[455] Similarity: 0.631 | Carl-bot | 9/21/2025
+https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/
+======================================================================
+
+[456] Similarity: 0.623 | zaradody | 9/21/2025
+Do people read browser, application, compilers blueprints to understand xss vulnerabilities?
+======================================================================
+
+[457] Similarity: 0.579 | the.korean.empire | 9/24/2025
+Can u ask for people to hack something for u or nah
+======================================================================
+
+[458] Similarity: 0.550 | dokidokiliteratureclubplus | 9/25/2025
+yo anybody knows how to hack games fr
+======================================================================
+
+[459] Similarity: 0.600 | james_shakes | 9/27/2025
+Lean into diversity of hacking
+======================================================================
+
+[460] Similarity: 0.590 | mrsskelli | 9/27/2025
+Well, do you know how to manually exploit stuff? What tools are you using, what have you done up until this point?
+======================================================================
+
+[461] Similarity: 0.630 | suh.is.not.weird | 9/27/2025
+Could someone help me with my hacking homework?
+======================================================================
+
+[462] Similarity: 0.559 | mrsskelli | 9/27/2025
+When I do webapp hacking, I use some CLI tools and Burp, that's it
+======================================================================
+
+[463] Similarity: 0.621 | mrsskelli | 9/27/2025
+It helped me write an exploit (which was part of ongoing research in offensive AI)
+======================================================================
+
+[464] Similarity: 0.612 | mrsskelli | 9/27/2025
+You have to understand the vulnerabilities, how they work, and how manual exploitation works before you can use tools
+======================================================================
+
+[465] Similarity: 0.639 | dat_wheel4 | 10/1/2025
+Yo just wondering if anyone is pretty knowledgeable on hardware hacking that can help me out.
+======================================================================
+
+[466] Similarity: 0.609 | nelideven | 10/1/2025
+on hardware what
+======================================================================
+
+[467] Similarity: 0.657 | radonreborn | 10/1/2025
+https://cloud.google.com/blog/topics/threat-intelligence/embedded-hardwareha
+======================================================================
+
+[468] Similarity: 0.642 | freeviruzdotorg | 10/1/2025
+all i see is NC for hardware hacking
+there was a girl who did a good video on a lot of old tech and new tech hacking into modems, routers, computers, consoles, phones, pretty much everything
+edit - seems its gone in the ether womp womp. even had resources referenced
+======================================================================
+
+[469] Similarity: 0.565 | nelideven | 10/2/2025
+cbc, ecb, gcm, ctr are just mode-of operations, basically since AES encryption only supports 16 byte encryption, the workaround is those mode-of operations (cmiiw)
+======================================================================
+
+[470] Similarity: 0.594 | loredous | 10/2/2025
+There are thousands of different tools to decrypt AES. At their core though, they are all using the AES encryption algorithm
+======================================================================
+
+[471] Similarity: 0.575 | loredous | 10/2/2025
+My advice to you would be: It sounds like you have a genuine interest in cybersecurity. If you don't get this specific internship, there will be others in the future. To better prepare yourself for those future opportunities, I highly recommend you set aside time to learn the basic concepts behind all of these processes. Cybersecurity isn't about learning to use tools. Tools are irrelevant. If you don't understand what the tool you are using is actually doing, you're in a very bad place.
+======================================================================
+
+[472] Similarity: 0.597 | asperikse3kalroeturamenas | 10/2/2025
+And a bit of reading and coding malware things
+======================================================================
+
+[473] Similarity: 0.554 | reecies_puffs | 10/2/2025
+t comes to passwords, the primary would either be PBKDF2 or none considering it might be an old openssl method considering that all the other levels were not difficult at all
+======================================================================
+
+[474] Similarity: 0.563 | asperikse3kalroeturamenas | 10/2/2025
+Every hacker should know C my opinion is
+======================================================================
+
+[475] Similarity: 0.566 | loredous | 10/2/2025
+A "real" hacker is going to use any and all tools at their disposal, and isn't concerned with "looking cool"
+======================================================================
+
+[476] Similarity: 0.584 | arity0 | 10/3/2025
+hacking doesn't help here
+======================================================================
+
+[477] Similarity: 0.622 | mrsskelli | 10/3/2025
+@𝒫𝓇ℴ𝒻ℯ𝓈𝓈𝒾ℴ𝓃𝒶𝓁 If you want to learn hacking check out this resource:
+======================================================================
+
+[478] Similarity: 0.551 | Carl-bot | 10/3/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[479] Similarity: 0.593 | mrsskelli | 10/3/2025
+This is a roadmap we built to teach people hacking
+======================================================================
+
+[480] Similarity: 0.589 | mrsskelli | 10/3/2025
+We also have #✔｜learn-hacking
+======================================================================
+
+[481] Similarity: 0.557 | profesional0594 | 10/3/2025
+I gonna learn how to hack then I gonna hack him
+======================================================================
+
+[482] Similarity: 0.560 | jawux | 10/3/2025
+U need a Link that are a IP Grabber
+That how A lot of Accounts got Hacked.
+======================================================================
+
+[483] Similarity: 0.585 | the_shadow_developer | 10/3/2025
+The hacker use the simple image to use your ip grabber
+======================================================================
+
+[484] Similarity: 0.566 | mrsskelli | 10/3/2025
+Hacking back is a crime
+======================================================================
+
+[485] Similarity: 0.598 | profesional0594 | 10/3/2025
+But when I leaned how to hack so I. Can hack everything it not something bad I want to do
+======================================================================
+
+[486] Similarity: 0.602 | mrsskelli | 10/3/2025
+If you want to learn how to hack you should be familiar with the laws
+======================================================================
+
+[487] Similarity: 0.615 | mrsskelli | 10/3/2025
+There are ways to hack ethically and legally
+======================================================================
+
+[488] Similarity: 0.565 | mrsskelli | 10/3/2025
+Companies will pay you to hack their company in exchange for the information on how you did it
+======================================================================
+
+[489] Similarity: 0.607 | profesional0594 | 10/3/2025
+Hack everything
+======================================================================
+
+[490] Similarity: 0.551 | Carl-bot | 10/3/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[491] Similarity: 0.628 | mrsskelli | 10/3/2025
+#✔｜learn-hacking
+======================================================================
+
+[492] Similarity: 0.591 | ra902 | 10/4/2025
+hello where can i learn hacking?
+======================================================================
+
+[493] Similarity: 0.551 | Carl-bot | 10/4/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[494] Similarity: 0.602 | mrsskelli | 10/6/2025
+TLDR: Its a giant list of passwords and other information stolen by a type of malware called an "infostealer" and then was compiled into a big list and sold/published. If you search your email on Have I Been Pwnd and this comes up, it means your credentials were in the breach
+======================================================================
+
+[495] Similarity: 0.550 | mrsskelli | 10/6/2025
+Its best to scan for viruses on your computer, and change your credentials
+======================================================================
+
+[496] Similarity: 0.586 | _cosmicecho | 10/9/2025
+(u can ignore this if u like)
+
+Hi, this is not really a general hacking question, but more about "if my OpSec in this app is already compromised by hackers" question.
+
+I was in this mobile app game that I left 2 years ago but I have 4 years of playing since the start of the Pandemic (2020).
+
+My question is, in this mobile application video game, I encountered around 3 years ago that someone had managed to bypass my clan's "join system", so there are 2 security measures in place. (Number 1) Did t
+======================================================================
+
+[497] Similarity: 0.555 | _cosmicecho | 10/9/2025
+nd is the "Region Exploitation" that bypasses Region Lock, Initiated a purchase, and Server Validation Failure.
+
+At that time I never used a VPN because I do not know anything about Cybersecurity yet (LOL) and I actually used my personal email for this game. However, my concern is not that the developers know my identity, my concern is that if those who targeted me before has access to my personal data that is used to play that game.
+
+Thank You!!
+======================================================================
+
+[498] Similarity: 0.593 | space_spider | 10/9/2025
+Can u help me create an exploit
+======================================================================
+
+[499] Similarity: 0.553 | earthtoshan | 10/10/2025
+hi guys,
+I am pretty rookie, done my compTIAs and started a little hack the box.
+
+My friend online is getting some pretty unacceptable comments from sharing her life story, and I just want to run some harmless OSINT to check the usernames and see which platforms they are on, just build a little intel. I reckon they may all be the same person, if it is then calling them out would shut it down pretty quick I reckon.
+
+As far as I know doing OSINT on cyber bullies is ethical, and I intend to stay et
+======================================================================
+
+[500] Similarity: 0.602 | itsdo.t | 10/13/2025
+I want to learn how to detect website vulnerabilities
+======================================================================
+
+[501] Similarity: 0.551 | Carl-bot | 10/13/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[502] Similarity: 0.585 | loredous | 10/14/2025
+For security issues, you really should be reporting to their bug bounty program (`security.apple.com`). You probably won't see a CVE for anything that you submit through support.apple.com
+======================================================================
+
+[503] Similarity: 0.565 | __swayzgl1tzyyy | 10/14/2025
+e.g. macOS Tahoe https://support.apple.com/en-us/125110 security advisory
+======================================================================
+
+[504] Similarity: 0.556 | dex1m. | 10/14/2025
+the guys who are into hardening and security thought of the following solution. let's make it simple: 
+
+first use an OS that has amnesia. You will boot with the OS with usb. connect to Tor anything that happens will be deleted. the amnesia OS ..... I forgot my notes
+======================================================================
+
+[505] Similarity: 0.550 | dex1m. | 10/14/2025
+```
+┌──(dex)-[~/fleet]
+└─$ rg amne
+2025-10-13_20-36-41.md
+12:like namnes of files.--------xxxxxxxxxxxxxxxx-----ever
+
+┌──(dex)-[~/fleet]
+└─$ cd ~/power
+
+┌──(dex)-[~/power]
+└─$ rg amnis
+
+┌──(dex)-[~/power]
+└─$ rg amnisia
+
+┌──(dex)-[~/power]
+└─$ rg amn
+hacker/--xxxxxxxxxxxxxxxxxxx-------- The answer is "get on the damn track."
+
+┌──(dex)-[~/power]
+└─$
+```
+
+sry no luck I think I didn't take a note in the vaults
+======================================================================
+
+[506] Similarity: 0.557 | loredous | 10/14/2025
+or security
+======================================================================
+
+[507] Similarity: 0.565 | ser3n1ty | 10/15/2025
+Aside from the thousands of ctfs out there for generic pentesting like web and active directory, as far as books go, i think no starch press books put you more in that niche seat. Car hackers handbook, hardware hacking handbook, practical iot hacking are all more niche. For generic stuff you should just do ctfs
+======================================================================
+
+[508] Similarity: 0.604 | dex1m. | 10/15/2025
+cking programs from the Internet. It you don't know how to use them, or if they are viruses, you only have yourself to blame.
+
+if you ask me, just learn what hacking is I can give you a section to what it means. but check out the #⚡｜resources . 
+
+go with basics enjoy your time using linux,cli,nvim,,finger keyboards responsivilities, programing coding, screwing around with the computer. asking chat asking ai doing ideas. 
+
+then start the basic form of hacking which is computer hacking. it's the e
+======================================================================
+
+[509] Similarity: 0.572 | dex1m. | 10/15/2025
+asier way to visualize the art of hacking.
+======================================================================
+
+[510] Similarity: 0.581 | dex1m. | 10/15/2025
+> SECTION 3 - What is hacking?
+> What is hacking? Well, whatishacking.org defines it as "the practice of modifying the features of a system, in order to accomplish a goal outside of the creator's original purpose. The person who is consistently engaging in hacking activities, and has accepted hacking as a lifestyle and philosophy of their choice, is called a hacker. Computer hacking is the most popular form of hacking nowadays, especially in the field of computer security, but hacking exists in 
+======================================================================
+
+[511] Similarity: 0.591 | dex1m. | 10/15/2025
+then you become what type of hacker you want. black/grey/white... whatever those colors even mean. 
+
+you can check some popular resources on telegram go to telegram check exploit kali linux community if you want to start pentesting. or go to roadmap.sh and check the cyber security one. 
+
+idk what you want to become a technician? a cyber expert? IT consultants ?... 
+
+well all I can tell you is that I've started this bs 3y ago from when I was in windows I wish I started early when I was a kid I di
+======================================================================
+
+[512] Similarity: 0.614 | mrpinkdoingchem | 10/15/2025
+my computer is hacked
+======================================================================
+
+[513] Similarity: 0.599 | luv.akura | 10/16/2025
+should i use linux for hacking?
+======================================================================
+
+[514] Similarity: 0.625 | lenny_leonard | 10/16/2025
+You can use any operating system for hacking technically but preferably one with a network stack.
+
+So no templeOS!
+======================================================================
+
+[515] Similarity: 0.588 | raxelcoder | 10/17/2025
+Also this is the problem I do not know the options of what to hack
+======================================================================
+
+[516] Similarity: 0.551 | Carl-bot | 10/17/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[517] Similarity: 0.565 | spxy._. | 10/17/2025
+pov you're in a hacking and coding server
+======================================================================
+
+[518] Similarity: 0.550 | sweetgumballs. | 10/19/2025
+Thats a real style of attack, Forcing a QR connection? Completely new to this space of hacking. Been playing with a flipper zero
+======================================================================
+
+[519] Similarity: 0.551 | Carl-bot | 10/19/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[520] Similarity: 0.612 | mrsskelli | 10/20/2025
+I've been pentesting some IIS and ASP.NET lately so I wanted to share a handy resource I came across:
+
+https://book.hacktricks.wiki/en/network-services-pentesting/pentesting-web/iis-internet-information-services.html?highlight=iis#old-iis-vulnerabilities-worth-looking-for
+======================================================================
+
+[521] Similarity: 0.558 | ghost0375 | 10/20/2025
+not that know of, but i know the owner and have his full permission to test its security and check for vulnerability's
+======================================================================
+
+[522] Similarity: 0.568 | ghost0375 | 10/20/2025
+but i also have permission for another penetration hack on my schools main server with accounts, docs, ext. which was given to me by the principal, IT specialist that set everything up and my IT teacher
+======================================================================
+
+[523] Similarity: 0.552 | loredous | 10/20/2025
+Yeah, you're learning tools. That's not hacking.
+======================================================================
+
+[524] Similarity: 0.551 | Carl-bot | 10/20/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[525] Similarity: 0.551 | Carl-bot | 10/20/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[526] Similarity: 0.636 | _cosmicecho | 10/21/2025
+your device and those malware manages to compromise sensitive information that is in your endpoint, that's only when the hacker gets the information back to their servers
+======================================================================
+
+[527] Similarity: 0.604 | _cosmicecho | 10/21/2025
+Plus, if you connect to a Rogue Access Point or compromised/malicious router, hackers can trick you into social engineering by hijacking your DNS and redirecting you to their clone websites to make you give out your information
+======================================================================
+
+[528] Similarity: 0.561 | kronoxoz | 10/21/2025
+Question where would I got to find a black hat hacker?
+======================================================================
+
+[529] Similarity: 0.571 | _cosmicecho | 10/21/2025
+Also android malware needs to be installed, there may be less ways to automatically execute apk malware compared to windows
+======================================================================
+
+[530] Similarity: 0.562 | mrsskelli | 10/21/2025
+.warn @Kronoxoz Looking for black hat hackers
+======================================================================
+
+[531] Similarity: 0.631 | gato100mal | 10/21/2025
+First time doing hardware hacking lol
+======================================================================
+
+[532] Similarity: 0.582 | sha256_ | 10/21/2025
+Hey if I have permission can I hack my mates servers for security checks?
+======================================================================
+
+[533] Similarity: 0.613 | spxy._. | 10/21/2025
+let's all hack it
+======================================================================
+
+[534] Similarity: 0.564 | tgvforces11 | 10/22/2025
+Hey yall I am very interested in cyber security and have two certs already but they are more about basic information and definitions but I’d like to have more labs in real life senerios so if you guys have and YouTube vids or something like that I’d love to give it a shot
+======================================================================
+
+[535] Similarity: 0.554 | mrsskelli | 10/24/2025
+If you don’t know how to manually exploit it, the tools are worthless. Learn manual exploitation first
+======================================================================
+
+[536] Similarity: 0.582 | the_real_cranvan | 10/24/2025
+till what level of hacking is legal to learn.
+======================================================================
+
+[537] Similarity: 0.551 | Carl-bot | 10/24/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[538] Similarity: 0.651 | _pi | 10/24/2025
+Sometimes even the largest orgs are vulnerable to the simplest vulnerabilities. You can learn to hack, and hack devices legally with services designed to teach hacking.
+======================================================================
+
+[539] Similarity: 0.551 | Carl-bot | 10/26/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[540] Similarity: 0.563 | mrsskelli | 10/30/2025
+A network-enabled attack is an attack that either:
+    1.    Exploits vulnerabilities in network protocols, services, or configurations, or
+    2.    Uses network connectivity as a vector to deliver, coordinate, or propagate the attack.
+
+
+It depends on context really
+======================================================================
+
+[541] Similarity: 0.551 | bttea | 10/30/2025
+You can review the attack categories listed by CWE, or use a CVSS 3.1 calculator. The calculator enumerates risk-assessment options for each vulnerability; by looking at those options you can infer the types of weakness scenarios that may occur.
+======================================================================
+
+[542] Similarity: 0.589 | arity0 | 10/31/2025
+does your colleague have the hacker's ip?
+======================================================================
+
+[543] Similarity: 0.561 | dex1m. | 10/31/2025
+turns out the best way to hack a gmail acount ethically not hacking but return it to a cutomer is to try out recovery
+======================================================================
+
+[544] Similarity: 0.587 | venloggedin | 10/31/2025
+Everyone knows u need a thinkpad to be a real hacker
+======================================================================
+
+[545] Similarity: 0.625 | lostintheworld75 | 11/1/2025
+Is it possible to use iPhones to do cybersecurity and ethical hacking??
+======================================================================
+
+[546] Similarity: 0.551 | Carl-bot | 11/1/2025
+https://faq.hackncode.dev/roadmap
+======================================================================
+
+[547] Similarity: 0.594 | lostintheworld75 | 11/1/2025
+What are some hack apps to start with for iPhones
+======================================================================
+
+[548] Similarity: 0.584 | loredous | 11/1/2025
+Hacking isn't really about apps, or tools
+======================================================================
+
+[549] Similarity: 0.567 | loredous | 11/1/2025
+Well, really hacking is 90% about learning how the systems you are working with actually work
+======================================================================
+
+[550] Similarity: 0.551 | Carl-bot | 11/1/2025
+https://faq.hackncode.dev/roadmap
+======================================================================

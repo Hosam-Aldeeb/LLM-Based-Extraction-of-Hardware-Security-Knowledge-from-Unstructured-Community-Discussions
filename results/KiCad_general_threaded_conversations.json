@@ -1,0 +1,2655 @@
+{
+  "channel": "KiCad_general",
+  "source": "./discord-exports/KiCad_general_Jan2025_export.json",
+  "filteredMessages": 37,
+  "totalThreads": 37,
+  "substantialThreads": 24,
+  "threads": [
+    [
+      {
+        "id": "1324844318187458560",
+        "author": "ja5174",
+        "timestamp": "2025-01-03T15:58:19.873-05:00",
+        "content": "do you have a question, or just want some solidarity?"
+      },
+      {
+        "id": "1324913811840438292",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:34:28.451-05:00",
+        "content": "jesus christ at least lie to me",
+        "reference": {
+          "messageId": "1324844318187458560",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1324913910276554833",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:34:51.92-05:00",
+        "content": "how bad is it"
+      },
+      {
+        "id": "1324913944954929313",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:35:00.188-05:00",
+        "content": "we bought a few just to test as they are cheap af"
+      },
+      {
+        "id": "1324914184051363912",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:35:57.193-05:00",
+        "content": "software bugs wasn't enough"
+      },
+      {
+        "id": "1324914360300081164",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:36:39.214-05:00",
+        "content": "geeeez"
+      },
+      {
+        "id": "1324914403421847596",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:36:49.495-05:00",
+        "content": "should have just gotten some attinys lmao"
+      },
+      {
+        "id": "1324914473269723256",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:37:06.148-05:00",
+        "content": "what language / ide can you use for wch?"
+      },
+      {
+        "id": "1324914704333803560",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:38:01.238-05:00",
+        "content": "eclipse? like... java eclipse?"
+      },
+      {
+        "id": "1324914915554758729",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:38:51.597-05:00",
+        "content": "oh no"
+      },
+      {
+        "id": "1324915652963598359",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:41:47.409-05:00",
+        "content": "https://tenor.com/view/coffin-dance-coffin-dead-coffin-dance-dead-man-dead-gif-1795768380065876519"
+      },
+      {
+        "id": "1324916265340375040",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:44:13.411-05:00",
+        "content": "tbh it's a very simple application we would use it for, just a rf remote control, so basically 2 outputs, 2 inputs, and sleep mode"
+      },
+      {
+        "id": "1324916275390189639",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:44:15.807-05:00",
+        "content": "maybe a timer"
+      },
+      {
+        "id": "1324916324782182402",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:44:27.583-05:00",
+        "content": "well and flash / eeprom"
+      },
+      {
+        "id": "1324917366836039751",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:48:36.028-05:00",
+        "content": "didn't get the programmer tho so yeah can't do anything yet lmao"
+      },
+      {
+        "id": "1324918824071331942",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:54:23.46-05:00",
+        "content": "well we use pics so we are used to needing a specific programmer"
+      },
+      {
+        "id": "1324918968913367061",
+        "author": "_loik",
+        "timestamp": "2025-01-03T20:54:57.993-05:00",
+        "content": "but pics have been around for milennia"
+      },
+      {
+        "id": "1324956530356781090",
+        "author": "fossify_37988",
+        "timestamp": "2025-01-03T23:24:13.339-05:00",
+        "content": "They apparently mangled JTAG as well, so debugging is a good time",
+        "reference": {
+          "messageId": "1324913811840438292",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1324956761504878602",
+        "author": "fossify_37988",
+        "timestamp": "2025-01-03T23:25:08.449-05:00",
+        "content": "I've been doing some work with the CH340 and I'm not impressed, I don't want to know how bad their processors are"
+      }
+    ],
+    [
+      {
+        "id": "1325100332723998830",
+        "author": "_andax",
+        "timestamp": "2025-01-04T08:55:38.495-05:00",
+        "content": "The main problem with the CH569W reverse engineering was that they didn’t include the register map for the USB3- functionality in the documentation. So it was a real detective work!"
+      },
+      {
+        "id": "1325100789018132521",
+        "author": "_andax",
+        "timestamp": "2025-01-04T08:57:27.284-05:00",
+        "content": "I wanted to make a high speed data logger…"
+      },
+      {
+        "id": "1325104201205809243",
+        "author": "_andax",
+        "timestamp": "2025-01-04T09:11:00.813-05:00",
+        "content": "To a usb thumb drive. The Kingston DataTraveler I tested is rated for 900MB/s write speed.\nWhat do you mean with check the numbers in the datasheet?\nIn the datasheet it has register descriptions for all peripherals except USB3 and the high speed lvds transceiver."
+      },
+      {
+        "id": "1325107087717437582",
+        "author": "_andax",
+        "timestamp": "2025-01-04T09:22:29.011-05:00",
+        "content": "No microcontrollers in a reasonable package (non bga) supports nvme etc. I think it is a big problem that in principle no mcu support storing data faster than a few MB/s, except for the CH569W as far as I know."
+      }
+    ],
+    [
+      {
+        "id": "1325946195599687680",
+        "author": "lud_en",
+        "timestamp": "2025-01-06T16:56:47.92-05:00",
+        "content": "whats the rshunt and cshunt option? a general capacitance and resistance?"
+      },
+      {
+        "id": "1325946687218520145",
+        "author": "lud_en",
+        "timestamp": "2025-01-06T16:58:45.131-05:00",
+        "content": "i already did, except the cshunt and rshunt options",
+        "reference": {
+          "messageId": "1325945850991607960",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1325946720928137256",
+        "author": "lud_en",
+        "timestamp": "2025-01-06T16:58:53.168-05:00",
+        "content": "i will try tomorrow"
+      },
+      {
+        "id": "1325946753866010646",
+        "author": "lud_en",
+        "timestamp": "2025-01-06T16:59:01.021-05:00",
+        "content": "thank you for help!"
+      }
+    ],
+    [
+      {
+        "id": "1363071438369587311",
+        "author": "naib",
+        "timestamp": "2025-04-19T04:39:15.55-04:00",
+        "content": "https://bugs.gentoo.org/911120"
+      },
+      {
+        "id": "1363071501598855248",
+        "author": "naib",
+        "timestamp": "2025-04-19T04:39:30.625-04:00",
+        "content": "And there is ongoing issue with wx and egl"
+      },
+      {
+        "id": "1363071698840060144",
+        "author": "naib",
+        "timestamp": "2025-04-19T04:40:17.651-04:00",
+        "content": "https://github.com/wxWidgets/wxWidgets/issues/22325"
+      },
+      {
+        "id": "1363071734768468009",
+        "author": "naib",
+        "timestamp": "2025-04-19T04:40:26.217-04:00",
+        "content": "This issue explicitly"
+      },
+      {
+        "id": "1363072000746328084",
+        "author": "naib",
+        "timestamp": "2025-04-19T04:41:29.631-04:00",
+        "content": "Most recent issue raised EXPLICITLY via Kicad (from Feb this year)"
+      },
+      {
+        "id": "1363072012733648897",
+        "author": "naib",
+        "timestamp": "2025-04-19T04:41:32.489-04:00",
+        "content": "https://github.com/wxWidgets/wxWidgets/issues/24977"
+      },
+      {
+        "id": "1363072142580908092",
+        "author": "naib",
+        "timestamp": "2025-04-19T04:42:03.447-04:00",
+        "content": "In short .. ex with egl to facilitate Wayland is still buggy... Ymmv"
+      }
+    ],
+    [
+      {
+        "id": "1364300882174283926",
+        "author": "emiel0314",
+        "timestamp": "2025-04-22T14:04:37.795-04:00",
+        "content": "Smart people of the internet. I'd like to know your opinion. So I'm working on that radar thingemejig right? Well I've placed the decoupling caps and pullup resistors on the PCB and I have done it a bit differently than what the dev board from TI does. This is my version:"
+      },
+      {
+        "id": "1364301204171001887",
+        "author": "emiel0314",
+        "timestamp": "2025-04-22T14:05:54.565-04:00",
+        "content": "It is a bit hard to see but this is how TI does it"
+      },
+      {
+        "id": "1364301771362795581",
+        "author": "emiel0314",
+        "timestamp": "2025-04-22T14:08:09.794-04:00",
+        "content": "I've highlighted them in this picture"
+      },
+      {
+        "id": "1364301904288550993",
+        "author": "emiel0314",
+        "timestamp": "2025-04-22T14:08:41.486-04:00",
+        "content": "they are all on the back and some of them are in a 0603 package as you can see while mine are mostly on the back side but some on the front as well. I also used 0402 exclusively."
+      },
+      {
+        "id": "1364310920859357345",
+        "author": "emiel0314",
+        "timestamp": "2025-04-22T14:44:31.204-04:00",
+        "content": "Maybe the 3d view will help. One sec",
+        "reference": {
+          "messageId": "1364304704133136504",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1364311226540232704",
+        "author": "emiel0314",
+        "timestamp": "2025-04-22T14:45:44.084-04:00",
+        "content": ""
+      },
+      {
+        "id": "1364311473215508551",
+        "author": "emiel0314",
+        "timestamp": "2025-04-22T14:46:42.896-04:00",
+        "content": "I'm missing the 3d model and have a weird artifact as you can see but I think you can see that my implementation is a bit different"
+      },
+      {
+        "id": "1364505602264666162",
+        "author": "mnem_94475",
+        "timestamp": "2025-04-23T03:38:06.868-04:00",
+        "content": "Unrelated, but the radar ic looks like wide ddr ram",
+        "reference": {
+          "messageId": "1364300882174283926",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1364505641271689236",
+        "author": "mnem_94475",
+        "timestamp": "2025-04-23T03:38:16.168-04:00",
+        "content": "Smh"
+      },
+      {
+        "id": "1364505736805351486",
+        "author": "emiel0314",
+        "timestamp": "2025-04-23T03:38:38.945-04:00",
+        "content": "Yeah",
+        "reference": {
+          "messageId": "1364505602264666162",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1364505778962038824",
+        "author": "emiel0314",
+        "timestamp": "2025-04-23T03:38:48.996-04:00",
+        "content": "But i already screwed up I think"
+      },
+      {
+        "id": "1364505970549592138",
+        "author": "emiel0314",
+        "timestamp": "2025-04-23T03:39:34.674-04:00",
+        "content": ""
+      },
+      {
+        "id": "1364506019669217333",
+        "author": "emiel0314",
+        "timestamp": "2025-04-23T03:39:46.385-04:00",
+        "content": "So yeah. I'll probably start over with the layout"
+      },
+      {
+        "id": "1364507418360287273",
+        "author": "emiel0314",
+        "timestamp": "2025-04-23T03:45:19.859-04:00",
+        "content": "What",
+        "reference": {
+          "messageId": "1364506188619972649",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1364507483305017344",
+        "author": "emiel0314",
+        "timestamp": "2025-04-23T03:45:35.343-04:00",
+        "content": "How does that work?"
+      },
+      {
+        "id": "1364507612468609107",
+        "author": "emiel0314",
+        "timestamp": "2025-04-23T03:46:06.138-04:00",
+        "content": "I didn't know you could do that"
+      }
+    ],
+    [
+      {
+        "id": "1367821263560642601",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-02T07:13:22.123-04:00",
+        "content": "There's an RS232 driver and a couple of RS422/RS485 drivers, OPO7 low-offset comparator, 74HC595, a few LDOs and buck converters, TVS and other protection diode devices, lots of diodes, transistors (incl ULN2003 octal array) and FETs, including high-current (>4A) PFET and NFETs, a few different op-amps, crystals, even a 16MByte SPI Flash chip. Obviously a selection of different R's (including 4-way arrays) and C's from 0402 up to 1206, and capacitors up to 50uF"
+      },
+      {
+        "id": "1367821331365630095",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-02T07:13:38.289-04:00",
+        "content": "The bare imported libraries are here:\nhttps://github.com/cjheath/jlcbasic"
+      },
+      {
+        "id": "1367821582348718183",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-02T07:14:38.128-04:00",
+        "content": "All parts need descriptions. All \"Value\" properties are actually just manufacturer Part Numbers. I have fixed the incorrectly-imported 3D models, so they and the footprints seem to be all good"
+      },
+      {
+        "id": "1367821849144332309",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-02T07:15:41.737-04:00",
+        "content": "However I would like some help to do a mass-edit on all components in the symbol libraries, perhaps some form of scripting - but IDK if the normal Kicad scripting can do what I want"
+      },
+      {
+        "id": "1367822246365888523",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-02T07:17:16.442-04:00",
+        "content": "In short, for each resistor and capacitor, I need to:\n- add (pin_numbers (hide yes))\n- add (pin_names (hide yes))\n- create (property \"PartNumber\"...) to be a copy of (property \"Value\"...) but (at 0 0 0)\n- change (property \"Reference\" to be (at 0 2.54 0)\n- change (property \"Value\" to be the semantic value of the part\n- change (property \"Value\" to be (at 0 -2.54 0)\n- change (property \"Footprint\" to be (at 0 0 0)\n- change (property \"Datasheet\" to be (at 0 0 0)\n- change (property \"Datasheet\" to be (at 0 0 0)\n- add (hide yes) to (effects) of (property \"LCSC Part\")\n- add Description text from the LCSC web page"
+      },
+      {
+        "id": "1367822371645292564",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-02T07:17:46.311-04:00",
+        "content": "There are hundreds of these, so I don't want to do everything manually"
+      },
+      {
+        "id": "1367822678936911902",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-02T07:18:59.575-04:00",
+        "content": "I'm not sure whether discussion on this topic should go to #kicad-libraries or to #kicad-scripting . Please feel free to redirect it to the appropriate place, and I will follow there"
+      },
+      {
+        "id": "1367822796624892006",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-02T07:19:27.634-04:00",
+        "content": "(Or for that matter to #importing)"
+      },
+      {
+        "id": "1367823059729514617",
+        "author": "cliffordheath",
+        "timestamp": "2025-05-02T07:20:30.363-04:00",
+        "content": "I don't much like Python. If there was a Ruby or Lisp API for loading the Kicad s-expression files, I would jump at that."
+      }
+    ],
+    [
+      {
+        "id": "1384952248135581706",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T13:45:47.124-04:00",
+        "content": "if only there was an actual ai startup for pcb design that isn't a scam"
+      },
+      {
+        "id": "1384952321720586250",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T13:46:04.668-04:00",
+        "content": "im betting there are researchers who are actually trying to make a good way to do that"
+      },
+      {
+        "id": "1384952392738537593",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T13:46:21.6-04:00",
+        "content": "and not just trying to scam some quick money"
+      },
+      {
+        "id": "1384957887683494053",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T14:08:11.697-04:00",
+        "content": "yeah",
+        "reference": {
+          "messageId": "1384956815636431060",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384958794332635136",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T14:11:47.859-04:00",
+        "content": "that actually looks nice",
+        "reference": {
+          "messageId": "1384958568138150059",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384958850095906958",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T14:12:01.154-04:00",
+        "content": "and probably works well if the signals aren't sensitive *at all*"
+      },
+      {
+        "id": "1384958940483293296",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T14:12:22.704-04:00",
+        "content": "but id still have a ground plane of some sort (4L isn't really more expensive)"
+      },
+      {
+        "id": "1384959589514215595",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T14:14:57.445-04:00",
+        "content": "oh,",
+        "reference": {
+          "messageId": "1384959510132560005",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384959664638398524",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T14:15:15.356-04:00",
+        "content": "how do those even burn"
+      },
+      {
+        "id": "1384959704903712879",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T14:15:24.956-04:00",
+        "content": "what did chatgpt say",
+        "reference": {
+          "messageId": "1384959634917425193",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384959733852672030",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T14:15:31.858-04:00",
+        "content": "exactly"
+      }
+    ],
+    [
+      {
+        "id": "1384977426857066646",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:25:50.199-04:00",
+        "content": "Whats the risk If I dont put one?"
+      },
+      {
+        "id": "1384977433194922004",
+        "author": "emiel0314",
+        "timestamp": "2025-06-18T15:25:51.71-04:00",
+        "content": "Mmm I see"
+      },
+      {
+        "id": "1384977690410488010",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:26:53.035-04:00",
+        "content": "Considering its 36v 0.4amp on each unit \n\nMaybe I didnt have a problem because I run each unit individually and if I run 16 at once itll stack? \nIdk",
+        "reference": {
+          "messageId": "1384977426857066646",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384977960414740510",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:27:57.409-04:00",
+        "content": "may or may not cause problems with the driving circuitry",
+        "reference": {
+          "messageId": "1384977426857066646",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384977995529191616",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:28:05.781-04:00",
+        "content": "id put one on if possible"
+      },
+      {
+        "id": "1384978134432088146",
+        "author": "emiel0314",
+        "timestamp": "2025-06-18T15:28:38.898-04:00",
+        "content": "A soleniode is a coil. A cool can store energy so when the coil is powered off that energy can get released back in the circuit as a spike. The diode lets the coil release its energy in a controlled manner",
+        "reference": {
+          "messageId": "1384977426857066646",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384978216149848204",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:28:58.381-04:00",
+        "content": "doesn't sound like it",
+        "reference": {
+          "messageId": "1384977380220862545",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384978573504286770",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:30:23.581-04:00",
+        "content": "if you mean 150 million *in* assets",
+        "reference": {
+          "messageId": "1384978436698800313",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384978679884681256",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:30:48.944-04:00",
+        "content": "good for you, not my problem"
+      },
+      {
+        "id": "1384978867365875835",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:31:33.643-04:00",
+        "content": "> it is cowardice to dodge a debate\n*\\- you, a few minutes ago*",
+        "reference": {
+          "messageId": "1384978744468443236",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384979019753193544",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:32:09.975-04:00",
+        "content": "have you ever tried genuinely debating",
+        "reference": {
+          "messageId": "1384978957262131240",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384979066897039593",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:32:21.215-04:00",
+        "content": "and actually responding to the statements"
+      },
+      {
+        "id": "1384979094499758090",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:32:27.796-04:00",
+        "content": "instead of\n> changing the subject"
+      },
+      {
+        "id": "1384979207263621160",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:32:54.681-04:00",
+        "content": "quote it.",
+        "reference": {
+          "messageId": "1384979144751710219",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384979533811286128",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:34:12.536-04:00",
+        "content": "and you evidently had to use an LLM to attempt to get a comeback"
+      },
+      {
+        "id": "1384979668553171016",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:34:44.661-04:00",
+        "content": "im not going to continue this further out of dms"
+      },
+      {
+        "id": "1384979693282787328",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:34:50.557-04:00",
+        "content": "i hope i have enough self control"
+      },
+      {
+        "id": "1384980058187239424",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:36:17.557-04:00",
+        "content": "Thats what chatgpt told me too, but our mechanical engineer dismissed me on that.\nWeird",
+        "reference": {
+          "messageId": "1384978134432088146",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384980156724281427",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:36:41.05-04:00",
+        "content": "Doesnt cost much to hand  solder it to the existing pcb"
+      },
+      {
+        "id": "1384980205806026913",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:36:52.752-04:00",
+        "content": "yeah"
+      },
+      {
+        "id": "1384980299489738812",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:37:15.088-04:00",
+        "content": "you could probably bodge wire it"
+      },
+      {
+        "id": "1384980329273757758",
+        "author": "mnem_94475",
+        "timestamp": "2025-06-18T15:37:22.189-04:00",
+        "content": "if you really wanted to"
+      },
+      {
+        "id": "1384980332637454366",
+        "author": "emiel0314",
+        "timestamp": "2025-06-18T15:37:22.991-04:00",
+        "content": "Try to be a bit careful about asking chatgpt electronics questions. It does get it wrong quite often",
+        "reference": {
+          "messageId": "1384980058187239424",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384980662020345856",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:38:41.522-04:00",
+        "content": "I always use it with google search on and feed it documentation.\n\nIts consistent on generic stuff but for niche things I know not to trust it whatsover"
+      },
+      {
+        "id": "1384980788654768168",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:39:11.714-04:00",
+        "content": "Did drive me up a rabbithole telling me I cant set id's to ina238 modules and need a mux"
+      },
+      {
+        "id": "1384980961065959484",
+        "author": "emiel0314",
+        "timestamp": "2025-06-18T15:39:52.82-04:00",
+        "content": "Yeah"
+      },
+      {
+        "id": "1384981523002032258",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:42:06.796-04:00",
+        "content": "Anyhow, anyone has a quick guide on what I need to know about 4 layer pcbs?\nThe gssg things and so on?\n\nIll probably be sitting on it tommorow morning I want to get a headstart"
+      },
+      {
+        "id": "1384982262113767605",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:45:03.014-04:00",
+        "content": "And another quick question before I head off,\nAre thick shape connections better or worse?\nLike which wiring style tend to be more effective in curcuit design.\n\nChatgpt told me I need to do big filled in paths for high voltage lines.\nBut since it tends to make up things is that actually correct?"
+      },
+      {
+        "id": "1384982361703448668",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:45:26.758-04:00",
+        "content": "Which is what I have no?",
+        "reference": {
+          "messageId": "1384982195352899664",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384982545199927432",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:46:10.507-04:00",
+        "content": "paths or filled in shapes? Or it doesnt matter"
+      },
+      {
+        "id": "1384982721973063742",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:46:52.653-04:00",
+        "content": "Ill tommorow.\nI got off work already, Im just really interested to know",
+        "reference": {
+          "messageId": "1384982565362077808",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1384984131498410095",
+        "author": "seal.0",
+        "timestamp": "2025-06-18T15:52:28.71-04:00",
+        "content": "Ill, thank you"
+      }
+    ],
+    [
+      {
+        "id": "1385119442345656370",
+        "author": "jtrance",
+        "timestamp": "2025-06-19T00:50:09.33-04:00",
+        "content": "Thank you! I'm looking for fun projects to work on for sharpening my skills as a hardware engineer / embedded engineer"
+      },
+      {
+        "id": "1385122379562221639",
+        "author": "jtrance",
+        "timestamp": "2025-06-19T01:01:49.617-04:00",
+        "content": "well, not necessarily always fun, challenging to be more accurate : )"
+      },
+      {
+        "id": "1385122904014061658",
+        "author": "jtrance",
+        "timestamp": "2025-06-19T01:03:54.656-04:00",
+        "content": "I'm into audio and automotive.\n\nguitar pedals! anything of the sort"
+      },
+      {
+        "id": "1385124896723566642",
+        "author": "jtrance",
+        "timestamp": "2025-06-19T01:11:49.755-04:00",
+        "content": "Yeah looper pedal or other types. I have the schematic for a fuzz pedal and a tremolo pedal from Snip, Burn, and Solder.\n\nOtherwise there are BYOC Build Your Own Clone types of pedals online you can purchase kits from."
+      }
+    ],
+    [
+      {
+        "id": "1387332951641165824",
+        "author": "daddysaurus7",
+        "timestamp": "2025-06-25T03:25:51.071-04:00",
+        "content": "guys need help with my undergrad project, anyone got any good project ideas in the vlsi or embedded domain"
+      },
+      {
+        "id": "1387333303379693608",
+        "author": "fisheiyy",
+        "timestamp": "2025-06-25T03:27:14.932-04:00",
+        "content": "not kicad related, go to #electronics",
+        "reference": {
+          "messageId": "1387332951641165824",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1387334365914075187",
+        "author": "daddysaurus7",
+        "timestamp": "2025-06-25T03:31:28.26-04:00",
+        "content": "ok",
+        "reference": {
+          "messageId": "1387333303379693608",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1400927566386299123",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:45:59.802-04:00",
+        "content": "u can use fets also to do it"
+      },
+      {
+        "id": "1400927610812366988",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:46:10.394-04:00",
+        "content": "N mos driving a p mos"
+      },
+      {
+        "id": "1400927664298266685",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:46:23.146-04:00",
+        "content": "Its called high side switch"
+      },
+      {
+        "id": "1400927688541343774",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:46:28.926-04:00",
+        "content": "Yeah"
+      },
+      {
+        "id": "1400927750994530324",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:46:43.816-04:00",
+        "content": "Doesnt matter u can also work with bjt"
+      },
+      {
+        "id": "1400927849510338702",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:47:07.304-04:00",
+        "content": "matter is u understand how everything works, then u can implement both solutions"
+      },
+      {
+        "id": "1400927906993012736",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:47:21.009-04:00",
+        "content": "Yeah its fine, good job!"
+      },
+      {
+        "id": "1400928073465204919",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:48:00.699-04:00",
+        "content": "U can have a pull up there"
+      },
+      {
+        "id": "1400928112409317467",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:48:09.984-04:00",
+        "content": "So normally the FET Is closed"
+      },
+      {
+        "id": "1400928146676777091",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:48:18.154-04:00",
+        "content": "And when u drive the transistor bjt its open"
+      },
+      {
+        "id": "1400928189941026944",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:48:28.469-04:00",
+        "content": "depends on what u need to do"
+      },
+      {
+        "id": "1400928224741036175",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:48:36.766-04:00",
+        "content": "Exactly",
+        "reference": {
+          "messageId": "1400928195846602984",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1400928475694628926",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:49:36.598-04:00",
+        "content": "No problem"
+      },
+      {
+        "id": "1400930207367434283",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:56:29.461-04:00",
+        "content": "Butt wait @Justin_W81"
+      },
+      {
+        "id": "1400930269652975777",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:56:44.311-04:00",
+        "content": "@Justin_W81 like this It isnt ok tho"
+      },
+      {
+        "id": "1400930301001334975",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:56:51.785-04:00",
+        "content": "U connected the gate to gnd"
+      },
+      {
+        "id": "1400930347289415710",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:57:02.821-04:00",
+        "content": "So no matter what u do It will stay at 0V"
+      },
+      {
+        "id": "1400930851855929354",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:59:03.119-04:00",
+        "content": "u need to put like a 10k resistor on collector, from PIN (3) to VIN"
+      },
+      {
+        "id": "1400930909108310100",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:59:16.769-04:00",
+        "content": "and then extract the signal from the collector"
+      },
+      {
+        "id": "1400930969317277717",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T15:59:31.124-04:00",
+        "content": "Collector signal goes out and u connect It to gate"
+      },
+      {
+        "id": "1400931254861566124",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T16:00:39.203-04:00",
+        "content": "Can u show"
+      },
+      {
+        "id": "1400931262075506728",
+        "author": "kilo2150",
+        "timestamp": "2025-08-01T16:00:40.923-04:00",
+        "content": "k"
+      }
+    ],
+    [
+      {
+        "id": "1402519370294493194",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:11:15.428-04:00",
+        "content": "more realted to IoT automation and maybe even hacking"
+      },
+      {
+        "id": "1402519423579066439",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:11:28.132-04:00",
+        "content": "like writing a custom tool or compiling one on a firmware"
+      },
+      {
+        "id": "1402519542898495600",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:11:56.58-04:00",
+        "content": "and installing it on a pcb with bluetooth and wifi which will enable the device to hack or monitor wifi"
+      },
+      {
+        "id": "1402521013580730369",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:17:47.218-04:00",
+        "content": "can you help me with this?"
+      },
+      {
+        "id": "1402521402887897088",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:19:20.036-04:00",
+        "content": "well I am just following the tutorial and everything seems to be fine"
+      },
+      {
+        "id": "1402521424878501949",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:19:25.279-04:00",
+        "content": "but I get the errors"
+      },
+      {
+        "id": "1402521489235902574",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:19:40.623-04:00",
+        "content": "https://youtu.be/01OYONrYtNQ?si=BIF2uZJSmyR-92nG"
+      },
+      {
+        "id": "1402521515777462322",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:19:46.951-04:00",
+        "content": "see if u want"
+      },
+      {
+        "id": "1402521551680835685",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:19:55.511-04:00",
+        "content": "around 09:10"
+      },
+      {
+        "id": "1402521880069541939",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:21:13.805-04:00",
+        "content": "ok lemme figure out"
+      },
+      {
+        "id": "1402521992833273927",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:21:40.69-04:00",
+        "content": "bruhh"
+      },
+      {
+        "id": "1402522010273185905",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:21:44.848-04:00",
+        "content": "ofc I know that"
+      },
+      {
+        "id": "1402523164625600613",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:26:20.067-04:00",
+        "content": "fixed"
+      },
+      {
+        "id": "1402523227216937050",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:26:34.99-04:00",
+        "content": "power flag and no connection pins are the solution"
+      },
+      {
+        "id": "1402523858569007185",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:29:05.516-04:00",
+        "content": "@vipqualitypost  btw what do u do?"
+      },
+      {
+        "id": "1402523891468865596",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:29:13.36-04:00",
+        "content": "like are u in electronics field"
+      },
+      {
+        "id": "1402523901564682281",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:29:15.767-04:00",
+        "content": "a job?"
+      }
+    ],
+    [
+      {
+        "id": "1402519542898495600",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:11:56.58-04:00",
+        "content": "and installing it on a pcb with bluetooth and wifi which will enable the device to hack or monitor wifi"
+      },
+      {
+        "id": "1402521013580730369",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:17:47.218-04:00",
+        "content": "can you help me with this?"
+      },
+      {
+        "id": "1402521402887897088",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:19:20.036-04:00",
+        "content": "well I am just following the tutorial and everything seems to be fine"
+      },
+      {
+        "id": "1402521424878501949",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:19:25.279-04:00",
+        "content": "but I get the errors"
+      },
+      {
+        "id": "1402521489235902574",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:19:40.623-04:00",
+        "content": "https://youtu.be/01OYONrYtNQ?si=BIF2uZJSmyR-92nG"
+      },
+      {
+        "id": "1402521515777462322",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:19:46.951-04:00",
+        "content": "see if u want"
+      },
+      {
+        "id": "1402521551680835685",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:19:55.511-04:00",
+        "content": "around 09:10"
+      },
+      {
+        "id": "1402521880069541939",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:21:13.805-04:00",
+        "content": "ok lemme figure out"
+      },
+      {
+        "id": "1402521992833273927",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:21:40.69-04:00",
+        "content": "bruhh"
+      },
+      {
+        "id": "1402522010273185905",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:21:44.848-04:00",
+        "content": "ofc I know that"
+      },
+      {
+        "id": "1402523164625600613",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:26:20.067-04:00",
+        "content": "fixed"
+      },
+      {
+        "id": "1402523227216937050",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:26:34.99-04:00",
+        "content": "power flag and no connection pins are the solution"
+      },
+      {
+        "id": "1402523858569007185",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:29:05.516-04:00",
+        "content": "@vipqualitypost  btw what do u do?"
+      },
+      {
+        "id": "1402523891468865596",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:29:13.36-04:00",
+        "content": "like are u in electronics field"
+      },
+      {
+        "id": "1402523901564682281",
+        "author": "anom064",
+        "timestamp": "2025-08-06T01:29:15.767-04:00",
+        "content": "a job?"
+      }
+    ],
+    [
+      {
+        "id": "1403806658945355887",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:26:28.959-04:00",
+        "content": "I am just intrested in IoT and embedded systems"
+      },
+      {
+        "id": "1403806711822680095",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:26:41.566-04:00",
+        "content": "someone give this guy a medal plz",
+        "reference": {
+          "messageId": "1403806649013239891",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1403806773630206002",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:26:56.302-04:00",
+        "content": "actally quarter of a quarted would be even faster"
+      },
+      {
+        "id": "1403806909173071923",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:27:28.618-04:00",
+        "content": "lol"
+      },
+      {
+        "id": "1403806915519189144",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:27:30.131-04:00",
+        "content": "u cant"
+      },
+      {
+        "id": "1403806943344332923",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:27:36.765-04:00",
+        "content": "jk"
+      },
+      {
+        "id": "1403807109371527191",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:28:16.349-04:00",
+        "content": "it took u so long to send this"
+      },
+      {
+        "id": "1403807125100167263",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:28:20.099-04:00",
+        "content": "lol"
+      },
+      {
+        "id": "1403807219908219071",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:28:42.703-04:00",
+        "content": "that must have been very hard"
+      },
+      {
+        "id": "1403807508350505112",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:29:51.473-04:00",
+        "content": "how long have you been using kicad?"
+      },
+      {
+        "id": "1403809205475086338",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:36:36.099-04:00",
+        "content": "well is it like the components"
+      },
+      {
+        "id": "1403809293614059611",
+        "author": "anom064",
+        "timestamp": "2025-08-09T14:36:57.113-04:00",
+        "content": "like the basic physics and the componts that you have to know so you can use them in project?"
+      }
+    ],
+    [
+      {
+        "id": "1407014755775942788",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T10:54:18.847-04:00",
+        "content": "you dont know about how to test your hardware?"
+      },
+      {
+        "id": "1407014891423928320",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T10:54:51.188-04:00",
+        "content": "for example EMC compliance tests"
+      },
+      {
+        "id": "1407015136345985094",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T10:55:49.582-04:00",
+        "content": "so you worked on hardware. drafted a circuit design. only did one iteration. never ordered the hardware to test. and send your work off without any official EMC tests?"
+      },
+      {
+        "id": "1407015415753740310",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T10:56:56.198-04:00",
+        "content": "i want to connect with other freelacners and learn from each other"
+      },
+      {
+        "id": "1407015521764773980",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T10:57:21.473-04:00",
+        "content": "i feel like i am working in a vaccum and never really connecting with other people doing the same work as me"
+      },
+      {
+        "id": "1407015926653784145",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T10:58:58.006-04:00",
+        "content": "also: \"After looking at the wall of text of questions i formulated i asked chatGPT to reduce my brain chaos to simple to answer short questions.\" i used chatGPT for you so you dont have to deal with my brain wall of text. i used it to reduce the input you have to handle to make it easier for you ;)"
+      },
+      {
+        "id": "1407019280813396110",
+        "author": "emiel0314",
+        "timestamp": "2025-08-18T11:12:17.7-04:00",
+        "content": "I did this today for a client actually",
+        "reference": {
+          "messageId": "1407014755775942788",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1407019314225352714",
+        "author": "emiel0314",
+        "timestamp": "2025-08-18T11:12:25.666-04:00",
+        "content": "I had never done it before though"
+      },
+      {
+        "id": "1407022271758860360",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:24:10.797-04:00",
+        "content": "so you send hardware plans and never had the hardware in your physical hands?\n\nhow did this work out? things just work frst try for you?"
+      },
+      {
+        "id": "1407022979132686396",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:26:59.448-04:00",
+        "content": "i always feel like i need at least 2 iterations before i am certain it doesn't have any errors anymore. ambiguous datasheets, flipped diodes, connection mistakes etc.\n\nso you guys just send off the first draft like that? and it works 100% for the customer so he can go all in the design and orders 10k+ in a factory and there is no issues at all?"
+      },
+      {
+        "id": "1407023312273412168",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:28:18.875-04:00",
+        "content": "so the customer just orders your first draft hardware for 100.000 $ or more and you never did a sample test? but it always worked out for you? they never came back with complains?"
+      },
+      {
+        "id": "1407024410891911228",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:32:40.806-04:00",
+        "content": "my customers often want to order 10k+ in a factory. that is 10.000 units."
+      },
+      {
+        "id": "1407024683387453590",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:33:45.774-04:00",
+        "content": "with packaging, mass production etc. including assembly and case production etc. so the ready mass product. that is their goal, that is why they hire me"
+      },
+      {
+        "id": "1407024866837663836",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:34:29.512-04:00",
+        "content": "but when i tell them this might take 2 years this often clashes with their idea of product development. which is 2 days for the plans that they can use to mass produce"
+      },
+      {
+        "id": "1407025022241083613",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:35:06.563-04:00",
+        "content": "so i am shooked that people never do hardware tests and just send a draft and be done. like wow i wish i could deliver this service to my customers."
+      },
+      {
+        "id": "1407025246346674207",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:35:59.994-04:00",
+        "content": "freelancer"
+      },
+      {
+        "id": "1407025269151105114",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:36:05.431-04:00",
+        "content": "remote"
+      },
+      {
+        "id": "1407025674501488752",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:37:42.074-04:00",
+        "content": "so how does your freelancer jobs look like? what is the customer expecting you deliver?"
+      },
+      {
+        "id": "1407025810703122552",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:38:14.547-04:00",
+        "content": "what would you say would be a better place?"
+      },
+      {
+        "id": "1407025858241363989",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:38:25.881-04:00",
+        "content": "ah ok"
+      },
+      {
+        "id": "1407026745907085394",
+        "author": "traumonaut",
+        "timestamp": "2025-08-18T11:41:57.517-04:00",
+        "content": "have you worked as such a freelancer before?"
+      }
+    ],
+    [
+      {
+        "id": "1411751503668056174",
+        "author": "aqua.regia",
+        "timestamp": "2025-08-31T12:36:27.549-04:00",
+        "content": "can you quantify exactly what you want to fix and why you think it comes from the inductor shielding"
+      },
+      {
+        "id": "1411766910806134825",
+        "author": "justins_06",
+        "timestamp": "2025-08-31T13:37:40.897-04:00",
+        "content": "I was thinking of using a linear voltage regulator at the end, but I dont have one that can handle 5A, though the buck converter and the components *can* handle 5A which I need"
+      },
+      {
+        "id": "1411767158542827704",
+        "author": "aqua.regia",
+        "timestamp": "2025-08-31T13:38:39.962-04:00",
+        "content": "werent you using a LM2576",
+        "reference": {
+          "messageId": "1411766910806134825",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1411767187152179360",
+        "author": "justins_06",
+        "timestamp": "2025-08-31T13:38:46.783-04:00",
+        "content": "Well I dont think it's *just* the inductor but I had a feeling it could play a decent role. Was just wondering how I could do that",
+        "reference": {
+          "messageId": "1411751503668056174",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1411767372036968569",
+        "author": "justins_06",
+        "timestamp": "2025-08-31T13:39:30.863-04:00",
+        "content": "yes",
+        "reference": {
+          "messageId": "1411767158542827704",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1411767381704835174",
+        "author": "justins_06",
+        "timestamp": "2025-08-31T13:39:33.168-04:00",
+        "content": "I just looked it up"
+      },
+      {
+        "id": "1411767393151221951",
+        "author": "justins_06",
+        "timestamp": "2025-08-31T13:39:35.897-04:00",
+        "content": "apparently that's 3A"
+      },
+      {
+        "id": "1411767432707707044",
+        "author": "justins_06",
+        "timestamp": "2025-08-31T13:39:45.328-04:00",
+        "content": "I got confused with another circuit I made I think"
+      },
+      {
+        "id": "1411767726476755117",
+        "author": "justins_06",
+        "timestamp": "2025-08-31T13:40:55.368-04:00",
+        "content": "I got my numbers wrong, 1 sec. The LM2576 handles 3A, which I need, but the linear voltage regulators I have only go up to 1.5A"
+      },
+      {
+        "id": "1411767784718864567",
+        "author": "aqua.regia",
+        "timestamp": "2025-08-31T13:41:09.254-04:00",
+        "content": "are you able to look at the output waveform to get an idea what the situation is like rn, based on what that looks like you can determine what you need to improve\n\nalso lets switch to #beginner-help",
+        "reference": {
+          "messageId": "1411767187152179360",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1411768043083796540",
+        "author": "justins_06",
+        "timestamp": "2025-08-31T13:42:10.853-04:00",
+        "content": "lab is closed rn, will do testing tomorrow I think"
+      },
+      {
+        "id": "1411782089946304563",
+        "author": "aqua.regia",
+        "timestamp": "2025-08-31T14:37:59.886-04:00",
+        "content": "digikey shouldn't need a tax number unless it's a local regulation thing for your country and you usually get free shipping over a certain amount"
+      },
+      {
+        "id": "1411783422648651956",
+        "author": "aqua.regia",
+        "timestamp": "2025-08-31T14:43:17.627-04:00",
+        "content": "generally you probably wanna learn electronics, not as much the program, (knowing what to draw vs knowing how to draw it) for the program itself I would recommend a look at the getting started guide here https://docs.kicad.org/ and at videos regarding proper schematic design before you start drawing something to make sure that what you're drawing is _readable_ to other people when you ask for assistance at some point, I can recommend these two videos and this post in combination\nhttps://electronics.stackexchange.com/questions/28251/rules-and-guidelines-for-drawing-good-schematics\nhttps://youtu.be/ywBPm7TMpfk\nhttps://youtu.be/R_Ud-FxUw0g\nwith the Australian guy as always being a bit rambly so it's not as concice but still good",
+        "reference": {
+          "messageId": "1411781564689547384",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1411799444843659318",
+        "author": "fisheiyy",
+        "timestamp": "2025-08-31T15:46:57.616-04:00",
+        "content": "i can guarantee its the switching frequency",
+        "reference": {
+          "messageId": "1411767187152179360",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1411799534606090330",
+        "author": "fisheiyy",
+        "timestamp": "2025-08-31T15:47:19.017-04:00",
+        "content": "with such a low freq you need a lot of input and output capacitance as well as a lot of inductance"
+      },
+      {
+        "id": "1411799720086474983",
+        "author": "justins_06",
+        "timestamp": "2025-08-31T15:48:03.239-04:00",
+        "content": "in that case, would I just be better off using smaller caps and inductors to save space and money, and just use an additional linear voltage regulator on the output (to go from my 24v to a noisy e.g. 9v to stable 5v)"
+      },
+      {
+        "id": "1411799789586219049",
+        "author": "justins_06",
+        "timestamp": "2025-08-31T15:48:19.809-04:00",
+        "content": "or just use bigger caps and inductors (and deal with it starting up slow)?"
+      }
+    ],
+    [
+      {
+        "id": "1413638967416328243",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:36:33.974-04:00",
+        "content": "so if the schematic looks good (did i clean it up correctly or did i mess things up? see this is what i mean about the \"order\" of things confuses me)"
+      },
+      {
+        "id": "1413639934421762048",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:40:24.526-04:00",
+        "content": "do these net-d1-a2's mean that i did something wrong?"
+      },
+      {
+        "id": "1413640060322054265",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:40:54.543-04:00",
+        "content": "ah"
+      },
+      {
+        "id": "1413640080160985091",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:40:59.273-04:00",
+        "content": "So using a mosfet here kind of opens up a little bit of a can of worms. They're ESD sensitive and they can have some unintuitive behaviour if you're new to electronics and are just expecting them to magically work. Using a BJT here, either a very ordinary 2n2222 if your load current is under 500mA or maybe a TIP41 if you need a bit more current, will simplify things a lot.",
+        "reference": {
+          "messageId": "1413638967416328243",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1413640519669518386",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:42:44.06-04:00",
+        "content": "ok, really dumb question: these thin blue lines, those are things i need to connect with traces?"
+      },
+      {
+        "id": "1413640613374595214",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:43:06.401-04:00",
+        "content": "umm"
+      },
+      {
+        "id": "1413640640968786051",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:43:12.98-04:00",
+        "content": "Yes, the blue lines are known as the \"ratsnest\" and they show you what still needs a trace to connect them"
+      },
+      {
+        "id": "1413640830182227968",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:43:58.092-04:00",
+        "content": "I'm a little concerned that you seem to have a ratsnest line going from 24v to GND though"
+      },
+      {
+        "id": "1413641204637110293",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:45:27.369-04:00",
+        "content": ""
+      },
+      {
+        "id": "1413641272383508521",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:45:43.521-04:00",
+        "content": "when i try to add a trace from R4 to the cap it won't let me connect to the C1 pins"
+      },
+      {
+        "id": "1413641520082325628",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:46:42.577-04:00",
+        "content": "ok"
+      },
+      {
+        "id": "1413642201799589999",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:49:25.111-04:00",
+        "content": ""
+      },
+      {
+        "id": "1413642241607733250",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:49:34.602-04:00",
+        "content": "clean slate! (i updated the pcb from the schematic)"
+      },
+      {
+        "id": "1413642450756698124",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:50:24.467-04:00",
+        "content": "A circuit like this with BJTs would be sufficient for your application (you can add power input protection as you see fit)"
+      },
+      {
+        "id": "1413642902420062269",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:52:12.152-04:00",
+        "content": "beginner question: what \"cuts off\" the gate for the red LED when the reed switch is closed?",
+        "reference": {
+          "messageId": "1413642450756698124",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1413643043721969766",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:52:45.841-04:00",
+        "content": "The transistor on the left will conduct when the switch is closed, which will drop the voltage going to the transistor to the right down to zero"
+      },
+      {
+        "id": "1413643097568710847",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:52:58.679-04:00",
+        "content": ""
+      },
+      {
+        "id": "1413643223519203328",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:53:28.708-04:00",
+        "content": "Or at least close enough to zero that it will stop conducting"
+      },
+      {
+        "id": "1413644349589426229",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:57:57.184-04:00",
+        "content": "Then there's the relay version which is even simpler"
+      },
+      {
+        "id": "1413645956183887962",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:04:20.226-04:00",
+        "content": "got it! i was going to go the relay route, but i was thinking i might want to add a 555 to the mix (ambitious!) or a small microcontroller to blink the red LED when the door is open"
+      },
+      {
+        "id": "1413645961325969418",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:04:21.452-04:00",
+        "content": ""
+      },
+      {
+        "id": "1413645984491114609",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:04:26.975-04:00",
+        "content": "DRC passed!!! 🥳"
+      },
+      {
+        "id": "1413646164053463040",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:05:09.786-04:00",
+        "content": "Yeah, adding a blinker could be fun to do."
+      },
+      {
+        "id": "1413647318816788611",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:09:45.103-04:00",
+        "content": "i would need to update all the traces?"
+      },
+      {
+        "id": "1413647399733301319",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:10:04.395-04:00",
+        "content": "Only the traces that carry a meaningful amount of current"
+      },
+      {
+        "id": "1413647580163735563",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:10:47.413-04:00",
+        "content": "is there a way to update them in bulk?"
+      }
+    ],
+    [
+      {
+        "id": "1413642450756698124",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:50:24.467-04:00",
+        "content": "A circuit like this with BJTs would be sufficient for your application (you can add power input protection as you see fit)"
+      },
+      {
+        "id": "1413642902420062269",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T17:52:12.152-04:00",
+        "content": "beginner question: what \"cuts off\" the gate for the red LED when the reed switch is closed?",
+        "reference": {
+          "messageId": "1413642450756698124",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1413643043721969766",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:52:45.841-04:00",
+        "content": "The transistor on the left will conduct when the switch is closed, which will drop the voltage going to the transistor to the right down to zero"
+      },
+      {
+        "id": "1413643097568710847",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:52:58.679-04:00",
+        "content": ""
+      },
+      {
+        "id": "1413643223519203328",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:53:28.708-04:00",
+        "content": "Or at least close enough to zero that it will stop conducting"
+      },
+      {
+        "id": "1413644349589426229",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T17:57:57.184-04:00",
+        "content": "Then there's the relay version which is even simpler"
+      },
+      {
+        "id": "1413645956183887962",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:04:20.226-04:00",
+        "content": "got it! i was going to go the relay route, but i was thinking i might want to add a 555 to the mix (ambitious!) or a small microcontroller to blink the red LED when the door is open"
+      },
+      {
+        "id": "1413645961325969418",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:04:21.452-04:00",
+        "content": ""
+      },
+      {
+        "id": "1413645984491114609",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:04:26.975-04:00",
+        "content": "DRC passed!!! 🥳"
+      },
+      {
+        "id": "1413646164053463040",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:05:09.786-04:00",
+        "content": "Yeah, adding a blinker could be fun to do."
+      },
+      {
+        "id": "1413647318816788611",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:09:45.103-04:00",
+        "content": "i would need to update all the traces?"
+      },
+      {
+        "id": "1413647399733301319",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:10:04.395-04:00",
+        "content": "Only the traces that carry a meaningful amount of current"
+      },
+      {
+        "id": "1413647580163735563",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:10:47.413-04:00",
+        "content": "is there a way to update them in bulk?"
+      },
+      {
+        "id": "1413647662976208897",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:11:07.157-04:00",
+        "content": "also, and this is my brain just not wrapping around these concepts, the reed switch has 24V that then goes to the \"raw gate\"?"
+      },
+      {
+        "id": "1413647897940983880",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:12:03.177-04:00",
+        "content": "It's expensive if you want to get the type that doesn't screw up your soldering"
+      },
+      {
+        "id": "1413647917390237797",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:12:07.814-04:00",
+        "content": "see, all these things you guys are teaching me, i want to learn all the \"practical\" stuff, without having to devour the entire AoE"
+      },
+      {
+        "id": "1413648008201109716",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:12:29.465-04:00",
+        "content": "my plan was to put generic part numbers for all of these and use JLPCB (for the very first time) to do the board and the assembly for me"
+      },
+      {
+        "id": "1413648020498550894",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:12:32.397-04:00",
+        "content": "As for updating the trace width, if you select a trace segment you can hit the 'u' key to expand the selection, then you should be able to pick a differen trace width"
+      },
+      {
+        "id": "1413648069173448804",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:12:44.002-04:00",
+        "content": "what width should i do?"
+      },
+      {
+        "id": "1413648117844279317",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:12:55.606-04:00",
+        "content": "You've got lots of space, make them as big as you like"
+      },
+      {
+        "id": "1413648266653859925",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:13:31.085-04:00",
+        "content": "Though you'll want to narrow them down near SMD pads to avoid sucking away a lot of heat when soldering."
+      },
+      {
+        "id": "1413648468437762160",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:14:19.194-04:00",
+        "content": "what the"
+      },
+      {
+        "id": "1413648503707795466",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:14:27.603-04:00",
+        "content": "ok, ok, i can do that, BUT how do i connect to the gnd plane?"
+      },
+      {
+        "id": "1413648571303198802",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:14:43.719-04:00",
+        "content": "Drop the via right next to the pad, and add a short trace between the two"
+      },
+      {
+        "id": "1413648846143225908",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:15:49.246-04:00",
+        "content": "so the trace just needs to have a via anywhere along it's path and it will connect to the gnd plane?"
+      },
+      {
+        "id": "1413648895224844430",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:16:00.948-04:00",
+        "content": "🤯"
+      },
+      {
+        "id": "1413648915236126855",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:16:05.719-04:00",
+        "content": "what happens on a multi-layer pcb?"
+      },
+      {
+        "id": "1413649264126459915",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:17:28.901-04:00",
+        "content": "On the subject of PCB fab, make sure you read up on the design rules for your chosen fab, and import them as best you can into KiCad. The defaults in KiCad are very conservative and are unlikely to match what your fab can manufacture.",
+        "reference": {
+          "messageId": "1413648008201109716",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1413649380262674545",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:17:56.59-04:00",
+        "content": "wait, what??",
+        "reference": {
+          "messageId": "1413649264126459915",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1413649615990947902",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:18:52.792-04:00",
+        "content": "if i want to add a screw terminal block in addition to the cat5 jack, i don't need to change anything on the schematic, right? i just add it to the pcb?"
+      },
+      {
+        "id": "1413649657204314113",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:19:02.618-04:00",
+        "content": "https://jlcpcb.com/capabilities/pcb-capabilities"
+      },
+      {
+        "id": "1413649771956015204",
+        "author": "danny4574",
+        "timestamp": "2025-09-05T18:19:29.977-04:00",
+        "content": "ok"
+      },
+      {
+        "id": "1413649805263245368",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:19:37.918-04:00",
+        "content": "Always add components to the schematic first. You can technically just add them to the PCB but it causes more trouble than it's worth",
+        "reference": {
+          "messageId": "1413649615990947902",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1413649657204314113",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:19:02.618-04:00",
+        "content": "https://jlcpcb.com/capabilities/pcb-capabilities"
+      },
+      {
+        "id": "1413649805263245368",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:19:37.918-04:00",
+        "content": "Always add components to the schematic first. You can technically just add them to the PCB but it causes more trouble than it's worth",
+        "reference": {
+          "messageId": "1413649615990947902",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1413651643714769016",
+        "author": "nicoya",
+        "timestamp": "2025-09-05T18:26:56.239-04:00",
+        "content": "Ah, I assumed you were just starting with one LED"
+      }
+    ],
+    [
+      {
+        "id": "1414626727765868594",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:01:34.393-04:00",
+        "content": ""
+      },
+      {
+        "id": "1414627161570152489",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:03:17.82-04:00",
+        "content": "which one is IO2?"
+      },
+      {
+        "id": "1414627256826855524",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:03:40.531-04:00",
+        "content": "oh oh oh, yea...how do i do that cleaner???"
+      },
+      {
+        "id": "1414627291459223762",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:03:48.788-04:00",
+        "content": "just keep it all on the left side?"
+      },
+      {
+        "id": "1414627345809276959",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:04:01.746-04:00",
+        "content": "or go around like the bottom or something?"
+      },
+      {
+        "id": "1414627505096228895",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:04:39.723-04:00",
+        "content": "ah"
+      },
+      {
+        "id": "1414627508648935516",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:04:40.57-04:00",
+        "content": "ok"
+      },
+      {
+        "id": "1414627818112815165",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:05:54.352-04:00",
+        "content": ""
+      },
+      {
+        "id": "1414627979966943413",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:06:32.941-04:00",
+        "content": "i didn't think there was any chance i was going to get that right the first time 😆",
+        "reference": {
+          "messageId": "1414627637590102026",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414628337778692136",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:07:58.25-04:00",
+        "content": "how should Q2 be wired correctly? the goal is to have an ESP32 pin control whether LED_RED gets 24V or not"
+      },
+      {
+        "id": "1414629008062021653",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:10:38.058-04:00",
+        "content": "stupid question: i really wanted to try JLPCB for the first time and have them assemble the board, can i get a relay as part of their standard components library and they'll solder on a relay as well?"
+      },
+      {
+        "id": "1414629560573628496",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:12:49.787-04:00",
+        "content": ""
+      },
+      {
+        "id": "1414629659609665668",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:13:13.399-04:00",
+        "content": "cool, not sure which one i should use, and still a bit unclear about what extended vs standard means in terms of me being able to order just a couple boards, but let's give it a shot!"
+      },
+      {
+        "id": "1414629671169167472",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:13:16.155-04:00",
+        "content": "is this a good one to use?"
+      },
+      {
+        "id": "1414630184732327937",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:15:18.598-04:00",
+        "content": "so relay, not low-side mosfet?"
+      },
+      {
+        "id": "1414630539788288123",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:16:43.25-04:00",
+        "content": "60mA"
+      },
+      {
+        "id": "1414630854667407480",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:17:58.323-04:00",
+        "content": "sorry, i meant that's what the LED uses"
+      },
+      {
+        "id": "1414631264421417083",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:19:36.016-04:00",
+        "content": "the LED has basically 3 wires: GND, RED, GREEN.  the color selection is based on which wire gets 24V (didn't try giving all 3 power on my PSU, didn't want to explode anything lol)."
+      },
+      {
+        "id": "1414631426770599937",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:20:14.723-04:00",
+        "content": ""
+      },
+      {
+        "id": "1414631997585883147",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:22:30.816-04:00",
+        "content": "yes.  RED will basically always be displayed, but when the ambulance bay garage door is fully up (based on the reed switch contact sensor), it should switch from RED to GREEN"
+      },
+      {
+        "id": "1414633482021502997",
+        "author": "xobs",
+        "timestamp": "2025-09-08T11:28:24.733-04:00",
+        "content": "You'll have a hard time programming it without connecting wires up. Run IO18 to USB_D- and IO19 to USB_D+ on a USB connector.",
+        "reference": {
+          "messageId": "1414626727765868594",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414633628830273629",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:28:59.735-04:00",
+        "content": "good call, i totally forgot about programming it via USB."
+      },
+      {
+        "id": "1414633782018838731",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:29:36.258-04:00",
+        "content": "under what circumstances would i need an N-channel _and_ a P-channel for this setup (this is what the AI's are saying I need)",
+        "reference": {
+          "messageId": "1414632924522741890",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414633783654617213",
+        "author": "xobs",
+        "timestamp": "2025-09-08T11:29:36.648-04:00",
+        "content": "(And of course run GND to the connector.)"
+      },
+      {
+        "id": "1414634945670021160",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:34:13.694-04:00",
+        "content": ""
+      },
+      {
+        "id": "1414635363388883015",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:35:53.286-04:00",
+        "content": "so....is this right? overkill? i only need the P-channel?"
+      },
+      {
+        "id": "1414636643817623635",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:40:58.564-04:00",
+        "content": "???",
+        "reference": {
+          "messageId": "1414636344986304562",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414636897724141679",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:41:59.1-04:00",
+        "content": "🤦‍♂️"
+      },
+      {
+        "id": "1414636972273696869",
+        "author": "danny4574",
+        "timestamp": "2025-09-08T11:42:16.874-04:00",
+        "content": "and i need both of these components?  or can I use a single MOSFET per LED color?"
+      }
+    ],
+    [
+      {
+        "id": "1414690715878817792",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:15:50.348-04:00",
+        "content": "You need to flash code onto it, feed it nicely regulated low-voltage power, protect its inputs and outputs from transients and overcurrents"
+      },
+      {
+        "id": "1414690835018022922",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:16:18.753-04:00",
+        "content": "And at the end of the day it just turns a hardware problem into a software problem"
+      },
+      {
+        "id": "1414690858191683715",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:16:24.278-04:00",
+        "content": "What if he  just uses an easier one like the raspi  pico?",
+        "reference": {
+          "messageId": "1414690715878817792",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414690932191924344",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:16:41.921-04:00",
+        "content": "maybe he also wants to learn software",
+        "reference": {
+          "messageId": "1414690835018022922",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414690953155055837",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:16:46.919-04:00",
+        "content": "or just likes software in general"
+      },
+      {
+        "id": "1414691029357170779",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:17:05.087-04:00",
+        "content": "That's even more overkill. Even a 555 timer is technically more than what's needed for this project"
+      },
+      {
+        "id": "1414691127352754197",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:17:28.451-04:00",
+        "content": "Why is that overkill?",
+        "reference": {
+          "messageId": "1414691029357170779",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414691203131117569",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:17:46.518-04:00",
+        "content": "I mean yeah you are  not even using the pinout to its full potential bbut yeah"
+      },
+      {
+        "id": "1414691216070803476",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:17:49.603-04:00",
+        "content": "they are dirt  cheap"
+      },
+      {
+        "id": "1414691423667622008",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:18:39.098-04:00",
+        "content": "It's not about the price, it's about the added complexity."
+      },
+      {
+        "id": "1414691534896369776",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:19:05.617-04:00",
+        "content": "I though with an pico there is only the software complexity?",
+        "reference": {
+          "messageId": "1414691423667622008",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414692026724909176",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:21:02.878-04:00",
+        "content": "turning on the leds  via bluthooth xD",
+        "reference": {
+          "messageId": "1414691936941379715",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414692046496727044",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:21:07.592-04:00",
+        "content": "or wlan"
+      },
+      {
+        "id": "1414692047255900241",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:21:07.773-04:00",
+        "content": "No, he just wants to turn the lights on, and possibly make one of them blink when it's on, in response to a magnetic switch opening and closing."
+      },
+      {
+        "id": "1414692148464324719",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:21:31.903-04:00",
+        "content": "That's the whole project, as I understand it"
+      },
+      {
+        "id": "1414692195067367424",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:21:43.014-04:00",
+        "content": "I mean its his decision if he wants an mcu in it or not"
+      },
+      {
+        "id": "1414692370414305360",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:22:24.82-04:00",
+        "content": "A responsibility of a good teacher is to keep your students from going down unnecessary rabbit holes"
+      },
+      {
+        "id": "1414692515474313417",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:22:59.405-04:00",
+        "content": "But maaybe he wants to go down this rabbit hole even while it seems unnecessary",
+        "reference": {
+          "messageId": "1414692370414305360",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414692628527841450",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:23:26.359-04:00",
+        "content": "Like if you ask a student \"what do you get when you add 5 plus 6\" and they pull out a set theory textbook and start to define the integers from scratch, that's when you tell them to slow down and follow the easy path."
+      },
+      {
+        "id": "1414692821876736110",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:24:12.457-04:00",
+        "content": "maybe I want to open my book",
+        "reference": {
+          "messageId": "1414692628527841450",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414692919872323745",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:24:35.821-04:00",
+        "content": "Maybe I'm not interested in discussing your imagined hypotheticals."
+      },
+      {
+        "id": "1414692992031264808",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:24:53.025-04:00",
+        "content": "maybe Im gonna stop now",
+        "reference": {
+          "messageId": "1414692919872323745",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414693056292323410",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:25:08.346-04:00",
+        "content": "Note that nowhere did I say \"do not use a microcontroller here\", but rather just pointed out that it would be overkill."
+      },
+      {
+        "id": "1414693157815193832",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:25:32.551-04:00",
+        "content": "Note that Im dumb 😛",
+        "reference": {
+          "messageId": "1414693056292323410",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414693211955269652",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:25:45.459-04:00",
+        "content": "Don't worry, I picked up on that ages ago"
+      },
+      {
+        "id": "1414693525898924032",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:27:00.309-04:00",
+        "content": "maybe Im just  waiting for aqua to reply",
+        "reference": {
+          "messageId": "1414693211955269652",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414693537865400410",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:27:03.162-04:00",
+        "content": "and Im bored"
+      },
+      {
+        "id": "1414693554588225617",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:27:07.149-04:00",
+        "content": "maybe"
+      },
+      {
+        "id": "1414693813422788610",
+        "author": "therealhjigrolufe",
+        "timestamp": "2025-09-08T15:28:08.86-04:00",
+        "content": "and maybe shouldnt I be annoying teachers xD",
+        "reference": {
+          "messageId": "1414693211955269652",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1414694925483905224",
+        "author": "nicoya",
+        "timestamp": "2025-09-08T15:32:33.996-04:00",
+        "content": "Anyway a 555 would be the easiest solution to understand from end to end. You'd still need a regulator to supply a lower voltage since the 555 has a max of 15-16v depending on the variant, but you wouldn't need to worry about learning the whole \"how to flash a microcontroller\" and \"how to debug a microcontroller because nothing is working oh god help me please\". Using discrete transistors to just switch the LEDs on and off would require vanishinly few components and still be relatively easy to understand, though making it blink would require a few more to make a simple astable multivibrator. The bonus for that solution is that there would be no need for a down-regulated supply: it could all run at 24v with the right component choices."
+      }
+    ],
+    [
+      {
+        "id": "1428429500424654888",
+        "author": "seth_k",
+        "timestamp": "2025-10-16T13:08:51.838-04:00",
+        "content": "I've noticed that KiCad will touch the *.kicad_pro file when I open projects, and it'll show up as a changed file for git, even when there isn't a change to the content.  \nIs there a way to prevent this?"
+      },
+      {
+        "id": "1428442222474559549",
+        "author": "orange.scone",
+        "timestamp": "2025-10-16T13:59:25.011-04:00",
+        "content": "git smudging: https://jnavila.github.io/plotkicadsch/",
+        "reference": {
+          "messageId": "1428429500424654888",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1428443033321476276",
+        "author": "orange.scone",
+        "timestamp": "2025-10-16T14:02:38.332-04:00",
+        "content": "Legacy, as far as I know. KiCad used to be 3-7+ (depending on how you count) mostly independent pieces of software with different formats for everything. There are long standing open feature requests to optionally make the symbol libraries act like footprint libraries and vice versa. You can give these issues a thumbs up on gitlab to show support if it would improve your workflow.\n\nhttps://gitlab.com/kicad/code/kicad/-/issues/2490\n\n https://gitlab.com/kicad/code/kicad/-/issues/6917",
+        "reference": {
+          "messageId": "1428440851746656316",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1428444937673900063",
+        "author": "seth_k",
+        "timestamp": "2025-10-16T14:10:12.365-04:00",
+        "content": "Thanks for that great write up.  I assume because it's git, the `sed` command and arguments should still work on windows, right?",
+        "reference": {
+          "messageId": "1428442222474559549",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1428446955595628715",
+        "author": "seth_k",
+        "timestamp": "2025-10-16T14:18:13.475-04:00",
+        "content": "Unfortunately, it seems that it doesn't fix the issue"
+      }
+    ],
+    [
+      {
+        "id": "1429402297506467850",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T05:34:24.736-04:00",
+        "content": ""
+      },
+      {
+        "id": "1429402315273670657",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T05:34:28.972-04:00",
+        "content": "looking good?"
+      },
+      {
+        "id": "1429402391106555936",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T05:34:47.052-04:00",
+        "content": "i have still yet to add tags"
+      },
+      {
+        "id": "1429403415049408604",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T05:38:51.179-04:00",
+        "content": "idk"
+      },
+      {
+        "id": "1429403938511388772",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T05:40:55.982-04:00",
+        "content": ""
+      },
+      {
+        "id": "1429404018488115240",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T05:41:15.05-04:00",
+        "content": "im so sleepy"
+      },
+      {
+        "id": "1429404052919160853",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T05:41:23.259-04:00",
+        "content": "it was raining all night"
+      },
+      {
+        "id": "1429406481580818492",
+        "author": "fisheiyy",
+        "timestamp": "2025-10-19T05:51:02.297-04:00",
+        "content": "remove the ferrite bead, its usually worse to have it with a wrong value than to not have it which you dont know the value you need without testing the circuit in situ, fix C3, and remove R1 and C5 to make the shield connected directly to ground",
+        "reference": {
+          "messageId": "1429402297506467850",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1429406620877848707",
+        "author": "fisheiyy",
+        "timestamp": "2025-10-19T05:51:35.508-04:00",
+        "content": "you are also jumping around/cross posting, try to keep your questions/project contained to #beginner-help or a #work-in-progress thread"
+      },
+      {
+        "id": "1429411115284299919",
+        "author": "emiel0314",
+        "timestamp": "2025-10-19T06:09:27.058-04:00",
+        "content": "Most of the decoupling caps in your schematic are blocking the supply rail from reaching your chips",
+        "reference": {
+          "messageId": "1429402297506467850",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1429427877656662037",
+        "author": "anachrocomputer",
+        "timestamp": "2025-10-19T07:16:03.519-04:00",
+        "content": "A sure sign of an AI-generated schematic. Do not use AI",
+        "reference": {
+          "messageId": "1429411115284299919",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1429461597352628275",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T09:30:02.921-04:00",
+        "content": "what",
+        "reference": {
+          "messageId": "1429411115284299919",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1429461655657648350",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T09:30:16.822-04:00",
+        "content": "im reading book",
+        "reference": {
+          "messageId": "1429427877656662037",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1429461672552038511",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T09:30:20.85-04:00",
+        "content": "in pdf"
+      },
+      {
+        "id": "1429462738903498762",
+        "author": "emiel0314",
+        "timestamp": "2025-10-19T09:34:35.088-04:00",
+        "content": "Red circles: caps are blocking the 3.3v going into the chip. Blue circle: the rp2040 needs a lot more caps",
+        "reference": {
+          "messageId": "1429461597352628275",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1429462834424713227",
+        "author": "emiel0314",
+        "timestamp": "2025-10-19T09:34:57.862-04:00",
+        "content": "Rule of thumb: one bulk cap and one de coupling cap per powerpin"
+      },
+      {
+        "id": "1429463024875339927",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T09:35:43.269-04:00",
+        "content": "got it"
+      },
+      {
+        "id": "1429463108492988567",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T09:36:03.205-04:00",
+        "content": "i will ask questions in https://discordapp.com/channels/502708194179809281/1332142415825604670 next time"
+      },
+      {
+        "id": "1429471924160954448",
+        "author": "anachrocomputer",
+        "timestamp": "2025-10-19T10:11:05.024-04:00",
+        "content": "What is the title of the book? If it shows decoupling caps in series with the supply, then things are worse than we thought!",
+        "reference": {
+          "messageId": "1429461655657648350",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1429477631216058388",
+        "author": "aqua.regia",
+        "timestamp": "2025-10-19T10:33:45.692-04:00",
+        "content": "i dont think theyre that far in the book yet, dw",
+        "reference": {
+          "messageId": "1429471924160954448",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1429505728812421332",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T12:25:24.681-04:00",
+        "content": ""
+      },
+      {
+        "id": "1429505821196292166",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T12:25:46.707-04:00",
+        "content": "its really long",
+        "reference": {
+          "messageId": "1429477631216058388",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1429505888573591612",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T12:26:02.771-04:00",
+        "content": ":thonking:"
+      },
+      {
+        "id": "1429505971733921984",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T12:26:22.598-04:00",
+        "content": "https://tenor.com/view/cat-asleep-monjjunirawr-cat-sleeping-cat-sleep-cat-eepy-gif-2038678134769585569"
+      },
+      {
+        "id": "1429506374668390513",
+        "author": "gerarddepardieu_linux",
+        "timestamp": "2025-10-19T12:27:58.665-04:00",
+        "content": "has anyone made a proyect with a LoRa module?"
+      },
+      {
+        "id": "1429519041579585578",
+        "author": "aqua.regia",
+        "timestamp": "2025-10-19T13:18:18.692-04:00",
+        "content": "https://youtu.be/1cUUfMeOijg",
+        "reference": {
+          "messageId": "1429517315787063468",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1429800603101433856",
+        "author": "aqua.regia",
+        "timestamp": "2025-10-20T07:57:08.19-04:00",
+        "content": "ik, I've also already told you a bunch of times lol",
+        "reference": {
+          "messageId": "1429800073470152816",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1430019169792823509",
+        "author": "nodoggyhere",
+        "timestamp": "2025-10-20T22:25:38.55-04:00",
+        "content": "c3 looks wrong",
+        "reference": {
+          "messageId": "1429402297506467850",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      },
+      {
+        "id": "1430019323602141264",
+        "author": "nodoggyhere",
+        "timestamp": "2025-10-20T22:26:15.221-04:00",
+        "content": "also c4"
+      },
+      {
+        "id": "1430019585670643813",
+        "author": "nodoggyhere",
+        "timestamp": "2025-10-20T22:27:17.703-04:00",
+        "content": "IIRC the esp32 needs a pullup or something on io0"
+      },
+      {
+        "id": "1430020138794487952",
+        "author": "nodoggyhere",
+        "timestamp": "2025-10-20T22:29:29.578-04:00",
+        "content": "oops I did not see people responded to this",
+        "reference": {
+          "messageId": "1430019169792823509",
+          "channelId": "502708194179809283",
+          "guildId": "502708194179809281"
+        }
+      }
+    ],
+    [
+      {
+        "id": "1429517183993647144",
+        "author": "thebuckethatgirl",
+        "timestamp": "2025-10-19T13:10:55.809-04:00",
+        "content": "a hardware based random number generator"
+      },
+      {
+        "id": "1429517254651023400",
+        "author": "thebuckethatgirl",
+        "timestamp": "2025-10-19T13:11:12.655-04:00",
+        "content": "that uses stuff like a background radiation sensor to generate keys"
+      },
+      {
+        "id": "1429517315787063468",
+        "author": "thebuckethatgirl",
+        "timestamp": "2025-10-19T13:11:27.231-04:00",
+        "content": "making it more random because it is based on environment"
+      }
+    ]
+  ]
+}

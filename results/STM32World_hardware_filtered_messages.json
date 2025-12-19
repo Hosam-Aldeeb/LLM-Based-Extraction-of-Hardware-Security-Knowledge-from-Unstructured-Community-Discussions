@@ -1,0 +1,30 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/STM32World_hardware_Jan2025_export.json",
+  "totalMessages": 72,
+  "totalChunks": 70,
+  "relevantMessages": 2,
+  "results": [
+    {
+      "text": "there are too many pins on the schematic of original stlink circuit for communications jtag and swd\nI want to know which pins are used for swd communication to program the mcu from stlink \nstm_jtck(swclk) and stm_jtms(swdio) for program to stm32f103 mcu  Im okey with this \nT_JTMS pin 27-25 this pins swdio \n T_JTCK pin 26-15  this pins swclk \nso We use these T_JTMS and T_JTCK pins to program another processor via stm32f103?",
+      "metadata": {
+        "id": "1354518724945903707",
+        "author": "zynelabidin",
+        "timestamp": "2025-03-26T14:13:49.768-04:00",
+        "channel": "STM32World_hardware"
+      },
+      "similarity": 0.5643272150677465
+    },
+    {
+      "text": "This is something from 10 years ago, where an ESP-12F (ESP8266 inside) were used and programming over USB was done. HOWEVER, it has some problems. The 1N4148 voltage drop is too high to guarantee tghe RESET. So, this doesn't work with every produced unit. But if you drop the WatchDog and remove the diode, this should work (at least with the programmer back then).",
+      "metadata": {
+        "id": "1432544060274380882",
+        "author": "niclas8888",
+        "timestamp": "2025-10-27T21:38:39.351-04:00",
+        "channel": "STM32World_hardware"
+      },
+      "similarity": 0.5646048645908361
+    }
+  ]
+}

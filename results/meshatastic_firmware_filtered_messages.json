@@ -1,0 +1,2520 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/meshatastic_firmware_Jan2025_export.json",
+  "totalMessages": 16467,
+  "totalChunks": 16645,
+  "relevantMessages": 251,
+  "results": [
+    {
+      "text": "would you happen to know where that is implemented in firmware?",
+      "metadata": {
+        "id": "1324093771981520946",
+        "author": "kev1n8088",
+        "timestamp": "2025-01-01T14:15:55.713-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5730458367018723
+    },
+    {
+      "text": "Yea that's what I read from the comments in the source code too, Just wanted to make sure the acks are not used for something really important. We got a big network here and we had the issue, when someone was reciving a lot of messages,the node acts like a ddos enhancer and spams the network full with delivery messages or acks. Hence modifing the firmware to make it stop sending any acks, when doing so, also stumbled across the package priorities.",
+      "metadata": {
+        "id": "1324128918000766987",
+        "author": "theoneleooneeeeeeeeeeeeeeeeeeeee",
+        "timestamp": "2025-01-01T16:35:35.177-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5570266641798506
+    },
+    {
+      "text": "Should I open a github issue or could you include a rate limiter, how many ack's a node is sending out, in case of a lot of inbound messages? So it doesn't act as a ddos emplifier",
+      "metadata": {
+        "id": "1324134389596291132",
+        "author": "theoneleooneeeeeeeeeeeeeeeeeeeee",
+        "timestamp": "2025-01-01T16:57:19.707-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5527257893161703
+    },
+    {
+      "text": "if you can check debug logs, if it's trying to use the INA it should debug log `Using INA on I2C addr 0x40 for charging detection`, looks like",
+      "metadata": {
+        "id": "1324881157455872031",
+        "author": "m_ia_n",
+        "timestamp": "2025-01-03T18:24:43.039-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5557630835591276
+    },
+    {
+      "text": "```\nEBUG | ??:??:?? 201 [Power] Battery: usbPower=0, isCharging=0, batMv=2685, batPct=0\nDEBUG | ??:??:?? 201 [Power] Low voltage counter: 3/10\nDEBUG | ??:??:?? 221 [Power] Battery: usbPower=0, isCharging=0, batMv=2687, batPct=0\nDEBUG | ??:??:?? 221 [Power] Low voltage counter: 4/10\nDEBUG | ??:??:?? 241 [Power] Battery: usbPower=0, isCharging=0, batMv=2674, batPct=0\nDEBUG | ??:??:?? 241 [Power] Low voltage counter: 5/10\nDEBUG | ??:??:?? 261 [Power] Battery: usbPower=0, isCharging=0, batMv=2615, b",
+      "metadata": {
+        "id": "1325029179745505353",
+        "author": "mictronics",
+        "timestamp": "2025-01-04T04:12:54.303-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5601403239776502
+    },
+    {
+      "text": "firmware.factory bin goes to 0 and firmware.bin to 0x10000 - and you might try an esptool erase before flashing factory bin.",
+      "metadata": {
+        "id": "1325074210426589266",
+        "author": "ginntonic.",
+        "timestamp": "2025-01-04T07:11:50.454-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5672354967841086
+    },
+    {
+      "text": "TLDR:\n\n18:29:51.493 [0m [32m INFO [0m| ??:??:?? 2 [32m INA219 found at address 0x40\n\n18:30:12.060 [0m [34m DEBUG [0m| ??:??:?? 22 [Power] [34m Using INA on I2C addr 0x40\n for charging detection",
+      "metadata": {
+        "id": "1325249382219649024",
+        "author": "definitely_not_golf",
+        "timestamp": "2025-01-04T18:47:54.664-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5797303708625257
+    },
+    {
+      "text": "Its hard to test ugh. So essentially USBC is powering the node and INA219 since the 3v3 is fed into the battery slot which is being fed from USB.",
+      "metadata": {
+        "id": "1325255875170140213",
+        "author": "definitely_not_golf",
+        "timestamp": "2025-01-04T19:13:42.704-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5558166428527808
+    },
+    {
+      "text": "that seems useful for limiting traffic from nodes on really old firmware.",
+      "metadata": {
+        "id": "1327030776612520057",
+        "author": "definitely_not_golf",
+        "timestamp": "2025-01-09T16:46:32.184-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5540507650947974
+    },
+    {
+      "text": "Partly firmware related question if anyone is interested\nhttps://discord.com/channels/867578229534359593/871539930852130866/1327415661693239338",
+      "metadata": {
+        "id": "1327423144876838922",
+        "author": "0xmarcell",
+        "timestamp": "2025-01-10T18:45:40.068-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5797274172840993
+    },
+    {
+      "text": "Is this gonna be an issue? https://www.rcrwireless.com/20250107/internet-of-things/private-lte-915-mhz-ubiik",
+      "metadata": {
+        "id": "1327985283798667285",
+        "author": "dlweeks",
+        "timestamp": "2025-01-12T07:59:24.431-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.556870414652798
+    },
+    {
+      "text": "posting the serial logs from your \"broken\" device before restoring the firmware wouldbe helpful for the devs",
+      "metadata": {
+        "id": "1328106566829998080",
+        "author": "b8b8",
+        "timestamp": "2025-01-12T16:01:20.559-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5551613698117729
+    },
+    {
+      "text": "e device has become bricked.. unless someone has a script that could kick the device",
+      "metadata": {
+        "id": "1328115280496300094",
+        "author": "eelco.",
+        "timestamp": "2025-01-12T16:35:58.059-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5578164683899471
+    },
+    {
+      "text": "https://meshtastic.org/docs/configuration/radio/security/#security-keys---backup-and-restore",
+      "metadata": {
+        "id": "1328539977667186708",
+        "author": "jasonpiper",
+        "timestamp": "2025-01-13T20:43:33.755-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5512943216526908
+    },
+    {
+      "text": "That is a security risk.",
+      "metadata": {
+        "id": "1328541283962323076",
+        "author": "dl33t",
+        "timestamp": "2025-01-13T20:48:45.2-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5870230661705703
+    },
+    {
+      "text": "That would still allow someone to take your nodes if they hack your key..... That is the pushback that people have given.",
+      "metadata": {
+        "id": "1328541669213343836",
+        "author": "dl33t",
+        "timestamp": "2025-01-13T20:50:17.051-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5973172252839347
+    },
+    {
+      "text": "Hackers gonna hack",
+      "metadata": {
+        "id": "1328542212690153564",
+        "author": "dl33t",
+        "timestamp": "2025-01-13T20:52:26.626-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.612272584058587
+    },
+    {
+      "text": "this is why I suggest just making the nodes expire after a certain time. If they tried to spoof while the original device was active (or within 2 weeks) it would be unsuccessful.",
+      "metadata": {
+        "id": "1328543660848971827",
+        "author": "dl33t",
+        "timestamp": "2025-01-13T20:58:11.894-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5615064875826282
+    },
+    {
+      "text": "Honestly, build (or get someone to build for you) a firmware with a shiny new node ID hardcoded in it. Flash that. Back in business without any need to climb ten towers. It's a kludgy hack, but it will solve your immediate problem right now.",
+      "metadata": {
+        "id": "1328545923600486480",
+        "author": "erayd.net",
+        "timestamp": "2025-01-13T21:07:11.376-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5671890355831413
+    },
+    {
+      "text": "If you were going to hack you would just randomize the ID each time and skirt the entire issue.",
+      "metadata": {
+        "id": "1328556859405369474",
+        "author": "dl33t",
+        "timestamp": "2025-01-13T21:50:38.675-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5883239636320198
+    },
+    {
+      "text": "that is the holy grail of hacking",
+      "metadata": {
+        "id": "1328557102389530645",
+        "author": "dl33t",
+        "timestamp": "2025-01-13T21:51:36.607-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6152232106914792
+    },
+    {
+      "text": "No. Should work on 2.5 + firmware with the new encryption system",
+      "metadata": {
+        "id": "1328839960643633152",
+        "author": "b8b8",
+        "timestamp": "2025-01-14T16:35:35.27-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5578611410807816
+    },
+    {
+      "text": "I don't know enough about the main firmware development to be able to answer that, sorry",
+      "metadata": {
+        "id": "1329261845982347354",
+        "author": ".anotherandrew",
+        "timestamp": "2025-01-15T20:32:00.573-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5564794557711528
+    },
+    {
+      "text": "Meshtastic supports NRF52, ESP32, RP2040, STM32, and linux native (that one is the oddball 😅 ) hardware all on the same codebase, so Arduino seems to be a necessary evil (*for now*) for us",
+      "metadata": {
+        "id": "1330661778446749817",
+        "author": "thebentern",
+        "timestamp": "2025-01-19T17:14:50.482-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5642770455485913
+    },
+    {
+      "text": "this is on custom hardware (ESP32C3 based)",
+      "metadata": {
+        "id": "1330731133452812429",
+        "author": ".anotherandrew",
+        "timestamp": "2025-01-19T21:50:26.004-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5571638264882027
+    },
+    {
+      "text": "Looks like a node on our network was unintentionally ddossing by sending position packets very often with a want response so every node was responding back with its position",
+      "metadata": {
+        "id": "1331464500389478503",
+        "author": "rcgv_",
+        "timestamp": "2025-01-21T22:24:34.307-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5535460921777315
+    },
+    {
+      "text": "Right now most of the firmware is focused on preventing your node from spamming",
+      "metadata": {
+        "id": "1331493882080395264",
+        "author": "rcgv_",
+        "timestamp": "2025-01-22T00:21:19.448-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5631281159142072
+    },
+    {
+      "text": "Since people could be intentionally ddosing with custom firmware or unintentionally with some sort of bug",
+      "metadata": {
+        "id": "1331494051572351070",
+        "author": "rcgv_",
+        "timestamp": "2025-01-22T00:21:59.858-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.597906843029558
+    },
+    {
+      "text": "I want to do iot stuff but more securely",
+      "metadata": {
+        "id": "1331870009194053685",
+        "author": "aster_0197",
+        "timestamp": "2025-01-23T01:15:55.14-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5765993469707997
+    },
+    {
+      "text": "e-for-Seeed-Studio-XIAO-p-5864.html\n    L76K Expansion Board can not directly used, L76K Reset Pin needs to override or physically remove it,\n    otherwise it will conflict with the SPI pins\n*/\n#define GPS_L76K\n#ifdef GPS_L76K\n#define GPS_RX_PIN 44\n#define GPS_TX_PIN 43\n#define HAS_GPS 1\n#define GPS_BAUDRATE 9600\n#define GPS_THREAD_INTERVAL 50\n#define PIN_SERIAL1_RX PIN_GPS_TX\n#define PIN_SERIAL1_TX PIN_GPS_RX\n#define PIN_GPS_STANDBY 1\n#endif\n\n// XIAO S3 Expansion board  has 1.3 inch OLED Screen",
+      "metadata": {
+        "id": "1332071724782456903",
+        "author": "jessicamanig",
+        "timestamp": "2025-01-23T14:37:27.884-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5668809452954127
+    },
+    {
+      "text": "should the firmware i2c scan VERY early at bootup detect a BME680?",
+      "metadata": {
+        "id": "1332149324699795519",
+        "author": ".anotherandrew",
+        "timestamp": "2025-01-23T19:45:49.146-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.57603578335895
+    },
+    {
+      "text": "I see ```INFO  | ??:??:?? 0 Scan for i2c devices...\nDEBUG | ??:??:?? 0 Scan for I2C devices on port 1\nDEBUG | ??:??:?? 0 I2C device found at address 0x40\nDEBUG | ??:??:?? 0 Wire.available() = 2\nDEBUG | ??:??:?? 0 Register MFG_UID: 0x2000\nINFO  | ??:??:?? 0 INA219 sensor found at address 0x40\nINFO  | ??:??:?? 0 1 I2C devices found\nDEBUG | ??:??:?? 0 acc_info = 0\nDEBUG | ??:??:?? 0 found i2c sensor meshtastic_TelemetrySensorType_INA219```\nfollowed very soon after with ```DEBUG | ??:??:?? 1 Rescan ",
+      "metadata": {
+        "id": "1332149692146122832",
+        "author": ".anotherandrew",
+        "timestamp": "2025-01-23T19:47:16.752-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5803431595282507
+    },
+    {
+      "text": "for I2C keyboard\nDEBUG | ??:??:?? 1 Scan for I2C devices on port 1\nDEBUG | ??:??:?? 1 Scan address 0x1f\nDEBUG | ??:??:?? 1 Scan address 0x55\nDEBUG | ??:??:?? 1 Scan address 0x5a\nDEBUG | ??:??:?? 1 Scan address 0x5f\nDEBUG | ??:??:?? 1 Keyboard Type: 0x00 Model: 0x00 Address: 0x00```\nwhich appears to be a rescan specifically for an I2C keyboard, but I never see the BME show up",
+      "metadata": {
+        "id": "1332149692146122832",
+        "author": ".anotherandrew",
+        "timestamp": "2025-01-23T19:47:16.752-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5586720811401891
+    },
+    {
+      "text": "answering my own question: yep it shows up right away: ```INFO  | ??:??:?? 2 INA219 sensor found at address 0x40\nDEBUG | ??:??:?? 2 I2C device found at address 0x76\nDEBUG | ??:??:?? 2 Wire.available() = 1\nINFO  | ??:??:?? 2 BME-680 sensor found at address 0x76\nINFO  | ??:??:?? 2 2 I2C devices found\nDEBUG | ??:??:?? 2 acc_info = 0\nDEBUG | ??:??:?? 2 found i2c sensor meshtastic_TelemetrySensorType_BME680\nDEBUG | ??:??:?? 2 found i2c sensor meshtastic_TelemetrySensorType_INA219\nINFO  | ??:??:?? 2 S",
+      "metadata": {
+        "id": "1332150961992499303",
+        "author": ".anotherandrew",
+        "timestamp": "2025-01-23T19:52:19.507-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5586326533279549
+    },
+    {
+      "text": "msg.hop_limit = (uint8_t)50;\n    msg.want_ack = false;\n    msg.priority = meshtastic_MeshPacket_Priority_HIGH;\n    msg.rx_rssi;\n    msg.delayed = meshtastic_MeshPacket_Delayed_NO_DELAY;\n    msg.via_mqtt = false;\n    msg.hop_start = (uint8_t)0;\n    msg.public_key;\n    msg.pki_encrypted;\n    service->sendToMesh(&msg);\n...\n```",
+      "metadata": {
+        "id": "1332408363128061952",
+        "author": "ziipzaaapm16a4",
+        "timestamp": "2025-01-24T12:55:08.72-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5500221813900266
+    },
+    {
+      "text": "ioIf] Packet received : 690ms\nDEBUG | ??:??:?? 940 [Router] Add packet record (id=0x00000001 fr=0x6c to=0xff, WantAck=0, HopLim=7 Ch=0x8 encrypted rxSNR=11.75 rxRSSI=-28 hopStart=7)\nDEBUG | ??:??:?? 940 [Router] Using channel 0 (hash 0x8)\nDEBUG | ??:??:?? 940 [Router] Expanding short PSK #1\nDEBUG | ??:??:?? 940 [Router] Using AES128 key!\nDEBUG | ??:??:?? 940 [Router] decoded message (id=0x00000001 fr=0x6c to=0xff, WantAck=0, HopLim=7 Ch=0x0 Portnum=256 rxSNR=11.75 rxRSSI=-28 hopStart=7)\nDEBUG | ",
+      "metadata": {
+        "id": "1333473144769351732",
+        "author": "ziipzaaapm16a4",
+        "timestamp": "2025-01-27T11:26:12.446-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5759084865875042
+    },
+    {
+      "text": "Have you worked with Platform.io before? We know that's new to a lot of people who've worked with device specific tools (eg esp32) , so suggest starting by building a firmware to get use to the toolchain: https://meshtastic.org/docs/development/firmware/build/",
+      "metadata": {
+        "id": "1337751681789857803",
+        "author": "fifieldt",
+        "timestamp": "2025-02-08T06:47:35.163-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5689116296472998
+    },
+    {
+      "text": "also a security measure",
+      "metadata": {
+        "id": "1338126211704033402",
+        "author": "ginntonic.",
+        "timestamp": "2025-02-09T07:35:50.053-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5642498453035443
+    },
+    {
+      "text": "is there a promiscuous mode in the firmware yet? so you can analyze all packets via usb?",
+      "metadata": {
+        "id": "1341464619729944617",
+        "author": "nopcode",
+        "timestamp": "2025-02-18T12:41:28.551-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5760846306375461
+    },
+    {
+      "text": "https://meshtastic.org/docs/hardware/devices/linux-native-hardware/\nPlease read the big warning on this page",
+      "metadata": {
+        "id": "1342320946895392951",
+        "author": "jasonpiper",
+        "timestamp": "2025-02-20T21:24:12.857-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5534955628639882
+    },
+    {
+      "text": "Meshtastic needs to have SPI to have low level control of the Lora, UART means there is a microcontroller doing the low level radio work and is not compatible with radiolib.",
+      "metadata": {
+        "id": "1342371494361042956",
+        "author": "garthvh",
+        "timestamp": "2025-02-21T00:45:04.312-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5665591028485071
+    },
+    {
+      "text": "Contributions in that area would be welcome. The other thing we're working on (eventually) is hardware-in-the-loop testing.",
+      "metadata": {
+        "id": "1342449778906239027",
+        "author": "fifieldt",
+        "timestamp": "2025-02-21T05:56:08.802-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5970629808751673
+    },
+    {
+      "text": "include guards: some processor platforms need them, some don't, some come from personal preference. Regarding the -D in platformio.ini vs. variant.h, some of these need to defined on a build scope, since they affect how external libraries behave. variant.h is only pulled in for our own code files, not external dependencies.",
+      "metadata": {
+        "id": "1346054240438583297",
+        "author": "ginntonic.",
+        "timestamp": "2025-03-03T04:38:59.399-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5987660200201741
+    },
+    {
+      "text": "Does anyone know if the firmware serves this endpoint? And what the purpose of it is? I've seen it before and wondering what it does `/json/report`",
+      "metadata": {
+        "id": "1346521591848374354",
+        "author": "dandcodes",
+        "timestamp": "2025-03-04T11:36:04.658-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5599953242334645
+    },
+    {
+      "text": "also, is the dev container the best way to get started with firmware hacking quickly?",
+      "metadata": {
+        "id": "1346865317783011328",
+        "author": "nucleosynth",
+        "timestamp": "2025-03-05T10:21:55.307-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5860715793119515
+    },
+    {
+      "text": "is there any automated testing around the i2c scanner logic?",
+      "metadata": {
+        "id": "1347233667356950560",
+        "author": "nucleosynth",
+        "timestamp": "2025-03-06T10:45:36.689-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5851894697752819
+    },
+    {
+      "text": "Looks like ESP32 has a backdoor https://www.bleepingcomputer.com/news/security/undocumented-backdoor-found-in-bluetooth-chip-used-by-a-billion-devices/",
+      "metadata": {
+        "id": "1348008507512979517",
+        "author": "prosthetichead2869",
+        "timestamp": "2025-03-08T14:04:32.978-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6191466825089053
+    },
+    {
+      "text": "I've definitely used a bit of a hack on a personal nrf52 device in the past  for at least some protection against low battery",
+      "metadata": {
+        "id": "1348066100927266826",
+        "author": "is.this.los",
+        "timestamp": "2025-03-08T17:53:24.318-05:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5685137259478288
+    },
+    {
+      "text": "this is basically nothing. No back door, no unauthorized access, no vulnerability. only thing this would allow is for a malicious meshtastic device firmware to elevate the scope of bluetooth access to the phone.",
+      "metadata": {
+        "id": "1348203026825089034",
+        "author": "ginntonic.",
+        "timestamp": "2025-03-09T03:57:29.996-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5864645038235181
+    },
+    {
+      "text": "Don’t tell them that all cpus have undocumented commands!",
+      "metadata": {
+        "id": "1348315508511870987",
+        "author": "cisien",
+        "timestamp": "2025-03-09T11:24:27.72-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5583211508703402
+    },
+    {
+      "text": "Oh, are you using the native usb, or the hardware UART + a serial adapter IC?",
+      "metadata": {
+        "id": "1348908463115337763",
+        "author": "is.this.los",
+        "timestamp": "2025-03-11T02:40:39.114-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.555652048821505
+    },
+    {
+      "text": "Wus the likelihood of an unsupported bmp sensor to work out the gate over I2C? lookin at the bmp388 looks to have better specs and 5x cheaper for some raisin.",
+      "metadata": {
+        "id": "1349885939392057386",
+        "author": "binky.",
+        "timestamp": "2025-03-13T19:24:47.619-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5654033762359097
+    },
+    {
+      "text": "Speaking of, I’ve been thinking about adding manual overrides to the config for I2C devices/scanning. best thing I’ve thought of so far is to move around some enums from the C to protobuf",
+      "metadata": {
+        "id": "1349886531631845376",
+        "author": "nucleosynth",
+        "timestamp": "2025-03-13T19:27:08.82-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5873499137945946
+    },
+    {
+      "text": "Yes.  2.6 is using the newer encryption.  You'll see that amber unlock icon in two situations. 1) They are running a firmware version that predates the public key encryption for DMs. 2) They are running with HAM mode enabled.",
+      "metadata": {
+        "id": "1352083208816037940",
+        "author": "trs2982",
+        "timestamp": "2025-03-19T20:55:57.473-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5529753538579385
+    },
+    {
+      "text": "Im fairly certain the reason it wipes the device is to fix the issues yeah",
+      "metadata": {
+        "id": "1352332616941961314",
+        "author": "onyxclawe",
+        "timestamp": "2025-03-20T13:27:01.004-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5538611673292206
+    },
+    {
+      "text": "we have an example repo how all this is done from a connected arduino over serial port. https://github.com/meshtastic/Meshtastic-arduino",
+      "metadata": {
+        "id": "1353328537263804427",
+        "author": "ginntonic.",
+        "timestamp": "2025-03-23T07:24:26.912-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5514348810573744
+    },
+    {
+      "text": "sorry for late reply, this was for straight communication, it is allgood i have solved it by creating manual fragmentation on the firmware BLE code with a custom characteristic specific to my device",
+      "metadata": {
+        "id": "1354011059194691614",
+        "author": "asultd",
+        "timestamp": "2025-03-25T04:36:32.821-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.558414058371836
+    },
+    {
+      "text": "also the firmware is not an arduino sketch, it's much more complex. try to get familiar with the code structure and ask a LOT of questions. Really, it's appreciated 🙂",
+      "metadata": {
+        "id": "1354438178685325365",
+        "author": "ginntonic.",
+        "timestamp": "2025-03-26T08:53:46.043-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5619618207802748
+    },
+    {
+      "text": "what are you using to decrypt?",
+      "metadata": {
+        "id": "1354548597336838376",
+        "author": "m_ia_n",
+        "timestamp": "2025-03-26T16:12:31.901-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5730559869776235
+    },
+    {
+      "text": "I'm checking against the code I have that has successfully decrypted stuff off MQTT before",
+      "metadata": {
+        "id": "1354549099893883092",
+        "author": "m_ia_n",
+        "timestamp": "2025-03-26T16:14:31.72-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5716877421601396
+    },
+    {
+      "text": "The random pin is output over serial as well as the screen when you try and connect so that may help you get the device rescued so you can connect with your phone and then change to fixed pin",
+      "metadata": {
+        "id": "1354903617135575080",
+        "author": "garthvh",
+        "timestamp": "2025-03-27T15:43:15.217-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5520384691126439
+    },
+    {
+      "text": "I spent a couple hours digging through the code base and identified some low hanging fruit. I put up a couple PRs under this issue: https://github.com/meshtastic/firmware/issues/6427 Please take a look and let me know what you think.",
+      "metadata": {
+        "id": "1355073375223156786",
+        "author": "jasonbcox",
+        "timestamp": "2025-03-28T02:57:48.699-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5519407915005592
+    },
+    {
+      "text": "you will need to buy an external debug probe but also the board does have JTAG broken out and the ESP-Prog probe seems to be functional and very cheap",
+      "metadata": {
+        "id": "1356306347989274624",
+        "author": "vogon",
+        "timestamp": "2025-03-31T12:37:12.314-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5867556879440653
+    },
+    {
+      "text": "https://resource.heltec.cn/download/WiFi_LoRa_32_V3/HTIT-WB32LA(F)_V3.1_Schematic_Diagram.pdf the JTAG pins are labeled 39 (TCK), 40 (TDO), 41 (TDI), and 42 (TMS) on the back side of the board",
+      "metadata": {
+        "id": "1356307031551901848",
+        "author": "vogon",
+        "timestamp": "2025-03-31T12:39:55.288-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6015040296924744
+    },
+    {
+      "text": "That and the semtech RF hardware 🙂",
+      "metadata": {
+        "id": "1356469555609993356",
+        "author": "n8lbv",
+        "timestamp": "2025-03-31T23:25:44.043-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5555365058409368
+    },
+    {
+      "text": "Heya, I'm considering cooking something up for myself, but I was curious as to why it hasn't been tackled quite yet (or discussed, per my cursory search-fu). \n\nIs there any particular reason that the hardware itself isn't \"locked down\", at least to low-effort snooping? For instance, someone has physical access to one of my nodes, and is able to simply pair via bluetooth and retreive my messages from the last [x] hours/days, along with my encryption keys and other items of interest. \n\nIt just see",
+      "metadata": {
+        "id": "1356530962049007646",
+        "author": "darunoko",
+        "timestamp": "2025-04-01T03:29:44.479-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6024816116181011
+    },
+    {
+      "text": "Maybe there's something at the hardware level that would bypass any firmware improvement to security, but I can't figure out what it would be.",
+      "metadata": {
+        "id": "1356531845273096333",
+        "author": "darunoko",
+        "timestamp": "2025-04-01T03:33:15.056-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6540499755689134
+    },
+    {
+      "text": "u cant have any password protection on serial connection, well if its linux based node thats a different story",
+      "metadata": {
+        "id": "1356532167102169169",
+        "author": "valzzu_",
+        "timestamp": "2025-04-01T03:34:31.786-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5619941962111613
+    },
+    {
+      "text": "Best thing to do is to either factory reset via a client app when your node is about to be compromised or remotely over the mesh",
+      "metadata": {
+        "id": "1356532576944128020",
+        "author": "rcgv_",
+        "timestamp": "2025-04-01T03:36:09.5-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5627300334734879
+    },
+    {
+      "text": "so then I could just set a bespoke static bluetooth pin for a node, disable serial, and I'm at least semi-resilient to low-effort snooping",
+      "metadata": {
+        "id": "1356534625865961482",
+        "author": "darunoko",
+        "timestamp": "2025-04-01T03:44:18.001-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5627045340906345
+    },
+    {
+      "text": "I think it has place directly in firmware, but I need to do research more and check what are the contributing policies to avoid unsuccess in contribution.",
+      "metadata": {
+        "id": "1356539540960972890",
+        "author": "rastislav",
+        "timestamp": "2025-04-01T04:03:49.851-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5643516038773349
+    },
+    {
+      "text": "Yea you can hardwire the high voltage power to the jst connector on the bottom and use the usb just for data",
+      "metadata": {
+        "id": "1356640813991596234",
+        "author": "b8b8",
+        "timestamp": "2025-04-01T10:46:15.223-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5529091020962023
+    },
+    {
+      "text": "There is a bug? If you have connected environment board/module to heltec wireless tracker the USB - jtag debug / flash doesn't work. There is no mention of this anywhere in the documentation or in flasher. What do you think about this? Should Env i2c be moved to different ports?",
+      "metadata": {
+        "id": "1357267115861868597",
+        "author": "uolsen",
+        "timestamp": "2025-04-03T04:14:57.225-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6071856549711113
+    },
+    {
+      "text": "Is there Meshtastic support for an i2c lie detector",
+      "metadata": {
+        "id": "1357433640677671002",
+        "author": "u0421793",
+        "timestamp": "2025-04-03T15:16:39.835-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5593975720570344
+    },
+    {
+      "text": "the variant is `heltec-ht62-esp32c3-sx1262` -- I moved I2C and disabled button, LED and battery pins",
+      "metadata": {
+        "id": "1357445630506569860",
+        "author": ".anotherandrew",
+        "timestamp": "2025-04-03T16:04:18.433-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5584630085582547
+    },
+    {
+      "text": "You uploaded the firmware download zip and not the zip inside that zip for your hardware usually",
+      "metadata": {
+        "id": "1357534500665688124",
+        "author": "garthvh",
+        "timestamp": "2025-04-03T21:57:26.73-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5607413937679684
+    },
+    {
+      "text": "@caveman99 🇩🇪 interesting. I blew away `~/.platformio/platforms`, did a fresh checkout of `firmware.git` and checked out `tags/v2.6.4.b89355f` -- same error in the same place",
+      "metadata": {
+        "id": "1357775120516780313",
+        "author": ".anotherandrew",
+        "timestamp": "2025-04-04T13:53:34.973-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5527592068646308
+    },
+    {
+      "text": "my platformio.ini looks like\n```[env:cheapmesh-ht-ct62]\nextends = esp32c3_base\nboard = esp32-c3-devkitm-1\nbuild_flags = \n  ${esp32_base.build_flags}\n  -D HELTEC_HT62\n  #-D CHEAPMESH_HT_CT62\n  #-D ARDUINO_USB_CDC_ON_BOOT=1\n  #-D ARDUINO_USB_MODE=0\n  -I variants/cheapmesh_ht-ct62\n\nboard_flags =\n  -D ARDUINO_USB_CDC_ON_BOOT=1\n  -D ARDUINO_USB_MODE=1\n\nmonitor_speed = 115200\nupload_protocol = esptool\n;upload_port = /dev/ttyUSB0\nupload_speed = 921600\n```",
+      "metadata": {
+        "id": "1358147952907915354",
+        "author": "joelenvrac_yt",
+        "timestamp": "2025-04-05T14:35:05.142-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5575104513922378
+    },
+    {
+      "text": "The esp32c3 variants aren't well tested owing to a lack of widely available hardware 😬",
+      "metadata": {
+        "id": "1358164060473921739",
+        "author": "nomdetom",
+        "timestamp": "2025-04-05T15:39:05.485-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5738411194245729
+    },
+    {
+      "text": "I found another esp32c3 variant : `hackerboxes-esp32c3-oled`\nNative usb serial works with this one so I'll dig to understand\n\nAnd finaly, `ARDUINO_USB_CDC_ON_BOOT=1` needs to be in `build_flags =` of platformio.ini as it's the case for this variant and it works.",
+      "metadata": {
+        "id": "1358771437485166714",
+        "author": "joelenvrac_yt",
+        "timestamp": "2025-04-07T07:52:35.449-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5755484143686904
+    },
+    {
+      "text": "But of course I'll try to compare `hackerboxes-esp32c3-oled` and `heltec_esp32c3` variants to try to answer why native usb serial doesnt work for the heltec, but works if I build & flash the hackerboxes firmare on it... 🤔",
+      "metadata": {
+        "id": "1358772938840604835",
+        "author": "joelenvrac_yt",
+        "timestamp": "2025-04-07T07:58:33.4-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5717039831594167
+    },
+    {
+      "text": "settings these flags also makes Serial Console work over USB",
+      "metadata": {
+        "id": "1358781316828626954",
+        "author": "talie5in",
+        "timestamp": "2025-04-07T08:31:50.868-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5590311248799898
+    },
+    {
+      "text": "yeah, the hardware and the mqtt side of it is pretty much plug and play. the \"fun\" bit will be making it scrape the bluetooth sensors and forward that data.",
+      "metadata": {
+        "id": "1361282845548482761",
+        "author": "jerub",
+        "timestamp": "2025-04-14T06:12:01.791-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5800738372134693
+    },
+    {
+      "text": "If you want to read a little rust this code actually works and should be a fair bit easier to read than the firmware code https://github.com/Ben-Lichtman/nrf-lora/blob/master/src/radio.rs",
+      "metadata": {
+        "id": "1361626348090560524",
+        "author": "_b3nny_",
+        "timestamp": "2025-04-15T04:56:59.179-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5537180101012912
+    },
+    {
+      "text": "in both cases it seems to be the same in detection ```\nDEBUG | ??:??:?? 0 Scan for I2C devices on port 1\nINFO | ??:??:?? 0 AXP192/AXP2101 found at address 0x34\nDEBUG | ??:??:?? 0 0x1 subtype probed in 2 tries\nINFO | ??:??:?? 0 2 I2C devices found\n```",
+      "metadata": {
+        "id": "1362270700819451914",
+        "author": "dangernaut",
+        "timestamp": "2025-04-16T23:37:24.841-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5883257633741182
+    },
+    {
+      "text": "all the other hardware is supported AFAIK and that's just a matter of setting the right build flags and pins. the only other thing that might be an obstacle is the shared SPI bus between the screen and the radio which I don't think any other supported devices have",
+      "metadata": {
+        "id": "1363797365667921921",
+        "author": "brainyslain",
+        "timestamp": "2025-04-21T04:43:50.105-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5622807629129523
+    },
+    {
+      "text": "@Jason P (xaositek) 🇺🇸 has one of these devices and is keen to test stuff out with it",
+      "metadata": {
+        "id": "1363818200147431497",
+        "author": "is.this.los",
+        "timestamp": "2025-04-21T06:06:37.432-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5900574401806854
+    },
+    {
+      "text": "i think this commit accidentally disabled RADIOLIB_IRQ_PREAMBLE_DETECTED: https://github.com/meshtastic/firmware/pull/4621\n\nlooks like the bit needs to be shifted left 1?",
+      "metadata": {
+        "id": "1363938790036733982",
+        "author": "ajohntitor",
+        "timestamp": "2025-04-21T14:05:48.302-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5547072588226338
+    },
+    {
+      "text": "@BlueEyesWhackDragon in src/gps/GPS.cpp there are two main places that need to be modified. The first is the detection code (GnssModel_t GPS::probe(int serialSpeed) ), where we'll send a command to the chip and look at the response to work out which one it is. Lots of examples in there. The second section is the setup code (bool GPS::setup() ) where we configure the chip.",
+      "metadata": {
+        "id": "1365486176773079071",
+        "author": "fifieldt",
+        "timestamp": "2025-04-25T20:34:34.049-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5804297570151403
+    },
+    {
+      "text": "and the ifdefs treat different hardware differently in obscure ways that i think might actually be straight up bugs.",
+      "metadata": {
+        "id": "1366340065441349674",
+        "author": "jerub",
+        "timestamp": "2025-04-28T05:07:36.972-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5813112972314002
+    },
+    {
+      "text": "@Todd  suspicious... https://github.com/meshtastic/firmware/blob/b4e8f7dbb656518aa277869358f56201dc8eb14e/src/modules/CannedMessageModule.h#L60",
+      "metadata": {
+        "id": "1366593116110327911",
+        "author": "momentumv",
+        "timestamp": "2025-04-28T21:53:08.953-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5506791706689177
+    },
+    {
+      "text": "has anyone hacked a Cybiko to work with Meshtastic yet?",
+      "metadata": {
+        "id": "1367335854116180057",
+        "author": "girtzenheser",
+        "timestamp": "2025-04-30T23:04:31.493-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.560644042453092
+    },
+    {
+      "text": "What device?",
+      "metadata": {
+        "id": "1369019806677991696",
+        "author": "dedskelly",
+        "timestamp": "2025-05-05T14:35:57.07-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5616206925404671
+    },
+    {
+      "text": "`device-install.bat -f firmware-station-g2-2.6.7.2d6181fc.bin -p COM8 --web`",
+      "metadata": {
+        "id": "1370248624109523066",
+        "author": "wille469",
+        "timestamp": "2025-05-08T23:58:49.976-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5559364260471001
+    },
+    {
+      "text": "If boot hangs on \"Scan for i2c devices\", is that a sign that a i2c device is faulty?",
+      "metadata": {
+        "id": "1370747918448857129",
+        "author": "spiffysec",
+        "timestamp": "2025-05-10T09:02:51.023-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6056227620803729
+    },
+    {
+      "text": "SEC2 code: 100\nWARN  | 23:02:27 4257 [EnvironmentTelemetry] runTrigger BME68X code: 2\nDEBUG | 23:02:29 4258 Network-Event 5:\nINFO  | 23:02:29 4258 Disconnected from WiFi access point\nWARN  | 23:02:29 4258 WiFi lost connection. Reason: 2\nINFO  | 23:02:30 4259 [WifiConnect] Reconnecting to WiFi access point go away\nWARN  | 23:02:35 4264 [EnvironmentTelemetry] runTrigger BSEC2 code: 100\nWARN  | 23:02:35 4264 [EnvironmentTelemetry] runTrigger BME68X code: 2\nDEBUG | 23:02:36 4266 Network-Event 5:\nINF",
+      "metadata": {
+        "id": "1370899218939777054",
+        "author": "wille469",
+        "timestamp": "2025-05-10T19:04:03.871-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5675416729110456
+    },
+    {
+      "text": "again powering from JST, and USB for console connection.",
+      "metadata": {
+        "id": "1370899595176968273",
+        "author": "wille469",
+        "timestamp": "2025-05-10T19:05:33.573-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.557788156292206
+    },
+    {
+      "text": "Has there been any investigation as to why G2 on 2.6.7 is locking up ?",
+      "metadata": {
+        "id": "1372034144078663681",
+        "author": "wille469",
+        "timestamp": "2025-05-13T22:13:51.11-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5570672006722648
+    },
+    {
+      "text": "Could it be ... hardware fault?",
+      "metadata": {
+        "id": "1372288452720332820",
+        "author": "spiffysec",
+        "timestamp": "2025-05-14T15:04:23.015-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.597534082952074
+    },
+    {
+      "text": "We know this. Like an SSH fingerprint. If I'm bringing it up, it's because our group of Parisian engineers finds it abnormal that their key changes are repaired by disconnecting and reconnecting Bluetooth.",
+      "metadata": {
+        "id": "1372673439034245252",
+        "author": "serveurperso",
+        "timestamp": "2025-05-15T16:34:10.905-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6056585531032808
+    },
+    {
+      "text": "on a private network with only trusted devices, sure. But some people are exposing it",
+      "metadata": {
+        "id": "1373070595264352407",
+        "author": "n30nex",
+        "timestamp": "2025-05-16T18:52:20.329-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5733676776939745
+    },
+    {
+      "text": "Just rebooted again...\n```\nDEBUG | 23:16:33 469 [Router] Expand short PSK #1\nDEBUG | 23:16:33 469 [Router] Use AES128 key!\nDEBUG | 23:16:33 469 [Router] Broadcasting packet over UDP (id=2284609468)\nDEBUG | 23:16:33 469 [Router] enqueue for send (id=0x882c5fbc fr=0x9efae3f2 to=0xffffffff, WantAck=0, HopLim=5 Ch=0x8 encrypted len=61 rxtime=1747437393 rxSNR=6.25 rxRSSI=-36 hopStart=6 re\nDEBUG | 23:16:33 469 [Router] txGood=5,txRelay=2,rxGood=21,rxBad=0\nDEBUG | 23:16:33 469 [Router] rx_snr found. ho",
+      "metadata": {
+        "id": "1373076873235402824",
+        "author": "wille469",
+        "timestamp": "2025-05-16T19:17:17.114-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5840523482137714
+    },
+    {
+      "text": "i2c works it found the 2 devices on it",
+      "metadata": {
+        "id": "1373729500378038293",
+        "author": "valzzu_",
+        "timestamp": "2025-05-18T14:30:35.55-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5700069033893845
+    },
+    {
+      "text": "The first is test code (a fuzzer), so not actual firmware running on the device, but testing against it.\nThe second is commented out, but serves as an example how to hard-code one.",
+      "metadata": {
+        "id": "1373745457494491197",
+        "author": "guvwaf",
+        "timestamp": "2025-05-18T15:34:00.023-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5757228023756136
+    },
+    {
+      "text": "also another test where I hooked up an esp32-c3 +sx1262 (the spikes were caused by one of the leds where using spi pin) :",
+      "metadata": {
+        "id": "1375088966281334874",
+        "author": "sadteeto",
+        "timestamp": "2025-05-22T08:32:37.479-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5585659234218783
+    },
+    {
+      "text": "What device?",
+      "metadata": {
+        "id": "1375740848901455964",
+        "author": "garthvh",
+        "timestamp": "2025-05-24T03:42:58.407-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5616206925404671
+    },
+    {
+      "text": "It is available in firmware 2.6.9 forward and is being beta tested on Android and iOS right now",
+      "metadata": {
+        "id": "1376411918964756530",
+        "author": "garthvh",
+        "timestamp": "2025-05-26T00:09:33.978-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.551849629381069
+    },
+    {
+      "text": "```\nDEBUG | 01:19:28 2700 [Router] Broadcasting packet over UDP (id=1708739046)\nDEBUG | 01:19:28 2700 [Router] enqueue for send (id=0x65d949e6 fr=0xef03f0d5 to=0xabcd0bb4, WantAck=0, HopLim=2 Ch=0x8 encrypted len=29 rxtime=1748193568 rxSNR=6.5 rxRSSI=-55 hopStart=3 rel\nDEBUG | 01:19:28 2700 [Router] txGood=98,txRelay=89,rxGood=94,rxBad=2\nDEBUG | 01:19:28 2700 [Router] Module 'routing' considered\nDEBUG | 01:19:28 2700 [Router] MQTT onSend - Publish \n﻿DEBUG | 01:19:28 2700 [Router] encrypted messa",
+      "metadata": {
+        "id": "1376450877170389052",
+        "author": "disappear9",
+        "timestamp": "2025-05-26T02:44:22.338-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5515242447716218
+    },
+    {
+      "text": "```\nINFO  | 01:34:29 899 [mqtt] Received MQTT topic msh*, len=87\nDEBUG | 01:34:29 899 [mqtt] Use channel 0 (hash 0x8)\nDEBUG | 01:34:29 899 [mqtt] Expand short PSK #1\nDEBUG | 01:34:29 899 [mqtt] Use AES128 key!\nDEBUG | 01:34:29 899 [mqtt] decoded message (id=0x2fbf0cf6 fr=0x849c68dc to=0xabcd0bb4, WantAck=0, HopLim=3 Ch=0x0 Portnum=3 requestId=1c536dac via MQTT hopStart=3)\nDEBUG | 01:34:29 899 [Router] Add packet record fr=0x849c68dc, id=0x2fbf0cf6\n\nassert failed: T* MemoryDynamic<T>::alloc(TickT",
+      "metadata": {
+        "id": "1376451416801022054",
+        "author": "disappear9",
+        "timestamp": "2025-05-26T02:46:30.996-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5527718677796336
+    },
+    {
+      "text": "also that doesent seem tobe i2c",
+      "metadata": {
+        "id": "1376820241879007252",
+        "author": "valzzu_",
+        "timestamp": "2025-05-27T03:12:05.747-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5518255455188802
+    },
+    {
+      "text": "and u also could be loosing parts of the firmware packets as well",
+      "metadata": {
+        "id": "1377019116132761610",
+        "author": "valzzu_",
+        "timestamp": "2025-05-27T16:22:21.064-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5973293503735335
+    },
+    {
+      "text": "One could hack the firmware to pass through SPI, GPIO, etc over UART, but I'd sooner just buy a Meshtastic Pi hat, or better yet, perf board one on the cheap",
+      "metadata": {
+        "id": "1377383051881091204",
+        "author": "radioshack_48221",
+        "timestamp": "2025-05-28T16:28:30.108-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5971282404780176
+    },
+    {
+      "text": "This is an interesting idea, it's probably possible to emulate the ch341 protocol in firmware on the esp32 using the USB peripheral. Only problem is the heltec doesn't expose the ESP32's usb pins on the USB port. They have a USB to serial converter so you'd have to hack up a USB cable and connect it to different pins. Some of the Lilygo boards have USB exposed.",
+      "metadata": {
+        "id": "1377719810376470638",
+        "author": "alexzellic",
+        "timestamp": "2025-05-29T14:46:39.59-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5568333259679665
+    },
+    {
+      "text": "|| Custom Meshtastic Mods – Smarter Cross-Cluster Routing experiment |||\nTired of flooding with telemetry and other spam? Check out my experimental firmware that acts as a slingshot for essential packets only — text, config, and diagnostics — while filtering out the noise. Includes Ping tools, Google Maps-linked range tests, and full remote control. Perfect for relay nodes between busy clusters.\nhttps://github.com/VilemR/meshtastic-custom-mods/blob/master/README-MODS.md",
+      "metadata": {
+        "id": "1379513342300913685",
+        "author": "zen_fox_94611",
+        "timestamp": "2025-06-03T13:33:30.923-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5526767822180345
+    },
+    {
+      "text": "If you have the key and the old modes Id write some custom firmware to spoof your id",
+      "metadata": {
+        "id": "1381783504337109032",
+        "author": "rcgv_",
+        "timestamp": "2025-06-09T19:54:19.73-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5619863410035899
+    },
+    {
+      "text": "Yup, just confirmed as much with the latest 2.6.10 firmware (to make sure nothing changed) with a \"spoofed\" backup t1000e can remote admin all my other nodes",
+      "metadata": {
+        "id": "1381789641145057322",
+        "author": "b8b8",
+        "timestamp": "2025-06-09T20:18:42.859-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5600086202610022
+    },
+    {
+      "text": "What hardware?",
+      "metadata": {
+        "id": "1381923037481402369",
+        "author": "nomdetom",
+        "timestamp": "2025-06-10T05:08:47.024-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6095565906639433
+    },
+    {
+      "text": "i know, it uses 2 i2c addresses, one of which is the same as the bmp sensors",
+      "metadata": {
+        "id": "1382100228710203423",
+        "author": "bitflp",
+        "timestamp": "2025-06-10T16:52:52.705-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.552818406440845
+    },
+    {
+      "text": "And you share it with all other IoT sensors as well",
+      "metadata": {
+        "id": "1382486626432979004",
+        "author": "b8b8",
+        "timestamp": "2025-06-11T18:28:17.101-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5767678725149928
+    },
+    {
+      "text": "And if you want something really fun, each target needs a good audit as to whether we're taking advantage of the hardware randomness sources.",
+      "metadata": {
+        "id": "1382968118472867881",
+        "author": "jonathanbennett",
+        "timestamp": "2025-06-13T02:21:33.749-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5714615255080671
+    },
+    {
+      "text": "Interesting. I'll focus on key management and the other things to make security most robust. I'll ping you all after I finish a prototype.",
+      "metadata": {
+        "id": "1382968863481794702",
+        "author": "recluse.sfc",
+        "timestamp": "2025-06-13T02:24:31.373-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5823170943597049
+    },
+    {
+      "text": "pretty secure within the limits of the hardware",
+      "metadata": {
+        "id": "1383640914425155654",
+        "author": "b8b8",
+        "timestamp": "2025-06-14T22:55:00.804-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6269713046839942
+    },
+    {
+      "text": "https://meshtastic.org/docs/overview/encryption/",
+      "metadata": {
+        "id": "1383641173532606534",
+        "author": "b8b8",
+        "timestamp": "2025-06-14T22:56:02.58-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.557659330177019
+    },
+    {
+      "text": "the biggest \"issues\" (I quote issues here because I don't know the developers' position on the project goals) in the vein of encryption/pki that I've seen (I'm admittedly rather new to the firmware though) is that channels are all symmetrical encryption with no signing, so anyone can spoof anything in a channel that they have the key for... or overwhelm the network with spam, easily",
+      "metadata": {
+        "id": "1383676355216015460",
+        "author": "jamon1",
+        "timestamp": "2025-06-15T01:15:50.547-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6075988518939117
+    },
+    {
+      "text": "I've been working on implementing a meshtastic firmware in rust, so I've been reading a bunch 🙂",
+      "metadata": {
+        "id": "1383683989033713769",
+        "author": "jamon1",
+        "timestamp": "2025-06-15T01:46:10.591-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5514212417795
+    },
+    {
+      "text": "I was just about to ask, I do a lot of secure embedded Rust OS work, so I was curious if there were any pushes in that direction 🙂",
+      "metadata": {
+        "id": "1383684122274431006",
+        "author": "foxmoder",
+        "timestamp": "2025-06-15T01:46:42.358-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5644140829819847
+    },
+    {
+      "text": "There's problems running from Vercel and connecting to real hardware. I don't remember the details. I think it's related to browser security stuff",
+      "metadata": {
+        "id": "1383948433278111796",
+        "author": "jonathanbennett",
+        "timestamp": "2025-06-15T19:16:59.012-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6031363033813768
+    },
+    {
+      "text": "Made a bug report on GitHub",
+      "metadata": {
+        "id": "1384878105902055455",
+        "author": "joerky",
+        "timestamp": "2025-06-18T08:51:10.238-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5661793611048992
+    },
+    {
+      "text": "**M5Stack Core2 firmware?**\n\nHi, I can see M5Stack firmware for Core and Core3, but I can't seem to find it for Core2.  Is that available anywhere?\n\nNote: Yes, they'd all 3 require different builds.\nhttps://shop.m5stack.com/products/m5stack-core2-esp32-iot-development-kit",
+      "metadata": {
+        "id": "1385122490367344704",
+        "author": "coopersmith2314",
+        "timestamp": "2025-06-19T01:02:16.035-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5506562522062833
+    },
+    {
+      "text": "buy a self-contained device\ncrack it open to modify it to do things that require custom firmware\ncomplain when the stock firmware doesn't support things that the all in one device doesn't ship with...\n\nWouldn't it be easier to use a different devices that's configured for tinkering?",
+      "metadata": {
+        "id": "1385283077525209210",
+        "author": "cisien",
+        "timestamp": "2025-06-19T11:40:22.997-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.552087365880479
+    },
+    {
+      "text": "FYI Just installed 2.7 on Faketec, everything works so far but telemetry data seems to not work from BME 680 ( was working perfectly with all the recent beta versions perfectly) as its is i2C I think there is no option I would have to adapt to make it work?  So I thought its still a firmwarebug of 2.7 and report it here. Thanks for your effort guys, love 2.7 so far really amazing!",
+      "metadata": {
+        "id": "1386293145125519390",
+        "author": "lupusworax",
+        "timestamp": "2025-06-22T06:34:01.879-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5549313417689818
+    },
+    {
+      "text": "There has been written companion software for the rp2040 to support attached I2C sensors in Meshtastic. I remember there was a link in the merged PR section of GitHub.",
+      "metadata": {
+        "id": "1387086694368677909",
+        "author": "mverch",
+        "timestamp": "2025-06-24T11:07:18.762-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5642291817784794
+    },
+    {
+      "text": "No, the situation around hardware support is already out of control. This is obviosuly an attempt to gain back control.",
+      "metadata": {
+        "id": "1388195754702540800",
+        "author": "mictronics",
+        "timestamp": "2025-06-27T12:34:19.351-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5573542058011541
+    },
+    {
+      "text": "Trying to track this thing down is making me *actually* paranoid. Don't know which piece of code to suspect",
+      "metadata": {
+        "id": "1388286040313430016",
+        "author": "jonathanbennett",
+        "timestamp": "2025-06-27T18:33:05.118-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5529257426211203
+    },
+    {
+      "text": "the devices sending the packets are of lots of different versions/hw--only thing in common is the device the packets are intended for",
+      "metadata": {
+        "id": "1389089938850713702",
+        "author": "jamon1",
+        "timestamp": "2025-06-29T23:47:29.465-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5795014566098686
+    },
+    {
+      "text": "does the firmware generally respond to want_response = true with non-zero hoplimits and packets to the broadcast address for all packet types?  with as much checking as the firmware has to try to avoid misbehavior/network flooding, it seems like that would be something we'd want to avoid",
+      "metadata": {
+        "id": "1389109533183443046",
+        "author": "jamon1",
+        "timestamp": "2025-06-30T01:05:21.118-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5507717610602244
+    },
+    {
+      "text": "Cool people of #firmware, @Erayd has a cool thing located in the thread linked above.",
+      "metadata": {
+        "id": "1389205331673878702",
+        "author": "nomdetom",
+        "timestamp": "2025-06-30T07:26:01.258-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.570880122813472
+    },
+    {
+      "text": "For those playing at home, we're looking at this code is in  ScanI2CTwoWire.cpp:358\n\n```            case SHT31_4x_ADDR:     // same as OPT3001_ADDR_ALT\n            case SHT31_4x_ADDR_ALT: // same as OPT3001_ADDR\n                registerValue = getRegisterValue(ScanI2CTwoWire::RegisterLocation(addr, 0x89), 2);\n                if (registerValue == 0x11a2 || registerValue == 0x11da || registerValue == 0xe9c || registerValue == 0xc8d) {\n                    type = SHT4X;\n                    logFoundD",
+      "metadata": {
+        "id": "1389378734364164176",
+        "author": "fifieldt",
+        "timestamp": "2025-06-30T18:55:03.681-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5670924412677321
+    },
+    {
+      "text": "@GlockTober , if you want the quickest possible hack to get it working just for you, you probably know enough to just edit this file to always return SHT4X 🙂 If you have some time to stick around, we can work together to find a better register to try based on both of our devices",
+      "metadata": {
+        "id": "1389379039055187998",
+        "author": "fifieldt",
+        "timestamp": "2025-06-30T18:56:16.325-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5655043910816813
+    },
+    {
+      "text": "... now platformio is in an infinite loop installing the same dependencies over and over",
+      "metadata": {
+        "id": "1390112684980310077",
+        "author": "dangerdyke",
+        "timestamp": "2025-07-02T19:31:31.144-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5598628581984346
+    },
+    {
+      "text": "tried to repro, got\n> AssertionError: Missed target configuration for me25ls01-4y10td\nincredible",
+      "metadata": {
+        "id": "1390114056349945906",
+        "author": "stary2001",
+        "timestamp": "2025-07-02T19:36:58.104-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5622713387009795
+    },
+    {
+      "text": "https://github.com/meshtastic/Meshtastic-arduino\n\nhttps://github.com/meshtastic/i2c-sensor",
+      "metadata": {
+        "id": "1390729067958898749",
+        "author": "nomdetom",
+        "timestamp": "2025-07-04T12:20:48.298-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5686216630732199
+    },
+    {
+      "text": "quick q - the encryption technical mentions signing https://meshtastic.org/docs/development/reference/encryption-technical/",
+      "metadata": {
+        "id": "1390839801409966282",
+        "author": "semanticleprechaun",
+        "timestamp": "2025-07-04T19:40:49.21-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5500361818172752
+    },
+    {
+      "text": "table handling the hardware-specific development but would appreciate any help, suggestions, or documentation pointers from the community to ensure we go about this the right way.\n\nThanks in advance for your support!",
+      "metadata": {
+        "id": "1390930038387642519",
+        "author": "aadhil06986",
+        "timestamp": "2025-07-05T01:39:23.382-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5694888209019882
+    },
+    {
+      "text": "~~It looks like a mechanism for that safeguard has recently been added, but hasn't actually been applied to the Station G2 (yet).~~ Someone opened an issue about that just yesterday: <https://github.com/meshtastic/firmware/issues/7239>",
+      "metadata": {
+        "id": "1391443201860173995",
+        "author": "is.this.los",
+        "timestamp": "2025-07-06T11:38:31.088-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5760368705508183
+    },
+    {
+      "text": "Do you have a ublox GPS that has i2c protocol listed for it?",
+      "metadata": {
+        "id": "1391858223212007536",
+        "author": "nomdetom",
+        "timestamp": "2025-07-07T15:07:39.889-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5557402987840598
+    },
+    {
+      "text": "all Ublox GPS chips can do i2c, they call it DDC for some reason (monitors use i2c eeproms for their EDID config, and call it the Display Data Channel), perhaps trademark?",
+      "metadata": {
+        "id": "1391859062051963033",
+        "author": "testing26494",
+        "timestamp": "2025-07-07T15:10:59.884-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5951493811514281
+    },
+    {
+      "text": "The project used to support i2c GPS units, but it wasn't being used, so the i2c support was removed a couple years ago. I do know of at least one attempt to use a secondary MCU to talk to i2c devices, and send it over to the main MCU.",
+      "metadata": {
+        "id": "1391865013123289219",
+        "author": "jonathanbennett",
+        "timestamp": "2025-07-07T15:34:38.73-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5811915375921358
+    },
+    {
+      "text": "it's cool to know the capability might be thawed out and reenabled someday if boards run tight on GPIO; being able to daisychain several i2c sensors off the same pins is a significant advantage over UART",
+      "metadata": {
+        "id": "1391916180469452820",
+        "author": "testing26494",
+        "timestamp": "2025-07-07T18:57:57.976-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6065488494453928
+    },
+    {
+      "text": "MUHAHAHAHAHA ITS WORKING!!!\n\n```\nINFO  | ??:??:?? 0 Scan for i2c devices\nDEBUG | ??:??:?? 0 Scan for I2C devices on port 1\nINFO  | ??:??:?? 0 BME280 found at address 0x76\nINFO  | ??:??:?? 0 1 I2C devices found\nDEBUG | ??:??:?? 0 acc_info = 0\nINFO  | ??:??:?? 0 S:B:88,2.7.2.fa23be442\n```",
+      "metadata": {
+        "id": "1392007316642988153",
+        "author": "george.nada",
+        "timestamp": "2025-07-08T01:00:06.533-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6211296665593714
+    },
+    {
+      "text": " at both ends, but eventually one of the two nodes will hang and maybe watchdog. i've had to just power cycle the node and rerun the meshtastic cli to reestablish the ip tunnel again.\n\nthere's some maybe related log messages i've seen on the serial line, that are maybe related or just symptoms of something else...\n```\nERROR | ??:??:?? 507 [SerialConsole] Can't decode protobuf reason='wrong wire type', pb_msgdesc 0x3c191ab4\nERROR | ??:??:?? 507 [SerialConsole] Error: ignore malformed toradio\n```\n",
+      "metadata": {
+        "id": "1392129945433538560",
+        "author": "mischief61507",
+        "timestamp": "2025-07-08T09:07:23.515-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5500377575871834
+    },
+    {
+      "text": "no, it's regarding the fact that there's no I2C available in the default variant for the seeed xiao nrf52840, the variant code assumes a GPS will be connected and dedicates the only two available pins for that purpose",
+      "metadata": {
+        "id": "1392147788984221778",
+        "author": "george.nada",
+        "timestamp": "2025-07-08T10:18:17.749-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5579428933614198
+    },
+    {
+      "text": "you’d just need to extend the xiao nrf52840 kit variant and unflags the GPS_L76K and then the pins will get defined as I2C",
+      "metadata": {
+        "id": "1392159723545169972",
+        "author": "_ndoo",
+        "timestamp": "2025-07-08T11:05:43.17-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5708859717823606
+    },
+    {
+      "text": "@Fifield i modified the firmware to scan and here are the results for the wm1110-a tracker:\n\nScanning interfaces...\nI2C device found at 0x19\nI2C device found at 0x3C\nI2C device found at 0x44\nSPI devices (manual check):\nLoRa module detected on SPI\nScan complete",
+      "metadata": {
+        "id": "1392515061720944783",
+        "author": "fabbergast",
+        "timestamp": "2025-07-09T10:37:42.393-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6130210606360188
+    },
+    {
+      "text": "Which device?",
+      "metadata": {
+        "id": "1393298449742430272",
+        "author": "jonathanbennett",
+        "timestamp": "2025-07-11T14:30:36.652-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5622955696424553
+    },
+    {
+      "text": "https://meshtastic.org/docs/hardware/devices/",
+      "metadata": {
+        "id": "1393322805059260526",
+        "author": "madeofstown",
+        "timestamp": "2025-07-11T16:07:23.412-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5525932501441786
+    },
+    {
+      "text": "yeah, hack firmware incoming to see if the init changes make it sensible\nthen it might just be swapping width/height",
+      "metadata": {
+        "id": "1393940165222731859",
+        "author": "stary2001",
+        "timestamp": "2025-07-13T09:00:33.545-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5962947293049806
+    },
+    {
+      "text": "The firmware version you build is dependent on how you clone the repo",
+      "metadata": {
+        "id": "1394391820045258882",
+        "author": "bitflp",
+        "timestamp": "2025-07-14T14:55:16.446-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5523000744033735
+    },
+    {
+      "text": "Because the way the firmware detects that the packed decrypted successfully us by doing a successful protobuf deserialization",
+      "metadata": {
+        "id": "1394748085116342464",
+        "author": "jonathanbennett",
+        "timestamp": "2025-07-15T14:30:56.658-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5843214406087806
+    },
+    {
+      "text": "incredible bit of schematic here from lilygo lmfao",
+      "metadata": {
+        "id": "1397603055788228722",
+        "author": "stary2001",
+        "timestamp": "2025-07-23T11:35:34.709-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5566266657450203
+    },
+    {
+      "text": "Yeah, i2c can be pulled up anywhere.",
+      "metadata": {
+        "id": "1397624250428555314",
+        "author": "nomdetom",
+        "timestamp": "2025-07-23T12:59:47.905-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.566971120171328
+    },
+    {
+      "text": "I ended up dropping 258 on my with modified firmware but still, doesn't solve the problem.\nPeople can easily spam your entire network.",
+      "metadata": {
+        "id": "1399084737179680859",
+        "author": "theoneleooneeeeeeeeeeeeeeeeeeeee",
+        "timestamp": "2025-07-27T13:43:15.081-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5601491995048806
+    },
+    {
+      "text": "https://github.com/valzzu/firmware/tree/master/variants/nrf52840/diy/Elecrow_nrflr1110",
+      "metadata": {
+        "id": "1399947325543026829",
+        "author": "valzzu_",
+        "timestamp": "2025-07-29T22:50:52.173-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5526976931295874
+    },
+    {
+      "text": "```\n(venv) ➜  meshtastic_firmware git:(master) ✗ ls variants/esp32s3/guition_bsides_cpt/variant.h\nvariants/esp32s3/guition_bsides_cpt/variant.h\n```",
+      "metadata": {
+        "id": "1400385912852058206",
+        "author": "rogandawes",
+        "timestamp": "2025-07-31T03:53:39.536-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5835728052534765
+    },
+    {
+      "text": "```\ncat variants/esp32s3/guition_bsides_cpt/platformio.ini\n[env:guition_bsides_cpt]\n;build_type = debug ; to make it possible to step through our jtag debugger\nextends = esp32s3_base\nboard_level = extra\nmonitor_filters = esp32_exception_decoder\nboard = esp32-s3-devkitc-1\nbuild_flags =\n  ${esp32_base.build_flags} -D PRIVATE_HW -I variants/guition_bsides_cpt\nlib_deps =\n   ${esp32_base.lib_deps}\n```",
+      "metadata": {
+        "id": "1400386076480372896",
+        "author": "rogandawes",
+        "timestamp": "2025-07-31T03:54:18.548-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6290797556527541
+    },
+    {
+      "text": "What is the correct way to disable I2C? I'm trying to get a very basic meshtastic running on my custom hardware, and then will add things like battery charging, display, touch screen, etc. At the moment, I am getting:\n```\n//\\ E S H T /\\ S T / C\n\nINFO  | ??:??:?? 2 Booted, wake cause 0 (boot count 1), reset_reason=reset\nDEBUG | ??:??:?? 2 Filesystem files (8192/1048576 Bytes):\nDEBUG | ??:??:?? 2 Power::lipoInit lipo sensor is not ready yet\nINFO  | ??:??:?? 2 Scan for i2c devices\nDEBUG | ??:??:?? ",
+      "metadata": {
+        "id": "1400485098587160707",
+        "author": "rogandawes",
+        "timestamp": "2025-07-31T10:27:47.258-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5655961648748142
+    },
+    {
+      "text": "2 Scan for I2C devices on port 1\nERROR | ??:??:?? 2 Unknown error at address 0x8\n```\nwhich is a little opaque as an error 🙂",
+      "metadata": {
+        "id": "1400485098587160707",
+        "author": "rogandawes",
+        "timestamp": "2025-07-31T10:27:47.258-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5806631733230276
+    },
+    {
+      "text": "FWIW, the hardware I am trying to use is the Guition jc4827w543 with capacitive sensor, with an external SX1262 radio wired to the expansion ports.",
+      "metadata": {
+        "id": "1400485408097439786",
+        "author": "rogandawes",
+        "timestamp": "2025-07-31T10:29:01.051-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.559690632718556
+    },
+    {
+      "text": "ah looks like it's got an i2c for.. something, on io4/8",
+      "metadata": {
+        "id": "1400486370732019794",
+        "author": "stary2001",
+        "timestamp": "2025-07-31T10:32:50.561-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5575266217625134
+    },
+    {
+      "text": "working on it still haha. installing scanner. the web flasher apparently doesn't monitor i2c",
+      "metadata": {
+        "id": "1400942796713623663",
+        "author": "socketpuppet",
+        "timestamp": "2025-08-01T16:46:30.995-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5898649104045871
+    },
+    {
+      "text": "I found that out the hardware lol",
+      "metadata": {
+        "id": "1400950420515328140",
+        "author": ".hedgie",
+        "timestamp": "2025-08-01T17:16:48.651-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5691956528780444
+    },
+    {
+      "text": "i'm getting \"no I2C devices found\" any idea how to fix?",
+      "metadata": {
+        "id": "1400981201384116244",
+        "author": "socketpuppet",
+        "timestamp": "2025-08-01T19:19:07.382-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5703882332439459
+    },
+    {
+      "text": "which continues to be a mistake but fixing it would break literally every device",
+      "metadata": {
+        "id": "1401594804659294218",
+        "author": "stary2001",
+        "timestamp": "2025-08-03T11:57:21.803-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5694785299829127
+    },
+    {
+      "text": "https://github.com/meshtastic/Meshtastic-arduino\n\nhttps://github.com/meshtastic/i2c-sensor",
+      "metadata": {
+        "id": "1401648765340745887",
+        "author": "nomdetom",
+        "timestamp": "2025-08-03T15:31:47.032-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5686216630732199
+    },
+    {
+      "text": "i guess the solution is just force hardware serial",
+      "metadata": {
+        "id": "1401649880052797470",
+        "author": "stary2001",
+        "timestamp": "2025-08-03T15:36:12.8-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5567223638736657
+    },
+    {
+      "text": "\"Featuring one WisBlock Core slot, two IO slot and six Sensor Slots.\" - The IO is the double part it seems.",
+      "metadata": {
+        "id": "1401656815162363995",
+        "author": "zmalex.",
+        "timestamp": "2025-08-03T16:03:46.259-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5583385406211363
+    },
+    {
+      "text": "That was hashed over extensively in the past. A few other people not in my area built them and the consensus is that it requires the firmware to be modified. If the override in the app can be made to work I'm all for it, I just don't know why it doesn't or how to change that.",
+      "metadata": {
+        "id": "1402292288691896463",
+        "author": "fabbergast",
+        "timestamp": "2025-08-05T10:08:54.955-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5669943732173974
+    },
+    {
+      "text": "Would suggest examining code for devices that currently have that capability",
+      "metadata": {
+        "id": "1402454198867464295",
+        "author": "fabbergast",
+        "timestamp": "2025-08-05T20:52:17.349-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5923481909018509
+    },
+    {
+      "text": "Supposedly, Arduino is going all in on Zephyr as the underlying technology: https://blog.arduino.cc/2025/08/06/updated-arduino-cores-with-zephyros-beta/",
+      "metadata": {
+        "id": "1403011000193519666",
+        "author": "supermath101",
+        "timestamp": "2025-08-07T09:44:49.13-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5513193243244552
+    },
+    {
+      "text": "right. Any examples you can point to? I presume the radio itself is not accessible over a regular UART, so would require an intermediate microcontroller convert UART to SPI?",
+      "metadata": {
+        "id": "1403041957881843952",
+        "author": "rogandawes",
+        "timestamp": "2025-08-07T11:47:50.018-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5653486684014953
+    },
+    {
+      "text": "Interesting. Not a single \"Invalid\" in the log. Finally got it saved now over ble by disable -> set config -> enable. Could not actually change any option over any non-serial transport and plain disable only went through ble. Bizarre. I guess I can't trust the syslog and need to finish the \"esp32 serial port to syslog\" monstrosity.",
+      "metadata": {
+        "id": "1404586546711236669",
+        "author": "jinnatar",
+        "timestamp": "2025-08-11T18:05:28.692-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5675205370189531
+    },
+    {
+      "text": "Fixing one issue on that device caused a second one.",
+      "metadata": {
+        "id": "1405291224339841214",
+        "author": "jonathanbennett",
+        "timestamp": "2025-08-13T16:45:36.931-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5589365901407475
+    },
+    {
+      "text": "dealing with the aftermath of someone releasing not just meshtastic vulnerabilities, but also the tools to do it at defcon",
+      "metadata": {
+        "id": "1405876667431256205",
+        "author": "stary2001",
+        "timestamp": "2025-08-15T07:31:57.441-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5544716104771205
+    },
+    {
+      "text": "Which firmware version is it on? I used to get a lot of config corruption after low voltage excursions, but not had it since the core config and nodedb got split out and some other changes to reduce flash corruption a few versions back..",
+      "metadata": {
+        "id": "1407357545651376250",
+        "author": "prosthetichead2869",
+        "timestamp": "2025-08-19T09:36:26.322-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5706066108770084
+    },
+    {
+      "text": "the patch is not perfect. It also encrypts the Routing messages as well. Hopefully that does not interfere with the NextHop algorithm.",
+      "metadata": {
+        "id": "1407736498576424960",
+        "author": "metala.org",
+        "timestamp": "2025-08-20T10:42:15.74-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5843350998398884
+    },
+    {
+      "text": "Q: Why is esp32Setup() called after I2C sensor detection?\nThe WDG is enabled in esp32Setup(), therefore there is a possibility that a broken I2C driver can crash the device. I might be wrong, though.\n\nEdit. Probably, because you don't know how much time it would take to initialise all I2C devices and GPS, but shouldn't  90s WDG be enough?",
+      "metadata": {
+        "id": "1407768416781209660",
+        "author": "metala.org",
+        "timestamp": "2025-08-20T12:49:05.633-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6158738400100002
+    },
+    {
+      "text": "I2c is enabled twice, because keyboard and display need to be found and configured differently depending on what is detected.",
+      "metadata": {
+        "id": "1407769695972491297",
+        "author": "nomdetom",
+        "timestamp": "2025-08-20T12:54:10.616-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5738750553057841
+    },
+    {
+      "text": "There was an attempt to hack a minimal firmware for it a few years back ... https://github.com/meshtastic/Meshtastic-repeater ... not aware of anything more modern than that",
+      "metadata": {
+        "id": "1408301046593490984",
+        "author": "fifieldt",
+        "timestamp": "2025-08-22T00:05:34.476-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.620957233175619
+    },
+    {
+      "text": "There are some rough edges in the meshtastic firmware around power measurement/deep sleep if you’re using an i2c device to measure power (basically i2c isn’t initialized yet when the firmware checks to see if it should deep sleep) but overall it’s not bad",
+      "metadata": {
+        "id": "1409912282820907088",
+        "author": ".anotherandrew",
+        "timestamp": "2025-08-26T10:48:03.128-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5597945983152977
+    },
+    {
+      "text": "nch](https://github.com/rbreesems/firmware/tree/may2025)  and [supplement utility repo](https://github.com/rbreesems/flamingo).   The RS485 capability is implemented in the firmware using a #conditional that replaces the existing SerialModule code with our RS485 code --  the only setting used from the SerialModule is baud rate. There are only a couple of files outside of the serial module code that need minor modifications to pass packets from the wireless interface to the RS485 interface. Given",
+      "metadata": {
+        "id": "1410285167297167491",
+        "author": "dawgi5126",
+        "timestamp": "2025-08-27T11:29:45.715-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5520609307452178
+    },
+    {
+      "text": "I have only specified package override for platforms I was able to test changes with, so you need to manually alter your `platformio.ini` and add:\n```\nplatform_packages =\n    platformio/framework-arduinoespressif32 @ https://github.com/m1nl/arduino-esp32/archive/refs/tags/2.0.17+5ae9873e.tar.gz ; disable WiFi IRAM optimizations in ESP-IDF\n```",
+      "metadata": {
+        "id": "1411418476039503964",
+        "author": "_m1nl",
+        "timestamp": "2025-08-30T14:33:07.575-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5542821871512607
+    },
+    {
+      "text": "My hardware also only has voltage measurement through the I2C INA219; I haven't looked yet to see if that particular gotcha has been addressed in the firmware since early 2.6.whatever",
+      "metadata": {
+        "id": "1411418947256979566",
+        "author": ".anotherandrew",
+        "timestamp": "2025-08-30T14:34:59.922-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.552556321551267
+    },
+    {
+      "text": "it _should_ 🙂 (btw you may see a link to new release in the patch above as I was trimming the build for ESP32 to resolve overflowed IRAM issue)",
+      "metadata": {
+        "id": "1411427459017998499",
+        "author": "_m1nl",
+        "timestamp": "2025-08-30T15:08:49.284-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5556533584144991
+    },
+    {
+      "text": "it also looks like meshtastic i2c init is occuring earlier in the boot which means my deep sleep stuff should work. Have to put this on the bench supply to test",
+      "metadata": {
+        "id": "1411434205761638511",
+        "author": ".anotherandrew",
+        "timestamp": "2025-08-30T15:35:37.833-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5633082415708807
+    },
+    {
+      "text": "with my old hacked up version of this yes -- basically I had added if the reset cause was brownout, immediate deep sleep. and the periodic check was also looking at I2C which I don't think the stock firmware does at all",
+      "metadata": {
+        "id": "1411466167633182813",
+        "author": ".anotherandrew",
+        "timestamp": "2025-08-30T17:42:38.137-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.591139318274882
+    },
+    {
+      "text": "thx, it looks this happens during radio initialization; I think it's harmless - ISR handler gets installed in the end as device wakes up when IRQ triggers",
+      "metadata": {
+        "id": "1411469881844695251",
+        "author": "_m1nl",
+        "timestamp": "2025-08-30T17:57:23.674-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5584365853321243
+    },
+    {
+      "text": "```DEBUG | ??:??:?? 743 [PowerFSM] State: LS\nDEBUG | ??:??:?? 743 [PowerFSM] Setup radio interrupt (GPIO03) with wakeup by GPIO interrupt``` you're using the same hook I am, I have to check what my code was doing (I'm on the wrong computer for that)",
+      "metadata": {
+        "id": "1411474642627203092",
+        "author": ".anotherandrew",
+        "timestamp": "2025-08-30T18:16:18.733-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5515462581951165
+    },
+    {
+      "text": "```INFO  | ??:??:?? 11 [PowerTelemetry] Power Telemetry: init\nDEBUG | ??:??:?? 25 [PowerFSM] State: LS\nDEBUG | ??:??:?? 25 [PowerFSM] Setup radio interrupt (GPIO03) with wakeup by GPIO interrupt\nDEBUG | ??:??:?? 30 [PowerFSM] Setup radio interrupt (GPIO03) with wakeup by GPIO interrupt\nESP-ROM:esp32c3-api1-20210207\nBuild:Feb  7 2021\nrst:0x10 (RTCWDT_RTC_RST),boot:0xd (SPI_FAST_FLASH_BOOT)\nSPIWP:0xee\nmode:DIO, clock div:1\nload:0x3fcd5810,len:0x438\nload:0x403cc710,len:0x90c\nload:0x403ce710,len:0x2",
+      "metadata": {
+        "id": "1411499598186414150",
+        "author": ".anotherandrew",
+        "timestamp": "2025-08-30T19:55:28.602-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5678283873812013
+    },
+    {
+      "text": "It may be tricky to trigger uart wake-up for c3 since it has usb uart with usb-acm. Not sure if it’s supported by idf.",
+      "metadata": {
+        "id": "1411769993921564673",
+        "author": "_m1nl",
+        "timestamp": "2025-08-31T13:49:55.969-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5651172276535947
+    },
+    {
+      "text": "maybe we could cheat by looking at the value for `TX` and `RX` and seeing if it points to `SOC_TX0` and `SOC_RX0` from near the top of `HardwareSerial.h`",
+      "metadata": {
+        "id": "1411781387257778228",
+        "author": ".anotherandrew",
+        "timestamp": "2025-08-31T14:35:12.352-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5687664948323568
+    },
+    {
+      "text": "3. There's little information on the Serial hardware interface in the docs, how can I tell which hardware supports the protobuf API on physical UART pins (and what those pins are)?",
+      "metadata": {
+        "id": "1413259530690887680",
+        "author": "s__ol",
+        "timestamp": "2025-09-04T16:28:49.209-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.567500224327051
+    },
+    {
+      "text": "4. Would adding an I2C or SPI protobuf interface be a) difficult and b) appreciated? Since i2c is a datagram protocol it seems like a better fit than UART (no need for framing and buffering in application code)",
+      "metadata": {
+        "id": "1413259578753290342",
+        "author": "s__ol",
+        "timestamp": "2025-09-04T16:29:00.668-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5662242804781059
+    },
+    {
+      "text": "SG2 used to leak a few versions ago",
+      "metadata": {
+        "id": "1413347880240156704",
+        "author": "b8b8",
+        "timestamp": "2025-09-04T22:19:53.383-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5659729810832261
+    },
+    {
+      "text": "`` ------ Thread DeviceTelemetry leaked heap 146920 -> 146192 (-728) ------``",
+      "metadata": {
+        "id": "1413585690809077862",
+        "author": "jonathanbennett",
+        "timestamp": "2025-09-05T14:04:51.841-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6038585872308736
+    },
+    {
+      "text": "`` ------ Thread Router leaked heap 147380 -> 146652 (-728) ------``",
+      "metadata": {
+        "id": "1413587195775946873",
+        "author": "jonathanbennett",
+        "timestamp": "2025-09-05T14:10:50.653-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5652259931277569
+    },
+    {
+      "text": "Just as a housekeeping matter we *should* go through and apply that to every existing i2c device so we're getting definitive identification, not just an address match",
+      "metadata": {
+        "id": "1414455323007258644",
+        "author": "nm.patriot",
+        "timestamp": "2025-09-07T23:40:28.314-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5906894333832088
+    },
+    {
+      "text": "The whole project is open source, and while our hardware files aren’t fully up to date, our firmware, app, and data portal are all up on https://gitlab.com/fieldkit",
+      "metadata": {
+        "id": "1414537392488054855",
+        "author": "petekc2bjt",
+        "timestamp": "2025-09-08T05:06:35.203-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5618298755506684
+    },
+    {
+      "text": "There's a compile-time switch that tracks heap usage during run. Capturing a raw log over USB would show a bit more information about what thread is leaking data",
+      "metadata": {
+        "id": "1414646606820540476",
+        "author": "jonathanbennett",
+        "timestamp": "2025-09-08T12:20:33.929-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5641881110234819
+    },
+    {
+      "text": "Just to double check, this is the correct flag and where to place it? The firmware build was successful with 45 \"problems\" but they are just conversion warnings and suggestions by the look of it.",
+      "metadata": {
+        "id": "1414745698741649502",
+        "author": "jackjt8",
+        "timestamp": "2025-09-08T18:54:19.284-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5511093901516404
+    },
+    {
+      "text": "dified preferences to device\nWaiting for an acknowledgment from remote node (this could take a while)\nReceived an implicit ACK. Packet will likely arrive, but cannot be guaranteed.\n\n$ meshtastic --host meshtastic.local --dest '!43b6a270' --get mqtt.map_report_settings.position_precision\nConnected to radio\nRequesting current config from remote node (this can take a while).\n\nmqtt:\nenabled: true\naddress: \"mqtt.meshtastic.org\"\nusername: \"meshdev\"\npassword: \"large4cats\"\nencryption_enabled: true\nroot:",
+      "metadata": {
+        "id": "1415537931992563802",
+        "author": "eigma.",
+        "timestamp": "2025-09-10T23:22:22.41-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5778316372047497
+    },
+    {
+      "text": "If this of interest, let me know, and I can reproduce on a stock firmware and do a proper bug report - just figured that if anyone was working on something close to this and it's not an expected side effect of using something not on the releasedish list, then I could dig.",
+      "metadata": {
+        "id": "1416186855392808981",
+        "author": "cgapeart",
+        "timestamp": "2025-09-12T18:20:57.805-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5519825818253702
+    },
+    {
+      "text": "Q: Have there been any memory leak fixes since 2.7.5?\nI have a coredump (ESP32 w/ 512KB SRAM) for 2.7.5+ modified firmware, that crashes while allocating memory. The modifications I have are not touching anything that relates to dynamic memory.\n\npastebin: https://binki.metala.org/pvnqLS_Vst4XNXs31o2QeQ",
+      "metadata": {
+        "id": "1416188523186360443",
+        "author": "metala.org",
+        "timestamp": "2025-09-12T18:27:35.438-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5514211207085306
+    },
+    {
+      "text": "Interesting issue on a Heltec V3 trying to connect to a custom MQTT server \n```[156100][D][ssl_client.cpp:176] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!\n[156109][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():264]: (-32512) SSL - Memory allocation failed```",
+      "metadata": {
+        "id": "1416473854897029130",
+        "author": "xichampkind",
+        "timestamp": "2025-09-13T13:21:23.819-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5605098730335955
+    },
+    {
+      "text": "Or https://github.com/meshtastic/firmware/tree/develop/variants/esp32c3/heltec_esp32c3 works ok",
+      "metadata": {
+        "id": "1416496686372749342",
+        "author": "nomdetom",
+        "timestamp": "2025-09-13T14:52:07.267-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5649616453057487
+    },
+    {
+      "text": "ah, I didn't realise that.Not even just as a default USB-UART/JTAG interface?",
+      "metadata": {
+        "id": "1416500319705366568",
+        "author": "rogandawes",
+        "timestamp": "2025-09-13T15:06:33.521-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5606682549457057
+    },
+    {
+      "text": "bunch of i2c errors, gonna flash vanilla 2.6.something and see if they're still there",
+      "metadata": {
+        "id": "1416904805774917689",
+        "author": "infered5",
+        "timestamp": "2025-09-14T17:53:50.515-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5661165855461457
+    },
+    {
+      "text": "```DEBUG | ??:??:?? 1 [DeviceUI] Display driver init...\nDEBUG | ??:??:?? 1 [DeviceUI] LGFXDriver<LGFX>::init...\nDEBUG | ??:??:?? 1 [DeviceUI] LGFX init...\n[ 1288][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1\nI2C ERROR : 2\n(((^ it says that 8 more times)))\n[ 1593][E][Wire.cpp:137] setPins(): bus already initialized. change pins only when not.\n[ 1602][W][Wire.cpp:301] begin(): Bus already started in Master Mode.\nDEBUG | ??:??:?? 1 [DeviceUI] DisplayDriver init...\nDEBUG | ??:??:?? 1 [D",
+      "metadata": {
+        "id": "1416905346714177607",
+        "author": "infered5",
+        "timestamp": "2025-09-14T17:55:59.485-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5643845312881881
+    },
+    {
+      "text": "Once you do that, the serial port totally shuts down\n\nmartin@Martin-M3-Mac-Pro MeshBBS % meshtastic --set security.serial_enabled false\nConnected to radio\nSet security.serial_enabled to false\nWriting modified preferences to device\nWriting security configuration to device\nmartin@Martin-M3-Mac-Pro MeshBBS % meshtastic --get security",
+      "metadata": {
+        "id": "1419483505192079441",
+        "author": "martinbogo",
+        "timestamp": "2025-09-21T20:40:40.366-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5752849521995732
+    },
+    {
+      "text": "Do whatever you're comfortable with, but it has been mentioned here a few times there are protection circuits",
+      "metadata": {
+        "id": "1420128189287501894",
+        "author": "b8b8",
+        "timestamp": "2025-09-23T15:22:25.032-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.554882346248603
+    },
+    {
+      "text": "If you think it has value, please feel free to hack on that patch. I will commit to cleaning up any random text that happens to get dumped in there 🙂",
+      "metadata": {
+        "id": "1420707405754400799",
+        "author": "fifieldt",
+        "timestamp": "2025-09-25T05:44:00.999-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5961829419374729
+    },
+    {
+      "text": "What hardware",
+      "metadata": {
+        "id": "1420983096366338138",
+        "author": "b8b8",
+        "timestamp": "2025-09-25T23:59:30.763-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6052124808826292
+    },
+    {
+      "text": "Heap fixes very recently for all hardware",
+      "metadata": {
+        "id": "1420983811071541299",
+        "author": "b8b8",
+        "timestamp": "2025-09-26T00:02:21.162-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5801843198913813
+    },
+    {
+      "text": "@b8b8🇨🇦 which hardware do u recommend for better data reliability?",
+      "metadata": {
+        "id": "1420984322269249556",
+        "author": "glory25",
+        "timestamp": "2025-09-26T00:04:23.041-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5883537381047543
+    },
+    {
+      "text": "we're considering those hardware for future projects",
+      "metadata": {
+        "id": "1420984987749978256",
+        "author": "glory25",
+        "timestamp": "2025-09-26T00:07:01.704-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5653516563192837
+    },
+    {
+      "text": "Reason being if you can predit the packet id you can send it before the node sends it and it becomes a security vuln",
+      "metadata": {
+        "id": "1423484897917403157",
+        "author": "rcgv_",
+        "timestamp": "2025-10-02T21:40:46.734-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.56866541142579
+    },
+    {
+      "text": "looks like 10% might only be for remotely controling devices, 1% for data transmissions\n<https://github.com/meshtastic/firmware/issues/7680>",
+      "metadata": {
+        "id": "1423814690789920948",
+        "author": "bitflp",
+        "timestamp": "2025-10-03T19:31:15.482-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5565567981052237
+    },
+    {
+      "text": "if this doesnt work I'll just bruteforce it a few mhz at a time until it looks nice",
+      "metadata": {
+        "id": "1424118402162626671",
+        "author": "infered5",
+        "timestamp": "2025-10-04T15:38:05.916-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5556781789623874
+    },
+    {
+      "text": "Well it’s going to correctly configure the hardware according to heltec’s claimed tx power curve, but if the hardware isn’t performing up to spec that’s a different problem",
+      "metadata": {
+        "id": "1425516338469797928",
+        "author": "_ndoo",
+        "timestamp": "2025-10-08T12:12:59.904-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5603922242762237
+    },
+    {
+      "text": "', None, 22))\nWARNING file:stream_interface.py __reader line:208 Meshtastic serial port disconnected, disconnecting... ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))\nSet security.admin_key to ['base64:redacted=']\nSet mqtt.address to mqtt.redacted\nSet mqtt.enabled to True\nSet mqtt.encryption_enabled to True\n```",
+      "metadata": {
+        "id": "1425522849384366141",
+        "author": "_ndoo",
+        "timestamp": "2025-10-08T12:38:52.227-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5830167938988877
+    },
+    {
+      "text": "```\nSet mqtt.map_report_settings.position_precision to 15\nSet mqtt.map_reporting_enabled to True\nSet mqtt.password to large4cats\nSet mqtt.proxy_to_client_enabled to False\nSet mqtt.root to msh/MY_919\nSet mqtt.username to meshdev\nWARNING file:stream_interface.py __reader line:208 Meshtastic serial port disconnected, disconnecting... ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))\nSet neighbor_info.enabled to True\nSet neighbor_info.transmit_over_l",
+      "metadata": {
+        "id": "1425524736066322474",
+        "author": "_ndoo",
+        "timestamp": "2025-10-08T12:46:22.047-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5681898111284195
+    },
+    {
+      "text": "it detects if it's USB OTG and tries a watchdog reset (i am assuming that's the CDC peripheral)",
+      "metadata": {
+        "id": "1425850301671280662",
+        "author": "_ndoo",
+        "timestamp": "2025-10-09T10:20:02.936-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5880021168109634
+    },
+    {
+      "text": "something i found since the full tx power has been unleashed is that it tends to cause USB port resets like the EBYTE E22 1W builds do",
+      "metadata": {
+        "id": "1426041246819815574",
+        "author": "_ndoo",
+        "timestamp": "2025-10-09T22:58:47.807-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5660667693618892
+    },
+    {
+      "text": "`git clone https://github.com/meshtastic/firmware.git`",
+      "metadata": {
+        "id": "1426421271054520320",
+        "author": "infered5",
+        "timestamp": "2025-10-11T00:08:52.645-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5708353028650263
+    },
+    {
+      "text": "I turned a rak19003 (4631) into a crude usb-i2c adapter",
+      "metadata": {
+        "id": "1426672118795472916",
+        "author": "infered5",
+        "timestamp": "2025-10-11T16:45:39.407-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5659560182668734
+    },
+    {
+      "text": "and then compile main firmware which should pull the device-ui changes on my machine",
+      "metadata": {
+        "id": "1426678788691066950",
+        "author": "infered5",
+        "timestamp": "2025-10-11T17:12:09.634-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5734264596578315
+    },
+    {
+      "text": "I'm not sure it's myopic to limit the power to the legal limit - but then again I am myopic, so perhaps I can't see it!\n\nFwiw, some of the radios won't just break the law if set too high - they'll actively damage themselves. The manufacturer relies on the application developer (i.e. Meshtastic) to implement software controls. If there was an override switch for users, outside of recompiling, how would you communicate that risk?",
+      "metadata": {
+        "id": "1426998371238809710",
+        "author": "nomdetom",
+        "timestamp": "2025-10-12T14:22:04.051-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.550939085497016
+    },
+    {
+      "text": "I think mikrotik has the right approach here. They expose a setting for \"antenna-gain\" that is used to calculate eirp (and clamp to the regdb limit). \n\nExposing a similar setting in meshtastic would help to ensure people with an 11dbi antenna are not \"accidentally\" exceeding the legal limit. The same setting could also be used for insertion loss. \n\nHiding the setting (hidden command, custom firmware, etc) not only penalizes g2 users but it also makes it too easy for anyone with an 11dbi antenna ",
+      "metadata": {
+        "id": "1427151357340680192",
+        "author": "ajohntitor",
+        "timestamp": "2025-10-13T00:29:58.78-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5524314647591545
+    },
+    {
+      "text": "If you've used BIOS firmware on motherboards you'd know they absolutely allow you to pump crazy unsafe voltages into your hardware.  \n\nThis change is similar to a BIOS developer saying \"you never have any reason to run more than 1.2v to your CPU, because efficiency!!\" when those of us who power our computers and homes on solar power, who dont have an environmental issue, can safely run 1.4v and get higher clock speeds to save us time compressing video files.   To lock it to 1.2v would be ignoran",
+      "metadata": {
+        "id": "1427246925987709008",
+        "author": "actuallyryank",
+        "timestamp": "2025-10-13T06:49:44.121-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5841358715200233
+    },
+    {
+      "text": "what hardware do you have?",
+      "metadata": {
+        "id": "1427917285296705586",
+        "author": "flippityflip",
+        "timestamp": "2025-10-15T03:13:30.235-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5745555919347053
+    },
+    {
+      "text": "There's an unofficial but probably active bounty for anyone who can get the qspi thingie on the xiao to play nicely with this:\nhttps://github.com/meshtastic/firmware/pull/8097",
+      "metadata": {
+        "id": "1428354964463554663",
+        "author": "nomdetom",
+        "timestamp": "2025-10-16T08:12:41.08-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5718664595591308
+    },
+    {
+      "text": "https://meshtastic.org/docs/hardware/devices/",
+      "metadata": {
+        "id": "1428494692378611910",
+        "author": "b8b8",
+        "timestamp": "2025-10-16T17:27:54.811-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5525932501441786
+    },
+    {
+      "text": "I have 2 suggestions, if you want to use this and incorporate it into the main repo:\n1) find an i2c sensor, and add that. I2c sensors are easy to add and daisy chain for everyone.\n2) make a separate module that can be optionally included in a firmware build. The more space-constrained devices should be protected from including modules by default.",
+      "metadata": {
+        "id": "1429089831656488970",
+        "author": "nomdetom",
+        "timestamp": "2025-10-18T08:52:47.072-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5753288668207464
+    },
+    {
+      "text": "also + flash encryption (https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/flash-encryption.html)",
+      "metadata": {
+        "id": "1429523787245813812",
+        "author": "stary2001",
+        "timestamp": "2025-10-19T13:37:10.147-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5560752696865904
+    },
+    {
+      "text": "esp32 is also vulnerable but i think it is slightly harder* than \"grab something off github\"",
+      "metadata": {
+        "id": "1429524699200884839",
+        "author": "stary2001",
+        "timestamp": "2025-10-19T13:40:47.574-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5898757048913864
+    },
+    {
+      "text": "It's to ensure that all the modules and bits save and then boot properly. It's easier to ensure the device state is healthy from a fresh boot",
+      "metadata": {
+        "id": "1429663085467271301",
+        "author": "jasonpiper",
+        "timestamp": "2025-10-19T22:50:41.431-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5513504068145633
+    },
+    {
+      "text": "I was thinking of this: https://documentation.espressif.com/AR2023-007%20Security%20Advisory%20Concerning%20Bypassing%20Secure%20Boot%20and%20Flash%20Encryption%20using%20CPA%20and%20FI%20attack%20on%20ESP32-C3%20and%20ESP32-C6%20EN.pdf\n\nEdit. I found FI SCAs against ESP32, ESP32-V3, ESP32-C3/C6, but I could not find any advisories for ESP32-S3, so I assume it's still not vulnerable.",
+      "metadata": {
+        "id": "1429735754786934885",
+        "author": "metala.org",
+        "timestamp": "2025-10-20T03:39:27.147-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.55783180727758
+    },
+    {
+      "text": "I haven't started working on Secure Boot for Meshtastic. I was looking into it. But when comes to ESP32S3 Secure Boot I have done some work on custom bootloader for a company producing commercial vehicles,.\n\nAbout the ESP32-C3/C6 security advisory, this is a ROM issue/mitigation, afaik. There is nothing I can do.",
+      "metadata": {
+        "id": "1429759183267303435",
+        "author": "metala.org",
+        "timestamp": "2025-10-20T05:12:32.932-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6055020325034149
+    },
+    {
+      "text": "Computational encryption I believe could be handled by hardware’s esp32 I think comes with its own hw encryption but it’s weaker then AES 265 I think. So software is used.",
+      "metadata": {
+        "id": "1429771395575054397",
+        "author": "null_v0id",
+        "timestamp": "2025-10-20T06:01:04.573-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6342721694285085
+    },
+    {
+      "text": "And no matter what you do, it always comes to trust - do you trust the firmware, do you trust the signature, do you trust the key. Who attests that that this key belongs to that person. Do you trust the attesting party? ...",
+      "metadata": {
+        "id": "1429775870007967804",
+        "author": "metala.org",
+        "timestamp": "2025-10-20T06:18:51.361-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.559326127165673
+    },
+    {
+      "text": "I mean trust questionable in any encryption in how the keys are generated. Most are probably compromised at the hardware level by governments.",
+      "metadata": {
+        "id": "1429776252285489233",
+        "author": "null_v0id",
+        "timestamp": "2025-10-20T06:20:22.503-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.6162547716493244
+    },
+    {
+      "text": "True I just mean if the keys are generated on hw the hw only need a known flaw. Unfortunately I’m not a security researcher although it does interest me, sadly I don’t know enough to really talk to much about encryption. Frankly I just live by trust nothing accept everything’s flawed.",
+      "metadata": {
+        "id": "1429777758342352948",
+        "author": "null_v0id",
+        "timestamp": "2025-10-20T06:26:21.575-04:00",
+        "channel": "meshatastic_firmware"
+      },
+      "similarity": 0.5812780678486651
+    }
+  ]
+}

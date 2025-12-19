@@ -1,0 +1,140 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/HardwayHacking_hardware_Jan2025_export.json",
+  "totalMessages": 699,
+  "totalChunks": 702,
+  "relevantMessages": 13,
+  "results": [
+    {
+      "text": "I don't have hardware hacking experience but maybe someone else will feel comfortable answering",
+      "metadata": {
+        "id": "1374838833568415857",
+        "author": "arity0",
+        "timestamp": "2025-05-21T15:58:41.193-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.6590678737444468
+    },
+    {
+      "text": "usup guys, starting now in this hacking world. i am using a mac, and i know its not the best machine for it. i live in brazil, so i am not a rich guy lol. could u guys please recommend a good machine to start ?",
+      "metadata": {
+        "id": "1377699311470514246",
+        "author": "coyoteklz",
+        "timestamp": "2025-05-29T13:25:12.27-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.5581584396112598
+    },
+    {
+      "text": "Most things that you would do in ethical hacking would be fine running on anything more powerful than maybe a raspberry pi",
+      "metadata": {
+        "id": "1377702343394463856",
+        "author": "loredous",
+        "timestamp": "2025-05-29T13:37:15.137-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.6122431828762189
+    },
+    {
+      "text": "https://faq.hackncode.dev/from-power-button-to-pwn-a-roadmap-to-computer-security/",
+      "metadata": {
+        "id": "1377739865285722223",
+        "author": "Carl-bot",
+        "timestamp": "2025-05-29T16:06:21.053-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.6313774867701483
+    },
+    {
+      "text": "could be stolen, could be bought off of ebay, no way of knowing. he is asking how to bypass windows bios/login which smells like against tos. if he has a proof of ownership he may be able to contact the seller or manufacturer for help",
+      "metadata": {
+        "id": "1397579910016401519",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:03:36.327-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.5706569408216243
+    },
+    {
+      "text": "nothing to do here, you're in possession of stolen hardware, you can't unlock it without the company and they very likely want their laptop back don't you think?",
+      "metadata": {
+        "id": "1397583075483062357",
+        "author": "dogwater3301",
+        "timestamp": "2025-07-23T10:16:11.033-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.5546747685399108
+    },
+    {
+      "text": "and keep in mind it is illegal to tamper with electronics that don't belong to you, it depends on what you mean by \"wipe\" and how you do it",
+      "metadata": {
+        "id": "1400968764027179063",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:29:42.085-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.5652796539694288
+    },
+    {
+      "text": "same with changing os or modifying firmware, in fact if it belongs to the school it most likely has a secure boot bios password",
+      "metadata": {
+        "id": "1400969506272051330",
+        "author": "nuclearmaster100",
+        "timestamp": "2025-08-01T18:32:39.05-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.5814194352491008
+    },
+    {
+      "text": "Yes, you're on the right track. Firmware repair typically uses chip programmers (like CH341A) with specialized software and correct firmware images. Your resources are good for learning. With practice, you could become a professional technician.",
+      "metadata": {
+        "id": "1423713892105982074",
+        "author": "the_sapphire_guy",
+        "timestamp": "2025-10-03T12:50:43.203-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.5892569776974975
+    },
+    {
+      "text": "Thank you\n\nActually my hobby is just simple for now - to understand how to defend my laptop XD firmware reflashing is the sort of recovery phase if all defenses fail and a compromise happens",
+      "metadata": {
+        "id": "1423716212877037609",
+        "author": "_cosmicecho",
+        "timestamp": "2025-10-03T12:59:56.518-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.6095207643257935
+    },
+    {
+      "text": "yooo,\n\nSo there's an even deeper form of spyware called hardware implants\n\nBecause it is implanted on the hardware itself, and its probably purely physical\n\nJust buy from the right supplier and manufacturer though it should be almost zero\n\nhttps://www.ghtinc.com/supply-chain-security-addressing-serialization-risks-and-hardware-implants-in-information-security/",
+      "metadata": {
+        "id": "1423725166994657371",
+        "author": "_cosmicecho",
+        "timestamp": "2025-10-03T13:35:31.346-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.6351079368701894
+    },
+    {
+      "text": "To put this in perspective, the chances of having compromised hardware are almost zero. Typically this is going to be something that is specifically targeted towards a device or entity. Most often it will be high-end networking equipment.",
+      "metadata": {
+        "id": "1423725656000299081",
+        "author": "loredous",
+        "timestamp": "2025-10-03T13:37:27.934-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.6707269289245219
+    },
+    {
+      "text": "Best laptop for ethical hacking under 600 usd",
+      "metadata": {
+        "id": "1429954275525660712",
+        "author": "whyme33",
+        "timestamp": "2025-10-20T18:07:46.551-04:00",
+        "channel": "HardwayHacking_hardware"
+      },
+      "similarity": 0.57674949965774
+    }
+  ]
+}

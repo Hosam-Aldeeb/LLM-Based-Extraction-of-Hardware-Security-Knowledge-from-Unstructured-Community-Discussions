@@ -1,0 +1,380 @@
+ECE722 HOMEWORK HELP - ALL MESSAGES (Nov 4-9, 2025)
+Total Messages: 141
+Generated: 11/9/2025, 4:27:53 PM
+
+======================================================================
+
+[11/4/2025] nachiketkapre: A few groups have mysterioiusly low grades. Have you checked what's up?
+
+[11/4/2025] shadow_edwax: where could we check for our grade? I did not see any new commits about our grade.
+
+[11/4/2025] shadow_edwax: the last commit i saw was the one fixing grade_2a.sh 5 days ago
+
+[11/4/2025] nachiketkapre: ?? `grade.csv` in `grading` branch?
+
+[11/4/2025] shadow_edwax: oh, the branch
+
+[11/4/2025] jimmywzp6: The output of lab2q3 is same as golden result, but we got 0/10
+
+[11/4/2025] nachiketkapre: run grader and check again?
+
+[11/4/2025] shadow_edwax: strange
+
+[11/4/2025] shadow_edwax: this is our lab3q3.csv
+
+[11/4/2025] shadow_edwax: and this is golden
+
+[11/4/2025] nachiketkapre: cat the file.. don't use the GUI
+
+[11/4/2025] nachiketkapre: Ok so golden has an extra ,
+
+can you patch csv_grader.py to account for this?
+
+[11/4/2025] nachiketkapre: or better yet just modify your csv generator to put a trailing comma
+
+[11/4/2025] poofypigeon: load bearing superfluous commas + whitespacce
+
+[11/4/2025] jianxiwang: No I think it is because of the extra space after ","
+
+[11/4/2025] jianxiwang: grader read lines based on 4,8 but they have "4, 8"
+
+[11/4/2025] jianxiwang: and grader does not remove white space
+
+[11/4/2025] ovs1203: Are we supposed to change 'DIR=~/ece722-f25/labs-admin/lab2' this path when running the grader across all files?
+
+[11/4/2025] jianxiwang: @Shadow_Edwax you can just remove the extra white space after "," then it should work
+
+[11/4/2025] shadow_edwax: yeah it's the problem of the extra space
+
+[11/4/2025] shadow_edwax: i just removed the space and it passed
+
+[11/4/2025] shadow_edwax: emm...okay...i didn't expect that
+
+[11/4/2025] shadow_edwax: @nachiketkapre so what does that count? we do got the correct numbers for Q3
+
+[11/4/2025] shadow_edwax: can we get a 10/10 for Q3?(i'm in grp 6)
+
+[11/4/2025] nachiketkapre: wait the fix is extra whitespace??
+
+[11/4/2025] shadow_edwax: yeah
+
+[11/4/2025] nachiketkapre: if so, then we should update csv_grader to remove all whitespaces before comparison
+
+[11/4/2025] shadow_edwax: trying to fix that, but seems the server crashed
+
+[11/4/2025] jianxiwang: yes uwing is down
+
+[11/4/2025] nachiketkapre: ugh
+
+[11/4/2025] shadow_edwax: ideally the problem should be fixed if this line is added
+sed -i '1!s/, */,/g' lab2q3.sorted.csv
+
+[11/4/2025] shadow_edwax: but haven't tested yet
+
+[11/4/2025] shadow_edwax: or i could just remove the space in my script when writing the output to the csv file
+
+[11/4/2025] shadow_edwax: i think the extra space might be a reason of other groups having the low grades
+
+[11/4/2025] nachiketkapre: please check server again?
+
+[11/4/2025] shadow_edwax: it's back
+
+[11/4/2025] shadow_edwax: @nachiketkapre this line works
+```sed -i '1!s/, */,/g' lab2q3.sorted.csv```
+
+[11/4/2025] qscgyj830856700: Did anyone encounter this issue while launching Quartus?
+I was trying to follow the manual (altera-impl)
+
+[11/4/2025] nachiketkapre: Did you source env.sh?
+
+[11/4/2025] qscgyj830856700: I did
+
+[11/4/2025] nachiketkapre: git pulled latest?
+
+[11/4/2025] qscgyj830856700: just pulled 😂
+
+[11/4/2025] nachiketkapre: The only time I've seen this is there's a licensing issue
+
+[11/4/2025] jianxiwang: @nachiketkapre somehow today when I try `quartus` it asks for license. Yesterday I was able to run it properly without this
+
+[11/4/2025] nachiketkapre: git pull please -- I've fixed env.sh
+
+[11/4/2025] nachiketkapre: I just tried this and works fine!
+
+  ~/ece7/m/altera-impl on   main ?5 ❯ source env.sh
+  ~/ece7/m/altera-impl on   main ?5 ❯ quartus
+
+Quartus GUI is launched!
+
+[11/4/2025] jianxiwang: ok I can confirm it works
+
+[11/4/2025] qscgyj830856700: same 😥
+
+[11/4/2025] nachiketkapre: Did you ssh -X?
+
+[11/4/2025] qscgyj830856700: Oh I see. It seems not to work in a screen session.
+
+[11/4/2025] qscgyj830856700: Thank you Prof
+
+[11/4/2025] jianxiwang: When I do synthesis I got no license error. however the synth in manual works fine. Anyone face the same issue?
+
+[11/4/2025] jianxiwang: I see the issue @nachiketkapre env.sh for lab also need to be updated
+
+[11/4/2025] qscgyj830856700: Another question: I found some negative slacks on Minimum Pulse Width check in the STA report. 
+Does this mean that the FPGA might malfunction after I upload the bitstream if this issue isn't fixed?
+(due to missing edge or metastability?)
+
+[11/5/2025] nachiketkapre: @here Can I check how far along you’ve come in Lab3?
+
+[11/5/2025] nachiketkapre: Check extract.sh for an example?
+
+[11/5/2025] peepeetee: depression
+
+[11/5/2025] peepeetee: Also didn't sleep
+
+[11/5/2025] peepeetee: but this is a good reminder for me to start
+
+[11/5/2025] peepeetee: uwu
+
+[11/5/2025] peepeetee: hold on, part 1 is just lab2 part 1
+
+[11/5/2025] 741opamp: going to divide up the 128 FAs in the ripple carry adder into chunks of M today
+
+[11/5/2025] jianxiwang: @nachiketkapre I have a feeling that `adder.sdc` file is not properly read from `setup.tcl` as Fmax is not available.
+
+[11/5/2025] nachiketkapre: No it’s fine
+
+[11/5/2025] jianxiwang: emm I think we are supposed to optimize Fmax?
+
+[11/5/2025] nachiketkapre: Yes
+
+[11/5/2025] jianxiwang: but how are we going to optimize fmax if it is missing for rca? I assume it will be NA just for `rca|csa` and not for `rca_pipe|csa_pipe`?
+
+Another question is that for ALM usage are we going to exclude ALMs_VIRTUAL_IO?
+
+[11/5/2025] jianxiwang: Will see if `_pipe` versions can generate fmax
+
+[11/5/2025] 741opamp: fmax is not missing for rca
+
+[11/5/2025] 741opamp: did you register your inputs and outputs?
+
+[11/5/2025] jianxiwang: Ah input register as well
+
+[11/5/2025] jianxiwang: Thx
+
+[11/5/2025] 741opamp: yeah i faced the same issue
+
+[11/5/2025] 741opamp: @nachiketkapre  No license on uwing now?
+
+[11/5/2025] 741opamp: oh nvm
+
+[11/5/2025] 741opamp: wait no
+
+[11/5/2025] 741opamp: i git pulled but env.sh wasnt updated?
+
+[11/5/2025] 741opamp: referring to this ^
+
+[11/5/2025] jianxiwang: just use manual's env.sh for now
+
+[11/5/2025] 741opamp: okay solid
+
+[11/5/2025] 741opamp: thank you coaster jx
+
+[11/5/2025] 741opamp: whaaat @CoasterJX  it failed for me
+
+[11/5/2025] 741opamp: which server are you on?
+
+[11/5/2025] jianxiwang: uwing?
+
+[11/5/2025] jianxiwang: try this:
+
+```
+# export LM_LICENSE_FILE=/zfsspare/opt/Altera/LR-260383_License.dat
+# export PATH=/zfsspare/opt/Altera/altera_pro/25.1.1/quartus/bin:${PATH}
+# export PATH=/usr/local/bin:${PATH}
+# export PATH=/zfsspare/opt/oss-cad-suite/bin/:$PATH
+export LM_LICENSE_FILE=27000@droplet.eng.uwaterloo.ca
+export SALT_LICENSE_FILE=27000@droplet.eng.uwaterloo.ca
+export SALT_LICENSE_SERVER=27000@droplet.eng.uwaterloo.ca
+
+export PATH=/zfsspare/opt/Altera/altera_pro/25.1.1/quartus/bin:${PATH}
+export PATH=/zfsspare/opt/Altera/altera_pro/25.1.1/questa_fse/bin:${PATH}
+export PATH=/usr/local/bin:${PATH}
+export PATH=/zfsspare/opt/oss-cad-suite/bin/:${PATH}
+
+export QUARTUS_ROOTDIR=/zfsspare/opt/Altera/altera_pro/25.1.1/questa_fse/
+```
+
+[11/5/2025] 741opamp: do you see any difference between your env.sh and mine? i just copied it from manuals/altera_impl/env.sh
+
+[11/5/2025] 741opamp: my goat
+
+[11/5/2025] 741opamp: it worked thanks
+
+[11/5/2025] nachiketkapre: are only two kids doing the labs? 😛
+
+[11/5/2025] nachiketkapre: 10 days left 😭
+
+[11/5/2025] nachiketkapre: and so much easier and not buggy as lab2. what gives?
+
+[11/5/2025] jianxiwang: so far no bugs
+
+[11/5/2025] 741opamp: @nachiketkapre  does M refer to how many FAs you want per chunk or does M refer to the number of chunks/pipeline stages you want? 
+
+I assume the latter, 
+so if I say W=128 and M=2, each of the two pipeline stages will be adding up 64 bits and this fits neatly.
+But if I say W=128 and M=3, are we supposed to create three pipeline stages, with the first, second and third responsible for adding up 43, 43 and 42 bits respectively?
+
+[11/5/2025] 741opamp: okay no it looks to be the number of FAs per chunk
+
+[11/5/2025] 741opamp: new vibecoded extract.sh because the old one does not extract the M value after fitter runs for rca_pipe  @nachiketkapre
+
+[11/5/2025] 741opamp: wait wth happened to the file
+
+[11/5/2025] 741opamp: okay fixed
+
+[11/5/2025] bananamilkenjoyer443: To test the module's, you run `make sim DUT=rca` right? (For rca)
+
+I get this error:
+
+```
+% make sim DUT=rca    
+rm -rf sim
+mkdir -p sim/
+verilator -DTESTDIR=\"/home/a7shahba/ece722-f25/labs/grp_20-lab3/data/\" -DTOP= \
+        -CFLAGS \
+        -Itb\
+        -Irtl\
+        --clk clk\
+        --cc rtl/rca.sv\
+        tb/test_adder.sv \
+        --exe /home/a7shahba/ece722-f25/labs/grp_20-lab3/tb/test.cpp \
+        -top-module top \
+        --Mdir sim/ \
+        +define+TOPNAME=rca \
+        +define+M=128
+make: verilator: No such file or directory
+make: *** [Makefile:38: compile] Error 127
+```
+
+[11/5/2025] bananamilkenjoyer443: I did run `source env.sh` too
+
+[11/5/2025] 741opamp: @bananamilkenjoyer443  use this env.sh
+
+[11/5/2025] jianxiwang: @nachiketkapre I assume 1ns frequency constraint is for `_pipe`?  I don't see a possibility of targeting non-pipelined 128-bit rca to 1ns
+
+[11/5/2025] nachiketkapre: Report slack as you see it
+
+[11/5/2025] bilal99u: In part one of the lab, 
+@nachiketkapre says that we need rca.sv to be a 128 bit original adder, but it must have clock for input and output registers for timing analysis "clk is required for both original and pipelined RCA because you must have
+bounding registers for inputs and outputs of your original RCA to capture
+timing"
+then he says "Write
+rtl/rca_pipe.sv using the rtl/rca.sv file as a module and put pipeline
+registers at input and output of the adder + carry every M bits"
+
+if we instantiate 1 rca.sv module for each stage of the pipeline, what happens the input and output registers of rca.sv instance
+
+[11/5/2025] bilal99u: if anyone knows what i am getting wrong about the structure please point out
+
+[11/5/2025] creeperdrop: Yes each instantiaton of rca.sv will instantiate the bounding registers and you have to account for that as part of your pipelining as far as I understand
+
+[11/6/2025] bananamilkenjoyer443: How come my Fmax is N/A?
+
+[11/6/2025] bananamilkenjoyer443: This is for RCA, I ran the sim and passed all the tests
+
+[11/6/2025] bananamilkenjoyer443: I didn't run `make flow DUT=rca` since the `fpga/flow.tcl` file seems to be missing. But this is the make command that seems to be doing the timing
+
+[11/6/2025] 741opamp: ^ @bananamilkenjoyer443
+
+[11/6/2025] nachiketkapre: Make flow is not needed! I don't see it in the README
+
+[11/6/2025] bilal99u: In part one of the lab, 
+@nachiketkapre says that we need rca.sv to be a 128 bit original adder, but it must have clock for input and output registers for timing analysis "clk is required for both original and pipelined RCA because you must have
+bounding registers for inputs and outputs of your original RCA to capture
+timing"
+then he says "Write
+rtl/rca_pipe.sv using the rtl/rca.sv file as a module and put pipeline
+registers at input and output of the adder + carry every M bits"
+
+if we instantiate 1 rca.sv module for each stage of the pipeline, what happens the input and output registers of rca.sv instance
+
+if anyone knows what i am getting wrong about the structure please point out
+
+[11/6/2025] bananamilkenjoyer443: @No forwarding into decode I registered my outputs, but when I register my inputs as well, I end up failing the correctness
+
+[11/6/2025] nachiketkapre: Didn't CreeperDrop answer your question?
+
+[11/6/2025] bilal99u: He did 
+Just wanted to make sure that was correct because that adds a lot of over head 
+Input to input reg then compute then output reg 
+And then pipeline registers between stages
+
+[11/6/2025] bilal99u: Also if possible bring my laptop charger today to class @nachiketkapre 
+🤓
+
+[11/6/2025] nachiketkapre: 10$ storage fee will be charged.
+
+[11/6/2025] nachiketkapre: That's not quite right interpretation of his answer
+
+[11/6/2025] bilal99u: Hst included?
+
+[11/6/2025] 741opamp: you need to rewrite your rtl in that case. Are you asserting out_valid only when the sum is correctly computed?
+
+[11/6/2025] 741opamp: the issue is that when Quartus reports an FMax, it is looking the largest possible time between a value changing in an input register propagating through the design and triggering a change in the output register
+
+[11/6/2025] bananamilkenjoyer443: I'll try tinkering with the RTL. We have to pipeline input and output even for the non pipelined version right?
+
+[11/6/2025] 741opamp: correct
+
+[11/6/2025] bananamilkenjoyer443: Figured it out. Thanks 😁
+
+[11/6/2025] jianxiwang: @nachiketkapre `extract.sh` does not work well with csa. It extracts nothing because this for loop does not run
+
+[11/6/2025] jianxiwang: I got the fix: change line `[[ "$DUT" =~ "^(rca|csa)$" ]] && PATTERN="output_files_$DUT" || PATTERN="output_files_${DUT}_M${M}"` to `[[ "$DUT" =~ "^(rca)$" ]] && PATTERN="output_files_$DUT" || PATTERN="output_files_${DUT}_M${M}"` in `extract.sh`
+
+[11/6/2025] jianxiwang: Since csa need M value
+
+[11/6/2025] jianxiwang: but extraction of M is still not there
+
+[11/6/2025] bananamilkenjoyer443: ^^^ Use this
+
+[11/6/2025] nachiketkapre: Somehow missed this message. Thanks
+
+[11/7/2025] lebronnjamess: i noticed that in one ssh session i can only open the quartus gui once. if i exit and try to open it again i'll get the error someone mentioned earlier:  `zsh: IOT instruction (core dumped)  quartus`
+
+[11/7/2025] 741opamp: Note: this extract.sh will still overwrite the rca_pipe.csv entry everytime it runs. 
+
+So if you run it once for M=10 then run it again for M=8 only the M=8 result will show
+
+[11/7/2025] 741opamp: So when doing the sweep make sure to write the sweep results to another csv
+
+[11/7/2025] nachiketkapre: yes, assembling the final CSV carefully is part of your scripting task
+
+[11/7/2025] n1ko0303: getting the mismatches, eg:
+
+Result 65534:
+  Outputs : s=0x8ba6fa1a47a2c2feec02bb164ccd5cd9, c_out=0
+  Expected: s=0xaa0d13f5e2d85ada738f93fe9134ef8a, c_out=1
+  Result: ERROR - Mismatch!
+is it because of the latency. since the rac must have 1 cycle?
+
+[11/7/2025] n1ko0303: also I have removed the files from the lab3 folder and cloned it again will that cause any issues in the future working on the lab?
+
+[11/7/2025] n1ko0303: uwing already had the lab3 in there with all the files in it, I just removed it and cloned it thought it was the one from the git but seems it had a lot more files in it
+
+[11/7/2025] nachiketkapre: 1. Git-related questions should be searched on Google first.
+2. I have no idea what component you’re checking and under what conditions. But in any case, have you tried to debug you code and how have you done so?
+
+[11/7/2025] lebronnjamess: what is the scope of "reasonable ALM usage"
+
+[11/7/2025] nachiketkapre: That would be telling you the answer 🙂
+
+you should reason about how many ALMs would be strictly necessary for adder implementation.
+
+we will add a small tolerance of around 5-10%
+
+[11/7/2025] lebronnjamess: perfect, thank you 👍
+
+[11/7/2025] 741opamp: Looks like a latency issue to me
+

@@ -1,0 +1,514 @@
+{
+  "channel": "TryHackMe_research",
+  "threadsAnalyzed": 32,
+  "aggregatedFindings": {
+    "vulnerabilities": [
+      "Potential retrieval of encryption keys from TPM with unrestricted hardware access",
+      "Increased attack surface with certain disk-level encryption configurations",
+      "0 click CVE with a 9.8 CVSS score",
+      "Integer overflow leading to DoS attack",
+      "replay attacks in car theft",
+      "UEFI malware (bootkitty)",
+      "invisibleferret malware",
+      "beavertail malware",
+      "Malicious Roblox DLL injectors and scripts",
+      "Distribution of fake malware versions",
+      "Google's OAuth flaw",
+      "Industroyer malware",
+      "Malicious code embedded in DNA",
+      "Exploitation of DNA sequencing software",
+      "fake Fortnite exploit that is actually malware",
+      "Formbook malware",
+      "JavaScript file as a delivery method",
+      "ARP poisoning",
+      "Man-in-the-Middle (MitM) attack",
+      "IoT devices acting like botnets",
+      "Rouge router impersonating legitimate devices",
+      "Potential DDoS attacks from IoT devices",
+      "CVE-2025-24054",
+      "CVE-2025-50154",
+      "exfiltration of git credentials from Argocd",
+      "new vulnerabilities in PQC algorithms",
+      "KyberSlash",
+      "audio exploit",
+      "hardware flaw on iPhone",
+      "NTLM hash leakage via UNC paths in ms-photos URI handler",
+      "Potential for supply chain attacks due to browser redirection",
+      "Bypass of VBS macros blocking in Microsoft Word documents",
+      "LLMNR poisoning for local phishing assessments"
+    ],
+    "techniques": [
+      "Drive-level encryption",
+      "File-level encryption",
+      "Using TPM for disk encryption",
+      "Key management with USB sticks",
+      "PGP for file encryption",
+      "Hosting work desktops on cloud servers",
+      "VPN key management",
+      "Encrypted USB keys",
+      "Developing a Proof of Concept (PoC)",
+      "Reverse engineering the patch",
+      "reverse engineering",
+      "car hacking",
+      "running a node project with obfuscated code",
+      "using fake recruitment to spread malware",
+      "Hacking",
+      "Reverse engineering",
+      "Static analysis",
+      "Disassembling binaries",
+      "Embedding malicious code",
+      "Hacking through DNA sequencing",
+      "forensics",
+      "Malware analysis",
+      "Stealer functionality",
+      "IPv6 Neighbor Discovery spoofing",
+      "ARP requests monitoring",
+      "Disabling UPnP",
+      "Disabling DHCP",
+      "Using Wireshark for network analysis",
+      "Operation Shotgiant",
+      "bypass security patch",
+      "zero-click exploit",
+      "NTLM challenge retrieval",
+      "exfiltration technique",
+      "encryption method",
+      "shellcode execution",
+      "following a TA across the internet",
+      "publishing IOCs",
+      "YARA rules",
+      "PQC (Post-Quantum Cryptography)",
+      "cryptographic agility",
+      "using John the Ripper for password cracking",
+      "unshadowing password files",
+      "Server redirection",
+      "Disabling SMB outbound connections",
+      "LLMNR poisoning",
+      "MOTW bypass",
+      "Burp Suite usage for exploitation",
+      "building an unbreakable antivirus",
+      "analyzing malware",
+      "running Kali Linux on WSL"
+    ],
+    "hardware": [
+      "TPM (Trusted Platform Module)",
+      "Laptops",
+      "USB sticks",
+      "phone",
+      "Christmas lights",
+      "DNA sequencing devices",
+      "ASUS routers",
+      "IoT devices",
+      "Smartphones acting as routers",
+      "Huawei devices",
+      "iPhone",
+      "USB bootable OS",
+      "old laptop"
+    ],
+    "protocols": [
+      "BitLocker",
+      "LUKS",
+      "PKE (Public Key Encryption)",
+      "dot1x",
+      "IPv6",
+      "IPv6 extension headers",
+      "SMB",
+      "DHCP",
+      "UPnP",
+      "ARP",
+      "LLMNR"
+    ]
+  },
+  "detailedAnalyses": [
+    {
+      "vulnerabilities": [],
+      "techniques": [],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation discusses the misconception that installing Linux equates to becoming a hacker, with a mention of trying the Arch Linux distribution."
+    },
+    {
+      "vulnerabilities": [
+        "Potential retrieval of encryption keys from TPM with unrestricted hardware access",
+        "Increased attack surface with certain disk-level encryption configurations"
+      ],
+      "techniques": [
+        "Drive-level encryption",
+        "File-level encryption",
+        "Using TPM for disk encryption",
+        "Key management with USB sticks",
+        "PGP for file encryption",
+        "Hosting work desktops on cloud servers",
+        "VPN key management",
+        "Encrypted USB keys"
+      ],
+      "hardware": [
+        "TPM (Trusted Platform Module)",
+        "Laptops",
+        "USB sticks"
+      ],
+      "protocols": [
+        "BitLocker",
+        "LUKS",
+        "PKE (Public Key Encryption)",
+        "dot1x"
+      ],
+      "summary": "The conversation discusses the differences between file-level and drive-level encryption, emphasizing the importance of protecting data from physical and electronic access. Participants highlight the use of TPM for disk encryption and various key management techniques to enhance security."
+    },
+    {
+      "vulnerabilities": [
+        "0 click CVE with a 9.8 CVSS score",
+        "Integer overflow leading to DoS attack"
+      ],
+      "techniques": [
+        "Developing a Proof of Concept (PoC)",
+        "Reverse engineering the patch"
+      ],
+      "hardware": [],
+      "protocols": [
+        "IPv6",
+        "IPv6 extension headers"
+      ],
+      "summary": "The conversation discusses a high-severity 0 click CVE related to IPv6 that can lead to an integer overflow and DoS attack, along with techniques for developing a PoC and reverse engineering patches."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "reverse engineering"
+      ],
+      "hardware": [
+        "phone"
+      ],
+      "protocols": [],
+      "summary": "A user expresses pride in their friend's blog post about a research project involving the reverse engineering of a phone."
+    },
+    {
+      "vulnerabilities": [
+        "replay attacks in car theft"
+      ],
+      "techniques": [
+        "car hacking"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation discusses the issue of replay attacks in car theft, highlighting its growing relevance and awareness in certain regions."
+    },
+    {
+      "vulnerabilities": [
+        "UEFI malware (bootkitty)",
+        "invisibleferret malware",
+        "beavertail malware"
+      ],
+      "techniques": [
+        "running a node project with obfuscated code",
+        "using fake recruitment to spread malware"
+      ],
+      "hardware": [],
+      "protocols": [
+        "IPv6"
+      ],
+      "summary": "The conversation discusses recent vulnerabilities including UEFI malware and various malware campaigns linked to North Korean threat actors, with a focus on techniques used to spread these threats through fake job recruitment and obfuscated code execution."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [],
+      "hardware": [],
+      "protocols": [],
+      "summary": "User aces1735 shares an analysis of the Akira ransomware and invites feedback."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation mentions a research team's analysis of the Beavertail and InvisibleFerret malware, but does not provide specific details on vulnerabilities, techniques, hardware, or protocols."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "Hacking"
+      ],
+      "hardware": [
+        "Christmas lights"
+      ],
+      "protocols": [],
+      "summary": "The conversation references a former NSA cyberspy who has taken up hacking Christmas lights as a hobby, highlighting a unique application of cybersecurity skills."
+    },
+    {
+      "vulnerabilities": [
+        "Malicious Roblox DLL injectors and scripts",
+        "Distribution of fake malware versions"
+      ],
+      "techniques": [
+        "Reverse engineering",
+        "Static analysis",
+        "Disassembling binaries"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation discusses the analysis of malware, specifically the Solara malware, and the prevalence of malicious scripts in Roblox. Participants share resources for learning reverse engineering and static analysis techniques."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation references an article about violent hackers using U-Haul to dox targets, expressing concern about the frightening nature of such activities."
+    },
+    {
+      "vulnerabilities": [
+        "Google's OAuth flaw"
+      ],
+      "techniques": [],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation discusses a vulnerability related to Google's OAuth, referencing a blog post and a TryHackMe room focused on OAuth vulnerabilities."
+    },
+    {
+      "vulnerabilities": [
+        "Industroyer malware"
+      ],
+      "techniques": [],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation revolves around the user's analysis of the Industroyer malware, seeking feedback on their blog post."
+    },
+    {
+      "vulnerabilities": [
+        "Malicious code embedded in DNA",
+        "Exploitation of DNA sequencing software"
+      ],
+      "techniques": [
+        "Embedding malicious code",
+        "Hacking through DNA sequencing"
+      ],
+      "hardware": [
+        "DNA sequencing devices"
+      ],
+      "protocols": [],
+      "summary": "The conversation references articles discussing vulnerabilities related to embedding malware in DNA to exploit DNA sequencing software."
+    },
+    {
+      "vulnerabilities": [
+        "fake Fortnite exploit that is actually malware"
+      ],
+      "techniques": [
+        "forensics"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation revolves around a malware analysis blog discussing a fake Fortnite exploit. Participants express interest in forensics and provide positive feedback on the blog."
+    },
+    {
+      "vulnerabilities": [
+        "Formbook malware",
+        "JavaScript file as a delivery method"
+      ],
+      "techniques": [
+        "Malware analysis",
+        "Stealer functionality"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation discusses a blog post about the Formbook malware, which is a stealer delivered as a JavaScript file, and requests for the ability to download it."
+    },
+    {
+      "vulnerabilities": [
+        "ARP poisoning",
+        "Man-in-the-Middle (MitM) attack",
+        "IoT devices acting like botnets",
+        "Rouge router impersonating legitimate devices",
+        "Potential DDoS attacks from IoT devices"
+      ],
+      "techniques": [
+        "IPv6 Neighbor Discovery spoofing",
+        "ARP requests monitoring",
+        "Disabling UPnP",
+        "Disabling DHCP",
+        "Using Wireshark for network analysis"
+      ],
+      "hardware": [
+        "ASUS routers",
+        "IoT devices",
+        "Smartphones acting as routers"
+      ],
+      "protocols": [
+        "IPv6",
+        "SMB",
+        "DHCP",
+        "UPnP",
+        "ARP"
+      ],
+      "summary": "The conversation discusses potential security issues related to network vulnerabilities, particularly involving ARP poisoning and MitM attacks. Users share their experiences with IoT devices behaving suspiciously and the implications of IPv6 on network security."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation references a report discussing the overlaps between cybercrime and state-sponsored espionage but does not provide specific vulnerabilities, techniques, hardware, or protocols."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "Operation Shotgiant"
+      ],
+      "hardware": [
+        "Huawei devices"
+      ],
+      "protocols": [],
+      "summary": "The conversation references a YouTube video discussing how the NSA hacked Huawei through a specific operation, but does not detail any specific vulnerabilities or protocols."
+    },
+    {
+      "vulnerabilities": [
+        "CVE-2025-24054",
+        "CVE-2025-50154"
+      ],
+      "techniques": [
+        "bypass security patch",
+        "zero-click exploit",
+        "NTLM challenge retrieval"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation discusses a method to bypass a Microsoft security patch related to NTLM challenges, highlighting a zero-click exploit."
+    },
+    {
+      "vulnerabilities": [
+        "exfiltration of git credentials from Argocd"
+      ],
+      "techniques": [
+        "exfiltration technique"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation discusses a technique for exfiltrating git credentials from Argocd, referencing a specific article for details."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "encryption method",
+        "shellcode execution"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation revolves around a method of encryption discussed by a user, with a link to a GitHub repository related to malware development."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "following a TA across the internet",
+        "publishing IOCs",
+        "YARA rules"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "DeTraced Security completed their second engagement, focusing on tracking a threat actor online and publishing related blog posts and detection rules."
+    },
+    {
+      "vulnerabilities": [
+        "new vulnerabilities in PQC algorithms",
+        "KyberSlash"
+      ],
+      "techniques": [
+        "PQC (Post-Quantum Cryptography)"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation discusses the challenges and risks associated with upgrading existing systems to Post-Quantum Cryptography (PQC), highlighting the potential for new vulnerabilities as algorithms are still new."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "cryptographic agility"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation discusses the migration to post-quantum cryptography and the concept of cryptographic agility, referencing NIST documentation and relevant research papers."
+    },
+    {
+      "vulnerabilities": [
+        "audio exploit",
+        "hardware flaw on iPhone"
+      ],
+      "techniques": [
+        "reverse engineering"
+      ],
+      "hardware": [
+        "iPhone"
+      ],
+      "protocols": [],
+      "summary": "User atlien404_92168 discusses a vulnerability report regarding an audio exploit and a potential hardware flaw on the iPhone, which led to emergency patches from Apple after being reported to Google's research team."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "using John the Ripper for password cracking",
+        "unshadowing password files"
+      ],
+      "hardware": [
+        "USB bootable OS"
+      ],
+      "protocols": [],
+      "summary": "The conversation revolves around a user trying to crack their Kali Linux password using John the Ripper but encountering issues with loading password hashes. They discuss the correct format for using yescrypt in John."
+    },
+    {
+      "vulnerabilities": [
+        "NTLM hash leakage via UNC paths in ms-photos URI handler",
+        "Potential for supply chain attacks due to browser redirection"
+      ],
+      "techniques": [
+        "Server redirection",
+        "Disabling SMB outbound connections"
+      ],
+      "hardware": [],
+      "protocols": [
+        "SMB"
+      ],
+      "summary": "The conversation discusses a vulnerability in the ms-photos URI handler that allows NTLM hash leakage through UNC paths, which could lead to supply chain attacks. A patch has been released by Microsoft, and a remediation step suggested is to disable SMB outbound connections."
+    },
+    {
+      "vulnerabilities": [
+        "Bypass of VBS macros blocking in Microsoft Word documents",
+        "LLMNR poisoning for local phishing assessments"
+      ],
+      "techniques": [
+        "LLMNR poisoning",
+        "MOTW bypass",
+        "Burp Suite usage for exploitation"
+      ],
+      "hardware": [],
+      "protocols": [
+        "LLMNR"
+      ],
+      "summary": "The conversation discusses a method to bypass Microsoft's VBS macro blocking in Word documents using LLMNR poisoning, highlighting a vulnerability that Microsoft has not patched. Participants also touch on the Mark of the Web (MOTW) bypass and tools like Burp Suite."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "building an unbreakable antivirus",
+        "analyzing malware"
+      ],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The user is planning to build an unbreakable antivirus and is seeking data about common malware to understand the challenges in making it impossible to breach."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [],
+      "hardware": [],
+      "protocols": [],
+      "summary": "User is seeking ideas for a final year project in cybersecurity, mentioning their background and skills."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "running Kali Linux on WSL"
+      ],
+      "hardware": [
+        "old laptop"
+      ],
+      "protocols": [],
+      "summary": "The conversation discusses the feasibility of using WSL for hacking on an old laptop with limited ports, specifically mentioning the absence of a CD slot."
+    }
+  ]
+}

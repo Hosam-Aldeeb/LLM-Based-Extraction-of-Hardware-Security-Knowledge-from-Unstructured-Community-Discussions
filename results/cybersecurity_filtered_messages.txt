@@ -1,0 +1,1905 @@
+[1] Similarity: 0.651 | penpengu | 2/3/2025
+https://docs.arduino.cc/retired/hacking/software/Bootloader/
+======================================================================
+
+[2] Similarity: 0.641 | robherc | 1/21/2025
+looks like a JTAG/SWD programmer (i.e. USB->UART bridge). What are you needing to use it for specifically?
+======================================================================
+
+[3] Similarity: 0.618 | neelpuntambekar | 9/25/2025
+@corrupt what tutorial are you following, i also want to get into microcontrolers and hardware
+======================================================================
+
+[4] Similarity: 0.613 | tuulikauri | 9/9/2025
+Go back to your cybersec prof and tell her that the assignment was a success, you have tested the cybersec levels of the volunteer arduino server and discovered it to be quite resilient to social engineering 😄
+======================================================================
+
+[5] Similarity: 0.612 | anonengineering | 9/1/2025
+test with those examples first, narrow down whether the issue is hardware or software
+======================================================================
+
+[6] Similarity: 0.612 | warden_was_here | 10/10/2025
+Scanning...
+I2C device found at address 0x3C  !
+done
+======================================================================
+
+[7] Similarity: 0.611 | .zfk | 3/5/2025
+le/unusable) the hardware, like timers, in such a way that if I decided I want to commandeer and use all the HW resources for my own app, that arduino's helpers might stop functioning correctly? If so, how can I know which resources I should NOT touch?
+======================================================================
+
+[8] Similarity: 0.608 | anonengineering | 1/18/2025
+i think it's more hardware dependant, V1 / V2 of the shield
+======================================================================
+
+[9] Similarity: 0.608 | .pseud0 | 8/23/2025
+Says `No I2C devices found` with the I2C scanner sketch?
+======================================================================
+
+[10] Similarity: 0.607 | mercury_woman | 10/18/2025
+I2C Scanner for STM32 Nucleo-F303K8
+Scanning I2C bus...
+I2C device found at 0x3C
+Scan complete.
+======================================================================
+
+[11] Similarity: 0.606 | stekim | 2/15/2025
+```
+
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_Sensor.h>
+#include "Adafruit_BMP3XX.h"
+
+#define BMP_SCK 13
+#define BMP_MISO 12
+#define BMP_MOSI 11
+#define BMP_CS 10
+
+#define SEALEVELPRESSURE_HPA (1013.25)
+
+Adafruit_BMP3XX bmp;
+
+void setup() {
+  Serial.begin(115200);
+  while (!Serial);
+  Serial.println("Adafruit BMP388 / BMP390 test");
+
+  if (!bmp.begin_I2C()) {   // hardware I2C mode, can pass in address & alt Wire
+  //if (! bmp.begin_SPI(BMP_CS)) {  // hardware SPI mode  
+  //if (! b
+======================================================================
+
+[12] Similarity: 0.606 | anonengineering | 5/12/2025
+from what you've said it might be hardware, or a code issue
+this test will tell which it is
+======================================================================
+
+[13] Similarity: 0.605 | stekim | 2/15/2025
+```ino
+
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_Sensor.h>
+#include "Adafruit_BMP3XX.h"
+
+#define BMP_SCK 13
+#define BMP_MISO 12
+#define BMP_MOSI 11
+#define BMP_CS 10
+
+#define SEALEVELPRESSURE_HPA (1013.25)
+
+Adafruit_BMP3XX bmp;
+
+void setup() {
+  Serial.begin(115200);
+  while (!Serial);
+  Serial.println("Adafruit BMP388 / BMP390 test");
+
+  if (!bmp.begin_I2C()) {   // hardware I2C mode, can pass in address & alt Wire
+  //if (! bmp.begin_SPI(BMP_CS)) {  // hardware SPI mode  
+  //if (
+======================================================================
+
+[14] Similarity: 0.602 | hideolee | 2/16/2025
+hello, and i encountered this while wanting to flashing my esp-01s with new firmware
+is Jason2866's esp flasher malware?
+======================================================================
+
+[15] Similarity: 0.600 | anonengineering | 1/2/2025
+but first, you need to get the hardware working, no amount of code will fix hardware issues
+======================================================================
+
+[16] Similarity: 0.600 | robherc | 6/1/2025
+Are you using hardware i2c, or bit-banging it for software i2c?
+======================================================================
+
+[17] Similarity: 0.600 | anonengineering | 3/21/2025
+once the hardware works then wrangle with the JSON 😉
+======================================================================
+
+[18] Similarity: 0.599 | sonixaep | 3/30/2025
+```
+USB Mouse to PC Bridge
+Initializing...
+USB Host Shield initialized successfully
+Reading MAX3421E revision register...
+MAX3421E chip revision: 0xFF
+Error: Cannot read MAX3421E chip revision.
+Check SPI connections and SS pin.
+```
+======================================================================
+
+[19] Similarity: 0.598 | toph2814 | 8/7/2025
+this may be helpful @Hacking Notes → https://rumble.com/v32bzqw-how-to-connect-arduino-uno-and-mh-et-live-scanner-v3-barcode-qr-code-module.html 😉
+======================================================================
+
+[20] Similarity: 0.598 | mycydric7 | 2/7/2025
+Is this a hardware damage? (I hope not, 😭 i need data collection for my thing and we have a final defense next week)
+======================================================================
+
+[21] Similarity: 0.598 | robherc | 2/7/2025
+interesting. I'm actually, if mainly for the hilarity of it, considering breaking out the flashing UART pins through the digital isolator on my board, so the on-board ATtiny1604 slave MCU can function as a bridge to program the ARM M0 MSPM0G1505 main mcu, lmao.
+======================================================================
+
+[22] Similarity: 0.597 | robherc | 2/16/2025
+& both I2C & SPI are well supported in hardware....SSI, I'm not even sure what that is (besides Server Side Includes for web/networking stuff)
+======================================================================
+
+[23] Similarity: 0.597 | m_a_v_e_r_i_c_k | 8/22/2025
+Have you scanned for devices on the i2c bus? @Elyk
+======================================================================
+
+[24] Similarity: 0.597 | tuulikauri | 8/25/2025
+Just find some sample library code to test the hardware. Dont use code from ChatGPT, it's usually wrong.
+======================================================================
+
+[25] Similarity: 0.597 | aaravthagoat | 9/11/2025
+1.    Wrong constructor → you used Software SPI, should use Hardware SPI on Uno.
+    2.    Text size → setTextSize(0) (invalid, must be ≥1).
+    3.    Init tab → INITR_BLACKTAB might not match your display (try REDTAB if distorted).
+    4.    Wiring check → make sure DC and RST aren’t swapped.
+======================================================================
+
+[26] Similarity: 0.597 | .pseud0 | 10/26/2025
+A good USB hub should include overcurrent and overvoltage protection, so if your Arduino goes bad, it'll at least not damage the USB port, but the Arduino can still happily fry with the maximum allowed current.
+======================================================================
+
+[27] Similarity: 0.595 | thekoy0 | 10/12/2025
+so maybe it rlly is a hardware issue but howwwwwwwwwwww
+======================================================================
+
+[28] Similarity: 0.595 | kaito2112 | 10/1/2025
+#general-help is always a safe bet, but if you suspect the problem is code, then ask in #coding-help . If you suspect it's hardware related, ask in #hardware-help . There's also thread channels if you prefer those
+======================================================================
+
+[29] Similarity: 0.594 | tuulikauri | 8/4/2025
+You can also troubleshoot the I2C connection by running the generic I2C examples
+======================================================================
+
+[30] Similarity: 0.593 | toph2814 | 8/23/2025
+HID compliance is the path of least compliance since you just plug your device into a USB port & it will be recognized accordingly...
+🤓 👉 naturally you can always write a program sitting on a PC that waits for serial messages *(similar to how Arduino IDE's Serial Monitor allows you to send & receive data from an Arduino's sketch)*
+======================================================================
+
+[31] Similarity: 0.593 | robherc | 4/5/2025
+they won't know how to fight me when I low-lvl hack their digital doorlocks :evilElmo:
+======================================================================
+
+[32] Similarity: 0.593 | anonengineering | 3/31/2025
+could be a loose wire, or anything, code or hardware
+did you run your testSegments?
+======================================================================
+
+[33] Similarity: 0.592 | .pseud0 | 8/23/2025
+You can also run the I2C scanner sketch <https://playground.arduino.cc/Main/I2cScanner/> to check if the PCA9685 is detected at all
+======================================================================
+
+[34] Similarity: 0.591 | toph2814 | 4/21/2025
+*(naturally, understanding basic electronics & being careful can prevent such issues)*
+======================================================================
+
+[35] Similarity: 0.591 | lemonchickengrassgronkwisedonkey | 8/25/2025
+does anyone knows any hacks or workarounds?
+======================================================================
+
+[36] Similarity: 0.591 | kaito2112 | 10/2/2025
+What piece of hardware are you using?
+======================================================================
+
+[37] Similarity: 0.590 | stekim | 2/15/2025
+'''
+#include <Wire.h>
+#include <SPI.h>
+#include <Adafruit_Sensor.h>
+#include "Adafruit_BMP3XX.h"
+
+#define BMP_SCK 13
+#define BMP_MISO 12
+#define BMP_MOSI 11
+#define BMP_CS 10
+
+#define SEALEVELPRESSURE_HPA (1013.25)
+
+Adafruit_BMP3XX bmp;
+
+void setup() {
+  Serial.begin(115200);
+  while (!Serial);
+  Serial.println("Adafruit BMP388 / BMP390 test");
+
+  if (!bmp.begin_I2C()) {   // hardware I2C mode, can pass in address & alt Wire
+  //if (! bmp.begin_SPI(BMP_CS)) {  // hardware SPI mode  
+  //if (! bm
+======================================================================
+
+[38] Similarity: 0.590 | anonengineering | 5/10/2025
+once you have the hardware correct then you can experiment with different code / libraries
+======================================================================
+
+[39] Similarity: 0.589 | theepicgamerchef | 3/6/2025
+is this a coding or hardware problem?
+======================================================================
+
+[40] Similarity: 0.589 | anonengineering | 4/14/2025
+this will show if it is a code or a hardware problem
+======================================================================
+
+[41] Similarity: 0.589 | tuulikauri | 8/1/2025
+It IS fairly advanced / risky - if you do it wrong, you can permanently brick your device.
+======================================================================
+
+[42] Similarity: 0.589 | skyy.woof | 11/1/2025
+and *yet* if i use an i2c scanner example, all of my sensors' addresses appear
+======================================================================
+
+[43] Similarity: 0.588 | eeve_11 | 2/26/2025
+could you guide me for the hardware bit
+======================================================================
+
+[44] Similarity: 0.587 | _bonkman_ | 7/17/2025
+(the pcb is basically an arduino uno shield)
+======================================================================
+
+[45] Similarity: 0.587 | toph2814 | 10/19/2025
+understand that to be plug & play with most modern operating systems *(Windows, Linux, Android, MacOS, iOs)*  the USB device has to be `HID`-compliant *(`H`uman `I`nterface `D`evice ~a standard)* ...
+🤓 unlike a *Leonardo (or other HID compliant microcontroller development boards like the Pro Micro, RP2040-based ones, & ESP32s)*, an *Arduino UNO*  is not... so you'll need software running on the operating system side to take the serial information from it to simulate keystrokes.
+======================================================================
+
+[46] Similarity: 0.586 | .pseud0 | 4/9/2025
+next they'll manage to crack the Linux activation screen
+======================================================================
+
+[47] Similarity: 0.586 | ratirl._. | 4/17/2025
+How can i find out why a sensor is not working? I tested all the pins on my board they work totally fine so how can i find out why its fucking up? When doing a scan it does show the i2c address off the sensor but when loading the example it just tells me to go fuck myself
+======================================================================
+
+[48] Similarity: 0.586 | robherc | 1/30/2025
+it found an I2C device. The device identified itself on address 0x68 as a "74" ... do you have a datasheet for your mpu9250? check to see if its WHO_AM_I response is supposed to be "74"
+======================================================================
+
+[49] Similarity: 0.586 | estebanlafo | 10/22/2025
+Ah, well idk abt that, unfortunately I haven’t deal w those sensors but I can give you advice be 100% sure its not hardware (wire-wise) but other then that it’s strongly probable that it’s bc of your code structure, arduino reads code line by line, if you have BLE activation in an if or à braquet could also be a possibility
+======================================================================
+
+[50] Similarity: 0.586 | m_a_v_e_r_i_c_k | 7/14/2025
+What is the hardware?
+======================================================================
+
+[51] Similarity: 0.585 | talkzy | 2/5/2025
+im conviced iot has to be a fault with the component itself
+======================================================================
+
+[52] Similarity: 0.585 | dragonkingsw | 4/16/2025
+i dont know if its hardware or code problem
+======================================================================
+
+[53] Similarity: 0.585 | .damien_ | 4/9/2025
+Gotcha. So how can I protect my system?
+======================================================================
+
+[54] Similarity: 0.585 | toph2814 | 10/27/2025
+🔎 https://docs.arduino.cc/retired/shields/arduino-usb-host-shield/
+======================================================================
+
+[55] Similarity: 0.584 | damarggxantares_ | 9/3/2025
+Wait I asked ChatGPT about it and he said you could generate I2C signals with a shift register
+======================================================================
+
+[56] Similarity: 0.584 | zkeewe | 10/22/2025
+```
+#include <HardwareBLESerial.h>
+
+HardwareBLESerial &bleSerial = HardwareBLESerial::getInstance();
+
+int triggerPin = 18;
+int echoPin = 19;
+float d = 0.0;
+int duration, distance;
+
+void setup () {
+    Serial.begin(9600);  // We initialize serial connection so that we could print values from sensor.
+
+  pinMode(triggerPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+
+  if (!bleSerial.beginAndSetupBLE("DetecteurArduino")) {
+    while (true) {
+      Serial.println("failed to initialize HardwareBLESerial!");
+======================================================================
+
+[57] Similarity: 0.584 | skyy.woof | 11/1/2025
+(and yes i tried software i2c as well, it *still* fails)
+======================================================================
+
+[58] Similarity: 0.584 | .pseud0 | 9/12/2025
+The DebugProbe acts like a CMSIS-DAP (debug access protocol), so it's not only good for RP2040, but also RP2350 and lots of other ARM based chips like STM32, nRF52, ...
+======================================================================
+
+[59] Similarity: 0.583 | klevi_ | 2/21/2025
+Or just the load is great enough to trigger some protection circuits either in the Arduino or the laptop.  This can damage both of them
+- What is the power consumption of your bigger servo? And how much current can USB2.0 and the UNO provide? You will find the problem there 99% sure
+======================================================================
+
+[60] Similarity: 0.583 | atsom_. | 3/21/2025
+```arduino
+#include <ArduinoJson.h>
+#include <ArduinoJson.hpp>
+#include <HTTPClient.h>
+#include <WiFi.h>
+#include <WiFiAP.h>
+#include <WiFiClient.h>
+#include <Wire.h>
+#include <WiFiGeneric.h>
+#include <WiFiMulti.h>
+#include <WiFiSTA.h>
+#include <WiFiScan.h>
+#include <WiFiServer.h>
+#include <WiFiType.h>
+#include <WiFiUdp.h>
+#include <Arduino.h>
+#include <U8g2lib.h>
+
+#ifdef U8X8_HAVE_HW_SPI
+#include <SPI.h>
+#endif
+#ifdef U8X8_HAVE_HW_I2C
+#include <Wire.h>
+#endif
+
+U8G2_ST7920_128X64_1_SW_SPI u8g2(U
+======================================================================
+
+[61] Similarity: 0.583 | .pseud0 | 8/5/2025
+either that or it's some Antivirus scanning every fricking compiler invocation
+======================================================================
+
+[62] Similarity: 0.582 | aaravthagoat | 9/11/2025
+So it’s an hardware issue
+======================================================================
+
+[63] Similarity: 0.582 | elykboi | 8/27/2025
+That's just not true. If that were the case cheaters could just get on Linux and bypass all the protections
+======================================================================
+
+[64] Similarity: 0.582 | _h3xagon_ | 8/16/2025
+where can I find a more in depth explanation on the hardware reason?
+======================================================================
+
+[65] Similarity: 0.582 | .pseud0 | 5/30/2025
+y 31 01:59:02 2025 CEST
+gpg:                using RSA key DE5CC440A1571670AB6DB7C524A26BAD7F294291
+gpg: Good signature from "Arduino LLC <support@arduino.cc>" [unknown]
+```
+======================================================================
+
+[66] Similarity: 0.582 | penpengu | 1/2/2025
+https://docs.arduino.cc/hardware/mega-2560/
+======================================================================
+
+[67] Similarity: 0.582 | cmrsherpderp | 1/4/2025
+Its very hard to miswire I2c, which it seems like you are using
+======================================================================
+
+[68] Similarity: 0.582 | toph2814 | 7/24/2025
+*(aka the "firmware")*
+======================================================================
+
+[69] Similarity: 0.582 | van059349 | 3/17/2025
+The code? I was under impression that its more of hardware issue, like expose wires shorting
+======================================================================
+
+[70] Similarity: 0.582 | m_a_v_e_r_i_c_k | 2/9/2025
+It may have been bricked by the driver?
+Apparently the manufacturer released drivers that intentionally brick counterfeit chips.
+I would switch back to the Arduino Uno selection in the IDE since the Nano old bootloader option didn't help anything.
+If the chip is counterfeit and was bricked by the driver, i'm not sure what solution there is.
+======================================================================
+
+[71] Similarity: 0.581 | darwinwaswrong | 1/1/2025
+@2High
+```
+// For the Adafruit shield, these are the default.
+#define TFT_CLK 13
+#define TFT_MISO 12
+#define TFT_MOSI 11
+#define TFT_DC 9
+#define TFT_CS 10
+#define TFT_RST 8
+// Use hardware SPI (on Uno, #13, #12, #11) and the above for CS/DC
+//Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC);
+// If using the breakout, change pins as desired
+Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_RST, TFT_MISO);```
+======================================================================
+
+[72] Similarity: 0.580 | anonengineering | 3/6/2025
+could be, write very simple code to test each piece of hardware to get the wiring straight first
+======================================================================
+
+[73] Similarity: 0.580 | anonengineering | 3/17/2025
+never played with it myself but this example implies you can at least encrypt the data <https://github.com/arduino-libraries/ArduinoBLE/blob/master/examples/Peripheral/EncryptedBatteryMonitor/EncryptedBatteryMonitor.ino>
+======================================================================
+
+[74] Similarity: 0.580 | robherc | 2/23/2025
+(the chip that makes arduinos, microwaves, computer peripherals, cars, smart-lights, ..... work)
+======================================================================
+
+[75] Similarity: 0.580 | _bonkman_ | 7/17/2025
+@DaDev idk how but i left the transmitter drawing current from the uno for like 18+ hours accidentally, and the ftdi was still working then as i uploaded the code fine, does the ftdi has an internal security system that shuts it down when its overheating?
+======================================================================
+
+[76] Similarity: 0.580 | gamerman12334_40091 | 2/16/2025
+Post ur project in hardware or coding help ig
+======================================================================
+
+[77] Similarity: 0.580 | streammovieyt | 8/11/2025
+which ai should i use when i have problems with i2c communication?
+======================================================================
+
+[78] Similarity: 0.580 | futureswathlete | 3/25/2025
+and that i'm guessing can cause the device to explode in some cases
+======================================================================
+
+[79] Similarity: 0.580 | electroshenu | 8/14/2025
+I2C transaction unexpected nack detected means that an I2C device did not acknowledge a transmitted byte
+======================================================================
+
+[80] Similarity: 0.579 | .pseud0 | 8/23/2025
+```cpp
+
+#include <Wire.h>
+ 
+ 
+void setup()
+{
+  Wire.begin();
+ 
+  Serial.begin(9600);
+  while (!Serial);             // Leonardo: wait for serial monitor
+  Serial.println("\nI2C Scanner");
+}
+ 
+ 
+void loop()
+{
+  byte error, address;
+  int nDevices;
+ 
+  Serial.println("Scanning...");
+ 
+  nDevices = 0;
+  for(address = 1; address < 127; address++ )
+  {
+    // The i2c_scanner uses the return value of
+    // the Write.endTransmisstion to see if
+    // a device did acknowledge to the address.
+    Wire.b
+======================================================================
+
+[81] Similarity: 0.579 | bens4 | 2/18/2025
+yep spoofing a sensor output
+======================================================================
+
+[82] Similarity: 0.579 | kaito2112 | 10/23/2025
+You'll need a microcontroller capable of HID (human interface device).
+======================================================================
+
+[83] Similarity: 0.578 | .pseud0 | 9/8/2025
+very interesting! There was some uproar some time ago about drivers bricking fake FTDI chips
+======================================================================
+
+[84] Similarity: 0.578 | akithmari | 1/7/2025
+here's the current schematic if i decided to use esp32. i need more pin for photodiodes for detecting if someone steal the device. but then i realised esp8266 doesn't have enough pin.
+======================================================================
+
+[85] Similarity: 0.578 | th3mememaster | 7/24/2025
+```
+#include <Keyboard.h>
+
+const int openPin = 2;
+const int closePin = 3;
+const int relayPin = 5;
+
+bool openPressed = false;
+bool closePressed = false;
+
+void setup() {
+  pinMode(openPin, INPUT_PULLUP);
+  pinMode(closePin, INPUT_PULLUP);
+  pinMode(relayPin, OUTPUT);
+  digitalWrite(relayPin, LOW);  // Start with relay OFF
+  Keyboard.begin();
+}
+
+void loop() {
+  // ALARM: Triggered by pin 2
+  if (digitalRead(openPin) == LOW && !openPressed) {
+    openPressed = true;
+
+    // Turn relay ON
+    digital
+======================================================================
+
+[86] Similarity: 0.578 | m4this50 | 9/14/2025
+And it is detected as an Esp32 family device by the IDE
+======================================================================
+
+[87] Similarity: 0.578 | tristandnfv | 9/3/2025
+If i really did something wrong, protection will kick in. I have PTCs, current limited buck, Android & USB checks for shorts, PD charging, none of this seems to be wrong
+======================================================================
+
+[88] Similarity: 0.578 | toph2814 | 7/24/2025
+*(electronics + programming -wise)*
+======================================================================
+
+[89] Similarity: 0.577 | .pseud0 | 10/30/2025
+If you can get a UART connection to the Boot UART (aka TXD0 RXD0) and a way to reset the chip ito bootloader (usually via EN and IO0), then you can flash via UART.
+======================================================================
+
+[90] Similarity: 0.577 | sangyuu | 2/22/2025
+the shield is connected to a different battery, i removed the pwr jmpr so that the arduino wont get too much voltage, i also tried switching cables, it still wasnt detected
+======================================================================
+
+[91] Similarity: 0.577 | .pseud0 | 8/22/2025
+USBKeyboard.h is a builtin library of the Arduino core. (<https://github.com/arduino/ArduinoCore-mbed/blob/main/libraries/USBHID/src/USBKeyboard.h>).
+======================================================================
+
+[92] Similarity: 0.577 | _redki1ler5275 | 1/30/2025
+```Searching for i2c devices...
+Found 1 I2C devices
+I2C addresses are: 0x68 
+I2C address 0x68 is not MPU series
+WHO_AM_I is 74
+Please use correct device
+AK8963 (Magnetometer) was not found```
+======================================================================
+
+[93] Similarity: 0.576 | darwinwaswrong | 5/28/2025
+https://www.hackster.io/mircemk/diy-fft-audio-spectrum-analyzer-ca2926
+======================================================================
+
+[94] Similarity: 0.576 | m_a_v_e_r_i_c_k | 3/7/2025
+What hardware are you using to drive it?
+======================================================================
+
+[95] Similarity: 0.576 | _wee_gee_ | 3/10/2025
+(or, you can just slow the I2C down until it works 'goodenuf')
+======================================================================
+
+[96] Similarity: 0.576 | toph2814 | 9/11/2025
+the firmware I mentioned... has the code that handles translating keypresses to HID information for your host PC or device
+======================================================================
+
+[97] Similarity: 0.576 | klevi_ | 1/31/2025
+@queexy you can try uploading an I2C scanner code. But probably the backlight turning on means that it's at least half working. Weird
+Something like this:
+======================================================================
+
+[98] Similarity: 0.575 | _wee_gee_ | 6/3/2025
+those are hardware registers you can read about in the [microcontroller's datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf) (if you're using an Arduino like an Uno or Nano that have an ATMEGA328p)
+======================================================================
+
+[99] Similarity: 0.575 | aaravthagoat | 9/24/2025
+An antivirus or security software might be blocking the install if your installing the correct driver
+======================================================================
+
+[100] Similarity: 0.575 | fastbeluga._18348 | 1/2/2025
+hardware might be working >>>
+======================================================================
+
+[101] Similarity: 0.575 | .pseud0 | 9/19/2025
+the C6 doesn't have reprogrammable USB, it's a fixed function USB serial / JTAG controller
+======================================================================
+
+[102] Similarity: 0.575 | tuulikauri | 10/27/2025
+Run the I2C scanner example code. It will tell you if the address of the MPU is different, assuming its working, or if its not working.
+======================================================================
+
+[103] Similarity: 0.574 | sunglassesatnite | 1/16/2025
+Its not specific enough. its happening in the new tech operating system kernel. Basically windows itself. It can still be caused by a faulty driver or an anti-virus that is kernel level.
+======================================================================
+
+[104] Similarity: 0.574 | mysteriouscosmic | 10/11/2025
+```
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:1344
+load:0x40078000,len:13964
+load:0x40080400,len:3600
+entry 0x400805f0
+Mandelbrot drawer!
+```
+Serial
+======================================================================
+
+[105] Similarity: 0.574 | .pseud0 | 10/17/2025
+You got this from the I2C scanner sketch?
+======================================================================
+
+[106] Similarity: 0.574 | toph2814 | 4/9/2025
+*(naturally it would be a good idea to have some protection circuitry to prevent your system from overdischarging your battery pack)*
+======================================================================
+
+[107] Similarity: 0.574 | .pseud0 | 10/10/2025
+Okay, now we can talk. Upload this I2C scanner sketch to your Uno 
+```cpp
+#include <Wire.h>
+ 
+void setup() {
+  Wire.begin();
+ 
+  Serial.begin(9600);
+  while (!Serial);             // Leonardo: wait for serial monitor
+  Serial.println("\nI2C Scanner");
+}
+ 
+void loop() {
+  byte error, address;
+  int nDevices;
+ 
+  Serial.println("Scanning...");
+ 
+  nDevices = 0;
+  for(address = 1; address < 127; address++ )
+  {
+    // The i2c_scanner uses the return value of
+    // the Write.endTransmisstion to see
+======================================================================
+
+[108] Similarity: 0.574 | akithmari | 1/26/2025
+It goes something like this,
+Articles : you'll blown your arduino if you put 20000 Volt init
+*Me searching if arduino dangerous 
+AI : arduino will blow you up 20000 Volt electricity
+======================================================================
+
+[109] Similarity: 0.573 | fastbeluga._18348 | 1/2/2025
+it uses a ILI9341 chip
+======================================================================
+
+[110] Similarity: 0.573 | m_a_v_e_r_i_c_k | 8/1/2025
+You would need a hardware programmer. An Arduino board can be used with the Arduino ISP firmware.
+======================================================================
+
+[111] Similarity: 0.573 | anonengineering | 1/13/2025
+if it's hardware related start a thread in #hardware-help , if it's coding related, in #coding-help
+======================================================================
+
+[112] Similarity: 0.572 | .sky_23. | 1/27/2025
+Which website or app can I use to test out arduino hardware with a code that I made?
+======================================================================
+
+[113] Similarity: 0.572 | sean.4 | 7/14/2025
+hardware is completely fixed
+======================================================================
+
+[114] Similarity: 0.572 | robherc | 2/23/2025
+...but there *are* FPGA programmers in this server, so I'll leave it for them to help you better than I can on that part.
+======================================================================
+
+[115] Similarity: 0.572 | m_a_v_e_r_i_c_k | 4/2/2025
+The ESP32 microcontroller on the dev board is drawing current from the voltage regulator on the board that supplies it's power. It draws a lot of current when using WiFi.
+This regulator is also connected to the 3.3v pin which you previously had connected to the audio amplifier which was probably drawing enough current in combination with the ESP32 to damage the regulator or something else on the board.
+======================================================================
+
+[116] Similarity: 0.572 | coder_do_as_impossible | 8/31/2025
+But let's try fixing the Arduino's USB issue. Because using other Arduino as ISP everytime will be a long process. If you wanna do it then no issues. But you need to solve it
+======================================================================
+
+[117] Similarity: 0.571 | anonengineering | 1/16/2025
+opening the IDE should not cause BSoD, maybe the IDE (from Arduino directly) should be reinstalled
+======================================================================
+
+[118] Similarity: 0.571 | toph2814 | 4/24/2025
+🤓 fyi, here's the official schematics of the Arduino UNO R3 if you're curious @crackity:
+📚 https://www.arduino.cc/en/uploads/Main/Arduino_Uno_Rev3-schematic.pdf
+======================================================================
+
+[119] Similarity: 0.571 | cazhy | 1/14/2025
+"CP2102 USB to UART Bridge Controller" is your esp, well, cp2102 is the chip that turns usb to uart, any esp32 devboard has either that, cmh340, or something like that
+======================================================================
+
+[120] Similarity: 0.571 | klevi_ | 2/2/2025
+There is the u8g library, there is Adafruits library for SPI and I2C screens
+======================================================================
+
+[121] Similarity: 0.571 | mercury_woman | 10/18/2025
+it is most likely arduino ide issue
+======================================================================
+
+[122] Similarity: 0.571 | m_a_v_e_r_i_c_k | 9/14/2025
+It should be under "Universal Serial Bus devices".
+Is it detected by the Arduino IDE?
+It is probably not in download mode.
+The fact that a COM port exists means the firmware is likely already installed and working.
+======================================================================
+
+[123] Similarity: 0.570 | diamonddback | 5/22/2025
+Now REAL arduinos try and protect your pc. Most people get not real arduinos. And they use what ever parts are on sale that week.
+======================================================================
+
+[124] Similarity: 0.570 | synkx4u | 10/30/2025
+nstalling Servo@1.2.2
+Installed Servo@1.2.2
+Downloading Arduino_BuiltIn@1.0.0
+Arduino_BuiltIn@1.0.0
+Installing Arduino_BuiltIn@1.0.0
+Installed Arduino_BuiltIn@1.0.0
+Downloading TFT@1.0.6
+TFT@1.0.6
+Installing TFT@1.0.6
+Installed TFT@1.0.6
+Downloading Firmata@2.5.9
+Firmata@2.5.9
+Installing Firmata@2.5.9
+Installed Firmata@2.5.9
+Downloading SD@1.3.0
+SD@1.3.0
+Installing SD@1.3.0
+Installed SD@1.3.0
+Downloading Ethernet@2.0.2
+Ethernet@2.0.2
+Installing Ethernet@2.0.2
+Installed Ethernet@2.0.2
+======================================================================
+
+[125] Similarity: 0.570 | anonengineering | 1/18/2025
+does the shield rub against the USB jack? maybe a piece of paper or a layer of electrical tape in there to prevent shorts
+======================================================================
+
+[126] Similarity: 0.570 | diamonddback | 8/19/2025
+1.  The arm is working great.
+2.  Hardware issue.
+3.  Software issue.
+
+You have 3 options.@Teebeutel
+======================================================================
+
+[127] Similarity: 0.570 | toph2814 | 10/27/2025
+USB peripherals will require your Arduino to have "USB Host" capability *(something most Arduino boards don't have)*  @Whatsapp Snake
+======================================================================
+
+[128] Similarity: 0.570 | kkaug9 | 8/23/2025
+iam useing espcam32 aithinker
+======================================================================
+
+[129] Similarity: 0.569 | styxie_x | 1/10/2025
+something related to arduino bootloader?
+======================================================================
+
+[130] Similarity: 0.569 | .pseud0 | 9/26/2025
+This one has a ESP8266 as its WiFi processor
+<https://eu.robotshop.com/de/products/esp8266-wifi-shield>
+======================================================================
+
+[131] Similarity: 0.569 | m_a_v_e_r_i_c_k | 4/17/2025
+This one is fine since you don't know if the issue is code or hardware related.
+======================================================================
+
+[132] Similarity: 0.569 | ratirl._. | 4/18/2025
+can try but this is the log in  the console when doing the i2c scan
+======================================================================
+
+[133] Similarity: 0.569 | daggeking | 2/3/2025
+ts the following devices:
+    Device code: 0x44
+======================================================================
+
+[134] Similarity: 0.569 | rammaster0216 | 7/24/2025
+arduino is open source
+======================================================================
+
+[135] Similarity: 0.568 | toph2814 | 8/8/2025
+👉 hopefully your `TP4056` module has protection circuitry like this...
+======================================================================
+
+[136] Similarity: 0.568 | _wee_gee_ | 3/23/2025
+ompatible" device because Arduino made the design public. 
+These clones are usually fine, but you might not get some of the nice features of the genuine boards, like protection against over-current or the nicer usb-serial chip (as is the case here)
+======================================================================
+
+[137] Similarity: 0.568 | porush_manjhi | 3/19/2025
+@KLevi I am a hobbyist and trying to create an IOT device for my home.
+======================================================================
+
+[138] Similarity: 0.568 | mercury_woman | 6/6/2025
+i think there was arduino_i2c example too
+======================================================================
+
+[139] Similarity: 0.568 | m_a_v_e_r_i_c_k | 3/24/2025
+This involves reprogramming the communication chip on the board.
+We cannot help with that here because you're likely to brick the board in the process.
+======================================================================
+
+[140] Similarity: 0.568 | m_a_v_e_r_i_c_k | 9/15/2025
+The person who created this git repo used an ESP32 and had the adafruit library usage commented out. They're using the mcufriend library included in the repo.
+======================================================================
+
+[141] Similarity: 0.568 | cmdturtls | 5/22/2025
+0bcoIyNENn3Ms9nxfMQcVYBRnz3X27gk9EIOOVm8V_9FY8vHxuw35LL-TpD-4dVPdOGzgsJyZOTqY.a-HuJRxJv7GyRIYwY7V95YFz36HIoYMKlLpekj40DW0&dib_tag=se&keywords=Powered+USB+Hub&qid=1747889514&s=electronics&sprefix=powered+usb+hub%2Celectronics%2C138&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1)
+Even though I'm really new to Arduino I'm really scared I'm gonna fry my laptop
+======================================================================
+
+[142] Similarity: 0.568 | sfloon. | 3/28/2025
+it couldnt be a hardware issue could it?
+======================================================================
+
+[143] Similarity: 0.567 | blackholesuu | 8/31/2025
+``Bus 002 Device 009: ID 2341:0072 Arduino SA Nano Matter CMSIS-DAP``
+```Sketch uses 919616 bytes (58%) of program storage space. Maximum is 1572864 bytes.
+Global variables use 141056 bytes (53%) of dynamic memory, leaving 121088 bytes for local variables. Maximum is 262144 bytes.
+Open On-Chip Debugger 0.12.0+dev-01514-g21fa2de70 (2024-02-07-19:19)
+Licensed under GNU GPL v2
+For bug reports, read
+    http://openocd.org/doc/doxygen/bugs.html
+debug_level: 0
+efm32s2_dci_read_se_status
+Error: unable 
+======================================================================
+
+[144] Similarity: 0.567 | toph2814 | 7/24/2025
+🤓 so any microcontroller board that is "HID compliant" can be made into an HID peripheral by using the appropriate libraries that allow it to communicate with the computer it's attached to via USB...
+======================================================================
+
+[145] Similarity: 0.567 | diamonddback | 10/28/2025
+@Toph  j7st an update. The registry manipulation fix it. We turned in on in the setup only and its working fine now. So something must be up with the mapping of pin 16.
+======================================================================
+
+[146] Similarity: 0.567 | toph2814 | 4/14/2025
+clones == copies based on the documentation Arduino released to the public
+======================================================================
+
+[147] Similarity: 0.567 | toph2814 | 3/27/2025
+this is why I said *"you can never tell"*  ... there are ways to verify things... remember that you didn't download those drivers from somewhere ... they came with Arduino IDE's installer *(which you downloaded from Arduino's official website)*... so the likelihood of a 3rd party injecting their malware is fairly small
+======================================================================
+
+[148] Similarity: 0.567 | m_a_v_e_r_i_c_k | 8/11/2025
+Microcontroller. There is also B605B, both made by a company named JRT.
+Found online. Uses UART but I don't see any datasheet or info about that.
+Potentially relevant Arduino library: https://docs.arduino.cc/libraries/u8xlaserdistance
+======================================================================
+
+[149] Similarity: 0.566 | .pseud0 | 9/27/2025
+they were sure that was malware compiling a new piece of bad code.
+======================================================================
+
+[150] Similarity: 0.566 | toph2814 | 9/11/2025
+yes @inVINCEable1 since it is powered by the RP2040 chip...
+======================================================================
+
+[151] Similarity: 0.566 | tuulikauri | 8/4/2025
+I have a suspicion... `I2C Wiring: The ADXL345 Breakout has an I2C address of 0x53.` and `Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);` 🤔
+======================================================================
+
+[152] Similarity: 0.566 | adeb_h | 3/27/2025
+@ThatOneDev , you set i2c address when you use several peripherals !?
+======================================================================
+
+[153] Similarity: 0.566 | flamingo3438 | 5/4/2025
+im Computer science student im so so anoyyed bt this iot project
+======================================================================
+
+[154] Similarity: 0.566 | tuulikauri | 8/9/2025
+Lots of things can break electronics.
+======================================================================
+
+[155] Similarity: 0.566 | tuulikauri | 8/14/2025
+A great test is using the sysex ID request; that will force your device to spit out it's ID.
+======================================================================
+
+[156] Similarity: 0.566 | chooseone0366 | 10/11/2025
+rogramming chip burned somehow...
+
+test 2 ) got already soldered in arduino r3 variants, tryed to make code from google, about LCD mini games, also same, worked fine next try to upload music on buzzer : BOOM, one leg flyed away in explosion of soldered in programmer... ( was connected to 9 V )
+
+test 3 ) another like test 2 but now tryed harder project, about mini robot car with sonar, basically same, 1 try sonar and car moved a bit stopped, then arduino actually started to burn with flame and sh
+======================================================================
+
+[157] Similarity: 0.566 | cazhy | 1/12/2025
+are you able to display custom text on the screen?  are you able to get readings from the ultrasonic sensor? if not, are you giving them the right voltage? double check all your wiring, do you have an oscilloscope? if so check the signals. if both devices are working individually but not together, that tells you its a simple firmware msitake. investigate whats happening, nothing will ever work straight from chatgpt
+======================================================================
+
+[158] Similarity: 0.565 | tuulikauri | 7/28/2025
+`c:\Users\cm549\OneDrive\Documents\Arduino\` Dont store / install your code / libraries on OneDrive 😄
+======================================================================
+
+[159] Similarity: 0.565 | sean.4 | 1/14/2025
+yo does anyone here know why fairly simple SPI code that runs on an Arduino Giga R1 just fine refuses to work on a Teensy 4.1 using the same wiring & SPI modules?
+======================================================================
+
+[160] Similarity: 0.565 | toph2814 | 1/30/2025
+☝️ prevents accidental short circuits/connections that can damage the UNO or the components you're connecting to it...
+======================================================================
+
+[161] Similarity: 0.564 | anathrax | 5/4/2025
+It's fritzing, much like tinkercad but generates nicer schematics imo
+======================================================================
+
+[162] Similarity: 0.564 | madseal1 | 3/9/2025
+If you can, 
+I would appreciate if you could send me references about what hardware I should use and how to wire and code it 🙏
+======================================================================
+
+[163] Similarity: 0.564 | m_a_v_e_r_i_c_k | 9/16/2025
+Are you attempting to upload firmware to your dev board using the Arduino IDE?
+Which dev board? Make sure you disconnect everything except the USB cable and enable verbose output in the preferences menu so you can see any errors that occur.
+======================================================================
+
+[164] Similarity: 0.564 | toph2814 | 4/21/2025
+🤔 it's also likely that @N0t_c00l_n00b accidentally shorted the UNO's voltage regulator & fried it *(strange that the board is still getting power though)*...
+======================================================================
+
+[165] Similarity: 0.564 | aaravthagoat | 10/11/2025
+Turn your fried microcontroller into smth like this, to prevent E Waste. The header pins can be desoldred and re-used. @Loona
+======================================================================
+
+[166] Similarity: 0.563 | .ak0___ | 2/9/2025
+Also the hardware id's are the original for FTDI (6001)
+======================================================================
+
+[167] Similarity: 0.563 | 15650. | 5/5/2025
+I'm an 18-year-old software engineering student from Kenya, and I'm working on a project that aims to solve a real problem at my school: the lack of automation in laptop registration and tracking.
+
+The idea is to build a system that registers student laptops, verifies ownership during entry/exit, and potentially tracks devices using GPS/RFID for added security. I'm planning to build a working MVP using a Raspberry Pi 5/ Arduino , QR code scanning, and possibly explore RFID/NFC integration later.
+======================================================================
+
+[168] Similarity: 0.563 | was_ted | 4/15/2025
+@Isaiah looks like the genuine Arduino stater kit, there should be plenty of examples online and in its own documentation
+======================================================================
+
+[169] Similarity: 0.563 | roachthew1zard | 8/12/2025
+Is there anything I should be worried about otherwise? Like could someone be siphoning data through the arduino? (sorry if I sound uneducated about the topic because unfortunately I am)
+======================================================================
+
+[170] Similarity: 0.563 | m_a_v_e_r_i_c_k | 11/2/2025
+Do yo have a link to the Arduino code?
+That is where you would enable debugging to see what is going on.
+======================================================================
+
+[171] Similarity: 0.563 | .pseud0 | 5/30/2025
+With key from <https://github.com/arduino/arduino-cli/blob/master/internal/arduino/security/keys/arduino_public.gpg.key> and library index and signature from <https://downloads.arduino.cc/libraries/library_index.tar.bz2>
+======================================================================
+
+[172] Similarity: 0.563 | ritizzzz | 8/31/2025
+i can give that a go and see if it fixes it but that library has not been hardware tested so idk
+======================================================================
+
+[173] Similarity: 0.562 | fakemayham_0.8.4_ | 1/19/2025
+gering issues.
+
+4. Reboot Your Computer:
+Restart your computer to clear any potential conflicts or issues with the USB driver.
+
+5. Disable Other Programs:
+Close other programs that might be using the serial port (e.g., other serial monitor applications).
+
+6. Reset the Arduino Board:
+Press the reset button on the Arduino Uno before uploading the sketch.
+
+7. Reinstall USB Drivers:
+Reinstall the Arduino USB drivers:
+Go to Device Manager (Windows), find the Arduino under Ports (COM & LPT), right-cli
+======================================================================
+
+[174] Similarity: 0.562 | tuulikauri | 8/1/2025
+ArduinoISP is code you would put on a WORKING arduino to turn it into a programmer. If you dont have any working arduinos right now, dont worry about it. 🙂
+======================================================================
+
+[175] Similarity: 0.562 | elykboi | 8/12/2025
+do you have smarthome shit? a lot of that uses esp32s from what i've heard
+======================================================================
+
+[176] Similarity: 0.562 | iamalpharius_ | 9/9/2025
+ik its a cybersecurity class
+======================================================================
+
+[177] Similarity: 0.562 | gamiogg | 10/23/2025
+I m making a iot project
+======================================================================
+
+[178] Similarity: 0.561 | hideolee | 2/16/2025
+I know and i was stupid then
+Was it an actual malware?
+Since i checked his github and it was a common issue of false positives
+======================================================================
+
+[179] Similarity: 0.561 | canadiianmango | 4/25/2025
+PCBs, C++, Python, Arduino, Soldering, I2C, more and more.
+======================================================================
+
+[180] Similarity: 0.561 | anonengineering | 3/9/2025
+i might suggest starting a thread in #hardware-help , somebody likely has experience with this
+======================================================================
+
+[181] Similarity: 0.561 | anonengineering | 5/4/2025
+sure, take the shield off and wire it up until you get *some* data
+======================================================================
+
+[182] Similarity: 0.561 | toph2814 | 4/16/2025
+*(potential fire risk ~specially for non-official boards; genuine Arduinos have protection)*
+======================================================================
+
+[183] Similarity: 0.561 | m_a_v_e_r_i_c_k | 10/23/2025
+If you have wiring between the two hardware serial ports, uploads will fail.
+The same UART connections are used for communication with the computer.
+If you want to retain the ability to program the MCU, you could use the SoftwareSerial library.
+======================================================================
+
+[184] Similarity: 0.561 | toph2814 | 8/23/2025
+❔ possible? yes.
+🙅 advisable? absolutely not. *(since you'll need to reflash the boot loader which if done incorrectly can turn your UNO into a paperweight  👈 the main reason we always advise against it)*
+🤓 specially considering how cheap many "HID compliant" microcontroller boards out there are it makes no sense...
+======================================================================
+
+[185] Similarity: 0.561 | anonengineering | 5/4/2025
+usually 0 & 1 (on an Uno) should be avoided, they are used to upload code
+the other 18 are GPIO, some have added capability, like analog or PWM
+======================================================================
+
+[186] Similarity: 0.561 | m_a_v_e_r_i_c_k | 8/3/2025
+Hardware controlled chip select (SS / CS).
+======================================================================
+
+[187] Similarity: 0.561 | estebanlafo | 9/28/2025
+found a new symptom how a transistor gets bruning to the touch before the rest of the board burns
+
+My 4-in-1 JHEMCU BLHeli-S ESC instantly overheats when powered, with the voltage regulator or transistor near the connector getting too hot to touch. There are no startup tones and no motor output.
+I suspect the logic regulator or gate driver IC has shorted. I want confirmation whether this ESC is repairable or should just be replaced.
+======================================================================
+
+[188] Similarity: 0.561 | toph2814 | 1/2/2025
+shouldn't be an issue unless you're messing about with flashing bootloaders from random HEX files....
+👉 as long as you're using the Arduino IDE then it should be reversible as long as you select the correct board before uploading your code... *(procedures that are covered in Paul's tutorials)* ...
+======================================================================
+
+[189] Similarity: 0.561 | v88d | 5/21/2025
+Is it hard to reverse a firmware? Any way to obfuscate it? (ESP32 Devices)
+======================================================================
+
+[190] Similarity: 0.561 | tuulikauri | 7/15/2025
+`Device manager detects the board as: USB-SERIAL CH430 (COM2)` and in IDE. So cable should be ok...
+======================================================================
+
+[191] Similarity: 0.560 | toph2814 | 7/26/2025
+it says it right on the microcontroller chip... `ESP8266` for which your programmer/test board was designed for
+======================================================================
+
+[192] Similarity: 0.560 | toph2814 | 3/17/2025
+needless to say, no one here is likely to be able to diagnose the actual issue without knowing what you've done *(both in hardware & software so sharing a clear schematic &/or your code would be helpful)*
+======================================================================
+
+[193] Similarity: 0.560 | .pseud0 | 9/15/2025
+<https://github.com/arduino/ArduinoCore-renesas/blob/main/libraries/WiFiS3/examples/ScanNetworks/ScanNetworks.ino>
+======================================================================
+
+[194] Similarity: 0.560 | raptor7192 | 4/20/2025
+k, imma use an old arduino with fried usb to serial converter that's alrdy a pain to use, so if destroyed no loss
+======================================================================
+
+[195] Similarity: 0.560 | toph2814 | 8/23/2025
+so internal components get fried *(typically the 5V LDO regulator if you're powering via `VIN` or the barrel plug; a USB port can also get damaged if you do this & the motherboard will typically cut power to it)*
+======================================================================
+
+[196] Similarity: 0.560 | robherc | 1/19/2025
+also always a good troubleshooting idea to unplug everything; reboot your pc; then open ONLY Arduino IDE, plug ONLY the usb into the board; then try to flash again.
+======================================================================
+
+[197] Similarity: 0.560 | penpengu | 1/22/2025
+I asked them to fix my arduino but they asked me for a wallet address? There's a terrible issue! My bitcoin wallet has been compromised and that causes arduino to fail uploading with error status 1!!! 🙀
+======================================================================
+
+[198] Similarity: 0.560 | .pseud0 | 8/23/2025
+if the servo board has power and the i2c lines are connected properly, it **should** be showing up on the I2c scanner..
+Should also be a direct connection between the Arduino's GND pin and the servo shield's GND pin
+======================================================================
+
+[199] Similarity: 0.560 | robherc | 4/5/2025
+usb detaches and reattaches when you reboot the MCU to start running the newly uploaded code ... not sure how you plan to skip that step 🤷‍♂️
+======================================================================
+
+[200] Similarity: 0.559 | darwinwaswrong | 10/30/2025
+```ino
+#include <Wire.h>
+void setup()
+{
+  Wire.begin();
+  Serial.begin(9600);
+  while (!Serial);             // Leonardo: wait for serial monitor
+  Serial.println("\nI2C Scanner");
+}
+
+void loop()
+{
+  byte error, address;
+  int nDevices;
+  Serial.println("Scanning...");
+  nDevices = 0;
+  for(address = 1; address < 127; address++ ) 
+  {
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+    if (error == 0)
+    {
+      Serial.print("I2C device found at address 0x");
+      if (
+======================================================================
+
+[201] Similarity: 0.559 | toph2814 | 1/20/2025
+so more of an IoT using Zigbee tech... have you looked into *Home Assistant*  with `Zigbee2MQTT` to handle the interaction with your Arduino/ESP32 nodes
+======================================================================
+
+[202] Similarity: 0.559 | m_a_v_e_r_i_c_k | 2/9/2025
+I think there is a thing with counterfeit FTDI chips in which you have to install an older / specific driver.
+I will google it, one minute.
+https://hackaday.com/2016/02/01/ftdi-drivers-break-fake-chips-again/
+======================================================================
+
+[203] Similarity: 0.559 | toph2814 | 5/7/2025
+okay. so that indicates that your UNO isn't responding when the IDE attempts to communicate with it during programming...
+👉 make sure there's nothing connected to pins 0 & 1 of the UNO board... these pins are used for communications with the IDE & PC...
+👉 if there's nothing connected to those pins, try hitting the [`RESET`] button twice *(to force the UNO into "bootloader" mode)*   just before hitting the button on the IDE to upload your code ...
+======================================================================
+
+[204] Similarity: 0.559 | anonengineering | 1/7/2025
+different modules have different numbers of pins broken out, "ESP8266" and "ESP32" are chips, they don't describe the dev board you are using
+======================================================================
+
+[205] Similarity: 0.558 | nikk_0121 | 1/26/2025
+can anyone help me toubleshoot my device?
+Im using NodeMCU v3 
+and an i2c lcd 16x2
+
+i cant seem to get in contact with the i2c address
+when using i2c address scanner it saying no device found
+
+im using platformIO to upload my code and i already checked the wirings and run a continuity test to my wires
+D1 and D2 for Scl and SDA
+and 5volts for the power
+======================================================================
+
+[206] Similarity: 0.558 | toph2814 | 8/8/2025
+*(it's part of its protection circuitry to prevent the battery from getting drained accidentally)*
+======================================================================
+
+[207] Similarity: 0.558 | zhephirothz | 2/8/2025
+If the Arduino IDE can't detect the pro micro board (ATMega32U4).
+Was it might be the bootloader corrupted ? 
+And That does mean I need to use external hardware (e.g., Arduino UNO) to do a flashing?
+======================================================================
+
+[208] Similarity: 0.558 | anonengineering | 4/3/2025
+especially RST, the pins are high input impedance, so even waving your hand nearby can cause a floating pin to toggle
+======================================================================
+
+[209] Similarity: 0.558 | onlydollsagency | 3/11/2025
+N: Arduino NANO 33 IoT
+VID: 2341
+PID: 8057
+SN: 34B28CC95150484735202020FF0D031F 
+
+Inside IDE my Tools menu are the following settings: 
+Board "Arduino Nano"
+Processor: "ATmega328P
+Port: "COM1 (Arduino Nano 33 IoT)"
+
+And I get this error from IDE: 
+
+         Using Port                    : COM1
+
+         Using Programmer              : jtag2updi
+
+         Overriding Baud Rate          : 115200
+
+avrdude: ser_open(): can't open device "\\.\COM1": The system cannot find the file specified.
+
+avrdude 
+======================================================================
+
+[210] Similarity: 0.558 | .pseud0 | 1/12/2025
+The Uno Revision 4 uses a different microcontroller, for example. A Renesas RA4M1.
+======================================================================
+
+[211] Similarity: 0.558 | robherc | 5/29/2025
+means another program is using the port.
+Easiest fix is just reboot your pc; then open ONLY ArduinoIDE & try again.
+======================================================================
+
+[212] Similarity: 0.558 | _wee_gee_ | 6/3/2025
+`attachInterrupt(digitalPinToInterrupt())` etc. is more involved than just "this will automatically read an ultrasonic sensor for you"
+======================================================================
+
+[213] Similarity: 0.558 | toph2814 | 4/20/2025
+which tells you that it uses the AP2112-3.3 regulator IC...
+📚 https://www.diodes.com/assets/Datasheets/AP2112.pdf
+======================================================================
+
+[214] Similarity: 0.558 | chickenjoe17._. | 8/5/2025
+Could i have bricked my arduino by using chat GPT script
+Brand new board uploaded the script went fine went to upload a different one now nothing will upload
+Same thing happened to another new board after trying the same chat GPT script
+======================================================================
+
+[215] Similarity: 0.558 | ningaman151 | 5/12/2025
+msis-dap
+PlatformIO: Initializing remote target...
+Open On-Chip Debugger  v0.11.0-esp32-20220706 (2022-07-06-15:48)
+Licensed under GNU GPL v2
+For bug reports, read
+    http://openocd.org/doc/doxygen/bugs.html
+WARNING: boards/esp-wroom-32.cfg is deprecated, and may be removed in a future release.
+adapter speed: 5000 kHz
+
+Info : tcl server disabled
+Info : telnet server disabled
+Error: unable to find a matching CMSIS-DAP device
+
+.pioinit:11: Error in sourced command file:
+Remote communication error
+======================================================================
+
+[216] Similarity: 0.558 | m_a_v_e_r_i_c_k | 3/20/2025
+The list below is for USB HID if that is what you need.
+The Arduino Nano ESP32 or other ESP32-S2 or ESP32-S3 boards also.
+======================================================================
+
+[217] Similarity: 0.558 | .pseud0 | 10/11/2025
+```cpp
+#include <Arduino.h>
+#include <TFT_eSPI.h>
+#include <SPI.h>
+
+TFT_eSPI tft = TFT_eSPI();
+
+void setup() {
+  Serial.begin(115200);
+  delay(2000);
+  Serial.println("Firwmare start."); Serial.flush();
+  tft.init();
+  Serial.println("TFT initted."); Serial.flush();
+}
+
+void diag_show(void);
+
+void loop() {
+  Serial.println("Reading diagnostics."); Serial.flush();
+  diag_show();
+  delay(2000);
+}
+
+void diag_reg(const __FlashStringHelper *name, uint8_t reg, uint8_t n)
+{
+    uint8_t x = reg;
+    Seri
+======================================================================
+
+[218] Similarity: 0.557 | .pseud0 | 4/4/2025
+> my problem is that the arduino is getting power witouth connecting the barrel jack
+I have seen multiple cases of parasitic powering due to a voltage being present on the microcontroller's I/O pins, which in turn have a I/O protection diode connected between them and e.g. 5V. And hence, voltage can leak in to the voltage net of the microcontroller's supply voltage.
+======================================================================
+
+[219] Similarity: 0.557 | penpengu | 2/3/2025
+This is probably interesting for you  @Hei https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP/
+======================================================================
+
+[220] Similarity: 0.557 | bens4 | 2/18/2025
+I’ll do whatever hardware setup is needed to make it work best
+======================================================================
+
+[221] Similarity: 0.557 | .korrie. | 6/9/2025
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+#include <DHT.h>
+
+// Definieer type sensor: DHT11 of DHT22
+#define DHTTYPE DHT22
+
+// Pin waarop de DHT sensor is aangesloten
+#define DHTPIN 2
+
+// Maak een DHT object aan
+DHT dht(DHTPIN, DHTTYPE);
+
+// LCD I2C adres (meestal 0x27 of 0x3F, check met I2C scanner)
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+void setup() {
+  Serial.begin(9600);
+  dht.begin();
+  
+  lcd.init();          // Initialiseer LCD
+  lcd.backlight();     // Zet backlight aan
+}
+
+void loop
+======================================================================
+
+[222] Similarity: 0.557 | m_a_v_e_r_i_c_k | 9/14/2025
+https://github.com/arduino/uno-r4-wifi-usb-bridge/tree/main/unor4wifi-updater#troubleshooting
+======================================================================
+
+[223] Similarity: 0.557 | tristandnfv | 8/16/2025
+Yes exactly, only my arduinos and USB UART chips seems to have issues
+======================================================================
+
+[224] Similarity: 0.557 | robherc | 2/22/2025
+yes, drawing too much power through an arduino while connected to a computer for usb power puts both the arduino and the computer in the "danger zone" for getting damaged by overcurrent.
+======================================================================
+
+[225] Similarity: 0.557 | _wee_gee_ | 3/10/2025
+I2C uses pull-up resistors to bring the signal lines "back up" to power, and each device on the line can choose to pull the line "low"
+
+If you have stray capacitances, then this can slow down how fast the pull resistors can bring the line back up to a High logic level, which hard-limits your maximum clock rate.
+
+The distance of the pull resistors to the sensor also dictates this. 
+Some pre-made modules have the resistors built in, and can sometimes end up with too many pull resistors making the 
+======================================================================
+
+[226] Similarity: 0.557 | poulet67 | 2/22/2025
+@robherc KV5ROB fixed it: https://forum.arduino.cc/t/arduino-micro-com-port-disconnected-and-usb-device-not-recognized-solved/167000/4
+Trick it to hold the reset button, then release it when the IDE says "Uploading"
+======================================================================
+
+[227] Similarity: 0.556 | careerbench8572 | 5/18/2025
+BBDBCCBBDDDD yes my arduino ghost keying
+======================================================================
+
+[228] Similarity: 0.556 | .juan_21. | 2/22/2025
+Did you connect an external power supply to the shield? If not, it is most likely that you may have damaged the USB port (since USB power overrides the regulator, and you may have likely drawn too much current from the USB port). Try another USB port or computer
+======================================================================
+
+[229] Similarity: 0.556 | cc.username | 3/6/2025
+So I think it's a hardware issue
+======================================================================
+
+[230] Similarity: 0.556 | robherc | 3/11/2025
+JFETs and some MOSFETs work in "depletion mode" where their default state is "on" ... and pull-up/pull-down resistors to give a regular MOSFET a "default on" state are easy to use as well. ... then the arduino just pulls against the resistor to "switch the MOSFET OFF" once it has the buck converter running stably.
+======================================================================
+
+[231] Similarity: 0.556 | nz0.0 | 2/1/2025
+ mean? Is the power supply insufficient? If yes, what power supply do I need? What voltage and amperage should I use? Can the Arduino Uno handle this project?
+
+I hope you can answer. This would be a big help for our upcoming defense.
+======================================================================
+
+[232] Similarity: 0.556 | klevi_ | 6/5/2025
+But don't do this. It can damage your PC and your Arduino as well
+======================================================================
+
+[233] Similarity: 0.556 | anonengineering | 10/4/2025
+"This code has been tested and confirmed working with a QT Py ESP32-S2. Issues may arise with a QT Py RP2040."
+======================================================================
+
+[234] Similarity: 0.556 | diamonddback | 1/17/2025
+@ZochtKocht so u want to use the other hardware port.
+======================================================================
+
+[235] Similarity: 0.556 | .pseud0 | 9/26/2025
+Arduino shields, sensors, kits, ...
+======================================================================
+
+[236] Similarity: 0.556 | darwinwaswrong | 3/14/2025
+@CharlieYou may want to create a thread in hardware help   https://discord.com/channels/420594746990526466/1020203748729049159
+======================================================================
+
+[237] Similarity: 0.556 | coder_do_as_impossible | 7/12/2025
+Can you send a pic of which jumper are we talking. Generally that jumper is used to power Arduino using the external battery from the power terminal of the Shield.
+======================================================================
+
+[238] Similarity: 0.556 | xmax0086 | 1/12/2025
+charging (some have a usb c port), overvoltage undervoltage protection, short protection
+======================================================================
+
+[239] Similarity: 0.556 | jan_kensen_nanpa_tu | 7/11/2025
+well, not the hardware as i'm using the parts from it, but I do have an arduino sketch of the code that was used
+======================================================================
+
+[240] Similarity: 0.556 | akithmari | 1/26/2025
+Is there any ways to create any sensor having I2C protocol?
+======================================================================
+
+[241] Similarity: 0.555 | toph2814 | 9/3/2025
+🤓  *"male barrel jack screw terminal adapter"* ... they make them for USB-A connectors as well... quite useful.
+======================================================================
+
+[242] Similarity: 0.555 | _wee_gee_ | 3/10/2025
+There's also chips which can do the scaning of a button matrix for you automatically, or you can do the scanning yourself in code.
+This "matrix of scanned switches" is how most computer keyboards work.
+
+Usually, you need some clever wiring and diode placement to avoid pitfalls like ghosting and key rollover.
+Image from <https://en.wikipedia.org/wiki/Computer_keyboard>
+<https://en.wikipedia.org/wiki/Key_rollover> Also has notes on ghosting
+
+https://upload.wikimedia.org/wikipedia/commons/f/f2/Func
+======================================================================
+
+[243] Similarity: 0.555 | tuulikauri | 10/7/2025
+Do you have links for these acronyms? ie datasheets for the hardware devices? Is it wired a certain way, if so whats the wiring diagram?
+======================================================================
+
+[244] Similarity: 0.555 | toph2814 | 5/13/2025
+yup... absolutely no worries about causing any damage... unlike PCs with operating systems, microcontrollers don't have the same pitfalls of sudden power loss which is why they're often used in appliances & other wearable electronics...
+======================================================================
+
+[245] Similarity: 0.555 | b0janglez | 3/1/2025
+ng IDE.
+So they wont be confused even when power was cut.
+
+Any ideas? Thanks 🙏🏻
+======================================================================
+
+[246] Similarity: 0.555 | anonengineering | 2/26/2025
+now that the hardware is good you have a much better chance of control from the arduino 😉
+======================================================================
+
+[247] Similarity: 0.555 | browniezoulou | 5/21/2025
+I guess that's a hardware problem, but maybe I am coding something bad. What should I check?
+======================================================================
+
+[248] Similarity: 0.555 | darwinwaswrong | 3/3/2025
+@I_AM_Observer Programmable Communications Interface (PCI) data bus network for control of all gauges and many of the indicators.
+
+
+The "PCI" bus is the central communications bus in the Jeep Liberty. The BCM, PCM, TCM, WCM, EVIC, dash cluster, and audio equipment use it to communicate with each other. The bus is a superset of OBD-II and uses the J1850 VPW communication format. It travels throughout the entire car and the OBD-II port taps directly into it. The ELM327 chip from Elm Electronics sh
+======================================================================
+
+[249] Similarity: 0.555 | patrick_2144 | 10/11/2025
+the low voltage wires and devices are the first things that should be shielded if you are having EMI issues
+======================================================================
+
+[250] Similarity: 0.555 | fakemayham_0.8.4_ | 1/19/2025
+talling the Arduino IDE.
+
+try the all of this
+======================================================================
+
+[251] Similarity: 0.554 | penpengu | 9/28/2025
+That chip is the USB<->UART converter.
+Without it, communication with the Serial Monitor on the PC, and uploading new programs to the arduino won't work.
+======================================================================
+
+[252] Similarity: 0.554 | robherc | 2/22/2025
+@Wolfminer do you have any other microusb devices that you can plug into your computer to verify that the pc can recognize them through the cable?
+======================================================================
+
+[253] Similarity: 0.554 | aaravthagoat | 9/22/2025
+STM 30, ESP8266, Raspberry Pi Pico, and arduino Nano are examples of some microcontrollers
+======================================================================
+
+[254] Similarity: 0.554 | toph2814 | 4/15/2025
+for more information:
+📚 https://randomnerdtutorials.com/how-to-install-esp8266-board-arduino-ide/
+======================================================================
+
+[255] Similarity: 0.554 | terminalm0ntage | 2/7/2025
+oh thats how you wire it hardware wise
+======================================================================
+
+[256] Similarity: 0.554 | aaravthagoat | 9/11/2025
+⚠️ After this, your Uno won’t even talk to the Arduino IDE until you re-flash the bootloader with an ISP programmer.
+======================================================================
+
+[257] Similarity: 0.554 | toph2814 | 8/19/2025
+all GPIO pins can be used... but know that pins 0 & 1 are tied to RX & TX for UART *(the USB serial connection to your PC & Arduino's IDE)*  respectively @Dylan ....
+======================================================================
+
+[258] Similarity: 0.554 | ricardom07 | 3/25/2025
+anyone has compile issues on arduino IoT cloud?
+======================================================================
+
+[259] Similarity: 0.554 | otocotara | 6/1/2025
+okey, a new problem emerged, now the arduino misses sometimes when the sensors fire, can i set up smth like a kernel interrupt?
+======================================================================
+
+[260] Similarity: 0.554 | m_a_v_e_r_i_c_k | 2/13/2025
+The bootloader prints a message at 74880 baud when the board reboots.
+So, the serial monitor would need to be at 74880 baud to read it properly.
+You should be able to tell if the chip is in download mode based on the message.
+======================================================================
+
+[261] Similarity: 0.554 | toph2814 | 9/23/2025
+*(oh, they've also provided the schematics for their microcontroller boards so everyone can effectively build their own... which is why we have so many knockoffs & clones, even branded clones out there for us to choose from)*
+======================================================================
+
+[262] Similarity: 0.554 | xxfroggyboyytxxtheking | 5/1/2025
+#include <SPI.h>
+#include <SD.h>
+
+const int chipSelect = 10; // CS pin connected to D10
+
+void setup() {
+  Serial.begin(9600);
+  // Initialize the SD card
+  if (!SD.begin(chipSelect)) {
+    Serial.println("Initialization faileAAAHDUAYHIDFGOSIJAGIUDFSYAOSNSDIUd!");
+    return;
+  }
+  Serial.println("Initialization done.");
+
+  // Open the file for reading
+  File dataFile = SD.open("song.mp3");
+  
+  // Check if the file is available
+  if (dataFile) {
+    Serial.println("Reading from example.txt:");
+ 
+======================================================================
+
+[263] Similarity: 0.553 | anonengineering | 3/10/2025
+don't use pins 0 & 1 for `SoftwareSerial`, they are used by hardware serial
+======================================================================
+
+[264] Similarity: 0.553 | .lumberjake | 1/16/2025
+Compatible... How? What are you trying to do with the sensor?
+======================================================================
+
+[265] Similarity: 0.553 | g.8g | 1/16/2025
+i used to hack in roblox so its a reasonable answer for me to format it
+======================================================================
+
+[266] Similarity: 0.553 | robherc | 2/7/2025
+I can feel that very personally right now. ... After several more days' research, I finally found docs from TI outlining that, while it's advertised at the top of the first page of the chip datasheet, SWD isn't the "preferred method" for programming these chips, and a proprietary method over factory preset I2C or UART pins is (ofc ones I DID NOT break out in my current board design), so this batch I have to figure out with SWD, but next board revision will def. be breaking out the UART programmi
+======================================================================
+
+[267] Similarity: 0.553 | toph2814 | 8/1/2025
+more info here: 🤓 https://www.hackster.io/chris-greening/esp32-walkie-talkie-f8d0dd
+======================================================================
+
+[268] Similarity: 0.553 | tomdwaggy | 10/3/2025
+Well, update on my TVC401 experiments, I haven't managed to figure it out yet, bought an Arduino Uno just for a possibly more reliable board, and no dice. Finally made a post in hardware help since I have a bit more information.
+======================================================================
+
+[269] Similarity: 0.553 | jtg1228 | 8/25/2025
+But I’m asking you if the hardware is set up alright for me to try and learn coding without having to worry abt physical issues
+======================================================================
+
+[270] Similarity: 0.553 | .lumberjake | 4/9/2025
+Is it cracking if it's open-source software?
+======================================================================
+
+[271] Similarity: 0.553 | anonengineering | 9/3/2025
+you need smth to generate the I2C or SPI signals...
+======================================================================
+
+[272] Similarity: 0.553 | kaito2112 | 9/28/2025
+The keywords you're looking for are HID (human interface device). Only some boards can do that.
+======================================================================
+
+[273] Similarity: 0.553 | toph2814 | 7/19/2025
+here's a resource that explains this @margggg195 :
+📚 https://lastminuteengineers.com/arduino-sr04-ultrasonic-sensor-tutorial/
+======================================================================
+
+[274] Similarity: 0.553 | darwinwaswrong | 4/21/2025
+@Carsyn Queen 004 you might want to start a question in #hardware-help  to keep this all together
+======================================================================
+
+[275] Similarity: 0.553 | diamonddback | 5/23/2025
+@Charlie umm. Are you wireing to the hardware serial of the esp to the software of the arduino?
+======================================================================
+
+[276] Similarity: 0.553 | rammaster0216 | 7/31/2025
+||https://forum.arduino.cc/ jumpscare||
+======================================================================
+
+[277] Similarity: 0.552 | _wee_gee_ | 4/13/2025
+Now, I'm making a lot of assumptions here:
+-That these are genuine Arduino Uno R3s (not clones!)
+-That the computers being used are Windows computers
+-that the device enumeration error is coming up for the Arduinos and not some other random device
+======================================================================
+
+[278] Similarity: 0.552 | anonengineering | 3/25/2025
+the IDE needs to know what an R4 is
+and the device has to report correctly to the OS before the IDE can interact with it
+======================================================================
+
+[279] Similarity: 0.552 | darwinwaswrong | 3/17/2025
+https://github.com/Arduino-IRremote/Arduino-IRremote
+======================================================================
+
+[280] Similarity: 0.552 | mercury_woman | 6/6/2025
+there should be an example for i2c
+======================================================================
+
+[281] Similarity: 0.552 | Deleted User | 4/10/2025
+And what hardware would I need except Arduino and wires?
+======================================================================
+
+[282] Similarity: 0.552 | m_a_v_e_r_i_c_k | 2/4/2025
+What is the firmware it is downloading?
+======================================================================
+
+[283] Similarity: 0.552 | toph2814 | 3/18/2025
+be very careful when powering the relay's coils off your Arduino... powering it directly via its GPIO pins is __not recommended__ without additional circuitry to protect your microcontroller board
+======================================================================
+
+[284] Similarity: 0.552 | anonengineering | 9/13/2025
+to test your hardware you don't even need an Uno
+each resistor has one end on the 7 seg, the other end goes to a pin
+if COM goes to ground you can connect a jumper from 5v to the end on each resistor that goes to a pin (disconnect from Uno first)
+then you'll know which resistor is which segment (A - G and the decimal point)
+======================================================================
+
+[285] Similarity: 0.552 | .pseud0 | 10/11/2025
+```cpp
+#include <Arduino.h>
+#include <TFT_eSPI.h>
+#include <SPI.h>
+
+TFT_eSPI tft = TFT_eSPI();
+
+void setup() {
+  tft.init();
+  Serial.begin(115200);
+}
+
+void diag_show(void);
+
+void loop() {
+  diag_show();
+  delay(2000);
+}
+
+void diag_reg(const __FlashStringHelper *name, uint8_t reg, uint8_t n)
+{
+    uint8_t x = reg;
+    Serial.print(name);
+    Serial.print(" (0x");
+    Serial.print(x < 0x10 ? "0" : "");
+    Serial.print(x, HEX);
+    Serial.print("):");
+    for (int i = 0; i < n; i++) {
+        uin
+======================================================================
+
+[286] Similarity: 0.552 | fastbeluga._18348 | 1/20/2025
+
+     related to the state of network and IoT Cloud connection and errors
+     the higher number the more granular information you’ll get.
+     The default is 0 (only errors).
+     Maximum is 4
+ */
+  setDebugMessageLevel(2);
+  ArduinoCloud.printDebugInfo();
+}
+
+void loop() {
+  ArduinoCloud.update();
+  // Your code here 
+  
+  
+}
+
+/*
+  Since Servo is READ_WRITE variable, onServoChange() is
+  executed every time a new value is received from IoT Cloud.
+*/
+void onServoChange()  {
+  // Add your code he
+======================================================================
+
+[287] Similarity: 0.552 | fastbeluga._18348 | 1/20/2025
+
+     related to the state of network and IoT Cloud connection and errors
+     the higher number the more granular information you’ll get.
+     The default is 0 (only errors).
+     Maximum is 4
+ */
+  setDebugMessageLevel(2);
+  ArduinoCloud.printDebugInfo();
+}
+
+void loop() {
+  ArduinoCloud.update();
+  // Your code here 
+  
+  
+}
+
+/*
+  Since Servo is READ_WRITE variable, onServoChange() is
+  executed every time a new value is received from IoT Cloud.
+*/
+void onServoChange()  {
+  // Add your code he
+======================================================================
+
+[288] Similarity: 0.552 | .pseud0 | 9/15/2025
+direct hardware access is king
+======================================================================
+
+[289] Similarity: 0.552 | robherc | 1/29/2025
+well, with the tech. involved, the likelihood of a random YT video being legitimate also is not high
+======================================================================
+
+[290] Similarity: 0.551 | klevi_ | 8/30/2025
+There are quite small powerbanks. They are handy as you don't risk damaging your electronics
+======================================================================
+
+[291] Similarity: 0.551 | toph2814 | 9/7/2025
+*(pulling more current than the Arduino microcontroller board can provide will cause damage to it & eventually burn it out)*
+======================================================================
+
+[292] Similarity: 0.551 | .pseud0 | 9/7/2025
+>  Reason of failure is Antivirus as the files @ username.arduino-create\arduino\rp2040tools\1.0.2 are deleted by antivirus immediately after they've been unpacked!
+======================================================================
+
+[293] Similarity: 0.551 | .qwertypo | 1/5/2025
+```
+void initializeRS485() {
+  bool dipOneState = DIP_ONE_STATE.read() == HIGH;
+
+  // Reconfigure RS485 pins based on DIP switch state
+  rs485.end(); // End previous instance
+  if (dipOneState) {
+    rs485 = SoftwareSerial(RS485_WASTE, RS485_PIN); // TX mode (RX, TX)
+    Serial.println("TX Mode");
+  } else {
+    rs485 = SoftwareSerial(RS485_PIN, RS485_WASTE); // RX mode (RX, TX)
+    Serial.println("RX Mode");
+  }
+  rs485.begin(9600);
+}
+
+```
+======================================================================
+
+[294] Similarity: 0.551 | anonengineering | 5/21/2025
+probably, since you know the hardware works
+======================================================================
+
+[295] Similarity: 0.551 | xylonofficial | 2/14/2025
+I am looking for a dev to help me with Arduino and IoT Sensors
+======================================================================
+
+[296] Similarity: 0.551 | toph2814 | 1/22/2025
+you can create a thread in #hardware-help ... ideally you explain what you're trying to accomplish & show us what you have so far *(complete+clear schematic diagrams & any code you have)*
+======================================================================
+
+[297] Similarity: 0.551 | toph2814 | 8/26/2025
+🤷 I don't see how the shield could have fried the Arduino... naturally, without seeing exactly how you connected everything... anyone's guess is as good as mine...
+======================================================================
+
+[298] Similarity: 0.551 | anonengineering | 3/23/2025
+was jk, the number of bytes depends on the data you are sending
+======================================================================
+
+[299] Similarity: 0.551 | tuulikauri | 7/23/2025
+Wikipedia says... https://en.wikipedia.org/wiki/USB_hardware
+======================================================================
+
+[300] Similarity: 0.551 | smokxix | 2/13/2025
+I have a problem with Atmega328P hanging when using the I2C bus. 
+
+https://www.youtube.com/watch?v=AM83Q5dXVwI
+======================================================================
+
+[301] Similarity: 0.551 | diamonddback | 8/16/2025
+And likewise even on the same frenqucy, there are many ways of encapsulates the message. So it can only pe picked up or transmitted by devices designed for that specific type of encapsulatesion.
+
+And then across all of that you then can add digital channels. And digital kets to encode it.
+So this is a HUGE habit hole.
+
+@h3xagon the sniper
+======================================================================
+
+[302] Similarity: 0.551 | .pseud0 | 4/14/2025
+With what error? Please, remove the ICSP cables and only try with the regular USB port, and show which exact error you're having, at which exact Arduino IDE -> Tools settings, and with which exact Tools -> Port setting.
+======================================================================
+
+[303] Similarity: 0.551 | penpengu | 9/28/2025
+But the arduino itself can still work if only that chip is broken.
+You will need a second arduino or a USB-serial converter to upload new programs to the half-broken arduino or use the serial monitor with the half-broken arduino.
+======================================================================
+
+[304] Similarity: 0.551 | jaysama3236 | 8/18/2025
+Probably hardware issue but idk
+======================================================================
+
+[305] Similarity: 0.551 | robherc | 1/22/2025
+iirc, some of these things can push serial data over USB at 4Mbps
+======================================================================
+
+[306] Similarity: 0.551 | .pseud0 | 9/7/2025
+keeping in mind the pins of <https://wiki.dfrobot.com/FireBeetle_ESP8266_IOT_Microcontroller_SKU__DFR0489>.
+======================================================================
+
+[307] Similarity: 0.551 | paavo.paavo.paavo | 10/3/2025
+D1306AsciiAvrI2c.h>
+#include <SSD1306AsciiSoftSpi.h>
+#include <SSD1306AsciiSpi.h>
+#include <SSD1306AsciiWire.h>
+#include <SSD1306init.h>
+
+#include <Wire.h>
+
+#define I2C_ADDRESS 0x3C
+#define RST_PIN -1
+
+SSD1306AsciiAvrI2c oled;
+
+
+void setup() {
+  // put your setup code here, to run once:
+
+  Serial.begin(9600);
+  Wire.begin();
+  oled.setI2cClock(400000L);
+
+#if RST_PIN >= 0
+  oled.begin(&SH1106_128x64, I2C_ADDRESS, RST_PIN);
+#else
+  oled.begin(&SH1106_128x64, I2C_ADDRESS);
+#endif
+
+  oled.print("Goo
+======================================================================
+
+[308] Similarity: 0.551 | motiondev. | 3/4/2025
+is using electrical tape to tape my positive external batterty wire and my positive pump wire considered safe/
+======================================================================
+
+[309] Similarity: 0.551 | motiondev. | 3/4/2025
+is using electrical tape to tape my positive external batterty wire and my positive pump wire considered safe/
+======================================================================
+
+[310] Similarity: 0.550 | anonengineering | 1/26/2025
+a "4-20mA" current loop is a fairly common industrial control system method of sending data.
+with an additional module like shown here <https://www.instructables.com/Interfacing-4-20mA-Current-Loop-Sensors-With-Ardui/> you can "talk" to the sensor using I2C
+======================================================================
+
+[311] Similarity: 0.550 | .pseud0 | 4/19/2025
+e.g., this chip can **sink** 16mA max, but only source 0.4mA.
+======================================================================
+
+[312] Similarity: 0.550 | toph2814 | 7/24/2025
+👉 HID is a standard for computer peripherals...
+👉 Arduino is an ecosystem *(board + IDE + libraries)*  that allow you to create microcontroller projects relatively easily...
+======================================================================
+
+[313] Similarity: 0.550 | november_rain. | 5/17/2025
+What is written on the ic
+2244
+SC114200
+BZ863E
+======================================================================
+
+[314] Similarity: 0.550 | tomdwaggy | 9/30/2025
+Supposedly this thing as hardware USI, but I can't find an implementation of serial using that, that doesn't look super brittle.
+======================================================================
+
+[315] Similarity: 0.550 | cmdturtls | 5/22/2025
+wait in what situation would those components fry a device
+======================================================================
+
+[316] Similarity: 0.550 | shagodaralkosha | 1/20/2025
+Is there an esp 8266 emulator that could work with IOT apps like blynk?
+======================================================================
+
+[317] Similarity: 0.550 | ja_pinkerton | 5/2/2025
+sectors are an artifact of when we stored data on spinning rust
+======================================================================

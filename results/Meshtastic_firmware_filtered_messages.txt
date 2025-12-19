@@ -1,0 +1,1314 @@
+[1] Similarity: 0.573 | kev1n8088 | 1/1/2025
+would you happen to know where that is implemented in firmware?
+======================================================================
+
+[2] Similarity: 0.557 | theoneleooneeeeeeeeeeeeeeeeeeeee | 1/1/2025
+Yea that's what I read from the comments in the source code too, Just wanted to make sure the acks are not used for something really important. We got a big network here and we had the issue, when someone was reciving a lot of messages,the node acts like a ddos enhancer and spams the network full with delivery messages or acks. Hence modifing the firmware to make it stop sending any acks, when doing so, also stumbled across the package priorities.
+======================================================================
+
+[3] Similarity: 0.553 | theoneleooneeeeeeeeeeeeeeeeeeeee | 1/1/2025
+Should I open a github issue or could you include a rate limiter, how many ack's a node is sending out, in case of a lot of inbound messages? So it doesn't act as a ddos emplifier
+======================================================================
+
+[4] Similarity: 0.556 | m_ia_n | 1/3/2025
+if you can check debug logs, if it's trying to use the INA it should debug log `Using INA on I2C addr 0x40 for charging detection`, looks like
+======================================================================
+
+[5] Similarity: 0.560 | mictronics | 1/4/2025
+```
+EBUG | ??:??:?? 201 [Power] Battery: usbPower=0, isCharging=0, batMv=2685, batPct=0
+DEBUG | ??:??:?? 201 [Power] Low voltage counter: 3/10
+DEBUG | ??:??:?? 221 [Power] Battery: usbPower=0, isCharging=0, batMv=2687, batPct=0
+DEBUG | ??:??:?? 221 [Power] Low voltage counter: 4/10
+DEBUG | ??:??:?? 241 [Power] Battery: usbPower=0, isCharging=0, batMv=2674, batPct=0
+DEBUG | ??:??:?? 241 [Power] Low voltage counter: 5/10
+DEBUG | ??:??:?? 261 [Power] Battery: usbPower=0, isCharging=0, batMv=2615, b
+======================================================================
+
+[6] Similarity: 0.567 | ginntonic. | 1/4/2025
+firmware.factory bin goes to 0 and firmware.bin to 0x10000 - and you might try an esptool erase before flashing factory bin.
+======================================================================
+
+[7] Similarity: 0.580 | definitely_not_golf | 1/4/2025
+TLDR:
+
+18:29:51.493 [0m [32m INFO [0m| ??:??:?? 2 [32m INA219 found at address 0x40
+
+18:30:12.060 [0m [34m DEBUG [0m| ??:??:?? 22 [Power] [34m Using INA on I2C addr 0x40
+ for charging detection
+======================================================================
+
+[8] Similarity: 0.556 | definitely_not_golf | 1/4/2025
+Its hard to test ugh. So essentially USBC is powering the node and INA219 since the 3v3 is fed into the battery slot which is being fed from USB.
+======================================================================
+
+[9] Similarity: 0.554 | definitely_not_golf | 1/9/2025
+that seems useful for limiting traffic from nodes on really old firmware.
+======================================================================
+
+[10] Similarity: 0.580 | 0xmarcell | 1/10/2025
+Partly firmware related question if anyone is interested
+https://discord.com/channels/867578229534359593/871539930852130866/1327415661693239338
+======================================================================
+
+[11] Similarity: 0.557 | dlweeks | 1/12/2025
+Is this gonna be an issue? https://www.rcrwireless.com/20250107/internet-of-things/private-lte-915-mhz-ubiik
+======================================================================
+
+[12] Similarity: 0.555 | b8b8 | 1/12/2025
+posting the serial logs from your "broken" device before restoring the firmware wouldbe helpful for the devs
+======================================================================
+
+[13] Similarity: 0.558 | eelco. | 1/12/2025
+e device has become bricked.. unless someone has a script that could kick the device
+======================================================================
+
+[14] Similarity: 0.551 | jasonpiper | 1/13/2025
+https://meshtastic.org/docs/configuration/radio/security/#security-keys---backup-and-restore
+======================================================================
+
+[15] Similarity: 0.587 | dl33t | 1/13/2025
+That is a security risk.
+======================================================================
+
+[16] Similarity: 0.597 | dl33t | 1/13/2025
+That would still allow someone to take your nodes if they hack your key..... That is the pushback that people have given.
+======================================================================
+
+[17] Similarity: 0.612 | dl33t | 1/13/2025
+Hackers gonna hack
+======================================================================
+
+[18] Similarity: 0.562 | dl33t | 1/13/2025
+this is why I suggest just making the nodes expire after a certain time. If they tried to spoof while the original device was active (or within 2 weeks) it would be unsuccessful.
+======================================================================
+
+[19] Similarity: 0.567 | erayd.net | 1/13/2025
+Honestly, build (or get someone to build for you) a firmware with a shiny new node ID hardcoded in it. Flash that. Back in business without any need to climb ten towers. It's a kludgy hack, but it will solve your immediate problem right now.
+======================================================================
+
+[20] Similarity: 0.588 | dl33t | 1/13/2025
+If you were going to hack you would just randomize the ID each time and skirt the entire issue.
+======================================================================
+
+[21] Similarity: 0.615 | dl33t | 1/13/2025
+that is the holy grail of hacking
+======================================================================
+
+[22] Similarity: 0.558 | b8b8 | 1/14/2025
+No. Should work on 2.5 + firmware with the new encryption system
+======================================================================
+
+[23] Similarity: 0.556 | .anotherandrew | 1/15/2025
+I don't know enough about the main firmware development to be able to answer that, sorry
+======================================================================
+
+[24] Similarity: 0.564 | thebentern | 1/19/2025
+Meshtastic supports NRF52, ESP32, RP2040, STM32, and linux native (that one is the oddball 😅 ) hardware all on the same codebase, so Arduino seems to be a necessary evil (*for now*) for us
+======================================================================
+
+[25] Similarity: 0.557 | .anotherandrew | 1/19/2025
+this is on custom hardware (ESP32C3 based)
+======================================================================
+
+[26] Similarity: 0.554 | rcgv_ | 1/21/2025
+Looks like a node on our network was unintentionally ddossing by sending position packets very often with a want response so every node was responding back with its position
+======================================================================
+
+[27] Similarity: 0.563 | rcgv_ | 1/22/2025
+Right now most of the firmware is focused on preventing your node from spamming
+======================================================================
+
+[28] Similarity: 0.598 | rcgv_ | 1/22/2025
+Since people could be intentionally ddosing with custom firmware or unintentionally with some sort of bug
+======================================================================
+
+[29] Similarity: 0.577 | aster_0197 | 1/23/2025
+I want to do iot stuff but more securely
+======================================================================
+
+[30] Similarity: 0.567 | jessicamanig | 1/23/2025
+e-for-Seeed-Studio-XIAO-p-5864.html
+    L76K Expansion Board can not directly used, L76K Reset Pin needs to override or physically remove it,
+    otherwise it will conflict with the SPI pins
+*/
+#define GPS_L76K
+#ifdef GPS_L76K
+#define GPS_RX_PIN 44
+#define GPS_TX_PIN 43
+#define HAS_GPS 1
+#define GPS_BAUDRATE 9600
+#define GPS_THREAD_INTERVAL 50
+#define PIN_SERIAL1_RX PIN_GPS_TX
+#define PIN_SERIAL1_TX PIN_GPS_RX
+#define PIN_GPS_STANDBY 1
+#endif
+
+// XIAO S3 Expansion board  has 1.3 inch OLED Screen
+======================================================================
+
+[31] Similarity: 0.576 | .anotherandrew | 1/23/2025
+should the firmware i2c scan VERY early at bootup detect a BME680?
+======================================================================
+
+[32] Similarity: 0.580 | .anotherandrew | 1/23/2025
+I see ```INFO  | ??:??:?? 0 Scan for i2c devices...
+DEBUG | ??:??:?? 0 Scan for I2C devices on port 1
+DEBUG | ??:??:?? 0 I2C device found at address 0x40
+DEBUG | ??:??:?? 0 Wire.available() = 2
+DEBUG | ??:??:?? 0 Register MFG_UID: 0x2000
+INFO  | ??:??:?? 0 INA219 sensor found at address 0x40
+INFO  | ??:??:?? 0 1 I2C devices found
+DEBUG | ??:??:?? 0 acc_info = 0
+DEBUG | ??:??:?? 0 found i2c sensor meshtastic_TelemetrySensorType_INA219```
+followed very soon after with ```DEBUG | ??:??:?? 1 Rescan 
+======================================================================
+
+[33] Similarity: 0.559 | .anotherandrew | 1/23/2025
+for I2C keyboard
+DEBUG | ??:??:?? 1 Scan for I2C devices on port 1
+DEBUG | ??:??:?? 1 Scan address 0x1f
+DEBUG | ??:??:?? 1 Scan address 0x55
+DEBUG | ??:??:?? 1 Scan address 0x5a
+DEBUG | ??:??:?? 1 Scan address 0x5f
+DEBUG | ??:??:?? 1 Keyboard Type: 0x00 Model: 0x00 Address: 0x00```
+which appears to be a rescan specifically for an I2C keyboard, but I never see the BME show up
+======================================================================
+
+[34] Similarity: 0.559 | .anotherandrew | 1/23/2025
+answering my own question: yep it shows up right away: ```INFO  | ??:??:?? 2 INA219 sensor found at address 0x40
+DEBUG | ??:??:?? 2 I2C device found at address 0x76
+DEBUG | ??:??:?? 2 Wire.available() = 1
+INFO  | ??:??:?? 2 BME-680 sensor found at address 0x76
+INFO  | ??:??:?? 2 2 I2C devices found
+DEBUG | ??:??:?? 2 acc_info = 0
+DEBUG | ??:??:?? 2 found i2c sensor meshtastic_TelemetrySensorType_BME680
+DEBUG | ??:??:?? 2 found i2c sensor meshtastic_TelemetrySensorType_INA219
+INFO  | ??:??:?? 2 S
+======================================================================
+
+[35] Similarity: 0.550 | ziipzaaapm16a4 | 1/24/2025
+msg.hop_limit = (uint8_t)50;
+    msg.want_ack = false;
+    msg.priority = meshtastic_MeshPacket_Priority_HIGH;
+    msg.rx_rssi;
+    msg.delayed = meshtastic_MeshPacket_Delayed_NO_DELAY;
+    msg.via_mqtt = false;
+    msg.hop_start = (uint8_t)0;
+    msg.public_key;
+    msg.pki_encrypted;
+    service->sendToMesh(&msg);
+...
+```
+======================================================================
+
+[36] Similarity: 0.576 | ziipzaaapm16a4 | 1/27/2025
+ioIf] Packet received : 690ms
+DEBUG | ??:??:?? 940 [Router] Add packet record (id=0x00000001 fr=0x6c to=0xff, WantAck=0, HopLim=7 Ch=0x8 encrypted rxSNR=11.75 rxRSSI=-28 hopStart=7)
+DEBUG | ??:??:?? 940 [Router] Using channel 0 (hash 0x8)
+DEBUG | ??:??:?? 940 [Router] Expanding short PSK #1
+DEBUG | ??:??:?? 940 [Router] Using AES128 key!
+DEBUG | ??:??:?? 940 [Router] decoded message (id=0x00000001 fr=0x6c to=0xff, WantAck=0, HopLim=7 Ch=0x0 Portnum=256 rxSNR=11.75 rxRSSI=-28 hopStart=7)
+DEBUG | 
+======================================================================
+
+[37] Similarity: 0.569 | fifieldt | 2/8/2025
+Have you worked with Platform.io before? We know that's new to a lot of people who've worked with device specific tools (eg esp32) , so suggest starting by building a firmware to get use to the toolchain: https://meshtastic.org/docs/development/firmware/build/
+======================================================================
+
+[38] Similarity: 0.564 | ginntonic. | 2/9/2025
+also a security measure
+======================================================================
+
+[39] Similarity: 0.576 | nopcode | 2/18/2025
+is there a promiscuous mode in the firmware yet? so you can analyze all packets via usb?
+======================================================================
+
+[40] Similarity: 0.553 | jasonpiper | 2/20/2025
+https://meshtastic.org/docs/hardware/devices/linux-native-hardware/
+Please read the big warning on this page
+======================================================================
+
+[41] Similarity: 0.567 | garthvh | 2/21/2025
+Meshtastic needs to have SPI to have low level control of the Lora, UART means there is a microcontroller doing the low level radio work and is not compatible with radiolib.
+======================================================================
+
+[42] Similarity: 0.597 | fifieldt | 2/21/2025
+Contributions in that area would be welcome. The other thing we're working on (eventually) is hardware-in-the-loop testing.
+======================================================================
+
+[43] Similarity: 0.599 | ginntonic. | 3/3/2025
+include guards: some processor platforms need them, some don't, some come from personal preference. Regarding the -D in platformio.ini vs. variant.h, some of these need to defined on a build scope, since they affect how external libraries behave. variant.h is only pulled in for our own code files, not external dependencies.
+======================================================================
+
+[44] Similarity: 0.560 | dandcodes | 3/4/2025
+Does anyone know if the firmware serves this endpoint? And what the purpose of it is? I've seen it before and wondering what it does `/json/report`
+======================================================================
+
+[45] Similarity: 0.586 | nucleosynth | 3/5/2025
+also, is the dev container the best way to get started with firmware hacking quickly?
+======================================================================
+
+[46] Similarity: 0.585 | nucleosynth | 3/6/2025
+is there any automated testing around the i2c scanner logic?
+======================================================================
+
+[47] Similarity: 0.619 | prosthetichead2869 | 3/8/2025
+Looks like ESP32 has a backdoor https://www.bleepingcomputer.com/news/security/undocumented-backdoor-found-in-bluetooth-chip-used-by-a-billion-devices/
+======================================================================
+
+[48] Similarity: 0.569 | is.this.los | 3/8/2025
+I've definitely used a bit of a hack on a personal nrf52 device in the past  for at least some protection against low battery
+======================================================================
+
+[49] Similarity: 0.586 | ginntonic. | 3/9/2025
+this is basically nothing. No back door, no unauthorized access, no vulnerability. only thing this would allow is for a malicious meshtastic device firmware to elevate the scope of bluetooth access to the phone.
+======================================================================
+
+[50] Similarity: 0.558 | cisien | 3/9/2025
+Don’t tell them that all cpus have undocumented commands!
+======================================================================
+
+[51] Similarity: 0.556 | is.this.los | 3/11/2025
+Oh, are you using the native usb, or the hardware UART + a serial adapter IC?
+======================================================================
+
+[52] Similarity: 0.565 | binky. | 3/13/2025
+Wus the likelihood of an unsupported bmp sensor to work out the gate over I2C? lookin at the bmp388 looks to have better specs and 5x cheaper for some raisin.
+======================================================================
+
+[53] Similarity: 0.587 | nucleosynth | 3/13/2025
+Speaking of, I’ve been thinking about adding manual overrides to the config for I2C devices/scanning. best thing I’ve thought of so far is to move around some enums from the C to protobuf
+======================================================================
+
+[54] Similarity: 0.553 | trs2982 | 3/19/2025
+Yes.  2.6 is using the newer encryption.  You'll see that amber unlock icon in two situations. 1) They are running a firmware version that predates the public key encryption for DMs. 2) They are running with HAM mode enabled.
+======================================================================
+
+[55] Similarity: 0.554 | onyxclawe | 3/20/2025
+Im fairly certain the reason it wipes the device is to fix the issues yeah
+======================================================================
+
+[56] Similarity: 0.551 | ginntonic. | 3/23/2025
+we have an example repo how all this is done from a connected arduino over serial port. https://github.com/meshtastic/Meshtastic-arduino
+======================================================================
+
+[57] Similarity: 0.558 | asultd | 3/25/2025
+sorry for late reply, this was for straight communication, it is allgood i have solved it by creating manual fragmentation on the firmware BLE code with a custom characteristic specific to my device
+======================================================================
+
+[58] Similarity: 0.562 | ginntonic. | 3/26/2025
+also the firmware is not an arduino sketch, it's much more complex. try to get familiar with the code structure and ask a LOT of questions. Really, it's appreciated 🙂
+======================================================================
+
+[59] Similarity: 0.573 | m_ia_n | 3/26/2025
+what are you using to decrypt?
+======================================================================
+
+[60] Similarity: 0.572 | m_ia_n | 3/26/2025
+I'm checking against the code I have that has successfully decrypted stuff off MQTT before
+======================================================================
+
+[61] Similarity: 0.552 | garthvh | 3/27/2025
+The random pin is output over serial as well as the screen when you try and connect so that may help you get the device rescued so you can connect with your phone and then change to fixed pin
+======================================================================
+
+[62] Similarity: 0.552 | jasonbcox | 3/28/2025
+I spent a couple hours digging through the code base and identified some low hanging fruit. I put up a couple PRs under this issue: https://github.com/meshtastic/firmware/issues/6427 Please take a look and let me know what you think.
+======================================================================
+
+[63] Similarity: 0.587 | vogon | 3/31/2025
+you will need to buy an external debug probe but also the board does have JTAG broken out and the ESP-Prog probe seems to be functional and very cheap
+======================================================================
+
+[64] Similarity: 0.602 | vogon | 3/31/2025
+https://resource.heltec.cn/download/WiFi_LoRa_32_V3/HTIT-WB32LA(F)_V3.1_Schematic_Diagram.pdf the JTAG pins are labeled 39 (TCK), 40 (TDO), 41 (TDI), and 42 (TMS) on the back side of the board
+======================================================================
+
+[65] Similarity: 0.556 | n8lbv | 3/31/2025
+That and the semtech RF hardware 🙂
+======================================================================
+
+[66] Similarity: 0.602 | darunoko | 4/1/2025
+Heya, I'm considering cooking something up for myself, but I was curious as to why it hasn't been tackled quite yet (or discussed, per my cursory search-fu). 
+
+Is there any particular reason that the hardware itself isn't "locked down", at least to low-effort snooping? For instance, someone has physical access to one of my nodes, and is able to simply pair via bluetooth and retreive my messages from the last [x] hours/days, along with my encryption keys and other items of interest. 
+
+It just see
+======================================================================
+
+[67] Similarity: 0.654 | darunoko | 4/1/2025
+Maybe there's something at the hardware level that would bypass any firmware improvement to security, but I can't figure out what it would be.
+======================================================================
+
+[68] Similarity: 0.562 | valzzu_ | 4/1/2025
+u cant have any password protection on serial connection, well if its linux based node thats a different story
+======================================================================
+
+[69] Similarity: 0.563 | rcgv_ | 4/1/2025
+Best thing to do is to either factory reset via a client app when your node is about to be compromised or remotely over the mesh
+======================================================================
+
+[70] Similarity: 0.563 | darunoko | 4/1/2025
+so then I could just set a bespoke static bluetooth pin for a node, disable serial, and I'm at least semi-resilient to low-effort snooping
+======================================================================
+
+[71] Similarity: 0.564 | rastislav | 4/1/2025
+I think it has place directly in firmware, but I need to do research more and check what are the contributing policies to avoid unsuccess in contribution.
+======================================================================
+
+[72] Similarity: 0.553 | b8b8 | 4/1/2025
+Yea you can hardwire the high voltage power to the jst connector on the bottom and use the usb just for data
+======================================================================
+
+[73] Similarity: 0.607 | uolsen | 4/3/2025
+There is a bug? If you have connected environment board/module to heltec wireless tracker the USB - jtag debug / flash doesn't work. There is no mention of this anywhere in the documentation or in flasher. What do you think about this? Should Env i2c be moved to different ports?
+======================================================================
+
+[74] Similarity: 0.559 | u0421793 | 4/3/2025
+Is there Meshtastic support for an i2c lie detector
+======================================================================
+
+[75] Similarity: 0.558 | .anotherandrew | 4/3/2025
+the variant is `heltec-ht62-esp32c3-sx1262` -- I moved I2C and disabled button, LED and battery pins
+======================================================================
+
+[76] Similarity: 0.561 | garthvh | 4/3/2025
+You uploaded the firmware download zip and not the zip inside that zip for your hardware usually
+======================================================================
+
+[77] Similarity: 0.553 | .anotherandrew | 4/4/2025
+@caveman99 🇩🇪 interesting. I blew away `~/.platformio/platforms`, did a fresh checkout of `firmware.git` and checked out `tags/v2.6.4.b89355f` -- same error in the same place
+======================================================================
+
+[78] Similarity: 0.558 | joelenvrac_yt | 4/5/2025
+my platformio.ini looks like
+```[env:cheapmesh-ht-ct62]
+extends = esp32c3_base
+board = esp32-c3-devkitm-1
+build_flags = 
+  ${esp32_base.build_flags}
+  -D HELTEC_HT62
+  #-D CHEAPMESH_HT_CT62
+  #-D ARDUINO_USB_CDC_ON_BOOT=1
+  #-D ARDUINO_USB_MODE=0
+  -I variants/cheapmesh_ht-ct62
+
+board_flags =
+  -D ARDUINO_USB_CDC_ON_BOOT=1
+  -D ARDUINO_USB_MODE=1
+
+monitor_speed = 115200
+upload_protocol = esptool
+;upload_port = /dev/ttyUSB0
+upload_speed = 921600
+```
+======================================================================
+
+[79] Similarity: 0.574 | nomdetom | 4/5/2025
+The esp32c3 variants aren't well tested owing to a lack of widely available hardware 😬
+======================================================================
+
+[80] Similarity: 0.576 | joelenvrac_yt | 4/7/2025
+I found another esp32c3 variant : `hackerboxes-esp32c3-oled`
+Native usb serial works with this one so I'll dig to understand
+
+And finaly, `ARDUINO_USB_CDC_ON_BOOT=1` needs to be in `build_flags =` of platformio.ini as it's the case for this variant and it works.
+======================================================================
+
+[81] Similarity: 0.572 | joelenvrac_yt | 4/7/2025
+But of course I'll try to compare `hackerboxes-esp32c3-oled` and `heltec_esp32c3` variants to try to answer why native usb serial doesnt work for the heltec, but works if I build & flash the hackerboxes firmare on it... 🤔
+======================================================================
+
+[82] Similarity: 0.559 | talie5in | 4/7/2025
+settings these flags also makes Serial Console work over USB
+======================================================================
+
+[83] Similarity: 0.580 | jerub | 4/14/2025
+yeah, the hardware and the mqtt side of it is pretty much plug and play. the "fun" bit will be making it scrape the bluetooth sensors and forward that data.
+======================================================================
+
+[84] Similarity: 0.554 | _b3nny_ | 4/15/2025
+If you want to read a little rust this code actually works and should be a fair bit easier to read than the firmware code https://github.com/Ben-Lichtman/nrf-lora/blob/master/src/radio.rs
+======================================================================
+
+[85] Similarity: 0.588 | dangernaut | 4/16/2025
+in both cases it seems to be the same in detection ```
+DEBUG | ??:??:?? 0 Scan for I2C devices on port 1
+INFO | ??:??:?? 0 AXP192/AXP2101 found at address 0x34
+DEBUG | ??:??:?? 0 0x1 subtype probed in 2 tries
+INFO | ??:??:?? 0 2 I2C devices found
+```
+======================================================================
+
+[86] Similarity: 0.562 | brainyslain | 4/21/2025
+all the other hardware is supported AFAIK and that's just a matter of setting the right build flags and pins. the only other thing that might be an obstacle is the shared SPI bus between the screen and the radio which I don't think any other supported devices have
+======================================================================
+
+[87] Similarity: 0.590 | is.this.los | 4/21/2025
+@Jason P (xaositek) 🇺🇸 has one of these devices and is keen to test stuff out with it
+======================================================================
+
+[88] Similarity: 0.555 | ajohntitor | 4/21/2025
+i think this commit accidentally disabled RADIOLIB_IRQ_PREAMBLE_DETECTED: https://github.com/meshtastic/firmware/pull/4621
+
+looks like the bit needs to be shifted left 1?
+======================================================================
+
+[89] Similarity: 0.580 | fifieldt | 4/25/2025
+@BlueEyesWhackDragon in src/gps/GPS.cpp there are two main places that need to be modified. The first is the detection code (GnssModel_t GPS::probe(int serialSpeed) ), where we'll send a command to the chip and look at the response to work out which one it is. Lots of examples in there. The second section is the setup code (bool GPS::setup() ) where we configure the chip.
+======================================================================
+
+[90] Similarity: 0.581 | jerub | 4/28/2025
+and the ifdefs treat different hardware differently in obscure ways that i think might actually be straight up bugs.
+======================================================================
+
+[91] Similarity: 0.551 | momentumv | 4/28/2025
+@Todd  suspicious... https://github.com/meshtastic/firmware/blob/b4e8f7dbb656518aa277869358f56201dc8eb14e/src/modules/CannedMessageModule.h#L60
+======================================================================
+
+[92] Similarity: 0.561 | girtzenheser | 4/30/2025
+has anyone hacked a Cybiko to work with Meshtastic yet?
+======================================================================
+
+[93] Similarity: 0.562 | dedskelly | 5/5/2025
+What device?
+======================================================================
+
+[94] Similarity: 0.556 | wille469 | 5/8/2025
+`device-install.bat -f firmware-station-g2-2.6.7.2d6181fc.bin -p COM8 --web`
+======================================================================
+
+[95] Similarity: 0.606 | spiffysec | 5/10/2025
+If boot hangs on "Scan for i2c devices", is that a sign that a i2c device is faulty?
+======================================================================
+
+[96] Similarity: 0.568 | wille469 | 5/10/2025
+SEC2 code: 100
+WARN  | 23:02:27 4257 [EnvironmentTelemetry] runTrigger BME68X code: 2
+DEBUG | 23:02:29 4258 Network-Event 5:
+INFO  | 23:02:29 4258 Disconnected from WiFi access point
+WARN  | 23:02:29 4258 WiFi lost connection. Reason: 2
+INFO  | 23:02:30 4259 [WifiConnect] Reconnecting to WiFi access point go away
+WARN  | 23:02:35 4264 [EnvironmentTelemetry] runTrigger BSEC2 code: 100
+WARN  | 23:02:35 4264 [EnvironmentTelemetry] runTrigger BME68X code: 2
+DEBUG | 23:02:36 4266 Network-Event 5:
+INF
+======================================================================
+
+[97] Similarity: 0.558 | wille469 | 5/10/2025
+again powering from JST, and USB for console connection.
+======================================================================
+
+[98] Similarity: 0.557 | wille469 | 5/13/2025
+Has there been any investigation as to why G2 on 2.6.7 is locking up ?
+======================================================================
+
+[99] Similarity: 0.598 | spiffysec | 5/14/2025
+Could it be ... hardware fault?
+======================================================================
+
+[100] Similarity: 0.606 | serveurperso | 5/15/2025
+We know this. Like an SSH fingerprint. If I'm bringing it up, it's because our group of Parisian engineers finds it abnormal that their key changes are repaired by disconnecting and reconnecting Bluetooth.
+======================================================================
+
+[101] Similarity: 0.573 | n30nex | 5/16/2025
+on a private network with only trusted devices, sure. But some people are exposing it
+======================================================================
+
+[102] Similarity: 0.584 | wille469 | 5/16/2025
+Just rebooted again...
+```
+DEBUG | 23:16:33 469 [Router] Expand short PSK #1
+DEBUG | 23:16:33 469 [Router] Use AES128 key!
+DEBUG | 23:16:33 469 [Router] Broadcasting packet over UDP (id=2284609468)
+DEBUG | 23:16:33 469 [Router] enqueue for send (id=0x882c5fbc fr=0x9efae3f2 to=0xffffffff, WantAck=0, HopLim=5 Ch=0x8 encrypted len=61 rxtime=1747437393 rxSNR=6.25 rxRSSI=-36 hopStart=6 re
+DEBUG | 23:16:33 469 [Router] txGood=5,txRelay=2,rxGood=21,rxBad=0
+DEBUG | 23:16:33 469 [Router] rx_snr found. ho
+======================================================================
+
+[103] Similarity: 0.570 | valzzu_ | 5/18/2025
+i2c works it found the 2 devices on it
+======================================================================
+
+[104] Similarity: 0.576 | guvwaf | 5/18/2025
+The first is test code (a fuzzer), so not actual firmware running on the device, but testing against it.
+The second is commented out, but serves as an example how to hard-code one.
+======================================================================
+
+[105] Similarity: 0.559 | sadteeto | 5/22/2025
+also another test where I hooked up an esp32-c3 +sx1262 (the spikes were caused by one of the leds where using spi pin) :
+======================================================================
+
+[106] Similarity: 0.562 | garthvh | 5/24/2025
+What device?
+======================================================================
+
+[107] Similarity: 0.552 | garthvh | 5/26/2025
+It is available in firmware 2.6.9 forward and is being beta tested on Android and iOS right now
+======================================================================
+
+[108] Similarity: 0.552 | disappear9 | 5/26/2025
+```
+DEBUG | 01:19:28 2700 [Router] Broadcasting packet over UDP (id=1708739046)
+DEBUG | 01:19:28 2700 [Router] enqueue for send (id=0x65d949e6 fr=0xef03f0d5 to=0xabcd0bb4, WantAck=0, HopLim=2 Ch=0x8 encrypted len=29 rxtime=1748193568 rxSNR=6.5 rxRSSI=-55 hopStart=3 rel
+DEBUG | 01:19:28 2700 [Router] txGood=98,txRelay=89,rxGood=94,rxBad=2
+DEBUG | 01:19:28 2700 [Router] Module 'routing' considered
+DEBUG | 01:19:28 2700 [Router] MQTT onSend - Publish 
+﻿DEBUG | 01:19:28 2700 [Router] encrypted messa
+======================================================================
+
+[109] Similarity: 0.553 | disappear9 | 5/26/2025
+```
+INFO  | 01:34:29 899 [mqtt] Received MQTT topic msh*, len=87
+DEBUG | 01:34:29 899 [mqtt] Use channel 0 (hash 0x8)
+DEBUG | 01:34:29 899 [mqtt] Expand short PSK #1
+DEBUG | 01:34:29 899 [mqtt] Use AES128 key!
+DEBUG | 01:34:29 899 [mqtt] decoded message (id=0x2fbf0cf6 fr=0x849c68dc to=0xabcd0bb4, WantAck=0, HopLim=3 Ch=0x0 Portnum=3 requestId=1c536dac via MQTT hopStart=3)
+DEBUG | 01:34:29 899 [Router] Add packet record fr=0x849c68dc, id=0x2fbf0cf6
+
+assert failed: T* MemoryDynamic<T>::alloc(TickT
+======================================================================
+
+[110] Similarity: 0.552 | valzzu_ | 5/27/2025
+also that doesent seem tobe i2c
+======================================================================
+
+[111] Similarity: 0.597 | valzzu_ | 5/27/2025
+and u also could be loosing parts of the firmware packets as well
+======================================================================
+
+[112] Similarity: 0.597 | radioshack_48221 | 5/28/2025
+One could hack the firmware to pass through SPI, GPIO, etc over UART, but I'd sooner just buy a Meshtastic Pi hat, or better yet, perf board one on the cheap
+======================================================================
+
+[113] Similarity: 0.557 | alexzellic | 5/29/2025
+This is an interesting idea, it's probably possible to emulate the ch341 protocol in firmware on the esp32 using the USB peripheral. Only problem is the heltec doesn't expose the ESP32's usb pins on the USB port. They have a USB to serial converter so you'd have to hack up a USB cable and connect it to different pins. Some of the Lilygo boards have USB exposed.
+======================================================================
+
+[114] Similarity: 0.553 | zen_fox_94611 | 6/3/2025
+|| Custom Meshtastic Mods – Smarter Cross-Cluster Routing experiment |||
+Tired of flooding with telemetry and other spam? Check out my experimental firmware that acts as a slingshot for essential packets only — text, config, and diagnostics — while filtering out the noise. Includes Ping tools, Google Maps-linked range tests, and full remote control. Perfect for relay nodes between busy clusters.
+https://github.com/VilemR/meshtastic-custom-mods/blob/master/README-MODS.md
+======================================================================
+
+[115] Similarity: 0.562 | rcgv_ | 6/9/2025
+If you have the key and the old modes Id write some custom firmware to spoof your id
+======================================================================
+
+[116] Similarity: 0.560 | b8b8 | 6/9/2025
+Yup, just confirmed as much with the latest 2.6.10 firmware (to make sure nothing changed) with a "spoofed" backup t1000e can remote admin all my other nodes
+======================================================================
+
+[117] Similarity: 0.610 | nomdetom | 6/10/2025
+What hardware?
+======================================================================
+
+[118] Similarity: 0.553 | bitflp | 6/10/2025
+i know, it uses 2 i2c addresses, one of which is the same as the bmp sensors
+======================================================================
+
+[119] Similarity: 0.577 | b8b8 | 6/11/2025
+And you share it with all other IoT sensors as well
+======================================================================
+
+[120] Similarity: 0.571 | jonathanbennett | 6/13/2025
+And if you want something really fun, each target needs a good audit as to whether we're taking advantage of the hardware randomness sources.
+======================================================================
+
+[121] Similarity: 0.582 | recluse.sfc | 6/13/2025
+Interesting. I'll focus on key management and the other things to make security most robust. I'll ping you all after I finish a prototype.
+======================================================================
+
+[122] Similarity: 0.627 | b8b8 | 6/14/2025
+pretty secure within the limits of the hardware
+======================================================================
+
+[123] Similarity: 0.558 | b8b8 | 6/14/2025
+https://meshtastic.org/docs/overview/encryption/
+======================================================================
+
+[124] Similarity: 0.608 | jamon1 | 6/15/2025
+the biggest "issues" (I quote issues here because I don't know the developers' position on the project goals) in the vein of encryption/pki that I've seen (I'm admittedly rather new to the firmware though) is that channels are all symmetrical encryption with no signing, so anyone can spoof anything in a channel that they have the key for... or overwhelm the network with spam, easily
+======================================================================
+
+[125] Similarity: 0.551 | jamon1 | 6/15/2025
+I've been working on implementing a meshtastic firmware in rust, so I've been reading a bunch 🙂
+======================================================================
+
+[126] Similarity: 0.564 | foxmoder | 6/15/2025
+I was just about to ask, I do a lot of secure embedded Rust OS work, so I was curious if there were any pushes in that direction 🙂
+======================================================================
+
+[127] Similarity: 0.603 | jonathanbennett | 6/15/2025
+There's problems running from Vercel and connecting to real hardware. I don't remember the details. I think it's related to browser security stuff
+======================================================================
+
+[128] Similarity: 0.566 | joerky | 6/18/2025
+Made a bug report on GitHub
+======================================================================
+
+[129] Similarity: 0.551 | coopersmith2314 | 6/19/2025
+**M5Stack Core2 firmware?**
+
+Hi, I can see M5Stack firmware for Core and Core3, but I can't seem to find it for Core2.  Is that available anywhere?
+
+Note: Yes, they'd all 3 require different builds.
+https://shop.m5stack.com/products/m5stack-core2-esp32-iot-development-kit
+======================================================================
+
+[130] Similarity: 0.552 | cisien | 6/19/2025
+buy a self-contained device
+crack it open to modify it to do things that require custom firmware
+complain when the stock firmware doesn't support things that the all in one device doesn't ship with...
+
+Wouldn't it be easier to use a different devices that's configured for tinkering?
+======================================================================
+
+[131] Similarity: 0.555 | lupusworax | 6/22/2025
+FYI Just installed 2.7 on Faketec, everything works so far but telemetry data seems to not work from BME 680 ( was working perfectly with all the recent beta versions perfectly) as its is i2C I think there is no option I would have to adapt to make it work?  So I thought its still a firmwarebug of 2.7 and report it here. Thanks for your effort guys, love 2.7 so far really amazing!
+======================================================================
+
+[132] Similarity: 0.564 | mverch | 6/24/2025
+There has been written companion software for the rp2040 to support attached I2C sensors in Meshtastic. I remember there was a link in the merged PR section of GitHub.
+======================================================================
+
+[133] Similarity: 0.557 | mictronics | 6/27/2025
+No, the situation around hardware support is already out of control. This is obviosuly an attempt to gain back control.
+======================================================================
+
+[134] Similarity: 0.553 | jonathanbennett | 6/27/2025
+Trying to track this thing down is making me *actually* paranoid. Don't know which piece of code to suspect
+======================================================================
+
+[135] Similarity: 0.580 | jamon1 | 6/29/2025
+the devices sending the packets are of lots of different versions/hw--only thing in common is the device the packets are intended for
+======================================================================
+
+[136] Similarity: 0.551 | jamon1 | 6/30/2025
+does the firmware generally respond to want_response = true with non-zero hoplimits and packets to the broadcast address for all packet types?  with as much checking as the firmware has to try to avoid misbehavior/network flooding, it seems like that would be something we'd want to avoid
+======================================================================
+
+[137] Similarity: 0.571 | nomdetom | 6/30/2025
+Cool people of #firmware, @Erayd has a cool thing located in the thread linked above.
+======================================================================
+
+[138] Similarity: 0.567 | fifieldt | 6/30/2025
+For those playing at home, we're looking at this code is in  ScanI2CTwoWire.cpp:358
+
+```            case SHT31_4x_ADDR:     // same as OPT3001_ADDR_ALT
+            case SHT31_4x_ADDR_ALT: // same as OPT3001_ADDR
+                registerValue = getRegisterValue(ScanI2CTwoWire::RegisterLocation(addr, 0x89), 2);
+                if (registerValue == 0x11a2 || registerValue == 0x11da || registerValue == 0xe9c || registerValue == 0xc8d) {
+                    type = SHT4X;
+                    logFoundD
+======================================================================
+
+[139] Similarity: 0.566 | fifieldt | 6/30/2025
+@GlockTober , if you want the quickest possible hack to get it working just for you, you probably know enough to just edit this file to always return SHT4X 🙂 If you have some time to stick around, we can work together to find a better register to try based on both of our devices
+======================================================================
+
+[140] Similarity: 0.560 | dangerdyke | 7/2/2025
+... now platformio is in an infinite loop installing the same dependencies over and over
+======================================================================
+
+[141] Similarity: 0.562 | stary2001 | 7/2/2025
+tried to repro, got
+> AssertionError: Missed target configuration for me25ls01-4y10td
+incredible
+======================================================================
+
+[142] Similarity: 0.569 | nomdetom | 7/4/2025
+https://github.com/meshtastic/Meshtastic-arduino
+
+https://github.com/meshtastic/i2c-sensor
+======================================================================
+
+[143] Similarity: 0.550 | semanticleprechaun | 7/4/2025
+quick q - the encryption technical mentions signing https://meshtastic.org/docs/development/reference/encryption-technical/
+======================================================================
+
+[144] Similarity: 0.569 | aadhil06986 | 7/5/2025
+table handling the hardware-specific development but would appreciate any help, suggestions, or documentation pointers from the community to ensure we go about this the right way.
+
+Thanks in advance for your support!
+======================================================================
+
+[145] Similarity: 0.576 | is.this.los | 7/6/2025
+~~It looks like a mechanism for that safeguard has recently been added, but hasn't actually been applied to the Station G2 (yet).~~ Someone opened an issue about that just yesterday: <https://github.com/meshtastic/firmware/issues/7239>
+======================================================================
+
+[146] Similarity: 0.556 | nomdetom | 7/7/2025
+Do you have a ublox GPS that has i2c protocol listed for it?
+======================================================================
+
+[147] Similarity: 0.595 | testing26494 | 7/7/2025
+all Ublox GPS chips can do i2c, they call it DDC for some reason (monitors use i2c eeproms for their EDID config, and call it the Display Data Channel), perhaps trademark?
+======================================================================
+
+[148] Similarity: 0.581 | jonathanbennett | 7/7/2025
+The project used to support i2c GPS units, but it wasn't being used, so the i2c support was removed a couple years ago. I do know of at least one attempt to use a secondary MCU to talk to i2c devices, and send it over to the main MCU.
+======================================================================
+
+[149] Similarity: 0.607 | testing26494 | 7/7/2025
+it's cool to know the capability might be thawed out and reenabled someday if boards run tight on GPIO; being able to daisychain several i2c sensors off the same pins is a significant advantage over UART
+======================================================================
+
+[150] Similarity: 0.621 | george.nada | 7/8/2025
+MUHAHAHAHAHA ITS WORKING!!!
+
+```
+INFO  | ??:??:?? 0 Scan for i2c devices
+DEBUG | ??:??:?? 0 Scan for I2C devices on port 1
+INFO  | ??:??:?? 0 BME280 found at address 0x76
+INFO  | ??:??:?? 0 1 I2C devices found
+DEBUG | ??:??:?? 0 acc_info = 0
+INFO  | ??:??:?? 0 S:B:88,2.7.2.fa23be442
+```
+======================================================================
+
+[151] Similarity: 0.550 | mischief61507 | 7/8/2025
+ at both ends, but eventually one of the two nodes will hang and maybe watchdog. i've had to just power cycle the node and rerun the meshtastic cli to reestablish the ip tunnel again.
+
+there's some maybe related log messages i've seen on the serial line, that are maybe related or just symptoms of something else...
+```
+ERROR | ??:??:?? 507 [SerialConsole] Can't decode protobuf reason='wrong wire type', pb_msgdesc 0x3c191ab4
+ERROR | ??:??:?? 507 [SerialConsole] Error: ignore malformed toradio
+```
+
+======================================================================
+
+[152] Similarity: 0.558 | george.nada | 7/8/2025
+no, it's regarding the fact that there's no I2C available in the default variant for the seeed xiao nrf52840, the variant code assumes a GPS will be connected and dedicates the only two available pins for that purpose
+======================================================================
+
+[153] Similarity: 0.571 | _ndoo | 7/8/2025
+you’d just need to extend the xiao nrf52840 kit variant and unflags the GPS_L76K and then the pins will get defined as I2C
+======================================================================
+
+[154] Similarity: 0.613 | fabbergast | 7/9/2025
+@Fifield i modified the firmware to scan and here are the results for the wm1110-a tracker:
+
+Scanning interfaces...
+I2C device found at 0x19
+I2C device found at 0x3C
+I2C device found at 0x44
+SPI devices (manual check):
+LoRa module detected on SPI
+Scan complete
+======================================================================
+
+[155] Similarity: 0.562 | jonathanbennett | 7/11/2025
+Which device?
+======================================================================
+
+[156] Similarity: 0.553 | madeofstown | 7/11/2025
+https://meshtastic.org/docs/hardware/devices/
+======================================================================
+
+[157] Similarity: 0.596 | stary2001 | 7/13/2025
+yeah, hack firmware incoming to see if the init changes make it sensible
+then it might just be swapping width/height
+======================================================================
+
+[158] Similarity: 0.552 | bitflp | 7/14/2025
+The firmware version you build is dependent on how you clone the repo
+======================================================================
+
+[159] Similarity: 0.584 | jonathanbennett | 7/15/2025
+Because the way the firmware detects that the packed decrypted successfully us by doing a successful protobuf deserialization
+======================================================================
+
+[160] Similarity: 0.557 | stary2001 | 7/23/2025
+incredible bit of schematic here from lilygo lmfao
+======================================================================
+
+[161] Similarity: 0.567 | nomdetom | 7/23/2025
+Yeah, i2c can be pulled up anywhere.
+======================================================================
+
+[162] Similarity: 0.560 | theoneleooneeeeeeeeeeeeeeeeeeeee | 7/27/2025
+I ended up dropping 258 on my with modified firmware but still, doesn't solve the problem.
+People can easily spam your entire network.
+======================================================================
+
+[163] Similarity: 0.553 | valzzu_ | 7/29/2025
+https://github.com/valzzu/firmware/tree/master/variants/nrf52840/diy/Elecrow_nrflr1110
+======================================================================
+
+[164] Similarity: 0.584 | rogandawes | 7/31/2025
+```
+(venv) ➜  meshtastic_firmware git:(master) ✗ ls variants/esp32s3/guition_bsides_cpt/variant.h
+variants/esp32s3/guition_bsides_cpt/variant.h
+```
+======================================================================
+
+[165] Similarity: 0.629 | rogandawes | 7/31/2025
+```
+cat variants/esp32s3/guition_bsides_cpt/platformio.ini
+[env:guition_bsides_cpt]
+;build_type = debug ; to make it possible to step through our jtag debugger
+extends = esp32s3_base
+board_level = extra
+monitor_filters = esp32_exception_decoder
+board = esp32-s3-devkitc-1
+build_flags =
+  ${esp32_base.build_flags} -D PRIVATE_HW -I variants/guition_bsides_cpt
+lib_deps =
+   ${esp32_base.lib_deps}
+```
+======================================================================
+
+[166] Similarity: 0.566 | rogandawes | 7/31/2025
+What is the correct way to disable I2C? I'm trying to get a very basic meshtastic running on my custom hardware, and then will add things like battery charging, display, touch screen, etc. At the moment, I am getting:
+```
+//\ E S H T /\ S T / C
+
+INFO  | ??:??:?? 2 Booted, wake cause 0 (boot count 1), reset_reason=reset
+DEBUG | ??:??:?? 2 Filesystem files (8192/1048576 Bytes):
+DEBUG | ??:??:?? 2 Power::lipoInit lipo sensor is not ready yet
+INFO  | ??:??:?? 2 Scan for i2c devices
+DEBUG | ??:??:?? 
+======================================================================
+
+[167] Similarity: 0.581 | rogandawes | 7/31/2025
+2 Scan for I2C devices on port 1
+ERROR | ??:??:?? 2 Unknown error at address 0x8
+```
+which is a little opaque as an error 🙂
+======================================================================
+
+[168] Similarity: 0.560 | rogandawes | 7/31/2025
+FWIW, the hardware I am trying to use is the Guition jc4827w543 with capacitive sensor, with an external SX1262 radio wired to the expansion ports.
+======================================================================
+
+[169] Similarity: 0.558 | stary2001 | 7/31/2025
+ah looks like it's got an i2c for.. something, on io4/8
+======================================================================
+
+[170] Similarity: 0.590 | socketpuppet | 8/1/2025
+working on it still haha. installing scanner. the web flasher apparently doesn't monitor i2c
+======================================================================
+
+[171] Similarity: 0.569 | .hedgie | 8/1/2025
+I found that out the hardware lol
+======================================================================
+
+[172] Similarity: 0.570 | socketpuppet | 8/1/2025
+i'm getting "no I2C devices found" any idea how to fix?
+======================================================================
+
+[173] Similarity: 0.569 | stary2001 | 8/3/2025
+which continues to be a mistake but fixing it would break literally every device
+======================================================================
+
+[174] Similarity: 0.569 | nomdetom | 8/3/2025
+https://github.com/meshtastic/Meshtastic-arduino
+
+https://github.com/meshtastic/i2c-sensor
+======================================================================
+
+[175] Similarity: 0.557 | stary2001 | 8/3/2025
+i guess the solution is just force hardware serial
+======================================================================
+
+[176] Similarity: 0.558 | zmalex. | 8/3/2025
+"Featuring one WisBlock Core slot, two IO slot and six Sensor Slots." - The IO is the double part it seems.
+======================================================================
+
+[177] Similarity: 0.567 | fabbergast | 8/5/2025
+That was hashed over extensively in the past. A few other people not in my area built them and the consensus is that it requires the firmware to be modified. If the override in the app can be made to work I'm all for it, I just don't know why it doesn't or how to change that.
+======================================================================
+
+[178] Similarity: 0.592 | fabbergast | 8/5/2025
+Would suggest examining code for devices that currently have that capability
+======================================================================
+
+[179] Similarity: 0.551 | supermath101 | 8/7/2025
+Supposedly, Arduino is going all in on Zephyr as the underlying technology: https://blog.arduino.cc/2025/08/06/updated-arduino-cores-with-zephyros-beta/
+======================================================================
+
+[180] Similarity: 0.565 | rogandawes | 8/7/2025
+right. Any examples you can point to? I presume the radio itself is not accessible over a regular UART, so would require an intermediate microcontroller convert UART to SPI?
+======================================================================
+
+[181] Similarity: 0.568 | jinnatar | 8/11/2025
+Interesting. Not a single "Invalid" in the log. Finally got it saved now over ble by disable -> set config -> enable. Could not actually change any option over any non-serial transport and plain disable only went through ble. Bizarre. I guess I can't trust the syslog and need to finish the "esp32 serial port to syslog" monstrosity.
+======================================================================
+
+[182] Similarity: 0.559 | jonathanbennett | 8/13/2025
+Fixing one issue on that device caused a second one.
+======================================================================
+
+[183] Similarity: 0.554 | stary2001 | 8/15/2025
+dealing with the aftermath of someone releasing not just meshtastic vulnerabilities, but also the tools to do it at defcon
+======================================================================
+
+[184] Similarity: 0.571 | prosthetichead2869 | 8/19/2025
+Which firmware version is it on? I used to get a lot of config corruption after low voltage excursions, but not had it since the core config and nodedb got split out and some other changes to reduce flash corruption a few versions back..
+======================================================================
+
+[185] Similarity: 0.584 | metala.org | 8/20/2025
+the patch is not perfect. It also encrypts the Routing messages as well. Hopefully that does not interfere with the NextHop algorithm.
+======================================================================
+
+[186] Similarity: 0.616 | metala.org | 8/20/2025
+Q: Why is esp32Setup() called after I2C sensor detection?
+The WDG is enabled in esp32Setup(), therefore there is a possibility that a broken I2C driver can crash the device. I might be wrong, though.
+
+Edit. Probably, because you don't know how much time it would take to initialise all I2C devices and GPS, but shouldn't  90s WDG be enough?
+======================================================================
+
+[187] Similarity: 0.574 | nomdetom | 8/20/2025
+I2c is enabled twice, because keyboard and display need to be found and configured differently depending on what is detected.
+======================================================================
+
+[188] Similarity: 0.621 | fifieldt | 8/22/2025
+There was an attempt to hack a minimal firmware for it a few years back ... https://github.com/meshtastic/Meshtastic-repeater ... not aware of anything more modern than that
+======================================================================
+
+[189] Similarity: 0.560 | .anotherandrew | 8/26/2025
+There are some rough edges in the meshtastic firmware around power measurement/deep sleep if you’re using an i2c device to measure power (basically i2c isn’t initialized yet when the firmware checks to see if it should deep sleep) but overall it’s not bad
+======================================================================
+
+[190] Similarity: 0.552 | dawgi5126 | 8/27/2025
+nch](https://github.com/rbreesems/firmware/tree/may2025)  and [supplement utility repo](https://github.com/rbreesems/flamingo).   The RS485 capability is implemented in the firmware using a #conditional that replaces the existing SerialModule code with our RS485 code --  the only setting used from the SerialModule is baud rate. There are only a couple of files outside of the serial module code that need minor modifications to pass packets from the wireless interface to the RS485 interface. Given
+======================================================================
+
+[191] Similarity: 0.554 | _m1nl | 8/30/2025
+I have only specified package override for platforms I was able to test changes with, so you need to manually alter your `platformio.ini` and add:
+```
+platform_packages =
+    platformio/framework-arduinoespressif32 @ https://github.com/m1nl/arduino-esp32/archive/refs/tags/2.0.17+5ae9873e.tar.gz ; disable WiFi IRAM optimizations in ESP-IDF
+```
+======================================================================
+
+[192] Similarity: 0.553 | .anotherandrew | 8/30/2025
+My hardware also only has voltage measurement through the I2C INA219; I haven't looked yet to see if that particular gotcha has been addressed in the firmware since early 2.6.whatever
+======================================================================
+
+[193] Similarity: 0.556 | _m1nl | 8/30/2025
+it _should_ 🙂 (btw you may see a link to new release in the patch above as I was trimming the build for ESP32 to resolve overflowed IRAM issue)
+======================================================================
+
+[194] Similarity: 0.563 | .anotherandrew | 8/30/2025
+it also looks like meshtastic i2c init is occuring earlier in the boot which means my deep sleep stuff should work. Have to put this on the bench supply to test
+======================================================================
+
+[195] Similarity: 0.591 | .anotherandrew | 8/30/2025
+with my old hacked up version of this yes -- basically I had added if the reset cause was brownout, immediate deep sleep. and the periodic check was also looking at I2C which I don't think the stock firmware does at all
+======================================================================
+
+[196] Similarity: 0.558 | _m1nl | 8/30/2025
+thx, it looks this happens during radio initialization; I think it's harmless - ISR handler gets installed in the end as device wakes up when IRQ triggers
+======================================================================
+
+[197] Similarity: 0.552 | .anotherandrew | 8/30/2025
+```DEBUG | ??:??:?? 743 [PowerFSM] State: LS
+DEBUG | ??:??:?? 743 [PowerFSM] Setup radio interrupt (GPIO03) with wakeup by GPIO interrupt``` you're using the same hook I am, I have to check what my code was doing (I'm on the wrong computer for that)
+======================================================================
+
+[198] Similarity: 0.568 | .anotherandrew | 8/30/2025
+```INFO  | ??:??:?? 11 [PowerTelemetry] Power Telemetry: init
+DEBUG | ??:??:?? 25 [PowerFSM] State: LS
+DEBUG | ??:??:?? 25 [PowerFSM] Setup radio interrupt (GPIO03) with wakeup by GPIO interrupt
+DEBUG | ??:??:?? 30 [PowerFSM] Setup radio interrupt (GPIO03) with wakeup by GPIO interrupt
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x10 (RTCWDT_RTC_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5810,len:0x438
+load:0x403cc710,len:0x90c
+load:0x403ce710,len:0x2
+======================================================================
+
+[199] Similarity: 0.565 | _m1nl | 8/31/2025
+It may be tricky to trigger uart wake-up for c3 since it has usb uart with usb-acm. Not sure if it’s supported by idf.
+======================================================================
+
+[200] Similarity: 0.569 | .anotherandrew | 8/31/2025
+maybe we could cheat by looking at the value for `TX` and `RX` and seeing if it points to `SOC_TX0` and `SOC_RX0` from near the top of `HardwareSerial.h`
+======================================================================
+
+[201] Similarity: 0.568 | s__ol | 9/4/2025
+3. There's little information on the Serial hardware interface in the docs, how can I tell which hardware supports the protobuf API on physical UART pins (and what those pins are)?
+======================================================================
+
+[202] Similarity: 0.566 | s__ol | 9/4/2025
+4. Would adding an I2C or SPI protobuf interface be a) difficult and b) appreciated? Since i2c is a datagram protocol it seems like a better fit than UART (no need for framing and buffering in application code)
+======================================================================
+
+[203] Similarity: 0.566 | b8b8 | 9/4/2025
+SG2 used to leak a few versions ago
+======================================================================
+
+[204] Similarity: 0.604 | jonathanbennett | 9/5/2025
+`` ------ Thread DeviceTelemetry leaked heap 146920 -> 146192 (-728) ------``
+======================================================================
+
+[205] Similarity: 0.565 | jonathanbennett | 9/5/2025
+`` ------ Thread Router leaked heap 147380 -> 146652 (-728) ------``
+======================================================================
+
+[206] Similarity: 0.591 | nm.patriot | 9/7/2025
+Just as a housekeeping matter we *should* go through and apply that to every existing i2c device so we're getting definitive identification, not just an address match
+======================================================================
+
+[207] Similarity: 0.562 | petekc2bjt | 9/8/2025
+The whole project is open source, and while our hardware files aren’t fully up to date, our firmware, app, and data portal are all up on https://gitlab.com/fieldkit
+======================================================================
+
+[208] Similarity: 0.564 | jonathanbennett | 9/8/2025
+There's a compile-time switch that tracks heap usage during run. Capturing a raw log over USB would show a bit more information about what thread is leaking data
+======================================================================
+
+[209] Similarity: 0.551 | jackjt8 | 9/8/2025
+Just to double check, this is the correct flag and where to place it? The firmware build was successful with 45 "problems" but they are just conversion warnings and suggestions by the look of it.
+======================================================================
+
+[210] Similarity: 0.578 | eigma. | 9/10/2025
+dified preferences to device
+Waiting for an acknowledgment from remote node (this could take a while)
+Received an implicit ACK. Packet will likely arrive, but cannot be guaranteed.
+
+$ meshtastic --host meshtastic.local --dest '!43b6a270' --get mqtt.map_report_settings.position_precision
+Connected to radio
+Requesting current config from remote node (this can take a while).
+
+mqtt:
+enabled: true
+address: "mqtt.meshtastic.org"
+username: "meshdev"
+password: "large4cats"
+encryption_enabled: true
+root:
+======================================================================
+
+[211] Similarity: 0.552 | cgapeart | 9/12/2025
+If this of interest, let me know, and I can reproduce on a stock firmware and do a proper bug report - just figured that if anyone was working on something close to this and it's not an expected side effect of using something not on the releasedish list, then I could dig.
+======================================================================
+
+[212] Similarity: 0.551 | metala.org | 9/12/2025
+Q: Have there been any memory leak fixes since 2.7.5?
+I have a coredump (ESP32 w/ 512KB SRAM) for 2.7.5+ modified firmware, that crashes while allocating memory. The modifications I have are not touching anything that relates to dynamic memory.
+
+pastebin: https://binki.metala.org/pvnqLS_Vst4XNXs31o2QeQ
+======================================================================
+
+[213] Similarity: 0.561 | xichampkind | 9/13/2025
+Interesting issue on a Heltec V3 trying to connect to a custom MQTT server 
+```[156100][D][ssl_client.cpp:176] start_ssl_client(): WARNING: Skipping SSL Verification. INSECURE!
+[156109][E][ssl_client.cpp:37] _handle_error(): [start_ssl_client():264]: (-32512) SSL - Memory allocation failed```
+======================================================================
+
+[214] Similarity: 0.565 | nomdetom | 9/13/2025
+Or https://github.com/meshtastic/firmware/tree/develop/variants/esp32c3/heltec_esp32c3 works ok
+======================================================================
+
+[215] Similarity: 0.561 | rogandawes | 9/13/2025
+ah, I didn't realise that.Not even just as a default USB-UART/JTAG interface?
+======================================================================
+
+[216] Similarity: 0.566 | infered5 | 9/14/2025
+bunch of i2c errors, gonna flash vanilla 2.6.something and see if they're still there
+======================================================================
+
+[217] Similarity: 0.564 | infered5 | 9/14/2025
+```DEBUG | ??:??:?? 1 [DeviceUI] Display driver init...
+DEBUG | ??:??:?? 1 [DeviceUI] LGFXDriver<LGFX>::init...
+DEBUG | ??:??:?? 1 [DeviceUI] LGFX init...
+[ 1288][E][Wire.cpp:513] requestFrom(): i2cRead returned Error -1
+I2C ERROR : 2
+(((^ it says that 8 more times)))
+[ 1593][E][Wire.cpp:137] setPins(): bus already initialized. change pins only when not.
+[ 1602][W][Wire.cpp:301] begin(): Bus already started in Master Mode.
+DEBUG | ??:??:?? 1 [DeviceUI] DisplayDriver init...
+DEBUG | ??:??:?? 1 [D
+======================================================================
+
+[218] Similarity: 0.575 | martinbogo | 9/21/2025
+Once you do that, the serial port totally shuts down
+
+martin@Martin-M3-Mac-Pro MeshBBS % meshtastic --set security.serial_enabled false
+Connected to radio
+Set security.serial_enabled to false
+Writing modified preferences to device
+Writing security configuration to device
+martin@Martin-M3-Mac-Pro MeshBBS % meshtastic --get security
+======================================================================
+
+[219] Similarity: 0.555 | b8b8 | 9/23/2025
+Do whatever you're comfortable with, but it has been mentioned here a few times there are protection circuits
+======================================================================
+
+[220] Similarity: 0.596 | fifieldt | 9/25/2025
+If you think it has value, please feel free to hack on that patch. I will commit to cleaning up any random text that happens to get dumped in there 🙂
+======================================================================
+
+[221] Similarity: 0.605 | b8b8 | 9/25/2025
+What hardware
+======================================================================
+
+[222] Similarity: 0.580 | b8b8 | 9/26/2025
+Heap fixes very recently for all hardware
+======================================================================
+
+[223] Similarity: 0.588 | glory25 | 9/26/2025
+@b8b8🇨🇦 which hardware do u recommend for better data reliability?
+======================================================================
+
+[224] Similarity: 0.565 | glory25 | 9/26/2025
+we're considering those hardware for future projects
+======================================================================
+
+[225] Similarity: 0.569 | rcgv_ | 10/2/2025
+Reason being if you can predit the packet id you can send it before the node sends it and it becomes a security vuln
+======================================================================
+
+[226] Similarity: 0.557 | bitflp | 10/3/2025
+looks like 10% might only be for remotely controling devices, 1% for data transmissions
+<https://github.com/meshtastic/firmware/issues/7680>
+======================================================================
+
+[227] Similarity: 0.556 | infered5 | 10/4/2025
+if this doesnt work I'll just bruteforce it a few mhz at a time until it looks nice
+======================================================================
+
+[228] Similarity: 0.560 | _ndoo | 10/8/2025
+Well it’s going to correctly configure the hardware according to heltec’s claimed tx power curve, but if the hardware isn’t performing up to spec that’s a different problem
+======================================================================
+
+[229] Similarity: 0.583 | _ndoo | 10/8/2025
+', None, 22))
+WARNING file:stream_interface.py __reader line:208 Meshtastic serial port disconnected, disconnecting... ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+Set security.admin_key to ['base64:redacted=']
+Set mqtt.address to mqtt.redacted
+Set mqtt.enabled to True
+Set mqtt.encryption_enabled to True
+```
+======================================================================
+
+[230] Similarity: 0.568 | _ndoo | 10/8/2025
+```
+Set mqtt.map_report_settings.position_precision to 15
+Set mqtt.map_reporting_enabled to True
+Set mqtt.password to large4cats
+Set mqtt.proxy_to_client_enabled to False
+Set mqtt.root to msh/MY_919
+Set mqtt.username to meshdev
+WARNING file:stream_interface.py __reader line:208 Meshtastic serial port disconnected, disconnecting... ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+Set neighbor_info.enabled to True
+Set neighbor_info.transmit_over_l
+======================================================================
+
+[231] Similarity: 0.588 | _ndoo | 10/9/2025
+it detects if it's USB OTG and tries a watchdog reset (i am assuming that's the CDC peripheral)
+======================================================================
+
+[232] Similarity: 0.566 | _ndoo | 10/9/2025
+something i found since the full tx power has been unleashed is that it tends to cause USB port resets like the EBYTE E22 1W builds do
+======================================================================
+
+[233] Similarity: 0.571 | infered5 | 10/11/2025
+`git clone https://github.com/meshtastic/firmware.git`
+======================================================================
+
+[234] Similarity: 0.566 | infered5 | 10/11/2025
+I turned a rak19003 (4631) into a crude usb-i2c adapter
+======================================================================
+
+[235] Similarity: 0.573 | infered5 | 10/11/2025
+and then compile main firmware which should pull the device-ui changes on my machine
+======================================================================
+
+[236] Similarity: 0.551 | nomdetom | 10/12/2025
+I'm not sure it's myopic to limit the power to the legal limit - but then again I am myopic, so perhaps I can't see it!
+
+Fwiw, some of the radios won't just break the law if set too high - they'll actively damage themselves. The manufacturer relies on the application developer (i.e. Meshtastic) to implement software controls. If there was an override switch for users, outside of recompiling, how would you communicate that risk?
+======================================================================
+
+[237] Similarity: 0.552 | ajohntitor | 10/13/2025
+I think mikrotik has the right approach here. They expose a setting for "antenna-gain" that is used to calculate eirp (and clamp to the regdb limit). 
+
+Exposing a similar setting in meshtastic would help to ensure people with an 11dbi antenna are not "accidentally" exceeding the legal limit. The same setting could also be used for insertion loss. 
+
+Hiding the setting (hidden command, custom firmware, etc) not only penalizes g2 users but it also makes it too easy for anyone with an 11dbi antenna 
+======================================================================
+
+[238] Similarity: 0.584 | actuallyryank | 10/13/2025
+If you've used BIOS firmware on motherboards you'd know they absolutely allow you to pump crazy unsafe voltages into your hardware.  
+
+This change is similar to a BIOS developer saying "you never have any reason to run more than 1.2v to your CPU, because efficiency!!" when those of us who power our computers and homes on solar power, who dont have an environmental issue, can safely run 1.4v and get higher clock speeds to save us time compressing video files.   To lock it to 1.2v would be ignoran
+======================================================================
+
+[239] Similarity: 0.575 | flippityflip | 10/15/2025
+what hardware do you have?
+======================================================================
+
+[240] Similarity: 0.572 | nomdetom | 10/16/2025
+There's an unofficial but probably active bounty for anyone who can get the qspi thingie on the xiao to play nicely with this:
+https://github.com/meshtastic/firmware/pull/8097
+======================================================================
+
+[241] Similarity: 0.553 | b8b8 | 10/16/2025
+https://meshtastic.org/docs/hardware/devices/
+======================================================================
+
+[242] Similarity: 0.575 | nomdetom | 10/18/2025
+I have 2 suggestions, if you want to use this and incorporate it into the main repo:
+1) find an i2c sensor, and add that. I2c sensors are easy to add and daisy chain for everyone.
+2) make a separate module that can be optionally included in a firmware build. The more space-constrained devices should be protected from including modules by default.
+======================================================================
+
+[243] Similarity: 0.556 | stary2001 | 10/19/2025
+also + flash encryption (https://docs.espressif.com/projects/esp-idf/en/stable/esp32/security/flash-encryption.html)
+======================================================================
+
+[244] Similarity: 0.590 | stary2001 | 10/19/2025
+esp32 is also vulnerable but i think it is slightly harder* than "grab something off github"
+======================================================================
+
+[245] Similarity: 0.551 | jasonpiper | 10/19/2025
+It's to ensure that all the modules and bits save and then boot properly. It's easier to ensure the device state is healthy from a fresh boot
+======================================================================
+
+[246] Similarity: 0.558 | metala.org | 10/20/2025
+I was thinking of this: https://documentation.espressif.com/AR2023-007%20Security%20Advisory%20Concerning%20Bypassing%20Secure%20Boot%20and%20Flash%20Encryption%20using%20CPA%20and%20FI%20attack%20on%20ESP32-C3%20and%20ESP32-C6%20EN.pdf
+
+Edit. I found FI SCAs against ESP32, ESP32-V3, ESP32-C3/C6, but I could not find any advisories for ESP32-S3, so I assume it's still not vulnerable.
+======================================================================
+
+[247] Similarity: 0.606 | metala.org | 10/20/2025
+I haven't started working on Secure Boot for Meshtastic. I was looking into it. But when comes to ESP32S3 Secure Boot I have done some work on custom bootloader for a company producing commercial vehicles,.
+
+About the ESP32-C3/C6 security advisory, this is a ROM issue/mitigation, afaik. There is nothing I can do.
+======================================================================
+
+[248] Similarity: 0.634 | null_v0id | 10/20/2025
+Computational encryption I believe could be handled by hardware’s esp32 I think comes with its own hw encryption but it’s weaker then AES 265 I think. So software is used.
+======================================================================
+
+[249] Similarity: 0.559 | metala.org | 10/20/2025
+And no matter what you do, it always comes to trust - do you trust the firmware, do you trust the signature, do you trust the key. Who attests that that this key belongs to that person. Do you trust the attesting party? ...
+======================================================================
+
+[250] Similarity: 0.616 | null_v0id | 10/20/2025
+I mean trust questionable in any encryption in how the keys are generated. Most are probably compromised at the hardware level by governments.
+======================================================================
+
+[251] Similarity: 0.581 | null_v0id | 10/20/2025
+True I just mean if the keys are generated on hw the hw only need a known flaw. Unfortunately I’m not a security researcher although it does interest me, sadly I don’t know enough to really talk to much about encryption. Frankly I just live by trust nothing accept everything’s flawed.
+======================================================================
+
+[252] Similarity: 0.551 | jassf | 10/27/2025
+Not sure. After the nerfing of the G2 they went digging through radiolib and found the config for TX power.  They un-nerfed the G2 and fixed the v4.
+======================================================================
+
+[253] Similarity: 0.562 | jonathanbennett | 11/2/2025
+Had a brief conversation about this in regards to the Hackaday badge. Most of our hardware is probably too lightweight to try to run both firmware and a scripting engine. What might be most interesting is a secondary MCU that can run micro-python, and talk over a serial line.
+======================================================================
+
+[254] Similarity: 0.555 | jonathanbennett | 11/2/2025
+Depends on which target. There may be some ESP targets where it could work. Flash and ram are precious on most devices.
+======================================================================

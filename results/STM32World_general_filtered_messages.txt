@@ -1,0 +1,53 @@
+[1] Similarity: 0.564 | niclas8888 | 5/10/2025
+-write protocol for up to 16 devices (each address is 8 bytes long), I2C, SPI, an PLC protocol called Exoline (max packet size of 240 bytes). After shitload of optimization, I proudly had 1-bit in RAM marked "Reserved for Future Use" AND found a hardware bug (and figured out a workaround) that Microchip acknowledged (Intel refused to acknowledge it when we found a similar problem in the 1980 edition of the 8031, but had been fixed in the 1982 edition) and promised me 10,000pc pricing even if I o
+======================================================================
+
+[2] Similarity: 0.557 | jayaprakashreddy0051 | 6/18/2025
+Can anyone share the project ideas related to embedded systems
+======================================================================
+
+[3] Similarity: 0.577 | inx42 | 10/31/2025
+ation with CLI:
+---
+➜  bin ./STM32_Programmer_CLI -c port=SWD mode=UR
+
+ST-LINK SN  : 540030001500003141474B2E
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+Error: Unable to get core ID
+Error: Cannot connect to access port 1!  If you are trying to connect to a device with TrustZone enabled please try to connect with HotPlug mode.  If you are trying to connect to a device which supports Debug Authentication with certificate or password, please open your device using it.
+
+➜  bin ./STM3
+======================================================================
+
+[4] Similarity: 0.613 | inx42 | 10/31/2025
+2_Programmer_CLI -c port=SWD mode=HotPlug -ob displ
+
+ST-LINK SN  : 540030001500003141474B2E
+ST-LINK FW  : V2J46S7
+Board       : --
+Voltage     : 3.23V
+SWD freq    : 4000 KHz
+Connect mode: Hot Plug
+Reset mode  : Software reset
+Device ID   : 0x497
+Revision ID : Rev Y
+Device name : STM32WLxx
+Flash size  : 256 KBytes (default)
+Device type : MCU
+Device CPU  : Cortex-M4
+BL Version  : 0x0
+...
+...
+
+OPTION BYTES BANK: 0
+
+   Read Out Protection:
+
+     RDP          : 0x0 (Level 1, read protection of memori
+======================================================================
+
+[5] Similarity: 0.553 | am991928 | 11/2/2025
+Hey are there any tutorials to use trustzone and stm32 cube programmer to lock down your source code from reverse engineering?
+======================================================================

@@ -1,0 +1,83 @@
+[1] Similarity: 0.603 | harjits | 1/26/2025
+@i2cjak which chip is acting as the debugger? What software are you using for it? 
+
+I've been wanting to port Black Magic debugger to the nrf52832 so that I can connect to it via Bluetooth on a Windows machine using the Windows machine's built in Bluetooth and the other side would be a SWD port to debug the target...
+======================================================================
+
+[2] Similarity: 0.578 | i509vcb | 1/26/2025
+For a black magic debugger probe, really you could get away with implementing the 52820, 52833 and 52840 (these have USB in the 528)
+======================================================================
+
+[3] Similarity: 0.566 | mnem_94475 | 2/8/2025
+#electronics
+======================================================================
+
+[4] Similarity: 0.561 | gkeeth | 2/9/2025
+what version? if you're on 9.0 you should use the `hasNetclass()` function rather than the `NetClass` property. See the documentation for why. If that's not it, select both zones and run the clearance inspector to find out what's happening
+======================================================================
+
+[5] Similarity: 0.567 | xobs | 2/16/2025
+The story was similar for Fomu: https://github.com/im-tomu/fomu-hardware/tree/pvt/hardware/pcb
+======================================================================
+
+[6] Similarity: 0.589 | hasanthesyrian_ | 2/23/2025
+the switch selects between jtag/spi and swd/i2c
+======================================================================
+
+[7] Similarity: 0.562 | hasanthesyrian_ | 2/23/2025
+ the software tools. The FTx232H family all support MPSSE, which is their way of doing high throughput I/O. That's what PyFtdi, flashrom, openocd, and others all use to make the ft2232h speak their protocol.
+```
+======================================================================
+
+[8] Similarity: 0.552 | cooperg2001 | 3/14/2025
+why does KiCAD DRC report silk screen clipping as `Silkscreen clipped by solder mask` ? This pops up when the silkscreen of two different footprints clips
+======================================================================
+
+[9] Similarity: 0.585 | deulamco | 3/23/2025
+Is there any chance JLC has fake chip ? Or I/MV variant is way too different from I/P in microchip PIC family ?
+======================================================================
+
+[10] Similarity: 0.562 | deulamco | 3/24/2025
+I meansured all components values (R, C, D) seem they fabricated correctly... now just only the chip I can't verify & programmer always show Unknown Device ID
+======================================================================
+
+[11] Similarity: 0.556 | eonostturf | 3/24/2025
+You can get your circuit verified in #electronics or #work-in-progress .. This channel should focus on potential issues with the KiCad pcb tool
+======================================================================
+
+[12] Similarity: 0.552 | aqua.regia | 3/26/2025
+https://jlcpcb.com/capabilities/pcb-capabilities
+======================================================================
+
+[13] Similarity: 0.554 | hasanthesyrian_ | 5/6/2025
+by the fpga som
+======================================================================
+
+[14] Similarity: 0.559 | delta011 | 6/4/2025
+apart from just setting the net class clearance parameter to be higher
+that works, but if the clearance is set to a sort of high value, the drc starts triggering on a million things
+======================================================================
+
+[15] Similarity: 0.556 | sigstoat | 7/3/2025
+hard to tell without knowing what it is/does or what the schematic looks like. but you're going to find it very hard to plug a usb cable into J1.
+======================================================================
+
+[16] Similarity: 0.564 | fisheiyy | 7/7/2025
+Bugged how?
+======================================================================
+
+[17] Similarity: 0.552 | wolington | 7/23/2025
+https://jlcpcb.com/capabilities/pcb-capabilities
+======================================================================
+
+[18] Similarity: 0.553 | cnf | 8/3/2025
+also, the EZsockets expose spi, so we are going to see what we can do there
+======================================================================
+
+[19] Similarity: 0.559 | vipqualitypost | 8/23/2025
+I had a library for exactly this purpose but I’d need to go dig it up. I think it was from an open source hardware key project.
+======================================================================
+
+[20] Similarity: 0.562 | nicoya | 9/11/2025
+You can probably get away with a switching regulator, it's just best to place the switching loop as far away from potentially sensitive components as possible
+======================================================================

@@ -1,0 +1,190 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/MisterFPGA_controllers_Jan2025_export.json",
+  "totalMessages": 14745,
+  "totalChunks": 14212,
+  "relevantMessages": 18,
+  "results": [
+    {
+      "text": "i2c is the low level protocol used by those peripherals. However, having only i2c implemented on the MiSTer is not enough to make them work on it. Someone needs to implement also the high level protocol (i.e., how i2c data is interpreted by the MiSTer).",
+      "metadata": {
+        "id": "1327606330386550860",
+        "author": "bootsector",
+        "timestamp": "2025-01-11T06:53:34.897-05:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5725622634296853
+    },
+    {
+      "text": "the latest kernel commit was part of fixing those",
+      "metadata": {
+        "id": "1329404418881486879",
+        "author": "zakk4223",
+        "timestamp": "2025-01-16T05:58:32.601-05:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5617136395480219
+    },
+    {
+      "text": "there's usually a button combination to change what the dongle is spoofing iirc",
+      "metadata": {
+        "id": "1334934939484950641",
+        "author": "alynne",
+        "timestamp": "2025-01-31T12:14:51.465-05:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.6187266459818632
+    },
+    {
+      "text": "I have a defender that's rather old and it has analog triggers. And these triggers are super sensitive when used on original hardware.",
+      "metadata": {
+        "id": "1351957294740541450",
+        "author": "quirrin.",
+        "timestamp": "2025-03-19T12:35:37.218-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5707399928382908
+    },
+    {
+      "text": "plug and play with the latest kernel i think",
+      "metadata": {
+        "id": "1361321925644652668",
+        "author": "freddo7595",
+        "timestamp": "2025-04-14T08:47:19.212-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5641863327594923
+    },
+    {
+      "text": "What's this screen? Also os that game running a widescreen hack?",
+      "metadata": {
+        "id": "1369360921700339804",
+        "author": "rallyflowbro",
+        "timestamp": "2025-05-06T13:11:25.229-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5757137312413311
+    },
+    {
+      "text": "This is interesting: the one that works at 31 kHz, WinGun, has a manual calibration step where you sweep the gun from side to side. If it detects that your x reading is doubled-up, it just hacks in a correction for that",
+      "metadata": {
+        "id": "1372648998191497236",
+        "author": "nolbin",
+        "timestamp": "2025-05-15T14:57:03.754-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5591668754087032
+    },
+    {
+      "text": "is it much different than what JT does for example? except the roms are newer",
+      "metadata": {
+        "id": "1372893021300981790",
+        "author": "freddo7595",
+        "timestamp": "2025-05-16T07:06:43.397-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5716874015142257
+    },
+    {
+      "text": "if this ever happens to anyone these dongles are real common",
+      "metadata": {
+        "id": "1388563593993256970",
+        "author": "sno0py",
+        "timestamp": "2025-06-28T12:55:59.072-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5640569810052627
+    },
+    {
+      "text": "[__Aquaplus P/ECE usb gamepad mode mappings__](https://github.com/mdqinc/SDL_GameControllerDB/commit/8a00a0ac22774978163f6642f0aae96235c546c0)\nnow we just need a core... 😛",
+      "metadata": {
+        "id": "1390140953536237659",
+        "author": "alynne",
+        "timestamp": "2025-07-02T21:23:50.893-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.564987396208945
+    },
+    {
+      "text": "\"tampering detected, robocop has been notified, please remain stationary\"",
+      "metadata": {
+        "id": "1394740550300729516",
+        "author": "alynne",
+        "timestamp": "2025-07-15T14:01:00.218-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5806857117205719
+    },
+    {
+      "text": "For at least Ultimate 2.4g wireless: https://www.youtube.com/watch?v=VnanvaH7B10\n\nDoesn't seem to be undocumented since its mentioned in the release notes for the firmware",
+      "metadata": {
+        "id": "1394741822512828476",
+        "author": "davewongillies",
+        "timestamp": "2025-07-15T14:06:03.537-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5699834325907243
+    },
+    {
+      "text": "==> #misc-hardware plskthx!",
+      "metadata": {
+        "id": "1396880802473840650",
+        "author": "jaimiev",
+        "timestamp": "2025-07-21T11:45:36.1-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.6051494339793975
+    },
+    {
+      "text": "Not that I’ve seen, seems like trial and error; worse yet is many resources recommend dongles that use a chipset no longer easily obtainable",
+      "metadata": {
+        "id": "1400856608027836506",
+        "author": "wasabi4589",
+        "timestamp": "2025-08-01T11:04:02.011-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.559288795291548
+    },
+    {
+      "text": "@Robby The tool is 8BitDo_Ultimate_Software_V2_V1.20 but the firmware is 1.03 as far as I can tell?",
+      "metadata": {
+        "id": "1401946039304454184",
+        "author": "trifle.",
+        "timestamp": "2025-08-04T11:13:02.668-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5531357774138036
+    },
+    {
+      "text": "I just got a Mayflash NS2 for my xbox 360 because it works with the badupdate exploit and can use a PS4 controller wirelessly that way",
+      "metadata": {
+        "id": "1414404355112828939",
+        "author": "sanefriend",
+        "timestamp": "2025-09-07T20:17:56.621-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5564756668099136
+    },
+    {
+      "text": "right, firmware doesn't magically change hardware 😄",
+      "metadata": {
+        "id": "1415869433146245280",
+        "author": "technoir2",
+        "timestamp": "2025-09-11T21:19:38.444-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5633965310293989
+    },
+    {
+      "text": "been hacking at it all day,",
+      "metadata": {
+        "id": "1425591641183486043",
+        "author": "rgarcialago",
+        "timestamp": "2025-10-08T17:12:13.47-04:00",
+        "channel": "MisterFPGA_controllers"
+      },
+      "similarity": 0.5675493080273182
+    }
+  ]
+}

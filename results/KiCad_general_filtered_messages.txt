@@ -1,0 +1,149 @@
+[1] Similarity: 0.639 | fossify_37988 | 1/3/2025
+They apparently mangled JTAG as well, so debugging is a good time
+======================================================================
+
+[2] Similarity: 0.557 | _andax | 1/4/2025
+The main problem with the CH569W reverse engineering was that they didn’t include the register map for the USB3- functionality in the documentation. So it was a real detective work!
+======================================================================
+
+[3] Similarity: 0.565 | lud_en | 1/6/2025
+whats the rshunt and cshunt option? a general capacitance and resistance?
+======================================================================
+
+[4] Similarity: 0.565 | orange.scone | 1/14/2025
+For electrical verification, it Could cause issues compared to a separate netlist, but I don't know if JLC even does testing?
+======================================================================
+
+[5] Similarity: 0.565 | naib | 2/9/2025
+the entire linux version was slowed down due to boilerplate code to work around BS from Apple. It was rewritten later and a significant minimum version bump to move away from that BS
+======================================================================
+
+[6] Similarity: 0.566 | eonostturf | 4/2/2025
+#electronics
+======================================================================
+
+[7] Similarity: 0.559 | holger_04887 | 4/6/2025
+Sure, if its that obvious. Not new to computers, operating systems or electronics. But to Kicad - this smells like a bug / systemic issue.
+======================================================================
+
+[8] Similarity: 0.554 | naib | 4/19/2025
+https://bugs.gentoo.org/911120
+======================================================================
+
+[9] Similarity: 0.566 | mnem_94475 | 4/23/2025
+Unrelated, but the radar ic looks like wide ddr ram
+======================================================================
+
+[10] Similarity: 0.590 | .kikoroo | 4/23/2025
+any help on how these clearance violations can be solved? i am trying to use jlcpcb for this project
+======================================================================
+
+[11] Similarity: 0.622 | cliffordheath | 5/2/2025
+There's an RS232 driver and a couple of RS422/RS485 drivers, OPO7 low-offset comparator, 74HC595, a few LDOs and buck converters, TVS and other protection diode devices, lots of diodes, transistors (incl ULN2003 octal array) and FETs, including high-current (>4A) PFET and NFETs, a few different op-amps, crystals, even a 16MByte SPI Flash chip. Obviously a selection of different R's (including 4-way arrays) and C's from 0402 up to 1206, and capacitors up to 50uF
+======================================================================
+
+[12] Similarity: 0.609 | cliffordheath | 5/5/2025
+I just wanted something to hack jlcbasic with
+======================================================================
+
+[13] Similarity: 0.566 | aqua.regia | 5/31/2025
+#electronics
+======================================================================
+
+[14] Similarity: 0.551 | mnem_94475 | 6/18/2025
+if only there was an actual ai startup for pcb design that isn't a scam
+======================================================================
+
+[15] Similarity: 0.558 | emiel0314 | 6/18/2025
+Try to be a bit careful about asking chatgpt electronics questions. It does get it wrong quite often
+======================================================================
+
+[16] Similarity: 0.560 | jtrance | 6/19/2025
+Thank you! I'm looking for fun projects to work on for sharpening my skills as a hardware engineer / embedded engineer
+======================================================================
+
+[17] Similarity: 0.563 | daddysaurus7 | 6/25/2025
+guys need help with my undergrad project, anyone got any good project ideas in the vlsi or embedded domain
+======================================================================
+
+[18] Similarity: 0.579 | fossify_37988 | 7/5/2025
+pretty common for jellybean ICs like logic, amps, transceivers, drivers, etc
+======================================================================
+
+[19] Similarity: 0.568 | cyao. | 7/23/2025
+~~Okay direct em to hackclub then~~
+======================================================================
+
+[20] Similarity: 0.566 | kilo2150 | 8/1/2025
+u can use fets also to do it
+======================================================================
+
+[21] Similarity: 0.560 | xpguyforealz | 8/1/2025
+Hey I need some help I got various SMD components and i'm getting DFM Warnings on JLC PCB's automated DFM check about silkscreen to smd clearance. Would this really be a big issue?
+======================================================================
+
+[22] Similarity: 0.649 | anom064 | 8/6/2025
+more realted to IoT automation and maybe even hacking
+======================================================================
+
+[23] Similarity: 0.613 | anom064 | 8/6/2025
+and installing it on a pcb with bluetooth and wifi which will enable the device to hack or monitor wifi
+======================================================================
+
+[24] Similarity: 0.595 | anom064 | 8/9/2025
+I am just intrested in IoT and embedded systems
+======================================================================
+
+[25] Similarity: 0.580 | traumonaut | 8/18/2025
+you dont know about how to test your hardware?
+======================================================================
+
+[26] Similarity: 0.563 | aqua.regia | 8/31/2025
+can you quantify exactly what you want to fix and why you think it comes from the inductor shielding
+======================================================================
+
+[27] Similarity: 0.565 | nicoya | 9/5/2025
+So using a mosfet here kind of opens up a little bit of a can of worms. They're ESD sensitive and they can have some unintuitive behaviour if you're new to electronics and are just expecting them to magically work. Using a BJT here, either a very ordinary 2n2222 if your load current is under 500mA or maybe a TIP41 if you need a bit more current, will simplify things a lot.
+======================================================================
+
+[28] Similarity: 0.555 | nicoya | 9/5/2025
+A circuit like this with BJTs would be sufficient for your application (you can add power input protection as you see fit)
+======================================================================
+
+[29] Similarity: 0.552 | nicoya | 9/5/2025
+https://jlcpcb.com/capabilities/pcb-capabilities
+======================================================================
+
+[30] Similarity: 0.562 | xobs | 9/8/2025
+You'll have a hard time programming it without connecting wires up. Run IO18 to USB_D- and IO19 to USB_D+ on a USB connector.
+======================================================================
+
+[31] Similarity: 0.563 | davidjrobertson | 9/8/2025
+AI does not understand electronics.
+======================================================================
+
+[32] Similarity: 0.579 | nicoya | 9/8/2025
+You need to flash code onto it, feed it nicely regulated low-voltage power, protect its inputs and outputs from transients and overcurrents
+======================================================================
+
+[33] Similarity: 0.573 | orange.scone | 10/16/2025
+git smudging: https://jnavila.github.io/plotkicadsch/
+======================================================================
+
+[34] Similarity: 0.583 | anachrocomputer | 10/19/2025
+A sure sign of an AI-generated schematic. Do not use AI
+======================================================================
+
+[35] Similarity: 0.554 | thebuckethatgirl | 10/19/2025
+a hardware based random number generator
+======================================================================
+
+[36] Similarity: 0.562 | thebuckethatgirl | 10/19/2025
+that uses stuff like a background radiation sensor to generate keys
+======================================================================
+
+[37] Similarity: 0.551 | wolington | 10/24/2025
+```Unhandled exception at 0x000000018013ECA0 (ngspice.dll) in kicad.exe: 0xC0000005: Access violation reading location 0xFFFFFFFFFFFFFFFF.```
+
+🙁 Silly spice!
+======================================================================

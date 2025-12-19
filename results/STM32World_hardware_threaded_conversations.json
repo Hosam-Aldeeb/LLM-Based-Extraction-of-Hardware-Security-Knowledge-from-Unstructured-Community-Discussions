@@ -1,0 +1,85 @@
+{
+  "channel": "STM32World_hardware",
+  "source": "./discord-exports/STM32World_hardware_Jan2025_export.json",
+  "filteredMessages": 2,
+  "totalThreads": 2,
+  "substantialThreads": 1,
+  "threads": [
+    [
+      {
+        "id": "1352809260249124944",
+        "author": "zynelabidin",
+        "timestamp": "2025-03-21T21:01:01.624-04:00",
+        "content": "In this shematic there are dio clk pins also I saw t_dio, t_clk pins \nI was using pa13 swdio and pa14 swclk pins to programming the mcu`s \nSo in stlink we are not using the pa13 and pa14 pins to program to the other mcu"
+      },
+      {
+        "id": "1352809348858122270",
+        "author": "zynelabidin",
+        "timestamp": "2025-03-21T21:01:22.75-04:00",
+        "content": "Am I right ?"
+      },
+      {
+        "id": "1352809542420795405",
+        "author": "zynelabidin",
+        "timestamp": "2025-03-21T21:02:08.899-04:00",
+        "content": "And what is this circuit for"
+      },
+      {
+        "id": "1352924065005965384",
+        "author": "lbthomsen",
+        "timestamp": "2025-03-22T04:37:13.211-04:00",
+        "content": "t_ is for \"target\" - those are the pins used to communicate with that target.  The dio and clk are for programming the st-link device.",
+        "reference": {
+          "messageId": "1352809260249124944",
+          "channelId": "1348004345253199902",
+          "guildId": "1347730523824455750"
+        }
+      },
+      {
+        "id": "1352924374868688897",
+        "author": "lbthomsen",
+        "timestamp": "2025-03-22T04:38:27.088-04:00",
+        "content": "ST-Link have the option to measure the VCC of the target board (T_PWR), but in my DIY ST-Link I just ignore it completely.",
+        "reference": {
+          "messageId": "1352809542420795405",
+          "channelId": "1348004345253199902",
+          "guildId": "1347730523824455750"
+        }
+      },
+      {
+        "id": "1353212607263412275",
+        "author": "zynelabidin",
+        "timestamp": "2025-03-22T23:43:47.046-04:00",
+        "content": "thanks for this informations"
+      },
+      {
+        "id": "1353212712204632174",
+        "author": "zynelabidin",
+        "timestamp": "2025-03-22T23:44:12.066-04:00",
+        "content": "I understood now How stlink is working"
+      },
+      {
+        "id": "1353226547519291493",
+        "author": "lbthomsen",
+        "timestamp": "2025-03-23T00:39:10.662-04:00",
+        "content": "Great",
+        "reference": {
+          "messageId": "1353212607263412275",
+          "channelId": "1348004345253199902",
+          "guildId": "1347730523824455750"
+        }
+      },
+      {
+        "id": "1354518724945903707",
+        "author": "zynelabidin",
+        "timestamp": "2025-03-26T14:13:49.768-04:00",
+        "content": "there are too many pins on the schematic of original stlink circuit for communications jtag and swd\nI want to know which pins are used for swd communication to program the mcu from stlink \nstm_jtck(swclk) and stm_jtms(swdio) for program to stm32f103 mcu  Im okey with this \nT_JTMS pin 27-25 this pins swdio \n T_JTCK pin 26-15  this pins swclk \nso We use these T_JTMS and T_JTCK pins to program another processor via stm32f103?",
+        "reference": {
+          "messageId": "1352924065005965384",
+          "channelId": "1348004345253199902",
+          "guildId": "1347730523824455750"
+        }
+      }
+    ]
+  ]
+}

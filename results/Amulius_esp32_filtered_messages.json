@@ -1,0 +1,680 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/Amulius_esp32_Jan2025_export.json",
+  "totalMessages": 3144,
+  "totalChunks": 3224,
+  "relevantMessages": 67,
+  "results": [
+    {
+      "text": "@ByteWelder it's probably just DRAM that _also_ happens to have code in it",
+      "metadata": {
+        "id": "1325525131766009897",
+        "author": "hard.fault",
+        "timestamp": "2025-01-05T13:03:38.479-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5537618653886933
+    },
+    {
+      "text": "It depends if you want to use ESP-IDF (C), the Arduino framework (C++) or Rust.\nMicropython is also a possibility.",
+      "metadata": {
+        "id": "1328773889798570025",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-01-14T12:13:02.753-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5532070875910537
+    },
+    {
+      "text": "i could try and hack something but i'd prefer not to which is why im waiting for my 12v 4A powersupply",
+      "metadata": {
+        "id": "1330647310446887024",
+        "author": "eithanz",
+        "timestamp": "2025-01-19T16:17:21.042-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5818240478923351
+    },
+    {
+      "text": "@A Rusted Skull What bothers me for instance is an example \"controller_hci_uart_demo\" there is only one reference to CONFIG_BTDM_CTRL_HCI_UART_BAUDRATE, which is not even in the initialization, but in the log \"    ESP_LOGI(tag, \"HCI UART%d Pin select: TX 5, RX 18, CTS 23, RTS 19 Baudrate:%d\", CONFIG_BTDM_CTRL_HCI_UART_NO, CONFIG_BTDM_CTRL_HCI_UART_BAUDRATE);\n\"",
+      "metadata": {
+        "id": "1331178105582391367",
+        "author": "milo.sh",
+        "timestamp": "2025-01-21T03:26:32.464-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5658948149112225
+    },
+    {
+      "text": "s::link_patches();\n\n    // Bind the log crate to the ESP Logging facilities\n    esp_idf_svc::log::EspLogger::initialize_default();\n\n    // Setting up receiver\n    let join_handle: JoinHandle<()> = spawn(|| {\n        wifi_init();\n        // Initialize ESP-NOW\n        let mut receiver = EspNow::take().expect(\"Failed to take ownership of an ESP-NOW instance\");\n\n        loop {\n            match receiver.fetch_peer(true) {\n                Ok(info) => println!(\"Peer Info: {info:?}\"),\n                E",
+      "metadata": {
+        "id": "1340802149558259765",
+        "author": "falk6773",
+        "timestamp": "2025-02-16T16:49:03.354-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5586094344393169
+    },
+    {
+      "text": "```c\n#include <stdio.h>\n#include <driver/i2c.h>\n#include <freertos/FreeRTOS.h>\n#include <freertos/task.h>\n#include <esp_log.h>\n#include <esp_task_wdt.h>\n\n#define I2S_NUM         I2S_NUM_0\n#define SAMPLE_RATE     44100\n#define I2S_BCLK        26\n#define I2S_LRC         27\n#define I2S_DOUT        25\n#define PI              3.14159265358979323846\n#define SINE_WAVE_FREQ  440  // 440Hz (A4 note)\n#define AMPLITUDE       2000\n#define BUFFER_SIZE     512\n\nvoid i2s_init(void) {\n    i2s_config_t i2s_confi",
+      "metadata": {
+        "id": "1345360975314030642",
+        "author": "beegcat",
+        "timestamp": "2025-03-01T06:44:12.113-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5655752405970477
+    },
+    {
+      "text": "You're including I2C driver but using I2S btw",
+      "metadata": {
+        "id": "1346056340916932629",
+        "author": "cpt_seablue",
+        "timestamp": "2025-03-03T04:47:20.192-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5529832002456788
+    },
+    {
+      "text": "x-debug/extension/support/openocd-helpers.tcl\" -f board/esp32s3-builtin.cfg\nOpen On-Chip Debugger v0.12.0-esp32-20241016 (2024-10-16-14:17)\nLicensed under GNU GPL v2\nFor bug reports, read\n        http://openocd.org/doc/doxygen/bugs.html\nDEPRECATED! use 'gdb port', not 'gdb_port'\nDEPRECATED! use 'tcl port' not 'tcl_port'\nCDRTOSConfigure\nInfo : only one transport option; autoselecting 'jtag'\nInfo : esp_usb_jtag: VID set to 0x303a and PID to 0x1001\nInfo : esp_usb_jtag: capabilities descriptor set t",
+      "metadata": {
+        "id": "1346955024055402596",
+        "author": "brandon7716",
+        "timestamp": "2025-03-05T16:18:22.949-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5528832945910576
+    },
+    {
+      "text": "o 0x2000\nInfo : Listening on port 50001 for tcl connections\nInfo : Listening on port 50002 for telnet connections\nError: esp_usb_jtag: could not find or open device!\nC:/Users/oneto/AppData/Local/Arduino15/packages/esp32/tools/openocd-esp32/v0.12.0-esp32-20241016/bin/../share/openocd/scripts/target/esp_common.cfg:9: Error: \nat file \"C:/Users/oneto/AppData/Local/Arduino15/packages/esp32/tools/openocd-esp32/v0.12.0-esp32-20241016/bin/../share/openocd/scripts/target/esp_common.cfg\", line 9\n[2025-03-",
+      "metadata": {
+        "id": "1346955024055402596",
+        "author": "brandon7716",
+        "timestamp": "2025-03-05T16:18:22.949-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5581421146264924
+    },
+    {
+      "text": "Then with these devices, there is like no way you can actually \"brick\" them just by uploading code to them right? At the very least, not unintentionally brick them?",
+      "metadata": {
+        "id": "1346956178219073546",
+        "author": "brandon7716",
+        "timestamp": "2025-03-05T16:22:58.123-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5686820270731783
+    },
+    {
+      "text": "https://www.bleepingcomputer.com/news/security/undocumented-backdoor-found-in-bluetooth-chip-used-by-a-billion-devices/",
+      "metadata": {
+        "id": "1348070731648471111",
+        "author": "cliffordheath",
+        "timestamp": "2025-03-08T18:11:48.368-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.6108588860685168
+    },
+    {
+      "text": "Hold on. This is just silly though \n> Depending on how Bluetooth stacks handle HCI commands on the device, remote exploitation of the backdoor might be possible via malicious firmware or rogue Bluetooth connections.\n\n> This is especially the case if an attacker already has root access, planted malware, or pushed a malicious update on the device that opens up low-level access.",
+      "metadata": {
+        "id": "1348094825978662952",
+        "author": "hard.fault",
+        "timestamp": "2025-03-08T19:47:32.904-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.6381858643832315
+    },
+    {
+      "text": "Anyone who has worked at the hci level knows that vendors often include patch commands to the chipsets because they're usually ROM based with a way to patch code via RAM",
+      "metadata": {
+        "id": "1348095533771919361",
+        "author": "hard.fault",
+        "timestamp": "2025-03-08T19:50:21.655-05:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.6105031552331096
+    },
+    {
+      "text": "I just read over this, the rhetoric severely misrepresents the issue, undocumented hci commands is sloppy but not an exploit in and of itself, certainly not one that let's someone own your device over BT",
+      "metadata": {
+        "id": "1348212630350725232",
+        "author": "mike7c2",
+        "timestamp": "2025-03-09T04:35:39.655-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5799816135720288
+    },
+    {
+      "text": "Code on an ESP32 acting as a Bluetooth for something else (in the same box, basically), and not careful of what commands it allows, might allow the something else, if it is compromised, to mess with the Bluetooth.\n\nThat is a very niche issue. And documenting may indeed be the “fix”.",
+      "metadata": {
+        "id": "1348235826387091488",
+        "author": "cliffordheath",
+        "timestamp": "2025-03-09T06:07:50.021-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5838243682604923
+    },
+    {
+      "text": " nice, easily modified react-based webpage used for configuration and various applications.\nSome example applications that will be provided include an ECM spoofer (ISO 14229 server) , general bus logger, Wi-Fi configuration via the web GUI, UDS/kwp2000 module flashing, and more.  The hardware design features a two level board system that breaks up the circuitry in a semi-modular way to allow for different physical layer protocols to be added in by making small modifications to our bottom board t",
+      "metadata": {
+        "id": "1352513916550516738",
+        "author": "thedecryptor",
+        "timestamp": "2025-03-21T01:27:26.199-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5889626431139928
+    },
+    {
+      "text": "emplate. Schematics will also be available in the repo once it goes online.  Much more robust power circuitry  and canbus protection than other devices like macchina a0. Top boards will be either s3 or c6 for now, but planning on a hybrid P4/c6 as well as another form factor for integrating other bus inputs and gpio",
+      "metadata": {
+        "id": "1352513916550516738",
+        "author": "thedecryptor",
+        "timestamp": "2025-03-21T01:27:26.199-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5582127586959812
+    },
+    {
+      "text": "What's up? I'm looking for someone to QC this ESP32-C3-Mini wiring schematic. The Espressif manual leaves several passive values as \"TBD\", and I'm not clear how to get the boot init and USB set up correctly. Important context: The USB is for JTAG; no normal serial comms required. Not serial flashing required; JTAG is fine. Ty!",
+      "metadata": {
+        "id": "1360977751351496745",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-13T09:59:41.666-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5512565107931867
+    },
+    {
+      "text": "THe prob is, they all don't use USB JTAG",
+      "metadata": {
+        "id": "1361680291563049100",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:31:20.305-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.570250562471427
+    },
+    {
+      "text": "P sure that Seed board does NOT use JTAG",
+      "metadata": {
+        "id": "1361685930901241936",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T08:53:44.828-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5655587240831704
+    },
+    {
+      "text": "GPIO 8 and 9 are strapping pins. If 8 is pulled up and 9 down, the chip will boot in download mode.\nHave you read this description of the USB JTAG? https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/api-guides/usb-serial-jtag-console.html",
+      "metadata": {
+        "id": "1361714043303498172",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T10:45:27.347-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5811243868865243
+    },
+    {
+      "text": "I just want to be able to flash and debug using JTAG over USB...",
+      "metadata": {
+        "id": "1361719815575703623",
+        "author": "the_alchemist0",
+        "timestamp": "2025-04-15T11:08:23.564-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5726304735991473
+    },
+    {
+      "text": "The Xiao board is correct for flashing and debugging via USB JTAG. I would use that schematic as a reference.",
+      "metadata": {
+        "id": "1361736409702072461",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-04-15T12:14:19.912-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.6477690204773652
+    },
+    {
+      "text": ".\nRunning stub...\nStub running...\nChanging baud rate to 921600\nChanged.\nWARNING: Failed to communicate with the flash chip, read/write operations will fail. Try checking the chip connections or removing any other hardware connected to IOs.\nConfiguring flash size...\nFlash will be erased from 0x00001000 to 0x00007fff...\nFlash will be erased from 0x00008000 to 0x00008fff...\nFlash will be erased from 0x0000e000 to 0x0000ffff...\nFlash will be erased from 0x00010000 to 0x00054fff...\nCompressed 24976 b",
+      "metadata": {
+        "id": "1362064556880564274",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T09:58:16.296-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5517290528465983
+    },
+    {
+      "text": "and so i was wondering, in the case of overvoltage the regulator should instantly sacrifice itself right? and should prevent any voltage from going in?\n\nbecause my computer can still detect the cp2102 driver so im wondering only the regulator and the flash is damaged",
+      "metadata": {
+        "id": "1362065278552248543",
+        "author": "beegcat",
+        "timestamp": "2025-04-16T10:01:08.356-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.550801340761197
+    },
+    {
+      "text": "ESP-IDF uses FreeRTOS so you are compiling an operating system along with Arduino and your code",
+      "metadata": {
+        "id": "1364362691560345671",
+        "author": "cliffordheath",
+        "timestamp": "2025-04-22T18:10:14.301-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5566591752118235
+    },
+    {
+      "text": "First of all, the hardware. Make sure the i2c bus Actually communicates, check the scl and sda lines with your oscilloscope. Also ensure that you have a proper pullup on both lines.\n\nDoes your chip send an ACK on the line?",
+      "metadata": {
+        "id": "1372442031183495259",
+        "author": "gotbread",
+        "timestamp": "2025-05-15T01:14:38.974-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5868540490933243
+    },
+    {
+      "text": "yeah\n```rs\nfn main() {\n    esp_idf_svc::sys::link_patches();\n    esp_idf_svc::log::EspLogger::initialize_default();\n\n    let p = unsafe {\n        EspPartition::find_first(EspPartitionType::Data(\n            esp_idf_svc::partition::EspDataPartitionSubtype::Fat,\n        ))\n    }\n    .unwrap()\n    .unwrap();\n    let p = EspWlPartition::new(p).unwrap();\n    let wl = unsafe { Fatfs::new_wl_part(0, p.handle()).unwrap() };\n    let _mounted_fs = MountedFatfs::mount(wl, \"/fat\", 4).unwrap();\n\n    let mut ",
+      "metadata": {
+        "id": "1374852926211756042",
+        "author": "escalator_enjoyer",
+        "timestamp": "2025-05-21T16:54:41.141-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5636096503961785
+    },
+    {
+      "text": "Sketch uses 1245294 bytes (95%) of program storage space. Maximum is 1310720 bytes.\nGlobal variables use 50968 bytes (15%) of dynamic memory, leaving 276712 bytes for local variables. Maximum is 327680 bytes.\nesptool.py v4.8.1\nSerial port /dev/cu.usbserial-0001\nConnecting.....\nChip is ESP32-D0WD-V3 (revision v3.1)\nFeatures: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None\nCrystal is 40MHz\nMAC: 14:2b:2f:c1:6a:fc\nUploading stub...\nRunning stub...\nStub running...\nWARNING: ",
+      "metadata": {
+        "id": "1385292650223243314",
+        "author": "nsnfksamfsamlfas",
+        "timestamp": "2025-06-19T12:18:25.306-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5646207698580828
+    },
+    {
+      "text": "[also, they are now exposing a command interface on a serial port... i am sure i can find creative ways of making the system crash]",
+      "metadata": {
+        "id": "1385666046182293596",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-20T13:02:09.84-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5655666102415499
+    },
+    {
+      "text": "Most likely in flash.\nWhat if at the start, when esp is powered ,an STM chip is supplying the credentials. Then how safe the system will be?",
+      "metadata": {
+        "id": "1386845657805099079",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:09:31.167-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5676757908388063
+    },
+    {
+      "text": "What stops the attacker from eavesdropping on the stm32 connection?",
+      "metadata": {
+        "id": "1386846134928150549",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:11:24.922-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.577062144015924
+    },
+    {
+      "text": "To protect from a dedicated attack on routers??",
+      "metadata": {
+        "id": "1386846588105920634",
+        "author": "__thanks_",
+        "timestamp": "2025-06-23T19:13:12.968-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5751510468933251
+    },
+    {
+      "text": "That should be dealt with on the router though. Sure, don't give away the plaintext wifi, but your attack surface is already small.",
+      "metadata": {
+        "id": "1386847181608190073",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:15:34.47-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5713687593448421
+    },
+    {
+      "text": "what part(s) of your system does the adversary have access to",
+      "metadata": {
+        "id": "1386847468263575583",
+        "author": "madman.in.a.box",
+        "timestamp": "2025-06-23T19:16:42.814-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5818545607713215
+    },
+    {
+      "text": "Also consider that in many cases, the attacker must have physical access to the device, which already changes the model",
+      "metadata": {
+        "id": "1386848450683076859",
+        "author": "gotbread",
+        "timestamp": "2025-06-23T19:20:37.041-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5772635534557753
+    },
+    {
+      "text": "No, that is part of the espessif package. PlatformIO just sits on top. Before we can really debug anything, you need to find out if the problem is in platformio or the setup in general.\nSo I would always cut out layers and use the provided idf",
+      "metadata": {
+        "id": "1387022473102364783",
+        "author": "gotbread",
+        "timestamp": "2025-06-24T06:52:07.219-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5600056728560847
+    },
+    {
+      "text": "From experience with esp, it's better to use esp_idf then arduino / pio stack\nidf.py monitor --port  /dev/cu/,,,  solves monitoring\nit's also possible to reload code straight from monitor with a hotkey",
+      "metadata": {
+        "id": "1387033024234786827",
+        "author": "zaika_6o6o6",
+        "timestamp": "2025-06-24T07:34:02.805-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5511005100422532
+    },
+    {
+      "text": "If this is not defined, the Arduino framework will use the UART instead of USB CDC. Many boards have a USB to TTL chip that facilitates communication with your computer using the UART, so that is the default setting.",
+      "metadata": {
+        "id": "1387435266972586145",
+        "author": "m_a_v_e_r_i_c_k",
+        "timestamp": "2025-06-25T10:12:24.947-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5521080980100675
+    },
+    {
+      "text": "Hello, im kinda new to all this but i think its because you forgot to add the pull up resistors for the i2c lines, i checked the seedstudio datasheet and there are no onboard pull ups for the i2c gpio, this can cause data instability and glitching and random failures in sensors (like you have described). to fix this i mean there are a few ways but it depends on the amount of time you have, you can just modify the pcb or add one externally",
+      "metadata": {
+        "id": "1389051520238092319",
+        "author": "proforest1234_95641",
+        "timestamp": "2025-06-29T21:14:49.754-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5638587627631594
+    },
+    {
+      "text": "looking at your code i noticed you are changing the frequency of the i2c bus mid loop? as far as i know i2c uses one common clock speed for the entire bus and chaging it while one sensor is uploading can cause faulty readings, have you tried runnning both sensors at 100khz?",
+      "metadata": {
+        "id": "1389061026804400148",
+        "author": "proforest1234_95641",
+        "timestamp": "2025-06-29T21:52:36.296-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5583532975043501
+    },
+    {
+      "text": "but it could be the security as well",
+      "metadata": {
+        "id": "1389939811053338624",
+        "author": "frostbite4093",
+        "timestamp": "2025-07-02T08:04:34.788-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5527372801022856
+    },
+    {
+      "text": "plus the wifi scanner did show the apartment wifi on various ports so it shouldn't be a telecommunication problem but a cybersecurity one",
+      "metadata": {
+        "id": "1389971913585066139",
+        "author": "chagishades_93854",
+        "timestamp": "2025-07-02T10:12:08.628-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5514261913347571
+    },
+    {
+      "text": "https://github.com/serene-brew/espionage\n\nI along with my friend @RiserSama made this project for reverse engineering esp based firmwares.....maybe u guyz will be intrested and contribute....",
+      "metadata": {
+        "id": "1394660729985957909",
+        "author": "._.mintraven",
+        "timestamp": "2025-07-15T08:43:49.572-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5882879302687815
+    },
+    {
+      "text": "UART is a solid option. On the newer ESP32's some support USB serial xor USB JTAG on chip, which is great and doesn't take all that much space vs 0.1\" headers",
+      "metadata": {
+        "id": "1394746178146533527",
+        "author": "zecritic",
+        "timestamp": "2025-07-15T14:23:22.001-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5727201715661356
+    },
+    {
+      "text": "You can debug over USB with the on board JTAG controller which gives you access to GDB or the physical JTAG interface",
+      "metadata": {
+        "id": "1394875388857024525",
+        "author": "b1ack1323",
+        "timestamp": "2025-07-15T22:56:48.235-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.6332609948888761
+    },
+    {
+      "text": "(i'm using arduino core on platformio)",
+      "metadata": {
+        "id": "1396191602598477964",
+        "author": "mitgobla",
+        "timestamp": "2025-07-19T14:06:58.045-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5716788719710245
+    },
+    {
+      "text": "I don't know, and I see the pio page says 'debug=no' for all the esp8266 boards.\n\nBut, maybe if there is access to the pins mentioned in the following articles you might be able to do something with it and an external debugger?\n\nhttps://visualgdb.com/tutorials/esp8266/gdbstub/\n\nhttps://visualgdb.com/tutorials/esp8266/\n\nNode MCU seems to have JTAG pins available  https://visualgdb.com/tutorials/esp8266/nodemcu/jtag/",
+      "metadata": {
+        "id": "1406349913301844068",
+        "author": "flyingtoast3r",
+        "timestamp": "2025-08-16T14:52:28.049-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5554109645083248
+    },
+    {
+      "text": "r: s_i2c_synchronous_transaction(945): I2C transaction failed\" \nI'm using this skript i found on the internet: \"#include <Wire.h>\n#include <ADXL345_WE.h>\n\n#define ADXL345_I2CADDR 0x53  // or 0x1D if SDO = HIGH\n\nTwoWire Wire2 = TwoWire(0);  // Use I2C port 0 (or 1 if preferred)\nADXL345_WE myAcc = ADXL345_WE(&Wire2, ADXL345_I2CADDR);\n\nvoid setup() {\n  Serial.begin(115200);\n\n  // Initialize Wire2 with your SDA and SCL pins\n  Wire2.begin(4, 5);  // SDA = GPIO4 (D4), SCL = GPIO5 (D5)\n\n  // Then initi",
+      "metadata": {
+        "id": "1406366520539349042",
+        "author": "omg_itsgollum69",
+        "timestamp": "2025-08-16T15:58:27.523-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5544579366463972
+    },
+    {
+      "text": "Hi there! Has anyone worked with ESP-IDF and AWS IoT Core? Specifically with the AWS library for ESP-IDF. The MQTT connection is extremely complicated and the OTA update... well aint very straight foward.",
+      "metadata": {
+        "id": "1407233066677567540",
+        "author": "gtadictos21",
+        "timestamp": "2025-08-19T01:21:48.222-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5552106387275044
+    },
+    {
+      "text": "that will be an uphill battle.\nif you want to test bare metal, go to a platform which has widespread support for it, e.g. stm32 or avr.\nthe esp32 offers you the framework, for anything else, you are on your own, good luck with reverse engineering that framework.",
+      "metadata": {
+        "id": "1407645292420927499",
+        "author": "gotbread",
+        "timestamp": "2025-08-20T04:39:50.498-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5508071093077682
+    },
+    {
+      "text": "Speaking of which, this is a great video on a WiFi reverse engineering project:\nhttps://www.youtube.com/watch?v=r8IqkUTGjlA",
+      "metadata": {
+        "id": "1407648703912611850",
+        "author": "bytewelder",
+        "timestamp": "2025-08-20T04:53:23.861-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.561581350963564
+    },
+    {
+      "text": "oh, you are using arduino on it, not the idf.py directly",
+      "metadata": {
+        "id": "1410275490874523668",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:51:18.676-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5623696583618241
+    },
+    {
+      "text": "the idf.py is the frondend of the sdk you interact with usually. but you are not doing that here, you are using an arduino layer on top of it",
+      "metadata": {
+        "id": "1410276252643885167",
+        "author": "gotbread",
+        "timestamp": "2025-08-27T10:54:20.296-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5540330502874824
+    },
+    {
+      "text": "No, I want to identify the hardware they're running my firmware on.\ne.g. Lilygo T-Deck, M5Stack Core S3, etc.",
+      "metadata": {
+        "id": "1411367567779434596",
+        "author": "bytewelder",
+        "timestamp": "2025-08-30T11:10:50.1-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.582644065127678
+    },
+    {
+      "text": "Unit tests (1/2)\n```c\n#include \"unity.h\"\n#include \"../include/app_imu.h\"\n#include \"esp_intr_alloc.h\"\n#include \"driver/gpio.h\"\n#include \"esp_log.h\"\n#include \"freertos/task.h\"\n\nstatic const char *TAG = \"test_app_imu\";\nstatic const spi_bus_config_t bus_config = {\n    .data2_io_num = -1,\n    .data3_io_num = -1,\n    .data4_io_num = -1,\n    .data5_io_num = -1,\n    .data6_io_num = -1,\n    .data7_io_num = -1,\n    .data_io_default_level = false,\n    .max_transfer_sz = 4092,\n    .isr_cpu_id = ESP_INTR_CPU",
+      "metadata": {
+        "id": "1419409505795444959",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:46:37.535-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5801208122484628
+    },
+    {
+      "text": "G, \"Test setup spi bus status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    status_code = app_teardown_spi_bus();\n    assert(status_code == ESP_OK);\n}\n\nTEST_CASE(\"Test setup of IMU spi device and WHOAMI\", \"[app_imu]\")\n{\n    spi_device_handle_t imu_spi_device;\n    esp_err_t status_code = app_setup_spi_bus(&bus_config);\n    ESP_LOGI(TAG, \"bus setup status_code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    status_code = app_setup_imu_spi(&device_interface_config, &imu",
+      "metadata": {
+        "id": "1419409581603291198",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:46:55.609-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5649838357921396
+    },
+    {
+      "text": "_spi_device);\n    ESP_LOGI(TAG, \"Test setup of IMU spi device status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    vTaskDelay(5000 / portTICK_PERIOD_MS);\n    status_code = app_imu_test_whoami(&imu_spi_device);\n    ESP_LOGI(TAG, \"Test IMU whoami status code: %i\", status_code);\n    assert(status_code == ESP_OK);\n    status_code = app_teardown_imu_spi(&imu_spi_device);\n    assert(status_code == ESP_OK);\n    status_code = app_teardown_spi_bus();\n    assert(status_code == ESP_OK);\n}",
+      "metadata": {
+        "id": "1419409581603291198",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:46:55.609-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.6076550049464436
+    },
+    {
+      "text": "app_imu.c (1/2)\n```c\nesp_err_t app_setup_spi_bus(spi_bus_config_t *bus) {\n    return spi_bus_initialize(SPI2_HOST, bus, SPI_DMA_CH_AUTO);  \n}\n\nesp_err_t app_teardown_spi_bus() {\n    return spi_bus_free(SPI2_HOST);\n}\n\nesp_err_t app_setup_imu_spi(spi_device_interface_config_t *imu_spi_dev_config, spi_device_handle_t *imu_spi_dev) {\n    return spi_bus_add_device(SPI2_HOST, imu_spi_dev_config, imu_spi_dev);\n}\n\nesp_err_t app_teardown_imu_spi(spi_device_handle_t *imu_spi_dev) {\n    return spi_bus_remo",
+      "metadata": {
+        "id": "1419410073654137034",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:48:52.923-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5693009075081746
+    },
+    {
+      "text": "ve_device(*imu_spi_dev);\n}\n```",
+      "metadata": {
+        "id": "1419410073654137034",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:48:52.923-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.560731081684778
+    },
+    {
+      "text": "app_imu.c (2/2)\n```c\nesp_err_t app_imu_test_whoami(spi_device_handle_t *imu_spi_handle) {\n    /// WHOAMI register value per icm20948 datasheet\n    uint8_t correct = 0xea;\n    // Only need to send zero on the mosi for whoami register\n    uint8_t whoamicommand = 0;\n    spi_transaction_t trans = {\n        .cmd = whoamicommand,\n        .flags = SPI_TRANS_USE_RXDATA,\n        .length = 8,\n        .override_freq_hz = 0,\n        .tx_buffer = NULL\n    };\n    // Conduct polling transaction since this is s",
+      "metadata": {
+        "id": "1419410176284295270",
+        "author": "637.8nm",
+        "timestamp": "2025-09-21T15:49:17.392-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5995686327996907
+    },
+    {
+      "text": "be reliable for a clone, then play with the sample buffer size depending how long the transaction takes or ser a worst case value... A trigger can be cs low... If it doesn't trigger then something is not working on software / hardware side",
+      "metadata": {
+        "id": "1419994975424217229",
+        "author": "beer_baron",
+        "timestamp": "2025-09-23T06:33:04.372-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.565459873010461
+    },
+    {
+      "text": "it usually uses the xtensa toolchain, then you just flash over usb-to-uart on a devboard (or an esp-prog if you're fancy) and debug over the also usb available jtag",
+      "metadata": {
+        "id": "1423955691906797661",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-04T04:51:32.768-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.6297233364327843
+    },
+    {
+      "text": "Its because the c3 version used usb jtag seriel",
+      "metadata": {
+        "id": "1426989635908927658",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:47:21.386-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.588124953975238
+    },
+    {
+      "text": "No the code Expectes usb jtag",
+      "metadata": {
+        "id": "1426990681699778700",
+        "author": "epicstuhl",
+        "timestamp": "2025-10-12T13:51:30.722-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5718048162498701
+    },
+    {
+      "text": "try this udemey course (which is paid ), but worth !,you will able to use esp  idf , course name :IoT Application Development with the ESP32 Using the ESP-IDF\n(Develop a WiFi based application on the ESP32 and Subscribe/Publish MQTT Messages to AWS IoT using ESP-IDF & FreeRTOS)",
+      "metadata": {
+        "id": "1428012572338294854",
+        "author": "_sathvikande",
+        "timestamp": "2025-10-15T09:32:08.436-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5596446416210461
+    },
+    {
+      "text": "(or maybe spi/i2c, idk what the driver uses)",
+      "metadata": {
+        "id": "1428410457898618973",
+        "author": "magnetrwn",
+        "timestamp": "2025-10-16T11:53:11.746-04:00",
+        "channel": "Amulius_esp32"
+      },
+      "similarity": 0.5797178433478142
+    }
+  ]
+}

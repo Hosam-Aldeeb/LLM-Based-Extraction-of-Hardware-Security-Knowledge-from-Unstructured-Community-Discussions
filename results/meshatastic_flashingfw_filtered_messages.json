@@ -1,0 +1,360 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/meshatastic_flashingfw_Jan2025_export.json",
+  "totalMessages": 3575,
+  "totalChunks": 3539,
+  "relevantMessages": 35,
+  "results": [
+    {
+      "text": "Lilygo makes many hardwares for many purposes",
+      "metadata": {
+        "id": "1326932184589795460",
+        "author": "b8b8",
+        "timestamp": "2025-01-09T10:14:46.014-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5599316675539661
+    },
+    {
+      "text": "```\n    s140_nrf52_611_softdevice (RAK, LilyGo, Heltec Node T114, etc)\n    s140_nrf52_730_softdevice (All Seeed, ms24sf1 and variants)\n```",
+      "metadata": {
+        "id": "1337288011024568393",
+        "author": "bitflp",
+        "timestamp": "2025-02-07T00:05:07.438-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5630171284684646
+    },
+    {
+      "text": "hrmmm, just pulled latest and recompiled + reflashed... it's something with the i2c pins:```//\\ E S H T /\\ S T / C\n\nDEBUG | ??:??:?? 0 Filesystem files:\nDEBUG | ??:??:?? 0 Power::lipoInit lipo sensor is not ready yet\nDEBUG | ??:??:?? 0 Use analog input 32 for battery level\nINFO  | ??:??:?? 0 Scan for i2c devices\nDEBUG | ??:??:?? 0 Scan for I2C devices on port 1``` is where it's dying for me, messing with it now",
+      "metadata": {
+        "id": "1340508717992509460",
+        "author": "porkcube",
+        "timestamp": "2025-02-15T21:23:03.817-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.6010481554527688
+    },
+    {
+      "text": "It's currently only available by building the firmware yourself.  There are instructions pinned in #mui.  Once it's ready for mass testing it will be released in the online flasher.",
+      "metadata": {
+        "id": "1340777373150216243",
+        "author": "pdxlocations",
+        "timestamp": "2025-02-16T15:10:36.198-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5561286627379255
+    },
+    {
+      "text": "icked on Erase Flash and Install. Finally picked the USB device.\n\nAnd this is what came off it:\n\nesptool.js\nSerial port WebSerial VendorID 0x303a ProductID 0x1001\nConnecting....\nDetecting chip type... ESP32-S3\nChip is ESP32-S3\nFeatures: Wi-Fi,BLE,Embedded PSRAM 8MB (AP_3v3)\nCrystal is 40MHz\nMAC: 8c:bf:ea:06:88:2c\nUploading stub...\nRunning stub...\nStub running...\n\nAnd it stays there. Any suggestions on what I can try? 🙂",
+      "metadata": {
+        "id": "1342541045430222899",
+        "author": "kennethq",
+        "timestamp": "2025-02-21T11:58:48.437-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5644591704167253
+    },
+    {
+      "text": "This is because MUI takes over the client protobuf connection to the firmware. It's a bugfix 🙂",
+      "metadata": {
+        "id": "1342621141319159901",
+        "author": "bitflp",
+        "timestamp": "2025-02-21T17:17:04.785-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5560698550944082
+    },
+    {
+      "text": "Also, I wouldn't recommend running someone else's firmware that's alomst 6 months old at this point. There has been tons of fixes and additions since then.",
+      "metadata": {
+        "id": "1342621379241185332",
+        "author": "bitflp",
+        "timestamp": "2025-02-21T17:18:01.51-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5574035486306048
+    },
+    {
+      "text": "<https://wiki.seeedstudio.com/sensecap_t1000_e/#device-bricked>",
+      "metadata": {
+        "id": "1343432734718300272",
+        "author": "bitflp",
+        "timestamp": "2025-02-23T23:02:03.73-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5508749467427239
+    },
+    {
+      "text": "Am I going mad? The link in their IG bio says use flasher, flasher is all 2.5xx",
+      "metadata": {
+        "id": "1344384251394785351",
+        "author": "yanhoob",
+        "timestamp": "2025-02-26T14:03:02.984-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5512441506000271
+    },
+    {
+      "text": "primary thing the eth_gw firmware does that regular 4631 firmware doesn't is that it supports JSON on MQTT. And it disables some stuff in order to have space for the code to make JSON work",
+      "metadata": {
+        "id": "1344513543256412161",
+        "author": "m_ia_n",
+        "timestamp": "2025-02-26T22:36:48.566-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5796720549714656
+    },
+    {
+      "text": "yup, it helps keep the firmware and apps free with a hardware levy and helps the devs dedicate time to fixing bugs",
+      "metadata": {
+        "id": "1345560031172624437",
+        "author": "b8b8",
+        "timestamp": "2025-03-01T19:55:10.728-05:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.58037177164016
+    },
+    {
+      "text": "it's this device: https://heltec.org/project/wifi-lora-32-v3/ (at least the hardware version tag says v3)",
+      "metadata": {
+        "id": "1354477805508759614",
+        "author": "c71f5h",
+        "timestamp": "2025-03-26T11:31:13.814-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5529838033522625
+    },
+    {
+      "text": "Idk. I don't know the firmware well enough to say whether fault 6 is due to the firmware not knowing what to do with the power chip due to a bug, or whether the chip is borked",
+      "metadata": {
+        "id": "1355183278155501628",
+        "author": "blacklight_uk",
+        "timestamp": "2025-03-28T10:14:31.6-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5634282984117254
+    },
+    {
+      "text": " head screwdriver to short the solder points of SW3\nAnd now the Station G2 is in the RST-Mode\nStart the flashing on the website. \nAfter it's done, you might have to single press (or short the solder points) briefly to get it out of RST mode.  \nUnplug USB to power down, plug back in. \nUse the iPhone Meshtastic app to do your new settings.  You can't diddle with the settings\non your Mac until you get done using iPhone. \nAll done, and your Station G2 will start kicking ass again. \nRemember to keep ",
+      "metadata": {
+        "id": "1374462516708769892",
+        "author": "anna_streeter",
+        "timestamp": "2025-05-20T15:03:20.262-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5862693039457476
+    },
+    {
+      "text": "Have we documented anywhere that brltty can break firmware updates on Linux, particularly PopOS?",
+      "metadata": {
+        "id": "1376250276574531594",
+        "author": "jonathanbennett",
+        "timestamp": "2025-05-25T13:27:15.429-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5610124018981586
+    },
+    {
+      "text": "sptool.js\nSerial port WebSerial VendorID 0x303a ProductID 0x1001\nConnecting...\nNetworkError: Failed to execute 'open' on 'SerialPort': Failed to open serial port.\n\nI am using chrome",
+      "metadata": {
+        "id": "1376940015631728852",
+        "author": "kd8dlppaul1081",
+        "timestamp": "2025-05-27T11:08:02.035-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5656469803027393
+    },
+    {
+      "text": "https://github.com/gargomoma/fakeTec_pcb/?tab=readme-ov-file#bootloader",
+      "metadata": {
+        "id": "1380544295744045117",
+        "author": "nomdetom",
+        "timestamp": "2025-06-06T09:50:09.378-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5516235161542881
+    },
+    {
+      "text": "might have a solution involving the arduino ide",
+      "metadata": {
+        "id": "1385060215065542807",
+        "author": "shadycrzy",
+        "timestamp": "2025-06-18T20:54:48.446-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5681851668995134
+    },
+    {
+      "text": "Follow the seeed instructions, don't install bootloaders for different devices, the bootloader is hardware specific",
+      "metadata": {
+        "id": "1387614577520410704",
+        "author": "garthvh",
+        "timestamp": "2025-06-25T22:04:55.913-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5763414675581036
+    },
+    {
+      "text": "Not sure if a \"factory wipe\" of the flash would help you-  \nBut - its in the firmware .zip for the device. \n https://meshtastic.org/docs/getting-started/flashing-firmware/nrf52/nrf52-erase/",
+      "metadata": {
+        "id": "1390432222753849395",
+        "author": "n8lbv",
+        "timestamp": "2025-07-03T16:41:14.886-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5518655339822295
+    },
+    {
+      "text": "```\n    /* Corruption was detected on the flash filesystem but we were unable to repair things.\n NOTE: Your node will probably need to be reconfigured the next time it reboots (it will lose the region code etc...)\n If you see this failure in the field please post in the forum because we are interested in seeing if this is occurring in the field. */\n    meshtastic_CriticalErrorCode_FLASH_CORRUPTION_UNRECOVERABLE = 13\n```",
+      "metadata": {
+        "id": "1396844019081805824",
+        "author": "some_canuck",
+        "timestamp": "2025-07-21T09:19:26.256-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5508832138104279
+    },
+    {
+      "text": "That flasher only had really old firmware, which has security vulnerabilities so I took it down.",
+      "metadata": {
+        "id": "1398743388114915411",
+        "author": "pdxlocations",
+        "timestamp": "2025-07-26T15:06:51.122-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.6105224930752665
+    },
+    {
+      "text": "Unplug, turn off, do the bootloader RST sequence and replug in",
+      "metadata": {
+        "id": "1403755447483109558",
+        "author": "thebentern",
+        "timestamp": "2025-08-09T11:02:59.195-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5577048396643932
+    },
+    {
+      "text": "https://meshtastic.org/docs/hardware/devices",
+      "metadata": {
+        "id": "1406181559094083605",
+        "author": "dennis_vlc",
+        "timestamp": "2025-08-16T03:43:29.278-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5566103177984929
+    },
+    {
+      "text": "i see the following posted constantly:\n`SPIWP:0xee\nmode:DIO, clock div:1\nload:0x3fce3808,len:0x4bc\nload:0x403c9700,len:0xbd8\nload:0x403cc700,len:0x2a0c\nentry 0x403c98d0\nESP-ROM:esp32s3-20210327\nBuild:Mar 27 2021\nrst:0x3 (RTC_SW_SYS_RST),boot:0x2b (SPI_FAST_FLASH_BOOT)\nSaved PC:0x403cdb0a`",
+      "metadata": {
+        "id": "1409427203267104830",
+        "author": "jonbjohns",
+        "timestamp": "2025-08-25T02:40:31.15-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.555070398304392
+    },
+    {
+      "text": "E.g. Arduino ide or something",
+      "metadata": {
+        "id": "1409635522342813717",
+        "author": "nomdetom",
+        "timestamp": "2025-08-25T16:28:18.288-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5707347982527168
+    },
+    {
+      "text": "Which devices?",
+      "metadata": {
+        "id": "1409964236112924833",
+        "author": "nomdetom",
+        "timestamp": "2025-08-26T14:14:29.758-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5719834712801536
+    },
+    {
+      "text": "Well, keep in mind that some devices show up as /dev/ttyUSB* (such as a Heltec LoRa 32V3) and some as /dev/ttyACM* (such as a Wisblock 4631). It depends on the type of USB<-->serial adapter the device is using. As such, you need to make sure you're passing the correct devices over to your VMs.\n\nAlso, if you're using the web flasher direct to the USB ports, note that some browsers have broken connections to the serial devices. Chromium-based browsers seem to have the best luck. Personally, I use ",
+      "metadata": {
+        "id": "1415007036818849853",
+        "author": "therps2",
+        "timestamp": "2025-09-09T12:12:47.137-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5576157896281497
+    },
+    {
+      "text": "they also tend to have tutorials online for flashing third party hardware",
+      "metadata": {
+        "id": "1417933234905550919",
+        "author": "sadlyoddisfying",
+        "timestamp": "2025-09-17T14:00:27.127-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5955692635757842
+    },
+    {
+      "text": "in firmware/software area",
+      "metadata": {
+        "id": "1418157714688708639",
+        "author": "kamil_dz",
+        "timestamp": "2025-09-18T04:52:27.278-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5518785163662357
+    },
+    {
+      "text": "The vast majority of devices run on open source firmware, there is even open firmware being worked on for the t-deck. Nothing stops anyone from developing open versions of the firmware for the currently closed devices and apps. Let the best approaches survive.",
+      "metadata": {
+        "id": "1418596136633106514",
+        "author": "cisien",
+        "timestamp": "2025-09-19T09:54:35.215-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5794453301650843
+    },
+    {
+      "text": "but yeah, its a safety mechanism to stop it bootlooping and erasing forever",
+      "metadata": {
+        "id": "1418809736316583937",
+        "author": "nomdetom",
+        "timestamp": "2025-09-20T00:03:21.348-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5612249042416667
+    },
+    {
+      "text": "```\nUF2 Bootloader 0.6.1 lib/nrfx (v2.0.0) lib/tinyusb (0.10.1-293-gaf8e5a90) lib/uf2 (remotes/origin/configupdate-9-gadbb8c7)\nModel: Seeed XIAO nRF52840\nBoard-ID: Seeed_XIAO_nRF52840_Sense\nSoftDevice: S140 version 7.3.0\nDate: Nov 12 2021\n```",
+      "metadata": {
+        "id": "1419174029213962280",
+        "author": "deeno2433",
+        "timestamp": "2025-09-21T00:10:55.543-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5514814901815904
+    },
+    {
+      "text": "hack-sdk-wm1110.json and you will also need my modified variant files",
+      "metadata": {
+        "id": "1421121531643433082",
+        "author": "mark.birss.gmt2",
+        "timestamp": "2025-09-26T09:09:36.305-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5525109403658645
+    },
+    {
+      "text": "Is there an issue with that firmare, I have a few devices i flashed with it for experimenting?",
+      "metadata": {
+        "id": "1429217325382631494",
+        "author": "valordk",
+        "timestamp": "2025-10-18T17:19:23.945-04:00",
+        "channel": "meshatastic_flashingfw"
+      },
+      "similarity": 0.5973321440455659
+    }
+  ]
+}

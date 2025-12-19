@@ -1,0 +1,60 @@
+{
+  "query": "cybersecurity hardware hacking vulnerabilities exploits \nJTAG UART SPI I2C firmware reverse engineering \ndebugging bootloader flash memory encryption \nsecurity vulnerabilities penetration testing \nexploit development buffer overflow \nhardware security embedded systems IoT security",
+  "threshold": 0.55,
+  "source": "./discord-exports/STM32World_general_Jan2025_export.json",
+  "totalMessages": 805,
+  "totalChunks": 834,
+  "relevantMessages": 5,
+  "results": [
+    {
+      "text": "-write protocol for up to 16 devices (each address is 8 bytes long), I2C, SPI, an PLC protocol called Exoline (max packet size of 240 bytes). After shitload of optimization, I proudly had 1-bit in RAM marked \"Reserved for Future Use\" AND found a hardware bug (and figured out a workaround) that Microchip acknowledged (Intel refused to acknowledge it when we found a similar problem in the 1980 edition of the 8031, but had been fixed in the 1982 edition) and promised me 10,000pc pricing even if I o",
+      "metadata": {
+        "id": "1370622572739432540",
+        "author": "niclas8888",
+        "timestamp": "2025-05-10T00:44:46.277-04:00",
+        "channel": "STM32World_general"
+      },
+      "similarity": 0.5641684697777851
+    },
+    {
+      "text": "Can anyone share the project ideas related to embedded systems",
+      "metadata": {
+        "id": "1384764640088559657",
+        "author": "jayaprakashreddy0051",
+        "timestamp": "2025-06-18T01:20:17.88-04:00",
+        "channel": "STM32World_general"
+      },
+      "similarity": 0.557053092390268
+    },
+    {
+      "text": "ation with CLI:\n---\n➜  bin ./STM32_Programmer_CLI -c port=SWD mode=UR\n\nST-LINK SN  : 540030001500003141474B2E\nST-LINK FW  : V2J46S7\nBoard       : --\nVoltage     : 3.23V\nError: Unable to get core ID\nError: Cannot connect to access port 1!  If you are trying to connect to a device with TrustZone enabled please try to connect with HotPlug mode.  If you are trying to connect to a device which supports Debug Authentication with certificate or password, please open your device using it.\n\n➜  bin ./STM3",
+      "metadata": {
+        "id": "1433830676070924319",
+        "author": "inx42",
+        "timestamp": "2025-10-31T10:51:12.461-04:00",
+        "channel": "STM32World_general"
+      },
+      "similarity": 0.5768700220667143
+    },
+    {
+      "text": "2_Programmer_CLI -c port=SWD mode=HotPlug -ob displ\n\nST-LINK SN  : 540030001500003141474B2E\nST-LINK FW  : V2J46S7\nBoard       : --\nVoltage     : 3.23V\nSWD freq    : 4000 KHz\nConnect mode: Hot Plug\nReset mode  : Software reset\nDevice ID   : 0x497\nRevision ID : Rev Y\nDevice name : STM32WLxx\nFlash size  : 256 KBytes (default)\nDevice type : MCU\nDevice CPU  : Cortex-M4\nBL Version  : 0x0\n...\n...\n\nOPTION BYTES BANK: 0\n\n   Read Out Protection:\n\n     RDP          : 0x0 (Level 1, read protection of memori",
+      "metadata": {
+        "id": "1433830676070924319",
+        "author": "inx42",
+        "timestamp": "2025-10-31T10:51:12.461-04:00",
+        "channel": "STM32World_general"
+      },
+      "similarity": 0.6129114053299314
+    },
+    {
+      "text": "Hey are there any tutorials to use trustzone and stm32 cube programmer to lock down your source code from reverse engineering?",
+      "metadata": {
+        "id": "1434508775087149106",
+        "author": "am991928",
+        "timestamp": "2025-11-02T06:45:43.865-05:00",
+        "channel": "STM32World_general"
+      },
+      "similarity": 0.5532116320373628
+    }
+  ]
+}

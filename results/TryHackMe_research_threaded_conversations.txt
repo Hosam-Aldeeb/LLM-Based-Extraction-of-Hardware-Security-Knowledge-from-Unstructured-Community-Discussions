@@ -1,0 +1,784 @@
+
+======================================================================
+THREAD #1
+Channel: TryHackMe_research
+Participants: Deleted User, ben_cybersec
+Messages: 2 | Duration: 195 minutes
+Time: 10/25/2024, 3:41:00 PM
+======================================================================
+
+🎯 [1] Deleted User (3:41:00 PM)
+After all my research i've uncovered a universal truth installing Linux won’t make you a hacker
+
+💬 [2] ben_cybersec (6:55:54 PM) [REPLY]
+Can confirm. I even tried arch, btw
+
+
+
+======================================================================
+THREAD #2
+Channel: TryHackMe_research
+Participants: autumn12345, mknukn, zumiyumi, so_much_for_subtlety, xorist
+Messages: 7 | Duration: 561 minutes
+Time: 10/29/2024, 6:47:47 AM
+======================================================================
+
+💬 [1] autumn12345 (6:47:47 AM)
+anyone have any research or guidance on file level encryption vs drive level encryption? 
+
+looking for things like why you’d choose drive level over file level for backups in particular
+
+is general guidance “it doesn’t matter, as long as it’s encrypted”?
+
+💬 [2] mknukn (7:56:10 AM) [REPLY]
+quick thing off the top of my head is: drive-level encryption protects your files from physical access and file-level encryption protects your files from electronic access
+
+💬 [3] zumiyumi (10:29:27 AM) [REPLY]
+basically what mknukn said
+for sysadmins and security folks we like to have drive level encryption for users because they forget their laptops in taxis all the time and it helps when an asset is lost and cannot be remotely wiped
+the file encryption is good when you need to move files around and in case it gets intercepted or goes to the wrong person for whatever reason it adds an extra layer of security possibly
+
+🎯 [4] so_much_for_subtlety (3:24:33 PM) [REPLY]
+Yeah, disk-level encryption these days can take advantage of the TPM in your machine's motherboard, such as Bitlocker on Windows, or the LUKS disk encryption mechanism in Linux. File level encryption might allow you to store the keys elsewhere, such as on a USB stick to store the key, like with AES on a ZIP file; or using PGP to send/receive files through email (PKE, asychronous)
+
+🎯 [5] xorist (3:58:52 PM) [REPLY]
+Just adding a couple things I thought of as well related to this
+
+An attack may be possible in some situations where the attacker has extended unrestricted access to your hardware. The attack could enable them to retrieve your key from the TPM. Because of this, some people prefer to use disk level encryption in the other configurations mentioned, where the key had to be either inserted, manually entered, or even delivered by a Tang server or bitlocker network unlock. These configurations can open a different attack surface, but they also prevent decryption by the more commonly known methods for retrieving keys from the TPM.
+
+🎯 [6] so_much_for_subtlety (4:04:01 PM) [REPLY]
+An excellent point. Encryption and key security/management require the use of other tools/techniques to safeguard your systems. You could do something like hosting the user's work desktop on a cloud server (pub/priv) and require a vpn key on an external device or dot1x system in the office to allow a dumb/limited laptop to connect to the network
+
+💬 [7] so_much_for_subtlety (4:08:29 PM)
+You can also require encrypted usb keys and control/manage the keys centrally for file transport. So if you had to physically transport a sensitive file to a restricted/air-gapped location, for instance, key management for the usb key and file can be maintained securely and access can be very tightly controlled
+
+
+
+======================================================================
+THREAD #3
+Channel: TryHackMe_research
+Participants: dragkob, aces1735
+Messages: 3 | Duration: 2673 minutes
+Time: 11/24/2024, 1:24:11 AM
+======================================================================
+
+🎯 [1] dragkob (1:24:11 AM)
+Yo everyone, recently did a deep dive on a recent 0 click CVE with a 9.8 CVSS score. Also developed a PoC for it and published a video on YouTube showcasing how it works.
+
+My full article with a deep dive into how the kernel level exploit works:
+https://dragkob.notion.site/ipv6-the-0-click-gateway-to-hacking-windows
+
+🎯 [2] aces1735 (9:55:30 PM) [REPLY]
+Wow! Very in depth analysis of how a simple function, if exploited via manipulating the IPv6 extension headers can lead to an integer overflow and cause a dos attack.
+
+💬 [3] aces1735 (9:56:55 PM)
+reverse engineering the patch itself was very smart.
+
+
+
+======================================================================
+THREAD #4
+Channel: TryHackMe_research
+Participants: kyootybella
+Messages: 1 | Duration: 0 minutes
+Time: 11/26/2024, 9:43:31 PM
+======================================================================
+
+🎯 [1] kyootybella (9:43:31 PM)
+My friend just posted their first ever blog post about a research project they did, I am really proud of them!
+The project was reverse engineering a phone that they had gotten, really cool what they have found 😄
+https://zestfulzodiac.substack.com/p/from-secure-to-exposed-a-forensic
+
+
+
+======================================================================
+THREAD #5
+Channel: TryHackMe_research
+Participants: so_much_for_subtlety, kgbkp
+Messages: 2 | Duration: 2 minutes
+Time: 12/3/2024, 11:07:56 AM
+======================================================================
+
+🎯 [1] so_much_for_subtlety (11:07:56 AM)
+Because it's a growing problem in certain parts of the world, it's definitely on some peoples' radars, from TCM, an introduction to replay attacks in car theft:
+
+https://www.linkedin.com/comm/pulse/intro-car-hacking-replay-attacks-tcm-security-inc-qpb0c
+
+💬 [2] kgbkp (11:09:50 AM) [REPLY]
+Thanks for sharing 😄
+
+
+
+======================================================================
+THREAD #6
+Channel: TryHackMe_research
+Participants: jabba.sh, shadow_absorber, dragkob, hex4a
+Messages: 7 | Duration: 10026 minutes
+Time: 12/6/2024, 1:02:47 PM
+======================================================================
+
+🎯 [1] jabba.sh (1:02:47 PM)
+Over the past few months, has anyone seen any particularly interesting vulnerabilities or threats?
+
+Further reading would be great 😊
+
+🎯 [2] shadow_absorber (1:12:47 PM) [REPLY]
+ubuntu linux targeting uefi malware called bootkitty
+
+💬 [3] shadow_absorber (1:13:06 PM)
+interesting and scary for shadow
+
+💬 [4] shadow_absorber (1:13:15 PM)
+not that shadow runs ubuntu
+
+🎯 [5] dragkob (12:01:20 PM) [REPLY]
+https://dragkob.notion.site/ipv6-the-0-click-gateway-to-hacking-windows
+
+🎯 [6] hex4a (12:07:46 PM) [REPLY]
+Tracking an NK campaign right now, someone in here reached out with a file malwarebytes detected as a stealer, turned out to be invisibleferret - worked with victim to find the initial IOC and started tracking a multitude of LI profiles spreading beavertail + invisibleferret combo through contagious interviews, almost all of them are crypto related and ask the interviewee/victim to run a node project, usually some boilerplate web app with an exec snuck in that executes obfuscated node (beavertail) within a PNG 
+
+will likely soon have a research article and TTP/IOC report on our blog but Unit42 also covered this very well: https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/
+
+💬 [7] hex4a (12:08:27 PM)
+seeing a big uptick as we've identified a few new C2 rotations and new campaign IDs as recent as a few days ago
+
+
+
+======================================================================
+THREAD #7
+Channel: TryHackMe_research
+Participants: aces1735
+Messages: 1 | Duration: 0 minutes
+Time: 12/24/2024, 6:24:04 PM
+======================================================================
+
+🎯 [1] aces1735 (6:24:04 PM)
+Hey y’all, I wanted to share my analysis of the Akira ransomware. Feel free to give me feedback on it. It would be truly appreciated. https://medium.com/@Not_AceS/static-analysis-of-the-infamous-akira-ransomware-808ff3fd047f
+
+
+
+======================================================================
+THREAD #8
+Channel: TryHackMe_research
+Participants: hex4a
+Messages: 1 | Duration: 0 minutes
+Time: 12/26/2024, 12:37:24 PM
+======================================================================
+
+🎯 [1] hex4a (12:37:24 PM)
+writer from my lil research / ctf team finished summarizing our analysis of beavertail/invisibleferret :) 
+https://team-bytesized.github.io/articles/malware/beavertail_invisbleferret.html
+
+
+
+======================================================================
+THREAD #9
+Channel: TryHackMe_research
+Participants: so_much_for_subtlety
+Messages: 1 | Duration: 0 minutes
+Time: 12/31/2024, 10:47:27 AM
+======================================================================
+
+🎯 [1] so_much_for_subtlety (10:47:27 AM)
+Former NSA cyberspy's not-so-secret hobby: Hacking Christmas lights
+https://www.theregister.com/2024/12/25/joyce_christmas_lights/
+
+
+
+======================================================================
+THREAD #10
+Channel: TryHackMe_research
+Participants: heapsoverflow, jabba.sh, .canyon, causticfartz, kangafoo
+Messages: 9 | Duration: 53436 minutes
+Time: 1/4/2025, 11:54:20 AM
+======================================================================
+
+💬 [1] heapsoverflow (11:54:20 AM)
+https://revdiaries.com/post/solara-malware-analysis
+
+🎯 [2] jabba.sh (1:26:38 PM) [REPLY]
+Awesome analysis! I'd definitely like to come back to this post as a later point and see if this Malware creator is behind any other of the popular malware scripts.
+
+It's actually incredibly common for Roblox DLL injectors and scripts to actually be malicious.
+Something about Solara is that it actually was a real 'legitimate' cheat but, if I remember correctly, someone created their own fake Discord and started distributing a fake version.
+
+💬 [3] heapsoverflow (2:37:09 PM) [REPLY]
+Yeah this is the fake one i assume.
+
+💬 [4] .canyon (10:02:27 AM) [REPLY]
+cool writeup. what did you use to pin down the c2 servers and their companies? or, where does a sc like this come from?
+
+💬 [5] heapsoverflow (12:51:49 PM) [REPLY]
+https://ipinfo.io/AS44559
+
+💬 [6] causticfartz (10:01:34 AM) [REPLY]
+Awesome analysis - can you suggest any resources that get me started with understanding decompiled code, rev engg and low level code and static analysis in general.
+
+🎯 [7] heapsoverflow (10:06:35 AM) [REPLY]
+<https://github.com/mschwartz/assembly-tutorial>
+<https://pwn.college/>
+<https://crackmy.app/> or <https://crackmes.one>
+Youtube: OALabs, Low Level Learning, MalwareTech
+
+IMO, Best practice for reverse engineering is writing your own C/C++ code and disassembling the binary. You will spot the similarities and understand how certain code works in low-level environment.
+
+💬 [8] kangafoo (1:21:15 PM) [REPLY]
+oh cool, thanks for the summary, wasnt for me, but still appreciated 😄
+
+💬 [9] causticfartz (2:30:26 PM) [REPLY]
+gotcha, i did some basic cpp development for a small app and used winapi but thanks for these resources.
+
+
+
+======================================================================
+THREAD #11
+Channel: TryHackMe_research
+Participants: .canyon
+Messages: 2 | Duration: 0 minutes
+Time: 1/6/2025, 10:27:48 AM
+======================================================================
+
+🎯 [1] .canyon (10:27:48 AM)
+https://www.404media.co/violent-hackers-are-using-u-haul-to-dox-targets/
+
+💬 [2] .canyon (10:27:55 AM)
+kind of frightening
+
+
+
+======================================================================
+THREAD #12
+Channel: TryHackMe_research
+Participants: Deleted User
+Messages: 2 | Duration: 1 minutes
+Time: 1/26/2025, 11:25:14 AM
+======================================================================
+
+🎯 [1] Deleted User (11:25:14 AM)
+https://trufflesecurity.com/blog/millions-at-risk-due-to-google-s-oauth-flaw
+
+🎯 [2] Deleted User (11:25:53 AM)
+I found the link above after being inspired by https://tryhackme.com/r/room/oauthvulnerabilities
+
+
+
+======================================================================
+THREAD #13
+Channel: TryHackMe_research
+Participants: aces1735
+Messages: 1 | Duration: 0 minutes
+Time: 1/26/2025, 6:24:44 PM
+======================================================================
+
+🎯 [1] aces1735 (6:24:44 PM)
+Hello everyone, this would be my 2nd analysis blog and this time it is on the notorious malware “Industroyer”. Any feedback is welcome https://medium.com/@Not_AceS/industroyer-analysis-187bd1f5ffc7
+
+
+
+======================================================================
+THREAD #14
+Channel: TryHackMe_research
+Participants: so_much_for_subtlety
+Messages: 1 | Duration: 0 minutes
+Time: 2/7/2025, 6:29:13 PM
+======================================================================
+
+🎯 [1] so_much_for_subtlety (6:29:13 PM)
+An old story from back in 2017 popped up while scrolling. Though you might find it of interest
+
+Here's the article: 
+https://www.wired.com/story/malware-dna-hack/
+
+And here's one from the IEEE: 
+https://spectrum.ieee.org/researchers-embed-malicious-code-into-dna-to-hack-dna-sequencing-software
+
+
+
+======================================================================
+THREAD #15
+Channel: TryHackMe_research
+Participants: aces1735, dragkob, heathengrizz
+Messages: 10 | Duration: 51789 minutes
+Time: 3/20/2025, 7:05:10 PM
+======================================================================
+
+🎯 [1] aces1735 (7:05:10 PM)
+https://medium.com/@Not_AceS/fake-fortnite-exploit-malware-analysis-21d908696642 For this malware analysis blog i analyzed a fake Fortnite exploit that is actually malware. Feedback is welcome!
+
+💬 [2] dragkob (10:04:30 PM) [REPLY]
+This was a nice blog. Short and straight to the point. Good job.
+
+💬 [3] dragkob (10:04:59 PM)
+Feel free to share more if you do work on more. I'm personally very interested in forensics, but don't really want to go into the technicalities of it.
+
+💬 [4] dragkob (10:05:05 PM)
+So I enjoy reading articles like yours.
+
+💬 [5] dragkob (10:05:15 PM)
+It feels like a sherlock investigation lol.
+
+💬 [6] dragkob (10:05:32 PM)
+https://tenor.com/view/sherlockholmes-gif-22362331
+
+💬 [7] aces1735 (10:09:43 PM) [REPLY]
+Aye thank you very much, and yes I have another coming. Forensics is very fun
+
+💬 [8] heathengrizz (6:13:18 PM) [REPLY]
+Late to the party, but this was a good read. Straightforward and palatable. Thanks for posting!
+
+💬 [9] aces1735 (6:13:34 PM) [REPLY]
+Thank you friend
+
+💬 [10] aces1735 (6:13:42 PM)
+Glad you like it
+
+
+
+======================================================================
+THREAD #16
+Channel: TryHackMe_research
+Participants: aces1735, get_it_grab_it_55967
+Messages: 2 | Duration: 9130 minutes
+Time: 6/4/2025, 6:20:56 PM
+======================================================================
+
+🎯 [1] aces1735 (6:20:56 PM)
+Hello y’all, I made another blog about the malware called Formbook and it’s a stealer. Instead of your normal executable, it’s a java script file. Feedback is welcome 🙏
+
+https://medium.com/@Not_AceS/formbook-javascript-malware-analysis-098c37137189
+
+💬 [2] get_it_grab_it_55967 (2:30:55 AM) [REPLY]
+Can we download it
+
+
+
+======================================================================
+THREAD #17
+Channel: TryHackMe_research
+Participants: .soulskeeper, iltkms, darxkillerx
+Messages: 26 | Duration: 6965 minutes
+Time: 6/22/2025, 2:34:36 PM
+======================================================================
+
+💬 [1] .soulskeeper (2:34:36 PM)
+guys i found something interesting, is there a way for a phone on your network to declare itself as a router and appear as one in ipv6 neighbor discovery?, i ran the network through wire shark and it seems there is a device spoofing requests trying to look like my router with smaller differences to the mac address
+
+
+also i blocked upnp request on my router a few days ago because it seemed like i am getting DDoSed from all of my IoT devices, so now i get a ton of port 5353 request instead by the same volume
+
+also there was a suspicious address trying to access SMB today which i have never seen before 
+
+all of these got blocked of course, but the only devices that were acting weird is that phone that appears as a router, and another computer that can traceroute other devices, but you can't ping that computer or traceroute it, sounds like a man in the middle attack with a rouge router, i might be looking too much into things but i did get an arp poisoning alert from that same phone when the issues started, plus there a hefty amount of arp requests in the wireshark sniffing i did before
+
+
+what do you think?
+
+💬 [2] iltkms (2:09:07 PM) [REPLY]
+Can I dm?
+
+💬 [3] .soulskeeper (2:10:11 PM) [REPLY]
+would rather keep it in this forum if you have anything to add
+
+💬 [4] iltkms (2:10:16 PM)
+Okay
+
+🎯 [5] iltkms (2:10:33 PM)
+do you have IPv6 RA Guard enabled?
+
+💬 [6] .soulskeeper (2:10:59 PM)
+im less worried about their foothold, more about how they are doing it
+
+💬 [7] iltkms (2:11:34 PM)
+easy, MitM
+
+💬 [8] .soulskeeper (2:12:11 PM)
+yeah
+
+🎯 [9] .soulskeeper (2:12:46 PM)
+arp poisoning, mitm, lateral movement, IoT device acting like botnets, rough routers using ipv6
+
+💬 [10] .soulskeeper (2:12:58 PM)
+was wondering who else acts in that fashion
+
+💬 [11] iltkms (2:13:07 PM)
+Who doesn't ?
+
+💬 [12] iltkms (2:13:09 PM)
+It's really common
+
+💬 [13] .soulskeeper (2:13:13 PM)
+mirai spiked on days where i had the most intense attacks
+
+💬 [14] .soulskeeper (2:13:25 PM)
+so i had my suspicion
+
+💬 [15] .soulskeeper (2:13:33 PM)
+but i dont see any malware drops
+
+💬 [16] iltkms (2:13:40 PM)
+Yet
+
+💬 [17] iltkms (2:14:09 PM)
+If I'd be you, I would disable IPv6
+
+💬 [18] .soulskeeper (2:14:18 PM)
+yeah i thought about that
+
+💬 [19] .soulskeeper (2:14:34 PM)
+but my curiosity has the better of me haha
+
+💬 [20] iltkms (2:14:45 PM)
+Fair Enough
+
+💬 [21] iltkms (2:15:31 PM)
+disabling DHCP is also one thing I'd do
+
+💬 [22] .soulskeeper (2:15:56 PM)
+i actually wanted to check my DHCP tables but cant because of the hardware im using
+
+🎯 [23] .soulskeeper (2:16:10 PM)
+i think they know this hardware because of the way they are attacking
+
+💬 [24] .soulskeeper (2:16:22 PM)
+its very simillar to the recent ASUS routers attack
+
+💬 [25] iltkms (2:16:36 PM)
+Then you are going to have a long night
+
+💬 [26] darxkillerx (10:39:15 AM) [REPLY]
+Dammnnn 😂😂. This is like me reading a life sentence
+
+
+
+======================================================================
+THREAD #18
+Channel: TryHackMe_research
+Participants: so_much_for_subtlety
+Messages: 1 | Duration: 0 minutes
+Time: 7/10/2025, 7:30:19 PM
+======================================================================
+
+🎯 [1] so_much_for_subtlety (7:30:19 PM)
+New Report Uncovers Major Overlaps in Cybercrime and State-Sponsored Espionage
+
+https://www.infosecurity-magazine.com/news/major-overlaps-cybercrime-espionage/
+
+
+
+======================================================================
+THREAD #19
+Channel: TryHackMe_research
+Participants: so_much_for_subtlety
+Messages: 1 | Duration: 0 minutes
+Time: 7/17/2025, 3:32:26 PM
+======================================================================
+
+🎯 [1] so_much_for_subtlety (3:32:26 PM)
+How the NSA Hacked Huawei: Operation Shotgiant
+
+https://www.youtube.com/watch?v=aQNgelm7JeE
+
+
+
+======================================================================
+THREAD #20
+Channel: TryHackMe_research
+Participants: n_440, aces1735, mknukn
+Messages: 3 | Duration: 4511 minutes
+Time: 8/12/2025, 6:04:51 PM
+======================================================================
+
+🎯 [1] n_440 (6:04:51 PM)
+Happy to share my latest finding on how to bypass CVE-2025-24054 security patch and get a NTLM challenge from explorer.exe in 0 click 
+
+https://cymulate.com/blog/zero-click-one-ntlm-microsoft-security-patch-bypass-cve-2025-50154/
+
+💬 [2] aces1735 (9:37:10 PM) [REPLY]
+Nice blog
+
+💬 [3] mknukn (9:16:03 PM) [REPLY]
+Great blog mate
+
+
+
+======================================================================
+THREAD #21
+Channel: TryHackMe_research
+Participants: mar0n0
+Messages: 1 | Duration: 0 minutes
+Time: 9/11/2025, 2:24:52 PM
+======================================================================
+
+🎯 [1] mar0n0 (2:24:52 PM)
+Technique to exfiltrate git  credentials from Argocd: https://futuresight.club/posts/0x00_exfiltrate_git_credentials_argocd.html
+
+
+
+======================================================================
+THREAD #22
+Channel: TryHackMe_research
+Participants: Deleted User
+Messages: 1 | Duration: 0 minutes
+Time: 10/5/2025, 1:34:10 PM
+======================================================================
+
+🎯 [1] Deleted User (1:34:10 PM)
+Boys, what do you think about this method of encryption?
+https://github.com/Whitecat18/Rust-for-Malware-Development/tree/main/Encryption%20Methods/ecc_shellcode_exec
+
+
+
+======================================================================
+THREAD #23
+Channel: TryHackMe_research
+Participants: slavetomints
+Messages: 1 | Duration: 0 minutes
+Time: 10/22/2025, 6:14:24 AM
+======================================================================
+
+🎯 [1] slavetomints (6:14:24 AM)
+DeTraced Security has finished our second engagement! This time we followed a TA across the internet. This time we've published both a blog post and also IOCs/YARA rules. Feel free to check them out!
+
+BLOG:
+https://detraced.org/posts/infostealer-turned-ransomware/
+
+IOCs:
+https://github.com/DeTraced-Security/detection-rules/tree/main/groups/betray
+
+
+
+======================================================================
+THREAD #24
+Channel: TryHackMe_research
+Participants: zaaaaaaak
+Messages: 4 | Duration: 3 minutes
+Time: 11/1/2025, 2:15:56 AM
+======================================================================
+
+💬 [1] zaaaaaaak (2:15:56 AM)
+I assume it's mostly just the inertia and difficulty of switching over existing systems? It takes time to upgrade things
+
+💬 [2] zaaaaaaak (2:17:02 AM)
+Like the US Govt has addressed PQC as something to use but their timescale is to get all their systems changed over by 2035
+
+💬 [3] zaaaaaaak (2:17:43 AM)
+Balancing the added cost of rushing to upgrade everything sooner with the added risk of upgrading later
+
+🎯 [4] zaaaaaaak (2:19:14 AM)
+Plus since most PQC algorithms are pretty new there's a higher risk of new vulnerabilities being found. Patched now but KyberSlash springs to mind
+
+
+
+======================================================================
+THREAD #25
+Channel: TryHackMe_research
+Participants: zaaaaaaak, wicked_world
+Messages: 7 | Duration: 337 minutes
+Time: 11/1/2025, 2:33:34 AM
+======================================================================
+
+💬 [1] zaaaaaaak (2:33:34 AM)
+And a lot of smaller less critical systems will feel less pressure to switch
+
+💬 [2] zaaaaaaak (2:35:14 AM)
+https://www.nccoe.nist.gov/sites/default/files/legacy-files/pqc-migration-project-description-final.pdf
+
+💬 [3] zaaaaaaak (2:36:19 AM)
+Document from NIST outlining the steps involved in migrating^
+
+🎯 [4] zaaaaaaak (2:39:23 AM)
+https://arxiv.org/abs/1909.07353
+Relevant paper, brings up the concept of "cryptographic agility"
+
+💬 [5] zaaaaaaak (2:39:32 AM)
+@Wicked World
+
+💬 [6] wicked_world (8:10:23 AM) [REPLY]
+That's so helpful, thanks for the tips, I appreciate you taking time to explain a lot 🙂
+
+💬 [7] wicked_world (8:10:32 AM)
+Stay blessed
+
+
+
+======================================================================
+THREAD #26
+Channel: TryHackMe_research
+Participants: atlien404_92168
+Messages: 1 | Duration: 0 minutes
+Time: 11/1/2025, 8:30:59 PM
+======================================================================
+
+🎯 [1] atlien404_92168 (8:30:59 PM)
+Hello everyone, I have a question: would anyone be willing to take a look at a vulnerability report I created earlier this year? 
+
+It’s based around an audio exploit I caught in the wild and reversed engineered. I sent the report & exploit to Google’s research team on April 11th and on April 16th, Apple pushed out emergency patches that match the description of the report provided and accredited Google. 
+
+I found what I believe is a hardware flaw on the iPhone and would like an opinion of whether I am missing the mark or not..?
+
+
+
+======================================================================
+THREAD #27
+Channel: TryHackMe_research
+Participants: sma254, dragkob, slavetomints
+Messages: 8 | Duration: 48 minutes
+Time: 11/13/2025, 9:16:46 AM
+======================================================================
+
+🎯 [1] sma254 (9:16:46 AM)
+Hello guys, can anyone explain to me why can't i crack my own kali linux password using John the ripper. I just finished doin task 6 of "John the Ripper: The Basics" room and i wanted to try it out on my own system.
+
+I'm using a usb bootable OS of kali linux.
+
+💬 [2] sma254 (9:18:18 AM)
+mmmmm am i askin in the wrong room? lol
+
+💬 [3] dragkob (9:36:45 AM) [REPLY]
+Wdym by can't crack, what's happening?
+
+💬 [4] sma254 (10:00:00 AM) [REPLY]
+Like, i did "sudo unshadow /etc/passwd /etc/shadow  > un.txt" then tried using john to crack it but results in:
+
+Using default input encoding: UTF 8
+No password hashes loaded (see FAQ)
+
+💬 [5] sma254 (10:01:13 AM)
+hmmmmmm
+
+💬 [6] sma254 (10:02:12 AM)
+quick qs, how should i write a yescrypt in the "--format" of john?
+
+💬 [7] slavetomints (10:04:34 AM) [REPLY]
+`--format=crypt`
+
+💬 [8] sma254 (10:05:02 AM)
+oh, thanks @Slavetomints (She/Her)
+
+
+
+======================================================================
+THREAD #28
+Channel: TryHackMe_research
+Participants: n_440, ild2010_22347
+Messages: 3 | Duration: 11819 minutes
+Time: 11/17/2025, 2:16:48 PM
+======================================================================
+
+🎯 [1] n_440 (2:16:48 PM)
+I found that fileName parameters in the ms-photos URI handler supports UNC paths. 
+
+Combined with a server redirection, it allows to leak NTLM hashes, with a one click condition (open photos popup) from any browser. 
+
+This combination could allow wide supply chain attacks, since it moves from a browser redirection to NTLM hashes leak. 
+
+Find more details and a POC about it
+
+https://github.com/rubenformation/ms-photos_NTLM_Leak
+
+💬 [2] ild2010_22347 (2:23:28 PM) [REPLY]
+i am a newer cybersecurity student, but has anyone crafted steps towards remediation?
+
+💬 [3] n_440 (7:15:34 PM) [REPLY]
+Yes it was patched finally by Microsoft 
+For non patched environments disable SMB outbound connections if not needed, especially for public IPs on firewall
+
+
+
+======================================================================
+THREAD #29
+Channel: TryHackMe_research
+Participants: n_440, strike_37099
+Messages: 8 | Duration: 28925 minutes
+Time: 11/6/2025, 5:20:37 PM
+======================================================================
+
+💬 [1] n_440 (5:20:37 PM)
+Hi! Happy to share it with you
+
+Microsoft blocks VBS macros on retrieved word document templates, even in a local intranet networks, to prevent phishing 
+
+I found a way to bypass it on local networks, using LLMNR poisoning. Can be useful for local phishing assessments! 
+
+Microsoft didn’t recognise it and there is no patch 
+
+https://github.com/rubenformation/Office-Intranet-MOTW-Bypass
+
+💬 [2] strike_37099 (11:10:59 PM) [REPLY]
+Did you stumble upon this exploit or were you kinda digging for it already?
+
+🎯 [3] n_440 (11:03:52 AM) [REPLY]
+I found it while researching about a new MOTW bypass I found on Intranet
+
+💬 [4] n_440 (11:06:03 AM) [REPLY]
+This one
+
+💬 [5] strike_37099 (1:57:50 PM) [REPLY]
+I'm still quite new and networking is not strong suit, what is Mark of the web bypass exactly? And did you use burp suite or custom tooling for LLMNR poisoning?
+
+💬 [6] n_440 (6:38:27 PM) [REPLY]
+You should read about it in MSDN and learn about these things in THM rooms 🙂 
+You will understand it better
+
+💬 [7] strike_37099 (7:19:27 PM) [REPLY]
+Understood, thank you for pointing me in the right direction!
+
+💬 [8] n_440 (7:25:40 PM) [REPLY]
+You welcome 
+Here are some additional article to read 
+
+https://learn.microsoft.com/en-us/microsoft-365-apps/security/internet-macros-blocked
+
+
+
+======================================================================
+THREAD #30
+Channel: TryHackMe_research
+Participants: kiaro0316
+Messages: 1 | Duration: 0 minutes
+Time: 12/12/2025, 10:25:36 AM
+======================================================================
+
+🎯 [1] kiaro0316 (10:25:36 AM)
+Yea... 
+It because i am planning to build an unbreakable antivirus.....
+It can be impossible but until i see what make it impossible....
+To learn why it is impossible i need data about the common things of malware... M
+
+
+
+======================================================================
+THREAD #31
+Channel: TryHackMe_research
+Participants: lucixsherry06
+Messages: 1 | Duration: 0 minutes
+Time: 12/13/2025, 4:51:53 AM
+======================================================================
+
+🎯 [1] lucixsherry06 (4:51:53 AM)
+Hi everyone,
+
+I’m an ISC2 CC-certified cybersecurity undergrad( final year) with solid theoretical knowledge and intermediate Python skills. 
+
+Looking for Final Year Project (FYP) ideas that are feasible, doable, and novel  in cybersecurity.
+Please share your thoughts 🍀
+
+
+
+======================================================================
+THREAD #32
+Channel: TryHackMe_research
+Participants: whyme33, wizarddos
+Messages: 3 | Duration: 1976 minutes
+Time: 12/15/2025, 1:05:10 PM
+======================================================================
+
+🎯 [1] whyme33 (1:05:10 PM)
+Is wsl good for hacking ?(I have a old laptop which only has one port so I can't boot into kali Linux)
+
+💬 [2] wizarddos (11:55:29 AM) [REPLY]
+It's pretty mid - Though you most def can run kali here. Doesn't it have like a CD slot or sm?
+
+💬 [3] whyme33 (10:00:44 PM) [REPLY]
+Nah no cd slots just a mini displayport and a regular usb 2.0 port
+

@@ -1,0 +1,49 @@
+[1] Similarity: 0.696 | unsignedrarity | 1/20/2025
+hadn't seen this before (from 2023), custom interposer for the original XBOX CPU to break out (and enable) JTAG. https://blog.ret2.io/2023/08/09/jtag-hacking-the-original-xbox-2023/
+======================================================================
+
+[2] Similarity: 0.645 | l33tbunni | 7/23/2025
+tonight's hardware hack!
+
+Keep all of your wire instantly accessible by removing it from the spool and shoving it in to a ziplock bag!
+======================================================================
+
+[3] Similarity: 0.568 | l33tbunni | 9/15/2025
+This tracks with lining up some of the bytes I was doing in the firmware update blob against the flash dump from seeigecannon, it matches a wholllle lot more
+======================================================================
+
+[4] Similarity: 0.553 | l33tbunni | 9/15/2025
+I spent a good couple of hours trying to dump the chip with different devices too, they all got roughly the same data, aside from that chunk of bytes that were randomish every read
+======================================================================
+
+[5] Similarity: 0.560 | l33tbunni | 9/16/2025
+Its aliiiivveeee!
+
+```
+S - Core 0 Frequency, 800 MHz
+
+
+U-Boot 2016.01 [UniFi,v1.0.25.152] (Feb 23 2023 - 15:40:51 -0800)
+
+DRAM:  smem ram ptable found: ver: 1 len: 4
+```
+======================================================================
+
+[6] Similarity: 0.602 | l33tbunni | 9/18/2025
+@_____________________@
+
+```
+U6-Pro-[Error-A12] BZ.6.6.77# upgrade https://dl.ui.com/unifi/firmware/UAP6MP/6.6.77.15402/BZ.ipq50xx_6.6.77+15402.240813.0345.bin
+Downloading firmware from 'https://dl.ui.com/unifi/firmware/UAP6MP/6.6.77.15402/BZ.ipq50xx_6.6.77+15402.240813.0345.bin'.
+ 
+syswrapper[18092]: Upgrade Firmware Downloading:
+syswrapper[18092]: Download ...OK
+syswrapper[18092]: Upgrade Firmware Check:
+syswrapper[18092]: Device authenticity test failed.
+Device authenticity test failed.
+Inval
+======================================================================
+
+[7] Similarity: 0.557 | tawnos | 10/12/2025
+Lol, it was a progression of finding parts. Had some low power switching mosfets that couldn't handle sustained current, added relays to see if they could handle that, but were still underpowered, dug through parts and found high power mosfets. way overkill but whatever, now I need to determine if pin 10 is fried 😅
+======================================================================

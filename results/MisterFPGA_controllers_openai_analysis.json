@@ -1,0 +1,191 @@
+{
+  "channel": "MisterFPGA_controllers",
+  "threadsAnalyzed": 8,
+  "aggregatedFindings": {
+    "vulnerabilities": [
+      "Limited button recognition when using SN30 with PCE dongle",
+      "tampering detected",
+      "random activation at barely detectable levels",
+      "Undocumented Bluetooth support for diagnostics",
+      "Intentional restrictions on CPU capabilities",
+      "Physical capabilities being locked intentionally",
+      "firmware limitations due to hardware constraints"
+    ],
+    "techniques": [
+      "Pairing controllers with dongles",
+      "Button combination to change dongle spoofing",
+      "kick harness modification",
+      "soldering to jamma blade",
+      "marketing differentiation based on hardware features",
+      "Firmware unlocking for Bluetooth features",
+      "Marketing differentiation based on hardware capabilities"
+    ],
+    "hardware": [
+      "8bitdo SN30",
+      "8bitdo PCE dongle",
+      "SNAC",
+      "Reflex",
+      "TP cabinets",
+      "light guns",
+      "multi racer",
+      "System 11/12",
+      "Tekken 3",
+      "sanwa JLX2",
+      "sanwa obsidian 2",
+      "knee lever neo",
+      "mayflash f500",
+      "haute 42 leverless",
+      "snac adapters",
+      "mt32 pi",
+      "xbox controller",
+      "bluetooth models",
+      "gyro IMU",
+      "hall sticks",
+      "2.4g models",
+      "Ultimate 2.4g wireless",
+      "Gyro IMU",
+      "Hall sticks",
+      "Retro Bit controllers",
+      "M30 controller",
+      "N64 controller",
+      "Gamecube controller",
+      "Super Nintendo controller",
+      "4dapter",
+      "MiSTer"
+    ],
+    "protocols": [
+      "2.4GHz wireless communication",
+      "XInput",
+      "DInput",
+      "TP",
+      "jamma",
+      "Bluetooth"
+    ]
+  },
+  "detailedAnalyses": [
+    {
+      "vulnerabilities": [
+        "Limited button recognition when using SN30 with PCE dongle"
+      ],
+      "techniques": [
+        "Pairing controllers with dongles",
+        "Button combination to change dongle spoofing"
+      ],
+      "hardware": [
+        "8bitdo SN30",
+        "8bitdo PCE dongle",
+        "SNAC",
+        "Reflex"
+      ],
+      "protocols": [
+        "2.4GHz wireless communication",
+        "XInput",
+        "DInput"
+      ],
+      "summary": "The conversation discusses the pairing of 8bitdo controllers with various dongles, highlighting compatibility issues and button recognition limitations, as well as preferences for controller feel."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation includes casual remarks and inquiries about a screen and a game, with no specific discussions on vulnerabilities, techniques, hardware, or protocols."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "kick harness modification",
+        "soldering to jamma blade"
+      ],
+      "hardware": [
+        "TP cabinets",
+        "light guns",
+        "multi racer",
+        "System 11/12",
+        "Tekken 3"
+      ],
+      "protocols": [
+        "TP",
+        "jamma"
+      ],
+      "summary": "The conversation revolves around arcade gaming, discussing the differences between various arcade cabinets, the experience of playing arcade games at home, and the hardware modifications required for certain games."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [],
+      "hardware": [
+        "sanwa JLX2",
+        "sanwa obsidian 2",
+        "knee lever neo",
+        "mayflash f500",
+        "haute 42 leverless",
+        "snac adapters",
+        "mt32 pi",
+        "xbox controller"
+      ],
+      "protocols": [],
+      "summary": "The conversation revolves around various arcade sticks and controllers, with discussions about specific hardware setups, issues with USB connections, and testing new adapters."
+    },
+    {
+      "vulnerabilities": [
+        "tampering detected",
+        "random activation at barely detectable levels"
+      ],
+      "techniques": [
+        "marketing differentiation based on hardware features"
+      ],
+      "hardware": [
+        "bluetooth models",
+        "gyro IMU",
+        "hall sticks"
+      ],
+      "protocols": [],
+      "summary": "The conversation discusses potential vulnerabilities related to tampering and random activation of devices, as well as marketing strategies for different hardware models, particularly focusing on Bluetooth capabilities and premium features."
+    },
+    {
+      "vulnerabilities": [
+        "Undocumented Bluetooth support for diagnostics",
+        "Intentional restrictions on CPU capabilities",
+        "Physical capabilities being locked intentionally"
+      ],
+      "techniques": [
+        "Firmware unlocking for Bluetooth features",
+        "Marketing differentiation based on hardware capabilities"
+      ],
+      "hardware": [
+        "2.4g models",
+        "Ultimate 2.4g wireless",
+        "Gyro IMU",
+        "Hall sticks"
+      ],
+      "protocols": [
+        "Bluetooth"
+      ],
+      "summary": "The conversation discusses the undocumented Bluetooth support in 2.4g models, intentional hardware restrictions, and the implications of manufacturers locking features that are physically present in devices. There are concerns about marketing strategies that differentiate models based on features that could be unlocked via firmware."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [],
+      "hardware": [],
+      "protocols": [],
+      "summary": "The conversation appears to be light-hearted and does not contain any specific discussions about vulnerabilities, techniques, hardware, or protocols."
+    },
+    {
+      "vulnerabilities": [
+        "firmware limitations due to hardware constraints"
+      ],
+      "techniques": [],
+      "hardware": [
+        "Retro Bit controllers",
+        "M30 controller",
+        "N64 controller",
+        "Gamecube controller",
+        "Super Nintendo controller",
+        "4dapter",
+        "MiSTer"
+      ],
+      "protocols": [],
+      "summary": "The conversation discusses the limitations of firmware solutions for hardware compatibility, the preferences for specific controllers for different gaming platforms, and the benefits of using the 4dapter for connecting multiple controllers."
+    }
+  ]
+}

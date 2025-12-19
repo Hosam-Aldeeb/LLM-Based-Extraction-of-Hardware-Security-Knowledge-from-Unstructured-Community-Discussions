@@ -1,0 +1,47 @@
+{
+  "channel": "SDRplusplus_programming",
+  "threadsAnalyzed": 2,
+  "aggregatedFindings": {
+    "vulnerabilities": [],
+    "techniques": [
+      "reverse engineering",
+      "git pull",
+      "recompile",
+      "code injection"
+    ],
+    "hardware": [
+      "SDRPlay",
+      "MSi2500 chip",
+      "housekeeping MCU"
+    ],
+    "protocols": []
+  },
+  "detailedAnalyses": [
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "reverse engineering",
+        "git pull",
+        "recompile"
+      ],
+      "hardware": [
+        "SDRPlay"
+      ],
+      "protocols": [],
+      "summary": "The conversation revolves around the challenges of integrating and compiling the SDRPlay library, with discussions on reverse engineering software for hardware compatibility."
+    },
+    {
+      "vulnerabilities": [],
+      "techniques": [
+        "reverse engineering",
+        "code injection"
+      ],
+      "hardware": [
+        "MSi2500 chip",
+        "housekeeping MCU"
+      ],
+      "protocols": [],
+      "summary": "The conversation discusses the legality of reverse engineering software to make hardware functional, with one participant sharing their success in running custom code on the housekeeping MCU of the MSi2500 chip."
+    }
+  ]
+}
