@@ -48,12 +48,17 @@ This pipeline processes raw Discord message exports and extracts structured hard
 
 ## Docker Setup (Alternative)
 
-For a containerized environment with all dependencies pre-configured:
+For a containerized environment with all dependencies pre-configured.
+
+> **Note:** Docker provides the runtime environment (Node.js + Ollama). You still need to:
+> 1. Export Discord chats using DiscordChatExporter (runs on your machine, not in Docker)
+> 2. Edit the scripts to add your channel names (see workflow below)
+> 3. Run scripts using `docker exec` instead of `node` directly
 
 ### Prerequisites
 - Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
-### Quick Start
+### Initial Setup
 
 ```bash
 # 1. Clone the repo
@@ -68,10 +73,20 @@ docker-compose up -d
 
 # 4. Pull the embedding model (first time only)
 docker exec mcp-ollama ollama pull nomic-embed-text
+```
 
-# 5. Run the pipeline
+### Running Pipeline Scripts in Docker
+
+After following the workflow in "Quick Start: Processing New Channels" below, run scripts with `docker exec`:
+
+```bash
+# Instead of: node process-all-remaining.js
 docker exec mcp-pipeline node process-all-remaining.js
+
+# Instead of: node thread-conversations.js
 docker exec mcp-pipeline node thread-conversations.js
+
+# Instead of: node analyze-all-with-openai.js
 docker exec mcp-pipeline node analyze-all-with-openai.js
 ```
 
@@ -84,7 +99,9 @@ docker exec mcp-pipeline node analyze-all-with-openai.js
 
 ### Notes
 
+- **DiscordChatExporter runs on your host machine**, not in Docker (it needs your Discord token)
 - Data folders (`discord-exports/`, `results/`) are mounted from your local machine
+- Edit scripts locally; changes appear automatically in the container
 - The `.env` file is NOT committed to git (contains your API keys)
 - For GPU support on Linux, uncomment the GPU section in `docker-compose.yml`
 
