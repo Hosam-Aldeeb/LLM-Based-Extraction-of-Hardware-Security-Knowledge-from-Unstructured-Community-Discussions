@@ -1,0 +1,42 @@
+# Docker build context - exclude large/unnecessary files
+# This dramatically speeds up docker build
+
+# Vector database (huge - 2GB+)
+vector-db/
+
+# Pre-computed results (can be regenerated)
+results/
+threaded-conversations/
+
+# Node modules (installed fresh in container)
+node_modules/
+
+# Git history
+.git/
+.gitignore
+
+# Archive folder (not needed for runtime)
+archive/
+
+# Environment files (secrets - don't include)
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Documentation (not needed in container)
+*.md
+*.docx
+*.pdf
+*.tex
+

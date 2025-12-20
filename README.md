@@ -46,6 +46,50 @@ This pipeline processes raw Discord message exports and extracts structured hard
 
 ---
 
+## Docker Setup (Alternative)
+
+For a containerized environment with all dependencies pre-configured:
+
+### Prerequisites
+- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+### Quick Start
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/your-repo/MCP.git
+cd MCP
+
+# 2. Create .env file with your credentials
+echo "OPENAI_API_KEY=sk-your-key-here" > .env
+
+# 3. Start all services (Ollama + Node.js)
+docker-compose up -d
+
+# 4. Pull the embedding model (first time only)
+docker exec mcp-ollama ollama pull nomic-embed-text
+
+# 5. Run the pipeline
+docker exec mcp-pipeline node process-all-remaining.js
+docker exec mcp-pipeline node thread-conversations.js
+docker exec mcp-pipeline node analyze-all-with-openai.js
+```
+
+### Services
+
+| Container | Purpose | Port |
+|-----------|---------|------|
+| `mcp-ollama` | Ollama for embeddings | 11434 |
+| `mcp-pipeline` | Node.js scripts | - |
+
+### Notes
+
+- Data folders (`discord-exports/`, `results/`) are mounted from your local machine
+- The `.env` file is NOT committed to git (contains your API keys)
+- For GPU support on Linux, uncomment the GPU section in `docker-compose.yml`
+
+---
+
 ## Quick Start: Processing New Channels
 
 Follow these 4 steps to analyze new Discord channels:
