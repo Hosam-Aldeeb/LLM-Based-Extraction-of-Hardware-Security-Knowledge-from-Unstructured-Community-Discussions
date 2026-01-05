@@ -20,7 +20,6 @@ This pipeline processes raw Discord message exports and extracts structured hard
 │             │    │  (Step 2)   │    │             │    │             │    │             │
 └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
    EXTERNAL            LOCAL              LOCAL              LOCAL              CLOUD
-                       (free)             (free)             (free)            (~$1.50)
 ```
 
 ---
@@ -62,8 +61,8 @@ For a containerized environment with all dependencies pre-configured.
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-repo/MCP.git
-cd MCP
+git clone https://github.com/Hosam-Aldeeb/LLM-Based-Extraction-of-Hardware-Security-Knowledge-from-Unstructured-Community-Discussions.git
+cd LLM-Based-Extraction-of-Hardware-Security-Knowledge-from-Unstructured-Community-Discussions
 
 # 2. Create .env file with your credentials
 echo "OPENAI_API_KEY=sk-your-key-here" > .env
